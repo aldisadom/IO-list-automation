@@ -1,0 +1,5 @@
+debug=1
+clr_logs_on_start=1
+excel_row_nr_with_name=2
+width=1680
+height=440
