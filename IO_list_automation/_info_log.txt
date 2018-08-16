@@ -1,0 +1,42 @@
+2018-08-16  22:33:24.650 - Help --- Buvo bandyta atidaryti, bet nera tokios funkcijos
+2018-08-16  22:33:34.181 - Skaitomi duomenys is excelio
+2018-08-16  22:33:34.340 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.380 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.415 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.455 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.502 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.548 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.602 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.668 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.731 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.785 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.842 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.880 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.917 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.953 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:34.989 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.022 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.057 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.093 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.129 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.168 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.202 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.236 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.277 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.322 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.362 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.400 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.443 - Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima
+2018-08-16  22:33:35.464 - Skaitomi duomenys is excelio -- Done
+2018-08-16  22:33:35.476 - Projektavimo duomenys isvalomi nuo nereikalingu eiluciu
+2018-08-16  22:33:38.739 - Projektavimo duomenys isvalomi nuo nereikalingu eiluciu -- Done
+2018-08-16  22:33:38.754 - Pildomi projektavimo duomenys i lentele
+2018-08-16  22:33:39.462 - Pildomi projektavimo duomenys i lentele -- Done
+2018-08-16  22:33:40.204 - Perkeliami projektavimo duomenys i aptminti
+2018-08-16  22:33:40.391 - Perkeliami projektavimo duomenys i aptminti -- Done
+2018-08-16  22:33:40.391 - Perkeliami duomenys signalams
+2018-08-16  22:33:40.585 - Perkeliami duomenys signalams -- Done
+2018-08-16  22:34:02.033 - Vartotojas isaugoja projektavimo duomenis
+2018-08-16  22:34:02.139 - Perkeliami projektavimo duomenys i aptminti
+2018-08-16  22:34:02.345 - Perkeliami projektavimo duomenys i aptminti -- Done
+2018-08-16  22:34:02.427 - Vartotojas isaugoja projektavimo duomenis -- Done

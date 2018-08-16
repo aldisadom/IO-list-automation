@@ -1,1 +1,1 @@
-2018-08-16  22:27:58.510 - Klaida: Si programos versija nera pilnai testuota tad atsargiai naudotis !!!
+2018-08-16  22:33:17.978 - Klaida: Si programos versija nera pilnai testuota tad atsargiai naudotis !!!
