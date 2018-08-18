@@ -1,4 +1,6 @@
   IOlistautomation.AboutForm.resources - Embedded, ContainedInManifestFile, 
+  IOlistautomation.HelpForm.resources - Embedded, ContainedInManifestFile, 
+  IOlistautomation.KKS_editForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.MainWindow.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly IO_list_automation, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
@@ -18,6 +20,14 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class IOlistautomation.AboutForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class IOlistautomation.HelpForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class IOlistautomation.KKS_edit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 return_value : Public
 Class IOlistautomation.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -26,10 +36,8 @@ Class IOlistautomation.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeF
     System.Windows.Forms.TabControl tabControl1 : Public
     System.Windows.Forms.ProgressBar progressBaras : Public
     System.Windows.Forms.Label Progress_label : Public
+    System.Windows.Forms.DataGridView Signals_grid : Public
 Class GlobalForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     IOlistautomation.MainWindow forma : Public, Static
-Class IOlistautomation.HelpForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

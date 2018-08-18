@@ -1,5 +1,9 @@
 debug=1
+text_Language=EN
 clr_logs_on_start=1
 excel_row_nr_with_name=2
-width=1680
-height=440
+CPU=ABB 800xA
+IO_list_Language=LT
+SCADA=System Platform
+width=1650
+height=600

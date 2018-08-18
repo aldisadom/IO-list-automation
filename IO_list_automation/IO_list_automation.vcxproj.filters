@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Strings">
+      <UniqueIdentifier>{937ee4c8-6f6a-4419-854c-2a00953a2bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Strings">
+      <UniqueIdentifier>{7760a0a0-0d37-4b38-bd17-a855a9a27f8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="config.cpp">
@@ -32,6 +38,21 @@
     </ClCompile>
     <ClCompile Include="HelpForm.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="String_errors.cpp">
+      <Filter>Source Files\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="Strings.cpp">
+      <Filter>Source Files\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="String_info.cpp">
+      <Filter>Source Files\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="KKS_editForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="String_progress.cpp">
+      <Filter>Source Files\Strings</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +76,21 @@
     </ClInclude>
     <ClInclude Include="HelpForm.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="String_errors.h">
+      <Filter>Header Files\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="Strings.h">
+      <Filter>Header Files\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="String_info.h">
+      <Filter>Header Files\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="KKS_editForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="String_progress.h">
+      <Filter>Header Files\Strings</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +117,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainWindow.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KKS_editForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

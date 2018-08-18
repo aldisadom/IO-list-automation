@@ -5,6 +5,7 @@
 #define IDS_tite                        101
 #define IDS_class                       102
 #define IDI_ICON                        103
+#define IDS_Erros                       103
 #define IDI_ICON_SMALL                  104
 #define IDD_Project_DESIGN              130
 #define IDD_Project_IO_Compare          131

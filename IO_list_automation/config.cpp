@@ -5,17 +5,24 @@ using namespace std;
 using namespace System;
 
 
-
 HWND confirmWND;
 
 char err_txt[255];
 char info_txt[255];
 
 struct parameters_str parameters;
+struct test_str test;
+int lang = 0;
 
 int GetNumberOfDigits(int i)
 {
 	return i > 0 ? (int)log10((double)i) + 1 : 1;
+}
+
+String^ string_to_system_string(string text)
+{
+	String^ new_text = gcnew String(text.c_str());
+	return new_text;
 }
 
 String^ wstring_to_system_string(wstring text)
@@ -121,17 +128,31 @@ string laikas()
 //	strcat_s( at, sizeof at, ats);
 }
 
+string button_press_name_write(String^ buttonName)
+{
+	string converted_text = system_string_to_string(buttonName).c_str();
+	const char *button_text= converted_text.c_str();
+
+	strcpy_s(info_txt, sizeof info_txt, button_text);
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, info_button_press[lang]);
+	info_write(info_txt);
+
+	return converted_text;
+}
 
 int Display_no_function(System::String^ buttonName)
 {
 	string converted_text = system_string_to_string(buttonName).c_str();
 	const char *tekstas = converted_text.c_str();
-	wstring wstr(tekstas, tekstas + strlen(tekstas));
-	wstr.append(L" --- no such function, maybe it will be ready soon");
-	
-	strcpy_s(err_txt, sizeof err_txt, tekstas);
-	strcat_s(err_txt, sizeof err_txt, " --- Buvo bandyta atidaryti, bet nera tokios funkcijos");
-	info_write(err_txt);
+
+	strcpy_s(info_txt, sizeof info_txt, tekstas);
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, info_no_function[lang]);
+	info_write(info_txt);
+
+	wstring wstr(info_txt, info_txt + strlen(info_txt));
+
 	int msgboxID = MessageBox(
 		NULL,
 		wstr.c_str(),
@@ -164,18 +185,28 @@ int show_confirm_window(LPCWSTR tekstas)
 	return msgboxID;
 }
 
-void err_write_show(char *tekstas)
+void err_write(char *tekstas)
 {
 	FILE *fp;
 	string laiks;
 	char ats[255];
 
-	laiks=laikas();
+	laiks = laikas();
 	strcpy_s(ats, sizeof ats, laiks.c_str());
 
 	fopen_s(&fp, "_error_log.txt", "a");
-	fprintf(fp, "%s - Klaida: %s\n", ats, tekstas);
+	fprintf(fp, "%s", ats);
+	fprintf(fp, " - %s: ", err_string[lang]);
+	fprintf(fp, "%s\n", tekstas);
+
 	fclose(fp);
+
+	info_write(tekstas);
+}
+
+void err_write_show(char *tekstas)
+{
+	err_write(tekstas);
 	Display_error(tekstas);
 }
 
@@ -209,7 +240,7 @@ void Show_progress(wstring text,int max)
 
 	GlobalForm::forma->progressBaras->Value = 0;
 	GlobalForm::forma->Progress_label->Text = MyString;	//MyString;
-//	GlobalForm::forma->Progress_label->BackColor = System::Drawing::Color::Transparent;
+
 
 	GlobalForm::forma->Progress_label->Visible = true;
 	GlobalForm::forma->Progress_label->Show();
@@ -239,13 +270,14 @@ void set_progress_value(int value)
 	GlobalForm::forma->progressBaras->Value = value;
 }
 
-char parametrai_str[5][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name"};
+char parametrai_str[9][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language"};
+
 
 int cfg_puts(char *tekstas, struct parameters_str *pars)
 {
 	char * parametras;
-	char * skaicius;
-	long numeris;
+	char * value_text;
+	long value;
 	char *next_token1 = NULL;
 	bool fStringMatch = FALSE;
 	int stringo_nr = 0;
@@ -254,15 +286,18 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 	parametras = strtok_s(tekstas, "=", &next_token1);
 	if (parametras == NULL)
 	{
-		strcpy_s(err_txt, sizeof err_txt, "Tuscias parametras eiluteje");
+		strcpy_s(err_txt, sizeof err_txt, tekstas);
+		strcat_s(err_txt, sizeof err_txt, error_separator);
+		strcat_s(err_txt, sizeof err_txt, err_cfg_empty_parameter[lang]);
 		err_write_show(err_txt);
 		return 1;
 	}
-	skaicius = strtok_s(NULL, "\n", &next_token1);
-	if (skaicius == NULL)
+	value_text = strtok_s(NULL, "\n", &next_token1);
+	if (value_text == NULL)
 	{
 		strcpy_s(err_txt, sizeof err_txt, parametras);
-		strcat_s(err_txt, sizeof err_txt, " --- Nera skaiciaus parametrai");
+		strcat_s(err_txt, sizeof err_txt, error_separator);
+		strcat_s(err_txt, sizeof err_txt, err_cfg_empty_value[lang]);
 		err_write_show(err_txt);
 		return 1;
 	}
@@ -273,7 +308,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 		fStringMatch = (strcmp(parametrai_str[i], parametras) == 0);
 		if (fStringMatch)
 		{
-			numeris=atoi(skaicius);
+			value =atoi(value_text);
 			stringo_nr = i;
 			break;
 		}
@@ -282,32 +317,109 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 	if (!fStringMatch)
 	{
 		strcpy_s(err_txt, sizeof err_txt, parametras);
-		strcat_s(err_txt, sizeof err_txt, " --- Neegzistuojantis parametras");
+		strcat_s(err_txt, sizeof err_txt, error_separator);
+		strcat_s(err_txt, sizeof err_txt, err_cfg_bad_parameter[lang]);
 		err_write_show(err_txt);
 		return 1;
 	}
+
 	else
 	{
 		switch (stringo_nr)
 		{
 			case 0:
-				pars->height = numeris;
+				pars->height = value;
 				break;
 			case 1:
-				pars->width = numeris;
+				pars->width = value;
 				break;
 			case 2:
-				pars->debug = numeris;
+				pars->debug = value;
 				break;
 			case 3:
-				pars->clr_logs_on_start = numeris;
+				pars->clr_logs_on_start = value;
 				break;
 			case 4:
-				pars->excel_row_nr_with_name = numeris;
+				pars->excel_row_nr_with_name = value;
+				break;
+			case 5:
+				if (fStringMatch = (strcmp(value_text, "Beckhoff") == 0))
+				{
+					pars->CPU = Beckhoff_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "Siemens") == 0))
+				{
+					pars->CPU = Siemens_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "Schneider") == 0))
+				{
+					pars->CPU = Schneider_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "ABB 800xA") == 0))
+				{
+					pars->CPU = ABB_800xA_index;
+				}
+				else
+				{
+					pars->CPU = Beckhoff_index;
+					strcpy_s(err_txt, sizeof err_txt, parametras);
+					strcat_s(err_txt, sizeof err_txt, error_separator);
+					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
+					err_write_show(err_txt);
+				}
+				break;
+
+			case 6:
+				if (fStringMatch = (strcmp(value_text, "LT") == 0))
+				{
+					lang = LT_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "EN") == 0))
+				{
+					lang = EN_index;
+				}
+				else
+				{
+					lang = LT_index;
+					strcpy_s(err_txt, sizeof err_txt, parametras);
+					strcat_s(err_txt, sizeof err_txt, error_separator);
+					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
+					err_write_show(err_txt);
+				}
+				break;
+			case 7:
+				pars->SCADA = value_text;
+				break;
+			case 8:
+				if (fStringMatch = (strcmp(value_text, "LT") == 0))
+				{
+					pars->Language = LT_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "EN") == 0))
+				{
+					pars->Language = EN_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "LV") == 0))
+				{
+					pars->Language = LV_index;
+				}
+				else if (fStringMatch = (strcmp(value_text, "RU") == 0))
+				{
+					pars->Language = RU_index;
+				}
+				else
+				{
+					pars->Language = LT_index;
+					strcpy_s(err_txt, sizeof err_txt, parametras);
+					strcat_s(err_txt, sizeof err_txt, error_separator);
+					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
+					err_write_show(err_txt);
+				}
 				break;
 			default:
 				strcpy_s(err_txt, sizeof err_txt, parametras);
-				strcat_s(err_txt, sizeof err_txt, " --- ups!!! Programos klaida, neidetas parametras, ji reikia pasalinti is _cfg.txt arba suprogramuoti :)");
+				strcat_s(err_txt, sizeof err_txt, error_separator);
+				strcat_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
 				err_write_show(err_txt);
 				break;
 		}
@@ -315,7 +427,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 		{
 			strcpy_s(info_txt, sizeof info_txt, parametras);
 			strcat_s(info_txt, sizeof info_txt, " = ");
-			strcat_s(info_txt, sizeof info_txt, skaicius);
+			strcat_s(info_txt, sizeof info_txt, value_text);
 			info_write(info_txt);
 		}
 	}
@@ -331,7 +443,7 @@ int cfg_reads(struct parameters_str *params)
 
 	erroras = fopen_s(&fp, "_cfg.txt", "r");
 	if (erroras != 0) {
-		strcpy_s(err_txt, sizeof err_txt, "_cfg.txt --- Nepavyko atidaryti konfiguracinio failo");
+		strcpy_s(err_txt, sizeof err_txt, err_no_cfg_file[lang]);
 		err_write_show(err_txt);
 		return 1;
 	}

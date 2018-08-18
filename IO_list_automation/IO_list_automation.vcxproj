@@ -139,8 +139,13 @@
     <ClCompile Include="config.cpp" />
     <ClCompile Include="design.cpp" />
     <ClCompile Include="HelpForm.cpp" />
+    <ClCompile Include="KKS_editForm.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="signals.cpp" />
+    <ClCompile Include="String_info.cpp" />
+    <ClCompile Include="Strings.cpp" />
+    <ClCompile Include="String_errors.cpp" />
+    <ClCompile Include="String_progress.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AboutForm.h">
@@ -148,7 +153,11 @@
     </ClInclude>
     <ClInclude Include="config.h" />
     <ClInclude Include="design.h" />
+    <ClInclude Include="String_progress.h" />
     <ClInclude Include="HelpForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KKS_editForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MainWindow.h">
@@ -156,10 +165,19 @@
     </ClInclude>
     <ClInclude Include="resource.h" />
     <ClInclude Include="signals.h" />
+    <ClInclude Include="Strings.h" />
+    <ClInclude Include="String_errors.h" />
+    <ClInclude Include="String_info.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KKS_editForm.resx">
+      <DependentUpon>KKS_editForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.h</DependentUpon>

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 namespace IOlistautomation {
 
@@ -34,6 +34,9 @@ namespace IOlistautomation {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Label^  label1;
+	protected:
+	private: System::Windows::Forms::Label^  label2;
 
 	private:
 		/// <summary>
@@ -48,13 +51,35 @@ namespace IOlistautomation {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(12, 49);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(185, 13);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Copyright (C) 2018, Aldis Adomavičius";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(12, 20);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(290, 13);
+			this->label2->TabIndex = 1;
+			this->label2->Text = L"IO list Masteris - tai excelio pakeitimas apdorojant IO sarasus";
 			// 
 			// AboutForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(455, 149);
+			this->ClientSize = System::Drawing::Size(315, 94);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
@@ -62,6 +87,7 @@ namespace IOlistautomation {
 			this->Text = L"About";
 			this->TopMost = true;
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion

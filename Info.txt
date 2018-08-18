@@ -1,0 +1,56 @@
+Check global strings if size is ok with selected language					
+					
+File ->					
+	Save			Left:  Objects	Done: Design, IO_list
+	Save all			Left:  Objects	Done: Design, IO_list
+	Load			Left:  Objects	Done: Design, IO_list
+	Help			Done, need more info there	
+	About			Done, need more info there	
+	Exit			Done	
+					
+Project ->					
+	Design			Done	
+	IO compare				
+	Transfer Data to Signals			Done	
+	CPU selected->				
+		Beckhoff			
+		800xA			
+		Siemens			
+		Schneider			
+	Scada Selected->				
+		System Platform			
+		WinCC			
+	Language Selected->				
+		LT			
+		LV			
+		EN			
+		RU			
+Signals->					
+	KKS edit			Done	
+	Find function				
+Uniques->					
+	Find Uniques				
+	Find Objects				
+	Correct Comments				
+	Transfer to Signals				
+Declare->					
+	PID				
+	Valve				
+	HC				
+	AI				
+	Motor				
+	FC				
+IO->					
+	Create IO				
+Instance->					
+	PID				
+	Valve				
+	HC				
+	AI				
+	Motor				
+SCADA->					
+	PID				
+	Valve				
+	HC				
+	AI				
+	Motor				

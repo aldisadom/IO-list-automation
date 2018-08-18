@@ -1,1 +1,2 @@
-2018-08-16  22:33:17.978 - Klaida: Si programos versija nera pilnai testuota tad atsargiai naudotis !!!
+2018-08-18  23:57:04.391 - Error: This program is not stable ant not fully tested, carefully use it !!!
+2018-08-18  23:57:05.602 - Error: ---------------------------------------------------------

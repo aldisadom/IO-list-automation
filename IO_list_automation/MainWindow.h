@@ -4,9 +4,11 @@
 #include "design.h"
 #include "signals.h"
 #include "AboutForm.h"
+#include "HelpForm.h"
+#include "KKS_editForm.h"
+
 
 #include <msclr/marshal_cppstd.h>
-
 
 
 namespace IOlistautomation {
@@ -62,61 +64,70 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::TabPage^  tabPage2;
 	private: System::Windows::Forms::TabPage^  tabPage3;
 	private: System::Windows::Forms::ToolStripMenuItem^  fileToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  saveToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  loadToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  helpToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  aboutToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  exitToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  File_Save;
+	private: System::Windows::Forms::ToolStripMenuItem^  File_Load;
+	private: System::Windows::Forms::ToolStripMenuItem^  File_Help;
+	private: System::Windows::Forms::ToolStripMenuItem^  File_About;
+	private: System::Windows::Forms::ToolStripMenuItem^  File_Exit;
 	private: System::Windows::Forms::ToolStripMenuItem^  projectToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  designToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  iOCompareToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_Design;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_IOcompare;
 	private: System::Windows::Forms::ToolStripMenuItem^  cPUSelectToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  beckhoffToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  xAToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  siemensToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  schneiderToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_CPU_Beckhoff;
+
+
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_CPU_800xA;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_CPU_Siemens;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_CPU_Schneider;
 	private: System::Windows::Forms::ToolStripMenuItem^  sCADASelectToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  systemPlatformToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_SCADA_SystemPlatform;
 	private: System::Windows::Forms::ToolStripMenuItem^  languageSelectToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  lTToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  lVToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  eNToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  rUToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_Language_LT;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_Language_LV;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_Language_EN;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_Language_RU;
 	private: System::Windows::Forms::ToolStripMenuItem^  signalsToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  kKSEditToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  findFunctionToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Signals_KKSedit;
+	private: System::Windows::Forms::ToolStripMenuItem^  Signals_FindFunction;
 	private: System::Windows::Forms::ToolStripMenuItem^  uniquesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  declareToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  iOToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  instanceToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  sCADAToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  findUniquesToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  findObjectsToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  correctCommentsToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  transferToSignalsToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  pIDToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  valveToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  hCToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  aIToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  motorToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  fCToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  createIOToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  pIDToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  valveToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  hCToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  aIToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  motorToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  pIDToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripMenuItem^  valveToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripMenuItem^  hCToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripMenuItem^  aIToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripMenuItem^  motorToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripMenuItem^  winCCToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_FindUniques;
+	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_FindObjects;
+	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_CorrectComments;
+	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_TransferSignals;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_PID;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_Valve;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_HC;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_AI;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_Motor;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_FC;
+	private: System::Windows::Forms::ToolStripMenuItem^  IO_CreateIO;
+	private: System::Windows::Forms::ToolStripMenuItem^  Instance_PID;
+	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Valve;
+	private: System::Windows::Forms::ToolStripMenuItem^  Instance_HC;
+	private: System::Windows::Forms::ToolStripMenuItem^  Instance_AI;
+	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Motor;
+	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_PID;
+	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_Valve;
+	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_HC;
+	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_AI;
+	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_Motor;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_SCADA_WinCC;
 	public: System::Windows::Forms::ProgressBar^  progressBaras;
 
 
 	public: System::Windows::Forms::Label^  Progress_label;
-	private: System::Windows::Forms::ToolStripMenuItem^  transferDataToSignalsToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  Project_TransferIO;
+	private: System::Windows::Forms::ToolStripMenuItem^  File_SaveALL;
+	public: System::Windows::Forms::DataGridView^  Signals_grid;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator1;
+	public:
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator2;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator3;
+	private:
 	public:
 
 
@@ -136,64 +147,70 @@ namespace IOlistautomation {
 		void InitializeComponent(void)
 		{
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MainWindow::typeid));
 			this->Design_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->saveToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->loadToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->File_Save = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->File_SaveALL = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->File_Load = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->File_Help = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->File_About = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->File_Exit = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->projectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->designToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->iOCompareToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->transferDataToSignalsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_Design = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_IOcompare = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_TransferIO = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator3 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->cPUSelectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->beckhoffToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->xAToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->siemensToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->schneiderToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_CPU_Beckhoff = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_CPU_800xA = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_CPU_Siemens = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_CPU_Schneider = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sCADASelectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->systemPlatformToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->winCCToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_SCADA_SystemPlatform = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_SCADA_WinCC = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->languageSelectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->lTToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->lVToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->eNToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->rUToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_Language_LT = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_Language_LV = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_Language_EN = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_Language_RU = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->signalsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->kKSEditToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->findFunctionToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Signals_KKSedit = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Signals_FindFunction = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->uniquesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->findUniquesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->findObjectsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->correctCommentsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->transferToSignalsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Uniques_FindUniques = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Uniques_FindObjects = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Uniques_CorrectComments = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Uniques_TransferSignals = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->declareToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->pIDToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->valveToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->hCToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aIToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->motorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->fCToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_HC = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_AI = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_Motor = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_FC = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->iOToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->createIOToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->IO_CreateIO = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->instanceToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->pIDToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->valveToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->hCToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aIToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->motorToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_HC = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_AI = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_Motor = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sCADAToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->pIDToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->valveToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->hCToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aIToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->motorToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->SCADA_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->SCADA_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->SCADA_HC = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->SCADA_AI = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->SCADA_Motor = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->Signals_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->progressBaras = (gcnew System::Windows::Forms::ProgressBar());
 			this->Progress_label = (gcnew System::Windows::Forms::Label());
@@ -201,6 +218,8 @@ namespace IOlistautomation {
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
+			this->tabPage2->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Signals_grid))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Design_grid
@@ -221,6 +240,7 @@ namespace IOlistautomation {
 			this->Design_grid->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->Design_grid->Location = System::Drawing::Point(0, 3);
 			this->Design_grid->Name = L"Design_grid";
+			this->Design_grid->RowHeadersWidth = 10;
 			this->Design_grid->Size = System::Drawing::Size(850, 298);
 			this->Design_grid->TabIndex = 0;
 			this->Design_grid->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MainWindow::dataGridView1_CellContentClick);
@@ -240,398 +260,474 @@ namespace IOlistautomation {
 			// 
 			// fileToolStripMenuItem
 			// 
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
-				this->saveToolStripMenuItem,
-					this->loadToolStripMenuItem, this->helpToolStripMenuItem, this->aboutToolStripMenuItem, this->exitToolStripMenuItem
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(8) {
+				this->File_Save,
+					this->File_SaveALL, this->File_Load, this->toolStripSeparator1, this->File_Help, this->File_About, this->toolStripSeparator2,
+					this->File_Exit
 			});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
 			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
 			this->fileToolStripMenuItem->Text = L"File";
 			// 
-			// saveToolStripMenuItem
+			// File_Save
 			// 
-			this->saveToolStripMenuItem->Name = L"saveToolStripMenuItem";
-			this->saveToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->saveToolStripMenuItem->Text = L"Save";
-			this->saveToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::saveToolStripMenuItem_Click);
+			this->File_Save->Name = L"File_Save";
+			this->File_Save->Size = System::Drawing::Size(180, 22);
+			this->File_Save->Text = L"Save";
+			this->File_Save->Click += gcnew System::EventHandler(this, &MainWindow::File_Save_Click);
 			// 
-			// loadToolStripMenuItem
+			// File_SaveALL
 			// 
-			this->loadToolStripMenuItem->Name = L"loadToolStripMenuItem";
-			this->loadToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->loadToolStripMenuItem->Text = L"Load";
-			this->loadToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::loadToolStripMenuItem_Click);
+			this->File_SaveALL->Name = L"File_SaveALL";
+			this->File_SaveALL->Size = System::Drawing::Size(180, 22);
+			this->File_SaveALL->Text = L"Save all";
+			this->File_SaveALL->Click += gcnew System::EventHandler(this, &MainWindow::File_SaveALL_Click);
 			// 
-			// helpToolStripMenuItem
+			// File_Load
 			// 
-			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
-			this->helpToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->helpToolStripMenuItem->Text = L"Help";
-			this->helpToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::helpToolStripMenuItem_Click);
+			this->File_Load->Name = L"File_Load";
+			this->File_Load->Size = System::Drawing::Size(180, 22);
+			this->File_Load->Text = L"Load";
+			this->File_Load->Click += gcnew System::EventHandler(this, &MainWindow::File_Load_Click);
 			// 
-			// aboutToolStripMenuItem
+			// toolStripSeparator1
 			// 
-			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
-			this->aboutToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->aboutToolStripMenuItem->Text = L"About";
-			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::aboutToolStripMenuItem_Click);
+			this->toolStripSeparator1->Name = L"toolStripSeparator1";
+			this->toolStripSeparator1->Size = System::Drawing::Size(177, 6);
 			// 
-			// exitToolStripMenuItem
+			// File_Help
 			// 
-			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->exitToolStripMenuItem->Text = L"Exit";
-			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::exitToolStripMenuItem_Click);
+			this->File_Help->Name = L"File_Help";
+			this->File_Help->Size = System::Drawing::Size(180, 22);
+			this->File_Help->Text = L"Help";
+			this->File_Help->Click += gcnew System::EventHandler(this, &MainWindow::File_Help_Click);
+			// 
+			// File_About
+			// 
+			this->File_About->Name = L"File_About";
+			this->File_About->Size = System::Drawing::Size(180, 22);
+			this->File_About->Text = L"About";
+			this->File_About->Click += gcnew System::EventHandler(this, &MainWindow::File_About_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this->toolStripSeparator2->Name = L"toolStripSeparator2";
+			this->toolStripSeparator2->Size = System::Drawing::Size(177, 6);
+			// 
+			// File_Exit
+			// 
+			this->File_Exit->Name = L"File_Exit";
+			this->File_Exit->Size = System::Drawing::Size(180, 22);
+			this->File_Exit->Text = L"Exit";
+			this->File_Exit->Click += gcnew System::EventHandler(this, &MainWindow::File_Exit_Click);
 			// 
 			// projectToolStripMenuItem
 			// 
-			this->projectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
-				this->designToolStripMenuItem,
-					this->iOCompareToolStripMenuItem, this->transferDataToSignalsToolStripMenuItem, this->cPUSelectToolStripMenuItem, this->sCADASelectToolStripMenuItem,
+			this->projectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {
+				this->Project_Design,
+					this->Project_IOcompare, this->Project_TransferIO, this->toolStripSeparator3, this->cPUSelectToolStripMenuItem, this->sCADASelectToolStripMenuItem,
 					this->languageSelectToolStripMenuItem
 			});
 			this->projectToolStripMenuItem->Name = L"projectToolStripMenuItem";
 			this->projectToolStripMenuItem->Size = System::Drawing::Size(56, 20);
 			this->projectToolStripMenuItem->Text = L"Project";
 			// 
-			// designToolStripMenuItem
+			// Project_Design
 			// 
-			this->designToolStripMenuItem->Name = L"designToolStripMenuItem";
-			this->designToolStripMenuItem->Size = System::Drawing::Size(201, 22);
-			this->designToolStripMenuItem->Text = L"Design";
-			this->designToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::designToolStripMenuItem_Click);
+			this->Project_Design->Name = L"Project_Design";
+			this->Project_Design->Size = System::Drawing::Size(201, 22);
+			this->Project_Design->Text = L"Design";
+			this->Project_Design->Click += gcnew System::EventHandler(this, &MainWindow::Project_Design_Click);
 			// 
-			// iOCompareToolStripMenuItem
+			// Project_IOcompare
 			// 
-			this->iOCompareToolStripMenuItem->Name = L"iOCompareToolStripMenuItem";
-			this->iOCompareToolStripMenuItem->Size = System::Drawing::Size(201, 22);
-			this->iOCompareToolStripMenuItem->Text = L"IO compare";
-			this->iOCompareToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::iOCompareToolStripMenuItem_Click);
+			this->Project_IOcompare->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Project_IOcompare->Name = L"Project_IOcompare";
+			this->Project_IOcompare->Size = System::Drawing::Size(201, 22);
+			this->Project_IOcompare->Text = L"IO compare";
+			this->Project_IOcompare->Click += gcnew System::EventHandler(this, &MainWindow::Project_IOcompare_Click);
 			// 
-			// transferDataToSignalsToolStripMenuItem
+			// Project_TransferIO
 			// 
-			this->transferDataToSignalsToolStripMenuItem->Name = L"transferDataToSignalsToolStripMenuItem";
-			this->transferDataToSignalsToolStripMenuItem->Size = System::Drawing::Size(201, 22);
-			this->transferDataToSignalsToolStripMenuItem->Text = L"Transfer Data To Signals";
-			this->transferDataToSignalsToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::transferDataToSignalsToolStripMenuItem_Click);
+			this->Project_TransferIO->Name = L"Project_TransferIO";
+			this->Project_TransferIO->Size = System::Drawing::Size(201, 22);
+			this->Project_TransferIO->Text = L"Transfer Data To Signals";
+			this->Project_TransferIO->Click += gcnew System::EventHandler(this, &MainWindow::Project_TransferIO_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this->toolStripSeparator3->Name = L"toolStripSeparator3";
+			this->toolStripSeparator3->Size = System::Drawing::Size(198, 6);
 			// 
 			// cPUSelectToolStripMenuItem
 			// 
+			this->cPUSelectToolStripMenuItem->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->cPUSelectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
-				this->beckhoffToolStripMenuItem,
-					this->xAToolStripMenuItem, this->siemensToolStripMenuItem, this->schneiderToolStripMenuItem
+				this->Project_CPU_Beckhoff,
+					this->Project_CPU_800xA, this->Project_CPU_Siemens, this->Project_CPU_Schneider
 			});
 			this->cPUSelectToolStripMenuItem->Name = L"cPUSelectToolStripMenuItem";
 			this->cPUSelectToolStripMenuItem->Size = System::Drawing::Size(201, 22);
 			this->cPUSelectToolStripMenuItem->Text = L"CPU Select";
 			// 
-			// beckhoffToolStripMenuItem
+			// Project_CPU_Beckhoff
 			// 
-			this->beckhoffToolStripMenuItem->Name = L"beckhoffToolStripMenuItem";
-			this->beckhoffToolStripMenuItem->Size = System::Drawing::Size(126, 22);
-			this->beckhoffToolStripMenuItem->Text = L"Beckhoff";
-			this->beckhoffToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::beckhoffToolStripMenuItem_Click);
+			this->Project_CPU_Beckhoff->Name = L"Project_CPU_Beckhoff";
+			this->Project_CPU_Beckhoff->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_Beckhoff->Text = L"Beckhoff";
+			this->Project_CPU_Beckhoff->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_Beckhoff_Click);
 			// 
-			// xAToolStripMenuItem
+			// Project_CPU_800xA
 			// 
-			this->xAToolStripMenuItem->Name = L"xAToolStripMenuItem";
-			this->xAToolStripMenuItem->Size = System::Drawing::Size(126, 22);
-			this->xAToolStripMenuItem->Text = L"800xA";
-			this->xAToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::xAToolStripMenuItem_Click);
+			this->Project_CPU_800xA->Name = L"Project_CPU_800xA";
+			this->Project_CPU_800xA->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_800xA->Text = L"800xA";
+			this->Project_CPU_800xA->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_800xA_Click);
 			// 
-			// siemensToolStripMenuItem
+			// Project_CPU_Siemens
 			// 
-			this->siemensToolStripMenuItem->Name = L"siemensToolStripMenuItem";
-			this->siemensToolStripMenuItem->Size = System::Drawing::Size(126, 22);
-			this->siemensToolStripMenuItem->Text = L"Siemens";
-			this->siemensToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::siemensToolStripMenuItem_Click);
+			this->Project_CPU_Siemens->Name = L"Project_CPU_Siemens";
+			this->Project_CPU_Siemens->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_Siemens->Text = L"Siemens";
+			this->Project_CPU_Siemens->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_Siemens_Click);
 			// 
-			// schneiderToolStripMenuItem
+			// Project_CPU_Schneider
 			// 
-			this->schneiderToolStripMenuItem->Name = L"schneiderToolStripMenuItem";
-			this->schneiderToolStripMenuItem->Size = System::Drawing::Size(126, 22);
-			this->schneiderToolStripMenuItem->Text = L"Schneider";
-			this->schneiderToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::schneiderToolStripMenuItem_Click);
+			this->Project_CPU_Schneider->Name = L"Project_CPU_Schneider";
+			this->Project_CPU_Schneider->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_Schneider->Text = L"Schneider";
+			this->Project_CPU_Schneider->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_Schneider_Click);
 			// 
 			// sCADASelectToolStripMenuItem
 			// 
+			this->sCADASelectToolStripMenuItem->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->sCADASelectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->systemPlatformToolStripMenuItem,
-					this->winCCToolStripMenuItem
+				this->Project_SCADA_SystemPlatform,
+					this->Project_SCADA_WinCC
 			});
 			this->sCADASelectToolStripMenuItem->Name = L"sCADASelectToolStripMenuItem";
 			this->sCADASelectToolStripMenuItem->Size = System::Drawing::Size(201, 22);
 			this->sCADASelectToolStripMenuItem->Text = L"SCADA Select";
 			// 
-			// systemPlatformToolStripMenuItem
+			// Project_SCADA_SystemPlatform
 			// 
-			this->systemPlatformToolStripMenuItem->Name = L"systemPlatformToolStripMenuItem";
-			this->systemPlatformToolStripMenuItem->Size = System::Drawing::Size(161, 22);
-			this->systemPlatformToolStripMenuItem->Text = L"System Platform";
-			this->systemPlatformToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::systemPlatformToolStripMenuItem_Click);
+			this->Project_SCADA_SystemPlatform->Name = L"Project_SCADA_SystemPlatform";
+			this->Project_SCADA_SystemPlatform->Size = System::Drawing::Size(161, 22);
+			this->Project_SCADA_SystemPlatform->Text = L"System Platform";
+			this->Project_SCADA_SystemPlatform->Click += gcnew System::EventHandler(this, &MainWindow::Project_SCADA_SystemPlatform_Click);
 			// 
-			// winCCToolStripMenuItem
+			// Project_SCADA_WinCC
 			// 
-			this->winCCToolStripMenuItem->Name = L"winCCToolStripMenuItem";
-			this->winCCToolStripMenuItem->Size = System::Drawing::Size(161, 22);
-			this->winCCToolStripMenuItem->Text = L"WinCC";
-			this->winCCToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::winCCToolStripMenuItem_Click);
+			this->Project_SCADA_WinCC->Name = L"Project_SCADA_WinCC";
+			this->Project_SCADA_WinCC->Size = System::Drawing::Size(161, 22);
+			this->Project_SCADA_WinCC->Text = L"WinCC";
+			this->Project_SCADA_WinCC->Click += gcnew System::EventHandler(this, &MainWindow::Project_SCADA_WinCC_Click);
 			// 
 			// languageSelectToolStripMenuItem
 			// 
+			this->languageSelectToolStripMenuItem->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->languageSelectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
-				this->lTToolStripMenuItem,
-					this->lVToolStripMenuItem, this->eNToolStripMenuItem, this->rUToolStripMenuItem
+				this->Project_Language_LT,
+					this->Project_Language_EN, this->Project_Language_LV, this->Project_Language_RU
 			});
 			this->languageSelectToolStripMenuItem->Name = L"languageSelectToolStripMenuItem";
 			this->languageSelectToolStripMenuItem->Size = System::Drawing::Size(201, 22);
 			this->languageSelectToolStripMenuItem->Text = L"Language Select";
 			// 
-			// lTToolStripMenuItem
+			// Project_Language_LT
 			// 
-			this->lTToolStripMenuItem->Name = L"lTToolStripMenuItem";
-			this->lTToolStripMenuItem->Size = System::Drawing::Size(89, 22);
-			this->lTToolStripMenuItem->Text = L"LT";
-			this->lTToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::lTToolStripMenuItem_Click);
+			this->Project_Language_LT->Name = L"Project_Language_LT";
+			this->Project_Language_LT->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_LT->Text = L"LT";
+			this->Project_Language_LT->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_LT_Click);
 			// 
-			// lVToolStripMenuItem
+			// Project_Language_LV
 			// 
-			this->lVToolStripMenuItem->Name = L"lVToolStripMenuItem";
-			this->lVToolStripMenuItem->Size = System::Drawing::Size(89, 22);
-			this->lVToolStripMenuItem->Text = L"LV";
-			this->lVToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::lVToolStripMenuItem_Click);
+			this->Project_Language_LV->Name = L"Project_Language_LV";
+			this->Project_Language_LV->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_LV->Text = L"LV";
+			this->Project_Language_LV->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_LV_Click);
 			// 
-			// eNToolStripMenuItem
+			// Project_Language_EN
 			// 
-			this->eNToolStripMenuItem->Name = L"eNToolStripMenuItem";
-			this->eNToolStripMenuItem->Size = System::Drawing::Size(89, 22);
-			this->eNToolStripMenuItem->Text = L"EN";
-			this->eNToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::eNToolStripMenuItem_Click);
+			this->Project_Language_EN->Name = L"Project_Language_EN";
+			this->Project_Language_EN->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_EN->Text = L"EN";
+			this->Project_Language_EN->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_EN_Click);
 			// 
-			// rUToolStripMenuItem
+			// Project_Language_RU
 			// 
-			this->rUToolStripMenuItem->Name = L"rUToolStripMenuItem";
-			this->rUToolStripMenuItem->Size = System::Drawing::Size(89, 22);
-			this->rUToolStripMenuItem->Text = L"RU";
-			this->rUToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::rUToolStripMenuItem_Click);
+			this->Project_Language_RU->Name = L"Project_Language_RU";
+			this->Project_Language_RU->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_RU->Text = L"RU";
+			this->Project_Language_RU->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_RU_Click);
 			// 
 			// signalsToolStripMenuItem
 			// 
 			this->signalsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->kKSEditToolStripMenuItem,
-					this->findFunctionToolStripMenuItem
+				this->Signals_KKSedit,
+					this->Signals_FindFunction
 			});
 			this->signalsToolStripMenuItem->Name = L"signalsToolStripMenuItem";
 			this->signalsToolStripMenuItem->Size = System::Drawing::Size(56, 20);
 			this->signalsToolStripMenuItem->Text = L"Signals";
 			// 
-			// kKSEditToolStripMenuItem
+			// Signals_KKSedit
 			// 
-			this->kKSEditToolStripMenuItem->Name = L"kKSEditToolStripMenuItem";
-			this->kKSEditToolStripMenuItem->Size = System::Drawing::Size(145, 22);
-			this->kKSEditToolStripMenuItem->Text = L"KKS edit";
-			this->kKSEditToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::kKSEditToolStripMenuItem_Click);
+			this->Signals_KKSedit->BackColor = System::Drawing::SystemColors::Control;
+			this->Signals_KKSedit->Name = L"Signals_KKSedit";
+			this->Signals_KKSedit->Size = System::Drawing::Size(180, 22);
+			this->Signals_KKSedit->Text = L"KKS edit";
+			this->Signals_KKSedit->Click += gcnew System::EventHandler(this, &MainWindow::Signals_KKSedit_Click);
 			// 
-			// findFunctionToolStripMenuItem
+			// Signals_FindFunction
 			// 
-			this->findFunctionToolStripMenuItem->Name = L"findFunctionToolStripMenuItem";
-			this->findFunctionToolStripMenuItem->Size = System::Drawing::Size(145, 22);
-			this->findFunctionToolStripMenuItem->Text = L"Find function";
-			this->findFunctionToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::findFunctionToolStripMenuItem_Click);
+			this->Signals_FindFunction->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Signals_FindFunction->Name = L"Signals_FindFunction";
+			this->Signals_FindFunction->Size = System::Drawing::Size(180, 22);
+			this->Signals_FindFunction->Text = L"Find function";
+			this->Signals_FindFunction->Click += gcnew System::EventHandler(this, &MainWindow::Signals_FindFunction_Click);
 			// 
 			// uniquesToolStripMenuItem
 			// 
 			this->uniquesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
-				this->findUniquesToolStripMenuItem,
-					this->findObjectsToolStripMenuItem, this->correctCommentsToolStripMenuItem, this->transferToSignalsToolStripMenuItem
+				this->Uniques_FindUniques,
+					this->Uniques_FindObjects, this->Uniques_CorrectComments, this->Uniques_TransferSignals
 			});
 			this->uniquesToolStripMenuItem->Name = L"uniquesToolStripMenuItem";
 			this->uniquesToolStripMenuItem->Size = System::Drawing::Size(62, 20);
 			this->uniquesToolStripMenuItem->Text = L"Uniques";
 			// 
-			// findUniquesToolStripMenuItem
+			// Uniques_FindUniques
 			// 
-			this->findUniquesToolStripMenuItem->Name = L"findUniquesToolStripMenuItem";
-			this->findUniquesToolStripMenuItem->Size = System::Drawing::Size(175, 22);
-			this->findUniquesToolStripMenuItem->Text = L"Find Uniques";
-			this->findUniquesToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::findUniquesToolStripMenuItem_Click);
+			this->Uniques_FindUniques->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_FindUniques->Name = L"Uniques_FindUniques";
+			this->Uniques_FindUniques->Size = System::Drawing::Size(198, 22);
+			this->Uniques_FindUniques->Text = L"Find Uniques";
+			this->Uniques_FindUniques->Click += gcnew System::EventHandler(this, &MainWindow::Uniques_FindUniques_Click);
 			// 
-			// findObjectsToolStripMenuItem
+			// Uniques_FindObjects
 			// 
-			this->findObjectsToolStripMenuItem->Name = L"findObjectsToolStripMenuItem";
-			this->findObjectsToolStripMenuItem->Size = System::Drawing::Size(175, 22);
-			this->findObjectsToolStripMenuItem->Text = L"Find Objects";
-			this->findObjectsToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::findObjectsToolStripMenuItem_Click);
+			this->Uniques_FindObjects->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_FindObjects->Name = L"Uniques_FindObjects";
+			this->Uniques_FindObjects->Size = System::Drawing::Size(198, 22);
+			this->Uniques_FindObjects->Text = L"Find Objects";
+			this->Uniques_FindObjects->Click += gcnew System::EventHandler(this, &MainWindow::Uniques_FindObjects_Click);
 			// 
-			// correctCommentsToolStripMenuItem
+			// Uniques_CorrectComments
 			// 
-			this->correctCommentsToolStripMenuItem->Name = L"correctCommentsToolStripMenuItem";
-			this->correctCommentsToolStripMenuItem->Size = System::Drawing::Size(175, 22);
-			this->correctCommentsToolStripMenuItem->Text = L"Correct Comments";
-			this->correctCommentsToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::correctCommentsToolStripMenuItem_Click);
+			this->Uniques_CorrectComments->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_CorrectComments->Name = L"Uniques_CorrectComments";
+			this->Uniques_CorrectComments->Size = System::Drawing::Size(198, 22);
+			this->Uniques_CorrectComments->Text = L"Correct Comments";
+			this->Uniques_CorrectComments->Click += gcnew System::EventHandler(this, &MainWindow::Uniques_CorrectComments_Click);
 			// 
-			// transferToSignalsToolStripMenuItem
+			// Uniques_TransferSignals
 			// 
-			this->transferToSignalsToolStripMenuItem->Name = L"transferToSignalsToolStripMenuItem";
-			this->transferToSignalsToolStripMenuItem->Size = System::Drawing::Size(175, 22);
-			this->transferToSignalsToolStripMenuItem->Text = L"Transfer to Signals";
-			this->transferToSignalsToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::transferToSignalsToolStripMenuItem_Click);
+			this->Uniques_TransferSignals->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_TransferSignals->Name = L"Uniques_TransferSignals";
+			this->Uniques_TransferSignals->Size = System::Drawing::Size(198, 22);
+			this->Uniques_TransferSignals->Text = L"Transfer Data to Signals";
+			this->Uniques_TransferSignals->Click += gcnew System::EventHandler(this, &MainWindow::Uniques_TransferSignals_Click);
 			// 
 			// declareToolStripMenuItem
 			// 
 			this->declareToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
-				this->pIDToolStripMenuItem,
-					this->valveToolStripMenuItem, this->hCToolStripMenuItem, this->aIToolStripMenuItem, this->motorToolStripMenuItem, this->fCToolStripMenuItem
+				this->Declare_PID,
+					this->Declare_Valve, this->Declare_HC, this->Declare_AI, this->Declare_Motor, this->Declare_FC
 			});
 			this->declareToolStripMenuItem->Name = L"declareToolStripMenuItem";
 			this->declareToolStripMenuItem->Size = System::Drawing::Size(58, 20);
 			this->declareToolStripMenuItem->Text = L"Declare";
 			// 
-			// pIDToolStripMenuItem
+			// Declare_PID
 			// 
-			this->pIDToolStripMenuItem->Name = L"pIDToolStripMenuItem";
-			this->pIDToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->pIDToolStripMenuItem->Text = L"PID";
-			this->pIDToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::pIDToolStripMenuItem_Click);
+			this->Declare_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_PID->Name = L"Declare_PID";
+			this->Declare_PID->Size = System::Drawing::Size(107, 22);
+			this->Declare_PID->Text = L"PID";
+			this->Declare_PID->Click += gcnew System::EventHandler(this, &MainWindow::Declare_PID_Click);
 			// 
-			// valveToolStripMenuItem
+			// Declare_Valve
 			// 
-			this->valveToolStripMenuItem->Name = L"valveToolStripMenuItem";
-			this->valveToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->valveToolStripMenuItem->Text = L"Valve";
-			this->valveToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::valveToolStripMenuItem_Click);
+			this->Declare_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_Valve->Name = L"Declare_Valve";
+			this->Declare_Valve->Size = System::Drawing::Size(107, 22);
+			this->Declare_Valve->Text = L"Valve";
+			this->Declare_Valve->Click += gcnew System::EventHandler(this, &MainWindow::Declare_Valve_Click);
 			// 
-			// hCToolStripMenuItem
+			// Declare_HC
 			// 
-			this->hCToolStripMenuItem->Name = L"hCToolStripMenuItem";
-			this->hCToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->hCToolStripMenuItem->Text = L"HC";
-			this->hCToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::hCToolStripMenuItem_Click);
+			this->Declare_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_HC->Name = L"Declare_HC";
+			this->Declare_HC->Size = System::Drawing::Size(107, 22);
+			this->Declare_HC->Text = L"HC";
+			this->Declare_HC->Click += gcnew System::EventHandler(this, &MainWindow::Declare_HC_Click);
 			// 
-			// aIToolStripMenuItem
+			// Declare_AI
 			// 
-			this->aIToolStripMenuItem->Name = L"aIToolStripMenuItem";
-			this->aIToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->aIToolStripMenuItem->Text = L"AI";
-			this->aIToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::aIToolStripMenuItem_Click);
+			this->Declare_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_AI->Name = L"Declare_AI";
+			this->Declare_AI->Size = System::Drawing::Size(107, 22);
+			this->Declare_AI->Text = L"AI";
+			this->Declare_AI->Click += gcnew System::EventHandler(this, &MainWindow::Declare_AI_Click);
 			// 
-			// motorToolStripMenuItem
+			// Declare_Motor
 			// 
-			this->motorToolStripMenuItem->Name = L"motorToolStripMenuItem";
-			this->motorToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->motorToolStripMenuItem->Text = L"Motor";
-			this->motorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::motorToolStripMenuItem_Click);
+			this->Declare_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_Motor->Name = L"Declare_Motor";
+			this->Declare_Motor->Size = System::Drawing::Size(107, 22);
+			this->Declare_Motor->Text = L"Motor";
+			this->Declare_Motor->Click += gcnew System::EventHandler(this, &MainWindow::Declare_Motor_Click);
 			// 
-			// fCToolStripMenuItem
+			// Declare_FC
 			// 
-			this->fCToolStripMenuItem->Name = L"fCToolStripMenuItem";
-			this->fCToolStripMenuItem->Size = System::Drawing::Size(107, 22);
-			this->fCToolStripMenuItem->Text = L"FC";
-			this->fCToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::fCToolStripMenuItem_Click);
+			this->Declare_FC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_FC->Name = L"Declare_FC";
+			this->Declare_FC->Size = System::Drawing::Size(107, 22);
+			this->Declare_FC->Text = L"FC";
+			this->Declare_FC->Click += gcnew System::EventHandler(this, &MainWindow::Declare_FC_Click);
 			// 
 			// iOToolStripMenuItem
 			// 
-			this->iOToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->createIOToolStripMenuItem });
+			this->iOToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->IO_CreateIO });
 			this->iOToolStripMenuItem->Name = L"iOToolStripMenuItem";
 			this->iOToolStripMenuItem->Size = System::Drawing::Size(31, 20);
 			this->iOToolStripMenuItem->Text = L"IO";
 			// 
-			// createIOToolStripMenuItem
+			// IO_CreateIO
 			// 
-			this->createIOToolStripMenuItem->Name = L"createIOToolStripMenuItem";
-			this->createIOToolStripMenuItem->Size = System::Drawing::Size(123, 22);
-			this->createIOToolStripMenuItem->Text = L"Create IO";
-			this->createIOToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainWindow::createIOToolStripMenuItem_Click);
+			this->IO_CreateIO->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->IO_CreateIO->Name = L"IO_CreateIO";
+			this->IO_CreateIO->Size = System::Drawing::Size(123, 22);
+			this->IO_CreateIO->Text = L"Create IO";
+			this->IO_CreateIO->Click += gcnew System::EventHandler(this, &MainWindow::IO_CreateIO_Click);
 			// 
 			// instanceToolStripMenuItem
 			// 
 			this->instanceToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
-				this->pIDToolStripMenuItem1,
-					this->valveToolStripMenuItem1, this->hCToolStripMenuItem1, this->aIToolStripMenuItem1, this->motorToolStripMenuItem1
+				this->Instance_PID,
+					this->Instance_Valve, this->Instance_HC, this->Instance_AI, this->Instance_Motor
 			});
 			this->instanceToolStripMenuItem->Name = L"instanceToolStripMenuItem";
 			this->instanceToolStripMenuItem->Size = System::Drawing::Size(63, 20);
 			this->instanceToolStripMenuItem->Text = L"Instance";
 			// 
-			// pIDToolStripMenuItem1
+			// Instance_PID
 			// 
-			this->pIDToolStripMenuItem1->Name = L"pIDToolStripMenuItem1";
-			this->pIDToolStripMenuItem1->Size = System::Drawing::Size(107, 22);
-			this->pIDToolStripMenuItem1->Text = L"PID";
-			this->pIDToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainWindow::pIDToolStripMenuItem1_Click);
+			this->Instance_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_PID->Name = L"Instance_PID";
+			this->Instance_PID->Size = System::Drawing::Size(107, 22);
+			this->Instance_PID->Text = L"PID";
+			this->Instance_PID->Click += gcnew System::EventHandler(this, &MainWindow::Instance_PID_Click);
 			// 
-			// valveToolStripMenuItem1
+			// Instance_Valve
 			// 
-			this->valveToolStripMenuItem1->Name = L"valveToolStripMenuItem1";
-			this->valveToolStripMenuItem1->Size = System::Drawing::Size(107, 22);
-			this->valveToolStripMenuItem1->Text = L"Valve";
-			this->valveToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainWindow::valveToolStripMenuItem1_Click);
+			this->Instance_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_Valve->Name = L"Instance_Valve";
+			this->Instance_Valve->Size = System::Drawing::Size(107, 22);
+			this->Instance_Valve->Text = L"Valve";
+			this->Instance_Valve->Click += gcnew System::EventHandler(this, &MainWindow::Instance_Valve_Click);
 			// 
-			// hCToolStripMenuItem1
+			// Instance_HC
 			// 
-			this->hCToolStripMenuItem1->Name = L"hCToolStripMenuItem1";
-			this->hCToolStripMenuItem1->Size = System::Drawing::Size(107, 22);
-			this->hCToolStripMenuItem1->Text = L"HC";
-			this->hCToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainWindow::hCToolStripMenuItem1_Click);
+			this->Instance_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_HC->Name = L"Instance_HC";
+			this->Instance_HC->Size = System::Drawing::Size(107, 22);
+			this->Instance_HC->Text = L"HC";
+			this->Instance_HC->Click += gcnew System::EventHandler(this, &MainWindow::Instance_HC_Click);
 			// 
-			// aIToolStripMenuItem1
+			// Instance_AI
 			// 
-			this->aIToolStripMenuItem1->Name = L"aIToolStripMenuItem1";
-			this->aIToolStripMenuItem1->Size = System::Drawing::Size(107, 22);
-			this->aIToolStripMenuItem1->Text = L"AI";
-			this->aIToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainWindow::aIToolStripMenuItem1_Click);
+			this->Instance_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_AI->Name = L"Instance_AI";
+			this->Instance_AI->Size = System::Drawing::Size(107, 22);
+			this->Instance_AI->Text = L"AI";
+			this->Instance_AI->Click += gcnew System::EventHandler(this, &MainWindow::Instance_AI_Click);
 			// 
-			// motorToolStripMenuItem1
+			// Instance_Motor
 			// 
-			this->motorToolStripMenuItem1->Name = L"motorToolStripMenuItem1";
-			this->motorToolStripMenuItem1->Size = System::Drawing::Size(107, 22);
-			this->motorToolStripMenuItem1->Text = L"Motor";
-			this->motorToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainWindow::motorToolStripMenuItem1_Click);
+			this->Instance_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_Motor->Name = L"Instance_Motor";
+			this->Instance_Motor->Size = System::Drawing::Size(107, 22);
+			this->Instance_Motor->Text = L"Motor";
+			this->Instance_Motor->Click += gcnew System::EventHandler(this, &MainWindow::Instance_Motor_Click);
 			// 
 			// sCADAToolStripMenuItem
 			// 
 			this->sCADAToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
-				this->pIDToolStripMenuItem2,
-					this->valveToolStripMenuItem2, this->hCToolStripMenuItem2, this->aIToolStripMenuItem2, this->motorToolStripMenuItem2
+				this->SCADA_PID,
+					this->SCADA_Valve, this->SCADA_HC, this->SCADA_AI, this->SCADA_Motor
 			});
 			this->sCADAToolStripMenuItem->Name = L"sCADAToolStripMenuItem";
 			this->sCADAToolStripMenuItem->Size = System::Drawing::Size(57, 20);
 			this->sCADAToolStripMenuItem->Text = L"SCADA";
 			// 
-			// pIDToolStripMenuItem2
+			// SCADA_PID
 			// 
-			this->pIDToolStripMenuItem2->Name = L"pIDToolStripMenuItem2";
-			this->pIDToolStripMenuItem2->Size = System::Drawing::Size(107, 22);
-			this->pIDToolStripMenuItem2->Text = L"PID";
-			this->pIDToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MainWindow::pIDToolStripMenuItem2_Click);
+			this->SCADA_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->SCADA_PID->Name = L"SCADA_PID";
+			this->SCADA_PID->Size = System::Drawing::Size(107, 22);
+			this->SCADA_PID->Text = L"PID";
+			this->SCADA_PID->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_PID_Click);
 			// 
-			// valveToolStripMenuItem2
+			// SCADA_Valve
 			// 
-			this->valveToolStripMenuItem2->Name = L"valveToolStripMenuItem2";
-			this->valveToolStripMenuItem2->Size = System::Drawing::Size(107, 22);
-			this->valveToolStripMenuItem2->Text = L"Valve";
-			this->valveToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MainWindow::valveToolStripMenuItem2_Click);
+			this->SCADA_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->SCADA_Valve->Name = L"SCADA_Valve";
+			this->SCADA_Valve->Size = System::Drawing::Size(107, 22);
+			this->SCADA_Valve->Text = L"Valve";
+			this->SCADA_Valve->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Valve_Click);
 			// 
-			// hCToolStripMenuItem2
+			// SCADA_HC
 			// 
-			this->hCToolStripMenuItem2->Name = L"hCToolStripMenuItem2";
-			this->hCToolStripMenuItem2->Size = System::Drawing::Size(107, 22);
-			this->hCToolStripMenuItem2->Text = L"HC";
-			this->hCToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MainWindow::hCToolStripMenuItem2_Click);
+			this->SCADA_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->SCADA_HC->Name = L"SCADA_HC";
+			this->SCADA_HC->Size = System::Drawing::Size(107, 22);
+			this->SCADA_HC->Text = L"HC";
+			this->SCADA_HC->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_HC_Click);
 			// 
-			// aIToolStripMenuItem2
+			// SCADA_AI
 			// 
-			this->aIToolStripMenuItem2->Name = L"aIToolStripMenuItem2";
-			this->aIToolStripMenuItem2->Size = System::Drawing::Size(107, 22);
-			this->aIToolStripMenuItem2->Text = L"AI";
-			this->aIToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MainWindow::aIToolStripMenuItem2_Click);
+			this->SCADA_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->SCADA_AI->Name = L"SCADA_AI";
+			this->SCADA_AI->Size = System::Drawing::Size(107, 22);
+			this->SCADA_AI->Text = L"AI";
+			this->SCADA_AI->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_AI_Click);
 			// 
-			// motorToolStripMenuItem2
+			// SCADA_Motor
 			// 
-			this->motorToolStripMenuItem2->Name = L"motorToolStripMenuItem2";
-			this->motorToolStripMenuItem2->Size = System::Drawing::Size(107, 22);
-			this->motorToolStripMenuItem2->Text = L"Motor";
-			this->motorToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MainWindow::motorToolStripMenuItem2_Click);
+			this->SCADA_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->SCADA_Motor->Name = L"SCADA_Motor";
+			this->SCADA_Motor->Size = System::Drawing::Size(107, 22);
+			this->SCADA_Motor->Text = L"Motor";
+			this->SCADA_Motor->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Motor_Click);
 			// 
 			// tabControl1
 			// 
@@ -660,6 +756,7 @@ namespace IOlistautomation {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->Signals_grid);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
@@ -667,6 +764,28 @@ namespace IOlistautomation {
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"IO_list";
 			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
+			// Signals_grid
+			// 
+			this->Signals_grid->AllowUserToResizeRows = false;
+			this->Signals_grid->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Signals_grid->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			this->Signals_grid->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->Signals_grid->Location = System::Drawing::Point(1, 1);
+			this->Signals_grid->Name = L"Signals_grid";
+			this->Signals_grid->RowHeadersWidth = 10;
+			this->Signals_grid->Size = System::Drawing::Size(850, 298);
+			this->Signals_grid->TabIndex = 1;
 			// 
 			// tabPage3
 			// 
@@ -721,239 +840,377 @@ namespace IOlistautomation {
 			this->menuStrip1->PerformLayout();
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
+			this->tabPage2->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Signals_grid))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void dataGridView1_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {
+		int a = 0;
 	}
 
 			 //menu file
-//empty
-	private: System::Void saveToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;	
+//half done
+	private: System::Void File_Save_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		int a = this->tabControl1->SelectedIndex;
 		switch (a)
 		{
-		case 0:	Project_save_data(true);
+		case 0:	Project_save_data(true," ");
 			break;
-		case 1:	Display_no_function(buttonName);
+		case 1:	Signals_save_data(true, " ");
 			break;
 		case 2:	Display_no_function(buttonName);
 			break;
 		}
 		
 	}
-//empty
-	private: System::Void loadToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+//half done
+	private: System::Void File_SaveALL_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+		
+		SaveFileDialog^ sfd = gcnew SaveFileDialog();
+		
+		sfd->Filter = "Save document |*.psave;*.ssave" +
+			"|All Files|*.*";
+		sfd->Filter = "Save document |*";
+
+		sfd->FileName = "";
+		std::string file_name;
+		
+		if (sfd->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			file_name = system_string_to_string(sfd->FileName);
+			Project_save_data(true, file_name);
+			Signals_save_data(true, file_name);
+		}
+		else
+		{
+			strcpy_s(err_txt, sizeof err_txt, button_text);
+			strcat_s(err_txt, sizeof err_txt, error_separator);
+			strcat_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
+			err_write_show(err_txt);
+		}
+				
+	}
+//half done
+	private: System::Void File_Load_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		int a = this->tabControl1->SelectedIndex;
 		switch (a)
 		{
-		case 0:	Project_Load_data();;
+		case 0:	Project_Load_data();
 			break;
-		case 1:	Display_no_function(buttonName);
+		case 1: Signals_Load_data();
 			break;
 		case 2:	Display_no_function(buttonName);
 			break;
 		}		
 	}
-//empty
-	private: System::Void helpToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
+//function done
+	private: System::Void File_Help_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		IOlistautomation::HelpForm helpas;
+		helpas.ShowDialog();
 	}
-//empty
-	private: System::Void aboutToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+//function done
+	private: System::Void File_About_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		IOlistautomation::AboutForm about;
 		about.ShowDialog();
 	}
 //function done
-	private: System::Void exitToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		strcpy_s(info_txt, sizeof info_txt, "Iseieta is aplikacijos paspaudus Exit");
+	private: System::Void File_Exit_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		strcpy_s(info_txt, sizeof info_txt, info_exit_aplication[lang]);
 		info_write(info_txt);
 		Application::Exit();
 	}
 
 			 //menu Project
 //function done
-	private: System::Void designToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_Design_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		if (Project_read_data() == 0)
 		{
-			if (Project_put_data_listview() == 0)
-			{
-				Signals_get_data_design();
-			}
+			Project_put_data_listview();
+			Signals_get_data_design();			
 		}
 
 	}
 //empty
-	private: System::Void iOCompareToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_IOcompare_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //function done
-	private: System::Void transferDataToSignalsToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_TransferIO_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Signals_get_data_design();
 	}
 //empty
-	private: System::Void beckhoffToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_CPU_Beckhoff_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void xAToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_CPU_800xA_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void siemensToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_CPU_Siemens_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void schneiderToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_CPU_Schneider_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void systemPlatformToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_SCADA_SystemPlatform_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void winCCToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_SCADA_WinCC_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void lTToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_Language_LT_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void lVToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_Language_LV_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void eNToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_Language_EN_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void rUToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Project_Language_RU_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 
 
 			 //menu Signals
-//empty
-	private: System::Void kKSEditToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
+//function done
+	private: System::Void Signals_KKSedit_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+		Signals_all_KKS_trim();		
 	}
 //empty
-	private: System::Void findFunctionToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Signals_FindFunction_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
 		Display_no_function(buttonName);
 	}
 
 
 			 //menu uniques
 //empty
-	private: System::Void findUniquesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Uniques_FindUniques_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void findObjectsToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Uniques_FindObjects_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void correctCommentsToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Uniques_CorrectComments_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void transferToSignalsToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Uniques_TransferSignals_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 
 
 			 //menu Declare
 //empty
-	private: System::Void pIDToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Declare_PID_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void valveToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Declare_Valve_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void hCToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Declare_HC_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void aIToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Declare_AI_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void motorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Declare_Motor_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void fCToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Declare_FC_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 
 
 			 //menu IO
 //empty
-	private: System::Void createIOToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void IO_CreateIO_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 
 
 			 //menu instance
 //empty
-	private: System::Void pIDToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Instance_PID_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void valveToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Instance_Valve_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void hCToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Instance_HC_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void aIToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Instance_AI_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 //empty
-	private: System::Void motorToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
+	private: System::Void Instance_Motor_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Display_no_function(buttonName);
 	}
 
@@ -961,31 +1218,45 @@ namespace IOlistautomation {
 
 			 //menu SCADA
 //empty
-	private: System::Void pIDToolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void valveToolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void hCToolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void aIToolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void motorToolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Text;
-		Display_no_function(buttonName);
-	}
+	private: System::Void SCADA_PID_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
 
+		Display_no_function(buttonName);
+	}
+//empty
+	private: System::Void SCADA_Valve_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		Display_no_function(buttonName);
+	}
+//empty
+	private: System::Void SCADA_HC_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		Display_no_function(buttonName);
+	}
+//empty
+	private: System::Void SCADA_AI_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		Display_no_function(buttonName);
+	}
+//empty
+	private: System::Void SCADA_Motor_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		Display_no_function(buttonName);		
+	}
 
 
 };

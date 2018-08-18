@@ -18,8 +18,6 @@ using namespace System::Threading;
 void Main() {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	
-	GlobalForm::forma = gcnew IOlistautomation::MainWindow;
 
 	// code before starting aplication
 	cfg_reads(&parameters);
@@ -29,14 +27,20 @@ void Main() {
 	}
 	if (unstable_release == 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, "Si programos versija nera pilnai testuota tad atsargiai naudotis !!!");
+		strcpy_s(err_txt, sizeof err_txt, err_unstable[lang]);
 		err_write_show(err_txt);
 	}
-	if (parameters.debug == 1)
-	{
-		// because forms designer gives error and cant eddit it
-		IOlistautomation::MainWindow flora;		
-	}
-	
+
+	// because forms designer gives error and cant eddit it sometimes
+//	IOlistautomation::MainWindow flora;		
+
+	strcpy_s(err_txt, sizeof err_txt, "---------------------------------------------------------");
+	err_write(err_txt);
+
+	GlobalForm::forma = gcnew IOlistautomation::MainWindow;
+//	this->valveToolStripMenuItem2->BackColor = System::Drawing::Color::Aqua;
+
+	GlobalForm::forma->ClientSize = System::Drawing::Size(parameters.width, parameters.height);
+
 	Application::Run(GlobalForm::forma);
 }
