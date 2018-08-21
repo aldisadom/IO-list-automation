@@ -254,8 +254,6 @@ namespace IOlistautomation {
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
-			KKS_init();
-
 		}
 #pragma endregion
 		private: void KKS_init(void)

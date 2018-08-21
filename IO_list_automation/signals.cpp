@@ -18,35 +18,47 @@ struct signal_str signals;
 struct object_str objects;
 struct learning_str learn;
 
-void dummy_function()
+void Signals_put_with_list()
 {
-	int row = 1;
-	int max_rows = 100;
-	int a = 0;
-	strcpy_s(info_txt, sizeof info_txt, "Skaitomi duomenys is excelio");
-	info_write(info_txt);
-	Show_progress( L"Skaitomi duomenys",100);
-
-
-	set_progress_value(a);
-
-
-	Hide_progress();
-	strcpy_s(info_txt, sizeof info_txt, "Skaitomi duomenys is excelio -- Done");
-	info_write(info_txt);
-
+	int a = signals.collumn_with.size();
+	if (a > 0 && parameters.auto_column_with == 0)
+	{
+		GlobalForm::forma->Signals_grid->AutoResizeColumns();
+		for (int i = 0; i < a; i++)
+		{
+			GlobalForm::forma->Signals_grid->Columns[i]->Width = signals.collumn_with[i];
+		}
+	}
+	else
+	{
+		GlobalForm::forma->Signals_grid->AutoResizeColumns();
+	}
 }
 
+void Signals_get_with_list()
+{
+	int a = GlobalForm::forma->Signals_grid->ColumnCount;
+	signals.collumn_with.resize(a);
+
+	for (int i = 0; i < a; i++)
+	{
+		signals.collumn_with[i] = GlobalForm::forma->Signals_grid->Columns[i]->Width;
+	}
+}
 
 int Signals_get_data_design()
 {
+	Project_get_data_listview();
+	if (project.valid_entries < 1)
+	{
+		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
+		strcat_s(err_txt, sizeof err_txt, info_separator);
+		strcat_s(err_txt, sizeof err_txt, design_txt[lang]);
+		return 1;
+	}
 
 	if (signals.valid_entries > 1)
 	{
-		if (unstable_release == 1)
-		{
-			Signals_save_data(false, " ");
-		}
 		if (show_confirm_window(conf_signal_overwrite[lang]) == IDOK)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
@@ -63,7 +75,7 @@ int Signals_get_data_design()
 			return 1;
 		}
 	}
-	Project_get_data_listview(true);
+	
 	
 	strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
 	strcat_s(info_txt, sizeof info_txt, info_separator);
@@ -181,6 +193,7 @@ void Signals_resize_data(int size)
 	signals.Object_text.resize(size);
 	signals.Extendet_object_text.resize(size);
 	signals.Function_text.resize(size);
+	signals.Function.resize(size);
 	signals.KKS.resize(size);
 	signals.Object_type.resize(size);
 }
@@ -200,6 +213,7 @@ void Signals_delete_row(int row)
 	signals.Object_text.erase(signals.Object_text.begin() + row);
 	signals.Extendet_object_text.erase(signals.Extendet_object_text.begin() + row);
 	signals.Function_text.erase(signals.Function_text.begin() + row);
+	signals.Function.erase(signals.Function.begin() + row);
 	signals.KKS.erase(signals.KKS.begin() + row);
 	signals.Object_type.erase(signals.Object_type.begin() + row);
 }
@@ -295,8 +309,10 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 
 int Signals_all_KKS_trim()
 {
+	Signals_get_data_listview();
 	if (signals.valid_entries > 1)
 	{
+		Signals_get_data_listview();
 		int i = 0;
 		while (1)
 		{			
@@ -344,6 +360,8 @@ int Signals_all_KKS_trim()
 	else
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
+		strcat_s(err_txt, sizeof err_txt, info_separator);
+		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
 		err_write_show(err_txt);
 		return 1;
 	}
@@ -351,12 +369,31 @@ int Signals_all_KKS_trim()
 	return 0;
 }
 
+
 int Signals_learn_data()
 {
-//	std::wstring file_name = L"\\learning\\";
-	std::wstring file_name = L"";
-	strcpy_s(info_txt, sizeof info_txt, info_learning[lang]);
-	info_write(info_txt);
+	if (learn.done == true)
+	{
+		if (show_confirm_window(conf_learn_overwrite[lang]) == IDOK)
+		{
+			project = {};
+			learn.done = false;			
+
+			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
+			strcat_s(info_txt, sizeof info_txt, info_separator);
+			strcat_s(info_txt, sizeof info_txt, learning_txt[lang]);
+			info_write(info_txt);
+
+		}
+		else
+		{
+			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
+			err_write(err_txt);
+			return 1;
+		}
+	}
+	
+	std::wstring file_name = L".\\learning\\";	
 
 	switch (parameters.Language)
 	{
@@ -376,10 +413,25 @@ int Signals_learn_data()
 	}
 	file_name.append(L".xls");
 
+	ifstream f(file_name.c_str());
+	if (f.good()== false)
+	{
+		string s = wstring_to_string(file_name);
+
+		strcpy_s(err_txt, sizeof err_txt, err_no_learn_file[lang]);
+		strcat_s(err_txt, sizeof err_txt, error_separator);
+		
+		strcat_s(err_txt, sizeof err_txt, s.c_str());
+		err_write_show(err_txt);
+		return 1;
+	}
+
+	strcpy_s(info_txt, sizeof info_txt, info_learning[lang]);
+	info_write(info_txt);
+
 	Book* book = xlCreateBook();	
 	const char* error_lic = "can't read more cells in trial version";
 	bool fStringMatch = FALSE;		
-//	const wchar_t* file_name = asd.c_str();
 
 	if (book->load(file_name.c_str()))
 	{
@@ -497,192 +549,308 @@ int Signals_learn_data()
 	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
 	info_write(info_txt);
 
+	learn.done = true;
+
 	return 0;
 }
 
+int Signals_find_function()
+{
+	if (signals.valid_entries < 1)
+	{
+		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
+		strcat_s(err_txt, sizeof err_txt, info_separator);
+		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
+		err_write_show(err_txt);
+		return 1;
+	}
+
+	Signals_get_data_listview();
+	int find_2_1 = 0;
+	int find_2_2 = 0;
+	int find_1 = 0;
+
+	wstring search_in_extended = L"";
+	wstring search_in_function_txt = L"";
+	wstring search_for = L"";
+
+	if (learn.done == false)
+	{
+		if (Signals_learn_data() == 1)
+		{
+			return 1;
+		}
+	}
+
+	strcpy_s(info_txt, sizeof info_txt, info_find_function[lang]);
+	info_write(info_txt);
+
+	Show_progress(prog_learning_data[lang], signals.valid_entries);
+
+	int size_part1 = learn.Function_txt1.size();
+	int size_part2_1 = learn.Function_txt2_part1.size();
+	int size_part2_2 = learn.Function_txt2_part2.size();
+
+	for (int row = 0; row <= signals.valid_entries; ++row)
+	{
+		search_in_function_txt = signals.Function_text[row];
+		
+		if (search_in_function_txt.empty() == 0)
+		{
+			search_in_extended = signals.Extendet_object_text[row];
+			std::transform(search_in_function_txt.begin(), search_in_function_txt.end(), search_in_function_txt.begin(), ::tolower);
+			std::transform(search_in_extended.begin(), search_in_extended.end(), search_in_extended.begin(), ::tolower);
+			
+			find_2_2 = -1;
+			// finding with 2 parts
+			for (int i = 0; i < size_part2_1; ++i)
+			{
+				search_for = learn.Function_txt2_part1[i];
+				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+
+				find_2_1 = search_in_extended.find(search_for);
+				if (find_2_1 >= 0)
+				{
+					for (int j = 0; j < size_part2_2; ++j)
+					{
+						search_for = learn.Function_txt2_part2[i];
+						std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+
+						find_2_2 = search_in_function_txt.find(search_for);
+						if (find_2_2 >= 0)
+						{
+							signals.Function[row] = learn.Function_txt2_meaning[j];
+							break;
+						}
+					}
+					if (find_2_2 >= 0)
+					{
+						break;
+					}
+				}
+			}
+			//finding with 1 part 
+			if (find_2_2 != 0)
+			{
+				for (int i = 0; i < size_part1; ++i)
+				{
+					search_for = learn.Function_txt1[i];
+					std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+
+					find_1 = search_in_function_txt.find(search_for);
+					if (find_1 >= 0)
+					{
+						signals.Function[row] = learn.Function_txt1_meaning[i];
+						break;
+					}
+				}
+			}
+		}
+		set_progress_value(row);
+	}
+
+	Hide_progress();
+	Signals_put_data_listview();
+
+	strcpy_s(info_txt, sizeof info_txt, info_find_function[lang]);
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+	info_write(info_txt);
+	return 0;
+}
 
 void Signals_put_data_listview()
 {
-	GlobalForm::forma->Update();
-	GlobalForm::forma->tabControl1->SelectedIndex = 1;
-	int iCol;	
-	int max_digits = GetNumberOfDigits(signals.valid_entries);
-	if ((pow(10, max_digits - 1) * 9) < signals.valid_entries) // if numbers are 90% filed increase digits by one
-	{
-		max_digits++;
-	}
 
-	Show_progress(prog_grid_put[lang], signals.valid_entries);
+		Signals_delete_list();
+		GlobalForm::forma->Update();
+		int iCol;
+		int max_digits = GetNumberOfDigits(signals.valid_entries);
+		if ((pow(10, max_digits - 1) * 9) < signals.valid_entries) // if numbers are 90% filed increase digits by one
+		{
+			max_digits++;
+		}
 
-	strcpy_s(info_txt, sizeof info_txt, info_put_to_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	info_write(info_txt);
+		Show_progress(prog_grid_put[lang], signals.valid_entries);
 
-
-	// Add the columns.
-	GlobalForm::forma->Signals_grid->ColumnCount = signals.number_collums+1;
-
-	GlobalForm::forma->Signals_grid->Columns[0]->Name = L"Nr.";
-	GlobalForm::forma->Signals_grid->Columns[1]->Name = L"Spinta";
-	GlobalForm::forma->Signals_grid->Columns[2]->Name = L"Operatyv";
-	GlobalForm::forma->Signals_grid->Columns[3]->Name = L"KKS";
-	GlobalForm::forma->Signals_grid->Columns[4]->Name = L"KKS1";
-	GlobalForm::forma->Signals_grid->Columns[5]->Name = L"KKS2";
-	GlobalForm::forma->Signals_grid->Columns[6]->Name = L"Used";
-	GlobalForm::forma->Signals_grid->Columns[7]->Name = L"Type";
-	GlobalForm::forma->Signals_grid->Columns[8]->Name = L"Objectas";
-	GlobalForm::forma->Signals_grid->Columns[9]->Name = L"objekto patikslinimas";
-	GlobalForm::forma->Signals_grid->Columns[10]->Name = L"Funkcinis tekstas";
-	GlobalForm::forma->Signals_grid->Columns[11]->Name = L"IO tekstas";
-	GlobalForm::forma->Signals_grid->Columns[12]->Name = L"Modulis";
-	GlobalForm::forma->Signals_grid->Columns[13]->Name = L"Kanalas";
-	GlobalForm::forma->Signals_grid->Columns[14]->Name = L"Pinas";
-	GlobalForm::forma->Signals_grid->Columns[15]->Name = L"Projekto reference";
-
-	GlobalForm::forma->Update();
-
-	wstring cell_text = L"";
+		strcpy_s(info_txt, sizeof info_txt, info_put_to_grid[lang]);
+		strcat_s(info_txt, sizeof info_txt, info_separator);
+		strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
+		info_write(info_txt);
 
 
-	for (int index = 0; index <= signals.valid_entries; index++)
-	{
-		GlobalForm::forma->Signals_grid->Rows->Add();
+		// Add the columns.
+		GlobalForm::forma->Signals_grid->ColumnCount = signals.number_collums + 1;
 
-		// fill all cells with data
 		for (iCol = 0; iCol <= signals.number_collums; iCol++)
 		{
-			switch (iCol)
-			{
-			case 0:	cell_text = signals.number[index];
-				break;
-			case 1:	cell_text = signals.Cabinet[index];
-				break;
-			case 2:	cell_text = signals.operatyv[index];
-				break;
-			case 3:	cell_text = signals.KKS[index].Full;
-				break;
-			case 4:	cell_text = signals.KKS[index].Part1;
-				break;
-			case 5:	cell_text = signals.KKS[index].Part2;
-				break;
-			case 6:	cell_text = signals.Used[index];
-				break;
-			case 7:	cell_text = signals.Object_type[index];
-				break;
-			case 8:	cell_text = signals.Object_text[index];
-				break;
-			case 9:	cell_text = signals.Extendet_object_text[index];
-				break;
-			case 10:	cell_text = signals.Function_text[index];
-				break;
-			case 11:	cell_text = signals.IO_text[index];
-				break;
-			case 12:	cell_text = signals.Module[index];
-				break;
-			case 13:	cell_text = signals.Channel[index];
-				break;
-			case 14:	cell_text = signals.Pin[index];
-				break;
-			case 15:	cell_text = signals.Page[index];
-				break;
-			default:cell_text = LPWSTR(L"");
-				break;
-			}
-			String^ textas = wstring_to_system_string(cell_text);
-
-			// Insert items into the list.
-			GlobalForm::forma->Signals_grid->Rows[index]->Cells[iCol]->Value = textas;
+			// Load the names of the column headings from the string resources.
+			GlobalForm::forma->Signals_grid->Columns[iCol]->Name = wstring_to_system_string(signals.column_name[iCol]);
 		}
-		set_progress_value(index);
-	}
-	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_put_to_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+		wstring cell_text = L"";
 
-	GlobalForm::forma->Update();
-	GlobalForm::forma->Signals_grid->AutoResizeColumns();
-	GlobalForm::forma->Update();
+
+		for (int index = 0; index <= signals.valid_entries; index++)
+		{
+			GlobalForm::forma->Signals_grid->Rows->Add();
+
+			// fill all cells with data
+			for (iCol = 0; iCol <= signals.number_collums; iCol++)
+			{
+				switch (iCol)
+				{
+				case 0:	cell_text = signals.number[index];
+					break;
+				case 1:	cell_text = signals.Cabinet[index];
+					break;
+				case 2:	cell_text = signals.operatyv[index];
+					break;
+				case 3:	cell_text = signals.KKS[index].Full;
+					break;
+				case 4:	cell_text = signals.KKS[index].Part1;
+					break;
+				case 5:	cell_text = signals.KKS[index].Part2;
+					break;
+				case 6:	cell_text = signals.Used[index];
+					break;
+				case 7:	cell_text = signals.Object_type[index];
+					break;
+				case 8:	cell_text = signals.Object_text[index];
+					break;
+				case 9:	cell_text = signals.Extendet_object_text[index];
+					break;
+				case 10:	cell_text = signals.Function_text[index];
+					break;
+				case 11:	cell_text = signals.Function[index];
+					break;
+				case 12:	cell_text = signals.IO_text[index];
+					break;
+				case 13:	cell_text = signals.Module[index];
+					break;
+				case 14:	cell_text = signals.Channel[index];
+					break;
+				case 15:	cell_text = signals.Pin[index];
+					break;
+				case 16:	cell_text = signals.Page[index];
+					break;
+				default:cell_text = LPWSTR(L"");
+					break;
+				}
+				String^ textas = wstring_to_system_string(cell_text);
+
+				// Insert items into the list.
+				GlobalForm::forma->Signals_grid->Rows[index]->Cells[iCol]->Value = textas;
+			}
+			set_progress_value(index);
+		}
+		Hide_progress();
+
+		strcpy_s(info_txt, sizeof info_txt, info_put_to_grid[lang]);
+		strcat_s(info_txt, sizeof info_txt, info_separator);
+		strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
+		strcat_s(info_txt, sizeof info_txt, error_separator);
+		strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+		info_write(info_txt);
+
+		GlobalForm::forma->tabControl1->SelectedIndex = 1;
+		
+		Signals_put_with_list();
+		GlobalForm::forma->Update();
+	
 }
 
-void Signals_get_data_listview(bool visible)
+void Signals_get_data_listview()
 {
-	if (visible)
+	if (GlobalForm::forma->Signals_grid->RowCount > 0)
 	{
+		signals.valid_entries = GlobalForm::forma->Signals_grid->RowCount - 1;
+		Signals_resize_data(signals.valid_entries + 1);
+
+		signals.number_collums = GlobalForm::forma->Signals_grid->ColumnCount - 1;
+
 		Show_progress(prog_grid_take[lang], signals.valid_entries);
-	}
 
-	strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	info_write(info_txt);
+		strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
+		strcat_s(info_txt, sizeof info_txt, info_separator);
+		strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
+		info_write(info_txt);
 
-	wstring cell_text = L"";
+		wstring cell_text = L"";
 
-	int iCol;
-
-	for (int index = 0; index <= signals.valid_entries; index++)
-	{
-
-		// fill all cells with data
+		int iCol;
 		for (iCol = 0; iCol <= signals.number_collums; iCol++)
 		{
-			cell_text = system_string_to_wstring(GlobalForm::forma->Signals_grid->Rows[index]->Cells[iCol]->FormattedValue->ToString());
-
-			switch (iCol)
-			{
-			case 0:	signals.number[index]= cell_text;
-				break;
-			case 1:	signals.Cabinet[index] = cell_text;
-				break;
-			case 2:	signals.operatyv[index] = cell_text;
-				break;
-			case 3:	signals.KKS[index].Full = cell_text;
-				break;
-			case 4:	signals.KKS[index].Part1 = cell_text;
-				break;
-			case 5:	signals.KKS[index].Part2 = cell_text;
-				break;
-			case 6:	signals.Used[index] = cell_text;
-				break;
-			case 7:	signals.Object_type[index] = cell_text;
-				break;
-			case 8:	signals.Object_text[index] = cell_text;
-				break;
-			case 9:	signals.Extendet_object_text[index] = cell_text;
-				break;
-			case 10:	signals.Function_text[index] = cell_text;
-				break;
-			case 11:	signals.IO_text[index] = cell_text;
-				break;
-			case 12:	signals.Module[index] = cell_text;
-				break;
-			case 13:	signals.Channel[index] = cell_text;
-				break;
-			case 14:	signals.Pin[index] = cell_text;
-				break;
-			case 15:	signals.Page[index] = cell_text;
-				break;
-			}
+			signals.column_name[iCol] = system_string_to_wstring(GlobalForm::forma->Signals_grid->Columns[iCol]->Name);
 		}
-		set_progress_value(index);
-	}
-	if (visible)
-	{
-		Hide_progress();
-	}
+		for (int index = 0; index <= signals.valid_entries; index++)
+		{
 
-	strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+			// fill all cells with data
+			for (iCol = 0; iCol <= signals.number_collums; iCol++)
+			{
+				cell_text = system_string_to_wstring(GlobalForm::forma->Signals_grid->Rows[index]->Cells[iCol]->FormattedValue->ToString());
+
+				switch (iCol)
+				{
+				case 0:	signals.number[index] = cell_text;
+					break;
+				case 1:	signals.Cabinet[index] = cell_text;
+					break;
+				case 2:	signals.operatyv[index] = cell_text;
+					break;
+				case 3:	signals.KKS[index].Full = cell_text;
+					break;
+				case 4:	signals.KKS[index].Part1 = cell_text;
+					break;
+				case 5:	signals.KKS[index].Part2 = cell_text;
+					break;
+				case 6:	signals.Used[index] = cell_text;
+					break;
+				case 7:	signals.Object_type[index] = cell_text;
+					break;
+				case 8:	signals.Object_text[index] = cell_text;
+					break;
+				case 9:	signals.Extendet_object_text[index] = cell_text;
+					break;
+				case 10:	signals.Function_text[index] = cell_text;
+					break;
+				case 11:	signals.Function[index] = cell_text;
+					break;
+				case 12:	signals.IO_text[index] = cell_text;
+					break;
+				case 13:	signals.Module[index] = cell_text;
+					break;
+				case 14:	signals.Channel[index] = cell_text;
+					break;
+				case 15:	signals.Pin[index] = cell_text;
+					break;
+				case 16:	signals.Page[index] = cell_text;
+					break;
+				}
+			}
+			set_progress_value(index);
+		}
+
+		Hide_progress();
+
+		strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
+		strcat_s(info_txt, sizeof info_txt, info_separator);
+		strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
+		strcat_s(info_txt, sizeof info_txt, error_separator);
+		strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+		info_write(info_txt);
+
+		if (unstable_release == 1)
+		{
+			Signals_save_data(true, " ");
+		}
+		Signals_get_with_list();
+	}
+	else
+	{
+		signals = {};
+	}
 }
 
 void Signals_delete_list()
@@ -693,7 +861,7 @@ void Signals_delete_list()
 
 
 
-int Signals_save_data(bool visible, std::string file_name_global)
+int Signals_save_data(bool auto_save, std::string file_name_global)
 {
 	SaveFileDialog^ sfd = gcnew SaveFileDialog();
 	sfd->Filter = "Save document |*.ssave" +
@@ -718,7 +886,7 @@ int Signals_save_data(bool visible, std::string file_name_global)
 	FILE* outFile;
 
 	int iCol;
-	if (visible)
+	if (auto_save == 0)
 	{
 		if (file_name_global.compare(" ") == 0)
 		{
@@ -756,10 +924,23 @@ int Signals_save_data(bool visible, std::string file_name_global)
 		return 1;
 	}
 
-	Signals_get_data_listview(visible);
+	if (auto_save == 0)
+	{
+		Signals_get_data_listview();
+	}	
 
 	cell_text.append(L"\n");
 	const wchar_t* x = cell_text.c_str();
+
+
+	for (iCol = 0; iCol <= signals.number_collums; iCol++)
+	{
+		cell_text.append(signals.column_name[iCol]);
+		cell_text.append(separator);
+	}
+
+	cell_text.append(L"\n");
+	x = cell_text.c_str();
 	fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
 	wstring cell_text_write;
 
@@ -793,15 +974,17 @@ int Signals_save_data(bool visible, std::string file_name_global)
 				break;
 			case 10:	cell_text = signals.Function_text[index];
 				break;
-			case 11:	cell_text = signals.IO_text[index];
+			case 11:	cell_text = signals.Function[index];
 				break;
-			case 12:	cell_text = signals.Module[index];
+			case 12:	cell_text = signals.IO_text[index];
 				break;
-			case 13:	cell_text = signals.Channel[index];
+			case 13:	cell_text = signals.Module[index];
 				break;
-			case 14:	cell_text = signals.Pin[index];
+			case 14:	cell_text = signals.Channel[index];
 				break;
-			case 15:	cell_text = signals.Page[index];
+			case 15:	cell_text = signals.Pin[index];
+				break;
+			case 16:	cell_text = signals.Page[index];
 				break;
 			default:cell_text = LPWSTR(L"");
 				break;
@@ -817,17 +1000,13 @@ int Signals_save_data(bool visible, std::string file_name_global)
 		cell_text_write.append(L"\n");
 		x = cell_text_write.c_str();
 		fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
-		if (visible)
-		{
-			set_progress_value(index);
-		}
+		set_progress_value(index);
 	}
+
 	fclose(outFile);
 
-	if (visible)
-	{
-		Hide_progress();
-	}
+	Hide_progress();
+	
 	strcpy_s(info_txt, sizeof info_txt, info_save_data[lang]);
 	strcat_s(info_txt, sizeof info_txt, info_separator);
 	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
@@ -838,13 +1017,14 @@ int Signals_save_data(bool visible, std::string file_name_global)
 	return 0;
 }
 
-int Signals_Load_data()
+int Signals_Load_data(std::string file_name_global)
 {
 	wchar_t cmp_text[255] = L"Signals";
 
 	OpenFileDialog^ importfile = gcnew OpenFileDialog();
 	importfile->Filter = "Load document |*.ssave" +
 		"|All Files|*.*";
+	string extension = ".ssave";
 
 	if (signals.valid_entries > 0)
 	{
@@ -872,13 +1052,28 @@ int Signals_Load_data()
 	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
 	info_write(info_txt);
 
+	FILE* inFile;
+	string file_name;
 
-	if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+	if (file_name_global.compare(" ") == 0)
 	{
-		FILE* inFile;
-		string file_name;
+		if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			file_name = system_string_to_string(importfile->FileName);
+		}
+		else
+		{
+			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
+			err_write(err_txt);
+			return 1;
+		}
+	}
+	else
+	{
+		file_name = file_name_global;
+		file_name.append(extension);
+	}
 
-		file_name = system_string_to_string(importfile->FileName);
 		fopen_s(&inFile, file_name.c_str(), "r+,ccs=UTF-8");
 		if (inFile == NULL)
 		{
@@ -906,6 +1101,27 @@ int Signals_Load_data()
 			strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
 			err_write_show(err_txt);
 			return 1;
+		}
+		fgetws(x, sizeof x, inFile);
+
+		cell_text = wcstok_s(x, separator, &next_token1);
+		if (cell_text == NULL)
+		{
+			fclose(inFile);
+
+			strcpy_s(err_txt, sizeof err_txt, err_corrupted_file[lang]);
+			strcat_s(err_txt, sizeof err_txt, error_separator);
+			strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
+			err_write_show(err_txt);
+			return 1;
+		}
+		while (cell_text != NULL && wcsstr(cell_text, L"\n") == NULL)
+		{
+			signals.number_collums = iCol;
+			signals.column_name.resize(signals.number_collums + 1);
+			signals.column_name[iCol] = cell_text;
+			iCol++;
+			cell_text = wcstok_s(NULL, separator, &next_token1);
 		}
 		
 		int a = 0;
@@ -946,15 +1162,17 @@ int Signals_Load_data()
 						break;
 					case 10:	signals.Function_text[index] = cell_text;
 						break;
-					case 11:	signals.IO_text[index] = cell_text;
+					case 11:	signals.Function[index] = cell_text;
 						break;
-					case 12:	signals.Module[index] = cell_text;
+					case 12:	signals.IO_text[index] = cell_text;
 						break;
-					case 13:	signals.Channel[index] = cell_text;
+					case 13:	signals.Module[index] = cell_text;
 						break;
-					case 14:	signals.Pin[index] = cell_text;
+					case 14:	signals.Channel[index] = cell_text;
 						break;
-					case 15:	signals.Page[index] = cell_text;
+					case 15:	signals.Pin[index] = cell_text;
+						break;
+					case 16:	signals.Page[index] = cell_text;
 						break;
 					}
 				}
@@ -963,9 +1181,9 @@ int Signals_Load_data()
 			}
 			a++;
 			index++;
-			if (a > 100)
+			if (a > 1000)
 			{
-				a = a - 100;
+				a = a - 1000;
 			}
 			set_progress_value(a);
 		}
@@ -973,13 +1191,7 @@ int Signals_Load_data()
 
 		Hide_progress();
 
-	}
-	else
-	{
-		strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-		err_write(err_txt);
-		return 1;
-	}
+	
 
 	strcpy_s(info_txt, sizeof info_txt, info_load_data[lang]);
 	strcat_s(info_txt, sizeof info_txt, info_separator);

@@ -22,5 +22,6 @@ extern const char * err_cfg_parameter_programing_error[];
 
 extern const char * err_excel_no_sheet[];
 extern const char * err_excel_cant_open[];
+extern const char * err_no_learn_file[];
 
 #endif

@@ -7,3 +7,4 @@ IO_list_Language=LT
 SCADA=System Platform
 width=1650
 height=600
+auto_column_with=1

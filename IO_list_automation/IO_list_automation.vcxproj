@@ -113,9 +113,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\libxl-3.8.2.0\include_cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);libxl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\libxl-3.8.2.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -137,10 +141,15 @@
   <ItemGroup>
     <ClCompile Include="AboutForm.cpp" />
     <ClCompile Include="config.cpp" />
+    <ClCompile Include="Declare.cpp" />
     <ClCompile Include="design.cpp" />
     <ClCompile Include="HelpForm.cpp" />
+    <ClCompile Include="Instance.cpp" />
     <ClCompile Include="KKS_editForm.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="objects.cpp" />
+    <ClCompile Include="Object_check_Form.cpp" />
+    <ClCompile Include="SCADA.cpp" />
     <ClCompile Include="signals.cpp" />
     <ClCompile Include="String_info.cpp" />
     <ClCompile Include="Strings.cpp" />
@@ -152,7 +161,14 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="config.h" />
+    <ClInclude Include="Declare.h" />
     <ClInclude Include="design.h" />
+    <ClInclude Include="Instance.h" />
+    <ClInclude Include="objects.h" />
+    <ClInclude Include="Object_check_Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SCADA.h" />
     <ClInclude Include="String_progress.h" />
     <ClInclude Include="HelpForm.h">
       <FileType>CppForm</FileType>
@@ -181,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Object_check_Form.resx">
+      <DependentUpon>Object_check_Form.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,2 @@
-﻿  MainWindow.cpp
-  config.cpp
-  design.cpp
-  signals.cpp
-  Generating Code...
+﻿  objects.cpp
   IO_list_automation.vcxproj -> C:\IO-list-automation\Debug\IO_list_automation.exe

@@ -22,6 +22,18 @@ const char * info_KKS_edit[]{
 const char * info_learning[]{
 	"Ismokstama atpazinti duomenis",
 	"Learning recognition data", };
+const char * info_find_function[]{
+	"Ieskoma signalo sunkcija",
+	"Searching for signal function", };
+const char * info_find_uniques[]{
+	"Ieskoma unikaliu objektu",
+	"Searching unique objects", };
+const char * info_find_objects[]{
+	"Ieskoma unikaliu objektu tipu",
+	"Searching unique objects types", };
+const char * info_find_operatyv[]{
+	"Ieskoma operatyviniu objektuose",
+	"Searching operative in objects", };
 
 
 const char * info_transfer_data[]{

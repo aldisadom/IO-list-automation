@@ -6,6 +6,7 @@
 #include "AboutForm.h"
 #include "HelpForm.h"
 #include "KKS_editForm.h"
+#include "objects.h"
 
 
 #include <msclr/marshal_cppstd.h>
@@ -19,6 +20,7 @@ namespace IOlistautomation {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Reflection;
 
 	/// <summary>
 	/// Summary for MainWindow
@@ -127,6 +129,13 @@ namespace IOlistautomation {
 	public:
 	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator2;
 	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator3;
+public: System::Windows::Forms::DataGridView^  Object_grid;
+private: System::Windows::Forms::ToolStripMenuItem^  Uniques_FindOperatyv;
+private: System::Windows::Forms::ToolStripMenuItem^  File_LoadALL;
+public:
+
+public:
+private:
 	private:
 	public:
 
@@ -148,6 +157,7 @@ namespace IOlistautomation {
 		{
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MainWindow::typeid));
 			this->Design_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
@@ -155,6 +165,7 @@ namespace IOlistautomation {
 			this->File_Save = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->File_SaveALL = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->File_Load = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->File_LoadALL = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->File_Help = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->File_About = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -175,8 +186,8 @@ namespace IOlistautomation {
 			this->Project_SCADA_WinCC = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->languageSelectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Project_Language_LT = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Project_Language_LV = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Project_Language_EN = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Project_Language_LV = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Project_Language_RU = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->signalsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Signals_KKSedit = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -184,6 +195,7 @@ namespace IOlistautomation {
 			this->uniquesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_FindUniques = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_FindObjects = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Uniques_FindOperatyv = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_CorrectComments = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_TransferSignals = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->declareToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -212,6 +224,7 @@ namespace IOlistautomation {
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->Signals_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->Object_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->progressBaras = (gcnew System::Windows::Forms::ProgressBar());
 			this->Progress_label = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Design_grid))->BeginInit();
@@ -220,6 +233,8 @@ namespace IOlistautomation {
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Signals_grid))->BeginInit();
+			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Object_grid))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Design_grid
@@ -238,7 +253,7 @@ namespace IOlistautomation {
 			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
 			this->Design_grid->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this->Design_grid->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->Design_grid->Location = System::Drawing::Point(0, 3);
+			this->Design_grid->Location = System::Drawing::Point(1, 1);
 			this->Design_grid->Name = L"Design_grid";
 			this->Design_grid->RowHeadersWidth = 10;
 			this->Design_grid->Size = System::Drawing::Size(850, 298);
@@ -260,9 +275,9 @@ namespace IOlistautomation {
 			// 
 			// fileToolStripMenuItem
 			// 
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(8) {
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(9) {
 				this->File_Save,
-					this->File_SaveALL, this->File_Load, this->toolStripSeparator1, this->File_Help, this->File_About, this->toolStripSeparator2,
+					this->File_SaveALL, this->File_Load, this->File_LoadALL, this->toolStripSeparator1, this->File_Help, this->File_About, this->toolStripSeparator2,
 					this->File_Exit
 			});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
@@ -272,52 +287,59 @@ namespace IOlistautomation {
 			// File_Save
 			// 
 			this->File_Save->Name = L"File_Save";
-			this->File_Save->Size = System::Drawing::Size(180, 22);
+			this->File_Save->Size = System::Drawing::Size(115, 22);
 			this->File_Save->Text = L"Save";
 			this->File_Save->Click += gcnew System::EventHandler(this, &MainWindow::File_Save_Click);
 			// 
 			// File_SaveALL
 			// 
 			this->File_SaveALL->Name = L"File_SaveALL";
-			this->File_SaveALL->Size = System::Drawing::Size(180, 22);
+			this->File_SaveALL->Size = System::Drawing::Size(115, 22);
 			this->File_SaveALL->Text = L"Save all";
 			this->File_SaveALL->Click += gcnew System::EventHandler(this, &MainWindow::File_SaveALL_Click);
 			// 
 			// File_Load
 			// 
 			this->File_Load->Name = L"File_Load";
-			this->File_Load->Size = System::Drawing::Size(180, 22);
+			this->File_Load->Size = System::Drawing::Size(115, 22);
 			this->File_Load->Text = L"Load";
 			this->File_Load->Click += gcnew System::EventHandler(this, &MainWindow::File_Load_Click);
+			// 
+			// File_LoadALL
+			// 
+			this->File_LoadALL->Name = L"File_LoadALL";
+			this->File_LoadALL->Size = System::Drawing::Size(115, 22);
+			this->File_LoadALL->Text = L"Load all";
+			this->File_LoadALL->Click += gcnew System::EventHandler(this, &MainWindow::File_LoadALL_Click);
 			// 
 			// toolStripSeparator1
 			// 
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(177, 6);
+			this->toolStripSeparator1->Size = System::Drawing::Size(112, 6);
 			// 
 			// File_Help
 			// 
 			this->File_Help->Name = L"File_Help";
-			this->File_Help->Size = System::Drawing::Size(180, 22);
+			this->File_Help->Size = System::Drawing::Size(115, 22);
 			this->File_Help->Text = L"Help";
 			this->File_Help->Click += gcnew System::EventHandler(this, &MainWindow::File_Help_Click);
 			// 
 			// File_About
 			// 
 			this->File_About->Name = L"File_About";
-			this->File_About->Size = System::Drawing::Size(180, 22);
+			this->File_About->Size = System::Drawing::Size(115, 22);
 			this->File_About->Text = L"About";
 			this->File_About->Click += gcnew System::EventHandler(this, &MainWindow::File_About_Click);
 			// 
 			// toolStripSeparator2
 			// 
 			this->toolStripSeparator2->Name = L"toolStripSeparator2";
-			this->toolStripSeparator2->Size = System::Drawing::Size(177, 6);
+			this->toolStripSeparator2->Size = System::Drawing::Size(112, 6);
 			// 
 			// File_Exit
 			// 
 			this->File_Exit->Name = L"File_Exit";
-			this->File_Exit->Size = System::Drawing::Size(180, 22);
+			this->File_Exit->Size = System::Drawing::Size(115, 22);
 			this->File_Exit->Text = L"Exit";
 			this->File_Exit->Click += gcnew System::EventHandler(this, &MainWindow::File_Exit_Click);
 			// 
@@ -362,8 +384,7 @@ namespace IOlistautomation {
 			// 
 			// cPUSelectToolStripMenuItem
 			// 
-			this->cPUSelectToolStripMenuItem->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->cPUSelectToolStripMenuItem->BackColor = System::Drawing::SystemColors::Control;
 			this->cPUSelectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 				this->Project_CPU_Beckhoff,
 					this->Project_CPU_800xA, this->Project_CPU_Siemens, this->Project_CPU_Schneider
@@ -375,35 +396,34 @@ namespace IOlistautomation {
 			// Project_CPU_Beckhoff
 			// 
 			this->Project_CPU_Beckhoff->Name = L"Project_CPU_Beckhoff";
-			this->Project_CPU_Beckhoff->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_Beckhoff->Size = System::Drawing::Size(126, 22);
 			this->Project_CPU_Beckhoff->Text = L"Beckhoff";
 			this->Project_CPU_Beckhoff->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_Beckhoff_Click);
 			// 
 			// Project_CPU_800xA
 			// 
 			this->Project_CPU_800xA->Name = L"Project_CPU_800xA";
-			this->Project_CPU_800xA->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_800xA->Size = System::Drawing::Size(126, 22);
 			this->Project_CPU_800xA->Text = L"800xA";
 			this->Project_CPU_800xA->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_800xA_Click);
 			// 
 			// Project_CPU_Siemens
 			// 
 			this->Project_CPU_Siemens->Name = L"Project_CPU_Siemens";
-			this->Project_CPU_Siemens->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_Siemens->Size = System::Drawing::Size(126, 22);
 			this->Project_CPU_Siemens->Text = L"Siemens";
 			this->Project_CPU_Siemens->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_Siemens_Click);
 			// 
 			// Project_CPU_Schneider
 			// 
 			this->Project_CPU_Schneider->Name = L"Project_CPU_Schneider";
-			this->Project_CPU_Schneider->Size = System::Drawing::Size(180, 22);
+			this->Project_CPU_Schneider->Size = System::Drawing::Size(126, 22);
 			this->Project_CPU_Schneider->Text = L"Schneider";
 			this->Project_CPU_Schneider->Click += gcnew System::EventHandler(this, &MainWindow::Project_CPU_Schneider_Click);
 			// 
 			// sCADASelectToolStripMenuItem
 			// 
-			this->sCADASelectToolStripMenuItem->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->sCADASelectToolStripMenuItem->BackColor = System::Drawing::SystemColors::Control;
 			this->sCADASelectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->Project_SCADA_SystemPlatform,
 					this->Project_SCADA_WinCC
@@ -428,8 +448,7 @@ namespace IOlistautomation {
 			// 
 			// languageSelectToolStripMenuItem
 			// 
-			this->languageSelectToolStripMenuItem->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->languageSelectToolStripMenuItem->BackColor = System::Drawing::SystemColors::Control;
 			this->languageSelectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 				this->Project_Language_LT,
 					this->Project_Language_EN, this->Project_Language_LV, this->Project_Language_RU
@@ -441,28 +460,28 @@ namespace IOlistautomation {
 			// Project_Language_LT
 			// 
 			this->Project_Language_LT->Name = L"Project_Language_LT";
-			this->Project_Language_LT->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_LT->Size = System::Drawing::Size(89, 22);
 			this->Project_Language_LT->Text = L"LT";
 			this->Project_Language_LT->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_LT_Click);
-			// 
-			// Project_Language_LV
-			// 
-			this->Project_Language_LV->Name = L"Project_Language_LV";
-			this->Project_Language_LV->Size = System::Drawing::Size(180, 22);
-			this->Project_Language_LV->Text = L"LV";
-			this->Project_Language_LV->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_LV_Click);
 			// 
 			// Project_Language_EN
 			// 
 			this->Project_Language_EN->Name = L"Project_Language_EN";
-			this->Project_Language_EN->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_EN->Size = System::Drawing::Size(89, 22);
 			this->Project_Language_EN->Text = L"EN";
 			this->Project_Language_EN->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_EN_Click);
+			// 
+			// Project_Language_LV
+			// 
+			this->Project_Language_LV->Name = L"Project_Language_LV";
+			this->Project_Language_LV->Size = System::Drawing::Size(89, 22);
+			this->Project_Language_LV->Text = L"LV";
+			this->Project_Language_LV->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_LV_Click);
 			// 
 			// Project_Language_RU
 			// 
 			this->Project_Language_RU->Name = L"Project_Language_RU";
-			this->Project_Language_RU->Size = System::Drawing::Size(180, 22);
+			this->Project_Language_RU->Size = System::Drawing::Size(89, 22);
 			this->Project_Language_RU->Text = L"RU";
 			this->Project_Language_RU->Click += gcnew System::EventHandler(this, &MainWindow::Project_Language_RU_Click);
 			// 
@@ -486,8 +505,7 @@ namespace IOlistautomation {
 			// 
 			// Signals_FindFunction
 			// 
-			this->Signals_FindFunction->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Signals_FindFunction->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_FindFunction->Name = L"Signals_FindFunction";
 			this->Signals_FindFunction->Size = System::Drawing::Size(180, 22);
 			this->Signals_FindFunction->Text = L"Find function";
@@ -495,9 +513,9 @@ namespace IOlistautomation {
 			// 
 			// uniquesToolStripMenuItem
 			// 
-			this->uniquesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+			this->uniquesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
 				this->Uniques_FindUniques,
-					this->Uniques_FindObjects, this->Uniques_CorrectComments, this->Uniques_TransferSignals
+					this->Uniques_FindObjects, this->Uniques_FindOperatyv, this->Uniques_CorrectComments, this->Uniques_TransferSignals
 			});
 			this->uniquesToolStripMenuItem->Name = L"uniquesToolStripMenuItem";
 			this->uniquesToolStripMenuItem->Size = System::Drawing::Size(62, 20);
@@ -514,12 +532,18 @@ namespace IOlistautomation {
 			// 
 			// Uniques_FindObjects
 			// 
-			this->Uniques_FindObjects->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_FindObjects->BackColor = System::Drawing::SystemColors::Control;
 			this->Uniques_FindObjects->Name = L"Uniques_FindObjects";
 			this->Uniques_FindObjects->Size = System::Drawing::Size(198, 22);
 			this->Uniques_FindObjects->Text = L"Find Objects";
 			this->Uniques_FindObjects->Click += gcnew System::EventHandler(this, &MainWindow::Uniques_FindObjects_Click);
+			// 
+			// Uniques_FindOperatyv
+			// 
+			this->Uniques_FindOperatyv->Name = L"Uniques_FindOperatyv";
+			this->Uniques_FindOperatyv->Size = System::Drawing::Size(198, 22);
+			this->Uniques_FindOperatyv->Text = L"Find Operatyv";
+			this->Uniques_FindOperatyv->Click += gcnew System::EventHandler(this, &MainWindow::Uniques_FindOperatyv_Click);
 			// 
 			// Uniques_CorrectComments
 			// 
@@ -532,8 +556,7 @@ namespace IOlistautomation {
 			// 
 			// Uniques_TransferSignals
 			// 
-			this->Uniques_TransferSignals->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_TransferSignals->BackColor = System::Drawing::SystemColors::Control;
 			this->Uniques_TransferSignals->Name = L"Uniques_TransferSignals";
 			this->Uniques_TransferSignals->Size = System::Drawing::Size(198, 22);
 			this->Uniques_TransferSignals->Text = L"Transfer Data to Signals";
@@ -789,6 +812,7 @@ namespace IOlistautomation {
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->Object_grid);
 			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
@@ -796,6 +820,28 @@ namespace IOlistautomation {
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Objects";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// Object_grid
+			// 
+			this->Object_grid->AllowUserToResizeRows = false;
+			this->Object_grid->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle3->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle3->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Object_grid->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			this->Object_grid->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->Object_grid->Location = System::Drawing::Point(1, 1);
+			this->Object_grid->Name = L"Object_grid";
+			this->Object_grid->RowHeadersWidth = 10;
+			this->Object_grid->Size = System::Drawing::Size(850, 298);
+			this->Object_grid->TabIndex = 1;
 			// 
 			// progressBaras
 			// 
@@ -842,17 +888,56 @@ namespace IOlistautomation {
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage2->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Signals_grid))->EndInit();
+			this->tabPage3->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Object_grid))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
-#pragma endregion
+#pragma endregion	
+	private: void Main_init(void)
+	{
+		switch (parameters.Language)
+		{
+		case LT_index:	this->Project_Language_LT->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case LV_index:	this->Project_Language_LV->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case EN_index:	this->Project_Language_EN->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+
+		switch (parameters.CPU)
+		{
+		case Beckhoff_index:	this->Project_CPU_Beckhoff->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Siemens_index:	this->Project_CPU_Siemens->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Schneider_index:	this->Project_CPU_Schneider->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case ABB_800xA_index:	this->Project_CPU_800xA->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+		
+
+		switch (parameters.Language)
+		{
+		case System_platform:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+
+	}
+
 	private: System::Void dataGridView1_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {
 		int a = 0;
 	}
 
 			 //menu file
-//half done
+//function done
 	private: System::Void File_Save_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
@@ -861,16 +946,19 @@ namespace IOlistautomation {
 		int a = this->tabControl1->SelectedIndex;
 		switch (a)
 		{
-		case 0:	Project_save_data(true," ");
+		case 0:	Project_get_data_listview();
+			Project_save_data(false," ");
 			break;
-		case 1:	Signals_save_data(true, " ");
+		case 1:	Signals_get_data_listview(); 
+			Signals_save_data(false, " ");
 			break;
-		case 2:	Display_no_function(buttonName);
+		case 2:	Objects_get_data_listview(); 
+			Objects_save_data(false, " ");
 			break;
 		}
 		
 	}
-//half done
+//function done
 	private: System::Void File_SaveALL_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
@@ -878,9 +966,7 @@ namespace IOlistautomation {
 		
 		SaveFileDialog^ sfd = gcnew SaveFileDialog();
 		
-		sfd->Filter = "Save document |*.psave;*.ssave" +
-			"|All Files|*.*";
-		sfd->Filter = "Save document |*";
+		sfd->Filter = "Save document |*.psave;*.osave;*.ssave";
 
 		sfd->FileName = "";
 		std::string file_name;
@@ -888,8 +974,30 @@ namespace IOlistautomation {
 		if (sfd->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 		{
 			file_name = system_string_to_string(sfd->FileName);
-			Project_save_data(true, file_name);
-			Signals_save_data(true, file_name);
+			std::string extension;
+			
+			int a = -1;
+			bool continue_save = true;
+			a = file_name.find_last_of(".");
+
+			if (a > 0)
+			{
+				continue_save = false;
+				extension = file_name.substr(a + 2);
+				if (extension.compare("save") >= 0)
+				{
+					file_name = file_name.substr(0, a);
+					continue_save = true;
+				}
+			}
+
+			Project_get_data_listview();
+			Signals_get_data_listview();
+			Objects_get_data_listview();
+
+			Project_save_data(false, file_name);
+			Signals_save_data(false, file_name);
+			Objects_save_data(false, file_name);
 		}
 		else
 		{
@@ -900,7 +1008,7 @@ namespace IOlistautomation {
 		}
 				
 	}
-//half done
+//function done
 	private: System::Void File_Load_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
@@ -909,13 +1017,53 @@ namespace IOlistautomation {
 		int a = this->tabControl1->SelectedIndex;
 		switch (a)
 		{
-		case 0:	Project_Load_data();
+		case 0:	Project_Load_data(" ");
 			break;
-		case 1: Signals_Load_data();
+		case 1: Signals_Load_data(" ");
 			break;
-		case 2:	Display_no_function(buttonName);
+		case 2:	Objects_Load_data(" ");
 			break;
 		}		
+	}
+
+	private: System::Void File_LoadALL_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		OpenFileDialog^ importfile = gcnew OpenFileDialog();
+		importfile->Filter = "Load document |*.psave;*.osave;*.ssave";
+		importfile->FileName = "";
+
+		if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			std::string file_name;
+			std::string extension;
+
+			file_name = system_string_to_string(importfile->FileName);
+			int a = -1;
+			int b = 0;
+			bool continue_load = true;
+			a = file_name.find_last_of(".");			
+
+			if (a > 0)
+			{
+				continue_load = false;
+				extension = file_name.substr(a + 2);
+				if (extension.compare("save") >=0)
+				{
+					file_name = file_name.substr(0, a);
+					continue_load = true;				
+				}
+			}
+
+			if (continue_load)
+			{
+				Project_Load_data(file_name);
+				Signals_Load_data(file_name);
+				Objects_Load_data(file_name);
+			}			
+		}
 	}
 //function done
 	private: System::Void File_Help_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -956,7 +1104,7 @@ namespace IOlistautomation {
 		if (Project_read_data() == 0)
 		{
 			Project_put_data_listview();
-			Signals_get_data_design();			
+			Signals_get_data_design();
 		}
 
 	}
@@ -976,85 +1124,243 @@ namespace IOlistautomation {
 
 		Signals_get_data_design();
 	}
-//empty
+//function done
 	private: System::Void Project_CPU_Beckhoff_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Schneider->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_800xA->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.CPU = Beckhoff_index;
+		switch (parameters.CPU)
+		{
+		case Beckhoff_index:	this->Project_CPU_Beckhoff->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Siemens_index:	this->Project_CPU_Siemens->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Schneider_index:	this->Project_CPU_Schneider->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case ABB_800xA_index:	this->Project_CPU_800xA->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+
 	}
-//empty
+//function done
 	private: System::Void Project_CPU_800xA_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Schneider->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_800xA->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.CPU = ABB_800xA_index;
+		switch (parameters.CPU)
+		{
+		case Beckhoff_index:	this->Project_CPU_Beckhoff->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Siemens_index:	this->Project_CPU_Siemens->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Schneider_index:	this->Project_CPU_Schneider->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case ABB_800xA_index:	this->Project_CPU_800xA->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}		
 	}
-//empty
+//function done
 	private: System::Void Project_CPU_Siemens_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Schneider->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_800xA->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.CPU = Siemens_index;
+		switch (parameters.CPU)
+		{
+		case Beckhoff_index:	this->Project_CPU_Beckhoff->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Siemens_index:	this->Project_CPU_Siemens->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Schneider_index:	this->Project_CPU_Schneider->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case ABB_800xA_index:	this->Project_CPU_800xA->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
 	}
-//empty
+//function done
 	private: System::Void Project_CPU_Schneider_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_Schneider->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_CPU_800xA->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.CPU = Schneider_index;
+		switch (parameters.CPU)
+		{
+		case Beckhoff_index:	this->Project_CPU_Beckhoff->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Siemens_index:	this->Project_CPU_Siemens->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case Schneider_index:	this->Project_CPU_Schneider->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case ABB_800xA_index:	this->Project_CPU_800xA->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
 	}
-//empty
+//function done
 	private: System::Void Project_SCADA_SystemPlatform_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_SCADA_WinCC->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.SCADA = System_platform;
+		switch (parameters.SCADA)
+		{
+		case System_platform:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
 	}
-//empty
+//function done
 	private: System::Void Project_SCADA_WinCC_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_SCADA_WinCC->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.SCADA = WinCC;
+		switch (parameters.SCADA)
+		{
+		case System_platform:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
 	}
-//empty
+//function done
 	private: System::Void Project_Language_LT_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
+		
+		learn = {};
+		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_LV->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_EN->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_RU->BackColor = System::Drawing::SystemColors::Control;
 
-		Display_no_function(buttonName);
+		parameters.Language = LT_index;
+		switch (parameters.Language)
+		{
+		case LT_index:	this->Project_Language_LT->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case LV_index:	this->Project_Language_LV->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case EN_index:	this->Project_Language_EN->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+		learn.done = false;
+		
 	}
-//empty
+//function done
 	private: System::Void Project_Language_LV_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		learn = {};
+		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_LV->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_EN->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_RU->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.Language = LV_index;
+		switch (parameters.Language)
+		{
+		case LT_index:	this->Project_Language_LT->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case LV_index:	this->Project_Language_LV->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case EN_index:	this->Project_Language_EN->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+		learn.done = false;
 	}
-//empty
+//function done
 	private: System::Void Project_Language_EN_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		learn = {};
+		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_LV->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_EN->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_RU->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.Language = EN_index;
+		switch (parameters.Language)
+		{
+		case LT_index:	this->Project_Language_LT->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case LV_index:	this->Project_Language_LV->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case EN_index:	this->Project_Language_EN->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+		learn.done = false;
 	}
-//empty
+//function done
 	private: System::Void Project_Language_RU_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		learn = {};
+		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_LV->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_EN->BackColor = System::Drawing::SystemColors::Control;
+		this->Project_Language_RU->BackColor = System::Drawing::SystemColors::Control;
+
+		parameters.Language = RU_index;
+		switch (parameters.Language)
+		{
+		case LT_index:	this->Project_Language_LT->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case LV_index:	this->Project_Language_LV->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case EN_index:	this->Project_Language_EN->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
+			break;
+		}
+		learn.done = false;
 	}
 
 
@@ -1066,32 +1372,56 @@ namespace IOlistautomation {
 		const char *button_text = converted_text.c_str();
 		Signals_all_KKS_trim();		
 	}
-//empty
+//function done
 	private: System::Void Signals_FindFunction_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
-		Display_no_function(buttonName);
+		Signals_find_function();
 	}
 
 
 			 //menu uniques
-//empty
+//function done
 	private: System::Void Uniques_FindUniques_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
+		if (Objects_find_uniques() == 0)
+		{
+			if(Objects_find_objects()==0)
+			{ 
+				if (Objects_find_operatyv() == 0)
+				{
 
-		Display_no_function(buttonName);
+				}
+			}
+		}
 	}
-//empty
+//function done
 	private: System::Void Uniques_FindObjects_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		if (Objects_find_objects() == 0)
+		{
+
+		}
 	}
+
+//function done
+	private: System::Void Uniques_FindOperatyv_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
+		if (Objects_find_operatyv() == 0)
+		{
+
+		}
+	}
+
 //empty
 	private: System::Void Uniques_CorrectComments_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
@@ -1100,13 +1430,16 @@ namespace IOlistautomation {
 
 		Display_no_function(buttonName);
 	}
-//empty
+//function done
 	private: System::Void Uniques_TransferSignals_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		if (Objects_transfer_to_signals())
+		{
+
+		}
 	}
 
 

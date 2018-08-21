@@ -53,3 +53,6 @@ const char * err_excel_no_sheet[]{
 const char * err_excel_cant_open[]{
 	"Nepavyko atidaryti pasirinkto failo, tinkamas yra .xls",
 	"Cant open chossen file, compatible only .xls files",};
+const char * err_no_learn_file[]{
+	"Nera mokinimo duomenu failo",
+	"No learning data file", };

@@ -19,6 +19,34 @@ using namespace IOlistautomation;
 struct project_str project;
 
 
+void Project_put_with_list()
+{
+	int a = project.collumn_with.size();
+	if (a > 0 && parameters.auto_column_with == 0)
+	{
+		GlobalForm::forma->Design_grid->AutoResizeColumns();
+		for (int i = 0; i < a; i++)
+		{
+			GlobalForm::forma->Design_grid->Columns[i]->Width = project.collumn_with[i];
+		}
+	}
+	else
+	{
+		GlobalForm::forma->Design_grid->AutoResizeColumns();
+	}
+}
+
+void Project_get_with_list()
+{
+	int a = GlobalForm::forma->Design_grid->ColumnCount;
+	project.collumn_with.resize(a);
+
+	for (int i = 0; i < a; i++)
+	{
+		project.collumn_with[i] = GlobalForm::forma->Design_grid->Columns[i]->Width;
+	}
+}
+
 void Project_resize_data(int size)
 {
 	project.number.resize(size);
@@ -48,10 +76,6 @@ int Project_read_data()
 	GlobalForm::forma->tabControl1->SelectedIndex = 0;
 	if (project.valid_entries > 1)
 	{
-		if (unstable_release == 1)
-		{
-			Project_save_data(false, " ");
-		}
 		if (show_confirm_window(conf_design_overwrite[lang]) == IDOK)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
@@ -268,7 +292,8 @@ void Project_data_extract_useful_data()
 
 
 void Project_put_data_listview()
-{
+{	
+	Project_delete_list();
 	GlobalForm::forma->Update();
 
 	int iCol;
@@ -295,7 +320,6 @@ void Project_put_data_listview()
 		// Load the names of the column headings from the string resources.
 		GlobalForm::forma->Design_grid->Columns[iCol]->Name = wstring_to_system_string(project.column_name[iCol]);
 	}
-	GlobalForm::forma->Update();
 
 	wstring cell_text = L"";
 
@@ -345,70 +369,85 @@ void Project_put_data_listview()
 	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
 	info_write(info_txt);
 
-	GlobalForm::forma->Update();
-	GlobalForm::forma->Design_grid->AutoResizeColumns();
+	GlobalForm::forma->tabControl1->SelectedIndex = 0;
+
+	Project_put_with_list();
 	GlobalForm::forma->Update();
 }
 
-void Project_get_data_listview(bool visible)
+
+void Project_get_data_listview()
 {
-	if (visible)
+	if (GlobalForm::forma->Design_grid->RowCount > 0)
 	{
+		project.valid_entries = GlobalForm::forma->Design_grid->RowCount-1;
+		Project_resize_data(project.valid_entries+1);
+
+		project.number_collums = GlobalForm::forma->Design_grid->ColumnCount - 1;
+
 		Show_progress(prog_grid_take[lang], project.valid_entries);
-	}
 
-	strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	info_write(info_txt);
+		strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
+		strcat_s(info_txt, sizeof info_txt, info_separator);
+		strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
+		info_write(info_txt);
 
-	wstring cell_text = L"";
+		wstring cell_text = L"";
 
-	int iCol;
-	for (iCol = 0; iCol <= project.number_collums; iCol++)
-	{
-		project.column_name[iCol] = system_string_to_wstring(GlobalForm::forma->Design_grid->Columns[iCol]->Name);
-	}
-
-
-	for (int index = 0; index <= project.valid_entries; index++)
-	{
-
-		// fill all cells with data
+		int iCol;
 		for (iCol = 0; iCol <= project.number_collums; iCol++)
 		{
-			cell_text = system_string_to_wstring(GlobalForm::forma->Design_grid->Rows[index]->Cells[iCol]->FormattedValue->ToString());
-
-			switch (iCol)
-			{
-			case 0:	project.number[index] = cell_text;
-				break;
-			case 1:	project.Cabinet[index] = cell_text;
-				break;
-			case 2:	project.Module[index] = cell_text;
-				break;
-			case 3:	project.Pin[index] = cell_text;
-				break;
-			case 4:	project.Channel[index] = cell_text;
-				break;
-			case 5:	project.IO_text[index] = cell_text;
-				break;
-			case 6:	project.Page[index] = cell_text;
-				break;
-			}
+			project.column_name[iCol] = system_string_to_wstring(GlobalForm::forma->Design_grid->Columns[iCol]->Name);
 		}
-		set_progress_value(index);
-	}
-	if (visible)
-	{
+
+
+		for (int index = 0; index <= project.valid_entries; index++)
+		{
+
+			// fill all cells with data
+			for (iCol = 0; iCol <= project.number_collums; iCol++)
+			{
+				cell_text = system_string_to_wstring(GlobalForm::forma->Design_grid->Rows[index]->Cells[iCol]->FormattedValue->ToString());
+
+				switch (iCol)
+				{
+				case 0:	project.number[index] = cell_text;
+					break;
+				case 1:	project.Cabinet[index] = cell_text;
+					break;
+				case 2:	project.Module[index] = cell_text;
+					break;
+				case 3:	project.Pin[index] = cell_text;
+					break;
+				case 4:	project.Channel[index] = cell_text;
+					break;
+				case 5:	project.IO_text[index] = cell_text;
+					break;
+				case 6:	project.Page[index] = cell_text;
+					break;
+				}
+			}
+			set_progress_value(index);
+		}
 		Hide_progress();
+
+		strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
+		strcat_s(info_txt, sizeof info_txt, info_separator);
+		strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
+		strcat_s(info_txt, sizeof info_txt, error_separator);
+		strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+		info_write(info_txt);
+
+		if (unstable_release == 1)
+		{
+			Project_save_data(true, " ");
+		}
+		Project_get_with_list();
 	}
-	strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	else
+	{
+		project = {};
+	}
 }
 
 void Project_delete_list()
@@ -418,7 +457,7 @@ void Project_delete_list()
 }
 
 
-int Project_save_data(bool visible, std::string file_name_global)
+int Project_save_data(bool auto_save, std::string file_name_global)
 {
 	SaveFileDialog^ sfd = gcnew SaveFileDialog();
 	sfd->Filter = "Save document |*.psave" +
@@ -443,7 +482,7 @@ int Project_save_data(bool visible, std::string file_name_global)
 	FILE* outFile;
 
 	int iCol;
-	if (visible)
+	if (auto_save == 0)
 	{
 		if (file_name_global.compare(" ") == 0)
 		{
@@ -480,8 +519,6 @@ int Project_save_data(bool visible, std::string file_name_global)
 		err_write_show(err_txt);
 		return 1;
 	}
-
-	Project_get_data_listview(visible);
 
 	cell_text.append(L"\n");
 	const wchar_t* x = cell_text.c_str();
@@ -534,17 +571,13 @@ int Project_save_data(bool visible, std::string file_name_global)
 		cell_text_write.append(L"\n");
 		x = cell_text_write.c_str();
 		fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
-		if (visible)
-		{
-			set_progress_value(index);
-		}
+		
+		set_progress_value(index);		
 	}
 	fclose(outFile);
 
-	if (visible)
-	{
-		Hide_progress();
-	}
+	Hide_progress();
+	
 	strcpy_s(info_txt, sizeof info_txt, info_save_data[lang]);
 	strcat_s(info_txt, sizeof info_txt, info_separator);
 	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
@@ -555,13 +588,14 @@ int Project_save_data(bool visible, std::string file_name_global)
 	return 0;
 }
 
-int Project_Load_data()
+int Project_Load_data(std::string file_name_global)
 {
 	wchar_t cmp_text[255] = L"Design";
 
 	OpenFileDialog^ importfile = gcnew OpenFileDialog();
 	importfile->Filter = "Load document |*.psave" +
 		"|All Files|*.*";
+	string extension = ".psave";
 
 	if (project.valid_entries > 0)
 	{
@@ -589,13 +623,29 @@ int Project_Load_data()
 	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
 	info_write(info_txt);
 
+	FILE* inFile;
+	string file_name;
 
-	if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+	if (file_name_global.compare(" ") == 0)
 	{
-		FILE* inFile;
-		string file_name;
+		if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			file_name = system_string_to_string(importfile->FileName);
+		}
+		else
+		{
+			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
+			err_write(err_txt);
+			return 1;
+		}
+	}
+	else
+	{
+		file_name = file_name_global;
+		file_name.append(extension);
+	}		
 
-		file_name = system_string_to_string(importfile->FileName);
+		
 		fopen_s(&inFile, file_name.c_str(), "r+,ccs=UTF-8");
 		if (inFile == NULL)
 		{
@@ -691,13 +741,7 @@ int Project_Load_data()
 
 		Hide_progress();
 
-	}
-	else
-	{
-		strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-		err_write(err_txt);
-		return 1;
-	}
+
 
 	strcpy_s(info_txt, sizeof info_txt, info_load_data[lang]);
 	strcat_s(info_txt, sizeof info_txt, info_separator);

@@ -43,6 +43,13 @@ string system_string_to_string(System::String^ text)
 	return new_text;
 }
 
+string wstring_to_string(wstring text)
+{
+	string s(text.begin(), text.end());
+	s.assign(text.begin(), text.end());
+	return s;
+}
+
 wstring int_to_wstring(int number, int nr_of_digits)
 {	
 	wstring text = L"";
@@ -270,7 +277,7 @@ void set_progress_value(int value)
 	GlobalForm::forma->progressBaras->Value = value;
 }
 
-char parametrai_str[9][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language"};
+char parametrai_str[10][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with"};
 
 
 int cfg_puts(char *tekstas, struct parameters_str *pars)
@@ -388,8 +395,23 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				}
 				break;
 			case 7:
-				pars->SCADA = value_text;
-				break;
+				if (fStringMatch = (strcmp(value_text, "System Platform") == 0))
+				{
+					pars->SCADA = System_platform;
+				}
+				else if (fStringMatch = (strcmp(value_text, "WinCC") == 0))
+				{
+					pars->SCADA = WinCC;
+				}				
+				else
+				{
+					pars->SCADA = Beckhoff_index;
+					strcpy_s(err_txt, sizeof err_txt, parametras);
+					strcat_s(err_txt, sizeof err_txt, error_separator);
+					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
+					err_write_show(err_txt);
+				}
+				break;				
 			case 8:
 				if (fStringMatch = (strcmp(value_text, "LT") == 0))
 				{
@@ -415,6 +437,9 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
 					err_write_show(err_txt);
 				}
+				break;
+			case 9:
+				pars->auto_column_with = value;
 				break;
 			default:
 				strcpy_s(err_txt, sizeof err_txt, parametras);
@@ -452,5 +477,12 @@ int cfg_reads(struct parameters_str *params)
 		par_klaida=cfg_puts(str, params);
 	}
 	fclose(fp);
+	return 0;
+}
+
+
+int check_strings(int language)
+{
+
 	return 0;
 }

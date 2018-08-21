@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <algorithm>
 
 #include <vector>
 #include <CommCtrl.h>
@@ -35,6 +36,10 @@ struct test_str
 {
 	wstring test_KKS;
 	struct KKS_str KKS;
+
+	wstring IO_text;
+	wstring Object_text;
+	wstring text_to_copy;
 };
 
 enum Languge_index {
@@ -63,15 +68,17 @@ struct parameters_str
 	int debug = 0;
 	int clr_logs_on_start = 0;
 	int excel_row_nr_with_name = 2;
-	string CPU = "Beckhoff";
+	int CPU = Beckhoff_index;
 	int Language = LT_index;
-	string SCADA = "System Platform";
+	int SCADA = System_platform;
 	int KKS_del1 = 0;
 	int KKS_del2 = 0;
+	int auto_column_with = 1;
 };
 
 struct project_str
 {
+	vector <int> collumn_with;
 	int valid_entries;
 	int number_collums;
 	vector<wstring> column_name	;
@@ -87,8 +94,27 @@ struct project_str
 
 struct signal_str
 {
+	vector <int> collumn_with;
 	int valid_entries;
-	int number_collums = 15;
+	int number_collums = 16;
+	vector<wstring> column_name = { L"Nr.",
+		L"Spinta",
+		L"Operatyv",
+		L"KKS",
+		L"KKS1",
+		L"KKS2",
+		L"Used",
+		L"Type",
+		L"Objectas",
+		L"objekto patikslinimas",
+		L"Funkcinis tekstas",
+		L"Funkcija",
+		L"IO tekstas",
+		L"Modulis",
+		L"Kanalas",
+		L"Pinas",
+		L"Projekto reference",
+	};
 
 	vector<wstring> number;					//collumn 0
 	vector<wstring> Cabinet;				//collumn 1	
@@ -101,15 +127,17 @@ struct signal_str
 	vector<wstring> Object_text;			//collumn 8
 	vector<wstring> Extendet_object_text;	//collumn 9
 	vector<wstring> Function_text;			//collumn 10
-	vector<wstring> IO_text;				//collumn 11	
-	vector<wstring> Module;					//collumn 12
-	vector<wstring> Channel;				//collumn 13	
-	vector<wstring> Pin;					//collumn 14			
-	vector<wstring> Page;					//collumn 15
+	vector<wstring> Function;				//collumn 11
+	vector<wstring> IO_text;				//collumn 12	
+	vector<wstring> Module;					//collumn 13
+	vector<wstring> Channel;				//collumn 14	
+	vector<wstring> Pin;					//collumn 15			
+	vector<wstring> Page;					//collumn 16
 };
 
 struct learning_str
 {
+	bool done = false;
 	vector<wstring> Valve_name;					//collumn 0
 	vector<wstring> Motor_name;					//collumn 1
 	vector<wstring> Analog_name;				//collumn 2
@@ -125,10 +153,23 @@ struct learning_str
 
 struct object_str
 {
-	vector<wstring> column_name;
+	vector <int> collumn_with;
 	int valid_entries;
-	vector<int> number;
+	int number_collums = 4;
+	vector<wstring> column_name = { L"Nr.",
+		L"Operatyv",
+		L"KKS",
+		L"Type",
+		L"Objectas",
+	};
+
+	vector<wstring> number;					//collumn 0
+	vector<wstring> operatyv;				//collumn 1	
+	vector<wstring> KKS;					//collumn 2	
+	vector<wstring> Object_type;			//collumn 3
+	vector<wstring> Object_text;			//collumn 4
 };
+
 extern struct test_str test;
 extern struct parameters_str parameters;
 extern struct project_str project;
@@ -146,6 +187,7 @@ String^ string_to_system_string(string text);
 String^ wstring_to_system_string(wstring text);
 wstring system_string_to_wstring(System::String^ text);
 string system_string_to_string(System::String^ text);
+string wstring_to_string(wstring text);
 wstring int_to_wstring(int number, int nr_of_digits);
 
 void err_write(char *tekstas);
@@ -165,6 +207,7 @@ void set_progress_value(int value);
 void reset_logs();
 int show_confirm_window(LPCWSTR tekstas);
 
+int check_strings(int language);
 #endif
 
 

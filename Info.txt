@@ -1,9 +1,13 @@
 Check global strings if size is ok with selected language					
+Row names multilanguage					
+Delete button on cells					
+Tester aplication					
 					
 File ->					
-	Save			Left:  Objects	Done: Design, IO_list
-	Save all			Left:  Objects	Done: Design, IO_list
-	Load			Left:  Objects	Done: Design, IO_list
+	Save			Done	
+	Save all			Done	
+	Load			Done	
+	Load all			Done	
 	Help			Done, need more info there	
 	About			Done, need more info there	
 	Exit			Done	
@@ -13,26 +17,27 @@ Project ->
 	IO compare				
 	Transfer Data to Signals			Done	
 	CPU selected->				
-		Beckhoff			
-		800xA			
-		Siemens			
-		Schneider			
+		Beckhoff		Done	
+		800xA		Done	
+		Siemens		Done	
+		Schneider		Done	
 	Scada Selected->				
-		System Platform			
-		WinCC			
+		System Platform		Done	
+		WinCC		Done	
 	Language Selected->				
-		LT			
-		LV			
-		EN			
-		RU			
+		LT		Done	
+		LV		Done	
+		EN		Done	
+		RU		Done	
 Signals->					
 	KKS edit			Done	
-	Find function				
+	Find function			Done	
 Uniques->					
-	Find Uniques				
-	Find Objects				
+	Find Uniques			Done	Need to check if there is more new uniques
+	Find Objects			Done	
+	Find Operatyv			Done	
 	Correct Comments				
-	Transfer to Signals				
+	Transfer to Signals			Done	
 Declare->					
 	PID				
 	Valve				

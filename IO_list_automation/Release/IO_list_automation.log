@@ -1,0 +1,21 @@
+﻿  MainWindow.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  config.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  design.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  objects.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  signals.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  Generating Code...

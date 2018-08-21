@@ -30,6 +30,7 @@ void Main() {
 		strcpy_s(err_txt, sizeof err_txt, err_unstable[lang]);
 		err_write_show(err_txt);
 	}
+	check_strings(lang);
 
 	// because forms designer gives error and cant eddit it sometimes
 //	IOlistautomation::MainWindow flora;		
@@ -38,8 +39,6 @@ void Main() {
 	err_write(err_txt);
 
 	GlobalForm::forma = gcnew IOlistautomation::MainWindow;
-//	this->valveToolStripMenuItem2->BackColor = System::Drawing::Color::Aqua;
-
 	GlobalForm::forma->ClientSize = System::Drawing::Size(parameters.width, parameters.height);
 
 	Application::Run(GlobalForm::forma);

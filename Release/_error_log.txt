@@ -1,0 +1,4 @@
+2018-08-21  10:20:21.216 - Error: This program is not stable ant not fully tested, carefully use it !!!
+2018-08-21  10:20:22.667 - Error: ---------------------------------------------------------
+2018-08-21  10:20:31.528 - Error: File selection canceled
+2018-08-21  10:20:43.493 - Error: No learning data file --- .\learning\LT.xls
