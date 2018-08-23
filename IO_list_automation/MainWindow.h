@@ -499,7 +499,7 @@ private:
 			// 
 			this->Signals_KKSedit->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_KKSedit->Name = L"Signals_KKSedit";
-			this->Signals_KKSedit->Size = System::Drawing::Size(180, 22);
+			this->Signals_KKSedit->Size = System::Drawing::Size(145, 22);
 			this->Signals_KKSedit->Text = L"KKS edit";
 			this->Signals_KKSedit->Click += gcnew System::EventHandler(this, &MainWindow::Signals_KKSedit_Click);
 			// 
@@ -507,7 +507,7 @@ private:
 			// 
 			this->Signals_FindFunction->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_FindFunction->Name = L"Signals_FindFunction";
-			this->Signals_FindFunction->Size = System::Drawing::Size(180, 22);
+			this->Signals_FindFunction->Size = System::Drawing::Size(145, 22);
 			this->Signals_FindFunction->Text = L"Find function";
 			this->Signals_FindFunction->Click += gcnew System::EventHandler(this, &MainWindow::Signals_FindFunction_Click);
 			// 
@@ -523,8 +523,7 @@ private:
 			// 
 			// Uniques_FindUniques
 			// 
-			this->Uniques_FindUniques->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Uniques_FindUniques->BackColor = System::Drawing::SystemColors::Control;
 			this->Uniques_FindUniques->Name = L"Uniques_FindUniques";
 			this->Uniques_FindUniques->Size = System::Drawing::Size(198, 22);
 			this->Uniques_FindUniques->Text = L"Find Uniques";
@@ -946,13 +945,13 @@ private:
 		int a = this->tabControl1->SelectedIndex;
 		switch (a)
 		{
-		case 0:	Project_get_data_listview();
+		case Design_grid_index:	Project_get_data_listview();
 			Project_save_data(false," ");
 			break;
-		case 1:	Signals_get_data_listview(); 
+		case Signals_grid_index :	Signals_get_data_listview();
 			Signals_save_data(false, " ");
 			break;
-		case 2:	Objects_get_data_listview(); 
+		case Objects_grid_index :	Objects_get_data_listview();
 			Objects_save_data(false, " ");
 			break;
 		}
@@ -1017,11 +1016,11 @@ private:
 		int a = this->tabControl1->SelectedIndex;
 		switch (a)
 		{
-		case 0:	Project_Load_data(" ");
+		case Design_grid_index:	Project_Load_data(" ");
 			break;
-		case 1: Signals_Load_data(" ");
+		case Signals_grid_index: Signals_Load_data(" ");
 			break;
-		case 2:	Objects_Load_data(" ");
+		case Objects_grid_index :	Objects_Load_data(" ");
 			break;
 		}		
 	}
@@ -1103,7 +1102,6 @@ private:
 
 		if (Project_read_data() == 0)
 		{
-			Project_put_data_listview();
 			Signals_get_data_design();
 		}
 
@@ -1387,13 +1385,18 @@ private:
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
+		
+		int a = this->Object_grid->RowCount;
 		if (Objects_find_uniques() == 0)
 		{
-			if(Objects_find_objects()==0)
-			{ 
-				if (Objects_find_operatyv() == 0)
+			if (a <= 1)
+			{
+				if (Objects_find_objects() == 0)
 				{
+					if (Objects_find_operatyv() == 0)
+					{
 
+					}
 				}
 			}
 		}

@@ -222,16 +222,17 @@ Nr.☣Operatyv☣KKS☣Type☣Objectas☣
 219☣ ☣NDB10_CP001☣AI☣Vandens slėgis prieš katilą☣
 220☣ ☣NDB10_CT001☣AI☣Termofikacinio vandens temperatūra prieš katilą☣
 221☣ ☣NDB10_CT002☣AI☣Termofikacinio vandens temperatūra prieš katilą☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
- ☣ ☣ ☣ ☣ ☣
+223☣ ☣CYQ10_FQ001_XG03☣ ☣Paveikė VK-1 uždujinimo jutiklis Nr.2☣
+224☣ ☣CYQ10_FQ001_XG05☣ ☣Paveikė VK-1 uždujinimo jutiklis Nr.3☣
+225☣ ☣CYQ10_FQ001_XG07☣ ☣Paveikė VK-1 uždujinimo jutiklis Nr.4☣
+226☣ ☣CYQ10_FQ001_XM01☣ ☣Išjungta VK-1 uždujinimo signalizatoriaus maitinimo įtampa☣
+227☣ ☣HLA10_CM001_T☣AI☣Degimo oro temperatūra A pusėje☣
+228☣ ☣HLA20_CM001_T☣AI☣Degimo oro temperatūra B pusėje☣
+229☣ ☣HNA10_CQ001_T☣AI☣Dūmų temperatūra prieš recirkuliaciją☣
+230☣ ☣HNA30_CQ001_CO☣ ☣SIDOR analizatorius. CO☣
+231☣ ☣HNA30_CQ001_O2☣ ☣SIDOR analizatorius. O2☣
+232☣ ☣HNA30_CQ001_XB25☣ ☣DAS maitinimo šaltinio gedimas☣
+233☣ ☣HNA30_CQ001_XB32☣ ☣SIDOR analizatorius. Analizatorius serviso rėžime☣
+234☣ ☣HNA30_CQ001_XB48☣ ☣SIDOR analizatorius. Analizatoriaus gedimas☣
+235☣ ☣HNA30_CQ001_XB49☣ ☣SIDOR analizatorius. Klaida☣
  ☣ ☣ ☣ ☣ ☣

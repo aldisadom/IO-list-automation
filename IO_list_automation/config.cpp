@@ -14,43 +14,39 @@ struct parameters_str parameters;
 struct test_str test;
 int lang = 0;
 
+// get number of digits from integer
 int GetNumberOfDigits(int i)
 {
 	return i > 0 ? (int)log10((double)i) + 1 : 1;
 }
-
-String^ string_to_system_string(string text)
+System::String^ string_to_system_string(std::string text)
 {
 	String^ new_text = gcnew String(text.c_str());
 	return new_text;
 }
-
-String^ wstring_to_system_string(wstring text)
+System::String^ wstring_to_system_string(std::wstring text)
 {
 	String^ new_text = gcnew String(text.c_str());
 	return new_text;
 }
-
-wstring system_string_to_wstring(System::String^ text)
+std::wstring system_string_to_wstring(System::String^ text)
 {
 	wstring new_text = msclr::interop::marshal_as< std::wstring >(text);
 	return new_text;
 }
-
-string system_string_to_string(System::String^ text)
+std::string system_string_to_string(System::String^ text)
 {
 	string new_text = msclr::interop::marshal_as< std::string >(text);
 	return new_text;
 }
-
-string wstring_to_string(wstring text)
+std::string wstring_to_string(std::wstring text)
 {
 	string s(text.begin(), text.end());
 	s.assign(text.begin(), text.end());
 	return s;
 }
-
-wstring int_to_wstring(int number, int nr_of_digits)
+// convert integer to wstring adding 0 bassed on number of digits
+std::wstring int_to_wstring(int number, int nr_of_digits)
 {	
 	wstring text = L"";
 	int b = nr_of_digits - GetNumberOfDigits(number);
@@ -63,7 +59,8 @@ wstring int_to_wstring(int number, int nr_of_digits)
 	return text;
 }
 
-string laikas()
+
+std::string get_time_string()
 {
 	char ats[255];
 	char tmp[255];
@@ -135,7 +132,9 @@ string laikas()
 //	strcat_s( at, sizeof at, ats);
 }
 
-string button_press_name_write(String^ buttonName)
+
+// writes to info which button is pressed and returns converted to string
+std::string button_press_name_write(System::String^ buttonName)
 {
 	string converted_text = system_string_to_string(buttonName).c_str();
 	const char *button_text= converted_text.c_str();
@@ -148,6 +147,9 @@ string button_press_name_write(String^ buttonName)
 	return converted_text;
 }
 
+
+
+// shows messagebox with button name which function doesnt exists
 int Display_no_function(System::String^ buttonName)
 {
 	string converted_text = system_string_to_string(buttonName).c_str();
@@ -168,7 +170,7 @@ int Display_no_function(System::String^ buttonName)
 	);	
 	return msgboxID;
 }
-
+// displays error as messagebox
 int Display_error(char *tekstas)
 {
 	wstring wstr(tekstas, tekstas + strlen(tekstas));
@@ -180,7 +182,7 @@ int Display_error(char *tekstas)
 	);
 	return msgboxID;
 }
-
+// displays confirmation window
 int show_confirm_window(LPCWSTR tekstas)
 {
 	int msgboxID = MessageBox(
@@ -192,13 +194,16 @@ int show_confirm_window(LPCWSTR tekstas)
 	return msgboxID;
 }
 
+
+
+//writes error to log file
 void err_write(char *tekstas)
 {
 	FILE *fp;
 	string laiks;
 	char ats[255];
 
-	laiks = laikas();
+	laiks = get_time_string();
 	strcpy_s(ats, sizeof ats, laiks.c_str());
 
 	fopen_s(&fp, "_error_log.txt", "a");
@@ -210,26 +215,26 @@ void err_write(char *tekstas)
 
 	info_write(tekstas);
 }
-
+//writes error and shows it as messagebox
 void err_write_show(char *tekstas)
 {
 	err_write(tekstas);
 	Display_error(tekstas);
 }
-
+// writes information to log
 void info_write(char *tekstas)
 {
 	FILE *fp;
 	string laiks;
 	char ats[255];
 
-	laiks = laikas();
+	laiks = get_time_string();
 	strcpy_s(ats, sizeof ats, laiks.c_str());
 	fopen_s(&fp, "_info_log.txt", "a");
 	fprintf(fp, "%s - %s\n", ats, tekstas);
 	fclose(fp);
 }
-
+// resets all logs
 void reset_logs()
 {
 	remove("_error_log.txt");
@@ -238,7 +243,8 @@ void reset_logs()
 
 
 
-void Show_progress(wstring text,int max)
+// shows progress bar and labels it
+void Show_progress(std::wstring text,int max)
 {
 	String^ MyString = wstring_to_system_string(text);
 
@@ -257,7 +263,7 @@ void Show_progress(wstring text,int max)
 
 	GlobalForm::forma->Refresh();
 }
-
+//hides progress bar
 void Hide_progress()
 {
 	GlobalForm::forma->progressBaras->Value = 0;
@@ -270,16 +276,20 @@ void Hide_progress()
 
 	GlobalForm::forma->Refresh();
 }
-
-
+// updates progress bar
 void set_progress_value(int value)
 {
 	GlobalForm::forma->progressBaras->Value = value;
 }
 
+
+
+
+// parameters that can be added to _cfg file
 char parametrai_str[10][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with"};
 
 
+//puts parameter in structure
 int cfg_puts(char *tekstas, struct parameters_str *pars)
 {
 	char * parametras;
@@ -289,7 +299,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 	bool fStringMatch = FALSE;
 	int stringo_nr = 0;
 	int count = 0;
-
+	//geting which parameter it is read
 	parametras = strtok_s(tekstas, "=", &next_token1);
 	if (parametras == NULL)
 	{
@@ -299,6 +309,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 		err_write_show(err_txt);
 		return 1;
 	}
+	//get parameter value
 	value_text = strtok_s(NULL, "\n", &next_token1);
 	if (value_text == NULL)
 	{
@@ -308,7 +319,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 		err_write_show(err_txt);
 		return 1;
 	}
-
+	// matching parameter whith parameter strings
 	count = sizeof parametrai_str / sizeof parametrai_str[0];
 	for (int i = 0; i < count; i++)
 	{
@@ -332,6 +343,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 
 	else
 	{
+		// putting parameter value to structure
 		switch (stringo_nr)
 		{
 			case 0:
@@ -458,7 +470,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 	}
 	return 0;
 }
-
+//reads parameters from config file
 int cfg_reads(struct parameters_str *params)
 {
 	FILE *fp;
@@ -481,8 +493,3 @@ int cfg_reads(struct parameters_str *params)
 }
 
 
-int check_strings(int language)
-{
-
-	return 0;
-}

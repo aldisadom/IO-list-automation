@@ -28,6 +28,7 @@ namespace IOlistautomation {
 			//
 			//TODO: Add the constructor code here
 			//
+			KKS_init();
 		}
 
 	protected:

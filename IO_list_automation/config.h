@@ -49,6 +49,12 @@ enum Languge_index {
 	RU_index = 3,
 };
 
+enum Grid_index {
+	Design_grid_index = 0,
+	Signals_grid_index = 1,
+	Objects_grid_index = 2,
+};
+
 enum CPU_index {
 	Beckhoff_index = 0,
 	Siemens_index = 1,
@@ -81,15 +87,15 @@ struct project_str
 	vector <int> collumn_with;
 	int valid_entries;
 	int number_collums;
-	vector<wstring> column_name	;
+	vector<wstring> column_name;
 
 	vector<wstring> number;			//collumn 0, in excel no
-	vector<wstring> Cabinet		;	//collumn 1, in excel 1
-	vector<wstring> Module		;	//collumn 2, in excel 2
-	vector<wstring> Pin			;	//collumn 3, in excel 3
-	vector<wstring> Channel		;	//collumn 4, in excel 4
+	vector<wstring> Cabinet;	//collumn 1, in excel 1
+	vector<wstring> Module;	//collumn 2, in excel 2
+	vector<wstring> Pin;	//collumn 3, in excel 3
+	vector<wstring> Channel;	//collumn 4, in excel 4
 	vector<wstring> IO_text;		//collumn 5, in excel 5
-	vector<wstring> Page		;	//collumn 6, in excel 6
+	vector<wstring> Page;	//collumn 6, in excel 6
 };
 
 struct signal_str
@@ -151,6 +157,7 @@ struct learning_str
 	vector<wstring> Function_txt2_meaning;		//collumn 10
 };
 
+
 struct object_str
 {
 	vector <int> collumn_with;
@@ -207,7 +214,4 @@ void set_progress_value(int value);
 void reset_logs();
 int show_confirm_window(LPCWSTR tekstas);
 
-int check_strings(int language);
 #endif
-
-

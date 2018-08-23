@@ -30,10 +30,6 @@ void Main() {
 		strcpy_s(err_txt, sizeof err_txt, err_unstable[lang]);
 		err_write_show(err_txt);
 	}
-	check_strings(lang);
-
-	// because forms designer gives error and cant eddit it sometimes
-//	IOlistautomation::MainWindow flora;		
 
 	strcpy_s(err_txt, sizeof err_txt, "---------------------------------------------------------");
 	err_write(err_txt);
