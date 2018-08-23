@@ -19,7 +19,7 @@ struct object_str objects;
 struct learning_str learn;
 
 
-wstring Signals_get_data_switch(int iCol, int index)
+std::wstring Signals_get_data_switch(int iCol, int index)
 {
 	wstring cell_text = L"";
 	// fill all cells with data

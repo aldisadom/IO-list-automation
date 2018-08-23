@@ -6,6 +6,7 @@
 void Project_resize_data(int size);
 void Project_delete_row(int row);
 
+std::wstring Project_get_data_switch(int iCol, int index);
 
 int Project_read_data();
 void Project_data_extract_useful_data();

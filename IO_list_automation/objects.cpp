@@ -16,7 +16,7 @@ using namespace std;
 using namespace IOlistautomation;
 
 
-wstring Objects_get_data_switch(int iCol, int index)
+std::wstring Objects_get_data_switch(int iCol, int index)
 {
 	wstring cell_text = L"";
 	// fill all cells with data

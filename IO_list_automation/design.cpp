@@ -12,9 +12,16 @@
 #include "config.h"
 #include "MainWindow.h"
 
+
 using namespace libxl;
 using namespace std;
 using namespace IOlistautomation;
+
+
+
+
+
+
 
 struct project_str project;
 
@@ -24,7 +31,7 @@ void Project_delete_list()
 	GlobalForm::forma->Design_grid->Columns->Clear();
 }
 
-wstring Project_get_data_switch(int iCol, int index)
+std::wstring Project_get_data_switch(int iCol, int index)
 {
 	wstring cell_text = L"";
 

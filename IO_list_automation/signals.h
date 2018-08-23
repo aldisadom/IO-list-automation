@@ -2,7 +2,7 @@
 #ifndef _SIGNALS_H_
 #define _SIGNALS_H_
 
-wstring Signals_get_data_switch(int iCol, int index);
+std::wstring Signals_get_data_switch(int iCol, int index);
 int Signals_get_data_design();
 
 void Signals_resize_data(int size);

@@ -1,10 +1,2 @@
-﻿  Declare.cpp
-  Instance.cpp
-  MainWindow.cpp
-  SCADA.cpp
-  config.cpp
-  design.cpp
-  objects.cpp
-  signals.cpp
-  Generating Code...
+﻿  config.cpp
   IO_list_automation.vcxproj -> C:\IO-list-automation\Debug\IO_list_automation.exe
