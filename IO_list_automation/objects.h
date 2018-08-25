@@ -3,18 +3,23 @@
 #define _OBJECTS_H_
 
 
-
-void Objects_put_data_switch(int iCol, int index, wstring cell_text);
+// get data from memory to wstring
 std::wstring Objects_get_data_switch(int iCol, int index);
-int Objects_find_uniques();
-int Objects_find_objects();
-int Objects_find_operatyv();
-int Objects_transfer_to_signals();
+// put data from wstring to memory
+void Objects_put_data_switch(int iCol, int index, wstring cell_text);
 
 
-
-
+//check if there is data in any variable
 int Objects_valid_row_check(int row);
 
+
+//find unique objects in signals data
+int Objects_find_uniques();
+//find what kind of object it is
+int Objects_find_objects();
+//find operative marking
+int Objects_find_operatyv();
+//transfer objects data back to signals
+int Objects_transfer_to_signals();
 
 #endif

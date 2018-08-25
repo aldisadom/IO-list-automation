@@ -4,16 +4,28 @@
 
 
 
-
+// get data from memory to wstring
 std::wstring Signals_get_data_switch(int iCol, int index);
-int Signals_get_data_design();
+// put data from wstring to memory
 void Signals_put_data_switch(int iCol, int index, wstring cell_text);
 
 
+//check if there is data in any variable
 int Signals_valid_row_check(int row);
-KKS_str Signals_KKS_trim(wstring KKS);
+
+//get data from project to signals
+int Signals_get_data_design();
+
+
+//KKS triming algorithm removes back ant front parts, and splits into two parts
+KKS_str Signals_KKS_trim(wstring KKS_text);
+//trims all KKS data in signals
 int Signals_all_KKS_trim();
+
+
+//reads learning data for object and function recognition
 int Signals_learn_data();
+//finds functions in signal data
 int Signals_find_function();
 
 #endif

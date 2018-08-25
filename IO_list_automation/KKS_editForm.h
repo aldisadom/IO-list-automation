@@ -269,7 +269,7 @@ namespace IOlistautomation {
 			}
 			if (parameters.KKS_del2 == 0)
 			{
-				this->KKS_delete_box1->Text = L"";
+				this->KKS_delete_box2->Text = L"";
 			}
 			else
 			{

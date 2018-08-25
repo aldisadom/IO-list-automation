@@ -20,32 +20,30 @@ using namespace IOlistautomation;
 
 struct project_str project;
 
-
+// get data from memory to wstring
 std::wstring Project_get_data_switch(int iCol, int index)
 {
-	wstring cell_text = L"";
-
 	switch (iCol)
 	{
-	case 0:	cell_text = project.data[index].number;
+	case 0:	return project.data[index].number;
 		break;
-	case 1:	cell_text = project.data[index].Cabinet;
+	case 1:	return project.data[index].Cabinet;
 		break;
-	case 2:	cell_text = project.data[index].Module;
+	case 2:	return project.data[index].Module;
 		break;
-	case 3:	cell_text = project.data[index].Pin;
+	case 3:	return project.data[index].Pin;
 		break;
-	case 4:	cell_text = project.data[index].Channel;
+	case 4:	return project.data[index].Channel;
 		break;
-	case 5:	cell_text = project.data[index].IO_text;
+	case 5:	return project.data[index].IO_text;
 		break;
-	case 6:	cell_text = project.data[index].Page;
+	case 6:	return project.data[index].Page;
 		break;
-	default:cell_text = LPWSTR(L"");
+	default:return LPWSTR(L"");
 		break;
 	}
-	return cell_text;
 }
+// put data from wstring to memory
 void Project_put_data_switch(int iCol, int index, std::wstring cell_text)
 {
 	switch (iCol)
@@ -66,6 +64,7 @@ void Project_put_data_switch(int iCol, int index, std::wstring cell_text)
 		break;
 	}
 }
+
 
 //check if there is data in any variable
 int Project_valid_row_check(int row)
@@ -100,13 +99,80 @@ int Project_valid_row_check(int row)
 	}
 	return 0;
 }
-//resize data
 
 
+// extract useful data from design file
+void Project_data_extract_useful_data()
+{
+	int a = 0;
+	Show_progress(prog_process_data[lang], 100);
 
+	strcpy_s(info_txt, sizeof info_txt, info_extract_data[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
+	info_write(info_txt);
+
+	//clearing rows thant dont have data
+	for (int row = 0; row < parameters.excel_row_nr_with_name; ++row)
+	{
+		Global_delete_data_row(Design_grid_index, 0);
+	}
+	project.valid_entries = project.valid_entries - parameters.excel_row_nr_with_name;
+	int row = project.valid_entries;
+
+	// going through all data
+	while (row >= 0) // its quicker to delete from vectors end than begining
+	{
+		if (project.data[row].Module.empty() == 1 || project.data[row].Channel.empty() == 1)   // if no data in module or channel, that line of data is not useful and delete it
+		{
+			Global_delete_data_row(Design_grid_index, row);
+			project.valid_entries = project.valid_entries - 1;
+		}
+		else
+		{
+			// if there is more than two simbols, search if last-1 character is not number, than add "0" before last symbol 
+			if (project.data[row].Channel.size() > 1)
+			{
+				if ((project.data[row].Channel.substr(project.data[row].Channel.size() - 2, 1).find_first_of(L"0123456789") == -1))
+				{
+					project.data[row].Channel.insert(project.data[row].Channel.size() - 1, L"0");
+				}
+			}
+			else // if size is 1 than add "0" to beggining
+			{
+				project.data[row].Channel.insert(0, L"0");
+			}
+			a = (project.valid_entries - row) * 100 / project.valid_entries;
+			set_progress_value(a);
+		}
+		row--;
+	}
+	Global_resize_data(Design_grid_index, project.valid_entries + 1);
+
+	int max_digits = GetNumberOfDigits(project.valid_entries);
+	if ((pow(10, max_digits - 1) * 9) < project.valid_entries) // if numbers are 90% filed increase digits by one
+	{
+		max_digits++;
+	}
+
+	// numerise all entries, and add zeros for better sorting
+	for (int row = 0; row <= project.valid_entries; row++)
+	{
+		project.data[row].number = int_to_wstring(row, max_digits);
+	}
+
+	Hide_progress();
+	strcpy_s(info_txt, sizeof info_txt, info_extract_data[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+	info_write(info_txt);
+}
+//read data from design file
 int Project_read_data()
 {
-	GlobalForm::forma->tabControl1->SelectedIndex = Design_grid_index;
+	GlobalForm::forma->tabControl1->SelectedIndex = Design_grid_index; // select working cell
 	if (project.valid_entries > 1)
 	{
 		if (show_confirm_window(conf_design_overwrite[lang]) == IDOK)
@@ -128,7 +194,7 @@ int Project_read_data()
 	OpenFileDialog^ importfile = gcnew OpenFileDialog();
 	importfile->Filter = "Excel Worksheets|*.xls" +
 		"|All Files|*.*";
-	//importfile.FileName = "Inventory_Adjustment_Export.xls";
+	
 	if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 	{
 		Book* book = xlCreateBook();
@@ -168,7 +234,7 @@ int Project_read_data()
 							texts = L"";
 							error_message = book->errorMessage();
 							fStringMatch = (strcmp(error_message, error_lic) == 0);
-							if (fStringMatch)	// trial version walkthrough for reading					
+							if (fStringMatch)	// trial version walkaround for reading					
 							{
 								book->release();
 								book = xlCreateBook();
@@ -201,6 +267,7 @@ int Project_read_data()
 					set_progress_value(row);
 				}
 
+				// reading collumn names from file
 				/*
 				project.column_name.resize(max_col);
 				for (int col = sheet->firstCol(); col < max_col; ++col)
@@ -261,64 +328,5 @@ int Project_read_data()
 	return 0;
 }
 
-void Project_data_extract_useful_data()
-{
-	int a = 0;
-	Show_progress(prog_process_data[lang], 100);
-
-	strcpy_s(info_txt, sizeof info_txt, info_extract_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	info_write(info_txt);
-
-	for (int row = 0; row < parameters.excel_row_nr_with_name; ++row)
-	{
-		Global_delete_data_row(Design_grid_index, 0);
-	}
-	project.valid_entries = project.valid_entries - parameters.excel_row_nr_with_name;
-	int row = project.valid_entries;
-
-	while (row >= 0)
-	{
-		if (project.data[row].Module.empty() == 1 || project.data[row].Channel.empty() == 1)
-		{
-			Global_delete_data_row(Design_grid_index, row);
-			project.valid_entries = project.valid_entries - 1;
-		}
-		else
-		{
-			if (project.data[row].Channel.size() > 1)
-			{
-				if ((project.data[row].Channel.substr(project.data[row].Channel.size() - 2, 1).find_first_of(L"0123456789") == -1))
-				{
-					project.data[row].Channel.insert(project.data[row].Channel.size() - 1, L"0");
-				}
-			}
-			a = (project.valid_entries - row) * 100 / project.valid_entries;
-			set_progress_value(a);
-		}
-		row--;
-	}
-	Global_resize_data(Design_grid_index, project.valid_entries + 1);
-
-	int max_digits = GetNumberOfDigits(project.valid_entries);
-	if ((pow(10, max_digits - 1) * 9) < project.valid_entries) // if numbers are 90% filed increase digits by one
-	{
-		max_digits++;
-	}
-
-	for (int row = 0; row <= project.valid_entries; row++)
-	{
-		project.data[row].number = int_to_wstring(row, max_digits);
-	}
-
-	Hide_progress();
-	strcpy_s(info_txt, sizeof info_txt, info_extract_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-}
 
 

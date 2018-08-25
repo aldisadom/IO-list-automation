@@ -16,29 +16,26 @@
 using namespace std;
 using namespace IOlistautomation;
 
-
+// get data from memory to wstring
 std::wstring Objects_get_data_switch(int iCol, int index)
 {
-	wstring cell_text = L"";
-	// fill all cells with data
-
 	switch (iCol)
 	{
-	case 0:	cell_text = objects.data[index].number;
+	case 0:	return objects.data[index].number;
 		break;
-	case 1:	cell_text = objects.data[index].operatyv;
+	case 1:	return objects.data[index].operatyv;
 		break;
-	case 2:	cell_text = objects.data[index].KKS;
+	case 2:	return objects.data[index].KKS;
 		break;
-	case 3:	cell_text = objects.data[index].Object_type;
+	case 3:	return objects.data[index].Object_type;
 		break;
-	case 4:	cell_text = objects.data[index].Object_text;
+	case 4:	return objects.data[index].Object_text;
 		break;
-	default:cell_text = LPWSTR(L"");
+	default:return LPWSTR(L"");
 		break;
 	}
-	return cell_text;
 }
+// put data from wstring to memory
 void Objects_put_data_switch(int iCol, int index, wstring cell_text)
 {
 	switch (iCol)
@@ -55,6 +52,8 @@ void Objects_put_data_switch(int iCol, int index, wstring cell_text)
 		break;
 	}
 }
+
+
 //check if there is data in any variable
 int Objects_valid_row_check(int row)
 {
@@ -84,7 +83,7 @@ int Objects_valid_row_check(int row)
 
 
 
-
+//find unique objects in signals data
 int Objects_find_uniques()
 {
 	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
@@ -105,13 +104,16 @@ int Objects_find_uniques()
 	strcpy_s(info_txt, sizeof info_txt, info_find_uniques[lang]);
 	info_write(info_txt);
 
+	//put all data to temporaty KKS bufer
 	for (int index = 0; index <= signals.valid_entries; index++)
 	{
 		temp_KKS[index] = signals.data[index].KKS.Full;
 	}
+	// sort and find uniques then transfer further
 	std::sort(temp_KKS.begin(), temp_KKS.end());
 	unique_copy(temp_KKS.begin(), temp_KKS.end(), back_inserter(unique_KKS));
 
+	// check if first data is empty, then delete it
 	if (unique_KKS[0].empty() == 1)
 	{
 		unique_KKS.erase(unique_KKS.begin());
@@ -125,13 +127,15 @@ int Objects_find_uniques()
 
 	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 	bool transfer_new=false;
+
 	if (objects.valid_entries > 1)
 	{
 		int size_temp = unique_KKS.size() - 1;
 		int i = 0;
 
-		if (unique_KKS.size() == objects.data.size()-1)
+		if (unique_KKS.size() == objects.data.size()-1) // after reading data from list there is allways one blank row at end
 		{
+			//comparing all unique KKS with all objects KKS 
 			for (int index = 0; index <= size_temp; ++index)
 			{
 				for (i = 0; i <= size_temp; i++)
@@ -143,18 +147,18 @@ int Objects_find_uniques()
 				}
 				if (i > size_temp)
 				{
-					transfer_new = true;
+					transfer_new = true; // if there is KKS in uniques that doesnt match in objects, transfer diferences
 					break;
 				}
 			}			
 		}
-		else
+		else // if there is diference in size, transfer diferences
 		{
 			transfer_new = true;
 		}
 		if (transfer_new == true)
 		{
-			
+			//put all new data to end of list
 			int new_valid_entries = objects.valid_entries;			
 			Show_progress(prog_uniques_find[lang], size_temp);
 			for (int index = 0; index <= size_temp; ++index)
@@ -166,11 +170,11 @@ int Objects_find_uniques()
 						break;
 					}					
 				}
-				if (i > objects.valid_entries)
+				if (i > objects.valid_entries)  // if havent found matching kks addd to end of list
 				{
-					for (int j = 0; j <= signals.valid_entries; ++j)
+					for (int j = 0; j <= signals.valid_entries; ++j) // find unique KKS in signal data
 					{
-						if (unique_KKS[index].compare(signals.data[j].KKS.Full) == 0)
+						if (unique_KKS[index].compare(signals.data[j].KKS.Full) == 0) // when found put signal data to object data
 						{
 							new_valid_entries++;
 							Global_resize_data(Objects_grid_index, new_valid_entries + 1);
@@ -191,6 +195,7 @@ int Objects_find_uniques()
 			return 0;
 		}
 
+		// if everything matches ask for rewrite everything
 		if (show_confirm_window(conf_objects_overwrite[lang]) == IDOK)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
@@ -216,11 +221,11 @@ int Objects_find_uniques()
 	Show_progress(prog_uniques_find[lang], objects.valid_entries);
 
 
-	for (int index = 0; index <= objects.valid_entries; ++index)
+	for (int index = 0; index <= objects.valid_entries; ++index) // for all unique kks 
 	{
-		for (int i = 0; i <= signals.valid_entries; ++i)
+		for (int i = 0; i <= signals.valid_entries; ++i) 
 		{
-			if (unique_KKS[index].compare(signals.data[i].KKS.Full) == 0)
+			if (unique_KKS[index].compare(signals.data[i].KKS.Full) == 0) // match unique KKS to signal KKS, and then transfer signal data to object data 
 			{
 				objects.data[index].KKS = signals.data[i].KKS.Full;
 				objects.data[index].number = int_to_wstring(index, max_digits);
@@ -239,7 +244,7 @@ int Objects_find_uniques()
 	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 	return 0;
 }
-
+//find what kind of object it is
 int Objects_find_objects()
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Objects_grid_index;
@@ -283,12 +288,17 @@ int Objects_find_objects()
 	{
 		Object_type = L"";
 		find_place = -1;
+
+		//selecting where to search and convert to lowercase
 		search_in = objects.data[index].Object_text;
 		std::transform(search_in.begin(), search_in.end(), search_in.begin(), ::tolower);
+
+		//search for AI object
 		if (find_place < 0)
 		{
 			for (int j = 0; j < AI_size; ++j)
 			{
+				//selecting for what to search and convert to lowercase
 				search_for = learn.Analog_name[j];
 				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
@@ -300,10 +310,13 @@ int Objects_find_objects()
 				}
 			}
 		}
+
+		//search for VLV object
 		if (find_place < 0)
 		{
 			for (int j = 0; j < Vlv_size; ++j)
 			{
+				//selecting for what to search and convert to lowercase
 				search_for = learn.Valve_name[j];
 				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
@@ -315,10 +328,13 @@ int Objects_find_objects()
 				}
 			}
 		}
+
+		//search for HC object
 		if (find_place < 0)
 		{
 			for (int j = 0; j < HC_size; ++j)
 			{
+				//selecting for what to search and convert to lowercase
 				search_for = learn.Cilinder_name[j];
 				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
@@ -330,10 +346,13 @@ int Objects_find_objects()
 				}
 			}
 		}
+
+		//search for Mot object
 		if (find_place < 0)
 		{
 			for (int j = 0; j < Mot_size; ++j)
 			{
+				//selecting for what to search and convert to lowercase
 				search_for = learn.Motor_name[j];
 				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
@@ -346,24 +365,25 @@ int Objects_find_objects()
 			}
 		}
 
-		if (objects.data[index].Object_type.empty() == 1)
+		if (objects.data[index].Object_type.empty() == 1)  // if no data, but now its found, then put type in objects
 		{
 			objects.data[index].Object_type = Object_type;
 		}
-		else if (override_all == 1)
+		else if (override_all == 1) //if selected overwrite all then rewrites everythingg
 		{
 			objects.data[index].Object_type = Object_type;
 		}
-		else
+		else //if type of data in object exists ask for overwrite
 		{
 			GlobalForm::forma->Object_grid->FirstDisplayedScrollingRowIndex = index;
-			GlobalForm::forma->Object_grid->CurrentCell = GlobalForm::forma->Object_grid[3, index];
+			GlobalForm::forma->Object_grid->CurrentCell = GlobalForm::forma->Object_grid[3, index]; // show whitch cell is overwriten
 
 			text_confirm = conf_objects_type_overwrite[lang];
 			text_confirm.append(L" --- ");
 			text_confirm.append(Object_type);
 			if (show_confirm_window(text_confirm.c_str()) == IDOK)
 			{
+				objects.data[index].Object_type = Object_type;
 				override_all = 1;
 			}
 		}
@@ -379,7 +399,7 @@ int Objects_find_objects()
 	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 	return 0;
 }
-
+//find operative marking
 int Objects_find_operatyv()
 {
 	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
@@ -397,7 +417,7 @@ int Objects_find_operatyv()
 
 	int find_1;
 	int find_2;
-
+	//operative marking are between ()
 	for (int index = 0; index <= objects.valid_entries; ++index)
 	{
 		find_1 = objects.data[index].Object_text.find(L"(");
@@ -423,7 +443,7 @@ int Objects_find_operatyv()
 	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 	return 0;
 }
-
+//transfer objects data back to signals
 int Objects_transfer_to_signals()
 {
 	IOlistautomation::Object_check_Form forma;
@@ -453,7 +473,8 @@ int Objects_transfer_to_signals()
 	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
 	info_write(info_txt);
 
-	for (int index = 0; index <= signals.valid_entries; ++index)
+	//for all signals search matching objects
+	for (int index = 0; index <= signals.valid_entries; ++index)  
 	{
 		for (int i = 0; i <= objects.valid_entries; ++i)
 		{
@@ -461,10 +482,14 @@ int Objects_transfer_to_signals()
 			{
 				if (objects.data[i].KKS.compare(signals.data[index].KKS.Full) == 0)
 				{
+					// if found transfer
 					signals.data[index].Object_type = objects.data[i].Object_type;
 					signals.data[index].operatyv = objects.data[i].operatyv;
+
+					// if object text does not match in signals or objects
 					if (objects.data[i].Object_text.compare(signals.data[index].Object_text) != 0)
 					{
+						// show which cell
 						GlobalForm::forma->Signals_grid->FirstDisplayedScrollingRowIndex = index;
 						GlobalForm::forma->Signals_grid->CurrentCell = GlobalForm::forma->Signals_grid[8, index];
 
@@ -472,6 +497,7 @@ int Objects_transfer_to_signals()
 						test.IO_text = signals.data[index].Object_text;
 						test.KKS.Full = signals.data[index].KKS.Full;
 
+						//init, and show edit dialog
 						forma.Object_check_init();
 						forma.ShowDialog();
 

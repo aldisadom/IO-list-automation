@@ -1,69 +1,15 @@
-2018-08-25  11:13:32.111 - This program is not stable ant not fully tested, carefully use it !!!
-2018-08-25  11:13:34.553 - ---------------------------------------------------------
-2018-08-25  11:13:37.221 - File_LoadALL --- Button pressed
-2018-08-25  11:13:40.450 - Loading data - Design
-2018-08-25  11:13:47.039 - Loading data - Design --- Done
-2018-08-25  11:13:47.098 - Data is writen to grid - Design
-2018-08-25  11:13:47.865 - Data is writen to grid - Design --- Done
-2018-08-25  11:13:48.511 - Loading data - Signals
-2018-08-25  11:14:13.745 - Loading data - Signals --- Done
-2018-08-25  11:14:13.908 - Data is writen to grid - Signals
-2018-08-25  11:14:14.490 - Data is writen to grid - Signals --- Done
-2018-08-25  11:14:15.754 - Loading data - Objects
-2018-08-25  11:14:16.003 - Loading data - Objects --- Done
-2018-08-25  11:14:16.175 - Data is writen to grid - Objects
-2018-08-25  11:14:16.456 - Data is writen to grid - Objects --- Done
-2018-08-25  11:14:36.829 - File_SaveALL --- Button pressed
-2018-08-25  11:14:41.005 - Data is writen to memory - Design
-2018-08-25  11:14:41.387 - Data is writen to memory - Design --- Done
-2018-08-25  11:14:41.387 - Saving data - Design
-2018-08-25  11:14:41.652 - Saving data - Design --- Done
-2018-08-25  11:14:41.840 - Data is writen to memory - Signals
-2018-08-25  11:14:42.417 - Data is writen to memory - Signals --- Done
-2018-08-25  11:14:42.417 - Saving data - Signals
-2018-08-25  11:14:42.822 - Saving data - Signals --- Done
-2018-08-25  11:14:42.994 - Data is writen to memory - Objects
-2018-08-25  11:14:43.212 - Data is writen to memory - Objects --- Done
-2018-08-25  11:14:43.212 - Saving data - Objects
-2018-08-25  11:14:43.446 - Saving data - Objects --- Done
-2018-08-25  11:14:43.618 - Saving data - Design
-2018-08-25  11:14:43.852 - Saving data - Design --- Done
-2018-08-25  11:14:44.024 - Saving data - Signals
-2018-08-25  11:14:44.382 - Saving data - Signals --- Done
-2018-08-25  11:14:44.570 - Saving data - Objects
-2018-08-25  11:14:44.819 - Saving data - Objects --- Done
-2018-08-25  11:14:47.081 - File_LoadALL --- Button pressed
-2018-08-25  11:14:49.468 - Erasing all data - Design
-2018-08-25  11:14:49.655 - Loading data - Design
-2018-08-25  11:14:49.936 - Loading data - Design --- Done
-2018-08-25  11:14:50.076 - Data is writen to grid - Design
-2018-08-25  11:14:50.498 - Data is writen to grid - Design --- Done
-2018-08-25  11:14:52.432 - Erasing all data - Signals
-2018-08-25  11:14:52.588 - Loading data - Signals
-2018-08-25  11:14:52.931 - Loading data - Signals --- Done
-2018-08-25  11:14:53.040 - Data is writen to grid - Signals
-2018-08-25  11:14:53.664 - Data is writen to grid - Signals --- Done
-2018-08-25  11:14:55.708 - Erasing all data - Objects
-2018-08-25  11:14:55.895 - Loading data - Objects
-2018-08-25  11:14:56.098 - Loading data - Objects --- Done
-2018-08-25  11:14:56.254 - Data is writen to grid - Objects
-2018-08-25  11:14:56.504 - Data is writen to grid - Objects --- Done
-2018-08-25  11:15:02.385 - File_SaveALL --- Button pressed
-2018-08-25  11:15:05.091 - Data is writen to memory - Design
-2018-08-25  11:15:05.434 - Data is writen to memory - Design --- Done
-2018-08-25  11:15:05.434 - Saving data - Design
-2018-08-25  11:15:05.699 - Saving data - Design --- Done
-2018-08-25  11:15:05.871 - Data is writen to memory - Signals
-2018-08-25  11:15:06.526 - Data is writen to memory - Signals --- Done
-2018-08-25  11:15:06.526 - Saving data - Signals
-2018-08-25  11:15:06.869 - Saving data - Signals --- Done
-2018-08-25  11:15:07.010 - Data is writen to memory - Objects
-2018-08-25  11:15:07.181 - Data is writen to memory - Objects --- Done
-2018-08-25  11:15:07.181 - Saving data - Objects
-2018-08-25  11:15:07.322 - Saving data - Objects --- Done
-2018-08-25  11:15:07.446 - Saving data - Design
-2018-08-25  11:15:07.680 - Saving data - Design --- Done
-2018-08-25  11:15:07.805 - Saving data - Signals
-2018-08-25  11:15:08.148 - Saving data - Signals --- Done
-2018-08-25  11:15:08.273 - Saving data - Objects
-2018-08-25  11:15:08.414 - Saving data - Objects --- Done
+2018-08-25  13:17:14.059 - This program is not stable ant not fully tested, carefully use it !!!
+2018-08-25  13:17:15.203 - ---------------------------------------------------------
+2018-08-25  13:17:17.470 - File_LoadALL --- Button pressed
+2018-08-25  13:17:19.672 - Loading data - Design
+2018-08-25  13:17:19.926 - Loading data - Design --- Done
+2018-08-25  13:17:19.944 - Data is writen to grid - Design
+2018-08-25  13:17:20.756 - Data is writen to grid - Design --- Done
+2018-08-25  13:17:21.409 - Loading data - Signals
+2018-08-25  13:17:21.895 - Loading data - Signals --- Done
+2018-08-25  13:17:22.041 - Data is writen to grid - Signals
+2018-08-25  13:17:22.496 - Data is writen to grid - Signals --- Done
+2018-08-25  13:17:23.833 - Loading data - Objects
+2018-08-25  13:17:24.089 - Loading data - Objects --- Done
+2018-08-25  13:17:24.272 - Data is writen to grid - Objects
+2018-08-25  13:17:24.543 - Data is writen to grid - Objects --- Done

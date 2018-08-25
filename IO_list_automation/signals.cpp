@@ -20,53 +20,50 @@ struct object_str objects;
 struct learning_str learn;
 
 
-
+// get data from memory to wstring
 std::wstring Signals_get_data_switch(int iCol, int index)
 {
-	wstring cell_text = L"";
-	// fill all cells with data
-
 	switch (iCol)
 	{
-	case 0:	cell_text = signals.data[index].number;
+	case 0:	return signals.data[index].number;
 		break;
-	case 1:	cell_text = signals.data[index].Cabinet;
+	case 1:	return signals.data[index].Cabinet;
 		break;
-	case 2:	cell_text = signals.data[index].operatyv;
+	case 2:	return signals.data[index].operatyv;
 		break;
-	case 3:	cell_text = signals.data[index].KKS.Full;
+	case 3:	return signals.data[index].KKS.Full;
 		break;
-	case 4:	cell_text = signals.data[index].KKS.Part1;
+	case 4:	return signals.data[index].KKS.Part1;
 		break;
-	case 5:	cell_text = signals.data[index].KKS.Part2;
+	case 5:	return signals.data[index].KKS.Part2;
 		break;
-	case 6:	cell_text = signals.data[index].Used;
+	case 6:	return signals.data[index].Used;
 		break;
-	case 7:	cell_text = signals.data[index].Object_type;
+	case 7:	return signals.data[index].Object_type;
 		break;
-	case 8:	cell_text = signals.data[index].Object_text;
+	case 8:	return signals.data[index].Object_text;
 		break;
-	case 9:	cell_text = signals.data[index].Extendet_object_text;
+	case 9:	return signals.data[index].Extendet_object_text;
 		break;
-	case 10:	cell_text = signals.data[index].Function_text;
+	case 10:	return signals.data[index].Function_text;
 		break;
-	case 11:	cell_text = signals.data[index].Function;
+	case 11:	return signals.data[index].Function;
 		break;
-	case 12:	cell_text = signals.data[index].IO_text;
+	case 12:	return signals.data[index].IO_text;
 		break;
-	case 13:	cell_text = signals.data[index].Module;
+	case 13:	return signals.data[index].Module;
 		break;
-	case 14:	cell_text = signals.data[index].Channel;
+	case 14:	return signals.data[index].Channel;
 		break;
-	case 15:	cell_text = signals.data[index].Pin;
+	case 15:	return signals.data[index].Pin;
 		break;
-	case 16:	cell_text = signals.data[index].Page;
+	case 16:	return signals.data[index].Page;
 		break;
-	default:cell_text = LPWSTR(L"");
+	default:return LPWSTR(L"");
 		break;
 	}
-	return cell_text;
 }
+// put data from wstring to memory
 void Signals_put_data_switch(int iCol, int index, wstring cell_text)
 {
 	switch (iCol)
@@ -107,6 +104,8 @@ void Signals_put_data_switch(int iCol, int index, wstring cell_text)
 		break;
 	}
 }
+
+
 //check if there is data in any variable
 int Signals_valid_row_check(int row)
 {
@@ -170,7 +169,7 @@ int Signals_valid_row_check(int row)
 }
 
 
-
+//get data from project to signals
 int Signals_get_data_design()
 {
 	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
@@ -303,6 +302,8 @@ int Signals_get_data_design()
 
 }
 
+
+//KKS triming algorithm removes back ant front parts, and splits into two parts
 KKS_str Signals_KKS_trim(wstring KKS_text)
 {
 	struct KKS_str KKS;
@@ -311,7 +312,7 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 	if (KKS_text.empty() == 0)
 	{
 		a = KKS_text.size() - parameters.KKS_del1 - parameters.KKS_del2;
-		if (a > 0)
+		if (a > 0) // if delete to much clear KKS
 		{
 			KKS.Full = KKS_text.substr(parameters.KKS_del1, a);
 			if (KKS.Full.size() < 10)
@@ -326,6 +327,8 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 			{
 				i = 5;
 			}
+			// first kks part is first 4 symbols
+			// second part is rest symbols from 5
 			KKS.Part2 = KKS.Full.substr(i, KKS.Full.size() - i);
 			KKS.Part1 = KKS.Full.substr(0, KKS.Full.find(KKS.Part2));
 
@@ -351,16 +354,16 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 	}
 	return KKS;
 }
-
+//trims all KKS data in signals
 int Signals_all_KKS_trim()
 {
 	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
 	if (signals.valid_entries > 1)
 	{
-		Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
 		int i = 0;
 		while (1)
-		{			
+		{	
+			//searching for first valid KKS in data
 			if (signals.data[i].KKS.Full.empty() == 0)
 			{
 				test.test_KKS = signals.data[i].KKS.Full;
@@ -369,12 +372,12 @@ int Signals_all_KKS_trim()
 			i++;
 			if (i > signals.valid_entries)
 			{
-				break;
+				return 1;
 			}
 		}
 
 		IOlistautomation::KKS_edit KKS;
-		KKS.ShowDialog();
+		KKS.ShowDialog();	// open KKS edit dialog with example
 		if (KKS.return_value == 0)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_KKS_edit[lang]);
@@ -415,13 +418,14 @@ int Signals_all_KKS_trim()
 }
 
 
+//reads learning data for object and function recognition
 int Signals_learn_data()
 {
 	if (learn.done == true)
 	{
 		if (show_confirm_window(conf_learn_overwrite[lang]) == IDOK)
 		{
-			project.data = {};
+			learn = {};
 			learn.done = false;			
 
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
@@ -532,6 +536,7 @@ int Signals_learn_data()
 					}
 					if (texts.empty() == 0)
 					{
+						// put data where it bellongs
 						switch (col)
 						{
 						case 0:	learn.Valve_name.resize(row - 1);
@@ -595,9 +600,11 @@ int Signals_learn_data()
 
 	return 0;
 }
-
+//finds functions in signal data
 int Signals_find_function()
 {
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+
 	if (signals.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -607,7 +614,6 @@ int Signals_find_function()
 		return 1;
 	}
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
 	int find_2_1 = 0;
 	int find_2_2 = 0;
 	int find_1 = 0;
@@ -635,11 +641,14 @@ int Signals_find_function()
 
 	for (int row = 0; row <= signals.valid_entries; ++row)
 	{
+		//selecting where to search for normal data
 		search_in_function_txt = signals.data[row].Function_text;
 		
 		if (search_in_function_txt.empty() == 0)
 		{
+			//selecting where to search for extended data
 			search_in_extended = signals.data[row].Extendet_object_text;
+			//transforming all data to lowercase
 			std::transform(search_in_function_txt.begin(), search_in_function_txt.end(), search_in_function_txt.begin(), ::tolower);
 			std::transform(search_in_extended.begin(), search_in_extended.end(), search_in_extended.begin(), ::tolower);
 			
@@ -647,19 +656,21 @@ int Signals_find_function()
 			// finding with 2 parts
 			for (int i = 0; i < size_part2_1; ++i)
 			{
+				//selecting what to search and putting to lower case
 				search_for = learn.Function_txt2_part1[i];
 				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
 				find_2_1 = search_in_extended.find(search_for);
-				if (find_2_1 >= 0)
+				if (find_2_1 >= 0) // if found data search for part 2
 				{
 					for (int j = 0; j < size_part2_2; ++j)
 					{
+						//selecting what to search and putting to lower case
 						search_for = learn.Function_txt2_part2[i];
 						std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
 						find_2_2 = search_in_function_txt.find(search_for);
-						if (find_2_2 >= 0)
+						if (find_2_2 >= 0) // found part 1 and part 2, put function to signals
 						{
 							signals.data[row].Function = learn.Function_txt2_meaning[j];
 							break;
@@ -676,11 +687,12 @@ int Signals_find_function()
 			{
 				for (int i = 0; i < size_part1; ++i)
 				{
+					//selecting what to search and putting to lower case
 					search_for = learn.Function_txt1[i];
 					std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
 
 					find_1 = search_in_function_txt.find(search_for);
-					if (find_1 >= 0)
+					if (find_1 >= 0) // found data, put function to signals
 					{
 						signals.data[row].Function = learn.Function_txt1_meaning[i];
 						break;

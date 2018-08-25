@@ -35,38 +35,36 @@ System::Windows::Forms::DataGridView^ Global_function_grid(int index_function)
 // get function text based on function index
 const char* Global_function_txt(int index_function, int language)
 {
-	const char* funcion_text;
 	switch (index_function)
 	{
-	case Design_grid_index:	return funcion_text = design_txt[language];
+	case Design_grid_index:	return  design_txt[language];
 		break;
-	case Signals_grid_index:return funcion_text = signals_txt[language];
+	case Signals_grid_index:return signals_txt[language];
 		break;
-	case Objects_grid_index:return funcion_text = objects_txt[language];
+	case Objects_grid_index:return  objects_txt[language];
 		break;
 
 
 
-	default:	return funcion_text = design_txt[lang];
+	default:	return design_txt[language];
 		break;
 	}
 }
 // get confirm text based on function index
 const wchar_t* Global_confirm_txt(int index_function, int language)
 {
-	const wchar_t* funcion_text;
 	switch (index_function)
 	{
-	case Design_grid_index:	return funcion_text = conf_design_overwrite[language];
+	case Design_grid_index:	return conf_design_overwrite[language];
 		break;
-	case Signals_grid_index:return funcion_text = conf_signal_overwrite[language];
+	case Signals_grid_index:return conf_signal_overwrite[language];
 		break;
-	case Objects_grid_index:return funcion_text = conf_objects_overwrite[language];
+	case Objects_grid_index:return conf_objects_overwrite[language];
 		break;
 
 
 
-	default:	return funcion_text = conf_design_overwrite[lang];
+	default:	return conf_design_overwrite[language];
 		break;
 	}
 }
