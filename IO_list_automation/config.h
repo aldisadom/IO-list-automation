@@ -81,29 +81,61 @@ struct parameters_str
 	int KKS_del2 = 0;
 	int auto_column_with = 1;
 };
+struct project_data_str
+{
+	wstring number;			//collumn 0, in excel no
+	wstring Cabinet;		//collumn 1, in excel 1
+	wstring Module;			//collumn 2, in excel 2
+	wstring Pin;			//collumn 3, in excel 3
+	wstring Channel;		//collumn 4, in excel 4
+	wstring IO_text;		//collumn 5, in excel 5
+	wstring Page;			//collumn 6, in excel 6
+};
 
 struct project_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	int number_collums;
-	vector<wstring> column_name;
-
-	vector<wstring> number;			//collumn 0, in excel no
-	vector<wstring> Cabinet;	//collumn 1, in excel 1
-	vector<wstring> Module;	//collumn 2, in excel 2
-	vector<wstring> Pin;	//collumn 3, in excel 3
-	vector<wstring> Channel;	//collumn 4, in excel 4
-	vector<wstring> IO_text;		//collumn 5, in excel 5
-	vector<wstring> Page;	//collumn 6, in excel 6
+	const int number_collums =6;
+	const vector<wstring> column_name =	{
+		L"Nr.",
+		L"Spinta",
+		L"Modulis",		
+		L"Pinas",
+		L"Kanalas",
+		L"IO tekstas",		
+		L"Projekto reference",
+	};
+	vector <project_data_str> data;
 };
 
+struct Signal_data_str
+{
+	wstring number;					//collumn 0
+	wstring Cabinet;				//collumn 1	
+	wstring operatyv;				//collumn 2	
+	KKS_str KKS;					//collumn 3		KKS.Full
+									//collumn 4		KKS.Part1
+									//collumn 5		KKS.Part2
+	wstring Used;					//collumn 6
+	wstring Object_type;			//collumn 7
+	wstring Object_text;			//collumn 8
+	wstring Extendet_object_text;	//collumn 9
+	wstring Function_text;			//collumn 10
+	wstring Function;				//collumn 11
+	wstring IO_text;				//collumn 12	
+	wstring Module;					//collumn 13
+	wstring Channel;				//collumn 14	
+	wstring Pin;					//collumn 15			
+	wstring Page;					//collumn 16
+};
 struct signal_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	int number_collums = 16;
-	vector<wstring> column_name = { L"Nr.",
+	const int number_collums = 16;
+	const vector<wstring> column_name = {
+		L"Nr.",
 		L"Spinta",
 		L"Operatyv",
 		L"KKS",
@@ -121,24 +153,7 @@ struct signal_str
 		L"Pinas",
 		L"Projekto reference",
 	};
-
-	vector<wstring> number;					//collumn 0
-	vector<wstring> Cabinet;				//collumn 1	
-	vector<wstring> operatyv;				//collumn 2	
-	vector<KKS_str> KKS;					//collumn 3		KKS.Full
-											//collumn 4		KKS.Part1
-											//collumn 5		KKS.Part2
-	vector<wstring> Used;					//collumn 6
-	vector<wstring> Object_type;			//collumn 7
-	vector<wstring> Object_text;			//collumn 8
-	vector<wstring> Extendet_object_text;	//collumn 9
-	vector<wstring> Function_text;			//collumn 10
-	vector<wstring> Function;				//collumn 11
-	vector<wstring> IO_text;				//collumn 12	
-	vector<wstring> Module;					//collumn 13
-	vector<wstring> Channel;				//collumn 14	
-	vector<wstring> Pin;					//collumn 15			
-	vector<wstring> Page;					//collumn 16
+	vector <Signal_data_str> data;
 };
 
 struct learning_str
@@ -157,24 +172,28 @@ struct learning_str
 	vector<wstring> Function_txt2_meaning;		//collumn 10
 };
 
+struct object_data_str
+{
+	wstring number;					//collumn 0
+	wstring operatyv;				//collumn 1	
+	wstring KKS;					//collumn 2	
+	wstring Object_type;			//collumn 3
+	wstring Object_text;			//collumn 4
+};
 
 struct object_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	int number_collums = 4;
-	vector<wstring> column_name = { L"Nr.",
+	const int number_collums = 4;
+	const vector<wstring> column_name = { 
+		L"Nr.",
 		L"Operatyv",
 		L"KKS",
 		L"Type",
 		L"Objectas",
 	};
-
-	vector<wstring> number;					//collumn 0
-	vector<wstring> operatyv;				//collumn 1	
-	vector<wstring> KKS;					//collumn 2	
-	vector<wstring> Object_type;			//collumn 3
-	vector<wstring> Object_text;			//collumn 4
+	vector <object_data_str> data;	
 };
 
 extern struct test_str test;

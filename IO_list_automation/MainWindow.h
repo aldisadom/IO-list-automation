@@ -7,6 +7,7 @@
 #include "HelpForm.h"
 #include "KKS_editForm.h"
 #include "objects.h"
+#include "Global_Functions.h"
 
 
 #include <msclr/marshal_cppstd.h>
@@ -942,20 +943,10 @@ private:
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		int a = this->tabControl1->SelectedIndex;
-		switch (a)
-		{
-		case Design_grid_index:	Project_get_data_listview();
-			Project_save_data(false," ");
-			break;
-		case Signals_grid_index :	Signals_get_data_listview();
-			Signals_save_data(false, " ");
-			break;
-		case Objects_grid_index :	Objects_get_data_listview();
-			Objects_save_data(false, " ");
-			break;
-		}
+		int index_function = this->tabControl1->SelectedIndex;
 		
+		Global_get_data_listview(index_function, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+		Global_choose_save(index_function, false, " ");
 	}
 //function done
 	private: System::Void File_SaveALL_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -990,20 +981,20 @@ private:
 				}
 			}
 
-			Project_get_data_listview();
-			Signals_get_data_listview();
-			Objects_get_data_listview();
+			Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+			Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+			Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 
-			Project_save_data(false, file_name);
-			Signals_save_data(false, file_name);
-			Objects_save_data(false, file_name);
+			Global_choose_save(Design_grid_index, false, file_name);
+			Global_choose_save(Signals_grid_index, false, file_name);
+			Global_choose_save(Objects_grid_index, false, file_name);
 		}
 		else
 		{
 			strcpy_s(err_txt, sizeof err_txt, button_text);
 			strcat_s(err_txt, sizeof err_txt, error_separator);
 			strcat_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write_show(err_txt);
+			err_write(err_txt);
 		}
 				
 	}
@@ -1013,16 +1004,9 @@ private:
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		int a = this->tabControl1->SelectedIndex;
-		switch (a)
-		{
-		case Design_grid_index:	Project_Load_data(" ");
-			break;
-		case Signals_grid_index: Signals_Load_data(" ");
-			break;
-		case Objects_grid_index :	Objects_Load_data(" ");
-			break;
-		}		
+		int index_function = this->tabControl1->SelectedIndex;
+			
+		Global_choose_Load(index_function," ");			
 	}
 
 	private: System::Void File_LoadALL_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1058,10 +1042,17 @@ private:
 
 			if (continue_load)
 			{
-				Project_Load_data(file_name);
-				Signals_Load_data(file_name);
-				Objects_Load_data(file_name);
+				Global_choose_Load(Design_grid_index, file_name);
+				Global_choose_Load(Signals_grid_index, file_name);
+				Global_choose_Load(Objects_grid_index, file_name);
 			}			
+		}
+		else
+		{
+			strcpy_s(err_txt, sizeof err_txt, button_text);
+			strcat_s(err_txt, sizeof err_txt, error_separator);
+			strcat_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
+			err_write(err_txt);
 		}
 	}
 //function done

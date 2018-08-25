@@ -143,6 +143,7 @@
     <ClCompile Include="config.cpp" />
     <ClCompile Include="Declare.cpp" />
     <ClCompile Include="design.cpp" />
+    <ClCompile Include="Global_Functions.cpp" />
     <ClCompile Include="HelpForm.cpp" />
     <ClCompile Include="Instance.cpp" />
     <ClCompile Include="KKS_editForm.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="Declare.h" />
     <ClInclude Include="design.h" />
+    <ClInclude Include="Global_Functions.h" />
     <ClInclude Include="Instance.h" />
     <ClInclude Include="objects.h" />
     <ClInclude Include="Object_check_Form.h">
