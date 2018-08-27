@@ -8,7 +8,7 @@
 #include "KKS_editForm.h"
 #include "objects.h"
 #include "Global_Functions.h"
-
+#include "Declare.h"
 
 #include <msclr/marshal_cppstd.h>
 
@@ -895,7 +895,7 @@ private:
 
 		}
 #pragma endregion	
-	private: void Main_init(void)
+	public: void Main_init(void)
 	{
 		switch (parameters.Language)
 		{
@@ -1386,7 +1386,7 @@ private:
 				{
 					if (Objects_find_operatyv() == 0)
 					{
-
+						Declare_addreses();
 					}
 				}
 			}
@@ -1443,8 +1443,9 @@ private:
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
+		
+		Declare_addreses();
+//		Display_no_function(buttonName);
 	}
 //empty
 	private: System::Void Declare_Valve_Click(System::Object^  sender, System::EventArgs^  e) {

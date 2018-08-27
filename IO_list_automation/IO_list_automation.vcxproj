@@ -139,7 +139,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AAA_TEST_FORM.cpp" />
     <ClCompile Include="AboutForm.cpp" />
+    <ClCompile Include="Address_Form.cpp" />
     <ClCompile Include="config.cpp" />
     <ClCompile Include="Declare.cpp" />
     <ClCompile Include="design.cpp" />
@@ -158,7 +160,13 @@
     <ClCompile Include="String_progress.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AAA_TEST_FORM.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="AboutForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Address_Form.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="config.h" />
@@ -188,8 +196,14 @@
     <ClInclude Include="String_info.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AAA_TEST_FORM.resx">
+      <DependentUpon>AAA_TEST_FORM.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Address_Form.resx">
+      <DependentUpon>Address_Form.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HelpForm.resx">
       <DependentUpon>HelpForm.h</DependentUpon>

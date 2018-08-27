@@ -11,6 +11,7 @@ extern const char * err_no_file_save[];
 extern const char * err_cant_open[];
 extern const char * err_corrupted_file[];
 extern const char * err_wrong_file[];
+const char * err_wrong_object_type[];
 
 extern const char * err_no_cfg_file[];
 extern const char * err_cfg_empty_parameter[];

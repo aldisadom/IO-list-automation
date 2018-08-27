@@ -12,6 +12,8 @@ char info_txt[255];
 
 struct parameters_str parameters;
 struct test_str test;
+struct addres_str adres;
+
 int lang = 0;
 
 // get number of digits from integer
@@ -19,6 +21,7 @@ int GetNumberOfDigits(int i)
 {
 	return i > 0 ? (int)log10((double)i) + 1 : 1;
 }
+
 System::String^ string_to_system_string(std::string text)
 {
 	String^ new_text = gcnew String(text.c_str());
@@ -39,6 +42,7 @@ std::string system_string_to_string(System::String^ text)
 	string new_text = msclr::interop::marshal_as< std::string >(text);
 	return new_text;
 }
+
 std::string wstring_to_string(std::wstring text)
 {
 	string s(text.begin(), text.end());
@@ -284,8 +288,63 @@ void set_progress_value(int value)
 
 
 // parameters that can be added to _cfg file
-char parametrai_str[10][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with"};
+char parametrai_str[35][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
+"Beckhoff_vlv", "Beckhoff_hc", "Beckhoff_mot", "Beckhoff_ai", "Beckhoff_fc", "Beckhoff_pid",
+"Siemens_vlv", "Siemens_hc", "Siemens_mot", "Siemens_ai", "Siemens_fc", "Siemens_pid",
+"ABB_800xA_vlv", "ABB_800xA_hc", "ABB_800xA_mot", "ABB_800xA_ai", "ABB_800xA_fc", "ABB_800xA_pid",
+"Schneider_vlv", "Schneider_hc", "Schneider_mot", "Schneider_ai", "Schneider_fc", "Schneider_pid",
+};
 
+int adr_par_retrieve(char * text, addres_pars_str &adr_pars)
+{
+	char *next_token1 = NULL;
+	int index = 0;
+	text = strtok_s(text, ",\n", &next_token1);
+
+	while (text != NULL)
+	{
+		switch (index)
+		{
+		case 0:	adr_pars.w1.area = atoi(text);
+			break;
+		case 1:	adr_pars.w1.start_adr = atoi(text);
+			break;
+		case 2:	adr_pars.w1.offset = atoi(text);
+			break;
+		case 3:	adr_pars.w2.area = atoi(text);
+			break;
+		case 4:	adr_pars.w2.start_adr = atoi(text);
+			break;
+		case 5:	adr_pars.w2.offset = atoi(text);
+			break;
+		case 6:	adr_pars.cmd.area = atoi(text);
+			break;
+		case 7:	adr_pars.cmd.start_adr = atoi(text);
+			break;
+		case 8:	adr_pars.cmd.offset = atoi(text);
+			break;
+		case 9:	adr_pars.val.area = atoi(text);
+			break;
+		case 10:	adr_pars.val.start_adr = atoi(text);
+			break;
+		case 11:	adr_pars.val.offset = atoi(text);
+			break;
+		case 12:	adr_pars.pars.area = atoi(text);
+			break;
+		case 13:	adr_pars.pars.start_adr = atoi(text);
+			break;
+		case 14:	adr_pars.pars.offset = atoi(text);
+			break;
+		default:
+			return 1;
+			break;
+		}
+
+		index++;
+		text = strtok_s(NULL, ",\n", &next_token1);
+	}
+	return 0;	
+}
 
 //puts parameter in structure
 int cfg_puts(char *tekstas, struct parameters_str *pars)
@@ -451,6 +510,81 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 			case 9:
 				pars->auto_column_with = value;
 				break;
+			case 10:
+				pars->indirect = (value !=0);
+				break;
+			case 11:
+				adr_par_retrieve(value_text, adres.Beckhoff.vlv);
+				break;
+			case 12:
+				adr_par_retrieve(value_text, adres.Beckhoff.hc);
+				break;
+			case 13:
+				adr_par_retrieve(value_text, adres.Beckhoff.mot);
+				break;
+			case 14:
+				adr_par_retrieve(value_text, adres.Beckhoff.ai);
+				break;
+			case 15:
+				adr_par_retrieve(value_text, adres.Beckhoff.fc);
+				break;
+			case 16:
+				adr_par_retrieve(value_text, adres.Beckhoff.pid);
+				break;
+			case 17:
+				adr_par_retrieve(value_text, adres.Siemens.vlv);
+				break;
+			case 18:
+				adr_par_retrieve(value_text, adres.Siemens.hc);
+				break;
+			case 19:
+				adr_par_retrieve(value_text, adres.Siemens.mot);
+				break;
+			case 20:
+				adr_par_retrieve(value_text, adres.Siemens.ai);
+				break;
+			case 21:
+				adr_par_retrieve(value_text, adres.Siemens.fc);
+				break;
+			case 22:
+				adr_par_retrieve(value_text, adres.Siemens.pid);
+				break;
+			case 23:
+				adr_par_retrieve(value_text, adres.ABB_800xA.vlv);
+				break;
+			case 24:
+				adr_par_retrieve(value_text, adres.ABB_800xA.hc);
+				break;
+			case 25:
+				adr_par_retrieve(value_text, adres.ABB_800xA.mot);
+				break;
+			case 26:
+				adr_par_retrieve(value_text, adres.ABB_800xA.ai);
+				break;
+			case 27:
+				adr_par_retrieve(value_text, adres.ABB_800xA.fc);
+				break;
+			case 28:
+				adr_par_retrieve(value_text, adres.ABB_800xA.pid);
+				break;
+			case 29:
+				adr_par_retrieve(value_text, adres.Schneider.vlv);
+				break;
+			case 30:
+				adr_par_retrieve(value_text, adres.Schneider.hc);
+				break;
+			case 31:
+				adr_par_retrieve(value_text, adres.Schneider.mot);
+				break;
+			case 32:
+				adr_par_retrieve(value_text, adres.Schneider.ai);
+				break;
+			case 33:
+				adr_par_retrieve(value_text, adres.Schneider.fc);
+				break;
+			case 34:
+				adr_par_retrieve(value_text, adres.Schneider.pid);
+				break;
 			default:
 				strcpy_s(err_txt, sizeof err_txt, parametras);
 				strcat_s(err_txt, sizeof err_txt, error_separator);
@@ -484,7 +618,10 @@ int cfg_reads(struct parameters_str *params)
 	}
 	while (fgets(str, 255, fp) != NULL)
 	{
-		par_klaida=cfg_puts(str, params);
+		if (strcmp(str, "\n") != 0)
+		{
+			par_klaida = cfg_puts(str, params);
+		}
 	}
 	fclose(fp);
 	return 0;

@@ -14,7 +14,8 @@ extern const char * info_find_function[];
 extern const char * info_find_uniques[];
 extern const char * info_find_objects[];
 extern const char * info_find_operatyv[];
-
+extern const char * info_get_adresses[];
+extern const char * info_overlap_adresses[];
 
 extern const char * info_transfer_data[];
 extern const char * info_put_to_grid[];

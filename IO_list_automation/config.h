@@ -21,6 +21,13 @@
 
 #define unstable_release 1
 
+#define AI_type		L"AI"
+#define Vlv_type	L"VLV"
+#define HC_type		L"HC"
+#define FC_type		L"FC"
+#define PID_type	L"PID"
+#define Mot_type	L"MOT"
+
 using namespace std;
 using namespace System;
 
@@ -80,6 +87,7 @@ struct parameters_str
 	int KKS_del1 = 0;
 	int KKS_del2 = 0;
 	int auto_column_with = 1;
+	int indirect = 1;
 };
 struct project_data_str
 {
@@ -179,21 +187,100 @@ struct object_data_str
 	wstring KKS;					//collumn 2	
 	wstring Object_type;			//collumn 3
 	wstring Object_text;			//collumn 4
+	wstring Adress_val;				//collumn 5
+	wstring Adress_sw1;				//collumn 6
+	wstring Adress_sw2;				//collumn 7
+	wstring Adress_cmd;				//collumn 8
+	wstring Adress_pars;			//collumn 9
 };
 
 struct object_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums = 4;
+	const int number_collums = 9;
 	const vector<wstring> column_name = { 
 		L"Nr.",
 		L"Operatyv",
 		L"KKS",
 		L"Type",
 		L"Objectas",
+		L"Val",
+		L"SW1",
+		L"SW2",
+		L"CMD",
+		L"Pars",
 	};
 	vector <object_data_str> data;	
+};
+
+
+struct addres_1par_str
+{
+	int area;				// >0 DB[nr],  0 MQ, -1 MW, -2 QX, -3 QW;  -4 IX;  -5 IW; 
+	int start_adr;
+	int offset;
+};
+
+struct addres_pars_str
+{
+	addres_1par_str w1;
+	addres_1par_str w2;
+	addres_1par_str cmd;
+	addres_1par_str val;
+	addres_1par_str pars;
+};
+
+struct addres_pars_CPU_str
+{
+	addres_pars_str vlv;
+	addres_pars_str hc;
+	addres_pars_str mot;
+	addres_pars_str ai;
+	addres_pars_str fc;
+	addres_pars_str pid;
+};
+
+
+
+struct addres_str
+	// >0 DB[nr],  0 MQ, -1 MW, -2 QX, -3 QW;  -4 IX;  -5 IW; 
+
+{								//	DB,start, ofs
+	addres_pars_CPU_str Beckhoff = {//w1			w2				cmd				val				pars
+						/*vlv*/		0,2000,2,		0,2100,2,		0,0,0,			0,0,0,			0,2200,20,
+						/*hc*/		0,3000,2,		0,3100,2,		0,0,0,			0,0,0,			0,3200,20,
+						/*mot*/		0,4000,2,		0,4100,2,		0,0,0,			0,0,0,			0,4200,20,
+						/*ai*/		0,5000,2,		0,0,0,			0,0,0,			0,5100,4,		0,5300,60,
+						/*fc*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,8000,20,
+						/*pid*/		0,9500,2,		0,0,0,			0,0,0,			0,0,0,			0,10000,100 };
+
+								//	DB,start, ofs
+	addres_pars_CPU_str Siemens =  {//w1			w2				cmd				val				pars
+						/*vlv*/		 0,0,0,			0,0,0,			0,0,0,			0,0,0,			30,0,40,
+						/*hc*/		 0,0,0,			0,0,0,			0,0,0,			0,0,0,			31,0,40,
+						/*mot*/		 0,0,0,			0,0,0,			0,0,0,			0,0,0,			32,0,40,
+						/*ai*/		 0,0,0,			0,0,0,			0,0,0,			0,0,0,			33,0,80,
+						/*fc*/		 0,0,0,			0,0,0,			0,0,0,			0,0,0,			34,0,60,
+						/*pid*/		 0,0,0,			0,0,0,			0,0,0,			0,0,0,			35,0,120 };
+
+								//	DB,start, ofs
+	addres_pars_CPU_str ABB_800xA = {//w1			w2				cmd				val				pars
+						/*vlv*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,0,0,
+						/*hc*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,0,0,
+						/*mot*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,0,0,
+						/*ai*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,0,0,
+						/*fc*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,0,0,
+						/*pid*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,0,0 };
+
+								//	DB,start, ofs								
+	addres_pars_CPU_str Schneider = {//w1			w2				cmd				val				pars
+						/*vlv*/		0,2000,2,		0,2100,2,		0,0,0,			0,0,0,			0,2200,20,
+						/*hc*/		0,3000,2,		0,3100,2,		0,0,0,			0,0,0,			0,3200,20,
+						/*mot*/		0,4000,2,		0,4100,2,		0,0,0,			0,0,0,			0,4200,20,
+						/*ai*/		0,5000,2,		0,0,0,			0,0,0,			0,5100,4,		0,5300,60,
+						/*fc*/		0,0,0,			0,0,0,			0,0,0,			0,0,0,			0,8000,20,
+						/*pid*/		0,9500,2,		0,0,0,			0,0,0,			0,0,0,			0,10000,100 };
 };
 
 extern struct test_str test;
@@ -202,6 +289,8 @@ extern struct project_str project;
 extern struct signal_str signals;
 extern struct object_str objects;
 extern struct learning_str learn;
+extern struct addres_str adres;
+
 
 extern int lang;
 
@@ -213,6 +302,7 @@ String^ string_to_system_string(string text);
 String^ wstring_to_system_string(wstring text);
 wstring system_string_to_wstring(System::String^ text);
 string system_string_to_string(System::String^ text);
+
 string wstring_to_string(wstring text);
 wstring int_to_wstring(int number, int nr_of_digits);
 

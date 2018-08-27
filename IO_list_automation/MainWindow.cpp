@@ -37,5 +37,6 @@ void Main() {
 	GlobalForm::forma = gcnew IOlistautomation::MainWindow;
 	GlobalForm::forma->ClientSize = System::Drawing::Size(parameters.width, parameters.height);
 
+	GlobalForm::forma->Main_init();
 	Application::Run(GlobalForm::forma);
 }

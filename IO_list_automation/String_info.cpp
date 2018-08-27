@@ -34,6 +34,13 @@ const char * info_find_objects[]{
 const char * info_find_operatyv[]{
 	"Ieskoma operatyviniu objektuose",
 	"Searching operative in objects", };
+const char * info_get_adresses[]{
+	"Generuojami objektu adresai",
+	"Generating object adresses", };
+const char * info_overlap_adresses[]{
+	"Tikrinami adresu persidengimai",
+	"Checking adress overlap", };
+
 
 
 const char * info_transfer_data[]{

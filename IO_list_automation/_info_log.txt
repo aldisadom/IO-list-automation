@@ -1,15 +1,24 @@
-2018-08-25  13:17:14.059 - This program is not stable ant not fully tested, carefully use it !!!
-2018-08-25  13:17:15.203 - ---------------------------------------------------------
-2018-08-25  13:17:17.470 - File_LoadALL --- Button pressed
-2018-08-25  13:17:19.672 - Loading data - Design
-2018-08-25  13:17:19.926 - Loading data - Design --- Done
-2018-08-25  13:17:19.944 - Data is writen to grid - Design
-2018-08-25  13:17:20.756 - Data is writen to grid - Design --- Done
-2018-08-25  13:17:21.409 - Loading data - Signals
-2018-08-25  13:17:21.895 - Loading data - Signals --- Done
-2018-08-25  13:17:22.041 - Data is writen to grid - Signals
-2018-08-25  13:17:22.496 - Data is writen to grid - Signals --- Done
-2018-08-25  13:17:23.833 - Loading data - Objects
-2018-08-25  13:17:24.089 - Loading data - Objects --- Done
-2018-08-25  13:17:24.272 - Data is writen to grid - Objects
-2018-08-25  13:17:24.543 - Data is writen to grid - Objects --- Done
+2018-08-27  17:36:26.861 - This program is not stable ant not fully tested, carefully use it !!!
+2018-08-27  17:36:31.193 - ---------------------------------------------------------
+2018-08-27  17:36:33.182 - File_LoadALL --- Button pressed
+2018-08-27  17:36:35.269 - Loading data - Design
+2018-08-27  17:36:35.506 - Loading data - Design --- Done
+2018-08-27  17:36:35.529 - Data is writen to grid - Design
+2018-08-27  17:36:36.265 - Data is writen to grid - Design --- Done
+2018-08-27  17:36:36.893 - Loading data - Signals
+2018-08-27  17:36:37.375 - Loading data - Signals --- Done
+2018-08-27  17:36:37.519 - Data is writen to grid - Signals
+2018-08-27  17:36:37.968 - Data is writen to grid - Signals --- Done
+2018-08-27  17:36:39.256 - Loading data - Objects
+2018-08-27  17:36:39.493 - Loading data - Objects --- Done
+2018-08-27  17:36:39.659 - Data is writen to grid - Objects
+2018-08-27  17:36:39.998 - Data is writen to grid - Objects --- Done
+2018-08-27  17:36:42.948 - Declare_PID --- Button pressed
+2018-08-27  17:36:43.089 - Data is writen to memory - Objects
+2018-08-27  17:36:43.332 - Data is writen to memory - Objects --- Done
+2018-08-27  17:36:43.342 - Saving data - Objects
+2018-08-27  17:36:43.491 - Saving data - Objects --- Done
+2018-08-27  17:36:43.617 - Generating object adresses
+2018-08-27  17:37:53.607 - Generating object adresses --- Done
+2018-08-27  17:37:53.629 - Data is writen to grid - Objects
+2018-08-27  17:37:53.953 - Data is writen to grid - Objects --- Done

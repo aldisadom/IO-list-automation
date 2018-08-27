@@ -25,6 +25,9 @@ const char * err_corrupted_file[]{
 const char * err_wrong_file[]{
 	"Pasirinktas ne toks failo tipas",
 	"Wrong file type selected", };
+const char * err_wrong_object_type[]{
+	"Neatpazintas objekto tipas",
+	"Unrecognised object type", };
 
 
 const char * err_no_cfg_file[]{

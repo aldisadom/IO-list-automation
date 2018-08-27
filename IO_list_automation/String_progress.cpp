@@ -19,7 +19,12 @@ const wchar_t * prog_uniques_object_type[]{
 const wchar_t * prog_operatyv[]{
 	L"Ieskomi operatyviniai",
 	L"Searching operative", };
-
+const wchar_t * prog_adress[]{
+	L"Generuojami adresai",
+	L"Generating adreses", };
+const wchar_t * prog_overlap[]{
+	L"tikrinami persidengimai",
+	L"Checking overlap", };
 
 const wchar_t * prog_grid_put[]{
 	L"Pildoma lentele",

@@ -31,6 +31,16 @@ std::wstring Objects_get_data_switch(int iCol, int index)
 		break;
 	case 4:	return objects.data[index].Object_text;
 		break;
+	case 5:	return objects.data[index].Adress_val;
+		break;
+	case 6:	return objects.data[index].Adress_sw1;
+		break;
+	case 7:	return objects.data[index].Adress_sw2;
+		break;
+	case 8:	return objects.data[index].Adress_cmd;
+		break;
+	case 9:	return objects.data[index].Adress_pars;
+		break;
 	default:return LPWSTR(L"");
 		break;
 	}
@@ -49,6 +59,16 @@ void Objects_put_data_switch(int iCol, int index, wstring cell_text)
 	case 3:	objects.data[index].Object_type = cell_text;
 		break;
 	case 4:	objects.data[index].Object_text = cell_text;
+		break;
+	case 5:	objects.data[index].Adress_val = cell_text;
+		break;
+	case 6:	objects.data[index].Adress_sw1 = cell_text;
+		break;
+	case 7:	objects.data[index].Adress_sw2 = cell_text;
+		break;
+	case 8:	objects.data[index].Adress_cmd = cell_text;
+		break;
+	case 9:	objects.data[index].Adress_pars = cell_text;
 		break;
 	}
 }
@@ -92,6 +112,7 @@ int Objects_find_uniques()
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
 		strcat_s(err_txt, sizeof err_txt, info_separator);
 		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
+		err_write_show(err_txt);
 		return 1;
 	}
 
@@ -263,6 +284,7 @@ int Objects_find_objects()
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
 		strcat_s(err_txt, sizeof err_txt, info_separator);
 		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
+		err_write_show(err_txt);
 		return 1;
 	}
 
@@ -305,7 +327,7 @@ int Objects_find_objects()
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
 				{
-					Object_type = L"AI";
+					Object_type = AI_type;
 					break;
 				}
 			}
@@ -323,7 +345,7 @@ int Objects_find_objects()
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
 				{
-					Object_type = L"VLV";
+					Object_type = Vlv_type;
 					break;
 				}
 			}
@@ -341,7 +363,7 @@ int Objects_find_objects()
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
 				{
-					Object_type = L"HC";
+					Object_type = HC_type;
 					break;
 				}
 			}
@@ -359,7 +381,7 @@ int Objects_find_objects()
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
 				{
-					Object_type = L"MOT";
+					Object_type = Mot_type;
 					break;
 				}
 			}
@@ -408,6 +430,7 @@ int Objects_find_operatyv()
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
 		strcat_s(err_txt, sizeof err_txt, info_separator);
 		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
+		err_write_show(err_txt);
 		return 1;
 	}
 
@@ -454,6 +477,7 @@ int Objects_transfer_to_signals()
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
 		strcat_s(err_txt, sizeof err_txt, info_separator);
 		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
+		err_write_show(err_txt);
 		return 1;
 	}
 	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
@@ -462,6 +486,7 @@ int Objects_transfer_to_signals()
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
 		strcat_s(err_txt, sizeof err_txt, info_separator);
 		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
+		err_write_show(err_txt);
 		return 1;
 	}
 

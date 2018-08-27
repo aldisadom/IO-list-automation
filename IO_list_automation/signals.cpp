@@ -178,6 +178,7 @@ int Signals_get_data_design()
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
 		strcat_s(err_txt, sizeof err_txt, info_separator);
 		strcat_s(err_txt, sizeof err_txt, design_txt[lang]);
+		err_write_show(err_txt);
 		return 1;
 	}
 
