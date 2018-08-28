@@ -3050,8 +3050,8 @@ public: int return_value = -1;
 	{
 		Color overlap_Color_BG = System::Drawing::Color::Yellow;
 		Color overlap_Color_text = System::Drawing::Color::Red;
-				
-		if (color_flag & (1 << 0))
+
+		if (color_flag & (1 << w1_index))
 		{
 			textBox_w1->BackColor = overlap_Color_BG;
 			textBox_w1->ForeColor = overlap_Color_text;
@@ -3062,7 +3062,7 @@ public: int return_value = -1;
 			textBox_w1->ForeColor = System::Drawing::SystemColors::WindowText;
 		}
 
-		if (color_flag & (1 << 1))
+		if (color_flag & (1 << w2_index))
 		{
 			textBox_w2->BackColor = overlap_Color_BG;
 			textBox_w2->ForeColor = overlap_Color_text;
@@ -3073,7 +3073,7 @@ public: int return_value = -1;
 			textBox_w2->ForeColor = System::Drawing::SystemColors::WindowText;
 		}
 
-		if (color_flag & (1 << 2))
+		if (color_flag & (1 << cmd_index))
 		{
 			textBox_cmd->BackColor = overlap_Color_BG;
 			textBox_cmd->ForeColor = overlap_Color_text;
@@ -3084,7 +3084,7 @@ public: int return_value = -1;
 			textBox_cmd->ForeColor = System::Drawing::SystemColors::WindowText;
 		}
 
-		if (color_flag & (1 << 3))
+		if (color_flag & (1 << val_index))
 		{
 			textBox_val->BackColor = overlap_Color_BG;
 			textBox_val->ForeColor = overlap_Color_text;
@@ -3095,7 +3095,7 @@ public: int return_value = -1;
 			textBox_val->ForeColor = System::Drawing::SystemColors::WindowText;
 		}
 
-		if (color_flag & (1 << 4))
+		if (color_flag & (1 << pars_index))
 		{
 			textBox_par->BackColor = overlap_Color_BG;
 			textBox_par->ForeColor = overlap_Color_text;

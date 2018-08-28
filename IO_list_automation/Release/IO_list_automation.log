@@ -1,21 +1,19 @@
-﻿  MainWindow.cpp
-c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+﻿  AAA_TEST_FORM.cpp
+  Address_Form.cpp
   config.cpp
-c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  Declare.cpp
   design.cpp
-c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  Global_Functions.cpp
+  Instance.cpp
+  KKS_editForm.cpp
+  MainWindow.cpp
   objects.cpp
-c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  Object_check_Form.cpp
+  SCADA.cpp
   signals.cpp
-c:\io-list-automation\io_list_automation\mainwindow.h(924): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(925): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
-c:\io-list-automation\io_list_automation\mainwindow.h(926): error C3767: 'System::Windows::Forms::Control::DoubleBuffered::set': candidate function(s) not accessible
+  String_info.cpp
+  Strings.cpp
+  String_errors.cpp
+  String_progress.cpp
   Generating Code...
+  IO_list_automation.vcxproj -> C:\IO-list-automation\Release\IO_list_automation.exe

@@ -1,7 +1,10 @@
+  IOlistautomation.AAA_TEST_FORM.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.AboutForm.resources - Embedded, ContainedInManifestFile, 
+  IOlistautomation.Address_Form.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.HelpForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.KKS_editForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.MainWindow.resources - Embedded, ContainedInManifestFile, 
+  IOlistautomation.Object_check_Form.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly IO_list_automation, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
@@ -17,9 +20,26 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class IOlistautomation.AAA_TEST_FORM: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class IOlistautomation.AboutForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class IOlistautomation.Address_Form: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 return_value : Public
+    Int32 AI_nr_max : Public
+    Int32 VLV_nr_max : Public
+    Int32 HC_nr_max : Public
+    Int32 FC_nr_max : Public
+    Int32 PID_nr_max : Public
+    Int32 MOT_nr_max : Public
+  Methods:
+    Adress_color(Int32, TextBox, TextBox, TextBox, TextBox, TextBox): PrivateScope, Public, HideBySig
+    Adress_init(check_result_str, adr_cpu_test_str, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
 Class IOlistautomation.HelpForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -38,7 +58,14 @@ Class IOlistautomation.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeF
     System.Windows.Forms.Label Progress_label : Public
     System.Windows.Forms.DataGridView Signals_grid : Public
     System.Windows.Forms.DataGridView Object_grid : Public
+  Methods:
+    Main_init(): PrivateScope, Public, HideBySig
 Class GlobalForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     IOlistautomation.MainWindow forma : Public, Static
+Class IOlistautomation.Object_check_Form: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Object_check_init(): PrivateScope, Public, HideBySig

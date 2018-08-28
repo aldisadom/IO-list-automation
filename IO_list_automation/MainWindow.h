@@ -101,18 +101,20 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_FindObjects;
 	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_CorrectComments;
 	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_TransferSignals;
-	private: System::Windows::Forms::ToolStripMenuItem^  Declare_PID;
-	private: System::Windows::Forms::ToolStripMenuItem^  Declare_Valve;
-	private: System::Windows::Forms::ToolStripMenuItem^  Declare_HC;
-	private: System::Windows::Forms::ToolStripMenuItem^  Declare_AI;
-	private: System::Windows::Forms::ToolStripMenuItem^  Declare_Motor;
-	private: System::Windows::Forms::ToolStripMenuItem^  Declare_FC;
+	private: System::Windows::Forms::ToolStripMenuItem^  Declare_Adressing;
+
+
+
+
+
+
 	private: System::Windows::Forms::ToolStripMenuItem^  IO_CreateIO;
-	private: System::Windows::Forms::ToolStripMenuItem^  Instance_PID;
-	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Valve;
-	private: System::Windows::Forms::ToolStripMenuItem^  Instance_HC;
-	private: System::Windows::Forms::ToolStripMenuItem^  Instance_AI;
-	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Motor;
+	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Generate;
+
+
+
+
+
 	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_PID;
 	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_Valve;
 	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_HC;
@@ -133,6 +135,9 @@ namespace IOlistautomation {
 public: System::Windows::Forms::DataGridView^  Object_grid;
 private: System::Windows::Forms::ToolStripMenuItem^  Uniques_FindOperatyv;
 private: System::Windows::Forms::ToolStripMenuItem^  File_LoadALL;
+private: System::Windows::Forms::ToolStripMenuItem^  Declare_GenerateAdress;
+
+private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator4;
 public:
 
 public:
@@ -200,20 +205,13 @@ private:
 			this->Uniques_CorrectComments = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_TransferSignals = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->declareToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Declare_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Declare_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Declare_HC = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Declare_AI = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Declare_Motor = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Declare_FC = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Declare_GenerateAdress = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator4 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->Declare_Adressing = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->iOToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->IO_CreateIO = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->instanceToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Instance_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Instance_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Instance_HC = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Instance_AI = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Instance_Motor = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_Generate = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sCADAToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->SCADA_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->SCADA_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -564,67 +562,34 @@ private:
 			// 
 			// declareToolStripMenuItem
 			// 
-			this->declareToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
-				this->Declare_PID,
-					this->Declare_Valve, this->Declare_HC, this->Declare_AI, this->Declare_Motor, this->Declare_FC
+			this->declareToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->Declare_GenerateAdress,
+					this->toolStripSeparator4, this->Declare_Adressing
 			});
 			this->declareToolStripMenuItem->Name = L"declareToolStripMenuItem";
 			this->declareToolStripMenuItem->Size = System::Drawing::Size(58, 20);
 			this->declareToolStripMenuItem->Text = L"Declare";
 			// 
-			// Declare_PID
+			// Declare_GenerateAdress
 			// 
-			this->Declare_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Declare_PID->Name = L"Declare_PID";
-			this->Declare_PID->Size = System::Drawing::Size(107, 22);
-			this->Declare_PID->Text = L"PID";
-			this->Declare_PID->Click += gcnew System::EventHandler(this, &MainWindow::Declare_PID_Click);
+			this->Declare_GenerateAdress->Name = L"Declare_GenerateAdress";
+			this->Declare_GenerateAdress->Size = System::Drawing::Size(180, 22);
+			this->Declare_GenerateAdress->Text = L"Generate adress";
+			this->Declare_GenerateAdress->Click += gcnew System::EventHandler(this, &MainWindow::Declare_GenerateAdress_Click);
 			// 
-			// Declare_Valve
+			// toolStripSeparator4
 			// 
-			this->Declare_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Declare_Valve->Name = L"Declare_Valve";
-			this->Declare_Valve->Size = System::Drawing::Size(107, 22);
-			this->Declare_Valve->Text = L"Valve";
-			this->Declare_Valve->Click += gcnew System::EventHandler(this, &MainWindow::Declare_Valve_Click);
+			this->toolStripSeparator4->Name = L"toolStripSeparator4";
+			this->toolStripSeparator4->Size = System::Drawing::Size(177, 6);
 			// 
-			// Declare_HC
+			// Declare_Adressing
 			// 
-			this->Declare_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Declare_HC->Name = L"Declare_HC";
-			this->Declare_HC->Size = System::Drawing::Size(107, 22);
-			this->Declare_HC->Text = L"HC";
-			this->Declare_HC->Click += gcnew System::EventHandler(this, &MainWindow::Declare_HC_Click);
-			// 
-			// Declare_AI
-			// 
-			this->Declare_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Declare_AI->Name = L"Declare_AI";
-			this->Declare_AI->Size = System::Drawing::Size(107, 22);
-			this->Declare_AI->Text = L"AI";
-			this->Declare_AI->Click += gcnew System::EventHandler(this, &MainWindow::Declare_AI_Click);
-			// 
-			// Declare_Motor
-			// 
-			this->Declare_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Declare_Motor->Name = L"Declare_Motor";
-			this->Declare_Motor->Size = System::Drawing::Size(107, 22);
-			this->Declare_Motor->Text = L"Motor";
-			this->Declare_Motor->Click += gcnew System::EventHandler(this, &MainWindow::Declare_Motor_Click);
-			// 
-			// Declare_FC
-			// 
-			this->Declare_FC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Declare_FC->Name = L"Declare_FC";
-			this->Declare_FC->Size = System::Drawing::Size(107, 22);
-			this->Declare_FC->Text = L"FC";
-			this->Declare_FC->Click += gcnew System::EventHandler(this, &MainWindow::Declare_FC_Click);
+			this->Declare_Adressing->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_Adressing->Name = L"Declare_Adressing";
+			this->Declare_Adressing->Size = System::Drawing::Size(180, 22);
+			this->Declare_Adressing->Text = L"Declare adressing";
+			this->Declare_Adressing->Click += gcnew System::EventHandler(this, &MainWindow::Declare_Adressing_Click);
 			// 
 			// iOToolStripMenuItem
 			// 
@@ -638,64 +603,25 @@ private:
 			this->IO_CreateIO->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->IO_CreateIO->Name = L"IO_CreateIO";
-			this->IO_CreateIO->Size = System::Drawing::Size(123, 22);
+			this->IO_CreateIO->Size = System::Drawing::Size(180, 22);
 			this->IO_CreateIO->Text = L"Create IO";
 			this->IO_CreateIO->Click += gcnew System::EventHandler(this, &MainWindow::IO_CreateIO_Click);
 			// 
 			// instanceToolStripMenuItem
 			// 
-			this->instanceToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
-				this->Instance_PID,
-					this->Instance_Valve, this->Instance_HC, this->Instance_AI, this->Instance_Motor
-			});
+			this->instanceToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->Instance_Generate });
 			this->instanceToolStripMenuItem->Name = L"instanceToolStripMenuItem";
 			this->instanceToolStripMenuItem->Size = System::Drawing::Size(63, 20);
 			this->instanceToolStripMenuItem->Text = L"Instance";
 			// 
-			// Instance_PID
+			// Instance_Generate
 			// 
-			this->Instance_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Instance_PID->Name = L"Instance_PID";
-			this->Instance_PID->Size = System::Drawing::Size(107, 22);
-			this->Instance_PID->Text = L"PID";
-			this->Instance_PID->Click += gcnew System::EventHandler(this, &MainWindow::Instance_PID_Click);
-			// 
-			// Instance_Valve
-			// 
-			this->Instance_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Instance_Valve->Name = L"Instance_Valve";
-			this->Instance_Valve->Size = System::Drawing::Size(107, 22);
-			this->Instance_Valve->Text = L"Valve";
-			this->Instance_Valve->Click += gcnew System::EventHandler(this, &MainWindow::Instance_Valve_Click);
-			// 
-			// Instance_HC
-			// 
-			this->Instance_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Instance_HC->Name = L"Instance_HC";
-			this->Instance_HC->Size = System::Drawing::Size(107, 22);
-			this->Instance_HC->Text = L"HC";
-			this->Instance_HC->Click += gcnew System::EventHandler(this, &MainWindow::Instance_HC_Click);
-			// 
-			// Instance_AI
-			// 
-			this->Instance_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Instance_AI->Name = L"Instance_AI";
-			this->Instance_AI->Size = System::Drawing::Size(107, 22);
-			this->Instance_AI->Text = L"AI";
-			this->Instance_AI->Click += gcnew System::EventHandler(this, &MainWindow::Instance_AI_Click);
-			// 
-			// Instance_Motor
-			// 
-			this->Instance_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->Instance_Motor->Name = L"Instance_Motor";
-			this->Instance_Motor->Size = System::Drawing::Size(107, 22);
-			this->Instance_Motor->Text = L"Motor";
-			this->Instance_Motor->Click += gcnew System::EventHandler(this, &MainWindow::Instance_Motor_Click);
+			this->Instance_Generate->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_Generate->Name = L"Instance_Generate";
+			this->Instance_Generate->Size = System::Drawing::Size(180, 22);
+			this->Instance_Generate->Text = L"Generate instances";
+			this->Instance_Generate->Click += gcnew System::EventHandler(this, &MainWindow::Instance_Generate_Click);
 			// 
 			// sCADAToolStripMenuItem
 			// 
@@ -712,7 +638,7 @@ private:
 			this->SCADA_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_PID->Name = L"SCADA_PID";
-			this->SCADA_PID->Size = System::Drawing::Size(107, 22);
+			this->SCADA_PID->Size = System::Drawing::Size(180, 22);
 			this->SCADA_PID->Text = L"PID";
 			this->SCADA_PID->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_PID_Click);
 			// 
@@ -721,7 +647,7 @@ private:
 			this->SCADA_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_Valve->Name = L"SCADA_Valve";
-			this->SCADA_Valve->Size = System::Drawing::Size(107, 22);
+			this->SCADA_Valve->Size = System::Drawing::Size(180, 22);
 			this->SCADA_Valve->Text = L"Valve";
 			this->SCADA_Valve->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Valve_Click);
 			// 
@@ -730,7 +656,7 @@ private:
 			this->SCADA_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_HC->Name = L"SCADA_HC";
-			this->SCADA_HC->Size = System::Drawing::Size(107, 22);
+			this->SCADA_HC->Size = System::Drawing::Size(180, 22);
 			this->SCADA_HC->Text = L"HC";
 			this->SCADA_HC->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_HC_Click);
 			// 
@@ -739,7 +665,7 @@ private:
 			this->SCADA_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_AI->Name = L"SCADA_AI";
-			this->SCADA_AI->Size = System::Drawing::Size(107, 22);
+			this->SCADA_AI->Size = System::Drawing::Size(180, 22);
 			this->SCADA_AI->Text = L"AI";
 			this->SCADA_AI->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_AI_Click);
 			// 
@@ -748,7 +674,7 @@ private:
 			this->SCADA_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_Motor->Name = L"SCADA_Motor";
-			this->SCADA_Motor->Size = System::Drawing::Size(107, 22);
+			this->SCADA_Motor->Size = System::Drawing::Size(180, 22);
 			this->SCADA_Motor->Text = L"Motor";
 			this->SCADA_Motor->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Motor_Click);
 			// 
@@ -1386,7 +1312,7 @@ private:
 				{
 					if (Objects_find_operatyv() == 0)
 					{
-						Declare_addreses();
+
 					}
 				}
 			}
@@ -1438,56 +1364,19 @@ private:
 
 
 			 //menu Declare
-//empty
-	private: System::Void Declare_PID_Click(System::Object^  sender, System::EventArgs^  e) {
+//function done
+	private: System::Void Declare_GenerateAdress_Click(System::Object^  sender, System::EventArgs^  e) {
+		Declare_addreses();
+	}
+//function done
+	private: System::Void Declare_Adressing_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 		
-		Declare_addreses();
-//		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Declare_Valve_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		Declare_put_adres_grid();
 
-		Display_no_function(buttonName);
 	}
-//empty
-	private: System::Void Declare_HC_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Declare_AI_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Declare_Motor_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Declare_FC_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-
 
 			 //menu IO
 //empty
@@ -1502,47 +1391,13 @@ private:
 
 			 //menu instance
 //empty
-	private: System::Void Instance_PID_Click(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void Instance_Generate_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
 		Display_no_function(buttonName);
 	}
-//empty
-	private: System::Void Instance_Valve_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Instance_HC_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Instance_AI_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void Instance_Motor_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-
-
 
 			 //menu SCADA
 //empty
@@ -1585,6 +1440,8 @@ private:
 
 		Display_no_function(buttonName);		
 	}
+
+
 
 
 };

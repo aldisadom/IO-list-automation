@@ -1,24 +1,67 @@
-2018-08-27  17:36:26.861 - This program is not stable ant not fully tested, carefully use it !!!
-2018-08-27  17:36:31.193 - ---------------------------------------------------------
-2018-08-27  17:36:33.182 - File_LoadALL --- Button pressed
-2018-08-27  17:36:35.269 - Loading data - Design
-2018-08-27  17:36:35.506 - Loading data - Design --- Done
-2018-08-27  17:36:35.529 - Data is writen to grid - Design
-2018-08-27  17:36:36.265 - Data is writen to grid - Design --- Done
-2018-08-27  17:36:36.893 - Loading data - Signals
-2018-08-27  17:36:37.375 - Loading data - Signals --- Done
-2018-08-27  17:36:37.519 - Data is writen to grid - Signals
-2018-08-27  17:36:37.968 - Data is writen to grid - Signals --- Done
-2018-08-27  17:36:39.256 - Loading data - Objects
-2018-08-27  17:36:39.493 - Loading data - Objects --- Done
-2018-08-27  17:36:39.659 - Data is writen to grid - Objects
-2018-08-27  17:36:39.998 - Data is writen to grid - Objects --- Done
-2018-08-27  17:36:42.948 - Declare_PID --- Button pressed
-2018-08-27  17:36:43.089 - Data is writen to memory - Objects
-2018-08-27  17:36:43.332 - Data is writen to memory - Objects --- Done
-2018-08-27  17:36:43.342 - Saving data - Objects
-2018-08-27  17:36:43.491 - Saving data - Objects --- Done
-2018-08-27  17:36:43.617 - Generating object adresses
-2018-08-27  17:37:53.607 - Generating object adresses --- Done
-2018-08-27  17:37:53.629 - Data is writen to grid - Objects
-2018-08-27  17:37:53.953 - Data is writen to grid - Objects --- Done
+2018-08-28  18:43:03.505 - This program is not stable ant not fully tested, carefully use it !!!
+2018-08-28  18:43:05.292 - ---------------------------------------------------------
+2018-08-28  18:43:08.258 - File_LoadALL --- Button pressed
+2018-08-28  18:43:09.999 - Loading data - Design
+2018-08-28  18:43:10.213 - Loading data - Design --- Done
+2018-08-28  18:43:10.231 - Data is writen to grid - Design
+2018-08-28  18:43:11.013 - Data is writen to grid - Design --- Done
+2018-08-28  18:43:11.653 - Loading data - Signals
+2018-08-28  18:43:12.075 - Loading data - Signals --- Done
+2018-08-28  18:43:12.226 - Data is writen to grid - Signals
+2018-08-28  18:43:12.679 - Data is writen to grid - Signals --- Done
+2018-08-28  18:43:13.926 - Loading data - Objects
+2018-08-28  18:43:14.166 - Loading data - Objects --- Done
+2018-08-28  18:43:14.331 - Data is writen to grid - Objects
+2018-08-28  18:43:14.517 - Data is writen to grid - Objects --- Done
+2018-08-28  18:43:19.000 - Uniques_FindUniques --- Button pressed
+2018-08-28  18:43:19.045 - Data is writen to memory - Signals
+2018-08-28  18:43:19.501 - Data is writen to memory - Signals --- Done
+2018-08-28  18:43:19.508 - Saving data - Signals
+2018-08-28  18:43:19.653 - Saving data - Signals --- Done
+2018-08-28  18:43:19.688 - Searching unique objects
+2018-08-28  18:43:19.766 - Data is writen to memory - Objects
+2018-08-28  18:43:19.793 - Data is writen to memory - Objects --- Done
+2018-08-28  18:43:19.882 - Searching unique objects --- Done
+2018-08-28  18:43:19.901 - Data is writen to grid - Objects
+2018-08-28  18:43:20.275 - Data is writen to grid - Objects --- Done
+2018-08-28  18:43:20.557 - Learning recognition data
+2018-08-28  18:43:20.827 - Learning recognition data --- Done
+2018-08-28  18:43:20.968 - Data is writen to memory - Objects
+2018-08-28  18:43:21.142 - Data is writen to memory - Objects --- Done
+2018-08-28  18:43:21.143 - Saving data - Objects
+2018-08-28  18:43:21.256 - Saving data - Objects --- Done
+2018-08-28  18:43:21.393 - Searching unique objects types
+2018-08-28  18:43:21.806 - Searching unique objects types --- Done
+2018-08-28  18:43:21.831 - Data is writen to grid - Objects
+2018-08-28  18:43:22.179 - Data is writen to grid - Objects --- Done
+2018-08-28  18:43:22.602 - Data is writen to memory - Objects
+2018-08-28  18:43:22.808 - Data is writen to memory - Objects --- Done
+2018-08-28  18:43:22.809 - Saving data - Objects
+2018-08-28  18:43:22.959 - Saving data - Objects --- Done
+2018-08-28  18:43:23.084 - Searching operative in objects
+2018-08-28  18:43:23.258 - Searching operative in objects --- Done
+2018-08-28  18:43:23.278 - Data is writen to grid - Objects
+2018-08-28  18:43:23.603 - Data is writen to grid - Objects --- Done
+2018-08-28  18:43:26.222 - Declare_Adressing --- Button pressed
+2018-08-28  18:43:26.381 - Data is writen to memory - Objects
+2018-08-28  18:43:26.589 - Data is writen to memory - Objects --- Done
+2018-08-28  18:43:26.591 - Saving data - Objects
+2018-08-28  18:43:26.761 - Saving data - Objects --- Done
+2018-08-28  18:43:27.027 - No adresses in objects - Objects
+2018-08-28  18:43:38.468 - Declare_Adressing --- Tryed to open, but there is no function
+2018-08-28  18:43:46.504 - File_LoadALL --- Button pressed
+2018-08-28  18:43:49.374 - Erasing all data - Design
+2018-08-28  18:43:49.525 - Loading data - Design
+2018-08-28  18:43:49.735 - Loading data - Design --- Done
+2018-08-28  18:43:49.874 - Data is writen to grid - Design
+2018-08-28  18:43:50.243 - Data is writen to grid - Design --- Done
+2018-08-28  18:43:51.293 - Erasing all data - Signals
+2018-08-28  18:43:51.431 - Loading data - Signals
+2018-08-28  18:43:51.750 - Loading data - Signals --- Done
+2018-08-28  18:43:51.873 - Data is writen to grid - Signals
+2018-08-28  18:43:52.347 - Data is writen to grid - Signals --- Done
+2018-08-28  18:43:53.910 - Erasing all data - Objects
+2018-08-28  18:43:54.119 - Loading data - Objects
+2018-08-28  18:43:54.331 - Loading data - Objects --- Done
+2018-08-28  18:43:54.504 - Data is writen to grid - Objects
+2018-08-28  18:43:54.799 - Data is writen to grid - Objects --- Done

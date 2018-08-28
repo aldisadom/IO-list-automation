@@ -19,6 +19,13 @@ extern const char * signals_txt[];
 extern const char * objects_txt[];
 extern const char * learning_txt[];
 
+extern const char * ai_txt[];
+extern const char * vlv_txt[];
+extern const char * hc_txt[];
+extern const char * fc_txt[];
+extern const char * pid_txt[];
+extern const char * mot_txt[];
+
 extern const wchar_t * conf_design_overwrite[];
 extern const wchar_t * conf_signal_overwrite[];
 extern const wchar_t * conf_learn_overwrite[];

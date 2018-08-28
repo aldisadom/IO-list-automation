@@ -17,6 +17,26 @@ const char * learning_txt[]{
 	"Learning", };
 
 
+const char * ai_txt[]{
+	"Analogai",
+	"Analogs", };
+const char * vlv_txt[]{
+	"Sklendes",
+	"Valves", };
+const char * hc_txt[]{
+	"Hidrocilindrai",
+	"Hidrocilinders", };
+const char * fc_txt[]{
+	"Daznio keitikliai",
+	"Frequency converters", };
+const char * pid_txt[]{
+	"PID reguliatoriai",
+	"PID regulators", };
+const char * mot_txt[]{
+	"Varikliai",
+	"Motors", };
+
+
 const wchar_t * conf_design_overwrite[]{
 	L"Ar tikrai norima perrasyti projectavimo duomenis?",
 	L"Do you realy whant to overwrite design data?", };

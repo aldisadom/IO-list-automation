@@ -23,8 +23,16 @@ const wchar_t * prog_adress[]{
 	L"Generuojami adresai",
 	L"Generating adreses", };
 const wchar_t * prog_overlap[]{
-	L"tikrinami persidengimai",
+	L"Tikrinami persidengimai",
 	L"Checking overlap", };
+const wchar_t * prog_declare[]{
+	L"Deklaruojami objektai",
+	L"Declaring objects", };
+const wchar_t * prog_check_adress[]{
+	L"Tikrinami adresai",
+	L"Checking adresses", };
+
+
 
 const wchar_t * prog_grid_put[]{
 	L"Pildoma lentele",

@@ -41,10 +41,17 @@ struct adr_cpu_test_str
 	adr_test_str pid;
 };
 
+// get what cpu is used
 int Declare_adress_get_CPU_switch(addres_pars_CPU_str &CPU_adr);
+// put cpu data to global memory
 int Declare_adress_put_CPU_switch(addres_pars_CPU_str &CPU_adr);
 
-int Declare_addreses();
+
+//test if there is at least one overlap in all adresses
 int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_max, int PID_nr_max, int MOT_nr_max, check_result_str &result_obj, adr_cpu_test_str &test_CPU_adr);
 
+// adress declaring
+int Declare_addreses();
+
+int Declare_put_adres_grid();
 #endif

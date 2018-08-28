@@ -40,7 +40,9 @@ const char * info_get_adresses[]{
 const char * info_overlap_adresses[]{
 	"Tikrinami adresu persidengimai",
 	"Checking adress overlap", };
-
+const char * info_put_adresses[]{
+	"Adresai dedami i lentele",
+	"Adresses are put to table", };
 
 
 const char * info_transfer_data[]{

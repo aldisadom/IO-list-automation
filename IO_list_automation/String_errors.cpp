@@ -28,6 +28,9 @@ const char * err_wrong_file[]{
 const char * err_wrong_object_type[]{
 	"Neatpazintas objekto tipas",
 	"Unrecognised object type", };
+const char * err_no_adress_object[]{
+	"Nera adresu objektuose",
+	"No adresses in objects", };
 
 
 const char * err_no_cfg_file[]{
