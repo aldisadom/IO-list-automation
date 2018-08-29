@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Functions">
       <UniqueIdentifier>{3797929f-1f68-4b91-ba1f-085016bbcf4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Functions\Instances">
+      <UniqueIdentifier>{402ca779-271f-4964-8d05-7430b61f1e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Functions\Instances">
+      <UniqueIdentifier>{aed93b05-6bd4-49aa-be58-eaa3ae34dd15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="config.cpp">
@@ -46,9 +52,6 @@
       <Filter>Source Files\Functions</Filter>
     </ClCompile>
     <ClCompile Include="design.cpp">
-      <Filter>Source Files\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="Instance.cpp">
       <Filter>Source Files\Functions</Filter>
     </ClCompile>
     <ClCompile Include="objects.cpp">
@@ -87,6 +90,21 @@
     <ClCompile Include="ResultForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IO_declare.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance_beckhoff.cpp">
+      <Filter>Source Files\Functions\Instances</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance_siemens.cpp">
+      <Filter>Source Files\Functions\Instances</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance_schneider.cpp">
+      <Filter>Source Files\Functions\Instances</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance.cpp">
+      <Filter>Source Files\Functions\Instances</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow.h">
@@ -122,9 +140,6 @@
     <ClInclude Include="design.h">
       <Filter>Header Files\Functions</Filter>
     </ClInclude>
-    <ClInclude Include="Instance.h">
-      <Filter>Header Files\Functions</Filter>
-    </ClInclude>
     <ClInclude Include="objects.h">
       <Filter>Header Files\Functions</Filter>
     </ClInclude>
@@ -151,6 +166,21 @@
     </ClInclude>
     <ClInclude Include="ResultForm.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IO_declare.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance_beckhoff.h">
+      <Filter>Header Files\Functions\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance_siemens.h">
+      <Filter>Header Files\Functions\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance_schneider.h">
+      <Filter>Header Files\Functions\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>Header Files\Functions\Instances</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +225,9 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="AAA_TEST_FORM.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

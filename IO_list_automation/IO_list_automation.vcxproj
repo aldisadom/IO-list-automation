@@ -148,6 +148,10 @@
     <ClCompile Include="Global_Functions.cpp" />
     <ClCompile Include="HelpForm.cpp" />
     <ClCompile Include="Instance.cpp" />
+    <ClCompile Include="Instance_beckhoff.cpp" />
+    <ClCompile Include="Instance_schneider.cpp" />
+    <ClCompile Include="Instance_siemens.cpp" />
+    <ClCompile Include="IO_declare.cpp" />
     <ClCompile Include="KKS_editForm.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="objects.cpp" />
@@ -175,6 +179,10 @@
     <ClInclude Include="design.h" />
     <ClInclude Include="Global_Functions.h" />
     <ClInclude Include="Instance.h" />
+    <ClInclude Include="Instance_beckhoff.h" />
+    <ClInclude Include="Instance_schneider.h" />
+    <ClInclude Include="Instance_siemens.h" />
+    <ClInclude Include="IO_declare.h" />
     <ClInclude Include="objects.h" />
     <ClInclude Include="Object_check_Form.h">
       <FileType>CppForm</FileType>

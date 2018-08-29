@@ -47,6 +47,11 @@ int Declare_adress_get_CPU_switch(addres_pars_CPU_str &CPU_adr);
 int Declare_adress_put_CPU_switch(addres_pars_CPU_str &CPU_adr);
 
 
+// count number of all diferent object types
+int Declare_count_objects(int &AI_nr_max, int &VLV_nr_max, int &HC_nr_max, int &FC_nr_max, int &PID_nr_max, int &MOT_nr_max);
+//check if there is indirect adress in objects
+void Declare_count_indirects(int &ai_indirect_ats, int &hc_indirect_ats, int &fc_indirect_ats, int &pid_indirect_ats, int &mot_indirect_ats, int &vlv_indirect_ats);
+
 //test if there is at least one overlap in all adresses
 int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_max, int PID_nr_max, int MOT_nr_max, check_result_str &result_obj, adr_cpu_test_str &test_CPU_adr);
 

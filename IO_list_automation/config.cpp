@@ -1,5 +1,6 @@
 #include "config.h"
 #include "MainWindow.h"
+#include "Global_Functions.h"
 
 using namespace std;
 using namespace System;
@@ -419,19 +420,19 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				pars->excel_row_nr_with_name = value;
 				break;
 			case 5:
-				if (fStringMatch = (strcmp(value_text, "Beckhoff") == 0))
+				if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(Beckhoff_index)) == 0))
 				{
 					pars->CPU = Beckhoff_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "Siemens") == 0))
+				else if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(Siemens_index)) == 0))
 				{
 					pars->CPU = Siemens_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "Schneider") == 0))
+				else if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(Schneider_index)) == 0))
 				{
 					pars->CPU = Schneider_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "ABB 800xA") == 0))
+				else if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(ABB_800xA_index)) == 0))
 				{
 					pars->CPU = ABB_800xA_index;
 				}

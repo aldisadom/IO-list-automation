@@ -142,7 +142,32 @@ void Global_put_data_switch(int index_function,int iCol, int index, wstring cell
 		break;
 	}
 }
+// get selected cpu name
+const char* Global_get_CPU_name(int index_cpu)
+{
+	switch (index_cpu)
+	{
+	case Beckhoff_index:
+		return "Beckhoff";
+		break;
+	case Siemens_index:
+		return "Siemens";
+		break;
+	case Schneider_index:
+		return "Schneider";
+		break;
+	case ABB_800xA_index:
+		return "ABB 800xA";
+		break;
 
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return " ";
+		break;
+	}
+	return 0;
+}
 
 //resize memory data based on function index
 void Global_resize_data(int index_function, int size)

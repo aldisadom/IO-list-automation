@@ -1,19 +1,26 @@
 ﻿  AAA_TEST_FORM.cpp
+  AboutForm.cpp
   Address_Form.cpp
   config.cpp
   Declare.cpp
   design.cpp
   Global_Functions.cpp
+  HelpForm.cpp
   Instance.cpp
+  IO_declare.cpp
   KKS_editForm.cpp
   MainWindow.cpp
   objects.cpp
   Object_check_Form.cpp
+  ResultForm.cpp
   SCADA.cpp
   signals.cpp
   String_info.cpp
   Strings.cpp
   String_errors.cpp
+  Generating Code...
+  Compiling...
   String_progress.cpp
   Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
   IO_list_automation.vcxproj -> C:\IO-list-automation\Release\IO_list_automation.exe

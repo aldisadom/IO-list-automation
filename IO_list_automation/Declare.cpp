@@ -14,7 +14,7 @@
 
 #define new_row_offset 2
  
-//return area meaning as string >0 DB[nr],  0 MQ, -1 MW, -2 QX, -3 QW;  -4 IX;  -5 IW; 
+//return area meaning as string >0 DB[nr],  0 M, -1 MW, -2 QX, -3 QW;  -4 IX;  -5 IW; -99 ignore adressing
 wstring Declare_area_switch(int area)
 {
 	wstring text;
@@ -34,24 +34,26 @@ wstring Declare_area_switch(int area)
 		return text;
 		break;
 	case 0:
-		return L"%MQ ";
+		return L"%M";
 		break;
 	case -1:
-		return L"%MW ";
+		return L"%MW";
 		break;
 	case -2:
-		return L"%QX ";
+		return L"%QX";
 		break;
 	case -3:
-		return L"%QW ";
+		return L"%QW";
 		break;
 	case -4:
-		return L"%IX ";
+		return L"%IX";
 		break;
 	case -5:
-		return L"%IW ";
+		return L"%IW";
 		break;
-
+	case -99:
+		return L"";
+		break;
 	default:
 		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
 		err_write_show(err_txt);
@@ -115,9 +117,15 @@ int Declare_adress_put_CPU_switch(addres_pars_CPU_str &CPU_adr)
 
 
 // count number of all diferent object types
-void Declare_count_objects(int &AI_nr_max, int &VLV_nr_max, int &HC_nr_max, int &FC_nr_max, int &PID_nr_max, int &MOT_nr_max)
+int Declare_count_objects(int &AI_nr_max, int &VLV_nr_max, int &HC_nr_max, int &FC_nr_max, int &PID_nr_max, int &MOT_nr_max)
 {
 	wstring object_type = L"";
+	AI_nr_max = 0;
+	VLV_nr_max = 0;
+	HC_nr_max = 0;
+	FC_nr_max = 0;
+	PID_nr_max = 0;
+	MOT_nr_max = 0;
 
 	//get number of each structure
 	for (int index = 0; index <= objects.valid_entries; ++index)
@@ -148,6 +156,70 @@ void Declare_count_objects(int &AI_nr_max, int &VLV_nr_max, int &HC_nr_max, int 
 			else if (object_type.compare(Mot_type) == 0)
 			{
 				MOT_nr_max++;
+			}
+		}
+	}
+	if ((AI_nr_max + VLV_nr_max + HC_nr_max + FC_nr_max + PID_nr_max + MOT_nr_max) == 0)
+	{
+		strcpy_s(err_txt, sizeof err_txt, err_no_object_types_edit[lang]);
+		strcat_s(err_txt, sizeof err_txt, info_separator);
+		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
+		err_write_show(err_txt);
+		return 1;
+	}
+
+	return 0;
+}
+//check if there is indirect adress in objects
+void Declare_count_indirects(int &ai_indirect_ats,int &hc_indirect_ats,int &fc_indirect_ats,int &pid_indirect_ats,int &mot_indirect_ats,int &vlv_indirect_ats)
+{
+	ai_indirect_ats = 0;
+	hc_indirect_ats = 0;
+	fc_indirect_ats = 0;
+	pid_indirect_ats = 0;
+	mot_indirect_ats = 0;
+	vlv_indirect_ats = 0;
+
+	wstring indirect_text = L"indirect";
+	wstring test_text;
+	int size_text = indirect_text.size();
+	int indirect_ats = 0;
+
+	for (int i = 0; i < max_objects; i++)
+	{
+		indirect_ats = objects.data[i].KKS.find(indirect_text);
+		if (indirect_ats >= 0)
+		{
+			test_text = objects.data[i].KKS.substr(size_text + 1);
+
+			if (test_text.find(AI_type) != -1)
+			{
+				ai_indirect_ats = 1;
+			}
+
+			if (test_text.find(Vlv_type) != -1)
+			{
+				vlv_indirect_ats = 1;
+			}
+
+			if (test_text.find(HC_type) != -1)
+			{
+				hc_indirect_ats = 1;
+			}
+
+			if (test_text.find(FC_type) != -1)
+			{
+				fc_indirect_ats = 1;
+			}
+
+			if (test_text.find(PID_type) != -1)
+			{
+				pid_indirect_ats = 1;
+			}
+
+			if (test_text.find(Mot_type) != -1)
+			{
+				mot_indirect_ats = 1;
 			}
 		}
 	}
@@ -407,6 +479,13 @@ int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_
 // adress declaring for one object
 void Declare_adresses_1object(int object_index, int &adress_index, addres_pars_str adress_parameters)
 {
+	// clear all data before adding
+	objects.data[object_index].Adress_sw1 = L"";
+	objects.data[object_index].Adress_sw2 = L"";
+	objects.data[object_index].Adress_val = L"";
+	objects.data[object_index].Adress_pars = L"";
+	objects.data[object_index].Adress_cmd = L"";
+
 	// area name + address
 	wstring adress_text = L"";
 	if (adress_parameters.w1.offset > 0)
@@ -458,6 +537,8 @@ int Declare_addreses()
 
 	Show_progress(prog_adress[lang], objects.valid_entries);
 	strcpy_s(info_txt, sizeof info_txt, info_get_adresses[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));	
 	info_write(info_txt);
 
 	int AI_nr = 0;
@@ -474,16 +555,16 @@ int Declare_addreses()
 	int PID_nr_max = 0;
 	int MOT_nr_max = 0;	
 
-	Declare_count_objects(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max);
+	if (Declare_count_objects(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max) > 0)
+	{
+		return 1;
+	}
 	
 	//check if there is indirects
 	// if using indirects add one extra adress
 	if (parameters.indirect == 1)
 	{
 		wstring indirect_text = L"indirect";
-		wstring test_text;
-		int size_text = indirect_text.size();
-		int indirect_ats = 0;
 
 		int ai_indirect_ats = 0;
 		int hc_indirect_ats = 0;
@@ -492,44 +573,8 @@ int Declare_addreses()
 		int mot_indirect_ats = 0;
 		int vlv_indirect_ats = 0;
 
-		for (int i = 0; i < max_objects; i++)
-		{
-			indirect_ats = objects.data[i].KKS.find(indirect_text);
-			if (indirect_ats >= 0)
-			{
-				test_text = objects.data[i].KKS.substr(size_text+1);
+		Declare_count_indirects(ai_indirect_ats, hc_indirect_ats, fc_indirect_ats, pid_indirect_ats, mot_indirect_ats, vlv_indirect_ats);
 
-				if (test_text.find(AI_type)!=-1)
-				{
-					ai_indirect_ats = 1;
-				}
-
-				if (test_text.find(Vlv_type) != -1)
-				{
-					vlv_indirect_ats = 1;
-				}
-
-				if (test_text.find(HC_type) != -1)
-				{
-					hc_indirect_ats = 1;
-				}
-
-				if (test_text.find(FC_type) != -1)
-				{
-					fc_indirect_ats = 1;
-				}
-
-				if (test_text.find(PID_type) != -1)
-				{
-					pid_indirect_ats = 1;
-				}
-
-				if (test_text.find(Mot_type) != -1)
-				{
-					mot_indirect_ats = 1;
-				}
-			}
-		}		
 		object_data_str empty_element = {};
 		if (AI_nr_max > 0 && ai_indirect_ats<=0)
 		{
@@ -675,6 +720,8 @@ int Declare_addreses()
 	Hide_progress();
 
 	strcpy_s(info_txt, sizeof info_txt, info_get_adresses[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
 	strcat_s(info_txt, sizeof info_txt, error_separator);
 	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
 	info_write(info_txt);
@@ -775,8 +822,9 @@ wstring Declare_Beckhoff(int index, int iCol, int variable_index,wstring object_
 				adress = L"AT ";
 				adress.append(objects.data[index].Adress_pars);
 
-				variable_type = object_type;
-				variable_type.append(L"_pars");				
+				variable_type = L":";
+				variable_type.append(object_type);
+				variable_type.append(L"_pars;");				
 				break;
 
 
@@ -819,6 +867,92 @@ wstring Declare_Beckhoff(int index, int iCol, int variable_index,wstring object_
 
 wstring Declare_ABB_800xA(int index, int iCol, int variable_index, wstring object_type)
 {
+	if (iCol > 6)
+	{
+		return L"";
+	}
+	wstring texts;
+	wstring adress = L"";
+	wstring KKS_suffix = L"";
+	wstring KKS_prefix = L"";
+
+	switch (variable_index)
+	{
+	case fb_index:
+		KKS_prefix = L"fb_";
+		KKS_suffix = L"";
+		adress = L"";
+
+		break;
+	case w1_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_W1";
+
+		adress = objects.data[index].Adress_sw1;
+		break;
+	case w2_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_w2";
+
+		adress = objects.data[index].Adress_sw2;
+		break;
+	case cmd_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_cmd";
+
+		adress = objects.data[index].Adress_cmd;
+		break;
+	case val_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"";
+
+		adress = objects.data[index].Adress_val;
+		break;
+	case pars_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_pars";
+
+		adress = objects.data[index].Adress_pars;
+		break;
+
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return L"";
+		break;
+	}
+
+
+	switch (iCol)
+	{
+	case 0:
+		texts = KKS_prefix;
+		texts.append(objects.data[index].KKS);
+		texts.append(KKS_suffix);
+		return texts;
+		break;
+	case 1:
+		texts=object_type;
+		texts.append(L"_str");
+		return texts;
+		break;
+	case 2:
+		return L"retain";
+		break;
+	case 3:
+		return L"";
+		break;
+	case 4:
+		return L"";
+		break;
+	case 5:
+		return L"";
+		break;
+	case 6:
+		return objects.data[index].Object_text;
+		break;
+	}
+
 	return L"";
 }
 
@@ -830,27 +964,45 @@ wstring Declare_Siemens(int index, int iCol, int variable_index, wstring object_
 	}
 	wstring texts;
 	wstring adress = L"";
+	wstring KKS_suffix = L"";
+	wstring KKS_prefix = L"";
 
 	switch (variable_index)
 	{
 	case fb_index:
-		
+		KKS_prefix = L"fb_";
+		KKS_suffix = L"";
 		adress = L"";
 
 		break;
 	case w1_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_W1";
+		
 		adress=objects.data[index].Adress_sw1;
 		break;
 	case w2_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_w2";
+
 		adress=objects.data[index].Adress_sw2;
 		break;
 	case cmd_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_cmd";
+
 		adress=objects.data[index].Adress_cmd;
 		break;
 	case val_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"";
+
 		adress=objects.data[index].Adress_val;
 		break;
 	case pars_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_pars";
+
 		adress=objects.data[index].Adress_pars;
 		break;
 
@@ -865,7 +1017,10 @@ wstring Declare_Siemens(int index, int iCol, int variable_index, wstring object_
 	switch (iCol)
 	{
 	case 0:
-		return objects.data[index].KKS;
+		texts = KKS_prefix;
+		texts.append(objects.data[index].KKS);
+		texts.append(KKS_suffix);
+		return texts;
 		break;
 	case 1:
 		texts = L"UDT_";
@@ -901,6 +1056,110 @@ wstring Declare_Siemens(int index, int iCol, int variable_index, wstring object_
 
 wstring Declare_Schneider(int index, int iCol, int variable_index, wstring object_type)
 {
+	if (iCol > 4)
+	{
+		return L"";
+	}
+	wstring texts;
+	wstring KKS_suffix = L"";
+	wstring KKS_prefix = L"";
+	wstring adress = L"";
+	wstring variable_type = L"";
+
+	switch (variable_index)
+	{
+	case fb_index:
+		KKS_prefix = L"fb_";
+		KKS_suffix = L"";
+
+		adress = L"";
+
+		variable_type = L":FB_";
+		variable_type.append(object_type);
+		variable_type.append(L";");
+		break;
+	case w1_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_w1";
+
+		adress = L"AT ";
+		adress.append(objects.data[index].Adress_sw1);
+
+		variable_type = L":WORD;";
+		break;
+	case w2_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_w2";
+
+		adress = L"AT ";
+		adress.append(objects.data[index].Adress_sw2);
+
+		variable_type = L":WORD;";
+		break;
+	case cmd_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"_cmd";
+
+		adress = L"AT ";
+		adress.append(objects.data[index].Adress_cmd);
+
+		variable_type = L"";
+		break;
+	case val_index:
+		KKS_prefix = L"";
+		KKS_suffix = L"";
+
+		adress = L"AT ";
+		adress.append(objects.data[index].Adress_val);
+
+		variable_type = L":REAL;";
+		break;
+	case pars_index:
+		KKS_suffix = L"_pars";
+
+		adress = L"AT ";
+		adress.append(objects.data[index].Adress_pars);
+
+		variable_type = L":";
+		variable_type.append(object_type);
+		variable_type.append(L"_pars;");
+		break;
+
+
+
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return L"";
+		break;
+	}
+
+
+	switch (iCol)
+	{
+	case 0:
+		return L"";
+		break;
+	case 1:
+		texts = KKS_prefix;
+		texts.append(objects.data[index].KKS);
+		texts.append(KKS_suffix);
+		return texts;
+		break;
+	case 2:
+		return adress;
+		break;
+	case 3:
+		return variable_type;
+		break;
+	case 4:
+		texts = L"(*";
+		texts.append(objects.data[index].Object_text);
+		texts.append(L"*)");
+		return texts;
+		break;
+	}
+
 	return L"";
 }
 
@@ -929,13 +1188,6 @@ void Declare_init_grids(int AI_nr_max,int  VLV_nr_max, int HC_nr_max,int  FC_nr_
 		break;
 	}
 
-/*	 AI_nr_max = 1000;
-	 VLV_nr_max = AI_nr_max;
-	 HC_nr_max = AI_nr_max;
-	 FC_nr_max = AI_nr_max;
-	 PID_nr_max = AI_nr_max;
-	 MOT_nr_max = AI_nr_max;
-*/
 	if (AI_nr_max>0)
 	{
 		result_form->Grid_AI->ColumnCount = collumns;
@@ -1024,6 +1276,11 @@ int Declare_put_adres_grid()
 
 	int result_adress = 0;
 
+	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
+	info_write(info_txt);
+
 	Show_progress(prog_check_adress[lang], objects.valid_entries);
 	for (int index = 0; index <= objects.valid_entries; ++index)
 	{
@@ -1047,9 +1304,6 @@ int Declare_put_adres_grid()
 
 	Show_progress(prog_declare[lang], objects.valid_entries);
 
-	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
-
-	info_write(info_txt);
 
 	check_result_str result_ob;
 	wstring object_type = L"";
@@ -1074,7 +1328,10 @@ int Declare_put_adres_grid()
 
 	int row = 0;
 
-	Declare_count_objects(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max);
+	if (Declare_count_objects(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max) > 0)
+	{
+		return 1;
+	}
 	Declare_init_grids(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max,%results_form);
 
 	int iCol;
@@ -1256,6 +1513,8 @@ int Declare_put_adres_grid()
 	results_form.Update();
 
 	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
 	strcat_s(info_txt, sizeof info_txt, error_separator);
 	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
 	info_write(info_txt);	

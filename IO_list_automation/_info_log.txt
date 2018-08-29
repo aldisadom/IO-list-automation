@@ -1,67 +1,31 @@
-2018-08-28  18:43:03.505 - This program is not stable ant not fully tested, carefully use it !!!
-2018-08-28  18:43:05.292 - ---------------------------------------------------------
-2018-08-28  18:43:08.258 - File_LoadALL --- Button pressed
-2018-08-28  18:43:09.999 - Loading data - Design
-2018-08-28  18:43:10.213 - Loading data - Design --- Done
-2018-08-28  18:43:10.231 - Data is writen to grid - Design
-2018-08-28  18:43:11.013 - Data is writen to grid - Design --- Done
-2018-08-28  18:43:11.653 - Loading data - Signals
-2018-08-28  18:43:12.075 - Loading data - Signals --- Done
-2018-08-28  18:43:12.226 - Data is writen to grid - Signals
-2018-08-28  18:43:12.679 - Data is writen to grid - Signals --- Done
-2018-08-28  18:43:13.926 - Loading data - Objects
-2018-08-28  18:43:14.166 - Loading data - Objects --- Done
-2018-08-28  18:43:14.331 - Data is writen to grid - Objects
-2018-08-28  18:43:14.517 - Data is writen to grid - Objects --- Done
-2018-08-28  18:43:19.000 - Uniques_FindUniques --- Button pressed
-2018-08-28  18:43:19.045 - Data is writen to memory - Signals
-2018-08-28  18:43:19.501 - Data is writen to memory - Signals --- Done
-2018-08-28  18:43:19.508 - Saving data - Signals
-2018-08-28  18:43:19.653 - Saving data - Signals --- Done
-2018-08-28  18:43:19.688 - Searching unique objects
-2018-08-28  18:43:19.766 - Data is writen to memory - Objects
-2018-08-28  18:43:19.793 - Data is writen to memory - Objects --- Done
-2018-08-28  18:43:19.882 - Searching unique objects --- Done
-2018-08-28  18:43:19.901 - Data is writen to grid - Objects
-2018-08-28  18:43:20.275 - Data is writen to grid - Objects --- Done
-2018-08-28  18:43:20.557 - Learning recognition data
-2018-08-28  18:43:20.827 - Learning recognition data --- Done
-2018-08-28  18:43:20.968 - Data is writen to memory - Objects
-2018-08-28  18:43:21.142 - Data is writen to memory - Objects --- Done
-2018-08-28  18:43:21.143 - Saving data - Objects
-2018-08-28  18:43:21.256 - Saving data - Objects --- Done
-2018-08-28  18:43:21.393 - Searching unique objects types
-2018-08-28  18:43:21.806 - Searching unique objects types --- Done
-2018-08-28  18:43:21.831 - Data is writen to grid - Objects
-2018-08-28  18:43:22.179 - Data is writen to grid - Objects --- Done
-2018-08-28  18:43:22.602 - Data is writen to memory - Objects
-2018-08-28  18:43:22.808 - Data is writen to memory - Objects --- Done
-2018-08-28  18:43:22.809 - Saving data - Objects
-2018-08-28  18:43:22.959 - Saving data - Objects --- Done
-2018-08-28  18:43:23.084 - Searching operative in objects
-2018-08-28  18:43:23.258 - Searching operative in objects --- Done
-2018-08-28  18:43:23.278 - Data is writen to grid - Objects
-2018-08-28  18:43:23.603 - Data is writen to grid - Objects --- Done
-2018-08-28  18:43:26.222 - Declare_Adressing --- Button pressed
-2018-08-28  18:43:26.381 - Data is writen to memory - Objects
-2018-08-28  18:43:26.589 - Data is writen to memory - Objects --- Done
-2018-08-28  18:43:26.591 - Saving data - Objects
-2018-08-28  18:43:26.761 - Saving data - Objects --- Done
-2018-08-28  18:43:27.027 - No adresses in objects - Objects
-2018-08-28  18:43:38.468 - Declare_Adressing --- Tryed to open, but there is no function
-2018-08-28  18:43:46.504 - File_LoadALL --- Button pressed
-2018-08-28  18:43:49.374 - Erasing all data - Design
-2018-08-28  18:43:49.525 - Loading data - Design
-2018-08-28  18:43:49.735 - Loading data - Design --- Done
-2018-08-28  18:43:49.874 - Data is writen to grid - Design
-2018-08-28  18:43:50.243 - Data is writen to grid - Design --- Done
-2018-08-28  18:43:51.293 - Erasing all data - Signals
-2018-08-28  18:43:51.431 - Loading data - Signals
-2018-08-28  18:43:51.750 - Loading data - Signals --- Done
-2018-08-28  18:43:51.873 - Data is writen to grid - Signals
-2018-08-28  18:43:52.347 - Data is writen to grid - Signals --- Done
-2018-08-28  18:43:53.910 - Erasing all data - Objects
-2018-08-28  18:43:54.119 - Loading data - Objects
-2018-08-28  18:43:54.331 - Loading data - Objects --- Done
-2018-08-28  18:43:54.504 - Data is writen to grid - Objects
-2018-08-28  18:43:54.799 - Data is writen to grid - Objects --- Done
+2018-08-29  22:16:23.951 - This program is not stable ant not fully tested, carefully use it !!!
+2018-08-29  22:16:32.370 - ---------------------------------------------------------
+2018-08-29  22:16:34.754 - File_LoadALL --- Button pressed
+2018-08-29  22:16:36.441 - Loading data - Design
+2018-08-29  22:16:36.666 - Loading data - Design --- Done
+2018-08-29  22:16:36.686 - Data is writen to grid - Design
+2018-08-29  22:16:37.495 - Data is writen to grid - Design --- Done
+2018-08-29  22:16:38.133 - Loading data - Signals
+2018-08-29  22:16:38.597 - Loading data - Signals --- Done
+2018-08-29  22:16:38.748 - Data is writen to grid - Signals
+2018-08-29  22:16:39.310 - Data is writen to grid - Signals --- Done
+2018-08-29  22:16:40.627 - Loading data - Objects
+2018-08-29  22:16:40.888 - Loading data - Objects --- Done
+2018-08-29  22:16:41.057 - Data is writen to grid - Objects
+2018-08-29  22:16:41.418 - Data is writen to grid - Objects --- Done
+2018-08-29  22:16:46.519 - Instance_Generate --- Button pressed
+2018-08-29  22:16:46.523 - Not needed function - ABB 800xA
+2018-08-29  22:16:49.414 - Project_CPU_Beckhoff --- Button pressed
+2018-08-29  22:16:50.414 - Instance_Generate --- Button pressed
+2018-08-29  22:16:50.569 - Data is writen to memory - Signals
+2018-08-29  22:16:51.208 - Data is writen to memory - Signals --- Done
+2018-08-29  22:16:51.216 - Saving data - Signals
+2018-08-29  22:16:51.495 - Saving data - Signals --- Done
+2018-08-29  22:16:51.637 - Data is writen to memory - Objects
+2018-08-29  22:16:51.862 - Data is writen to memory - Objects --- Done
+2018-08-29  22:16:51.863 - Saving data - Objects
+2018-08-29  22:16:52.044 - Saving data - Objects --- Done
+2018-08-29  22:16:52.056 - Adresses are put to table - Beckhoff
+2018-08-29  22:39:53.077 - Data is writen to grid - Signals
+2018-08-29  22:39:53.722 - Data is writen to grid - Signals --- Done
+2018-08-29  22:39:54.914 - Adresses are put to table - Beckhoff --- Done

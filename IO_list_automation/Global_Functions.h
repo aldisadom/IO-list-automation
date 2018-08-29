@@ -15,7 +15,8 @@
 #include <CommCtrl.h>
 #include "Strings.h"
 
-
+// get selected cpu name
+const char* Global_get_CPU_name(int index_cpu);
 
 //resize memory data based on function index
 void Global_resize_data(int index_function, int size);

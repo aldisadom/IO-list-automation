@@ -31,6 +31,12 @@ const char * err_wrong_object_type[]{
 const char * err_no_adress_object[]{
 	"Nera adresu objektuose",
 	"No adresses in objects", };
+const char * err_no_object_types_edit[]{
+	"Nera tipu objektuose",
+	"No object types", };
+const char * err_no_function_for_this[]{
+	"Nereikalinga si funkcija",
+	"Not needed function", };
 
 
 const char * err_no_cfg_file[]{
@@ -49,8 +55,8 @@ const char * err_cfg_bad_value[]{
 	"Bloga parametro reiksme",
 	"Bad parameter value",};
 const char * err_cfg_parameter_programing_error[]{
-	"ups!!! Programos klaida, neidetas parametras, ji reikia pasalinti is _cfg.txt arba ideti i programa :)",
-	"ups!!! Program error, this parameter isnot added to program, remove from _cfg.txt or add to program :)",};
+	"ups!!! Programos klaida, neidetas parametras, ji reikia pasalinti is _cfg.txt arba ideti i programa, prasom raportuoti sia problema ir kaip ja atkartoti :)",
+	"ups!!! Program error, this parameter isnot added to program, remove from _cfg.txt or add to program, please report this problem and how to recreate it :)",};
 
 
 const char * err_excel_no_sheet[]{

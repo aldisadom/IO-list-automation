@@ -9,6 +9,7 @@
 #include "objects.h"
 #include "Global_Functions.h"
 #include "Declare.h"
+#include "Instance.h"
 
 #include <msclr/marshal_cppstd.h>
 
@@ -584,8 +585,7 @@ private:
 			// 
 			// Declare_Adressing
 			// 
-			this->Declare_Adressing->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Declare_Adressing->BackColor = System::Drawing::SystemColors::Control;
 			this->Declare_Adressing->Name = L"Declare_Adressing";
 			this->Declare_Adressing->Size = System::Drawing::Size(180, 22);
 			this->Declare_Adressing->Text = L"Declare adressing";
@@ -616,8 +616,7 @@ private:
 			// 
 			// Instance_Generate
 			// 
-			this->Instance_Generate->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Instance_Generate->BackColor = System::Drawing::SystemColors::Control;
 			this->Instance_Generate->Name = L"Instance_Generate";
 			this->Instance_Generate->Size = System::Drawing::Size(180, 22);
 			this->Instance_Generate->Text = L"Generate instances";
@@ -638,7 +637,7 @@ private:
 			this->SCADA_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_PID->Name = L"SCADA_PID";
-			this->SCADA_PID->Size = System::Drawing::Size(180, 22);
+			this->SCADA_PID->Size = System::Drawing::Size(107, 22);
 			this->SCADA_PID->Text = L"PID";
 			this->SCADA_PID->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_PID_Click);
 			// 
@@ -647,7 +646,7 @@ private:
 			this->SCADA_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_Valve->Name = L"SCADA_Valve";
-			this->SCADA_Valve->Size = System::Drawing::Size(180, 22);
+			this->SCADA_Valve->Size = System::Drawing::Size(107, 22);
 			this->SCADA_Valve->Text = L"Valve";
 			this->SCADA_Valve->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Valve_Click);
 			// 
@@ -656,7 +655,7 @@ private:
 			this->SCADA_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_HC->Name = L"SCADA_HC";
-			this->SCADA_HC->Size = System::Drawing::Size(180, 22);
+			this->SCADA_HC->Size = System::Drawing::Size(107, 22);
 			this->SCADA_HC->Text = L"HC";
 			this->SCADA_HC->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_HC_Click);
 			// 
@@ -665,7 +664,7 @@ private:
 			this->SCADA_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_AI->Name = L"SCADA_AI";
-			this->SCADA_AI->Size = System::Drawing::Size(180, 22);
+			this->SCADA_AI->Size = System::Drawing::Size(107, 22);
 			this->SCADA_AI->Text = L"AI";
 			this->SCADA_AI->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_AI_Click);
 			// 
@@ -674,7 +673,7 @@ private:
 			this->SCADA_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->SCADA_Motor->Name = L"SCADA_Motor";
-			this->SCADA_Motor->Size = System::Drawing::Size(180, 22);
+			this->SCADA_Motor->Size = System::Drawing::Size(107, 22);
 			this->SCADA_Motor->Text = L"Motor";
 			this->SCADA_Motor->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Motor_Click);
 			// 
@@ -1366,6 +1365,10 @@ private:
 			 //menu Declare
 //function done
 	private: System::Void Declare_GenerateAdress_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
+
 		Declare_addreses();
 	}
 //function done
@@ -1390,13 +1393,13 @@ private:
 
 
 			 //menu instance
-//empty
+//function done
 	private: System::Void Instance_Generate_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		Instance_gen();
 	}
 
 			 //menu SCADA
