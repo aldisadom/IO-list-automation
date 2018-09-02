@@ -61,6 +61,13 @@ enum Languge_index {
 	RU_index = 3,
 };
 
+enum Module_index {
+	DI_index = 0,
+	DO_index = 1,
+	AI_index = 2,
+	AO_index = 3,
+};
+
 enum Grid_index {
 	Design_grid_index = 0,
 	Signals_grid_index = 1,
@@ -106,6 +113,7 @@ struct parameters_str
 	int indirect = 1;
 	int try_import_if_corupt = 0;
 	int paste_sel_match = 1;
+	int adresing_from_1 = 1;
 };
 struct project_data_str
 {

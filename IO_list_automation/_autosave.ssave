@@ -1,744 +1,744 @@
 ﻿Signals
 Nr.☣Spinta☣Operatyv☣KKS☣KKS1☣KKS2☣Used☣Type☣Objectas☣objekto patikslinimas☣Funkcinis tekstas☣Funkcija☣IO tekstas☣Modulis☣Kanalas☣Pinas☣Tag☣Projekto reference☣
-46☣62☣75☣94☣59☣59☣57☣56☣379☣129☣124☣72☣555☣68☣70☣58☣51☣119☣
-000☣BJA30☣ ☣K1EAY10EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Darba☣ ☣K1EAY10EM001 Hidraulinės stotelės variklis: Darba☣DI01☣01☣1☣ ☣###☣
-001☣BJA30☣ ☣K1EAY10EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EAY10EM001 Hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣02☣2☣ ☣###☣
-002☣BJA30☣ ☣K1EAY20EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Darba☣ ☣K1EAY20EM001 Hidraulinės stotelės variklis: Darba☣DI01☣03☣3☣ ☣###☣
-003☣BJA30☣ ☣K1EAY20EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EAY20EM001 Hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣04☣4☣ ☣###☣
-004☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Силовая цепь готова☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Силовая цепь готова☣DI01☣05☣5☣ ☣###☣
-005☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Работает☣DI01☣06☣6☣ ☣###☣
-006☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает реверс☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Работает реверс☣DI01☣07☣7☣ ☣###☣
-007☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Силовая цепь готова☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Силовая цепь готова☣DI01☣08☣8☣ ☣###☣
-008☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Работает☣DI01☣09☣9☣ ☣###☣
-009☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает реверс☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Работает реверс☣DI01☣10☣10☣ ☣###☣
-010☣BJA30☣ ☣K1EAC20AF001☣ ☣ ☣ ☣MOT☣Kuro padavimo grandiklinis transporteris☣ ☣Jėgos grandinė paruošta☣Ready☣K1EAC20AF001 Kuro padavimo grandiklinis transporteris: Jėgos grandinė paruošta☣DI01☣11☣11☣ ☣###☣
-011☣BJA30☣ ☣K1ECA10AF001☣ ☣ ☣ ☣MOT☣Tarpinis kuro grandiklinis transporteris☣ ☣Jėgos grandinė paruošta☣Ready☣K1ECA10AF001 Tarpinis kuro grandiklinis transporteris: Jėgos grandinė paruošta☣DI01☣12☣12☣ ☣###☣
-012☣BJA30☣ ☣K1EBE10EM001☣ ☣ ☣ ☣MOT☣Vibrosieto variklis ☣ ☣Darba☣ ☣K1EBE10EM001 Vibrosieto variklis : Darba☣DI01☣13☣13☣ ☣###☣
-013☣BJA30☣ ☣K1EBE10EM001☣ ☣ ☣ ☣MOT☣Vibrosieto variklis ☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM001 Vibrosieto variklis : Jėgos grandinė paruošta☣DI01☣14☣14☣ ☣###☣
-014☣BJA30☣ ☣K1EBE10EM002☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM002 Vibrosieto variklis: Darba☣DI01☣15☣15☣ ☣###☣
-015☣BJA30☣ ☣K1EBE10EM002☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM002 Vibrosieto variklis: Jėgos grandinė paruošta☣DI01☣16☣16☣ ☣###☣
-016☣BJA30☣ ☣K1EBE10EM003☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM003 Vibrosieto variklis: Darba☣DI02☣01☣1☣ ☣###☣
-017☣BJA30☣ ☣K1EBE10EM003☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM003 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣02☣2☣ ☣###☣
-018☣BJA30☣ ☣K1EBE10EM004☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM004 Vibrosieto variklis: Darba☣DI02☣03☣3☣ ☣###☣
-019☣BJA30☣ ☣K1EBE10EM004☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM004 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣04☣4☣ ☣###☣
-020☣BJA30☣ ☣K1EBE10EM005☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM005 Vibrosieto variklis: Darba☣DI02☣05☣5☣ ☣###☣
-021☣BJA30☣ ☣K1EBE10EM005☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM005 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣06☣6☣ ☣###☣
-022☣BJA30☣ ☣K1EBE10EM006☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darbas☣On☣K1EBE10EM006 Vibrosieto variklis: Darbas☣DI02☣07☣7☣ ☣###☣
-023☣BJA30☣ ☣K1EBE10EM006☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM006 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣08☣8☣ ☣###☣
-024☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣09☣9☣ ☣###☣
-025☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣10☣10☣ ☣###☣
-026☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣11☣11☣ ☣###☣
-027☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣12☣12☣ ☣###☣
-028☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣ ☣###☣
-029☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣ ☣###☣
-030☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣ ☣###☣
-031☣BJA30☣ ☣K12.1☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣K12.1 Jėgos grandinė paruošta☣DI02☣16☣16☣ ☣###☣
-032☣BJA30☣ ☣K1EAY10EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣K1EAY10EM001 Hidraulinės stotelės variklis: Paleisti☣DO01☣01☣1☣ ☣###☣
-033☣BJA30☣ ☣K1EAY20EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣K1EAY20EM001 Hidraulinės stotelės variklis: Paleisti☣DO01☣02☣2☣ ☣###☣
-034☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Старт☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Старт☣DO01☣03☣3☣ ☣###☣
-035☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Реверс☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Реверс☣DO01☣04☣4☣ ☣###☣
-036☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Старт☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Старт☣DO01☣05☣5☣ ☣###☣
-037☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Реверс☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Реверс☣DO01☣06☣6☣ ☣###☣
-038☣BJA30☣ ☣K1EBE10EM001☣ ☣ ☣ ☣MOT☣Vibrosieto variklis ☣ ☣Paleisti☣Start☣K1EBE10EM001 Vibrosieto variklis : Paleisti☣DO01☣07☣7☣ ☣###☣
-039☣BJA30☣ ☣K1EBE10EM002☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM002 Vibrosieto variklis: Paleisti☣DO01☣08☣8☣ ☣###☣
-040☣BJA30☣ ☣K1EBE10EM003☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM003 Vibrosieto variklis: Paleisti☣DO01☣09☣9☣ ☣###☣
-041☣BJA30☣ ☣K1EBE10EM004☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM004 Vibrosieto variklis: Paleisti☣DO01☣10☣10☣ ☣###☣
-042☣BJA30☣ ☣K1EBE10EM005☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM005 Vibrosieto variklis: Paleisti☣DO01☣11☣11☣ ☣###☣
-043☣BJA30☣ ☣K1EBE10EM006☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM006 Vibrosieto variklis: Paleisti☣DO01☣12☣12☣ ☣###☣
-044☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣ ☣###☣
-045☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-046☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-047☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-048☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣01☣1☣ ☣###☣
-049☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Darbas☣On☣Rezervas: Darbas☣DI01☣02☣2☣ ☣###☣
-050☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Darba☣ ☣Rezervas: Darba☣DI01☣03☣3☣ ☣###☣
-051☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣04☣4☣ ☣###☣
-052☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣05☣5☣ ☣###☣
-053☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣06☣6☣ ☣###☣
-054☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣07☣7☣ ☣###☣
-055☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣08☣8☣ ☣###☣
-056☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣09☣9☣ ☣###☣
-057☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣10☣10☣ ☣###☣
-058☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣11☣11☣ ☣###☣
-059☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣12☣12☣ ☣###☣
-060☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣13☣13☣ ☣###☣
-061☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣14☣14☣ ☣###☣
-062☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣15☣15☣ ☣###☣
-063☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-064☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI02☣01☣1☣ ☣###☣
-065☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI02☣02☣2☣ ☣###☣
-066☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI02☣03☣3☣ ☣###☣
-067☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣04☣4☣ ☣###☣
-068☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣05☣5☣ ☣###☣
-069☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣06☣6☣ ☣###☣
-070☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣07☣7☣ ☣###☣
-071☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Atidaryta☣OPD☣Rezervas: Atidaryta☣DI02☣08☣8☣ ☣###☣
-072☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Uždaryta☣CLD☣Rezervas: Uždaryta☣DI02☣09☣9☣ ☣###☣
-073☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Jėgos grandinė paruošta☣Ready☣Rezervas: Jėgos grandinė paruošta☣DI02☣10☣10☣ ☣###☣
-074☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryta☣OPD☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Atidaryta☣DI02☣11☣11☣ ☣###☣
-075☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryta☣CLD☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Uždaryta☣DI02☣12☣12☣ ☣###☣
-076☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Jėgos grandinė paruošta☣DI02☣13☣13☣ ☣###☣
-077☣BMA10☣ ☣K1NDB54AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Darba☣ ☣K1NDB54AP001 Slėgio palaikymo siurblys: Darba☣DI02☣14☣14☣ ☣###☣
-078☣BMA10☣ ☣K1NDB54AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB54AP001 Slėgio palaikymo siurblys: Jėgos grandinė paruošta☣DI02☣15☣15☣ ☣###☣
-079☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣ ☣###☣
-080☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryta☣OPD☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Atidaryta☣DI03☣01☣1☣ ☣###☣
-081☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryta☣CLD☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Uždaryta☣DI03☣02☣2☣ ☣###☣
-082☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Jėgos grandinė paruošta☣DI03☣03☣3☣ ☣###☣
-083☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣04☣4☣ ☣###☣
-084☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣05☣5☣ ☣###☣
-085☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣06☣6☣ ☣###☣
-086☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣07☣7☣ ☣###☣
-087☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣08☣8☣ ☣###☣
-088☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣09☣9☣ ☣###☣
-089☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣10☣10☣ ☣###☣
-090☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣11☣11☣ ☣###☣
-091☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣12☣12☣ ☣###☣
-092☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣13☣13☣ ☣###☣
-093☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣14☣14☣ ☣###☣
-094☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣15☣15☣ ☣###☣
-095☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣16☣16☣ ☣###☣
-096☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Paleisti☣Start☣Rezervas: Paleisti☣DO01☣01☣1☣ ☣###☣
-097☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣02☣2☣ ☣###☣
-098☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣03☣3☣ ☣###☣
-099☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣04☣4☣ ☣###☣
-100☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣05☣5☣ ☣###☣
-101☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣06☣6☣ ☣###☣
-102☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣07☣7☣ ☣###☣
-103☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣08☣8☣ ☣###☣
-104☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣09☣9☣ ☣###☣
-105☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣10☣10☣ ☣###☣
-106☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣11☣11☣ ☣###☣
-107☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣ ☣###☣
-108☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣ ☣###☣
-109☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Atidaryti☣OPN☣Rezervas: Atidaryti☣DO01☣14☣14☣ ☣###☣
-110☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Uždaryti☣CLS☣Rezervas: Uždaryti☣DO01☣15☣15☣ ☣###☣
-111☣BMA10☣ ☣K1NDB54AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Paleisti☣Start☣K1NDB54AP001 Slėgio palaikymo siurblys: Paleisti☣DO01☣16☣16☣ ☣###☣
-112☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryti☣OPN☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Atidaryti☣DO02☣01☣1☣ ☣###☣
-113☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryti☣CLS☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Uždaryti☣DO02☣02☣2☣ ☣###☣
-114☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryti☣OPN☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Atidaryti☣DO02☣03☣3☣ ☣###☣
-115☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryti☣CLS☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Uždaryti☣DO02☣04☣4☣ ☣###☣
-116☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣05☣5☣ ☣###☣
-117☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣06☣6☣ ☣###☣
-118☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣07☣7☣ ☣###☣
-119☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣08☣8☣ ☣###☣
-120☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣09☣9☣ ☣###☣
-121☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣10☣10☣ ☣###☣
-122☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣11☣11☣ ☣###☣
-123☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣12☣12☣ ☣###☣
-124☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣13☣13☣ ☣###☣
-125☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣14☣14☣ ☣###☣
-126☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣15☣15☣ ☣###☣
-127☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣16☣16☣ ☣###☣
-128☣CRA30☣ ☣EAY10CP001☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣EAY10CP001 Tepalo slėgis hidrostotelėje☣AI01☣01☣1☣ ☣###☣
-129☣CRA30☣ ☣EAY20CP001☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣EAY20CP001 Tepalo slėgis hidrostotelėje☣AI01☣02☣2☣ ☣###☣
-130☣CRA30☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI01☣03☣3☣ ☣###☣
-131☣CRA30☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI01☣04☣4☣ ☣###☣
-132☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣05☣5☣ ☣###☣
-133☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣06☣6☣ ☣###☣
-134☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣07☣7☣ ☣###☣
-135☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣08☣8☣ ☣###☣
-136☣CRA30☣ ☣EAY10CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣EAY10CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣01☣1☣ ☣###☣
-137☣CRA30☣ ☣EAY10CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣EAY10CP101 Užsiterštas filtras hidrostotelėje☣DI01☣02☣2☣ ☣###☣
-138☣CRA30☣ ☣EAY20CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣EAY20CP101 Užsiterštas filtras hidrostotelėje☣DI01☣03☣3☣ ☣###☣
-139☣CRA30☣ ☣EAY20CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣EAY20CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣04☣4☣ ☣###☣
-140☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryta į katilą Nr.1☣OPD☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryta į katilą Nr.1☣DI01☣05☣5☣ ☣###☣
-141☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryta į katilą Nr.2☣OPD☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryta į katilą Nr.2☣DI01☣06☣6☣ ☣###☣
-142☣CRA30☣ ☣EAC20GH001☣ ☣ ☣ ☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣Distancinis valdymas☣SP☣EAC20GH001 EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas: Distancinis valdymas☣DI01☣07☣7☣ ☣###☣
-143☣CRA30☣ ☣EAC20GH001☣ ☣ ☣ ☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣Paleisti (Pirmyn)☣Start☣EAC20GH001 EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas: Paleisti (Pirmyn)☣DI01☣08☣8☣ ☣###☣
-144☣CRA30☣ ☣EAC20GH001☣ ☣ ☣ ☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣Paleisti (Atgal)☣StartRv☣EAC20GH001 EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas: Paleisti (Atgal)☣DI01☣09☣9☣ ☣###☣
-145☣CRA30☣ ☣ECA10GH001☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣Distancinis valdymas☣SP☣ECA10GH001 Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001: Distancinis valdymas☣DI01☣10☣10☣ ☣###☣
-146☣CRA30☣ ☣ECA10GH001☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣Paleisti (Pirmyn)☣Start☣ECA10GH001 Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001: Paleisti (Pirmyn)☣DI01☣11☣11☣ ☣###☣
-147☣CRA30☣ ☣ECA10GH001☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣Paleisti (Atgal)☣StartRv☣ECA10GH001 Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001: Paleisti (Atgal)☣DI01☣12☣12☣ ☣###☣
-148☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣ ☣###☣
-149☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣ ☣###☣
-150☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣ ☣###☣
-151☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-152☣CRA30☣ ☣EAC201-SD2☣ ☣ ☣ ☣ ☣Sandėlio grandiklinio kuro transporterio apsisukimų daviklis☣ ☣ ☣ ☣EAC201-SD2 Sandėlio grandiklinio kuro transporterio apsisukimų daviklis☣DI02☣01☣1☣ ☣###☣
-153☣CRA30☣ ☣ECA10CS101☣ ☣ ☣ ☣ ☣Sandėlio tarpinio kuro transporterio apsisukimų daviklis☣ ☣ ☣ ☣ECA10CS101 Sandėlio tarpinio kuro transporterio apsisukimų daviklis☣DI02☣02☣2☣ ☣###☣
-154☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣03☣3☣ ☣###☣
-155☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣04☣4☣ ☣###☣
-156☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣05☣5☣ ☣###☣
-157☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣06☣6☣ ☣###☣
-158☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣07☣7☣ ☣###☣
-159☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣08☣8☣ ☣###☣
-160☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣09☣9☣ ☣###☣
-161☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣10☣10☣ ☣###☣
-162☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣11☣11☣ ☣###☣
-163☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣12☣12☣ ☣###☣
-164☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣13☣13☣ ☣###☣
-165☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣14☣14☣ ☣###☣
-166☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣15☣15☣ ☣###☣
-167☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣16☣16☣ ☣###☣
-168☣CRA30☣ ☣EBC01☣ ☣ ☣ ☣ ☣Kuro ūkio vietinis STOP postas Nr.1☣ ☣ ☣ ☣EBC01 Kuro ūkio vietinis STOP postas Nr.1☣DI03☣01☣1☣ ☣###☣
-169☣CRA30☣ ☣EBC02☣ ☣ ☣ ☣ ☣Kuro ūkio vietinis STOP postas Nr.2☣ ☣ ☣ ☣EBC02 Kuro ūkio vietinis STOP postas Nr.2☣DI03☣02☣2☣ ☣###☣
-170☣CRA30☣ ☣EBC03☣ ☣ ☣ ☣ ☣Kuro ūkio vietinis STOP postas Nr.3☣ ☣ ☣ ☣EBC03 Kuro ūkio vietinis STOP postas Nr.3☣DI03☣03☣3☣ ☣###☣
-171☣CRA30☣ ☣EBA10CG101☣ ☣ ☣ ☣ ☣Kuro sandėlio saugos trosas☣ ☣ ☣ ☣EBA10CG101 Kuro sandėlio saugos trosas☣DI03☣04☣4☣ ☣###☣
-172☣CRA30☣ ☣EAC20CG110☣ ☣ ☣ ☣ ☣Kuro sandėlio grandiklinio transporterio dangčio daviklis☣ ☣Atidaryta☣OPD☣EAC20CG110 Kuro sandėlio grandiklinio transporterio dangčio daviklis: Atidaryta☣DI03☣05☣5☣ ☣###☣
-173☣CRA30☣ ☣ECA10CG103☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio kuro transporterio dangčio daviklis☣ ☣Atidaryta☣OPD☣ECA10CG103 Tarpinio grandiklinio kuro transporterio dangčio daviklis: Atidaryta☣DI03☣06☣6☣ ☣###☣
-174☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣07☣7☣ ☣###☣
-175☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣08☣8☣ ☣###☣
-176☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI03☣09☣9☣ ☣###☣
-177☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI03☣10☣10☣ ☣###☣
-178☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣DI03☣11☣11☣ ☣###☣
-179☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI03☣12☣12☣ ☣###☣
-180☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI03☣13☣13☣ ☣###☣
-181☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣STOP Skyde☣ ☣ ☣ ☣STOP Skyde☣DI03☣14☣14☣ ☣###☣
-182☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Katilo jėgos skyde BJA30 dingo valdymo grandinių įtampa☣ ☣ ☣ ☣Katilo jėgos skyde BJA30 dingo valdymo grandinių įtampa☣DI03☣15☣15☣ ☣###☣
-183☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣16☣16☣ ☣###☣
-184☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės SR1 kvitavimas☣ ☣ ☣ ☣Saugų relės SR1 kvitavimas☣DO01☣01☣1☣ ☣###☣
-185☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės SR2 kvitavimas☣ ☣ ☣ ☣Saugų relės SR2 kvitavimas☣DO01☣02☣2☣ ☣###☣
-186☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA30 skyde☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA30 skyde☣DO01☣03☣3☣ ☣###☣
-187☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Sirena☣ ☣ ☣ ☣Sirena☣DO01☣04☣4☣ ☣###☣
-188☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryti į katilą Nr.1☣OPN☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryti į katilą Nr.1☣DO01☣05☣5☣ ☣###☣
-189☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryti į katilą Nr.2☣OPN☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryti į katilą Nr.2☣DO01☣06☣6☣ ☣###☣
-190☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY10AE001Kuro sandėlio platformos☣ ☣Pirmyn☣Opn☣EAY10AE001Kuro sandėlio platformos: Pirmyn☣DO01☣07☣7☣ ☣###☣
-191☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY10AE001Kuro sandėlio platformos☣ ☣Atgal☣Cls☣EAY10AE001Kuro sandėlio platformos: Atgal☣DO01☣08☣8☣ ☣###☣
-192☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY20AE001Kuro sandėlio platformos☣ ☣Pirmyn☣Opn☣EAY20AE001Kuro sandėlio platformos: Pirmyn☣DO01☣09☣9☣ ☣###☣
-193☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY20AE001Kuro sandėlio platformos☣ ☣Atgal☣Cls☣EAY20AE001Kuro sandėlio platformos: Atgal☣DO01☣10☣10☣ ☣###☣
-194☣CRA30☣ ☣DO01☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣DO01 Rezervas☣DO01☣11☣11☣ ☣###☣
-195☣CRA30☣ ☣DO01☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣DO01 Rezervas☣DO01☣12☣12☣ ☣###☣
-196☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣ ☣###☣
-197☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-198☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-199☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-200☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣01☣1☣ ☣###☣
-201☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣02☣2☣ ☣###☣
-202☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣03☣3☣ ☣###☣
-203☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣04☣4☣ ☣###☣
-204☣CRA50☣ ☣NDB56AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDB56AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣01☣1☣ ☣###☣
-205☣CRA50☣ ☣NDA50AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDA50AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣02☣2☣ ☣###☣
-206☣CRA50☣ ☣NDA50CF001☣ ☣ ☣ ☣AI☣Termofikato srautas į tinklus:☣ ☣ ☣ ☣NDA50CF001 Termofikato srautas į tinklus:☣AI01☣03☣3☣ ☣###☣
-207☣CRA50☣ ☣NDA10CF001☣ ☣ ☣ ☣AI☣Termofikato srautas į katilą Nr.1 :☣ ☣ ☣ ☣NDA10CF001 Termofikato srautas į katilą Nr.1 :☣AI01☣04☣4☣ ☣###☣
-208☣CRA50☣ ☣NDA10CF001☣ ☣ ☣ ☣AI☣Termofikato srautas į katilą Nr.2:☣ ☣ ☣ ☣NDA10CF001 Termofikato srautas į katilą Nr.2:☣AI01☣05☣5☣ ☣###☣
-209☣CRA50☣ ☣NDB35AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDB35AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣06☣6☣ ☣###☣
-210☣CRA50☣ ☣NDA51AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDA51AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣07☣7☣ ☣###☣
-211☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣08☣8☣ ☣###☣
-212☣CRA50☣ ☣NDA20CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra kolektoriuje☣ ☣ ☣ ☣NDA20CT001 Paduodamo termofikacinio vandens temperatūra kolektoriuje☣AI02☣01☣1☣ ☣###☣
-213☣CRA50☣ ☣NDA20CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis kolektoriuje☣ ☣ ☣ ☣NDA20CP001 Paduodamo termofikacinio vandens slėgis kolektoriuje☣AI02☣02☣2☣ ☣###☣
-214☣CRA50☣ ☣NDB50CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra kolektoriuje☣ ☣ ☣ ☣NDB50CT001 Grįžtamo termofikacinio vandens temperatūra kolektoriuje☣AI02☣03☣3☣ ☣###☣
-215☣CRA50☣ ☣NDB50CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis kolektoriuje☣ ☣ ☣ ☣NDB50CP001 Grįžtamo termofikacinio vandens slėgis kolektoriuje☣AI02☣04☣4☣ ☣###☣
-216☣CRA50☣ ☣NDB41CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra į kolektorių☣ ☣ ☣ ☣NDB41CT001 Grįžtamo termofikacinio vandens temperatūra į kolektorių☣AI02☣05☣5☣ ☣###☣
-217☣CRA50☣ ☣NDB41CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis į kolektorių☣ ☣ ☣ ☣NDB41CP001 Grįžtamo termofikacinio vandens slėgis į kolektorių☣AI02☣06☣6☣ ☣###☣
-218☣CRA50☣ ☣NDB42CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra į kolektorių☣ ☣ ☣ ☣NDB42CT001 Grįžtamo termofikacinio vandens temperatūra į kolektorių☣AI02☣07☣7☣ ☣###☣
-219☣CRA50☣ ☣NDB42CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis į kolektorių☣ ☣ ☣ ☣NDB42CP001 Grįžtamo termofikacinio vandens slėgis į kolektorių☣AI02☣08☣8☣ ☣###☣
-220☣CRA50☣ ☣NDA10CT002☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo Nr.1☣ ☣ ☣ ☣NDA10CT002 Termofikacinio vandens temperatūra už katilo Nr.1☣AI03☣01☣1☣ ☣###☣
-221☣CRA50☣ ☣NDB80CP002☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą Nr.1☣ ☣ ☣ ☣NDB80CP002 Termofikacinio vandens slėgis prieš katilą Nr.1☣AI03☣02☣2☣ ☣###☣
-222☣CRA50☣ ☣NDA10CT002☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo Nr.2☣ ☣ ☣ ☣NDA10CT002 Termofikacinio vandens temperatūra už katilo Nr.2☣AI03☣03☣3☣ ☣###☣
-223☣CRA50☣ ☣NDB80CP002☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą Nr.2☣ ☣ ☣ ☣NDB80CP002 Termofikacinio vandens slėgis prieš katilą Nr.2☣AI03☣04☣4☣ ☣###☣
-224☣CRA50☣ ☣NDA41CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣ ☣ ☣ ☣NDA41CT001 Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣AI03☣05☣5☣ ☣###☣
-225☣CRA50☣ ☣NDA41CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis už šilumokaičio☣ ☣ ☣ ☣NDA41CP001 Paduodamo termofikacinio vandens slėgis už šilumokaičio☣AI03☣06☣6☣ ☣###☣
-226☣CRA50☣ ☣NDB31CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣ ☣ ☣ ☣NDB31CP001 Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣AI03☣07☣7☣ ☣###☣
-227☣CRA50☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI03☣08☣8☣ ☣###☣
-228☣CRA50☣ ☣NDA42CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣ ☣ ☣ ☣NDA42CT001 Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣AI04☣01☣1☣ ☣###☣
-229☣CRA50☣ ☣NDA42CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis už šilumokaičio☣ ☣ ☣ ☣NDA42CP001 Paduodamo termofikacinio vandens slėgis už šilumokaičio☣AI04☣02☣2☣ ☣###☣
-230☣CRA50☣ ☣NDB32CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣ ☣ ☣ ☣NDB32CP001 Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣AI04☣03☣3☣ ☣###☣
-231☣CRA50☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣04☣4☣ ☣###☣
-232☣CRA50☣ ☣NDA50CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra prieš reguliavimo vožtuvą☣ ☣ ☣ ☣NDA50CT001 Paduodamo termofikacinio vandens temperatūra prieš reguliavimo vožtuvą☣AI04☣05☣5☣ ☣###☣
-233☣CRA50☣ ☣NDA50CT002☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra už reguliavimo vožtuvo☣ ☣ ☣ ☣NDA50CT002 Paduodamo termofikacinio vandens temperatūra už reguliavimo vožtuvo☣AI04☣06☣6☣ ☣###☣
-234☣CRA50☣ ☣NDA50CT003☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra☣ ☣ ☣ ☣NDA50CT003 Paduodamo termofikacinio vandens temperatūra☣AI04☣07☣7☣ ☣###☣
-235☣CRA50☣ ☣NDA50CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis☣ ☣ ☣ ☣NDA50CP001 Paduodamo termofikacinio vandens slėgis☣AI04☣08☣8☣ ☣###☣
-236☣CRA50☣ ☣NDB30CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaičius☣ ☣ ☣ ☣NDB30CT001 Grįžtamo termofikacinio vandens temperatūra prieš šilumokaičius☣AI05☣01☣1☣ ☣###☣
-237☣CRA50☣ ☣NDB30CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis prieš šilumokaičius☣ ☣ ☣ ☣NDB30CP001 Grįžtamo termofikacinio vandens slėgis prieš šilumokaičius☣AI05☣02☣2☣ ☣###☣
-238☣CRA50☣ ☣NDB10CT002☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra už filtro☣ ☣ ☣ ☣NDB10CT002 Grįžtamo termofikacinio vandens temperatūra už filtro☣AI05☣03☣3☣ ☣###☣
-239☣CRA50☣ ☣NDB10CP002☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis už filtro☣ ☣ ☣ ☣NDB10CP002 Grįžtamo termofikacinio vandens slėgis už filtro☣AI05☣04☣4☣ ☣###☣
-240☣CRA50☣ ☣NDB10CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra☣ ☣ ☣ ☣NDB10CT001 Grįžtamo termofikacinio vandens temperatūra☣AI05☣05☣5☣ ☣###☣
-241☣CRA50☣ ☣NDB10CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis☣ ☣ ☣ ☣NDB10CP001 Grįžtamo termofikacinio vandens slėgis☣AI05☣06☣6☣ ☣###☣
-242☣CRA50☣ ☣CT001☣ ☣ ☣ ☣AI☣Lauko oro temperatūra☣ ☣ ☣ ☣CT001 Lauko oro temperatūra☣AI05☣07☣7☣ ☣###☣
-243☣CRA50☣ ☣NDB35CP001☣ ☣ ☣ ☣AI☣Žalio vandens slėgis☣ ☣ ☣ ☣NDB35CP001 Žalio vandens slėgis☣AI05☣08☣8☣ ☣###☣
-244☣CRA50☣ ☣NDB51CP001☣ ☣ ☣ ☣AI☣Švaraus vandens slėgis☣ ☣ ☣ ☣NDB51CP001 Švaraus vandens slėgis☣AI06☣01☣1☣ ☣###☣
-245☣CRA50☣ ☣GAC10CP001☣ ☣ ☣ ☣AI☣Vandens slėgis☣ ☣ ☣ ☣GAC10CP001 Vandens slėgis☣AI06☣02☣2☣ ☣###☣
-246☣CRA50☣ ☣GCK20CL001☣ ☣ ☣ ☣AI☣Vandens lygis talpoje☣ ☣ ☣ ☣GCK20CL001 Vandens lygis talpoje☣AI06☣03☣3☣ ☣###☣
-247☣CRA50☣ ☣QFB10CP001☣ ☣ ☣ ☣ ☣Suspausto oro slėgis☣ ☣ ☣ ☣QFB10CP001 Suspausto oro slėgis☣AI06☣04☣4☣ ☣###☣
-248☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣05☣5☣ ☣###☣
-249☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣06☣6☣ ☣###☣
-250☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣07☣7☣ ☣###☣
-251☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣08☣8☣ ☣###☣
-252☣CRA50☣ ☣GCN10AP001☣ ☣ ☣ ☣MOT☣Chemikalų dozatorius ☣ ☣Valdymas☣SP☣GCN10AP001 Chemikalų dozatorius : Valdymas☣AO01☣03☣1☣ ☣###☣
-253☣CRA50☣ ☣NDB56AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDB56AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO01☣03☣2☣ ☣###☣
-254☣CRA50☣ ☣NDA50AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDA50AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO01☣03☣3☣ ☣###☣
-255☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO01☣04☣4☣ ☣###☣
-256☣CRA50☣ ☣NDB35AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDB35AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO02☣03☣1☣ ☣###☣
-257☣CRA50☣ ☣NDA51AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDA51AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO02☣03☣2☣ ☣###☣
-258☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣03☣3☣ ☣###☣
-259☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣04☣4☣ ☣###☣
-260☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Dirba☣On☣BRV10AG001 Dyzelinis generatorius : Dirba☣DI01☣01☣1☣ ☣###☣
-261☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Gedimas☣trip☣BRV10AG001 Dyzelinis generatorius : Gedimas☣DI01☣02☣2☣ ☣###☣
-262☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Perspėjimas☣ ☣BRV10AG001 Dyzelinis generatorius : Perspėjimas☣DI01☣03☣3☣ ☣###☣
-263☣CRA50☣ ☣GCN10AP001☣ ☣ ☣ ☣MOT☣Chemikalų dozatorius ☣ ☣Gedimas☣trip☣GCN10AP001 Chemikalų dozatorius : Gedimas☣DI01☣04☣4☣ ☣###☣
-264☣CRA50☣ ☣GCK20CL101☣ ☣ ☣ ☣AI☣Žemas vandens lygis talpoje☣ ☣ ☣ ☣GCK20CL101 Žemas vandens lygis talpoje☣DI01☣05☣5☣ ☣###☣
-265☣CRA50☣ ☣GCK20CF001☣ ☣ ☣ ☣ ☣Vandens skaitiklis☣ ☣ ☣ ☣GCK20CF001 Vandens skaitiklis☣DI01☣06☣6☣ ☣###☣
-266☣CRA50☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI01☣07☣7☣ ☣###☣
-267☣CRA50☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI01☣08☣8☣ ☣###☣
-268☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI01☣09☣9☣ ☣###☣
-269☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI01☣10☣10☣ ☣###☣
-270☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI01☣11☣11☣ ☣###☣
-271☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI01☣12☣12☣ ☣###☣
-272☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣ ☣###☣
-273☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣ ☣###☣
-274☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣ ☣###☣
-275☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-276☣CRA50☣ ☣K1NDB61AP001☣ ☣ ☣ ☣MOT☣Katilo cirkuliacijo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB61AP001 Katilo cirkuliacijo siurblys: Jėgos grandinė paruošta☣DI02☣01☣1☣ ☣###☣
-277☣CRA50☣ ☣K1NDB62AP001☣ ☣ ☣ ☣MOT☣Katilo cirkuliacijo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB62AP001 Katilo cirkuliacijo siurblys: Jėgos grandinė paruošta☣DI02☣02☣2☣ ☣###☣
-278☣CRA50☣ ☣K1NDB21AP0001☣ ☣ ☣ ☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB21AP0001 Išorinio cirkuliacijos kontūro siurblys: Jėgos grandinė paruošta☣DI02☣03☣3☣ ☣###☣
-279☣CRA50☣ ☣K1NDB22AP0001☣ ☣ ☣ ☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB22AP0001 Išorinio cirkuliacijos kontūro siurblys: Jėgos grandinė paruošta☣DI02☣04☣4☣ ☣###☣
-280☣CRA50☣ ☣K1NDB23AP0001☣ ☣ ☣ ☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB23AP0001 Išorinio cirkuliacijos kontūro siurblys: Jėgos grandinė paruošta☣DI02☣05☣5☣ ☣###☣
-281☣CRA50☣ ☣K1NDB53AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB53AP001 Slėgio palaikymo siurblys: Jėgos grandinė paruošta☣DI02☣06☣6☣ ☣###☣
-282☣CRA50☣ ☣K1NDB53AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Dirba☣On☣K1NDB53AP001 Slėgio palaikymo siurblys: Dirba☣DI02☣07☣7☣ ☣###☣
-283☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Jėgos grandinė paruošta☣Ready☣Rezervas: Jėgos grandinė paruošta☣DI02☣08☣8☣ ☣###☣
-284☣CRA50☣ ☣BJA20☣ ☣ ☣ ☣ ☣valdymo grandinių įtampa☣ ☣ ☣ ☣BJA20 valdymo grandinių įtampa☣DI02☣09☣9☣ ☣###☣
-285☣CRA50☣ ☣BJA20:☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣Jėgos grandinė paruošta☣Ready☣BJA20: Jėgos grandinė paruošta☣DI02☣10☣10☣ ☣###☣
-286☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣11☣11☣ ☣###☣
-287☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣12☣12☣ ☣###☣
-288☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣13☣13☣ ☣###☣
-289☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣14☣14☣ ☣###☣
-290☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣ ☣###☣
-291☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣ ☣###☣
-292☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Paleisti☣Start☣BRV10AG001 Dyzelinis generatorius : Paleisti☣DO01☣01☣1☣ ☣###☣
-293☣CRA50☣ ☣GCN10AP001☣ ☣ ☣ ☣MOT☣Chemikalų dozatorius ☣ ☣Paleisti☣Start☣GCN10AP001 Chemikalų dozatorius : Paleisti☣DO01☣02☣2☣ ☣###☣
-294☣CRA50☣ ☣K1NDB53AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Start☣Start☣K1NDB53AP001 Slėgio palaikymo siurblys: Start☣DO01☣03☣3☣ ☣###☣
-295☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Šalto vandens splenoidinis vožtuvas☣ ☣ ☣ ☣Šalto vandens splenoidinis vožtuvas☣DO01☣04☣4☣ ☣###☣
-296☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO01☣05☣5☣ ☣###☣
-297☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO01☣06☣6☣ ☣###☣
-298☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣07☣7☣ ☣###☣
-299☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣08☣8☣ ☣###☣
-300☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣ ☣###☣
-301☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣ ☣###☣
-302☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣ ☣###☣
-303☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣ ☣###☣
-304☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣ ☣###☣
-305☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-306☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-307☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-308☣BJA10☣ ☣HNC10AN001☣ ☣ ☣ ☣ ☣Dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNC10AN001 Dūmsiurbis: Jėgos grandinė paruošta☣DI01☣01☣1☣ ☣###☣
-309☣BJA10☣ ☣HNF10AN001☣ ☣ ☣ ☣ ☣Dūmų recirkuliacijos dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNF10AN001 Dūmų recirkuliacijos dūmsiurbis: Jėgos grandinė paruošta☣DI01☣02☣2☣ ☣###☣
-310☣BJA10☣ ☣HLB10AN001☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 1☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN001 Pirminio oro ventiliatorius Nr. 1: Jėgos grandinė paruošta☣DI01☣03☣3☣ ☣###☣
-311☣BJA10☣ ☣HLB10AN002☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 2☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN002 Pirminio oro ventiliatorius Nr. 2: Jėgos grandinė paruošta☣DI01☣04☣4☣ ☣###☣
-312☣BJA10☣ ☣HLB10AN003☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr.3☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN003 Pirminio oro ventiliatorius Nr.3: Jėgos grandinė paruošta☣DI01☣05☣5☣ ☣###☣
-313☣BJA10☣ ☣HLB20AN001☣ ☣ ☣ ☣MOT☣Antrinio oro ventiliatorius ☣ ☣Jėgos grandinė paruošta☣Ready☣HLB20AN001 Antrinio oro ventiliatorius : Jėgos grandinė paruošta☣DI01☣06☣6☣ ☣###☣
-314☣BJA10☣ ☣HLB30AN010☣ ☣ ☣ ☣MOT☣Tretinio oro ventiliatorius☣ ☣Jėgos grandinė paruošta☣Ready☣HLB30AN010 Tretinio oro ventiliatorius: Jėgos grandinė paruošta☣DI01☣07☣7☣ ☣###☣
-315☣BJA10☣ ☣NDA11AP001☣ ☣ ☣ ☣MOT☣Katilo recirkuliacinis siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣NDA11AP001 Katilo recirkuliacinis siurblys: Jėgos grandinė paruošta☣DI01☣08☣8☣ ☣###☣
-316☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Darbas☣On☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Darbas☣DI01☣09☣9☣ ☣###☣
-317☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣10☣10☣ ☣###☣
-318☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Darbas☣On☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Darbas☣DI01☣11☣11☣ ☣###☣
-319☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Jėgos grandinė paruošta☣DI01☣12☣12☣ ☣###☣
-320☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Darbas☣On☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Darbas☣DI01☣13☣13☣ ☣###☣
-321☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Jėgos grandinė paruošta☣DI01☣14☣14☣ ☣###☣
-322☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣ ☣###☣
-323☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-324☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Darbas☣On☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Darbas☣DI02☣01☣1☣ ☣###☣
-325☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Jėgos grandinė paruošta☣Ready☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Jėgos grandinė paruošta☣DI02☣02☣2☣ ☣###☣
-326☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает☣DI02☣03☣3☣ ☣###☣
-327☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает (Реверс )☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает (Реверс )☣DI02☣04☣4☣ ☣###☣
-328☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Силовая цепь готова☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Силовая цепь готова☣DI02☣05☣5☣ ☣###☣
-329☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣06☣6☣ ☣###☣
-330☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣07☣7☣ ☣###☣
-331☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣08☣8☣ ☣###☣
-332☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣09☣9☣ ☣###☣
-333☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣10☣10☣ ☣###☣
-334☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣Jėgos grandinė paruošta☣DI02☣11☣11☣ ☣###☣
-335☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣12☣12☣ ☣###☣
-336☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣ ☣###☣
-337☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣ ☣###☣
-338☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣ ☣###☣
-339☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣ ☣###☣
-340☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Paleisti☣DO01☣01☣1☣ ☣###☣
-341☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Paleisti☣Start☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Paleisti☣DO01☣02☣2☣ ☣###☣
-342☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Paleisti☣Start☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Paleisti☣DO01☣03☣3☣ ☣###☣
-343☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė:☣ ☣ ☣ ☣ETG10AB001 Rotacinė multiciklono pelenų sklendė:☣DO01☣04☣4☣ ☣###☣
-344☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Старт☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Старт☣DO01☣05☣5☣ ☣###☣
-345☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Реверс☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Реверс☣DO01☣06☣6☣ ☣###☣
-346☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣07☣7☣ ☣###☣
-347☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣08☣8☣ ☣###☣
-348☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣ ☣###☣
-349☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣ ☣###☣
-350☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣ ☣###☣
-351☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣ ☣###☣
-352☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣13☣13☣ ☣###☣
-353☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-354☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-355☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-356☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣4...20mA☣ ☣HHC10CP301 Trauka pakuroje: 4...20mA☣AI01☣01☣1☣ ☣###☣
-357☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT001 Kuro bunkerio temperatūra : 4...20mA☣AI01☣02☣2☣ ☣###☣
-358☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT002 Kuro bunkerio temperatūra : 4...20mA☣AI01☣03☣3☣ ☣###☣
-359☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣04☣4☣ ☣###☣
-360☣CJF11☣ ☣HHC10CP010☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣HHC10CP010 Tepalo slėgis hidrostotelėje☣AI01☣05☣5☣ ☣###☣
-361☣CJF11☣ ☣HNF40CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF40CP001 Dūmų recirkuliacijos slėgis☣AI01☣06☣6☣ ☣###☣
-362☣CJF11☣ ☣HNF30CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF30CP001 Dūmų recirkuliacijos slėgis☣AI01☣07☣7☣ ☣###☣
-363☣CJF11☣ ☣HNF20CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF20CP001 Dūmų recirkuliacijos slėgis☣AI01☣08☣8☣ ☣###☣
-364☣CJF11☣ ☣HHC10CT001☣ ☣ ☣ ☣AI☣Ardyno Nr. 1 temperatūra☣ ☣ ☣ ☣HHC10CT001 Ardyno Nr. 1 temperatūra☣AI02☣01☣1☣ ☣###☣
-365☣CJF11☣ ☣HHC10CT002☣ ☣ ☣ ☣AI☣Ardyno Nr. 2 temperatūra☣ ☣ ☣ ☣HHC10CT002 Ardyno Nr. 2 temperatūra☣AI02☣02☣2☣ ☣###☣
-366☣CJF11☣ ☣HHC10CT003☣ ☣ ☣ ☣AI☣Ardyno Nr. 3 temperatūra☣ ☣ ☣ ☣HHC10CT003 Ardyno Nr. 3 temperatūra☣AI02☣03☣3☣ ☣###☣
-367☣CJF11☣ ☣HHC10CT004☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT004 Temperatūra pakuroje☣AI02☣04☣4☣ ☣###☣
-368☣CJF11☣ ☣HHC10CT006☣ ☣ ☣ ☣AI☣Dūmų temperatūra išėjime iš pakuros☣ ☣ ☣ ☣HHC10CT006 Dūmų temperatūra išėjime iš pakuros☣AI02☣05☣5☣ ☣###☣
-369☣CJF11☣ ☣HNA10CT001☣ ☣ ☣ ☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣HNA10CT001 Dūmų temperatūra už katilo☣AI02☣06☣6☣ ☣###☣
-370☣CJF11☣ ☣HHC10CT005☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT005 Temperatūra pakuroje☣AI02☣07☣7☣ ☣###☣
-371☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI02☣08☣8☣ ☣###☣
-372☣CJF11☣ ☣HHC10CP001☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.1☣ ☣ ☣ ☣HHC10CP001 Pirminio oro slėgis po ardynu Nr.1☣AI03☣01☣1☣ ☣###☣
-373☣CJF11☣ ☣HHC10CP002☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.2☣ ☣ ☣ ☣HHC10CP002 Pirminio oro slėgis po ardynu Nr.2☣AI03☣02☣2☣ ☣###☣
-374☣CJF11☣ ☣HHC10CP003☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.3☣ ☣ ☣ ☣HHC10CP003 Pirminio oro slėgis po ardynu Nr.3☣AI03☣03☣3☣ ☣###☣
-375☣CJF11☣ ☣HNF10CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF10CP001 Dūmų recirkuliacijos slėgis☣AI03☣04☣4☣ ☣###☣
-376☣CJF11☣ ☣HLA10CF001☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.1☣ ☣ ☣ ☣HLA10CF001 Pirminio oro srautas po ardynu Nr.1☣AI03☣05☣5☣ ☣###☣
-377☣CJF11☣ ☣HLA10CF002☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.2☣ ☣ ☣ ☣HLA10CF002 Pirminio oro srautas po ardynu Nr.2☣AI03☣06☣6☣ ☣###☣
-378☣CJF11☣ ☣HLA10CF003☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.3☣ ☣ ☣ ☣HLA10CF003 Pirminio oro srautas po ardynu Nr.3☣AI03☣07☣7☣ ☣###☣
-379☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI03☣08☣8☣ ☣###☣
-380☣CJF11☣ ☣NDB80CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣NDB80CT001 Termofikacinio vandens temperatūra prieš katilą☣AI04☣01☣1☣ ☣###☣
-381☣CJF11☣ ☣NDB80CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą☣ ☣ ☣ ☣NDB80CP001 Termofikacinio vandens slėgis prieš katilą☣AI04☣02☣2☣ ☣###☣
-382☣CJF11☣ ☣NDA10CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣NDA10CT001 Termofikacinio vandens temperatūra už katilo☣AI04☣03☣3☣ ☣###☣
-383☣CJF11☣ ☣NDA10CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣NDA10CP001 Termofikacinio vandens slėgis už katilo☣AI04☣04☣4☣ ☣###☣
-384☣CJF11☣ ☣HNA10CQ001☣ ☣ ☣ ☣AI☣O2 kiekis dūmuose☣ ☣ ☣ ☣HNA10CQ001 O2 kiekis dūmuose☣AI04☣05☣5☣ ☣###☣
-385☣CJF11☣ ☣HFB10CL001☣ ☣ ☣ ☣AI☣Kuro lygis bunkeryje☣ ☣ ☣ ☣HFB10CL001 Kuro lygis bunkeryje☣AI04☣06☣6☣ ☣###☣
-386☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣07☣7☣ ☣###☣
-387☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣08☣8☣ ☣###☣
-388☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣01☣1☣ ☣###☣
-389☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣02☣2☣ ☣###☣
-390☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣03☣3☣ ☣###☣
-391☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣04☣4☣ ☣###☣
-392☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣05☣5☣ ☣###☣
-393☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣06☣6☣ ☣###☣
-394☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣07☣7☣ ☣###☣
-395☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣08☣8☣ ☣###☣
-396☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėtis☣PV☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėtis☣AIV01☣01☣1☣ ☣###☣
-397☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėtis☣PV☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėtis☣AIV01☣02☣2☣ ☣###☣
-398☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėtis☣PV☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėtis☣AIV01☣03☣3☣ ☣###☣
-399☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣04☣4☣ ☣###☣
-400☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣05☣5☣ ☣###☣
-401☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣06☣6☣ ☣###☣
-402☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣07☣7☣ ☣###☣
-403☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣08☣8☣ ☣###☣
-404☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣01☣1☣ ☣###☣
-405☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣02☣2☣ ☣###☣
-406☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣03☣3☣ ☣###☣
-407☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣04☣4☣ ☣###☣
-408☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėties valdymas☣SP☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėties valdymas☣AOV01☣01☣1☣ ☣###☣
-409☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėties valdymas☣SP☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėties valdymas☣AOV01☣02☣2☣ ☣###☣
-410☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėties valdymas☣SP☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėties valdymas☣AOV01☣03☣3☣ ☣###☣
-411☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AOV01☣04☣4☣ ☣###☣
-412☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣Gedimas☣trip☣HHC10CP301 Trauka pakuroje: Gedimas☣DI01☣01☣1☣ ☣###☣
-413☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT001 Kuro bunkerio temperatūra : Gedimas☣DI01☣02☣2☣ ☣###☣
-414☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT002 Kuro bunkerio temperatūra : Gedimas☣DI01☣03☣3☣ ☣###☣
-415☣CJF11☣ ☣HHC10CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣HHC10CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣04☣4☣ ☣###☣
-416☣CJF11☣ ☣HHC10CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣HHC10CP101 Užsiterštas filtras hidrostotelėje☣DI01☣05☣5☣ ☣###☣
-417☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Closed☣ ☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Closed☣DI01☣06☣6☣ ☣###☣
-418☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryta☣OPD☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryta☣DI01☣07☣7☣ ☣###☣
-419☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Distancinis valdymas☣SP☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Distancinis valdymas☣DI01☣08☣8☣ ☣###☣
-420☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Pirmyn)☣Start☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Pirmyn)☣DI01☣09☣9☣ ☣###☣
-421☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Atgal)☣StartRv☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Atgal)☣DI01☣10☣10☣ ☣###☣
-422☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣11☣11☣ ☣###☣
-423☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣12☣12☣ ☣###☣
-424☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣ ☣###☣
-425☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣ ☣###☣
-426☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣ ☣###☣
-427☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-428☣CJF11☣ ☣HFB10CG101☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG101 Maitintuvo Nr.1 padėties daviklis: Priekyje☣DI02☣01☣1☣ ☣###☣
-429☣CJF11☣ ☣HFB10CG102☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG102 Maitintuvo Nr.1 padėties daviklis: Gale☣DI02☣02☣2☣ ☣###☣
-430☣CJF11☣ ☣HFB10CG103☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG103 Maitintuvo Nr.2 padėties daviklis: Priekyje☣DI02☣03☣3☣ ☣###☣
-431☣CJF11☣ ☣HFB10CG104☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG104 Maitintuvo Nr.2 padėties daviklis: Gale☣DI02☣04☣4☣ ☣###☣
-432☣CJF11☣ ☣HHC10CG101☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG101 Ardyno Nr.1 padėties daviklis: Priekyje☣DI02☣05☣5☣ ☣###☣
-433☣CJF11☣ ☣HHC10CG102☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG102 Ardyno Nr.1 padėties daviklis: Gale☣DI02☣06☣6☣ ☣###☣
-434☣CJF11☣ ☣HHC10CG103☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG103 Ardyno Nr.2 padėties daviklis: Priekyje☣DI02☣07☣7☣ ☣###☣
-435☣CJF11☣ ☣HHC10CG104☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG104 Ardyno Nr.2 padėties daviklis: Gale☣DI02☣08☣8☣ ☣###☣
-436☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG105☣Atidaryta☣OPD☣HFB10AA401 bunkerio sklendė; HFB10CG105: Atidaryta☣DI02☣09☣9☣ ☣###☣
-437☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG106☣Uždaryta☣CLD☣HFB10AA401 bunkerio sklendė; HFB10CG106: Uždaryta☣DI02☣10☣10☣ ☣###☣
-438☣CJF11☣ ☣HDA10CS101☣ ☣ ☣ ☣ ☣Pelenų transporterio apsisukimo daviklis☣ ☣ ☣ ☣HDA10CS101 Pelenų transporterio apsisukimo daviklis☣DI02☣11☣11☣ ☣###☣
-439☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣12☣12☣ ☣###☣
-440☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣ ☣###☣
-441☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣ ☣###☣
-442☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣ ☣###☣
-443☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣ ☣###☣
-444☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣01☣1☣ ☣###☣
-445☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣02☣2☣ ☣###☣
-446☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣03☣3☣ ☣###☣
-447☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣04☣4☣ ☣###☣
-448☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣05☣5☣ ☣###☣
-449☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣06☣6☣ ☣###☣
-450☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣07☣7☣ ☣###☣
-451☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣08☣8☣ ☣###☣
-452☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣09☣9☣ ☣###☣
-453☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣10☣10☣ ☣###☣
-454☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣11☣11☣ ☣###☣
-455☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣12☣12☣ ☣###☣
-456☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣13☣13☣ ☣###☣
-457☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣14☣14☣ ☣###☣
-458☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣15☣15☣ ☣###☣
-459☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣16☣16☣ ☣###☣
-460☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI04☣01☣1☣ ☣###☣
-461☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI04☣02☣2☣ ☣###☣
-462☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣DI04☣03☣3☣ ☣###☣
-463☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣DI04☣04☣4☣ ☣###☣
-464☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣DI04☣05☣5☣ ☣###☣
-465☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣DI04☣06☣6☣ ☣###☣
-466☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣STOP Skyde☣ ☣ ☣ ☣STOP Skyde☣DI04☣07☣7☣ ☣###☣
-467☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣DI04☣08☣8☣ ☣###☣
-468☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI04☣09☣9☣ ☣###☣
-469☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI04☣10☣10☣ ☣###☣
-470☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣DI04☣11☣11☣ ☣###☣
-471☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣DI04☣12☣12☣ ☣###☣
-472☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣DI04☣13☣13☣ ☣###☣
-473☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣14☣14☣ ☣###☣
-474☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣15☣15☣ ☣###☣
-475☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Dūmsiurblio avarija☣ ☣ ☣ ☣Dūmsiurblio avarija☣DI04☣16☣16☣ ☣###☣
-476☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės kvitavimas☣ ☣ ☣ ☣Saugų relės kvitavimas☣DO01☣01☣1☣ ☣###☣
-477☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Sirena☣ ☣ ☣ ☣Sirena☣DO01☣02☣2☣ ☣###☣
-478☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryti☣OPN☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryti☣DO01☣03☣3☣ ☣###☣
-479☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Stop☣ ☣ ☣ ☣Pakura Stop☣DO01☣04☣4☣ ☣###☣
-480☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Start☣ ☣ ☣ ☣Pakura Start☣DO01☣05☣5☣ ☣###☣
-481☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Apsaugų išvedimas☣ ☣ ☣ ☣Apsaugų išvedimas☣DO01☣06☣6☣ ☣###☣
-482☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣DO01☣07☣7☣ ☣###☣
-483☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣08☣8☣ ☣###☣
-484☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣ ☣###☣
-485☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣ ☣###☣
-486☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣ ☣###☣
-487☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣ ☣###☣
-488☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣ ☣###☣
-489☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-490☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-491☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-492☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.1: Pirmyn☣DO02☣01☣1☣ ☣###☣
-493☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Atgal☣Cls☣Maitintuvas Nr.1: Atgal☣DO02☣02☣2☣ ☣###☣
-494☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.2: Pirmyn☣DO02☣03☣3☣ ☣###☣
-495☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Atgal☣Cls☣Maitintuvas Nr.2: Atgal☣DO02☣04☣4☣ ☣###☣
-496☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Pirmyn☣Opn☣Ardynas Nr.1: Pirmyn☣DO02☣05☣5☣ ☣###☣
-497☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Atgal☣Cls☣Ardynas Nr.1: Atgal☣DO02☣06☣6☣ ☣###☣
-498☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Pirmyn☣Opn☣Ardynas Nr.2: Pirmyn☣DO02☣07☣7☣ ☣###☣
-499☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Atgal☣Cls☣Ardynas Nr.2: Atgal☣DO02☣08☣8☣ ☣###☣
-500☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Išilginis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣09☣9☣ ☣###☣
-501☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Išilginis pelenų šalinimo hidrocilindras: Atgal☣DO02☣10☣10☣ ☣###☣
-502☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Pagrindinis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣11☣11☣ ☣###☣
-503☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Pagrindinis pelenų šalinimo hidrocilindras: Atgal☣DO02☣12☣12☣ ☣###☣
-504☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Pirmyn☣DO02☣13☣13☣ ☣###☣
-505☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Atgal☣DO02☣14☣14☣ ☣###☣
-506☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Pirmyn☣DO02☣15☣15☣ ☣###☣
-507☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Atgal☣DO02☣16☣16☣ ☣###☣
-508☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Pirmyn☣DO03☣01☣1☣ ☣###☣
-509☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Atgal☣DO03☣02☣2☣ ☣###☣
-510☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣03☣3☣ ☣###☣
-511☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣04☣4☣ ☣###☣
-512☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Atidaryti☣OPN☣Kuro bunkerio sklendė : Atidaryti☣DO03☣05☣5☣ ☣###☣
-513☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Uždaryti☣CLS☣Kuro bunkerio sklendė : Uždaryti☣DO03☣06☣6☣ ☣###☣
-514☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣07☣7☣ ☣###☣
-515☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣08☣8☣ ☣###☣
-516☣CJF11☣ ☣O2☣ ☣ ☣ ☣VLV☣jutiklio apipūtimo solenoidinis vožtuvas☣ ☣Atidaryti☣OPN☣O2 jutiklio apipūtimo solenoidinis vožtuvas: Atidaryti☣DO03☣09☣9☣ ☣###☣
-517☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Gaisro bunkeryje gesinimo vožtuvas☣ ☣Atidaryti☣OPN☣Gaisro bunkeryje gesinimo vožtuvas: Atidaryti☣DO03☣10☣10☣ ☣###☣
-518☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣11☣11☣ ☣###☣
-519☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣12☣12☣ ☣###☣
-520☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣13☣13☣ ☣###☣
-521☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣14☣14☣ ☣###☣
-522☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣15☣15☣ ☣###☣
-523☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣16☣16☣ ☣###☣
-524☣BJA10☣ ☣HNC10AN001☣ ☣ ☣ ☣ ☣Dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNC10AN001 Dūmsiurbis: Jėgos grandinė paruošta☣DI01☣01☣1☣ ☣###☣
-525☣BJA10☣ ☣HNF10AN001☣ ☣ ☣ ☣ ☣Dūmų recirkuliacijos dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNF10AN001 Dūmų recirkuliacijos dūmsiurbis: Jėgos grandinė paruošta☣DI01☣02☣2☣ ☣###☣
-526☣BJA10☣ ☣HLB10AN001☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 1☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN001 Pirminio oro ventiliatorius Nr. 1: Jėgos grandinė paruošta☣DI01☣03☣3☣ ☣###☣
-527☣BJA10☣ ☣HLB10AN002☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 2☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN002 Pirminio oro ventiliatorius Nr. 2: Jėgos grandinė paruošta☣DI01☣04☣4☣ ☣###☣
-528☣BJA10☣ ☣HLB10AN003☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr.3☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN003 Pirminio oro ventiliatorius Nr.3: Jėgos grandinė paruošta☣DI01☣05☣5☣ ☣###☣
-529☣BJA10☣ ☣HLB20AN001☣ ☣ ☣ ☣MOT☣Antrinio oro ventiliatorius ☣ ☣Jėgos grandinė paruošta☣Ready☣HLB20AN001 Antrinio oro ventiliatorius : Jėgos grandinė paruošta☣DI01☣06☣6☣ ☣###☣
-530☣BJA10☣ ☣HLB30AN010☣ ☣ ☣ ☣MOT☣Tretinio oro ventiliatorius☣ ☣Jėgos grandinė paruošta☣Ready☣HLB30AN010 Tretinio oro ventiliatorius: Jėgos grandinė paruošta☣DI01☣07☣7☣ ☣###☣
-531☣BJA10☣ ☣NDA11AP001☣ ☣ ☣ ☣MOT☣Katilo recirkuliacinis siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣NDA11AP001 Katilo recirkuliacinis siurblys: Jėgos grandinė paruošta☣DI01☣08☣8☣ ☣###☣
-532☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Darbas☣On☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Darbas☣DI01☣09☣9☣ ☣###☣
-533☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣10☣10☣ ☣###☣
-534☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Darbas☣On☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Darbas☣DI01☣11☣11☣ ☣###☣
-535☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Jėgos grandinė paruošta☣DI01☣12☣12☣ ☣###☣
-536☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Darbas☣On☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Darbas☣DI01☣13☣13☣ ☣###☣
-537☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Jėgos grandinė paruošta☣DI01☣14☣14☣ ☣###☣
-538☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣ ☣###☣
-539☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-540☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Darbas☣On☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Darbas☣DI02☣01☣1☣ ☣###☣
-541☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Jėgos grandinė paruošta☣Ready☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Jėgos grandinė paruošta☣DI02☣02☣2☣ ☣###☣
-542☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает☣DI02☣03☣3☣ ☣###☣
-543☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает (Реверс )☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает (Реверс )☣DI02☣04☣4☣ ☣###☣
-544☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Силовая цепь готова☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Силовая цепь готова☣DI02☣05☣5☣ ☣###☣
-545☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣06☣6☣ ☣###☣
-546☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣07☣7☣ ☣###☣
-547☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣08☣8☣ ☣###☣
-548☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣09☣9☣ ☣###☣
-549☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣10☣10☣ ☣###☣
-550☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣Jėgos grandinė paruošta☣DI02☣11☣11☣ ☣###☣
-551☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣12☣12☣ ☣###☣
-552☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣ ☣###☣
-553☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣ ☣###☣
-554☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣ ☣###☣
-555☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣ ☣###☣
-556☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Paleisti☣DO01☣01☣1☣ ☣###☣
-557☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Paleisti☣Start☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Paleisti☣DO01☣02☣2☣ ☣###☣
-558☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Paleisti☣Start☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Paleisti☣DO01☣03☣3☣ ☣###☣
-559☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė:☣ ☣ ☣ ☣ETG10AB001 Rotacinė multiciklono pelenų sklendė:☣DO01☣04☣4☣ ☣###☣
-560☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Старт☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Старт☣DO01☣05☣5☣ ☣###☣
-561☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Реверс☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Реверс☣DO01☣06☣6☣ ☣###☣
-562☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣07☣7☣ ☣###☣
-563☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣08☣8☣ ☣###☣
-564☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣ ☣###☣
-565☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣ ☣###☣
-566☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣ ☣###☣
-567☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣ ☣###☣
-568☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣13☣13☣ ☣###☣
-569☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-570☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-571☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-572☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣4...20mA☣ ☣HHC10CP301 Trauka pakuroje: 4...20mA☣AI01☣01☣1☣ ☣###☣
-573☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT001 Kuro bunkerio temperatūra : 4...20mA☣AI01☣02☣2☣ ☣###☣
-574☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT002 Kuro bunkerio temperatūra : 4...20mA☣AI01☣03☣3☣ ☣###☣
-575☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣04☣4☣ ☣###☣
-576☣CJF11☣ ☣HHC10CP010☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣HHC10CP010 Tepalo slėgis hidrostotelėje☣AI01☣05☣5☣ ☣###☣
-577☣CJF11☣ ☣HNF40CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF40CP001 Dūmų recirkuliacijos slėgis☣AI01☣06☣6☣ ☣###☣
-578☣CJF11☣ ☣HNF30CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF30CP001 Dūmų recirkuliacijos slėgis☣AI01☣07☣7☣ ☣###☣
-579☣CJF11☣ ☣HNF20CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF20CP001 Dūmų recirkuliacijos slėgis☣AI01☣08☣8☣ ☣###☣
-580☣CJF11☣ ☣HHC10CT001☣ ☣ ☣ ☣AI☣Ardyno Nr. 1 temperatūra☣ ☣ ☣ ☣HHC10CT001 Ardyno Nr. 1 temperatūra☣AI02☣01☣1☣ ☣###☣
-581☣CJF11☣ ☣HHC10CT002☣ ☣ ☣ ☣AI☣Ardyno Nr. 2 temperatūra☣ ☣ ☣ ☣HHC10CT002 Ardyno Nr. 2 temperatūra☣AI02☣02☣2☣ ☣###☣
-582☣CJF11☣ ☣HHC10CT003☣ ☣ ☣ ☣AI☣Ardyno Nr. 3 temperatūra☣ ☣ ☣ ☣HHC10CT003 Ardyno Nr. 3 temperatūra☣AI02☣03☣3☣ ☣###☣
-583☣CJF11☣ ☣HHC10CT004☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT004 Temperatūra pakuroje☣AI02☣04☣4☣ ☣###☣
-584☣CJF11☣ ☣HHC10CT006☣ ☣ ☣ ☣AI☣Dūmų temperatūra išėjime iš pakuros☣ ☣ ☣ ☣HHC10CT006 Dūmų temperatūra išėjime iš pakuros☣AI02☣05☣5☣ ☣###☣
-585☣CJF11☣ ☣HNA10CT001☣ ☣ ☣ ☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣HNA10CT001 Dūmų temperatūra už katilo☣AI02☣06☣6☣ ☣###☣
-586☣CJF11☣ ☣HHC10CT005☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT005 Temperatūra pakuroje☣AI02☣07☣7☣ ☣###☣
-587☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI02☣08☣8☣ ☣###☣
-588☣CJF11☣ ☣HHC10CP001☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.1☣ ☣ ☣ ☣HHC10CP001 Pirminio oro slėgis po ardynu Nr.1☣AI03☣01☣1☣ ☣###☣
-589☣CJF11☣ ☣HHC10CP002☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.2☣ ☣ ☣ ☣HHC10CP002 Pirminio oro slėgis po ardynu Nr.2☣AI03☣02☣2☣ ☣###☣
-590☣CJF11☣ ☣HHC10CP003☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.3☣ ☣ ☣ ☣HHC10CP003 Pirminio oro slėgis po ardynu Nr.3☣AI03☣03☣3☣ ☣###☣
-591☣CJF11☣ ☣HNF10CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF10CP001 Dūmų recirkuliacijos slėgis☣AI03☣04☣4☣ ☣###☣
-592☣CJF11☣ ☣HLA10CF001☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.1☣ ☣ ☣ ☣HLA10CF001 Pirminio oro srautas po ardynu Nr.1☣AI03☣05☣5☣ ☣###☣
-593☣CJF11☣ ☣HLA10CF002☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.2☣ ☣ ☣ ☣HLA10CF002 Pirminio oro srautas po ardynu Nr.2☣AI03☣06☣6☣ ☣###☣
-594☣CJF11☣ ☣HLA10CF003☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.3☣ ☣ ☣ ☣HLA10CF003 Pirminio oro srautas po ardynu Nr.3☣AI03☣07☣7☣ ☣###☣
-595☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI03☣08☣8☣ ☣###☣
-596☣CJF11☣ ☣NDB80CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣NDB80CT001 Termofikacinio vandens temperatūra prieš katilą☣AI04☣01☣1☣ ☣###☣
-597☣CJF11☣ ☣NDB80CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą☣ ☣ ☣ ☣NDB80CP001 Termofikacinio vandens slėgis prieš katilą☣AI04☣02☣2☣ ☣###☣
-598☣CJF11☣ ☣NDA10CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣NDA10CT001 Termofikacinio vandens temperatūra už katilo☣AI04☣03☣3☣ ☣###☣
-599☣CJF11☣ ☣NDA10CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣NDA10CP001 Termofikacinio vandens slėgis už katilo☣AI04☣04☣4☣ ☣###☣
-600☣CJF11☣ ☣HNA10CQ001☣ ☣ ☣ ☣AI☣O2 kiekis dūmuose☣ ☣ ☣ ☣HNA10CQ001 O2 kiekis dūmuose☣AI04☣05☣5☣ ☣###☣
-601☣CJF11☣ ☣HFB10CL001☣ ☣ ☣ ☣AI☣Kuro lygis bunkeryje☣ ☣ ☣ ☣HFB10CL001 Kuro lygis bunkeryje☣AI04☣06☣6☣ ☣###☣
-602☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣07☣7☣ ☣###☣
-603☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣08☣8☣ ☣###☣
-604☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣01☣1☣ ☣###☣
-605☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣02☣2☣ ☣###☣
-606☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣03☣3☣ ☣###☣
-607☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣04☣4☣ ☣###☣
-608☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣05☣5☣ ☣###☣
-609☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣06☣6☣ ☣###☣
-610☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣07☣7☣ ☣###☣
-611☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣08☣8☣ ☣###☣
-612☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėtis☣PV☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėtis☣AIV01☣01☣1☣ ☣###☣
-613☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėtis☣PV☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėtis☣AIV01☣02☣2☣ ☣###☣
-614☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėtis☣PV☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėtis☣AIV01☣03☣3☣ ☣###☣
-615☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣04☣4☣ ☣###☣
-616☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣05☣5☣ ☣###☣
-617☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣06☣6☣ ☣###☣
-618☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣07☣7☣ ☣###☣
-619☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣08☣8☣ ☣###☣
-620☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣01☣1☣ ☣###☣
-621☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣02☣2☣ ☣###☣
-622☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣03☣3☣ ☣###☣
-623☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣04☣4☣ ☣###☣
-624☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėties valdymas☣SP☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėties valdymas☣AOV01☣01☣1☣ ☣###☣
-625☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėties valdymas☣SP☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėties valdymas☣AOV01☣02☣2☣ ☣###☣
-626☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėties valdymas☣SP☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėties valdymas☣AOV01☣03☣3☣ ☣###☣
-627☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AOV01☣04☣4☣ ☣###☣
-628☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣Gedimas☣trip☣HHC10CP301 Trauka pakuroje: Gedimas☣DI01☣01☣1☣ ☣###☣
-629☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT001 Kuro bunkerio temperatūra : Gedimas☣DI01☣02☣2☣ ☣###☣
-630☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT002 Kuro bunkerio temperatūra : Gedimas☣DI01☣03☣3☣ ☣###☣
-631☣CJF11☣ ☣HHC10CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣HHC10CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣04☣4☣ ☣###☣
-632☣CJF11☣ ☣HHC10CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣HHC10CP101 Užsiterštas filtras hidrostotelėje☣DI01☣05☣5☣ ☣###☣
-633☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Closed☣ ☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Closed☣DI01☣06☣6☣ ☣###☣
-634☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryta☣OPD☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryta☣DI01☣07☣7☣ ☣###☣
-635☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Distancinis valdymas☣SP☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Distancinis valdymas☣DI01☣08☣8☣ ☣###☣
-636☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Pirmyn)☣Start☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Pirmyn)☣DI01☣09☣9☣ ☣###☣
-637☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Atgal)☣StartRv☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Atgal)☣DI01☣10☣10☣ ☣###☣
-638☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣11☣11☣ ☣###☣
-639☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣12☣12☣ ☣###☣
-640☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣ ☣###☣
-641☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣ ☣###☣
-642☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣ ☣###☣
-643☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣ ☣###☣
-644☣CJF11☣ ☣HFB10CG101☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG101 Maitintuvo Nr.1 padėties daviklis: Priekyje☣DI02☣01☣1☣ ☣###☣
-645☣CJF11☣ ☣HFB10CG102☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG102 Maitintuvo Nr.1 padėties daviklis: Gale☣DI02☣02☣2☣ ☣###☣
-646☣CJF11☣ ☣HFB10CG103☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG103 Maitintuvo Nr.2 padėties daviklis: Priekyje☣DI02☣03☣3☣ ☣###☣
-647☣CJF11☣ ☣HFB10CG104☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG104 Maitintuvo Nr.2 padėties daviklis: Gale☣DI02☣04☣4☣ ☣###☣
-648☣CJF11☣ ☣HHC10CG101☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG101 Ardyno Nr.1 padėties daviklis: Priekyje☣DI02☣05☣5☣ ☣###☣
-649☣CJF11☣ ☣HHC10CG102☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG102 Ardyno Nr.1 padėties daviklis: Gale☣DI02☣06☣6☣ ☣###☣
-650☣CJF11☣ ☣HHC10CG103☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG103 Ardyno Nr.2 padėties daviklis: Priekyje☣DI02☣07☣7☣ ☣###☣
-651☣CJF11☣ ☣HHC10CG104☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG104 Ardyno Nr.2 padėties daviklis: Gale☣DI02☣08☣8☣ ☣###☣
-652☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG105☣Atidaryta☣OPD☣HFB10AA401 bunkerio sklendė; HFB10CG105: Atidaryta☣DI02☣09☣9☣ ☣###☣
-653☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG106☣Uždaryta☣CLD☣HFB10AA401 bunkerio sklendė; HFB10CG106: Uždaryta☣DI02☣10☣10☣ ☣###☣
-654☣CJF11☣ ☣HDA10CS101☣ ☣ ☣ ☣ ☣Pelenų transporterio apsisukimo daviklis☣ ☣ ☣ ☣HDA10CS101 Pelenų transporterio apsisukimo daviklis☣DI02☣11☣11☣ ☣###☣
-655☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣12☣12☣ ☣###☣
-656☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣ ☣###☣
-657☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣ ☣###☣
-658☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣ ☣###☣
-659☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣ ☣###☣
-660☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣01☣1☣ ☣###☣
-661☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣02☣2☣ ☣###☣
-662☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣03☣3☣ ☣###☣
-663☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣04☣4☣ ☣###☣
-664☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣05☣5☣ ☣###☣
-665☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣06☣6☣ ☣###☣
-666☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣07☣7☣ ☣###☣
-667☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣08☣8☣ ☣###☣
-668☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣09☣9☣ ☣###☣
-669☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣10☣10☣ ☣###☣
-670☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣11☣11☣ ☣###☣
-671☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣12☣12☣ ☣###☣
-672☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣13☣13☣ ☣###☣
-673☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣14☣14☣ ☣###☣
-674☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣15☣15☣ ☣###☣
-675☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣16☣16☣ ☣###☣
-676☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI04☣01☣1☣ ☣###☣
-677☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI04☣02☣2☣ ☣###☣
-678☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣DI04☣03☣3☣ ☣###☣
-679☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣DI04☣04☣4☣ ☣###☣
-680☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣DI04☣05☣5☣ ☣###☣
-681☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣DI04☣06☣6☣ ☣###☣
-682☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣STOP Skyde☣ ☣ ☣ ☣STOP Skyde☣DI04☣07☣7☣ ☣###☣
-683☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣DI04☣08☣8☣ ☣###☣
-684☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI04☣09☣9☣ ☣###☣
-685☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI04☣10☣10☣ ☣###☣
-686☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣DI04☣11☣11☣ ☣###☣
-687☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣DI04☣12☣12☣ ☣###☣
-688☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣DI04☣13☣13☣ ☣###☣
-689☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣14☣14☣ ☣###☣
-690☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣15☣15☣ ☣###☣
-691☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Dūmsiurblio avarija☣ ☣ ☣ ☣Dūmsiurblio avarija☣DI04☣16☣16☣ ☣###☣
-692☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės kvitavimas☣ ☣ ☣ ☣Saugų relės kvitavimas☣DO01☣01☣1☣ ☣###☣
-693☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Sirena☣ ☣ ☣ ☣Sirena☣DO01☣02☣2☣ ☣###☣
-694☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryti☣OPN☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryti☣DO01☣03☣3☣ ☣###☣
-695☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Stop☣ ☣ ☣ ☣Pakura Stop☣DO01☣04☣4☣ ☣###☣
-696☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Start☣ ☣ ☣ ☣Pakura Start☣DO01☣05☣5☣ ☣###☣
-697☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Apsaugų išvedimas☣ ☣ ☣ ☣Apsaugų išvedimas☣DO01☣06☣6☣ ☣###☣
-698☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣DO01☣07☣7☣ ☣###☣
-699☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣08☣8☣ ☣###☣
-700☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣ ☣###☣
-701☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣ ☣###☣
-702☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣ ☣###☣
-703☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣ ☣###☣
-704☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣ ☣###☣
-705☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣ ☣###☣
-706☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣ ☣###☣
-707☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣ ☣###☣
-708☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.1: Pirmyn☣DO02☣01☣1☣ ☣###☣
-709☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Atgal☣Cls☣Maitintuvas Nr.1: Atgal☣DO02☣02☣2☣ ☣###☣
-710☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.2: Pirmyn☣DO02☣03☣3☣ ☣###☣
-711☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Atgal☣Cls☣Maitintuvas Nr.2: Atgal☣DO02☣04☣4☣ ☣###☣
-712☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Pirmyn☣Opn☣Ardynas Nr.1: Pirmyn☣DO02☣05☣5☣ ☣###☣
-713☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Atgal☣Cls☣Ardynas Nr.1: Atgal☣DO02☣06☣6☣ ☣###☣
-714☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Pirmyn☣Opn☣Ardynas Nr.2: Pirmyn☣DO02☣07☣7☣ ☣###☣
-715☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Atgal☣Cls☣Ardynas Nr.2: Atgal☣DO02☣08☣8☣ ☣###☣
-716☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Išilginis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣09☣9☣ ☣###☣
-717☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Išilginis pelenų šalinimo hidrocilindras: Atgal☣DO02☣10☣10☣ ☣###☣
-718☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Pagrindinis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣11☣11☣ ☣###☣
-719☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Pagrindinis pelenų šalinimo hidrocilindras: Atgal☣DO02☣12☣12☣ ☣###☣
-720☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Pirmyn☣DO02☣13☣13☣ ☣###☣
-721☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Atgal☣DO02☣14☣14☣ ☣###☣
-722☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Pirmyn☣DO02☣15☣15☣ ☣###☣
-723☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Atgal☣DO02☣16☣16☣ ☣###☣
-724☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Pirmyn☣DO03☣01☣1☣ ☣###☣
-725☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Atgal☣DO03☣02☣2☣ ☣###☣
-726☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣03☣3☣ ☣###☣
-727☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣04☣4☣ ☣###☣
-728☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Atidaryti☣OPN☣Kuro bunkerio sklendė : Atidaryti☣DO03☣05☣5☣ ☣###☣
-729☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Uždaryti☣CLS☣Kuro bunkerio sklendė : Uždaryti☣DO03☣06☣6☣ ☣###☣
-730☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣07☣7☣ ☣###☣
-731☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣08☣8☣ ☣###☣
-732☣CJF11☣ ☣O2☣ ☣ ☣ ☣VLV☣jutiklio apipūtimo solenoidinis vožtuvas☣ ☣Atidaryti☣OPN☣O2 jutiklio apipūtimo solenoidinis vožtuvas: Atidaryti☣DO03☣09☣9☣ ☣###☣
-733☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Gaisro bunkeryje gesinimo vožtuvas☣ ☣Atidaryti☣OPN☣Gaisro bunkeryje gesinimo vožtuvas: Atidaryti☣DO03☣10☣10☣ ☣###☣
-734☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣11☣11☣ ☣###☣
-735☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣12☣12☣ ☣###☣
-736☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣13☣13☣ ☣###☣
-737☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣14☣14☣ ☣###☣
-738☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣15☣15☣ ☣###☣
-739☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣16☣16☣ ☣###☣
+46☣62☣75☣94☣59☣59☣57☣56☣379☣129☣124☣72☣555☣68☣70☣58☣96☣119☣
+000☣BJA30☣ ☣K1EAY10EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Darba☣ ☣K1EAY10EM001 Hidraulinės stotelės variklis: Darba☣DI01☣01☣1☣BJA30_DI01_01☣###☣
+001☣BJA30☣ ☣K1EAY10EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EAY10EM001 Hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣02☣2☣BJA30_DI01_02☣###☣
+002☣BJA30☣ ☣K1EAY20EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Darba☣ ☣K1EAY20EM001 Hidraulinės stotelės variklis: Darba☣DI01☣03☣3☣BJA30_DI01_03☣###☣
+003☣BJA30☣ ☣K1EAY20EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EAY20EM001 Hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣04☣4☣BJA30_DI01_04☣###☣
+004☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Силовая цепь готова☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Силовая цепь готова☣DI01☣05☣5☣BJA30_DI01_05☣###☣
+005☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Работает☣DI01☣06☣6☣BJA30_DI01_06☣###☣
+006☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает реверс☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Работает реверс☣DI01☣07☣7☣BJA30_DI01_07☣###☣
+007☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Силовая цепь готова☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Силовая цепь готова☣DI01☣08☣8☣BJA30_DI01_08☣###☣
+008☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Работает☣DI01☣09☣9☣BJA30_DI01_09☣###☣
+009☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Работает реверс☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Работает реверс☣DI01☣10☣10☣BJA30_DI01_10☣###☣
+010☣BJA30☣ ☣K1EAC20AF001☣ ☣ ☣ ☣MOT☣Kuro padavimo grandiklinis transporteris☣ ☣Jėgos grandinė paruošta☣Ready☣K1EAC20AF001 Kuro padavimo grandiklinis transporteris: Jėgos grandinė paruošta☣DI01☣11☣11☣BJA30_DI01_11☣###☣
+011☣BJA30☣ ☣K1ECA10AF001☣ ☣ ☣ ☣MOT☣Tarpinis kuro grandiklinis transporteris☣ ☣Jėgos grandinė paruošta☣Ready☣K1ECA10AF001 Tarpinis kuro grandiklinis transporteris: Jėgos grandinė paruošta☣DI01☣12☣12☣BJA30_DI01_12☣###☣
+012☣BJA30☣ ☣K1EBE10EM001☣ ☣ ☣ ☣MOT☣Vibrosieto variklis ☣ ☣Darba☣ ☣K1EBE10EM001 Vibrosieto variklis : Darba☣DI01☣13☣13☣BJA30_DI01_13☣###☣
+013☣BJA30☣ ☣K1EBE10EM001☣ ☣ ☣ ☣MOT☣Vibrosieto variklis ☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM001 Vibrosieto variklis : Jėgos grandinė paruošta☣DI01☣14☣14☣BJA30_DI01_14☣###☣
+014☣BJA30☣ ☣K1EBE10EM002☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM002 Vibrosieto variklis: Darba☣DI01☣15☣15☣BJA30_DI01_15☣###☣
+015☣BJA30☣ ☣K1EBE10EM002☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM002 Vibrosieto variklis: Jėgos grandinė paruošta☣DI01☣16☣16☣BJA30_DI01_16☣###☣
+016☣BJA30☣ ☣K1EBE10EM003☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM003 Vibrosieto variklis: Darba☣DI02☣01☣1☣BJA30_DI02_01☣###☣
+017☣BJA30☣ ☣K1EBE10EM003☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM003 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣02☣2☣BJA30_DI02_02☣###☣
+018☣BJA30☣ ☣K1EBE10EM004☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM004 Vibrosieto variklis: Darba☣DI02☣03☣3☣BJA30_DI02_03☣###☣
+019☣BJA30☣ ☣K1EBE10EM004☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM004 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣04☣4☣BJA30_DI02_04☣###☣
+020☣BJA30☣ ☣K1EBE10EM005☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darba☣ ☣K1EBE10EM005 Vibrosieto variklis: Darba☣DI02☣05☣5☣BJA30_DI02_05☣###☣
+021☣BJA30☣ ☣K1EBE10EM005☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM005 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣06☣6☣BJA30_DI02_06☣###☣
+022☣BJA30☣ ☣K1EBE10EM006☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Darbas☣On☣K1EBE10EM006 Vibrosieto variklis: Darbas☣DI02☣07☣7☣BJA30_DI02_07☣###☣
+023☣BJA30☣ ☣K1EBE10EM006☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Jėgos grandinė paruošta☣Ready☣K1EBE10EM006 Vibrosieto variklis: Jėgos grandinė paruošta☣DI02☣08☣8☣BJA30_DI02_08☣###☣
+024☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣09☣9☣BJA30_DI02_09☣###☣
+025☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣10☣10☣BJA30_DI02_10☣###☣
+026☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣11☣11☣BJA30_DI02_11☣###☣
+027☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣12☣12☣BJA30_DI02_12☣###☣
+028☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣BJA30_DI02_13☣###☣
+029☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣BJA30_DI02_14☣###☣
+030☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣BJA30_DI02_15☣###☣
+031☣BJA30☣ ☣K12.1☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣K12.1 Jėgos grandinė paruošta☣DI02☣16☣16☣BJA30_DI02_16☣###☣
+032☣BJA30☣ ☣K1EAY10EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣K1EAY10EM001 Hidraulinės stotelės variklis: Paleisti☣DO01☣01☣1☣BJA30_DO01_01☣###☣
+033☣BJA30☣ ☣K1EAY20EM001☣ ☣ ☣ ☣MOT☣Hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣K1EAY20EM001 Hidraulinės stotelės variklis: Paleisti☣DO01☣02☣2☣BJA30_DO01_02☣###☣
+034☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Старт☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Старт☣DO01☣03☣3☣BJA30_DO01_03☣###☣
+035☣BJA30☣ ☣K1EBC10AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Реверс☣ ☣K1EBC10AJ010 Kuro sluoksnio išlygintuvas: Реверс☣DO01☣04☣4☣BJA30_DO01_04☣###☣
+036☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Старт☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Старт☣DO01☣05☣5☣BJA30_DO01_05☣###☣
+037☣BJA30☣ ☣K1EBC20AJ010☣ ☣ ☣ ☣ ☣Kuro sluoksnio išlygintuvas☣ ☣Реверс☣ ☣K1EBC20AJ010 Kuro sluoksnio išlygintuvas: Реверс☣DO01☣06☣6☣BJA30_DO01_06☣###☣
+038☣BJA30☣ ☣K1EBE10EM001☣ ☣ ☣ ☣MOT☣Vibrosieto variklis ☣ ☣Paleisti☣Start☣K1EBE10EM001 Vibrosieto variklis : Paleisti☣DO01☣07☣7☣BJA30_DO01_07☣###☣
+039☣BJA30☣ ☣K1EBE10EM002☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM002 Vibrosieto variklis: Paleisti☣DO01☣08☣8☣BJA30_DO01_08☣###☣
+040☣BJA30☣ ☣K1EBE10EM003☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM003 Vibrosieto variklis: Paleisti☣DO01☣09☣9☣BJA30_DO01_09☣###☣
+041☣BJA30☣ ☣K1EBE10EM004☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM004 Vibrosieto variklis: Paleisti☣DO01☣10☣10☣BJA30_DO01_10☣###☣
+042☣BJA30☣ ☣K1EBE10EM005☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM005 Vibrosieto variklis: Paleisti☣DO01☣11☣11☣BJA30_DO01_11☣###☣
+043☣BJA30☣ ☣K1EBE10EM006☣ ☣ ☣ ☣MOT☣Vibrosieto variklis☣ ☣Paleisti☣Start☣K1EBE10EM006 Vibrosieto variklis: Paleisti☣DO01☣12☣12☣BJA30_DO01_12☣###☣
+044☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣BJA30_DO01_13☣###☣
+045☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣BJA30_DO01_14☣###☣
+046☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣BJA30_DO01_15☣###☣
+047☣BJA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣BJA30_DO01_16☣###☣
+048☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣01☣1☣BMA10_DI01_01☣###☣
+049☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Darbas☣On☣Rezervas: Darbas☣DI01☣02☣2☣BMA10_DI01_02☣###☣
+050☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Darba☣ ☣Rezervas: Darba☣DI01☣03☣3☣BMA10_DI01_03☣###☣
+051☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣04☣4☣BMA10_DI01_04☣###☣
+052☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣05☣5☣BMA10_DI01_05☣###☣
+053☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣06☣6☣BMA10_DI01_06☣###☣
+054☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣07☣7☣BMA10_DI01_07☣###☣
+055☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣08☣8☣BMA10_DI01_08☣###☣
+056☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣09☣9☣BMA10_DI01_09☣###☣
+057☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣10☣10☣BMA10_DI01_10☣###☣
+058☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣11☣11☣BMA10_DI01_11☣###☣
+059☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣12☣12☣BMA10_DI01_12☣###☣
+060☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI01☣13☣13☣BMA10_DI01_13☣###☣
+061☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI01☣14☣14☣BMA10_DI01_14☣###☣
+062☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI01☣15☣15☣BMA10_DI01_15☣###☣
+063☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣BMA10_DI01_16☣###☣
+064☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryta☣OPD☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Atidaryta☣DI02☣01☣1☣BMA10_DI02_01☣###☣
+065☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryta☣CLD☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Uždaryta☣DI02☣02☣2☣BMA10_DI02_02☣###☣
+066☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Jėgos grandinė paruošta☣DI02☣03☣3☣BMA10_DI02_03☣###☣
+067☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣04☣4☣BMA10_DI02_04☣###☣
+068☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣05☣5☣BMA10_DI02_05☣###☣
+069☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣06☣6☣BMA10_DI02_06☣###☣
+070☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣07☣7☣BMA10_DI02_07☣###☣
+071☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Atidaryta☣OPD☣Rezervas: Atidaryta☣DI02☣08☣8☣BMA10_DI02_08☣###☣
+072☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Uždaryta☣CLD☣Rezervas: Uždaryta☣DI02☣09☣9☣BMA10_DI02_09☣###☣
+073☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Jėgos grandinė paruošta☣Ready☣Rezervas: Jėgos grandinė paruošta☣DI02☣10☣10☣BMA10_DI02_10☣###☣
+074☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryta☣OPD☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Atidaryta☣DI02☣11☣11☣BMA10_DI02_11☣###☣
+075☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryta☣CLD☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Uždaryta☣DI02☣12☣12☣BMA10_DI02_12☣###☣
+076☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Jėgos grandinė paruošta☣DI02☣13☣13☣BMA10_DI02_13☣###☣
+077☣BMA10☣ ☣K1NDB54AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Darba☣ ☣K1NDB54AP001 Slėgio palaikymo siurblys: Darba☣DI02☣14☣14☣BMA10_DI02_14☣###☣
+078☣BMA10☣ ☣K1NDB54AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB54AP001 Slėgio palaikymo siurblys: Jėgos grandinė paruošta☣DI02☣15☣15☣BMA10_DI02_15☣###☣
+079☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣BMA10_DI02_16☣###☣
+080☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryta☣OPD☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Atidaryta☣DI03☣01☣1☣BMA10_DI03_01☣###☣
+081☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryta☣CLD☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Uždaryta☣DI03☣02☣2☣BMA10_DI03_02☣###☣
+082☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Jėgos grandinė paruošta☣DI03☣03☣3☣BMA10_DI03_03☣###☣
+083☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣04☣4☣BMA10_DI03_04☣###☣
+084☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣05☣5☣BMA10_DI03_05☣###☣
+085☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣06☣6☣BMA10_DI03_06☣###☣
+086☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣07☣7☣BMA10_DI03_07☣###☣
+087☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣08☣8☣BMA10_DI03_08☣###☣
+088☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣09☣9☣BMA10_DI03_09☣###☣
+089☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣10☣10☣BMA10_DI03_10☣###☣
+090☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣11☣11☣BMA10_DI03_11☣###☣
+091☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣12☣12☣BMA10_DI03_12☣###☣
+092☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣13☣13☣BMA10_DI03_13☣###☣
+093☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣14☣14☣BMA10_DI03_14☣###☣
+094☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣15☣15☣BMA10_DI03_15☣###☣
+095☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣16☣16☣BMA10_DI03_16☣###☣
+096☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Paleisti☣Start☣Rezervas: Paleisti☣DO01☣01☣1☣BMA10_DO01_01☣###☣
+097☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣02☣2☣BMA10_DO01_02☣###☣
+098☣BMA10☣ ☣K1NDB61AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB61AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣03☣3☣BMA10_DO01_03☣###☣
+099☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣04☣4☣BMA10_DO01_04☣###☣
+100☣BMA10☣ ☣K1NDB62AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB62AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣05☣5☣BMA10_DO01_05☣###☣
+101☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣06☣6☣BMA10_DO01_06☣###☣
+102☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣07☣7☣BMA10_DO01_07☣###☣
+103☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣08☣8☣BMA10_DO01_08☣###☣
+104☣BMA10☣ ☣K1NDB22AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB22AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣09☣9☣BMA10_DO01_09☣###☣
+105☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Atidaryti☣OPN☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Atidaryti☣DO01☣10☣10☣BMA10_DO01_10☣###☣
+106☣BMA10☣ ☣K1NDB23AA101☣ ☣ ☣ ☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣Uždaryti☣CLS☣K1NDB23AA101 Uždarymo vožtuvas su elektros pavara: Uždaryti☣DO01☣11☣11☣BMA10_DO01_11☣###☣
+107☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣BMA10_DO01_12☣###☣
+108☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣BMA10_DO01_13☣###☣
+109☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Atidaryti☣OPN☣Rezervas: Atidaryti☣DO01☣14☣14☣BMA10_DO01_14☣###☣
+110☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Uždaryti☣CLS☣Rezervas: Uždaryti☣DO01☣15☣15☣BMA10_DO01_15☣###☣
+111☣BMA10☣ ☣K1NDB54AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Paleisti☣Start☣K1NDB54AP001 Slėgio palaikymo siurblys: Paleisti☣DO01☣16☣16☣BMA10_DO01_16☣###☣
+112☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryti☣OPN☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Atidaryti☣DO02☣01☣1☣BMA10_DO02_01☣###☣
+113☣BMA10☣ ☣K1NDA50AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryti☣CLS☣K1NDA50AA101 Trieigis reguliuojantis vožtuvas : Uždaryti☣DO02☣02☣2☣BMA10_DO02_02☣###☣
+114☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Atidaryti☣OPN☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Atidaryti☣DO02☣03☣3☣BMA10_DO02_03☣###☣
+115☣BMA10☣ ☣K1NDB10AA101☣ ☣ ☣ ☣VLV☣Trieigis reguliuojantis vožtuvas ☣ ☣Uždaryti☣CLS☣K1NDB10AA101 Trieigis reguliuojantis vožtuvas : Uždaryti☣DO02☣04☣4☣BMA10_DO02_04☣###☣
+116☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣05☣5☣BMA10_DO02_05☣###☣
+117☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣06☣6☣BMA10_DO02_06☣###☣
+118☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣07☣7☣BMA10_DO02_07☣###☣
+119☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣08☣8☣BMA10_DO02_08☣###☣
+120☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣09☣9☣BMA10_DO02_09☣###☣
+121☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣10☣10☣BMA10_DO02_10☣###☣
+122☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣11☣11☣BMA10_DO02_11☣###☣
+123☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣12☣12☣BMA10_DO02_12☣###☣
+124☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣13☣13☣BMA10_DO02_13☣###☣
+125☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣14☣14☣BMA10_DO02_14☣###☣
+126☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣15☣15☣BMA10_DO02_15☣###☣
+127☣BMA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO02☣16☣16☣BMA10_DO02_16☣###☣
+128☣CRA30☣ ☣EAY10CP001☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣EAY10CP001 Tepalo slėgis hidrostotelėje☣AI01☣01☣1☣CRA30_AI01_01☣###☣
+129☣CRA30☣ ☣EAY20CP001☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣EAY20CP001 Tepalo slėgis hidrostotelėje☣AI01☣02☣2☣CRA30_AI01_02☣###☣
+130☣CRA30☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI01☣03☣3☣CRA30_AI01_03☣###☣
+131☣CRA30☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI01☣04☣4☣CRA30_AI01_04☣###☣
+132☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣05☣5☣CRA30_AI01_05☣###☣
+133☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣06☣6☣CRA30_AI01_06☣###☣
+134☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣07☣7☣CRA30_AI01_07☣###☣
+135☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣08☣8☣CRA30_AI01_08☣###☣
+136☣CRA30☣ ☣EAY10CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣EAY10CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣01☣1☣CRA30_DI01_01☣###☣
+137☣CRA30☣ ☣EAY10CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣EAY10CP101 Užsiterštas filtras hidrostotelėje☣DI01☣02☣2☣CRA30_DI01_02☣###☣
+138☣CRA30☣ ☣EAY20CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣EAY20CP101 Užsiterštas filtras hidrostotelėje☣DI01☣03☣3☣CRA30_DI01_03☣###☣
+139☣CRA30☣ ☣EAY20CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣EAY20CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣04☣4☣CRA30_DI01_04☣###☣
+140☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryta į katilą Nr.1☣OPD☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryta į katilą Nr.1☣DI01☣05☣5☣CRA30_DI01_05☣###☣
+141☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryta į katilą Nr.2☣OPD☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryta į katilą Nr.2☣DI01☣06☣6☣CRA30_DI01_06☣###☣
+142☣CRA30☣ ☣EAC20GH001☣ ☣ ☣ ☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣Distancinis valdymas☣SP☣EAC20GH001 EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas: Distancinis valdymas☣DI01☣07☣7☣CRA30_DI01_07☣###☣
+143☣CRA30☣ ☣EAC20GH001☣ ☣ ☣ ☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣Paleisti (Pirmyn)☣Start☣EAC20GH001 EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas: Paleisti (Pirmyn)☣DI01☣08☣8☣CRA30_DI01_08☣###☣
+144☣CRA30☣ ☣EAC20GH001☣ ☣ ☣ ☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣Paleisti (Atgal)☣StartRv☣EAC20GH001 EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas: Paleisti (Atgal)☣DI01☣09☣9☣CRA30_DI01_09☣###☣
+145☣CRA30☣ ☣ECA10GH001☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣Distancinis valdymas☣SP☣ECA10GH001 Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001: Distancinis valdymas☣DI01☣10☣10☣CRA30_DI01_10☣###☣
+146☣CRA30☣ ☣ECA10GH001☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣Paleisti (Pirmyn)☣Start☣ECA10GH001 Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001: Paleisti (Pirmyn)☣DI01☣11☣11☣CRA30_DI01_11☣###☣
+147☣CRA30☣ ☣ECA10GH001☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣Paleisti (Atgal)☣StartRv☣ECA10GH001 Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001: Paleisti (Atgal)☣DI01☣12☣12☣CRA30_DI01_12☣###☣
+148☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣CRA30_DI01_13☣###☣
+149☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣CRA30_DI01_14☣###☣
+150☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣CRA30_DI01_15☣###☣
+151☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣CRA30_DI01_16☣###☣
+152☣CRA30☣ ☣EAC201-SD2☣ ☣ ☣ ☣ ☣Sandėlio grandiklinio kuro transporterio apsisukimų daviklis☣ ☣ ☣ ☣EAC201-SD2 Sandėlio grandiklinio kuro transporterio apsisukimų daviklis☣DI02☣01☣1☣CRA30_DI02_01☣###☣
+153☣CRA30☣ ☣ECA10CS101☣ ☣ ☣ ☣ ☣Sandėlio tarpinio kuro transporterio apsisukimų daviklis☣ ☣ ☣ ☣ECA10CS101 Sandėlio tarpinio kuro transporterio apsisukimų daviklis☣DI02☣02☣2☣CRA30_DI02_02☣###☣
+154☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣03☣3☣CRA30_DI02_03☣###☣
+155☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣04☣4☣CRA30_DI02_04☣###☣
+156☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣05☣5☣CRA30_DI02_05☣###☣
+157☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣06☣6☣CRA30_DI02_06☣###☣
+158☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣07☣7☣CRA30_DI02_07☣###☣
+159☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣08☣8☣CRA30_DI02_08☣###☣
+160☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣09☣9☣CRA30_DI02_09☣###☣
+161☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣10☣10☣CRA30_DI02_10☣###☣
+162☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣11☣11☣CRA30_DI02_11☣###☣
+163☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣12☣12☣CRA30_DI02_12☣###☣
+164☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣13☣13☣CRA30_DI02_13☣###☣
+165☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣14☣14☣CRA30_DI02_14☣###☣
+166☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣15☣15☣CRA30_DI02_15☣###☣
+167☣CRA30☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI02☣16☣16☣CRA30_DI02_16☣###☣
+168☣CRA30☣ ☣EBC01☣ ☣ ☣ ☣ ☣Kuro ūkio vietinis STOP postas Nr.1☣ ☣ ☣ ☣EBC01 Kuro ūkio vietinis STOP postas Nr.1☣DI03☣01☣1☣CRA30_DI03_01☣###☣
+169☣CRA30☣ ☣EBC02☣ ☣ ☣ ☣ ☣Kuro ūkio vietinis STOP postas Nr.2☣ ☣ ☣ ☣EBC02 Kuro ūkio vietinis STOP postas Nr.2☣DI03☣02☣2☣CRA30_DI03_02☣###☣
+170☣CRA30☣ ☣EBC03☣ ☣ ☣ ☣ ☣Kuro ūkio vietinis STOP postas Nr.3☣ ☣ ☣ ☣EBC03 Kuro ūkio vietinis STOP postas Nr.3☣DI03☣03☣3☣CRA30_DI03_03☣###☣
+171☣CRA30☣ ☣EBA10CG101☣ ☣ ☣ ☣ ☣Kuro sandėlio saugos trosas☣ ☣ ☣ ☣EBA10CG101 Kuro sandėlio saugos trosas☣DI03☣04☣4☣CRA30_DI03_04☣###☣
+172☣CRA30☣ ☣EAC20CG110☣ ☣ ☣ ☣ ☣Kuro sandėlio grandiklinio transporterio dangčio daviklis☣ ☣Atidaryta☣OPD☣EAC20CG110 Kuro sandėlio grandiklinio transporterio dangčio daviklis: Atidaryta☣DI03☣05☣5☣CRA30_DI03_05☣###☣
+173☣CRA30☣ ☣ECA10CG103☣ ☣ ☣ ☣ ☣Tarpinio grandiklinio kuro transporterio dangčio daviklis☣ ☣Atidaryta☣OPD☣ECA10CG103 Tarpinio grandiklinio kuro transporterio dangčio daviklis: Atidaryta☣DI03☣06☣6☣CRA30_DI03_06☣###☣
+174☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣07☣7☣CRA30_DI03_07☣###☣
+175☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣08☣8☣CRA30_DI03_08☣###☣
+176☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI03☣09☣9☣CRA30_DI03_09☣###☣
+177☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI03☣10☣10☣CRA30_DI03_10☣###☣
+178☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣DI03☣11☣11☣CRA30_DI03_11☣###☣
+179☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI03☣12☣12☣CRA30_DI03_12☣###☣
+180☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI03☣13☣13☣CRA30_DI03_13☣###☣
+181☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣STOP Skyde☣ ☣ ☣ ☣STOP Skyde☣DI03☣14☣14☣CRA30_DI03_14☣###☣
+182☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Katilo jėgos skyde BJA30 dingo valdymo grandinių įtampa☣ ☣ ☣ ☣Katilo jėgos skyde BJA30 dingo valdymo grandinių įtampa☣DI03☣15☣15☣CRA30_DI03_15☣###☣
+183☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣16☣16☣CRA30_DI03_16☣###☣
+184☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės SR1 kvitavimas☣ ☣ ☣ ☣Saugų relės SR1 kvitavimas☣DO01☣01☣1☣CRA30_DO01_01☣###☣
+185☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės SR2 kvitavimas☣ ☣ ☣ ☣Saugų relės SR2 kvitavimas☣DO01☣02☣2☣CRA30_DO01_02☣###☣
+186☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA30 skyde☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA30 skyde☣DO01☣03☣3☣CRA30_DO01_03☣###☣
+187☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣Sirena☣ ☣ ☣ ☣Sirena☣DO01☣04☣4☣CRA30_DO01_04☣###☣
+188☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryti į katilą Nr.1☣OPN☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryti į katilą Nr.1☣DO01☣05☣5☣CRA30_DO01_05☣###☣
+189☣CRA30☣ ☣ECA10AA401☣ ☣ ☣ ☣VLV☣Kuro nukreipimo sklendė ☣ ☣Atidaryti į katilą Nr.2☣OPN☣ECA10AA401 Kuro nukreipimo sklendė : Atidaryti į katilą Nr.2☣DO01☣06☣6☣CRA30_DO01_06☣###☣
+190☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY10AE001Kuro sandėlio platformos☣ ☣Pirmyn☣Opn☣EAY10AE001Kuro sandėlio platformos: Pirmyn☣DO01☣07☣7☣CRA30_DO01_07☣###☣
+191☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY10AE001Kuro sandėlio platformos☣ ☣Atgal☣Cls☣EAY10AE001Kuro sandėlio platformos: Atgal☣DO01☣08☣8☣CRA30_DO01_08☣###☣
+192☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY20AE001Kuro sandėlio platformos☣ ☣Pirmyn☣Opn☣EAY20AE001Kuro sandėlio platformos: Pirmyn☣DO01☣09☣9☣CRA30_DO01_09☣###☣
+193☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣EAY20AE001Kuro sandėlio platformos☣ ☣Atgal☣Cls☣EAY20AE001Kuro sandėlio platformos: Atgal☣DO01☣10☣10☣CRA30_DO01_10☣###☣
+194☣CRA30☣ ☣DO01☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣DO01 Rezervas☣DO01☣11☣11☣CRA30_DO01_11☣###☣
+195☣CRA30☣ ☣DO01☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣DO01 Rezervas☣DO01☣12☣12☣CRA30_DO01_12☣###☣
+196☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣CRA30_DO01_13☣###☣
+197☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣CRA30_DO01_14☣###☣
+198☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣CRA30_DO01_15☣###☣
+199☣CRA30☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣CRA30_DO01_16☣###☣
+200☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣01☣1☣CRA50_?AI1_01☣###☣
+201☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣02☣2☣CRA50_?AI1_02☣###☣
+202☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣03☣3☣CRA50_?AI1_03☣###☣
+203☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣XTA1☣ ☣ ☣ ☣XTA1☣?AI1☣04☣4☣CRA50_?AI1_04☣###☣
+204☣CRA50☣ ☣NDB56AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDB56AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣01☣1☣CRA50_AI01_01☣###☣
+205☣CRA50☣ ☣NDA50AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDA50AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣02☣2☣CRA50_AI01_02☣###☣
+206☣CRA50☣ ☣NDA50CF001☣ ☣ ☣ ☣AI☣Termofikato srautas į tinklus:☣ ☣ ☣ ☣NDA50CF001 Termofikato srautas į tinklus:☣AI01☣03☣3☣CRA50_AI01_03☣###☣
+207☣CRA50☣ ☣NDA10CF001☣ ☣ ☣ ☣AI☣Termofikato srautas į katilą Nr.1 :☣ ☣ ☣ ☣NDA10CF001 Termofikato srautas į katilą Nr.1 :☣AI01☣04☣4☣CRA50_AI01_04☣###☣
+208☣CRA50☣ ☣NDA10CF001☣ ☣ ☣ ☣AI☣Termofikato srautas į katilą Nr.2:☣ ☣ ☣ ☣NDA10CF001 Termofikato srautas į katilą Nr.2:☣AI01☣05☣5☣CRA50_AI01_05☣###☣
+209☣CRA50☣ ☣NDB35AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDB35AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣06☣6☣CRA50_AI01_06☣###☣
+210☣CRA50☣ ☣NDA51AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėtis☣PV☣NDA51AA201 Reguliuojantis vožtuvas : Padėtis☣AI01☣07☣7☣CRA50_AI01_07☣###☣
+211☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣08☣8☣CRA50_AI01_08☣###☣
+212☣CRA50☣ ☣NDA20CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra kolektoriuje☣ ☣ ☣ ☣NDA20CT001 Paduodamo termofikacinio vandens temperatūra kolektoriuje☣AI02☣01☣1☣CRA50_AI02_01☣###☣
+213☣CRA50☣ ☣NDA20CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis kolektoriuje☣ ☣ ☣ ☣NDA20CP001 Paduodamo termofikacinio vandens slėgis kolektoriuje☣AI02☣02☣2☣CRA50_AI02_02☣###☣
+214☣CRA50☣ ☣NDB50CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra kolektoriuje☣ ☣ ☣ ☣NDB50CT001 Grįžtamo termofikacinio vandens temperatūra kolektoriuje☣AI02☣03☣3☣CRA50_AI02_03☣###☣
+215☣CRA50☣ ☣NDB50CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis kolektoriuje☣ ☣ ☣ ☣NDB50CP001 Grįžtamo termofikacinio vandens slėgis kolektoriuje☣AI02☣04☣4☣CRA50_AI02_04☣###☣
+216☣CRA50☣ ☣NDB41CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra į kolektorių☣ ☣ ☣ ☣NDB41CT001 Grįžtamo termofikacinio vandens temperatūra į kolektorių☣AI02☣05☣5☣CRA50_AI02_05☣###☣
+217☣CRA50☣ ☣NDB41CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis į kolektorių☣ ☣ ☣ ☣NDB41CP001 Grįžtamo termofikacinio vandens slėgis į kolektorių☣AI02☣06☣6☣CRA50_AI02_06☣###☣
+218☣CRA50☣ ☣NDB42CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra į kolektorių☣ ☣ ☣ ☣NDB42CT001 Grįžtamo termofikacinio vandens temperatūra į kolektorių☣AI02☣07☣7☣CRA50_AI02_07☣###☣
+219☣CRA50☣ ☣NDB42CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis į kolektorių☣ ☣ ☣ ☣NDB42CP001 Grįžtamo termofikacinio vandens slėgis į kolektorių☣AI02☣08☣8☣CRA50_AI02_08☣###☣
+220☣CRA50☣ ☣NDA10CT002☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo Nr.1☣ ☣ ☣ ☣NDA10CT002 Termofikacinio vandens temperatūra už katilo Nr.1☣AI03☣01☣1☣CRA50_AI03_01☣###☣
+221☣CRA50☣ ☣NDB80CP002☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą Nr.1☣ ☣ ☣ ☣NDB80CP002 Termofikacinio vandens slėgis prieš katilą Nr.1☣AI03☣02☣2☣CRA50_AI03_02☣###☣
+222☣CRA50☣ ☣NDA10CT002☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo Nr.2☣ ☣ ☣ ☣NDA10CT002 Termofikacinio vandens temperatūra už katilo Nr.2☣AI03☣03☣3☣CRA50_AI03_03☣###☣
+223☣CRA50☣ ☣NDB80CP002☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą Nr.2☣ ☣ ☣ ☣NDB80CP002 Termofikacinio vandens slėgis prieš katilą Nr.2☣AI03☣04☣4☣CRA50_AI03_04☣###☣
+224☣CRA50☣ ☣NDA41CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣ ☣ ☣ ☣NDA41CT001 Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣AI03☣05☣5☣CRA50_AI03_05☣###☣
+225☣CRA50☣ ☣NDA41CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis už šilumokaičio☣ ☣ ☣ ☣NDA41CP001 Paduodamo termofikacinio vandens slėgis už šilumokaičio☣AI03☣06☣6☣CRA50_AI03_06☣###☣
+226☣CRA50☣ ☣NDB31CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣ ☣ ☣ ☣NDB31CP001 Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣AI03☣07☣7☣CRA50_AI03_07☣###☣
+227☣CRA50☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI03☣08☣8☣CRA50_AI03_08☣###☣
+228☣CRA50☣ ☣NDA42CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣ ☣ ☣ ☣NDA42CT001 Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣AI04☣01☣1☣CRA50_AI04_01☣###☣
+229☣CRA50☣ ☣NDA42CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis už šilumokaičio☣ ☣ ☣ ☣NDA42CP001 Paduodamo termofikacinio vandens slėgis už šilumokaičio☣AI04☣02☣2☣CRA50_AI04_02☣###☣
+230☣CRA50☣ ☣NDB32CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣ ☣ ☣ ☣NDB32CP001 Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣AI04☣03☣3☣CRA50_AI04_03☣###☣
+231☣CRA50☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣04☣4☣CRA50_AI04_04☣###☣
+232☣CRA50☣ ☣NDA50CT001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra prieš reguliavimo vožtuvą☣ ☣ ☣ ☣NDA50CT001 Paduodamo termofikacinio vandens temperatūra prieš reguliavimo vožtuvą☣AI04☣05☣5☣CRA50_AI04_05☣###☣
+233☣CRA50☣ ☣NDA50CT002☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra už reguliavimo vožtuvo☣ ☣ ☣ ☣NDA50CT002 Paduodamo termofikacinio vandens temperatūra už reguliavimo vožtuvo☣AI04☣06☣6☣CRA50_AI04_06☣###☣
+234☣CRA50☣ ☣NDA50CT003☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens temperatūra☣ ☣ ☣ ☣NDA50CT003 Paduodamo termofikacinio vandens temperatūra☣AI04☣07☣7☣CRA50_AI04_07☣###☣
+235☣CRA50☣ ☣NDA50CP001☣ ☣ ☣ ☣AI☣Paduodamo termofikacinio vandens slėgis☣ ☣ ☣ ☣NDA50CP001 Paduodamo termofikacinio vandens slėgis☣AI04☣08☣8☣CRA50_AI04_08☣###☣
+236☣CRA50☣ ☣NDB30CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaičius☣ ☣ ☣ ☣NDB30CT001 Grįžtamo termofikacinio vandens temperatūra prieš šilumokaičius☣AI05☣01☣1☣CRA50_AI05_01☣###☣
+237☣CRA50☣ ☣NDB30CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis prieš šilumokaičius☣ ☣ ☣ ☣NDB30CP001 Grįžtamo termofikacinio vandens slėgis prieš šilumokaičius☣AI05☣02☣2☣CRA50_AI05_02☣###☣
+238☣CRA50☣ ☣NDB10CT002☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra už filtro☣ ☣ ☣ ☣NDB10CT002 Grįžtamo termofikacinio vandens temperatūra už filtro☣AI05☣03☣3☣CRA50_AI05_03☣###☣
+239☣CRA50☣ ☣NDB10CP002☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis už filtro☣ ☣ ☣ ☣NDB10CP002 Grįžtamo termofikacinio vandens slėgis už filtro☣AI05☣04☣4☣CRA50_AI05_04☣###☣
+240☣CRA50☣ ☣NDB10CT001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens temperatūra☣ ☣ ☣ ☣NDB10CT001 Grįžtamo termofikacinio vandens temperatūra☣AI05☣05☣5☣CRA50_AI05_05☣###☣
+241☣CRA50☣ ☣NDB10CP001☣ ☣ ☣ ☣AI☣Grįžtamo termofikacinio vandens slėgis☣ ☣ ☣ ☣NDB10CP001 Grįžtamo termofikacinio vandens slėgis☣AI05☣06☣6☣CRA50_AI05_06☣###☣
+242☣CRA50☣ ☣CT001☣ ☣ ☣ ☣AI☣Lauko oro temperatūra☣ ☣ ☣ ☣CT001 Lauko oro temperatūra☣AI05☣07☣7☣CRA50_AI05_07☣###☣
+243☣CRA50☣ ☣NDB35CP001☣ ☣ ☣ ☣AI☣Žalio vandens slėgis☣ ☣ ☣ ☣NDB35CP001 Žalio vandens slėgis☣AI05☣08☣8☣CRA50_AI05_08☣###☣
+244☣CRA50☣ ☣NDB51CP001☣ ☣ ☣ ☣AI☣Švaraus vandens slėgis☣ ☣ ☣ ☣NDB51CP001 Švaraus vandens slėgis☣AI06☣01☣1☣CRA50_AI06_01☣###☣
+245☣CRA50☣ ☣GAC10CP001☣ ☣ ☣ ☣AI☣Vandens slėgis☣ ☣ ☣ ☣GAC10CP001 Vandens slėgis☣AI06☣02☣2☣CRA50_AI06_02☣###☣
+246☣CRA50☣ ☣GCK20CL001☣ ☣ ☣ ☣AI☣Vandens lygis talpoje☣ ☣ ☣ ☣GCK20CL001 Vandens lygis talpoje☣AI06☣03☣3☣CRA50_AI06_03☣###☣
+247☣CRA50☣ ☣QFB10CP001☣ ☣ ☣ ☣ ☣Suspausto oro slėgis☣ ☣ ☣ ☣QFB10CP001 Suspausto oro slėgis☣AI06☣04☣4☣CRA50_AI06_04☣###☣
+248☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣05☣5☣CRA50_AI06_05☣###☣
+249☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣06☣6☣CRA50_AI06_06☣###☣
+250☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣07☣7☣CRA50_AI06_07☣###☣
+251☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI06☣08☣8☣CRA50_AI06_08☣###☣
+252☣CRA50☣ ☣GCN10AP001☣ ☣ ☣ ☣MOT☣Chemikalų dozatorius ☣ ☣Valdymas☣SP☣GCN10AP001 Chemikalų dozatorius : Valdymas☣AO01☣03☣1☣CRA50_AO01_03☣###☣
+253☣CRA50☣ ☣NDB56AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDB56AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO01☣03☣2☣CRA50_AO01_03☣###☣
+254☣CRA50☣ ☣NDA50AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDA50AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO01☣03☣3☣CRA50_AO01_03☣###☣
+255☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO01☣04☣4☣CRA50_AO01_04☣###☣
+256☣CRA50☣ ☣NDB35AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDB35AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO02☣03☣1☣CRA50_AO02_03☣###☣
+257☣CRA50☣ ☣NDA51AA201☣ ☣ ☣ ☣VLV☣Reguliuojantis vožtuvas ☣ ☣Padėties valdymas☣SP☣NDA51AA201 Reguliuojantis vožtuvas : Padėties valdymas☣AO02☣03☣2☣CRA50_AO02_03☣###☣
+258☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣03☣3☣CRA50_AO02_03☣###☣
+259☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣04☣4☣CRA50_AO02_04☣###☣
+260☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Dirba☣On☣BRV10AG001 Dyzelinis generatorius : Dirba☣DI01☣01☣1☣CRA50_DI01_01☣###☣
+261☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Gedimas☣trip☣BRV10AG001 Dyzelinis generatorius : Gedimas☣DI01☣02☣2☣CRA50_DI01_02☣###☣
+262☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Perspėjimas☣ ☣BRV10AG001 Dyzelinis generatorius : Perspėjimas☣DI01☣03☣3☣CRA50_DI01_03☣###☣
+263☣CRA50☣ ☣GCN10AP001☣ ☣ ☣ ☣MOT☣Chemikalų dozatorius ☣ ☣Gedimas☣trip☣GCN10AP001 Chemikalų dozatorius : Gedimas☣DI01☣04☣4☣CRA50_DI01_04☣###☣
+264☣CRA50☣ ☣GCK20CL101☣ ☣ ☣ ☣AI☣Žemas vandens lygis talpoje☣ ☣ ☣ ☣GCK20CL101 Žemas vandens lygis talpoje☣DI01☣05☣5☣CRA50_DI01_05☣###☣
+265☣CRA50☣ ☣GCK20CF001☣ ☣ ☣ ☣ ☣Vandens skaitiklis☣ ☣ ☣ ☣GCK20CF001 Vandens skaitiklis☣DI01☣06☣6☣CRA50_DI01_06☣###☣
+266☣CRA50☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI01☣07☣7☣CRA50_DI01_07☣###☣
+267☣CRA50☣ ☣XTI1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTI1 Rezervas☣DI01☣08☣8☣CRA50_DI01_08☣###☣
+268☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI01☣09☣9☣CRA50_DI01_09☣###☣
+269☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI01☣10☣10☣CRA50_DI01_10☣###☣
+270☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI01☣11☣11☣CRA50_DI01_11☣###☣
+271☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI01☣12☣12☣CRA50_DI01_12☣###☣
+272☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣CRA50_DI01_13☣###☣
+273☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣CRA50_DI01_14☣###☣
+274☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣CRA50_DI01_15☣###☣
+275☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣CRA50_DI01_16☣###☣
+276☣CRA50☣ ☣K1NDB61AP001☣ ☣ ☣ ☣MOT☣Katilo cirkuliacijo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB61AP001 Katilo cirkuliacijo siurblys: Jėgos grandinė paruošta☣DI02☣01☣1☣CRA50_DI02_01☣###☣
+277☣CRA50☣ ☣K1NDB62AP001☣ ☣ ☣ ☣MOT☣Katilo cirkuliacijo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB62AP001 Katilo cirkuliacijo siurblys: Jėgos grandinė paruošta☣DI02☣02☣2☣CRA50_DI02_02☣###☣
+278☣CRA50☣ ☣K1NDB21AP0001☣ ☣ ☣ ☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB21AP0001 Išorinio cirkuliacijos kontūro siurblys: Jėgos grandinė paruošta☣DI02☣03☣3☣CRA50_DI02_03☣###☣
+279☣CRA50☣ ☣K1NDB22AP0001☣ ☣ ☣ ☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB22AP0001 Išorinio cirkuliacijos kontūro siurblys: Jėgos grandinė paruošta☣DI02☣04☣4☣CRA50_DI02_04☣###☣
+280☣CRA50☣ ☣K1NDB23AP0001☣ ☣ ☣ ☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB23AP0001 Išorinio cirkuliacijos kontūro siurblys: Jėgos grandinė paruošta☣DI02☣05☣5☣CRA50_DI02_05☣###☣
+281☣CRA50☣ ☣K1NDB53AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣K1NDB53AP001 Slėgio palaikymo siurblys: Jėgos grandinė paruošta☣DI02☣06☣6☣CRA50_DI02_06☣###☣
+282☣CRA50☣ ☣K1NDB53AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Dirba☣On☣K1NDB53AP001 Slėgio palaikymo siurblys: Dirba☣DI02☣07☣7☣CRA50_DI02_07☣###☣
+283☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣Jėgos grandinė paruošta☣Ready☣Rezervas: Jėgos grandinė paruošta☣DI02☣08☣8☣CRA50_DI02_08☣###☣
+284☣CRA50☣ ☣BJA20☣ ☣ ☣ ☣ ☣valdymo grandinių įtampa☣ ☣ ☣ ☣BJA20 valdymo grandinių įtampa☣DI02☣09☣9☣CRA50_DI02_09☣###☣
+285☣CRA50☣ ☣BJA20:☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣Jėgos grandinė paruošta☣Ready☣BJA20: Jėgos grandinė paruošta☣DI02☣10☣10☣CRA50_DI02_10☣###☣
+286☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣11☣11☣CRA50_DI02_11☣###☣
+287☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣12☣12☣CRA50_DI02_12☣###☣
+288☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣13☣13☣CRA50_DI02_13☣###☣
+289☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣14☣14☣CRA50_DI02_14☣###☣
+290☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣CRA50_DI02_15☣###☣
+291☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣CRA50_DI02_16☣###☣
+292☣CRA50☣ ☣BRV10AG001☣ ☣ ☣ ☣ ☣Dyzelinis generatorius ☣ ☣Paleisti☣Start☣BRV10AG001 Dyzelinis generatorius : Paleisti☣DO01☣01☣1☣CRA50_DO01_01☣###☣
+293☣CRA50☣ ☣GCN10AP001☣ ☣ ☣ ☣MOT☣Chemikalų dozatorius ☣ ☣Paleisti☣Start☣GCN10AP001 Chemikalų dozatorius : Paleisti☣DO01☣02☣2☣CRA50_DO01_02☣###☣
+294☣CRA50☣ ☣K1NDB53AP001☣ ☣ ☣ ☣MOT☣Slėgio palaikymo siurblys☣ ☣Start☣Start☣K1NDB53AP001 Slėgio palaikymo siurblys: Start☣DO01☣03☣3☣CRA50_DO01_03☣###☣
+295☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Šalto vandens splenoidinis vožtuvas☣ ☣ ☣ ☣Šalto vandens splenoidinis vožtuvas☣DO01☣04☣4☣CRA50_DO01_04☣###☣
+296☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO01☣05☣5☣CRA50_DO01_05☣###☣
+297☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO01☣06☣6☣CRA50_DO01_06☣###☣
+298☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣07☣7☣CRA50_DO01_07☣###☣
+299☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣08☣8☣CRA50_DO01_08☣###☣
+300☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣CRA50_DO01_09☣###☣
+301☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣CRA50_DO01_10☣###☣
+302☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣CRA50_DO01_11☣###☣
+303☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣CRA50_DO01_12☣###☣
+304☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣CRA50_DO01_13☣###☣
+305☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣CRA50_DO01_14☣###☣
+306☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣CRA50_DO01_15☣###☣
+307☣CRA50☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣CRA50_DO01_16☣###☣
+308☣BJA10☣ ☣HNC10AN001☣ ☣ ☣ ☣ ☣Dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNC10AN001 Dūmsiurbis: Jėgos grandinė paruošta☣DI01☣01☣1☣BJA10_DI01_01☣###☣
+309☣BJA10☣ ☣HNF10AN001☣ ☣ ☣ ☣ ☣Dūmų recirkuliacijos dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNF10AN001 Dūmų recirkuliacijos dūmsiurbis: Jėgos grandinė paruošta☣DI01☣02☣2☣BJA10_DI01_02☣###☣
+310☣BJA10☣ ☣HLB10AN001☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 1☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN001 Pirminio oro ventiliatorius Nr. 1: Jėgos grandinė paruošta☣DI01☣03☣3☣BJA10_DI01_03☣###☣
+311☣BJA10☣ ☣HLB10AN002☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 2☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN002 Pirminio oro ventiliatorius Nr. 2: Jėgos grandinė paruošta☣DI01☣04☣4☣BJA10_DI01_04☣###☣
+312☣BJA10☣ ☣HLB10AN003☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr.3☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN003 Pirminio oro ventiliatorius Nr.3: Jėgos grandinė paruošta☣DI01☣05☣5☣BJA10_DI01_05☣###☣
+313☣BJA10☣ ☣HLB20AN001☣ ☣ ☣ ☣MOT☣Antrinio oro ventiliatorius ☣ ☣Jėgos grandinė paruošta☣Ready☣HLB20AN001 Antrinio oro ventiliatorius : Jėgos grandinė paruošta☣DI01☣06☣6☣BJA10_DI01_06☣###☣
+314☣BJA10☣ ☣HLB30AN010☣ ☣ ☣ ☣MOT☣Tretinio oro ventiliatorius☣ ☣Jėgos grandinė paruošta☣Ready☣HLB30AN010 Tretinio oro ventiliatorius: Jėgos grandinė paruošta☣DI01☣07☣7☣BJA10_DI01_07☣###☣
+315☣BJA10☣ ☣NDA11AP001☣ ☣ ☣ ☣MOT☣Katilo recirkuliacinis siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣NDA11AP001 Katilo recirkuliacinis siurblys: Jėgos grandinė paruošta☣DI01☣08☣8☣BJA10_DI01_08☣###☣
+316☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Darbas☣On☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Darbas☣DI01☣09☣9☣BJA10_DI01_09☣###☣
+317☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣10☣10☣BJA10_DI01_10☣###☣
+318☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Darbas☣On☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Darbas☣DI01☣11☣11☣BJA10_DI01_11☣###☣
+319☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Jėgos grandinė paruošta☣DI01☣12☣12☣BJA10_DI01_12☣###☣
+320☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Darbas☣On☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Darbas☣DI01☣13☣13☣BJA10_DI01_13☣###☣
+321☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Jėgos grandinė paruošta☣DI01☣14☣14☣BJA10_DI01_14☣###☣
+322☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣BJA10_DI01_15☣###☣
+323☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣BJA10_DI01_16☣###☣
+324☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Darbas☣On☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Darbas☣DI02☣01☣1☣BJA10_DI02_01☣###☣
+325☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Jėgos grandinė paruošta☣Ready☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Jėgos grandinė paruošta☣DI02☣02☣2☣BJA10_DI02_02☣###☣
+326☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает☣DI02☣03☣3☣BJA10_DI02_03☣###☣
+327☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает (Реверс )☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает (Реверс )☣DI02☣04☣4☣BJA10_DI02_04☣###☣
+328☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Силовая цепь готова☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Силовая цепь готова☣DI02☣05☣5☣BJA10_DI02_05☣###☣
+329☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣06☣6☣BJA10_DI02_06☣###☣
+330☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣07☣7☣BJA10_DI02_07☣###☣
+331☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣08☣8☣BJA10_DI02_08☣###☣
+332☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣09☣9☣BJA10_DI02_09☣###☣
+333☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣10☣10☣BJA10_DI02_10☣###☣
+334☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣Jėgos grandinė paruošta☣DI02☣11☣11☣BJA10_DI02_11☣###☣
+335☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣12☣12☣BJA10_DI02_12☣###☣
+336☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣BJA10_DI02_13☣###☣
+337☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣BJA10_DI02_14☣###☣
+338☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣BJA10_DI02_15☣###☣
+339☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣BJA10_DI02_16☣###☣
+340☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Paleisti☣DO01☣01☣1☣BJA10_DO01_01☣###☣
+341☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Paleisti☣Start☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Paleisti☣DO01☣02☣2☣BJA10_DO01_02☣###☣
+342☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Paleisti☣Start☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Paleisti☣DO01☣03☣3☣BJA10_DO01_03☣###☣
+343☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė:☣ ☣ ☣ ☣ETG10AB001 Rotacinė multiciklono pelenų sklendė:☣DO01☣04☣4☣BJA10_DO01_04☣###☣
+344☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Старт☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Старт☣DO01☣05☣5☣BJA10_DO01_05☣###☣
+345☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Реверс☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Реверс☣DO01☣06☣6☣BJA10_DO01_06☣###☣
+346☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣07☣7☣BJA10_DO01_07☣###☣
+347☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣08☣8☣BJA10_DO01_08☣###☣
+348☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣BJA10_DO01_09☣###☣
+349☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣BJA10_DO01_10☣###☣
+350☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣BJA10_DO01_11☣###☣
+351☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣BJA10_DO01_12☣###☣
+352☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣13☣13☣BJA10_DO01_13☣###☣
+353☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣BJA10_DO01_14☣###☣
+354☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣BJA10_DO01_15☣###☣
+355☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣BJA10_DO01_16☣###☣
+356☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣4...20mA☣ ☣HHC10CP301 Trauka pakuroje: 4...20mA☣AI01☣01☣1☣CJF11_AI01_01☣###☣
+357☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT001 Kuro bunkerio temperatūra : 4...20mA☣AI01☣02☣2☣CJF11_AI01_02☣###☣
+358☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT002 Kuro bunkerio temperatūra : 4...20mA☣AI01☣03☣3☣CJF11_AI01_03☣###☣
+359☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣04☣4☣CJF11_AI01_04☣###☣
+360☣CJF11☣ ☣HHC10CP010☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣HHC10CP010 Tepalo slėgis hidrostotelėje☣AI01☣05☣5☣CJF11_AI01_05☣###☣
+361☣CJF11☣ ☣HNF40CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF40CP001 Dūmų recirkuliacijos slėgis☣AI01☣06☣6☣CJF11_AI01_06☣###☣
+362☣CJF11☣ ☣HNF30CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF30CP001 Dūmų recirkuliacijos slėgis☣AI01☣07☣7☣CJF11_AI01_07☣###☣
+363☣CJF11☣ ☣HNF20CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF20CP001 Dūmų recirkuliacijos slėgis☣AI01☣08☣8☣CJF11_AI01_08☣###☣
+364☣CJF11☣ ☣HHC10CT001☣ ☣ ☣ ☣AI☣Ardyno Nr. 1 temperatūra☣ ☣ ☣ ☣HHC10CT001 Ardyno Nr. 1 temperatūra☣AI02☣01☣1☣CJF11_AI02_01☣###☣
+365☣CJF11☣ ☣HHC10CT002☣ ☣ ☣ ☣AI☣Ardyno Nr. 2 temperatūra☣ ☣ ☣ ☣HHC10CT002 Ardyno Nr. 2 temperatūra☣AI02☣02☣2☣CJF11_AI02_02☣###☣
+366☣CJF11☣ ☣HHC10CT003☣ ☣ ☣ ☣AI☣Ardyno Nr. 3 temperatūra☣ ☣ ☣ ☣HHC10CT003 Ardyno Nr. 3 temperatūra☣AI02☣03☣3☣CJF11_AI02_03☣###☣
+367☣CJF11☣ ☣HHC10CT004☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT004 Temperatūra pakuroje☣AI02☣04☣4☣CJF11_AI02_04☣###☣
+368☣CJF11☣ ☣HHC10CT006☣ ☣ ☣ ☣AI☣Dūmų temperatūra išėjime iš pakuros☣ ☣ ☣ ☣HHC10CT006 Dūmų temperatūra išėjime iš pakuros☣AI02☣05☣5☣CJF11_AI02_05☣###☣
+369☣CJF11☣ ☣HNA10CT001☣ ☣ ☣ ☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣HNA10CT001 Dūmų temperatūra už katilo☣AI02☣06☣6☣CJF11_AI02_06☣###☣
+370☣CJF11☣ ☣HHC10CT005☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT005 Temperatūra pakuroje☣AI02☣07☣7☣CJF11_AI02_07☣###☣
+371☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI02☣08☣8☣CJF11_AI02_08☣###☣
+372☣CJF11☣ ☣HHC10CP001☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.1☣ ☣ ☣ ☣HHC10CP001 Pirminio oro slėgis po ardynu Nr.1☣AI03☣01☣1☣CJF11_AI03_01☣###☣
+373☣CJF11☣ ☣HHC10CP002☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.2☣ ☣ ☣ ☣HHC10CP002 Pirminio oro slėgis po ardynu Nr.2☣AI03☣02☣2☣CJF11_AI03_02☣###☣
+374☣CJF11☣ ☣HHC10CP003☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.3☣ ☣ ☣ ☣HHC10CP003 Pirminio oro slėgis po ardynu Nr.3☣AI03☣03☣3☣CJF11_AI03_03☣###☣
+375☣CJF11☣ ☣HNF10CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF10CP001 Dūmų recirkuliacijos slėgis☣AI03☣04☣4☣CJF11_AI03_04☣###☣
+376☣CJF11☣ ☣HLA10CF001☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.1☣ ☣ ☣ ☣HLA10CF001 Pirminio oro srautas po ardynu Nr.1☣AI03☣05☣5☣CJF11_AI03_05☣###☣
+377☣CJF11☣ ☣HLA10CF002☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.2☣ ☣ ☣ ☣HLA10CF002 Pirminio oro srautas po ardynu Nr.2☣AI03☣06☣6☣CJF11_AI03_06☣###☣
+378☣CJF11☣ ☣HLA10CF003☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.3☣ ☣ ☣ ☣HLA10CF003 Pirminio oro srautas po ardynu Nr.3☣AI03☣07☣7☣CJF11_AI03_07☣###☣
+379☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI03☣08☣8☣CJF11_AI03_08☣###☣
+380☣CJF11☣ ☣NDB80CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣NDB80CT001 Termofikacinio vandens temperatūra prieš katilą☣AI04☣01☣1☣CJF11_AI04_01☣###☣
+381☣CJF11☣ ☣NDB80CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą☣ ☣ ☣ ☣NDB80CP001 Termofikacinio vandens slėgis prieš katilą☣AI04☣02☣2☣CJF11_AI04_02☣###☣
+382☣CJF11☣ ☣NDA10CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣NDA10CT001 Termofikacinio vandens temperatūra už katilo☣AI04☣03☣3☣CJF11_AI04_03☣###☣
+383☣CJF11☣ ☣NDA10CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣NDA10CP001 Termofikacinio vandens slėgis už katilo☣AI04☣04☣4☣CJF11_AI04_04☣###☣
+384☣CJF11☣ ☣HNA10CQ001☣ ☣ ☣ ☣AI☣O2 kiekis dūmuose☣ ☣ ☣ ☣HNA10CQ001 O2 kiekis dūmuose☣AI04☣05☣5☣CJF11_AI04_05☣###☣
+385☣CJF11☣ ☣HFB10CL001☣ ☣ ☣ ☣AI☣Kuro lygis bunkeryje☣ ☣ ☣ ☣HFB10CL001 Kuro lygis bunkeryje☣AI04☣06☣6☣CJF11_AI04_06☣###☣
+386☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣07☣7☣CJF11_AI04_07☣###☣
+387☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣08☣8☣CJF11_AI04_08☣###☣
+388☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣01☣1☣CJF11_AI05_01☣###☣
+389☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣02☣2☣CJF11_AI05_02☣###☣
+390☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣03☣3☣CJF11_AI05_03☣###☣
+391☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣04☣4☣CJF11_AI05_04☣###☣
+392☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣05☣5☣CJF11_AI05_05☣###☣
+393☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣06☣6☣CJF11_AI05_06☣###☣
+394☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣07☣7☣CJF11_AI05_07☣###☣
+395☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣08☣8☣CJF11_AI05_08☣###☣
+396☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėtis☣PV☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėtis☣AIV01☣01☣1☣CJF11_AIV01_01☣###☣
+397☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėtis☣PV☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėtis☣AIV01☣02☣2☣CJF11_AIV01_02☣###☣
+398☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėtis☣PV☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėtis☣AIV01☣03☣3☣CJF11_AIV01_03☣###☣
+399☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣04☣4☣CJF11_AIV01_04☣###☣
+400☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣05☣5☣CJF11_AIV01_05☣###☣
+401☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣06☣6☣CJF11_AIV01_06☣###☣
+402☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣07☣7☣CJF11_AIV01_07☣###☣
+403☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣08☣8☣CJF11_AIV01_08☣###☣
+404☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣01☣1☣CJF11_AO02_01☣###☣
+405☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣02☣2☣CJF11_AO02_02☣###☣
+406☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣03☣3☣CJF11_AO02_03☣###☣
+407☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣04☣4☣CJF11_AO02_04☣###☣
+408☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėties valdymas☣SP☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėties valdymas☣AOV01☣01☣1☣CJF11_AOV01_01☣###☣
+409☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėties valdymas☣SP☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėties valdymas☣AOV01☣02☣2☣CJF11_AOV01_02☣###☣
+410☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėties valdymas☣SP☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėties valdymas☣AOV01☣03☣3☣CJF11_AOV01_03☣###☣
+411☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AOV01☣04☣4☣CJF11_AOV01_04☣###☣
+412☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣Gedimas☣trip☣HHC10CP301 Trauka pakuroje: Gedimas☣DI01☣01☣1☣CJF11_DI01_01☣###☣
+413☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT001 Kuro bunkerio temperatūra : Gedimas☣DI01☣02☣2☣CJF11_DI01_02☣###☣
+414☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT002 Kuro bunkerio temperatūra : Gedimas☣DI01☣03☣3☣CJF11_DI01_03☣###☣
+415☣CJF11☣ ☣HHC10CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣HHC10CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣04☣4☣CJF11_DI01_04☣###☣
+416☣CJF11☣ ☣HHC10CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣HHC10CP101 Užsiterštas filtras hidrostotelėje☣DI01☣05☣5☣CJF11_DI01_05☣###☣
+417☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Closed☣ ☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Closed☣DI01☣06☣6☣CJF11_DI01_06☣###☣
+418☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryta☣OPD☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryta☣DI01☣07☣7☣CJF11_DI01_07☣###☣
+419☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Distancinis valdymas☣SP☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Distancinis valdymas☣DI01☣08☣8☣CJF11_DI01_08☣###☣
+420☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Pirmyn)☣Start☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Pirmyn)☣DI01☣09☣9☣CJF11_DI01_09☣###☣
+421☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Atgal)☣StartRv☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Atgal)☣DI01☣10☣10☣CJF11_DI01_10☣###☣
+422☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣11☣11☣CJF11_DI01_11☣###☣
+423☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣12☣12☣CJF11_DI01_12☣###☣
+424☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣CJF11_DI01_13☣###☣
+425☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣CJF11_DI01_14☣###☣
+426☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣CJF11_DI01_15☣###☣
+427☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣CJF11_DI01_16☣###☣
+428☣CJF11☣ ☣HFB10CG101☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG101 Maitintuvo Nr.1 padėties daviklis: Priekyje☣DI02☣01☣1☣CJF11_DI02_01☣###☣
+429☣CJF11☣ ☣HFB10CG102☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG102 Maitintuvo Nr.1 padėties daviklis: Gale☣DI02☣02☣2☣CJF11_DI02_02☣###☣
+430☣CJF11☣ ☣HFB10CG103☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG103 Maitintuvo Nr.2 padėties daviklis: Priekyje☣DI02☣03☣3☣CJF11_DI02_03☣###☣
+431☣CJF11☣ ☣HFB10CG104☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG104 Maitintuvo Nr.2 padėties daviklis: Gale☣DI02☣04☣4☣CJF11_DI02_04☣###☣
+432☣CJF11☣ ☣HHC10CG101☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG101 Ardyno Nr.1 padėties daviklis: Priekyje☣DI02☣05☣5☣CJF11_DI02_05☣###☣
+433☣CJF11☣ ☣HHC10CG102☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG102 Ardyno Nr.1 padėties daviklis: Gale☣DI02☣06☣6☣CJF11_DI02_06☣###☣
+434☣CJF11☣ ☣HHC10CG103☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG103 Ardyno Nr.2 padėties daviklis: Priekyje☣DI02☣07☣7☣CJF11_DI02_07☣###☣
+435☣CJF11☣ ☣HHC10CG104☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG104 Ardyno Nr.2 padėties daviklis: Gale☣DI02☣08☣8☣CJF11_DI02_08☣###☣
+436☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG105☣Atidaryta☣OPD☣HFB10AA401 bunkerio sklendė; HFB10CG105: Atidaryta☣DI02☣09☣9☣CJF11_DI02_09☣###☣
+437☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG106☣Uždaryta☣CLD☣HFB10AA401 bunkerio sklendė; HFB10CG106: Uždaryta☣DI02☣10☣10☣CJF11_DI02_10☣###☣
+438☣CJF11☣ ☣HDA10CS101☣ ☣ ☣ ☣ ☣Pelenų transporterio apsisukimo daviklis☣ ☣ ☣ ☣HDA10CS101 Pelenų transporterio apsisukimo daviklis☣DI02☣11☣11☣CJF11_DI02_11☣###☣
+439☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣12☣12☣CJF11_DI02_12☣###☣
+440☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣CJF11_DI02_13☣###☣
+441☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣CJF11_DI02_14☣###☣
+442☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣CJF11_DI02_15☣###☣
+443☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣CJF11_DI02_16☣###☣
+444☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣01☣1☣CJF11_DI03_01☣###☣
+445☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣02☣2☣CJF11_DI03_02☣###☣
+446☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣03☣3☣CJF11_DI03_03☣###☣
+447☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣04☣4☣CJF11_DI03_04☣###☣
+448☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣05☣5☣CJF11_DI03_05☣###☣
+449☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣06☣6☣CJF11_DI03_06☣###☣
+450☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣07☣7☣CJF11_DI03_07☣###☣
+451☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣08☣8☣CJF11_DI03_08☣###☣
+452☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣09☣9☣CJF11_DI03_09☣###☣
+453☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣10☣10☣CJF11_DI03_10☣###☣
+454☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣11☣11☣CJF11_DI03_11☣###☣
+455☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣12☣12☣CJF11_DI03_12☣###☣
+456☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣13☣13☣CJF11_DI03_13☣###☣
+457☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣14☣14☣CJF11_DI03_14☣###☣
+458☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣15☣15☣CJF11_DI03_15☣###☣
+459☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣16☣16☣CJF11_DI03_16☣###☣
+460☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI04☣01☣1☣CJF11_DI04_01☣###☣
+461☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI04☣02☣2☣CJF11_DI04_02☣###☣
+462☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣DI04☣03☣3☣CJF11_DI04_03☣###☣
+463☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣DI04☣04☣4☣CJF11_DI04_04☣###☣
+464☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣DI04☣05☣5☣CJF11_DI04_05☣###☣
+465☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣DI04☣06☣6☣CJF11_DI04_06☣###☣
+466☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣STOP Skyde☣ ☣ ☣ ☣STOP Skyde☣DI04☣07☣7☣CJF11_DI04_07☣###☣
+467☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣DI04☣08☣8☣CJF11_DI04_08☣###☣
+468☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI04☣09☣9☣CJF11_DI04_09☣###☣
+469☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI04☣10☣10☣CJF11_DI04_10☣###☣
+470☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣DI04☣11☣11☣CJF11_DI04_11☣###☣
+471☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣DI04☣12☣12☣CJF11_DI04_12☣###☣
+472☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣DI04☣13☣13☣CJF11_DI04_13☣###☣
+473☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣14☣14☣CJF11_DI04_14☣###☣
+474☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣15☣15☣CJF11_DI04_15☣###☣
+475☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Dūmsiurblio avarija☣ ☣ ☣ ☣Dūmsiurblio avarija☣DI04☣16☣16☣CJF11_DI04_16☣###☣
+476☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės kvitavimas☣ ☣ ☣ ☣Saugų relės kvitavimas☣DO01☣01☣1☣CJF11_DO01_01☣###☣
+477☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Sirena☣ ☣ ☣ ☣Sirena☣DO01☣02☣2☣CJF11_DO01_02☣###☣
+478☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryti☣OPN☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryti☣DO01☣03☣3☣CJF11_DO01_03☣###☣
+479☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Stop☣ ☣ ☣ ☣Pakura Stop☣DO01☣04☣4☣CJF11_DO01_04☣###☣
+480☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Start☣ ☣ ☣ ☣Pakura Start☣DO01☣05☣5☣CJF11_DO01_05☣###☣
+481☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Apsaugų išvedimas☣ ☣ ☣ ☣Apsaugų išvedimas☣DO01☣06☣6☣CJF11_DO01_06☣###☣
+482☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣DO01☣07☣7☣CJF11_DO01_07☣###☣
+483☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣08☣8☣CJF11_DO01_08☣###☣
+484☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣CJF11_DO01_09☣###☣
+485☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣CJF11_DO01_10☣###☣
+486☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣CJF11_DO01_11☣###☣
+487☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣CJF11_DO01_12☣###☣
+488☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣CJF11_DO01_13☣###☣
+489☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣CJF11_DO01_14☣###☣
+490☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣CJF11_DO01_15☣###☣
+491☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣CJF11_DO01_16☣###☣
+492☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.1: Pirmyn☣DO02☣01☣1☣CJF11_DO02_01☣###☣
+493☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Atgal☣Cls☣Maitintuvas Nr.1: Atgal☣DO02☣02☣2☣CJF11_DO02_02☣###☣
+494☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.2: Pirmyn☣DO02☣03☣3☣CJF11_DO02_03☣###☣
+495☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Atgal☣Cls☣Maitintuvas Nr.2: Atgal☣DO02☣04☣4☣CJF11_DO02_04☣###☣
+496☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Pirmyn☣Opn☣Ardynas Nr.1: Pirmyn☣DO02☣05☣5☣CJF11_DO02_05☣###☣
+497☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Atgal☣Cls☣Ardynas Nr.1: Atgal☣DO02☣06☣6☣CJF11_DO02_06☣###☣
+498☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Pirmyn☣Opn☣Ardynas Nr.2: Pirmyn☣DO02☣07☣7☣CJF11_DO02_07☣###☣
+499☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Atgal☣Cls☣Ardynas Nr.2: Atgal☣DO02☣08☣8☣CJF11_DO02_08☣###☣
+500☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Išilginis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣09☣9☣CJF11_DO02_09☣###☣
+501☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Išilginis pelenų šalinimo hidrocilindras: Atgal☣DO02☣10☣10☣CJF11_DO02_10☣###☣
+502☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Pagrindinis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣11☣11☣CJF11_DO02_11☣###☣
+503☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Pagrindinis pelenų šalinimo hidrocilindras: Atgal☣DO02☣12☣12☣CJF11_DO02_12☣###☣
+504☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Pirmyn☣DO02☣13☣13☣CJF11_DO02_13☣###☣
+505☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Atgal☣DO02☣14☣14☣CJF11_DO02_14☣###☣
+506☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Pirmyn☣DO02☣15☣15☣CJF11_DO02_15☣###☣
+507☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Atgal☣DO02☣16☣16☣CJF11_DO02_16☣###☣
+508☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Pirmyn☣DO03☣01☣1☣CJF11_DO03_01☣###☣
+509☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Atgal☣DO03☣02☣2☣CJF11_DO03_02☣###☣
+510☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣03☣3☣CJF11_DO03_03☣###☣
+511☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣04☣4☣CJF11_DO03_04☣###☣
+512☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Atidaryti☣OPN☣Kuro bunkerio sklendė : Atidaryti☣DO03☣05☣5☣CJF11_DO03_05☣###☣
+513☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Uždaryti☣CLS☣Kuro bunkerio sklendė : Uždaryti☣DO03☣06☣6☣CJF11_DO03_06☣###☣
+514☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣07☣7☣CJF11_DO03_07☣###☣
+515☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣08☣8☣CJF11_DO03_08☣###☣
+516☣CJF11☣ ☣O2☣ ☣ ☣ ☣VLV☣jutiklio apipūtimo solenoidinis vožtuvas☣ ☣Atidaryti☣OPN☣O2 jutiklio apipūtimo solenoidinis vožtuvas: Atidaryti☣DO03☣09☣9☣CJF11_DO03_09☣###☣
+517☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Gaisro bunkeryje gesinimo vožtuvas☣ ☣Atidaryti☣OPN☣Gaisro bunkeryje gesinimo vožtuvas: Atidaryti☣DO03☣10☣10☣CJF11_DO03_10☣###☣
+518☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣11☣11☣CJF11_DO03_11☣###☣
+519☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣12☣12☣CJF11_DO03_12☣###☣
+520☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣13☣13☣CJF11_DO03_13☣###☣
+521☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣14☣14☣CJF11_DO03_14☣###☣
+522☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣15☣15☣CJF11_DO03_15☣###☣
+523☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣16☣16☣CJF11_DO03_16☣###☣
+524☣BJA10☣ ☣HNC10AN001☣ ☣ ☣ ☣ ☣Dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNC10AN001 Dūmsiurbis: Jėgos grandinė paruošta☣DI01☣01☣1☣BJA10_DI01_01☣###☣
+525☣BJA10☣ ☣HNF10AN001☣ ☣ ☣ ☣ ☣Dūmų recirkuliacijos dūmsiurbis☣ ☣Jėgos grandinė paruošta☣Ready☣HNF10AN001 Dūmų recirkuliacijos dūmsiurbis: Jėgos grandinė paruošta☣DI01☣02☣2☣BJA10_DI01_02☣###☣
+526☣BJA10☣ ☣HLB10AN001☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 1☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN001 Pirminio oro ventiliatorius Nr. 1: Jėgos grandinė paruošta☣DI01☣03☣3☣BJA10_DI01_03☣###☣
+527☣BJA10☣ ☣HLB10AN002☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr. 2☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN002 Pirminio oro ventiliatorius Nr. 2: Jėgos grandinė paruošta☣DI01☣04☣4☣BJA10_DI01_04☣###☣
+528☣BJA10☣ ☣HLB10AN003☣ ☣ ☣ ☣MOT☣Pirminio oro ventiliatorius Nr.3☣ ☣Jėgos grandinė paruošta☣Ready☣HLB10AN003 Pirminio oro ventiliatorius Nr.3: Jėgos grandinė paruošta☣DI01☣05☣5☣BJA10_DI01_05☣###☣
+529☣BJA10☣ ☣HLB20AN001☣ ☣ ☣ ☣MOT☣Antrinio oro ventiliatorius ☣ ☣Jėgos grandinė paruošta☣Ready☣HLB20AN001 Antrinio oro ventiliatorius : Jėgos grandinė paruošta☣DI01☣06☣6☣BJA10_DI01_06☣###☣
+530☣BJA10☣ ☣HLB30AN010☣ ☣ ☣ ☣MOT☣Tretinio oro ventiliatorius☣ ☣Jėgos grandinė paruošta☣Ready☣HLB30AN010 Tretinio oro ventiliatorius: Jėgos grandinė paruošta☣DI01☣07☣7☣BJA10_DI01_07☣###☣
+531☣BJA10☣ ☣NDA11AP001☣ ☣ ☣ ☣MOT☣Katilo recirkuliacinis siurblys☣ ☣Jėgos grandinė paruošta☣Ready☣NDA11AP001 Katilo recirkuliacinis siurblys: Jėgos grandinė paruošta☣DI01☣08☣8☣BJA10_DI01_08☣###☣
+532☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Darbas☣On☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Darbas☣DI01☣09☣9☣BJA10_DI01_09☣###☣
+533☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Jėgos grandinė paruošta☣DI01☣10☣10☣BJA10_DI01_10☣###☣
+534☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Darbas☣On☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Darbas☣DI01☣11☣11☣BJA10_DI01_11☣###☣
+535☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Jėgos grandinė paruošta☣DI01☣12☣12☣BJA10_DI01_12☣###☣
+536☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Darbas☣On☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Darbas☣DI01☣13☣13☣BJA10_DI01_13☣###☣
+537☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Jėgos grandinė paruošta☣Ready☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Jėgos grandinė paruošta☣DI01☣14☣14☣BJA10_DI01_14☣###☣
+538☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣BJA10_DI01_15☣###☣
+539☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣BJA10_DI01_16☣###☣
+540☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Darbas☣On☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Darbas☣DI02☣01☣1☣BJA10_DI02_01☣###☣
+541☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣Jėgos grandinė paruošta☣Ready☣ETG10AB001 Rotacinė multiciklono pelenų sklendė: Jėgos grandinė paruošta☣DI02☣02☣2☣BJA10_DI02_02☣###☣
+542☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает☣DI02☣03☣3☣BJA10_DI02_03☣###☣
+543☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Работает (Реверс )☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Работает (Реверс )☣DI02☣04☣4☣BJA10_DI02_04☣###☣
+544☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Силовая цепь готова☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Силовая цепь готова☣DI02☣05☣5☣BJA10_DI02_05☣###☣
+545☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣06☣6☣BJA10_DI02_06☣###☣
+546☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣07☣7☣BJA10_DI02_07☣###☣
+547☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣08☣8☣BJA10_DI02_08☣###☣
+548☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣09☣9☣BJA10_DI02_09☣###☣
+549☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DI02☣10☣10☣BJA10_DI02_10☣###☣
+550☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣Jėgos grandinė paruošta☣DI02☣11☣11☣BJA10_DI02_11☣###☣
+551☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣12☣12☣BJA10_DI02_12☣###☣
+552☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣BJA10_DI02_13☣###☣
+553☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣BJA10_DI02_14☣###☣
+554☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣BJA10_DI02_15☣###☣
+555☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣BJA10_DI02_16☣###☣
+556☣BJA10☣ ☣HHC10EM001☣ ☣ ☣ ☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣Paleisti☣Start☣HHC10EM001 Maitintuvų hidraulinės stotelės variklis: Paleisti☣DO01☣01☣1☣BJA10_DO01_01☣###☣
+557☣BJA10☣ ☣HHC10EM002☣ ☣ ☣ ☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣Paleisti☣Start☣HHC10EM002 Pakuros hidraulinė stotis - ardynas: Paleisti☣DO01☣02☣2☣BJA10_DO01_02☣###☣
+558☣BJA10☣ ☣HHC10EM003☣ ☣ ☣ ☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣Paleisti☣Start☣HHC10EM003 Pakuros hidraulinė stotis-pelenų žertuvas: Paleisti☣DO01☣03☣3☣BJA10_DO01_03☣###☣
+559☣BJA10☣ ☣ETG10AB001☣ ☣ ☣ ☣VLV☣Rotacinė multiciklono pelenų sklendė:☣ ☣ ☣ ☣ETG10AB001 Rotacinė multiciklono pelenų sklendė:☣DO01☣04☣4☣BJA10_DO01_04☣###☣
+560☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Старт☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Старт☣DO01☣05☣5☣BJA10_DO01_05☣###☣
+561☣BJA10☣ ☣HDA10AF001☣ ☣ ☣ ☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣Реверс☣ ☣HDA10AF001 Grandiklinis pelenų šalinimo transporteris: Реверс☣DO01☣06☣6☣BJA10_DO01_06☣###☣
+562☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣07☣7☣BJA10_DO01_07☣###☣
+563☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣08☣8☣BJA10_DO01_08☣###☣
+564☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣BJA10_DO01_09☣###☣
+565☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣BJA10_DO01_10☣###☣
+566☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣BJA10_DO01_11☣###☣
+567☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣BJA10_DO01_12☣###☣
+568☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas:☣ ☣ ☣ ☣Rezervas:☣DO01☣13☣13☣BJA10_DO01_13☣###☣
+569☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣BJA10_DO01_14☣###☣
+570☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣BJA10_DO01_15☣###☣
+571☣BJA10☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣BJA10_DO01_16☣###☣
+572☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣4...20mA☣ ☣HHC10CP301 Trauka pakuroje: 4...20mA☣AI01☣01☣1☣CJF11_AI01_01☣###☣
+573☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT001 Kuro bunkerio temperatūra : 4...20mA☣AI01☣02☣2☣CJF11_AI01_02☣###☣
+574☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣4...20mA☣ ☣HFB10CT002 Kuro bunkerio temperatūra : 4...20mA☣AI01☣03☣3☣CJF11_AI01_03☣###☣
+575☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI01☣04☣4☣CJF11_AI01_04☣###☣
+576☣CJF11☣ ☣HHC10CP010☣ ☣ ☣ ☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣HHC10CP010 Tepalo slėgis hidrostotelėje☣AI01☣05☣5☣CJF11_AI01_05☣###☣
+577☣CJF11☣ ☣HNF40CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF40CP001 Dūmų recirkuliacijos slėgis☣AI01☣06☣6☣CJF11_AI01_06☣###☣
+578☣CJF11☣ ☣HNF30CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF30CP001 Dūmų recirkuliacijos slėgis☣AI01☣07☣7☣CJF11_AI01_07☣###☣
+579☣CJF11☣ ☣HNF20CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF20CP001 Dūmų recirkuliacijos slėgis☣AI01☣08☣8☣CJF11_AI01_08☣###☣
+580☣CJF11☣ ☣HHC10CT001☣ ☣ ☣ ☣AI☣Ardyno Nr. 1 temperatūra☣ ☣ ☣ ☣HHC10CT001 Ardyno Nr. 1 temperatūra☣AI02☣01☣1☣CJF11_AI02_01☣###☣
+581☣CJF11☣ ☣HHC10CT002☣ ☣ ☣ ☣AI☣Ardyno Nr. 2 temperatūra☣ ☣ ☣ ☣HHC10CT002 Ardyno Nr. 2 temperatūra☣AI02☣02☣2☣CJF11_AI02_02☣###☣
+582☣CJF11☣ ☣HHC10CT003☣ ☣ ☣ ☣AI☣Ardyno Nr. 3 temperatūra☣ ☣ ☣ ☣HHC10CT003 Ardyno Nr. 3 temperatūra☣AI02☣03☣3☣CJF11_AI02_03☣###☣
+583☣CJF11☣ ☣HHC10CT004☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT004 Temperatūra pakuroje☣AI02☣04☣4☣CJF11_AI02_04☣###☣
+584☣CJF11☣ ☣HHC10CT006☣ ☣ ☣ ☣AI☣Dūmų temperatūra išėjime iš pakuros☣ ☣ ☣ ☣HHC10CT006 Dūmų temperatūra išėjime iš pakuros☣AI02☣05☣5☣CJF11_AI02_05☣###☣
+585☣CJF11☣ ☣HNA10CT001☣ ☣ ☣ ☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣HNA10CT001 Dūmų temperatūra už katilo☣AI02☣06☣6☣CJF11_AI02_06☣###☣
+586☣CJF11☣ ☣HHC10CT005☣ ☣ ☣ ☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣HHC10CT005 Temperatūra pakuroje☣AI02☣07☣7☣CJF11_AI02_07☣###☣
+587☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI02☣08☣8☣CJF11_AI02_08☣###☣
+588☣CJF11☣ ☣HHC10CP001☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.1☣ ☣ ☣ ☣HHC10CP001 Pirminio oro slėgis po ardynu Nr.1☣AI03☣01☣1☣CJF11_AI03_01☣###☣
+589☣CJF11☣ ☣HHC10CP002☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.2☣ ☣ ☣ ☣HHC10CP002 Pirminio oro slėgis po ardynu Nr.2☣AI03☣02☣2☣CJF11_AI03_02☣###☣
+590☣CJF11☣ ☣HHC10CP003☣ ☣ ☣ ☣AI☣Pirminio oro slėgis po ardynu Nr.3☣ ☣ ☣ ☣HHC10CP003 Pirminio oro slėgis po ardynu Nr.3☣AI03☣03☣3☣CJF11_AI03_03☣###☣
+591☣CJF11☣ ☣HNF10CP001☣ ☣ ☣ ☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣HNF10CP001 Dūmų recirkuliacijos slėgis☣AI03☣04☣4☣CJF11_AI03_04☣###☣
+592☣CJF11☣ ☣HLA10CF001☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.1☣ ☣ ☣ ☣HLA10CF001 Pirminio oro srautas po ardynu Nr.1☣AI03☣05☣5☣CJF11_AI03_05☣###☣
+593☣CJF11☣ ☣HLA10CF002☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.2☣ ☣ ☣ ☣HLA10CF002 Pirminio oro srautas po ardynu Nr.2☣AI03☣06☣6☣CJF11_AI03_06☣###☣
+594☣CJF11☣ ☣HLA10CF003☣ ☣ ☣ ☣AI☣Pirminio oro srautas po ardynu Nr.3☣ ☣ ☣ ☣HLA10CF003 Pirminio oro srautas po ardynu Nr.3☣AI03☣07☣7☣CJF11_AI03_07☣###☣
+595☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI03☣08☣8☣CJF11_AI03_08☣###☣
+596☣CJF11☣ ☣NDB80CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣NDB80CT001 Termofikacinio vandens temperatūra prieš katilą☣AI04☣01☣1☣CJF11_AI04_01☣###☣
+597☣CJF11☣ ☣NDB80CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis prieš katilą☣ ☣ ☣ ☣NDB80CP001 Termofikacinio vandens slėgis prieš katilą☣AI04☣02☣2☣CJF11_AI04_02☣###☣
+598☣CJF11☣ ☣NDA10CT001☣ ☣ ☣ ☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣NDA10CT001 Termofikacinio vandens temperatūra už katilo☣AI04☣03☣3☣CJF11_AI04_03☣###☣
+599☣CJF11☣ ☣NDA10CP001☣ ☣ ☣ ☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣NDA10CP001 Termofikacinio vandens slėgis už katilo☣AI04☣04☣4☣CJF11_AI04_04☣###☣
+600☣CJF11☣ ☣HNA10CQ001☣ ☣ ☣ ☣AI☣O2 kiekis dūmuose☣ ☣ ☣ ☣HNA10CQ001 O2 kiekis dūmuose☣AI04☣05☣5☣CJF11_AI04_05☣###☣
+601☣CJF11☣ ☣HFB10CL001☣ ☣ ☣ ☣AI☣Kuro lygis bunkeryje☣ ☣ ☣ ☣HFB10CL001 Kuro lygis bunkeryje☣AI04☣06☣6☣CJF11_AI04_06☣###☣
+602☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣07☣7☣CJF11_AI04_07☣###☣
+603☣CJF11☣ ☣XTA1☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣XTA1 Rezervas☣AI04☣08☣8☣CJF11_AI04_08☣###☣
+604☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣01☣1☣CJF11_AI05_01☣###☣
+605☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣02☣2☣CJF11_AI05_02☣###☣
+606☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėtis☣PV☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėtis☣AI05☣03☣3☣CJF11_AI05_03☣###☣
+607☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣04☣4☣CJF11_AI05_04☣###☣
+608☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣05☣5☣CJF11_AI05_05☣###☣
+609☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣06☣6☣CJF11_AI05_06☣###☣
+610☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣07☣7☣CJF11_AI05_07☣###☣
+611☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AI05☣08☣8☣CJF11_AI05_08☣###☣
+612☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėtis☣PV☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėtis☣AIV01☣01☣1☣CJF11_AIV01_01☣###☣
+613☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėtis☣PV☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėtis☣AIV01☣02☣2☣CJF11_AIV01_02☣###☣
+614☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėtis☣PV☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėtis☣AIV01☣03☣3☣CJF11_AIV01_03☣###☣
+615☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣04☣4☣CJF11_AIV01_04☣###☣
+616☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣05☣5☣CJF11_AIV01_05☣###☣
+617☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣06☣6☣CJF11_AIV01_06☣###☣
+618☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣07☣7☣CJF11_AIV01_07☣###☣
+619☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AIV01☣08☣8☣CJF11_AIV01_08☣###☣
+620☣CJF11☣ ☣HHF20AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF20AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣01☣1☣CJF11_AO02_01☣###☣
+621☣CJF11☣ ☣HNF30AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HNF30AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣02☣2☣CJF11_AO02_02☣###☣
+622☣CJF11☣ ☣HHF40AA201☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Padėties valdymas☣SP☣HHF40AA201 Dūmų recirkuliacijos užsklanda: Padėties valdymas☣AO02☣03☣3☣CJF11_AO02_03☣###☣
+623☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AO02☣04☣4☣CJF11_AO02_04☣###☣
+624☣CJF11☣ ☣HLA10AA201☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣Padėties valdymas☣SP☣HLA10AA201 Pirminio oro užsklanda Nr.1: Padėties valdymas☣AOV01☣01☣1☣CJF11_AOV01_01☣###☣
+625☣CJF11☣ ☣HLA10AA202☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣Padėties valdymas☣SP☣HLA10AA202 Pirminio oro užsklanda Nr.2: Padėties valdymas☣AOV01☣02☣2☣CJF11_AOV01_02☣###☣
+626☣CJF11☣ ☣HLA10AA203☣ ☣ ☣ ☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣Padėties valdymas☣SP☣HLA10AA203 Pirminio oro užsklanda Nr.3: Padėties valdymas☣AOV01☣03☣3☣CJF11_AOV01_03☣###☣
+627☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣AOV01☣04☣4☣CJF11_AOV01_04☣###☣
+628☣CJF11☣ ☣HHC10CP301☣ ☣ ☣ ☣AI☣Trauka pakuroje☣ ☣Gedimas☣trip☣HHC10CP301 Trauka pakuroje: Gedimas☣DI01☣01☣1☣CJF11_DI01_01☣###☣
+629☣CJF11☣ ☣HFB10CT001☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT001 Kuro bunkerio temperatūra : Gedimas☣DI01☣02☣2☣CJF11_DI01_02☣###☣
+630☣CJF11☣ ☣HFB10CT002☣ ☣ ☣ ☣AI☣Kuro bunkerio temperatūra ☣ ☣Gedimas☣trip☣HFB10CT002 Kuro bunkerio temperatūra : Gedimas☣DI01☣03☣3☣CJF11_DI01_03☣###☣
+631☣CJF11☣ ☣HHC10CL101☣ ☣ ☣ ☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣HHC10CL101 Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣DI01☣04☣4☣CJF11_DI01_04☣###☣
+632☣CJF11☣ ☣HHC10CP101☣ ☣ ☣ ☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣HHC10CP101 Užsiterštas filtras hidrostotelėje☣DI01☣05☣5☣CJF11_DI01_05☣###☣
+633☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Closed☣ ☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Closed☣DI01☣06☣6☣CJF11_DI01_06☣###☣
+634☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryta☣OPD☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryta☣DI01☣07☣7☣CJF11_DI01_07☣###☣
+635☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Distancinis valdymas☣SP☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Distancinis valdymas☣DI01☣08☣8☣CJF11_DI01_08☣###☣
+636☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Pirmyn)☣Start☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Pirmyn)☣DI01☣09☣9☣CJF11_DI01_09☣###☣
+637☣CJF11☣ ☣HDA10GH001☣ ☣ ☣ ☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣Paleisti (Atgal)☣StartRv☣HDA10GH001 Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001: Paleisti (Atgal)☣DI01☣10☣10☣CJF11_DI01_10☣###☣
+638☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣11☣11☣CJF11_DI01_11☣###☣
+639☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣12☣12☣CJF11_DI01_12☣###☣
+640☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣13☣13☣CJF11_DI01_13☣###☣
+641☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣14☣14☣CJF11_DI01_14☣###☣
+642☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣15☣15☣CJF11_DI01_15☣###☣
+643☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI01☣16☣16☣CJF11_DI01_16☣###☣
+644☣CJF11☣ ☣HFB10CG101☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG101 Maitintuvo Nr.1 padėties daviklis: Priekyje☣DI02☣01☣1☣CJF11_DI02_01☣###☣
+645☣CJF11☣ ☣HFB10CG102☣ ☣ ☣ ☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG102 Maitintuvo Nr.1 padėties daviklis: Gale☣DI02☣02☣2☣CJF11_DI02_02☣###☣
+646☣CJF11☣ ☣HFB10CG103☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HFB10CG103 Maitintuvo Nr.2 padėties daviklis: Priekyje☣DI02☣03☣3☣CJF11_DI02_03☣###☣
+647☣CJF11☣ ☣HFB10CG104☣ ☣ ☣ ☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HFB10CG104 Maitintuvo Nr.2 padėties daviklis: Gale☣DI02☣04☣4☣CJF11_DI02_04☣###☣
+648☣CJF11☣ ☣HHC10CG101☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG101 Ardyno Nr.1 padėties daviklis: Priekyje☣DI02☣05☣5☣CJF11_DI02_05☣###☣
+649☣CJF11☣ ☣HHC10CG102☣ ☣ ☣ ☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG102 Ardyno Nr.1 padėties daviklis: Gale☣DI02☣06☣6☣CJF11_DI02_06☣###☣
+650☣CJF11☣ ☣HHC10CG103☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Priekyje☣Opd☣HHC10CG103 Ardyno Nr.2 padėties daviklis: Priekyje☣DI02☣07☣7☣CJF11_DI02_07☣###☣
+651☣CJF11☣ ☣HHC10CG104☣ ☣ ☣ ☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣Gale☣Cld☣HHC10CG104 Ardyno Nr.2 padėties daviklis: Gale☣DI02☣08☣8☣CJF11_DI02_08☣###☣
+652☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG105☣Atidaryta☣OPD☣HFB10AA401 bunkerio sklendė; HFB10CG105: Atidaryta☣DI02☣09☣9☣CJF11_DI02_09☣###☣
+653☣CJF11☣ ☣HFB10AA401☣ ☣ ☣ ☣VLV☣bunkerio sklendė☣HFB10CG106☣Uždaryta☣CLD☣HFB10AA401 bunkerio sklendė; HFB10CG106: Uždaryta☣DI02☣10☣10☣CJF11_DI02_10☣###☣
+654☣CJF11☣ ☣HDA10CS101☣ ☣ ☣ ☣ ☣Pelenų transporterio apsisukimo daviklis☣ ☣ ☣ ☣HDA10CS101 Pelenų transporterio apsisukimo daviklis☣DI02☣11☣11☣CJF11_DI02_11☣###☣
+655☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI02☣12☣12☣CJF11_DI02_12☣###☣
+656☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣13☣13☣CJF11_DI02_13☣###☣
+657☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣14☣14☣CJF11_DI02_14☣###☣
+658☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣15☣15☣CJF11_DI02_15☣###☣
+659☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI02☣16☣16☣CJF11_DI02_16☣###☣
+660☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣01☣1☣CJF11_DI03_01☣###☣
+661☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣02☣2☣CJF11_DI03_02☣###☣
+662☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣03☣3☣CJF11_DI03_03☣###☣
+663☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣04☣4☣CJF11_DI03_04☣###☣
+664☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣05☣5☣CJF11_DI03_05☣###☣
+665☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣06☣6☣CJF11_DI03_06☣###☣
+666☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣07☣7☣CJF11_DI03_07☣###☣
+667☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DI03☣08☣8☣CJF11_DI03_08☣###☣
+668☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣09☣9☣CJF11_DI03_09☣###☣
+669☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣10☣10☣CJF11_DI03_10☣###☣
+670☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣11☣11☣CJF11_DI03_11☣###☣
+671☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣12☣12☣CJF11_DI03_12☣###☣
+672☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣13☣13☣CJF11_DI03_13☣###☣
+673☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣14☣14☣CJF11_DI03_14☣###☣
+674☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣15☣15☣CJF11_DI03_15☣###☣
+675☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DI03☣16☣16☣CJF11_DI03_16☣###☣
+676☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS1 dirba☣DI04☣01☣1☣CJF11_DI04_01☣###☣
+677☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS2 dirba☣DI04☣02☣2☣CJF11_DI04_02☣###☣
+678☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣ ☣ ☣ ☣Maitinimo šaltinis PS3 dirba☣DI04☣03☣3☣CJF11_DI04_03☣###☣
+679☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣ ☣ ☣ ☣Vietinis STOP postas Nr.1☣DI04☣04☣4☣CJF11_DI04_04☣###☣
+680☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣ ☣ ☣ ☣Vietinis STOP postas Nr.2☣DI04☣05☣5☣CJF11_DI04_05☣###☣
+681☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣ ☣ ☣ ☣Vietinis STOP postas Rezervas☣DI04☣06☣6☣CJF11_DI04_06☣###☣
+682☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣STOP Skyde☣ ☣ ☣ ☣STOP Skyde☣DI04☣07☣7☣CJF11_DI04_07☣###☣
+683☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣ ☣ ☣ ☣Katilo jėgos skyde BJA10 dingo valdymo grandinių įtampa☣DI04☣08☣8☣CJF11_DI04_08☣###☣
+684☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC UPS☣DI04☣09☣9☣CJF11_DI04_09☣###☣
+685☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣ ☣ ☣ ☣Įtampos kontrole Įvadas 230V AC Rezervinis☣DI04☣10☣10☣CJF11_DI04_10☣###☣
+686☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣Aukšta termofikacinio vandens temperatūra už katilo☣DI04☣11☣11☣CJF11_DI04_11☣###☣
+687☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Aukštas termofikacinio vandens slėgis už katilo☣DI04☣12☣12☣CJF11_DI04_12☣###☣
+688☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣Žemas termofikacinio vandens slėgis už katilo☣DI04☣13☣13☣CJF11_DI04_13☣###☣
+689☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Antrinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣14☣14☣CJF11_DI04_14☣###☣
+690☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣ ☣ ☣ ☣Tretinio oro ventiliatoriaus dažnio keitiklio avarija☣DI04☣15☣15☣CJF11_DI04_15☣###☣
+691☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Dūmsiurblio avarija☣ ☣ ☣ ☣Dūmsiurblio avarija☣DI04☣16☣16☣CJF11_DI04_16☣###☣
+692☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Saugų relės kvitavimas☣ ☣ ☣ ☣Saugų relės kvitavimas☣DO01☣01☣1☣CJF11_DO01_01☣###☣
+693☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Sirena☣ ☣ ☣ ☣Sirena☣DO01☣02☣2☣CJF11_DO01_02☣###☣
+694☣CJF11☣ ☣HNF10AA401☣ ☣ ☣ ☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣Atidaryti☣OPN☣HNF10AA401 Dūmų recirkuliacijos užsklanda: Atidaryti☣DO01☣03☣3☣CJF11_DO01_03☣###☣
+695☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Stop☣ ☣ ☣ ☣Pakura Stop☣DO01☣04☣4☣CJF11_DO01_04☣###☣
+696☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pakura Start☣ ☣ ☣ ☣Pakura Start☣DO01☣05☣5☣CJF11_DO01_05☣###☣
+697☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Apsaugų išvedimas☣ ☣ ☣ ☣Apsaugų išvedimas☣DO01☣06☣6☣CJF11_DO01_06☣###☣
+698☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣ ☣ ☣ ☣Įjungti valdymo grandinių maitinimas BJA10 skyde☣DO01☣07☣7☣CJF11_DO01_07☣###☣
+699☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣08☣8☣CJF11_DO01_08☣###☣
+700☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣09☣9☣CJF11_DO01_09☣###☣
+701☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣10☣10☣CJF11_DO01_10☣###☣
+702☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣11☣11☣CJF11_DO01_11☣###☣
+703☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣12☣12☣CJF11_DO01_12☣###☣
+704☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣13☣13☣CJF11_DO01_13☣###☣
+705☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣14☣14☣CJF11_DO01_14☣###☣
+706☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣15☣15☣CJF11_DO01_15☣###☣
+707☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣DO01☣16☣16☣CJF11_DO01_16☣###☣
+708☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.1: Pirmyn☣DO02☣01☣1☣CJF11_DO02_01☣###☣
+709☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.1☣ ☣Atgal☣Cls☣Maitintuvas Nr.1: Atgal☣DO02☣02☣2☣CJF11_DO02_02☣###☣
+710☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Pirmyn☣Opn☣Maitintuvas Nr.2: Pirmyn☣DO02☣03☣3☣CJF11_DO02_03☣###☣
+711☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Maitintuvas Nr.2☣ ☣Atgal☣Cls☣Maitintuvas Nr.2: Atgal☣DO02☣04☣4☣CJF11_DO02_04☣###☣
+712☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Pirmyn☣Opn☣Ardynas Nr.1: Pirmyn☣DO02☣05☣5☣CJF11_DO02_05☣###☣
+713☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.1☣ ☣Atgal☣Cls☣Ardynas Nr.1: Atgal☣DO02☣06☣6☣CJF11_DO02_06☣###☣
+714☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Pirmyn☣Opn☣Ardynas Nr.2: Pirmyn☣DO02☣07☣7☣CJF11_DO02_07☣###☣
+715☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Ardynas Nr.2☣ ☣Atgal☣Cls☣Ardynas Nr.2: Atgal☣DO02☣08☣8☣CJF11_DO02_08☣###☣
+716☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Išilginis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣09☣9☣CJF11_DO02_09☣###☣
+717☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Išilginis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Išilginis pelenų šalinimo hidrocilindras: Atgal☣DO02☣10☣10☣CJF11_DO02_10☣###☣
+718☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Pirmyn☣Opn☣Pagrindinis pelenų šalinimo hidrocilindras: Pirmyn☣DO02☣11☣11☣CJF11_DO02_11☣###☣
+719☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Pagrindinis pelenų šalinimo hidrocilindras☣ ☣Atgal☣Cls☣Pagrindinis pelenų šalinimo hidrocilindras: Atgal☣DO02☣12☣12☣CJF11_DO02_12☣###☣
+720☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Pirmyn☣DO02☣13☣13☣CJF11_DO02_13☣###☣
+721☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.1☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.1: Atgal☣DO02☣14☣14☣CJF11_DO02_14☣###☣
+722☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Pirmyn☣DO02☣15☣15☣CJF11_DO02_15☣###☣
+723☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.2☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.2: Atgal☣DO02☣16☣16☣CJF11_DO02_16☣###☣
+724☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Pirmyn☣Opn☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Pirmyn☣DO03☣01☣1☣CJF11_DO03_01☣###☣
+725☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Skersinis pelenų šalinimo hidrocilindras Nr.3☣ ☣Atgal☣Cls☣Skersinis pelenų šalinimo hidrocilindras Nr.3: Atgal☣DO03☣02☣2☣CJF11_DO03_02☣###☣
+726☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣03☣3☣CJF11_DO03_03☣###☣
+727☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣04☣4☣CJF11_DO03_04☣###☣
+728☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Atidaryti☣OPN☣Kuro bunkerio sklendė : Atidaryti☣DO03☣05☣5☣CJF11_DO03_05☣###☣
+729☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Kuro bunkerio sklendė ☣ ☣Uždaryti☣CLS☣Kuro bunkerio sklendė : Uždaryti☣DO03☣06☣6☣CJF11_DO03_06☣###☣
+730☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣07☣7☣CJF11_DO03_07☣###☣
+731☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣08☣8☣CJF11_DO03_08☣###☣
+732☣CJF11☣ ☣O2☣ ☣ ☣ ☣VLV☣jutiklio apipūtimo solenoidinis vožtuvas☣ ☣Atidaryti☣OPN☣O2 jutiklio apipūtimo solenoidinis vožtuvas: Atidaryti☣DO03☣09☣9☣CJF11_DO03_09☣###☣
+733☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Gaisro bunkeryje gesinimo vožtuvas☣ ☣Atidaryti☣OPN☣Gaisro bunkeryje gesinimo vožtuvas: Atidaryti☣DO03☣10☣10☣CJF11_DO03_10☣###☣
+734☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣11☣11☣CJF11_DO03_11☣###☣
+735☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣12☣12☣CJF11_DO03_12☣###☣
+736☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣13☣13☣CJF11_DO03_13☣###☣
+737☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣14☣14☣CJF11_DO03_14☣###☣
+738☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣15☣15☣CJF11_DO03_15☣###☣
+739☣CJF11☣ ☣ ☣ ☣ ☣ ☣ ☣Rezervas☣ ☣ ☣ ☣Rezervas☣DO03☣16☣16☣CJF11_DO03_16☣###☣
  ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣

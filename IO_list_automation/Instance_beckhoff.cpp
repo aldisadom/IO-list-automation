@@ -460,7 +460,7 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 	// create function call
 	cell_text = L"fb_";
 	cell_text.append(search_for_KKS);
-	cell_text.append(L"(Puls_100ms:= pulsas,");
+	cell_text.append(L"(");
 	Instance_grid_write_cell(grid_row_index, 0, cell_text, grid);
 
 	cell_text = L"dv := ";
@@ -470,10 +470,7 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 
 	cell_text = L"statw :=";
 	cell_text.append(search_for_KKS);
-	cell_text.append(L"_w1, ");
-	cell_text.append(L"statw2 :=");
-	cell_text.append(search_for_KKS);
-	cell_text.append(L"_w2");
+	cell_text.append(L"_w1");
 	Instance_grid_write_cell(grid_row_index, 2, cell_text, grid);
 
 	//search for signals that belong to function
@@ -520,8 +517,7 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 			{
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
-				cell_text.append(signals.data[row].Function);
-				cell_text.append(L"_in :=");
+				cell_text.append(L"AI_in :=");
 				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
 				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
 				cell_text = L"(*";
@@ -567,6 +563,13 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 			}
 		}
 	}
+	Instance_grid_add_line(grid_row_index, grid);
+	cell_text = L",value :=";
+	Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
+
+	cell_text = search_for_KKS;
+	Instance_grid_write_cell(grid_row_index, 2, cell_text, grid);
+
 	Instance_grid_add_line(grid_row_index, grid);
 	Instance_grid_write_cell(grid_row_index, 0, L");", grid);
 

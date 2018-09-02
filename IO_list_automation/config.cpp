@@ -289,12 +289,12 @@ void set_progress_value(int value)
 
 
 // parameters that can be added to _cfg file
-char parametrai_str[37][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
+char parametrai_str[38][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
 "Beckhoff_vlv", "Beckhoff_hc", "Beckhoff_mot", "Beckhoff_ai", "Beckhoff_fc", "Beckhoff_pid",
 "Siemens_vlv", "Siemens_hc", "Siemens_mot", "Siemens_ai", "Siemens_fc", "Siemens_pid",
 "ABB_800xA_vlv", "ABB_800xA_hc", "ABB_800xA_mot", "ABB_800xA_ai", "ABB_800xA_fc", "ABB_800xA_pid",
 "Schneider_vlv", "Schneider_hc", "Schneider_mot", "Schneider_ai", "Schneider_fc", "Schneider_pid",
-"try_import_if_corupt", "paste_sel_match" ,
+"try_import_if_corupt", "paste_sel_match" , "adresing_from_1",
 };
 
 
@@ -594,7 +594,18 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				break;
 			case 36:
 				pars->paste_sel_match = value;
-				break;				
+				break;	
+			case 37:
+				if (value > 0)
+				{
+					pars->adresing_from_1 = 1;
+				}
+				else
+				{
+					pars->adresing_from_1 = 0;
+				}
+				break;
+				
 			default:
 				strcpy_s(err_txt, sizeof err_txt, parametras);
 				strcat_s(err_txt, sizeof err_txt, error_separator);
