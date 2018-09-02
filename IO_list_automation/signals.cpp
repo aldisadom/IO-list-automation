@@ -57,7 +57,9 @@ std::wstring Signals_get_data_switch(int iCol, int index)
 		break;
 	case 15:	return signals.data[index].Pin;
 		break;
-	case 16:	return signals.data[index].Page;
+	case 16:	return signals.data[index].Tag;
+		break;
+	case 17:	return signals.data[index].Page;
 		break;
 	default:return LPWSTR(L"");
 		break;
@@ -100,7 +102,9 @@ void Signals_put_data_switch(int iCol, int index, wstring cell_text)
 		break;
 	case 15:	signals.data[index].Pin = cell_text;
 		break;
-	case 16:	signals.data[index].Page = cell_text;
+	case 16:	signals.data[index].Tag = cell_text;
+		break;
+	case 17:	signals.data[index].Page = cell_text;
 		break;
 	}
 }
@@ -213,35 +217,66 @@ int Signals_get_data_design()
 	int colon = 0;
 	int semi= 0;
 	int space = 0;
+	int size_text = 0;
+	int signal_row = 0;
+	int channel_text_size = 0;
+
 	wstring tmp_KKS;
 	wstring end0_char;
 	wstring end1_char;
-
+	wstring channel_text;
+	wstring test_module;
 
 	signals.valid_entries = project.valid_entries;
 	Global_resize_data(Signals_grid_index, signals.valid_entries + 1);
 
+	int max_digits = GetNumberOfDigits(project.valid_entries);
+	if ((pow(10, max_digits - 1) * 9) < signals.valid_entries) // if numbers are 90% filed increase digits by one
+	{
+		max_digits++;
+	}
+
 	for (int row = 0; row <= project.valid_entries; row++)
 	{
-		signals.data[row].number = project.data[row].number;
-		signals.data[row].Cabinet = project.data[row].Cabinet;
-		signals.data[row].Module = project.data[row].Module;
-		signals.data[row].Pin = project.data[row].Pin;
-		signals.data[row].Channel = project.data[row].Channel;
-		signals.data[row].IO_text = project.data[row].IO_text;
-		signals.data[row].Page = project.data[row].Page;
+		channel_text = project.data[row].Channel;
+		channel_text_size = channel_text.size();
+
+		if (channel_text_size>2)
+		{
+			channel_text = channel_text.substr(channel_text_size - 2);
+			channel_text_size = 2;
+		}	
+
+		//test if last 2 symbols are numbers
+		test_module =int_to_wstring(_wtoi(channel_text.c_str()), channel_text_size);
+		if (channel_text.compare(test_module.c_str()) != 0)
+		{
+			continue;
+		}
+
+		signals.data[signal_row].number = int_to_wstring(signal_row, max_digits);
+		signals.data[signal_row].Cabinet = project.data[row].Cabinet;
+		signals.data[signal_row].Module = project.data[row].Module;
+		signals.data[signal_row].Pin = project.data[row].Pin;
+		signals.data[signal_row].Channel = channel_text;
+		signals.data[signal_row].IO_text = project.data[row].IO_text;
+		signals.data[signal_row].Page = project.data[row].Page;
+
+
 
 		// IO_signal = (KKS_text) (Object text) ; (extendext object) : (signal function) 
 
-		colon = signals.data[row].IO_text.find(L":");
-		semi = signals.data[row].IO_text.find(L";");
-		space = signals.data[row].IO_text.find(L" ");
+		colon = signals.data[signal_row].IO_text.find(L":");
+		semi = signals.data[signal_row].IO_text.find(L";");
+		space = signals.data[signal_row].IO_text.find(L" ");
+		size_text = signals.data[signal_row].IO_text.size();
+
 
 		//check if first word is KKS symbol
 		// if atleast one of two last symbols are numers its kks
 		if (space != -1)
 		{
-			tmp_KKS = signals.data[row].IO_text.substr(0, space);
+			tmp_KKS = signals.data[signal_row].IO_text.substr(0, space);
 			
 			end0_char = tmp_KKS.back();
 			end1_char = tmp_KKS.substr(tmp_KKS.size()-2,1);
@@ -258,34 +293,51 @@ int Signals_get_data_design()
 			space = 0;
 		}
 
-		signals.data[row].KKS.Full = tmp_KKS;
+		
+		if (semi + 2 >= size_text)
+		{
+			semi = -1;
+		}
+		if (colon + 2 >= size_text)
+		{
+			colon = -1;
+		}
+		if ((colon >= 0) && (semi >= colon-2))
+		{
+			semi = -1;
+		}
+
+		signals.data[signal_row].KKS.Full = tmp_KKS;
 
 		if ((colon != -1) && (semi != -1))  // found colon, found semicolon
 		{
-			signals.data[row].Object_text = signals.data[row].IO_text.substr(space, semi-space);
-			signals.data[row].Extendet_object_text = signals.data[row].IO_text.substr(semi+2, colon- semi-2);
-			signals.data[row].Function_text = signals.data[row].IO_text.substr(colon + 2);
+			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space, semi-space);
+			signals.data[signal_row].Extendet_object_text = signals.data[signal_row].IO_text.substr(semi+2, colon- semi-2);
+			signals.data[signal_row].Function_text = signals.data[signal_row].IO_text.substr(colon + 2);
 		}
 		else if (semi != -1)						// no colon, found semicolon
 		{
-			signals.data[row].Object_text = signals.data[row].IO_text.substr(space, semi-space);
-			signals.data[row].Extendet_object_text = signals.data[row].IO_text.substr(semi + 2);
-			signals.data[row].Function_text = LPWSTR(L"");
+			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space, semi-space);
+			signals.data[signal_row].Extendet_object_text = signals.data[signal_row].IO_text.substr(semi + 2);
+			signals.data[signal_row].Function_text = LPWSTR(L"");
 		}
 		else if (colon != -1)							// found colon, no semicolon
 		{
-			signals.data[row].Object_text = signals.data[row].IO_text.substr(space,colon-space);
-			signals.data[row].Extendet_object_text = LPWSTR(L"");
-			signals.data[row].Function_text = signals.data[row].IO_text.substr(colon + 2);
+			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space,colon-space);
+			signals.data[signal_row].Extendet_object_text = LPWSTR(L"");
+			signals.data[signal_row].Function_text = signals.data[signal_row].IO_text.substr(colon + 2);
 		}
 		else												// no colon, no semicolon
 		{
-			signals.data[row].Object_text = signals.data[row].IO_text.substr(space);
-			signals.data[row].Extendet_object_text = LPWSTR(L"");
-			signals.data[row].Function_text = LPWSTR(L"");
+			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space);
+			signals.data[signal_row].Extendet_object_text = LPWSTR(L"");
+			signals.data[signal_row].Function_text = LPWSTR(L"");
 		}
+		signal_row++;
 		set_progress_value(row);
 	}
+	signals.valid_entries = signal_row-1;
+	Global_resize_data(Signals_grid_index, signal_row);
 
 	Hide_progress();
 	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
@@ -422,26 +474,7 @@ int Signals_all_KKS_trim()
 //reads learning data for object and function recognition
 int Signals_learn_data()
 {
-	if (learn.done == true)
-	{
-		if (show_confirm_window(conf_learn_overwrite[lang]) == IDOK)
-		{
-			learn = {};
-			learn.done = false;			
-
-			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
-			strcat_s(info_txt, sizeof info_txt, info_separator);
-			strcat_s(info_txt, sizeof info_txt, learning_txt[lang]);
-			info_write(info_txt);
-
-		}
-		else
-		{
-			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
-			return 1;
-		}
-	}
+	learn = {};
 	
 	std::wstring file_name = L".\\learning\\";	
 
@@ -597,8 +630,6 @@ int Signals_learn_data()
 	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
 	info_write(info_txt);
 
-	learn.done = true;
-
 	return 0;
 }
 //finds functions in signal data
@@ -623,13 +654,11 @@ int Signals_find_function()
 	wstring search_in_function_txt = L"";
 	wstring search_for = L"";
 
-	if (learn.done == false)
+	if (Signals_learn_data() == 1)
 	{
-		if (Signals_learn_data() == 1)
-		{
-			return 1;
-		}
+		return 1;
 	}
+	
 
 	strcpy_s(info_txt, sizeof info_txt, info_find_function[lang]);
 	info_write(info_txt);

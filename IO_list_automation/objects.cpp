@@ -269,14 +269,12 @@ int Objects_find_uniques()
 int Objects_find_objects()
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Objects_grid_index;
-	int override_all = 0;
-	if (learn.done == false)
+
+	if (Signals_learn_data() == 1)
 	{
-		if (Signals_learn_data() == 1)
-		{
-			return 1;
-		}
-	}	
+		return 1;
+	}
+
 
 	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 	if (objects.valid_entries <= 1)
@@ -391,22 +389,20 @@ int Objects_find_objects()
 		{
 			objects.data[index].Object_type = Object_type;
 		}
-		else if (override_all == 1) //if selected overwrite all then rewrites everythingg
-		{
-			objects.data[index].Object_type = Object_type;
-		}
-		else //if type of data in object exists ask for overwrite
+		else if (Object_type.compare(objects.data[index].Object_type) != 0)//if type of data in object exists ask for overwrite
 		{
 			GlobalForm::forma->Object_grid->FirstDisplayedScrollingRowIndex = index;
 			GlobalForm::forma->Object_grid->CurrentCell = GlobalForm::forma->Object_grid[3, index]; // show whitch cell is overwriten
 
 			text_confirm = conf_objects_type_overwrite[lang];
 			text_confirm.append(L" --- ");
+			text_confirm.append(objects.data[index].Object_type);
+			text_confirm.append(L" -> ");
 			text_confirm.append(Object_type);
 			if (show_confirm_window(text_confirm.c_str()) == IDOK)
 			{
 				objects.data[index].Object_type = Object_type;
-				override_all = 1;
+
 			}
 		}
 

@@ -10,6 +10,7 @@
 #include "Global_Functions.h"
 #include "Declare.h"
 #include "Instance.h"
+#include "IO_declare.h"
 
 #include <msclr/marshal_cppstd.h>
 
@@ -36,6 +37,7 @@ namespace IOlistautomation {
 			//
 			//TODO: Add the constructor code here
 			//
+
 		}
 
 	protected:
@@ -50,6 +52,8 @@ namespace IOlistautomation {
 			}
 		}
 	public: System::Windows::Forms::DataGridView^  Design_grid;
+
+
 	protected:
 
 	protected:
@@ -95,7 +99,7 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::ToolStripMenuItem^  Signals_FindFunction;
 	private: System::Windows::Forms::ToolStripMenuItem^  uniquesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  declareToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  iOToolStripMenuItem;
+
 	private: System::Windows::Forms::ToolStripMenuItem^  instanceToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  sCADAToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  Uniques_FindUniques;
@@ -109,7 +113,8 @@ namespace IOlistautomation {
 
 
 
-	private: System::Windows::Forms::ToolStripMenuItem^  IO_CreateIO;
+
+
 	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Generate;
 
 
@@ -139,6 +144,12 @@ private: System::Windows::Forms::ToolStripMenuItem^  File_LoadALL;
 private: System::Windows::Forms::ToolStripMenuItem^  Declare_GenerateAdress;
 
 private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator4;
+private: System::Windows::Forms::ToolStripMenuItem^  Instance_ShowIO;
+private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator5;
+private: System::Windows::Forms::ToolStripMenuItem^  Instance_GenerateIO;
+
+
+private:
 public:
 
 public:
@@ -209,9 +220,10 @@ private:
 			this->Declare_GenerateAdress = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripSeparator4 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->Declare_Adressing = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->iOToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->IO_CreateIO = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->instanceToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_GenerateIO = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Instance_ShowIO = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator5 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->Instance_Generate = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sCADAToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->SCADA_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -262,10 +274,10 @@ private:
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(8) {
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {
 				this->fileToolStripMenuItem,
 					this->projectToolStripMenuItem, this->signalsToolStripMenuItem, this->uniquesToolStripMenuItem, this->declareToolStripMenuItem,
-					this->iOToolStripMenuItem, this->instanceToolStripMenuItem, this->sCADAToolStripMenuItem
+					this->instanceToolStripMenuItem, this->sCADAToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -574,51 +586,57 @@ private:
 			// Declare_GenerateAdress
 			// 
 			this->Declare_GenerateAdress->Name = L"Declare_GenerateAdress";
-			this->Declare_GenerateAdress->Size = System::Drawing::Size(180, 22);
+			this->Declare_GenerateAdress->Size = System::Drawing::Size(166, 22);
 			this->Declare_GenerateAdress->Text = L"Generate adress";
 			this->Declare_GenerateAdress->Click += gcnew System::EventHandler(this, &MainWindow::Declare_GenerateAdress_Click);
 			// 
 			// toolStripSeparator4
 			// 
 			this->toolStripSeparator4->Name = L"toolStripSeparator4";
-			this->toolStripSeparator4->Size = System::Drawing::Size(177, 6);
+			this->toolStripSeparator4->Size = System::Drawing::Size(163, 6);
 			// 
 			// Declare_Adressing
 			// 
 			this->Declare_Adressing->BackColor = System::Drawing::SystemColors::Control;
 			this->Declare_Adressing->Name = L"Declare_Adressing";
-			this->Declare_Adressing->Size = System::Drawing::Size(180, 22);
+			this->Declare_Adressing->Size = System::Drawing::Size(166, 22);
 			this->Declare_Adressing->Text = L"Declare adressing";
 			this->Declare_Adressing->Click += gcnew System::EventHandler(this, &MainWindow::Declare_Adressing_Click);
 			// 
-			// iOToolStripMenuItem
-			// 
-			this->iOToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->IO_CreateIO });
-			this->iOToolStripMenuItem->Name = L"iOToolStripMenuItem";
-			this->iOToolStripMenuItem->Size = System::Drawing::Size(31, 20);
-			this->iOToolStripMenuItem->Text = L"IO";
-			// 
-			// IO_CreateIO
-			// 
-			this->IO_CreateIO->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->IO_CreateIO->Name = L"IO_CreateIO";
-			this->IO_CreateIO->Size = System::Drawing::Size(180, 22);
-			this->IO_CreateIO->Text = L"Create IO";
-			this->IO_CreateIO->Click += gcnew System::EventHandler(this, &MainWindow::IO_CreateIO_Click);
-			// 
 			// instanceToolStripMenuItem
 			// 
-			this->instanceToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->Instance_Generate });
+			this->instanceToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->Instance_GenerateIO,
+					this->Instance_ShowIO, this->toolStripSeparator5, this->Instance_Generate
+			});
 			this->instanceToolStripMenuItem->Name = L"instanceToolStripMenuItem";
 			this->instanceToolStripMenuItem->Size = System::Drawing::Size(63, 20);
 			this->instanceToolStripMenuItem->Text = L"Instance";
+			// 
+			// Instance_GenerateIO
+			// 
+			this->Instance_GenerateIO->Name = L"Instance_GenerateIO";
+			this->Instance_GenerateIO->Size = System::Drawing::Size(173, 22);
+			this->Instance_GenerateIO->Text = L"Generate IO";
+			this->Instance_GenerateIO->Click += gcnew System::EventHandler(this, &MainWindow::Instance_GenerateIO_Click);
+			// 
+			// Instance_ShowIO
+			// 
+			this->Instance_ShowIO->Name = L"Instance_ShowIO";
+			this->Instance_ShowIO->Size = System::Drawing::Size(173, 22);
+			this->Instance_ShowIO->Text = L"Show IO";
+			this->Instance_ShowIO->Click += gcnew System::EventHandler(this, &MainWindow::Instance_ShowIO_Click);
+			// 
+			// toolStripSeparator5
+			// 
+			this->toolStripSeparator5->Name = L"toolStripSeparator5";
+			this->toolStripSeparator5->Size = System::Drawing::Size(170, 6);
 			// 
 			// Instance_Generate
 			// 
 			this->Instance_Generate->BackColor = System::Drawing::SystemColors::Control;
 			this->Instance_Generate->Name = L"Instance_Generate";
-			this->Instance_Generate->Size = System::Drawing::Size(180, 22);
+			this->Instance_Generate->Size = System::Drawing::Size(173, 22);
 			this->Instance_Generate->Text = L"Generate instances";
 			this->Instance_Generate->Click += gcnew System::EventHandler(this, &MainWindow::Instance_Generate_Click);
 			// 
@@ -803,6 +821,7 @@ private:
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->menuStrip1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->KeyPreview = true;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MainWindow";
 			this->Text = L"IO_list_manager";
@@ -819,7 +838,35 @@ private:
 			this->PerformLayout();
 
 		}
-#pragma endregion	
+#pragma endregion
+	
+	private: System::Void KeyDown_event(Object^ sender, System::Windows::Forms::KeyEventArgs^ e)
+	{
+		
+		if ((e->KeyCode == Keys::Delete) || (e->KeyCode == Keys::Back))
+		{
+			int index_function = this->tabControl1->SelectedIndex;
+			System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
+			if (grid->SelectedCells->Count > 1)
+			{
+				for (int i = 0; i < (grid->SelectedCells->Count); i++)
+				{
+					grid->SelectedCells[i]->Value = L"";
+				}
+			}
+		}
+		else if ((e->Modifiers == Keys::Control) && (e->KeyCode == Keys::V))
+		{
+			int index_function = this->tabControl1->SelectedIndex;
+			System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
+			if (grid->SelectedCells->Count > 0)
+			{
+				Global_paste(Global_function_txt(index_function,lang), grid);
+			}
+			this->Update();
+		}
+	}
+
 	public: void Main_init(void)
 	{
 		switch (parameters.Language)
@@ -854,6 +901,8 @@ private:
 		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
+
+		this->KeyDown += gcnew KeyEventHandler(this, &MainWindow::KeyDown_event);
 
 	}
 
@@ -1194,9 +1243,7 @@ private:
 			break;
 		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
 			break;
-		}
-		learn.done = false;
-		
+		}		
 	}
 //function done
 	private: System::Void Project_Language_LV_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1222,7 +1269,6 @@ private:
 		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
-		learn.done = false;
 	}
 //function done
 	private: System::Void Project_Language_EN_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1248,7 +1294,6 @@ private:
 		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
-		learn.done = false;
 	}
 //function done
 	private: System::Void Project_Language_RU_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1274,7 +1319,6 @@ private:
 		case RU_index:	this->Project_Language_RU->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
-		learn.done = false;
 	}
 
 
@@ -1381,18 +1425,35 @@ private:
 
 	}
 
-			 //menu IO
-//empty
-	private: System::Void IO_CreateIO_Click(System::Object^  sender, System::EventArgs^  e) {
+			 //menu instance
+
+	//function done
+	private: System::Void Instance_GenerateIO_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		if (IO_generate() == 0)
+		{
+			if (IO_show() == 0)
+			{
+
+			}
+		}
 	}
 
+	//function done
+	private: System::Void Instance_ShowIO_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+		string converted_text = button_press_name_write(buttonName);
+		const char *button_text = converted_text.c_str();
 
-			 //menu instance
+		if (IO_show() == 0)
+		{
+
+		}
+	}
+
 //function done
 	private: System::Void Instance_Generate_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
@@ -1401,6 +1462,8 @@ private:
 
 		Instance_gen();
 	}
+
+
 
 			 //menu SCADA
 //empty
@@ -1443,6 +1506,8 @@ private:
 
 		Display_no_function(buttonName);		
 	}
+
+
 
 
 

@@ -152,6 +152,7 @@
     <ClCompile Include="Instance_schneider.cpp" />
     <ClCompile Include="Instance_siemens.cpp" />
     <ClCompile Include="IO_declare.cpp" />
+    <ClCompile Include="IO_Form.cpp" />
     <ClCompile Include="KKS_editForm.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="objects.cpp" />
@@ -183,6 +184,9 @@
     <ClInclude Include="Instance_schneider.h" />
     <ClInclude Include="Instance_siemens.h" />
     <ClInclude Include="IO_declare.h" />
+    <ClInclude Include="IO_Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="objects.h" />
     <ClInclude Include="Object_check_Form.h">
       <FileType>CppForm</FileType>
@@ -219,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HelpForm.resx">
       <DependentUpon>HelpForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO_Form.resx">
+      <DependentUpon>IO_Form.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KKS_editForm.resx">
       <DependentUpon>KKS_editForm.h</DependentUpon>

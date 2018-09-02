@@ -28,6 +28,11 @@
 #define PID_type	L"PID"
 #define Mot_type	L"MOT"
 
+#define default_DI_size 16
+#define default_AI_size 8
+#define default_DO_size 16
+#define default_AO_size 8
+
 using namespace std;
 using namespace System;
 
@@ -99,6 +104,8 @@ struct parameters_str
 	int KKS_del2 = 0;
 	int auto_column_with = 1;
 	int indirect = 1;
+	int try_import_if_corupt = 0;
+	int paste_sel_match = 1;
 };
 struct project_data_str
 {
@@ -145,14 +152,15 @@ struct Signal_data_str
 	wstring IO_text;				//collumn 12	
 	wstring Module;					//collumn 13
 	wstring Channel;				//collumn 14	
-	wstring Pin;					//collumn 15			
-	wstring Page;					//collumn 16
+	wstring Pin;					//collumn 15
+	wstring Tag;					//collumn 16
+	wstring Page;					//collumn 17
 };
 struct signal_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums = 16;
+	const int number_collums = 17;
 	const vector<wstring> column_name = {
 		L"Nr.",
 		L"Spinta",
@@ -170,6 +178,7 @@ struct signal_str
 		L"Modulis",
 		L"Kanalas",
 		L"Pinas",
+		L"Tag",
 		L"Projekto reference",
 	};
 	vector <Signal_data_str> data;
@@ -177,7 +186,6 @@ struct signal_str
 
 struct learning_str
 {
-	bool done = false;
 	vector<wstring> Valve_name;					//collumn 0
 	vector<wstring> Motor_name;					//collumn 1
 	vector<wstring> Analog_name;				//collumn 2

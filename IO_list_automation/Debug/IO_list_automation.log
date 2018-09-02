@@ -1,2 +1,4 @@
-﻿  Instance_beckhoff.cpp
+﻿  IO_declare.cpp
+  config.cpp
+  Generating Code...
   IO_list_automation.vcxproj -> C:\IO-list-automation\Debug\IO_list_automation.exe

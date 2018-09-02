@@ -5,6 +5,8 @@
 
 int testas()
 {
+//	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
+
 	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
 	if (objects.valid_entries <= 1)
 	{

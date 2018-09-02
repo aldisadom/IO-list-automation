@@ -1,31 +1,31 @@
-2018-08-29  22:16:23.951 - This program is not stable ant not fully tested, carefully use it !!!
-2018-08-29  22:16:32.370 - ---------------------------------------------------------
-2018-08-29  22:16:34.754 - File_LoadALL --- Button pressed
-2018-08-29  22:16:36.441 - Loading data - Design
-2018-08-29  22:16:36.666 - Loading data - Design --- Done
-2018-08-29  22:16:36.686 - Data is writen to grid - Design
-2018-08-29  22:16:37.495 - Data is writen to grid - Design --- Done
-2018-08-29  22:16:38.133 - Loading data - Signals
-2018-08-29  22:16:38.597 - Loading data - Signals --- Done
-2018-08-29  22:16:38.748 - Data is writen to grid - Signals
-2018-08-29  22:16:39.310 - Data is writen to grid - Signals --- Done
-2018-08-29  22:16:40.627 - Loading data - Objects
-2018-08-29  22:16:40.888 - Loading data - Objects --- Done
-2018-08-29  22:16:41.057 - Data is writen to grid - Objects
-2018-08-29  22:16:41.418 - Data is writen to grid - Objects --- Done
-2018-08-29  22:16:46.519 - Instance_Generate --- Button pressed
-2018-08-29  22:16:46.523 - Not needed function - ABB 800xA
-2018-08-29  22:16:49.414 - Project_CPU_Beckhoff --- Button pressed
-2018-08-29  22:16:50.414 - Instance_Generate --- Button pressed
-2018-08-29  22:16:50.569 - Data is writen to memory - Signals
-2018-08-29  22:16:51.208 - Data is writen to memory - Signals --- Done
-2018-08-29  22:16:51.216 - Saving data - Signals
-2018-08-29  22:16:51.495 - Saving data - Signals --- Done
-2018-08-29  22:16:51.637 - Data is writen to memory - Objects
-2018-08-29  22:16:51.862 - Data is writen to memory - Objects --- Done
-2018-08-29  22:16:51.863 - Saving data - Objects
-2018-08-29  22:16:52.044 - Saving data - Objects --- Done
-2018-08-29  22:16:52.056 - Adresses are put to table - Beckhoff
-2018-08-29  22:39:53.077 - Data is writen to grid - Signals
-2018-08-29  22:39:53.722 - Data is writen to grid - Signals --- Done
-2018-08-29  22:39:54.914 - Adresses are put to table - Beckhoff --- Done
+2018-09-02  18:22:04.575 - This program is not stable ant not fully tested, carefully use it !!!
+2018-09-02  18:22:09.250 - ---------------------------------------------------------
+2018-09-02  18:22:12.979 - File_LoadALL --- Button pressed
+2018-09-02  18:22:15.272 - Loading data - Design
+2018-09-02  18:22:15.584 - Loading data - Design --- Done
+2018-09-02  18:22:15.599 - Data is writen to grid - Design
+2018-09-02  18:22:16.395 - Data is writen to grid - Design --- Done
+2018-09-02  18:22:17.144 - Loading data - Signals
+2018-09-02  18:22:17.612 - Loading data - Signals --- Done
+2018-09-02  18:22:17.721 - Data is writen to grid - Signals
+2018-09-02  18:22:18.220 - Data is writen to grid - Signals --- Done
+2018-09-02  18:22:19.546 - Loading data - Objects
+2018-09-02  18:22:19.765 - Loading data - Objects --- Done
+2018-09-02  18:22:19.921 - Data is writen to grid - Objects
+2018-09-02  18:22:20.155 - Data is writen to grid - Objects --- Done
+2018-09-02  18:22:27.128 - Instance_ShowIO --- Button pressed
+2018-09-02  18:22:27.331 - Data is writen to memory - Signals
+2018-09-02  18:22:27.830 - Data is writen to memory - Signals --- Done
+2018-09-02  18:22:27.845 - Saving data - Signals
+2018-09-02  18:22:28.142 - Saving data - Signals --- Done
+2018-09-02  18:22:28.360 - Data is writen to memory - Signals
+2018-09-02  18:22:28.906 - Data is writen to memory - Signals --- Done
+2018-09-02  18:22:28.906 - Saving data - Signals
+2018-09-02  18:22:29.171 - Saving data - Signals --- Done
+2018-09-02  18:22:29.171 - Generating IO tags in signals
+2018-09-02  18:22:29.515 - Generating IO tags in signals --- Done
+2018-09-02  18:22:29.530 - Data is writen to grid - Signals
+2018-09-02  18:22:30.575 - Data is writen to grid - Signals --- Done
+2018-09-02  18:22:31.699 - Generating IO tags with adresses
+2018-09-02  18:22:42.494 - Pasting data - IO_modules --- Clipboard:Rows 43 Cols 2 Sel: [0;4] - [0;4]
+2018-09-02  18:23:08.203 - Generating IO tags with adresses --- Done

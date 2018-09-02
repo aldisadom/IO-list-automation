@@ -5,6 +5,7 @@
 #include "objects.h"
 #include "Global_Functions.h"
 
+
 using namespace std;
 using namespace IOlistautomation;
 
@@ -266,7 +267,6 @@ void Global_choose_Load(int index_function, std::string file_name_global)
 
 
 // --------Global function----------------------------------------------------
-
 // saving data to file
 int Global_save (int index_function, bool auto_save, std::string file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with)
 {
@@ -509,7 +509,6 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 	}
 	fgetws(x, sizeof x, inFile);
 
-	// needs editing, check column names if ok and get with of columns
 	cell_text = wcstok_s(x, separator, &next_token1);
 	if (cell_text == NULL)
 	{
@@ -529,19 +528,31 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 		{
 			break;
 		}
-		if (wcsstr(column_name[iCol].c_str(),cell_text) == NULL)
+		if (wcsstr(column_name[iCol].c_str(), cell_text) == NULL)
 		{
-			fclose(inFile);
-
-			strcpy_s(err_txt, sizeof err_txt, err_corrupted_file[lang]);
-			strcat_s(err_txt, sizeof err_txt, error_separator);
-			strcat_s(err_txt, sizeof err_txt, funcion_text);
-			err_write_show(err_txt);
-			return 1;
+			if (parameters.try_import_if_corupt < 1)
+			{
+				fclose(inFile);
+				
+				strcpy_s(err_txt, sizeof err_txt, err_corrupted_file[lang]);
+				strcat_s(err_txt, sizeof err_txt, error_separator);
+				strcat_s(err_txt, sizeof err_txt, funcion_text);
+				err_write_show(err_txt);
+				return 1;
+			}
+			else
+			{
+				strcpy_s(err_txt, sizeof err_txt, err_corrupted_file_continue[lang]);
+				strcat_s(err_txt, sizeof err_txt, error_separator);
+				strcat_s(err_txt, sizeof err_txt, funcion_text);
+				err_write(err_txt);
+			}
 		}
 		iCol++;
 		cell_text = wcstok_s(NULL, separator, &next_token1);
 	}
+	
+	
 
 	fgetws(x, sizeof x, inFile);
 
@@ -752,7 +763,8 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 			// fill all cells with data
 			for (iCol = 0; iCol <= number_collums; iCol++)
 			{
-				cell_text = system_string_to_wstring(grid->Rows[index]->Cells[iCol]->FormattedValue->ToString());
+				cell_text = Global_get_cell_value(index, iCol, grid);
+		//		cell_text = system_string_to_wstring(grid->Rows[index]->Cells[iCol]->FormattedValue->ToString());
 				Global_put_data_switch(index_function, iCol, index, cell_text);
 			}
 			set_progress_value(index);
@@ -776,4 +788,166 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 	{
 		Global_delete_all_data(index_function);
 	}
+}
+
+
+int Global_paste(const char* function_text, System::Windows::Forms::DataGridView^ grid)
+{
+	System::Windows::Forms::IDataObject^ dataInclipboard = System::Windows::Forms::Clipboard::GetDataObject();
+
+	String^ stringInclipboard = (System::String ^)dataInclipboard->GetData(DataFormats::UnicodeText);
+	if (stringInclipboard == nullptr)
+	{
+		// no row data
+		strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_data[lang]);
+		err_write_show(err_txt);
+		return 1;
+	}
+
+	int sel_row_max = grid->SelectedCells[0]->RowIndex;
+	int sel_col_max = grid->SelectedCells[0]->ColumnIndex;
+	int sel_row_min = sel_row_max;
+	int sel_col_min = sel_col_max;
+
+	int a = 0;
+	int b = 0;
+	//get selected min and max cells
+	for (int i = 0; i <grid->SelectedCells->Count; i++)
+	{
+		a = grid->SelectedCells[i]->RowIndex;
+		b = grid->SelectedCells[i]->ColumnIndex;
+
+		if (a > sel_row_max)
+		{
+			sel_row_max = a;
+		}
+		else if (a < sel_row_min)
+		{
+			sel_row_min = a;
+		}
+
+		if (b > sel_col_max)
+		{
+			sel_col_max = b;
+		}
+		else if (b < sel_col_min)
+		{
+			sel_col_min = b;
+		}
+	}
+
+
+	int max_row = grid->RowCount-1;
+	int max_collumn = grid->ColumnCount-1;
+	string text="";
+
+	cli::array <wchar_t>^ separators = {'\n' };
+	cli::array <wchar_t>^ columnsplitter = { '\t' };
+	cli::array <String^>^ rowsInclipboard = stringInclipboard->Split(separators);
+
+	int rows_in_board = rowsInclipboard->Length;
+	if (rows_in_board < 1)
+	{
+		// no row data
+		strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_data[lang]);
+		err_write_show(err_txt);
+		return 1;
+	}
+
+	cli::array <String^>^ cellsInrow = rowsInclipboard[0]->Split(columnsplitter);
+	int col_in_board = cellsInrow->Length;
+	if (col_in_board < 1)
+	{
+		// no collumn data
+		strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_data[lang]);
+		err_write_show(err_txt);
+		return 1;
+	}
+	int size_rows = 0;
+	int size_cols = 0;
+	
+	text = function_text;
+	text.append(error_separator);
+	text.append ("Clipboard:Rows ");
+	text.append(to_string(rows_in_board));
+	text.append(" Cols ");
+	text.append(to_string(col_in_board));
+	text.append(" Sel: [");
+	text.append(to_string(sel_row_min));
+	text.append(";");
+	text.append(to_string(sel_col_min));
+	text.append("] - [");
+	text.append(to_string(sel_row_max));
+	text.append(";");
+	text.append(to_string(sel_col_max));
+	text.append("]");
+	
+	if (parameters.paste_sel_match > 0)
+	{
+		size_rows = sel_row_max - sel_row_min+1;
+		size_cols = sel_col_max - sel_col_min +1;
+
+		if ((size_rows != rows_in_board) || (size_cols != col_in_board))
+		{
+			// diferent size selected
+			strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_match[lang]);
+			strcat_s(err_txt, sizeof err_txt, info_separator);
+			strcat_s(err_txt, sizeof err_txt, text.c_str());
+			err_write_show(err_txt);
+			return 1;
+		}
+
+	}
+	else
+	{
+		size_rows = max_row - sel_row_min + 1;
+		size_cols = max_collumn - sel_col_min + 1;
+
+		if ((size_rows < rows_in_board) || (size_cols < col_in_board))
+		{
+			// to much data to paste, select other
+			strcpy_s(err_txt, sizeof err_txt, err_clickboard_overrange[lang]);
+			strcat_s(err_txt, sizeof err_txt, info_separator);
+			strcat_s(err_txt, sizeof err_txt, text.c_str());
+			err_write_show(err_txt);
+			return 1;
+		}
+	}
+
+	// write info how much data is pasted
+	strcpy_s(info_txt, sizeof info_txt, info_paste_data[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, text.c_str());
+	info_write(info_txt);
+
+
+
+	Show_progress(prog_paste[lang], rows_in_board);
+
+	int j = 0;
+	for (int i = 0; i<rows_in_board; i++)
+	{
+		cellsInrow = rowsInclipboard[i]->Split(columnsplitter);
+		for (j = 0; j < cellsInrow->Length -1; j++)
+		{
+			grid->Rows[sel_row_min + i]->Cells[sel_col_min + j]->Value = cellsInrow[j];
+		}
+		cellsInrow = cellsInrow[j]->Split('\r');
+		grid->Rows[sel_row_min + i]->Cells[sel_col_min + j]->Value = cellsInrow[0];
+		set_progress_value(i);
+	}
+
+	Hide_progress();
+
+	return 0;
+}
+
+//check if cell data is valit and then return it as wstring
+std::wstring Global_get_cell_value(int row, int col, System::Windows::Forms::DataGridView^ grid)
+{
+	if (grid->Rows[row]->Cells[col]->Value != nullptr)
+	{
+		return  system_string_to_wstring(grid->Rows[row]->Cells[col]->Value->ToString());
+	}
+	return L"";
 }

@@ -1,3 +1,2 @@
-2018-08-29  22:16:23.949 - Error: This program is not stable ant not fully tested, carefully use it !!!
-2018-08-29  22:16:32.370 - Error: ---------------------------------------------------------
-2018-08-29  22:16:46.523 - Error: Not needed function - ABB 800xA
+2018-09-02  18:22:04.572 - Error: This program is not stable ant not fully tested, carefully use it !!!
+2018-09-02  18:22:09.250 - Error: ---------------------------------------------------------

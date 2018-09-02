@@ -17,6 +17,9 @@ extern const char * info_find_operatyv[];
 extern const char * info_get_adresses[];
 extern const char * info_overlap_adresses[];
 extern const char * info_put_adresses[];
+extern const char * info_generate_IO_tags[];
+extern const char * info_generate_IO_adress[];
+
 
 extern const char * info_transfer_data[];
 extern const char * info_put_to_grid[];
@@ -24,7 +27,7 @@ extern const char * info_extract_from_grid[];
 extern const char * info_erase_data[];
 extern const char * info_save_data[];
 extern const char * info_load_data[];
-
+extern const char * info_paste_data[];
 
 
 #endif

@@ -97,18 +97,19 @@ void Instance_grid_write_cell(int &grid_row_index, int collumn,wstring cell_text
 
 
 
-int Instance_vlv_switch(int index, int &grid_row_index, IOlistautomation::ResultForm^ results_form)
+int Instance_vlv_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
+	int return_val = 0;
 	switch (parameters.CPU)
 	{
 	case Beckhoff_index:	
-		Instance_Beckhoff_vlv(index, grid_row_index, results_form->Grid_VLV);
+		return_val =Instance_Beckhoff_vlv(index, grid_row_index, grid);
 		break;
 	case Siemens_index:	
-
+		return_val = Instance_Siemens_vlv(index, grid_row_index, grid);
 		break;
 	case Schneider_index:	
-
+		return_val = Instance_Schneider_vlv(index, grid_row_index, grid);
 		break;
 	case ABB_800xA_index:	
 
@@ -119,7 +120,111 @@ int Instance_vlv_switch(int index, int &grid_row_index, IOlistautomation::Result
 		return -1;
 		break;
 	}
-	return 0;
+	return return_val;
+}
+
+int Instance_ai_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
+{
+	int return_val = 0;
+	switch (parameters.CPU)
+	{
+	case Beckhoff_index:
+		return_val = Instance_Beckhoff_ai(index, grid_row_index, grid);
+		break;
+	case Siemens_index:
+		return_val = Instance_Siemens_ai(index, grid_row_index, grid);
+		break;
+	case Schneider_index:
+		return_val = Instance_Schneider_ai(index, grid_row_index, grid);
+		break;
+	case ABB_800xA_index:
+
+		break;
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return -1;
+		break;
+	}
+	return return_val;
+}
+
+int Instance_mot_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
+{
+	int return_val = 0;
+	switch (parameters.CPU)
+	{
+	case Beckhoff_index:
+		return_val = Instance_Beckhoff_mot(index, grid_row_index, grid);
+		break;
+	case Siemens_index:
+		return_val = Instance_Siemens_mot(index, grid_row_index, grid);
+		break;
+	case Schneider_index:
+		return_val = Instance_Schneider_mot(index, grid_row_index, grid);
+		break;
+	case ABB_800xA_index:
+
+		break;
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return -1;
+		break;
+	}
+	return return_val;
+}
+
+int Instance_pid_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
+{
+	int return_val = 0;
+	switch (parameters.CPU)
+	{
+	case Beckhoff_index:
+		return_val = Instance_Beckhoff_pid(index, grid_row_index, grid);
+		break;
+	case Siemens_index:
+		return_val = Instance_Siemens_pid(index, grid_row_index, grid);
+		break;
+	case Schneider_index:
+		return_val = Instance_Schneider_pid(index, grid_row_index, grid);
+		break;
+	case ABB_800xA_index:
+
+		break;
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return -1;
+		break;
+	}
+	return return_val;
+}
+
+int Instance_hc_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
+{
+	int return_val = 0;
+	switch (parameters.CPU)
+	{
+	case Beckhoff_index:
+		return_val = Instance_Beckhoff_hc(index, grid_row_index, grid);
+		break;
+	case Siemens_index:
+		return_val = Instance_Siemens_hc(index, grid_row_index, grid);
+		break;
+	case Schneider_index:
+		return_val = Instance_Schneider_hc(index, grid_row_index, grid);
+		break;
+	case ABB_800xA_index:
+
+		break;
+	default:
+		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
+		err_write_show(err_txt);
+		return -1;
+		break;
+	}
+	return return_val;
 }
 
 
@@ -225,36 +330,37 @@ int Instance_gen()
 		object_init++;
 	}
 
+	int return_val = 0;
 	for (int index = object_init; index <= objects.valid_entries; ++index)
 	{
 		object_type = objects.data[index].Object_type;
 
 		if (object_type.compare(AI_type) == 0)
 		{
-
+			return_val=Instance_ai_switch(index, AI_grid_row, results_form.Grid_AI);
 		}
 		else if (object_type.compare(Vlv_type) == 0)
 		{
-			Instance_vlv_switch(index, VLV_grid_row, %results_form);
+			return_val=Instance_vlv_switch(index, VLV_grid_row, results_form.Grid_VLV);
 		}
 		else if (object_type.compare(HC_type) == 0)
 		{
-
-		}
-		else if (object_type.compare(FC_type) == 0)
-		{
-
+			return_val =Instance_hc_switch(index, HC_grid_row, results_form.Grid_HC);
 		}
 		else if (object_type.compare(PID_type) == 0)
 		{
-
-
+			return_val =Instance_pid_switch(index, PID_grid_row, results_form.Grid_PID);
 		}
 		else if (object_type.compare(Mot_type) == 0)
 		{
-
+			return_val=Instance_mot_switch(index, MOT_grid_row, results_form.Grid_MOT);
 		}
 
+		if (return_val != 0)
+		{
+			Hide_progress();
+			return 1;
+		}
 		set_progress_value(index);
 	}
 

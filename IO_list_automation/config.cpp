@@ -289,12 +289,15 @@ void set_progress_value(int value)
 
 
 // parameters that can be added to _cfg file
-char parametrai_str[35][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
+char parametrai_str[37][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
 "Beckhoff_vlv", "Beckhoff_hc", "Beckhoff_mot", "Beckhoff_ai", "Beckhoff_fc", "Beckhoff_pid",
 "Siemens_vlv", "Siemens_hc", "Siemens_mot", "Siemens_ai", "Siemens_fc", "Siemens_pid",
 "ABB_800xA_vlv", "ABB_800xA_hc", "ABB_800xA_mot", "ABB_800xA_ai", "ABB_800xA_fc", "ABB_800xA_pid",
 "Schneider_vlv", "Schneider_hc", "Schneider_mot", "Schneider_ai", "Schneider_fc", "Schneider_pid",
+"try_import_if_corupt", "paste_sel_match" ,
 };
+
+
 
 int adr_par_retrieve(char * text, addres_pars_str &adr_pars)
 {
@@ -586,6 +589,12 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 			case 34:
 				adr_par_retrieve(value_text, adres.Schneider.pid);
 				break;
+			case 35:
+				pars->try_import_if_corupt = value;
+				break;
+			case 36:
+				pars->paste_sel_match = value;
+				break;				
 			default:
 				strcpy_s(err_txt, sizeof err_txt, parametras);
 				strcat_s(err_txt, sizeof err_txt, error_separator);
@@ -627,5 +636,4 @@ int cfg_reads(struct parameters_str *params)
 	fclose(fp);
 	return 0;
 }
-
 

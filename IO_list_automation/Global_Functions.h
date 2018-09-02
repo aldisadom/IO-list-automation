@@ -15,6 +15,13 @@
 #include <CommCtrl.h>
 #include "Strings.h"
 
+
+// get grid based on function index
+System::Windows::Forms::DataGridView^ Global_function_grid(int index_function);
+
+
+// get function text based on function index
+const char* Global_function_txt(int index_function, int language);
 // get selected cpu name
 const char* Global_get_CPU_name(int index_cpu);
 
@@ -33,6 +40,8 @@ void Global_choose_Load(int index_function, std::string file_name_global);
 
 
 // --------Global function----------------------------------------------------
+//paste data to grid
+int Global_paste(const char* function_text, System::Windows::Forms::DataGridView^ grid);
 
 // saving data to file
 int Global_save(int index_function, bool auto_save, std::string file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with);
@@ -48,5 +57,8 @@ void Global_get_width_list(int index_function, const int &number_collums, vector
 void Global_put_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with);
 //get data from gridview to memory based on function index
 void Global_get_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with);
+
+//check if cell data is valit and then return it as wstring
+std::wstring Global_get_cell_value(int row, int col, System::Windows::Forms::DataGridView^ grid);
 
 #endif

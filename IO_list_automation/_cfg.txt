@@ -8,3 +8,5 @@ SCADA=System Platform
 width=1650
 height=600
 auto_column_with=0
+try_import_if_corupt=1
+paste_sel_match=0

@@ -17,7 +17,7 @@ extern const char * done_txt[];
 extern const char * design_txt[];
 extern const char * signals_txt[];
 extern const char * objects_txt[];
-extern const char * learning_txt[];
+
 
 extern const char * ai_txt[];
 extern const char * vlv_txt[];
@@ -28,7 +28,7 @@ extern const char * mot_txt[];
 
 extern const wchar_t * conf_design_overwrite[];
 extern const wchar_t * conf_signal_overwrite[];
-extern const wchar_t * conf_learn_overwrite[];
 extern const wchar_t * conf_objects_overwrite[];
 extern const wchar_t * conf_objects_type_overwrite[];
+extern const wchar_t * conf_signal_TAG_overwrite[];
 #endif

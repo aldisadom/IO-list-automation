@@ -22,6 +22,9 @@ const char * err_cant_open[]{
 const char * err_corrupted_file[]{
 	"Sugadintas duomenu failas",
 	"Corrupted data file", };
+const char * err_corrupted_file_continue[]{
+	"Sugadintas duomenu failas, bet toliau bandoma importuoti",
+	"Corrupted data file, continuing to import", };
 const char * err_wrong_file[]{
 	"Pasirinktas ne toks failo tipas",
 	"Wrong file type selected", };
@@ -37,6 +40,9 @@ const char * err_no_object_types_edit[]{
 const char * err_no_function_for_this[]{
 	"Nereikalinga si funkcija",
 	"Not needed function", };
+const char * err_no_tag[]{
+	"Nera tag siam signalui",
+	"No tag for this signal", };
 
 
 const char * err_no_cfg_file[]{
@@ -68,3 +74,14 @@ const char * err_excel_cant_open[]{
 const char * err_no_learn_file[]{
 	"Nera mokinimo duomenu failo",
 	"No learning data file", };
+
+
+const char * err_clickboard_no_data[]{
+	"Nera duomenu perkelimui",
+	"No data to paste", };
+const char * err_clickboard_no_match[]{
+	"Neatitinka duomenu kiekis kuri iklijuojam su pasirinktu",
+	"Data size dont match for pasting", };
+const char * err_clickboard_overrange[]{
+	"Kopijuojami duomenys virs turi per daug duomenu kad kopijuoti",
+	"Paste data is overrange compared to grid", };

@@ -13,11 +13,15 @@ extern const wchar_t * prog_adress[];
 extern const wchar_t * prog_overlap[];
 extern const wchar_t * prog_declare[];
 extern const wchar_t * prog_check_adress[];
+extern const wchar_t * prog_generate_IO[];
+extern const wchar_t * prog_generate_IO_adress[];
+
 
 extern const wchar_t * prog_grid_put[];
 extern const wchar_t * prog_grid_take[];
 extern const wchar_t * prog_save[];
 extern const wchar_t * prog_load[];
+extern const wchar_t * prog_paste[];
 
 
 

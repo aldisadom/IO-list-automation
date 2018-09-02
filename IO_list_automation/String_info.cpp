@@ -43,7 +43,12 @@ const char * info_overlap_adresses[]{
 const char * info_put_adresses[]{
 	"Adresai dedami i lentele",
 	"Adresses are put to table", };
-
+const char * info_generate_IO_tags[]{
+	"Kuriami signaluose IO tagai",
+	"Generating IO tags in signals", };
+const char * info_generate_IO_adress[]{
+	"Kuriami IO tagai su adresais",
+	"Generating IO tags with adresses", };
 
 const char * info_transfer_data[]{
 	"Perkeliami duomenys",
@@ -63,5 +68,7 @@ const char * info_save_data[]{
 const char * info_load_data[]{
 	"Atstatomi duomenys",
 	"Loading data", };
-
+const char * info_paste_data[]{
+	"Iklijuojami duomenys",
+	"Pasting data", };
 

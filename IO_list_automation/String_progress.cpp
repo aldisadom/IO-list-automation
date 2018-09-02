@@ -31,7 +31,12 @@ const wchar_t * prog_declare[]{
 const wchar_t * prog_check_adress[]{
 	L"Tikrinami adresai",
 	L"Checking adresses", };
-
+const wchar_t * prog_generate_IO[]{
+	L"Kuriami IO",
+	L"Generating IO", };
+const wchar_t * prog_generate_IO_adress[]{
+	L"Kuriami IO adresai",
+	L"Generating IO adressing", };
 
 
 const wchar_t * prog_grid_put[]{
@@ -46,3 +51,6 @@ const wchar_t * prog_save[]{
 const wchar_t * prog_load[]{
 	L"Atstatomi duomenys",
 	L"Loading data", };
+const wchar_t * prog_paste[]{
+	L"Iklijuojami duomenys",
+	L"Pasting data", };
