@@ -1,0 +1,5 @@
+2018-09-04  17:39:20.107 - Error: This program is not stable ant not fully tested, carefully use it !!!
+2018-09-04  17:39:21.062 - Error: ---------------------------------------------------------
+2018-09-04  17:40:21.349 - Error: Data size dont match for pasting - IO_modules --- Clipboard:Rows 69 Cols 2 Sel: [0;4] - [0;4]
+2018-09-04  17:40:27.467 - Error: Data size dont match for pasting - IO_modules --- Clipboard:Rows 69 Cols 2 Sel: [0;4] - [68;6]
+2018-09-04  17:40:41.256 - Error: Data size dont match for pasting - IO_modules --- Clipboard:Rows 69 Cols 2 Sel: [0;4] - [68;6]

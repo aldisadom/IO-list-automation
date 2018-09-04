@@ -311,7 +311,7 @@ int Objects_find_objects()
 
 		//selecting where to search and convert to lowercase
 		search_in = objects.data[index].Object_text;
-		std::transform(search_in.begin(), search_in.end(), search_in.begin(), ::tolower);
+		std::transform(search_in.begin(), search_in.end(), search_in.begin(), ::toupper);
 
 		//search for AI object
 		if (find_place < 0)
@@ -320,7 +320,7 @@ int Objects_find_objects()
 			{
 				//selecting for what to search and convert to lowercase
 				search_for = learn.Analog_name[j];
-				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
@@ -338,7 +338,7 @@ int Objects_find_objects()
 			{
 				//selecting for what to search and convert to lowercase
 				search_for = learn.Valve_name[j];
-				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
@@ -356,7 +356,7 @@ int Objects_find_objects()
 			{
 				//selecting for what to search and convert to lowercase
 				search_for = learn.Cilinder_name[j];
-				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)
@@ -374,7 +374,7 @@ int Objects_find_objects()
 			{
 				//selecting for what to search and convert to lowercase
 				search_for = learn.Motor_name[j];
-				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 				find_place = search_in.find(search_for);
 				if (find_place >= 0)

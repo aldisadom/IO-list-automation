@@ -47,7 +47,7 @@ int IO_generate_module(int index, std::wstring &text)
 	}
 
 	text.append(L"_");
-	text.append(signals.data[index].Module);
+	text.append(signals.data[index].Module_name);
 
 	return 0;
 }
@@ -122,26 +122,106 @@ void IO_Beckhoff(int modul_index, begin_adress_str &begin_adress, int rack_nr, i
 	grid->Rows[row]->Cells[3]->Value = wstring_to_system_string(address_type_text);
 	grid->Rows[row]->Cells[4]->Value = wstring_to_system_string(comment_text);
 }
-void IO_Siemens(int modul_index,begin_adress_str &begin_adress, int rack_nr, int module_nr, int signal_nr, int signals_in_module, int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
+void IO_Siemens(int modul_index, begin_adress_str &begin_adress, int rack_nr, int module_nr, int signal_nr, int signals_in_module, int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
 {
+	wstring address_text = L"%";
+	wstring address_type_text = L"";
 
-	grid->Rows[row]->Cells[0]->Value = wstring_to_system_string(signal);
-	grid->Rows[row]->Cells[4]->Value = wstring_to_system_string(comment);
+	int adress_nr;
+	int bit_nr;
+
+	switch (modul_index)
+	{
+	case DI_index:
+		adress_nr = signal_nr / 8;
+		bit_nr = signal_nr - adress_nr * 8;
+
+		address_text.append(L"I");
+		address_text.append(to_wstring(begin_adress.DI + adress_nr));
+		address_text.append(L".");
+		address_text.append(to_wstring(bit_nr));
+		address_type_text.append(L"BOOL");
+		break;
+	case DO_index:
+		adress_nr = signal_nr / 8;
+		bit_nr = signal_nr - adress_nr * 8;
+
+		address_text.append(L"Q");
+		address_text.append(to_wstring(begin_adress.DO + adress_nr));
+		address_text.append(L".");
+		address_text.append(to_wstring(bit_nr));
+		address_type_text.append(L"BOOL");
+		break;
+	case AI_index:
+		adress_nr = signal_nr * 2;
+
+		address_text.append(L"IW");
+		address_text.append(to_wstring(begin_adress.AI + adress_nr));
+		address_type_text.append(L"INT");
+		break;
+	case AO_index:
+		adress_nr = signal_nr * 2;
+
+		address_text.append(L"QW");
+		address_text.append(to_wstring(begin_adress.AO + adress_nr));
+		address_type_text.append(L"INT");
+		break;
+	}
+
+	grid->Rows[row]->Cells[1]->Value = wstring_to_system_string(signal);	
+	grid->Rows[row]->Cells[2]->Value = wstring_to_system_string(address_type_text);
+	grid->Rows[row]->Cells[3]->Value = wstring_to_system_string(address_text);
+	grid->Rows[row]->Cells[4]->Value = L"FALSE";
+	grid->Rows[row]->Cells[5]->Value = L"FALSE";
+	grid->Rows[row]->Cells[6]->Value = L"FALSE";
+	grid->Rows[row]->Cells[7]->Value = L"FALSE";
+
+
+	grid->Rows[row]->Cells[9]->Value = wstring_to_system_string(comment);
 }
-void IO_ABB_800xA(int modul_index, begin_adress_str &begin_adress, int rack_nr, int module_nr, int signal_nr, int signals_in_module, int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
+void IO_ABB_800xA(int signal_index,int modul_index, begin_adress_str &begin_adress, int rack_nr, int module_nr, int signal_nr, int signals_in_module, int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
 {
+	if (signal_index > 0)
+	{
+		wstring app_tag = L"";
+		if (signals.data[signal_index].KKS.Full.empty() != 1)
+		{
+			int result = signals.data[signal_index].Module_name.find(L"FS");
 
-	grid->Rows[row]->Cells[0]->Value = wstring_to_system_string(signal);
-	grid->Rows[row]->Cells[4]->Value = wstring_to_system_string(comment);
+			app_tag = parameters.ABB_800xA_app_name;
+			if (result >= 0)
+			{
+				app_tag.append(L"_SRS");
+			}
+			
+			app_tag.append(L".");
+			app_tag.append(signals.data[signal_index].KKS.Full);
+
+			if (result < 0)
+			{
+				app_tag.append(L".ioc");
+			}
+			
+			if (signals.data[signal_index].Function.empty() != 1)
+			{				
+				app_tag.append(L".");				
+
+				app_tag.append(signals.data[signal_index].Function);
+			}
+			grid->Rows[row]->Cells[1]->Value = wstring_to_system_string(app_tag);
+			grid->Rows[row]->Cells[2]->Value = wstring_to_system_string(comment);
+		}
+
+	}
+
+	grid->Rows[row]->Cells[0]->Value = signal_nr;
 }
 void IO_Schneider(int modul_index, begin_adress_str &begin_adress, int rack_nr, int module_nr, int signal_nr, int signals_in_module, int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
 {
 
-	grid->Rows[row]->Cells[0]->Value = wstring_to_system_string(signal);
-	grid->Rows[row]->Cells[4]->Value = wstring_to_system_string(comment);
 }
 
-void IO_put_switch(int modul_index, begin_adress_str &begin_adress,int rack_nr, int module_nr, int signal_nr, int signals_in_module,int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
+void IO_put_switch(int signal_index, int modul_index, begin_adress_str &begin_adress,int rack_nr, int module_nr, int signal_nr, int signals_in_module,int &row, std::wstring signal, std::wstring comment, System::Windows::Forms::DataGridView^ grid)
 {
 	grid->Rows->Add();
 	switch (parameters.CPU)
@@ -156,7 +236,7 @@ void IO_put_switch(int modul_index, begin_adress_str &begin_adress,int rack_nr, 
 		IO_Schneider(modul_index, begin_adress, rack_nr, module_nr, signal_nr, signals_in_module, row, signal, comment, grid);
 		break;
 	case ABB_800xA_index:
-		IO_ABB_800xA(modul_index, begin_adress, rack_nr, module_nr, signal_nr, signals_in_module, row, signal, comment, grid);
+		IO_ABB_800xA(signal_index,modul_index, begin_adress, rack_nr, module_nr, signal_nr, signals_in_module, row, signal, comment, grid);
 		break;
 	}
 	row++;
@@ -319,13 +399,15 @@ int IO_show()
 	IO_show_modules(%Io_forma);
 	Io_forma.ShowDialog();
 
-	Show_progress(prog_generate_IO_adress[lang], signals.valid_entries);
+	Show_progress(prog_generate_IO_adress[lang], grid->RowCount);
 
 	Io_forma.tabControl1->SelectedIndex = 1;
 	
 	int index_rack = 4;
 	int index_module = 5;
-	int index_signals_nr = 6;
+	int index_module_type = 6;
+	int index_signals_nr = 7;
+
 	wstring text = L"";
 	wstring module_value = L"";
 	wstring signal_value = L"";
@@ -349,11 +431,18 @@ int IO_show()
 			rack_nr++;
 			if (rack_nr > 0)
 			{
-				//add adressing modification to ai di do ao, when new rack
-				if (parameters.CPU == Siemens_index)
-				{
+				//add adressing modification to ai di do ao, when new rack is added
+			}
 
-				}
+			if (parameters.CPU == Beckhoff_index)
+			{
+				text = to_wstring(rack_nr);
+				text.append(L" Rack  --- ");
+				text.append(Global_get_cell_value(index, index_rack, grid));				
+
+				grid_io->Rows->Add();
+				grid_io->Rows[result_row]->Cells[0]->Value = wstring_to_system_string(text);
+				result_row++;
 			}
 		}
 		if (grid->Rows[index]->Cells[index_module]->Value == L"" || grid->Rows[index]->Cells[index_module]->Value == nullptr)
@@ -361,32 +450,24 @@ int IO_show()
 			continue;
 		}
 
+
 		module_nr++;
 		module_value = Global_get_cell_value(index, index_module, grid);
 
-		result = module_value.find(L"DI");
-		if (result >= 0)
-		{
-			modul_index = DI_index;
+		if (parameters.CPU == ABB_800xA_index)
+		{			
+			text = L"Module  --- ";
+			text.append (module_value);
+
+			grid_io->Rows->Add();
+			grid_io->Rows[result_row]->Cells[0]->Value = wstring_to_system_string(text);
+			result_row++;
 		}
 
-		result = module_value.find(L"DO");
-		if (result >= 0)
-		{
-			modul_index = DO_index;
-		}
+		wstring module_type = Global_get_cell_value(index, index_module_type, grid);
+		
 
-		result = module_value.find(L"AI");
-		if (result >= 0)
-		{
-			modul_index = AI_index;
-		}
-
-		result = module_value.find(L"AO");
-		if (result >= 0)
-		{
-			modul_index = AO_index;
-		}
+		modul_index=Global_Module_index(module_type);
 
 		text = Global_get_cell_value(index, index_signals_nr, grid);		
 		signals_in_module = _wtoi(text.c_str());
@@ -412,14 +493,14 @@ int IO_show()
 				wstring yyyy = signals.data[row].Tag;
 				if ( result == 0)
 				{
-					IO_put_switch(modul_index, begin_adress, rack_nr, module_nr, sig_nr, signals_in_module, result_row, signals.data[row].Tag, signals.data[row].IO_text, grid_io);
+					IO_put_switch(row, modul_index, begin_adress, rack_nr, module_nr, sig_nr, signals_in_module, result_row, signals.data[row].Tag, signals.data[row].IO_text, grid_io);
 					break;
 				}
 			}
 			// no match 
 			if (row > signals.valid_entries)
 			{
-				IO_put_switch(modul_index,begin_adress, rack_nr, module_nr, sig_nr, signals_in_module, result_row, signal_value, L"", grid_io);
+				IO_put_switch(-1, modul_index,begin_adress, rack_nr, module_nr, sig_nr, signals_in_module, result_row, signal_value, L"", grid_io);
 			}
 		}
 

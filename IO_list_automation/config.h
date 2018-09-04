@@ -62,10 +62,10 @@ enum Languge_index {
 };
 
 enum Module_index {
-	DI_index = 0,
-	DO_index = 1,
-	AI_index = 2,
-	AO_index = 3,
+	DI_index = 1,
+	DO_index = 2,
+	AI_index = 3,
+	AO_index = 4,
 };
 
 enum Grid_index {
@@ -114,6 +114,9 @@ struct parameters_str
 	int try_import_if_corupt = 0;
 	int paste_sel_match = 1;
 	int adresing_from_1 = 1;
+	int search_function_in_IO_text = 0;
+	wstring ABB_800xA_app_name = L"VK";
+
 };
 struct project_data_str
 {
@@ -158,17 +161,18 @@ struct Signal_data_str
 	wstring Function_text;			//collumn 10
 	wstring Function;				//collumn 11
 	wstring IO_text;				//collumn 12	
-	wstring Module;					//collumn 13
-	wstring Channel;				//collumn 14	
-	wstring Pin;					//collumn 15
-	wstring Tag;					//collumn 16
-	wstring Page;					//collumn 17
+	wstring Module_name;			//collumn 13
+	wstring Module_type;			//collumn 14
+	wstring Channel;				//collumn 15	
+	wstring Pin;					//collumn 16
+	wstring Tag;					//collumn 17
+	wstring Page;					//collumn 18
 };
 struct signal_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums = 17;
+	const int number_collums = 18;
 	const vector<wstring> column_name = {
 		L"Nr.",
 		L"Spinta",
@@ -184,6 +188,7 @@ struct signal_str
 		L"Funkcija",
 		L"IO tekstas",
 		L"Modulis",
+		L"Type",
 		L"Kanalas",
 		L"Pinas",
 		L"Tag",

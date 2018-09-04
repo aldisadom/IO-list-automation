@@ -2,6 +2,7 @@
   IOlistautomation.AboutForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.Address_Form.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.HelpForm.resources - Embedded, ContainedInManifestFile, 
+  IOlistautomation.IO_Form.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.KKS_editForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.MainWindow.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.Object_check_Form.resources - Embedded, ContainedInManifestFile, 
@@ -76,6 +77,15 @@ Class IOlistautomation.ResultForm: AutoLayout, AnsiClass, Class, Public, BeforeF
     System.Windows.Forms.DataGridView Grid_PID : Public
     System.Windows.Forms.DataGridView Grid_FC : Public
     System.Windows.Forms.DataGridView Grid_SCADA : Public
+Class IOlistautomation.IO_Form: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.DataGridView Grid_Module : Public
+    System.Windows.Forms.TabControl tabControl1 : Public
+    System.Windows.Forms.DataGridView Grid_IO : Public
+  Methods:
+    IO_form_init(): PrivateScope, Public, HideBySig
 Class IOlistautomation.Object_check_Form: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

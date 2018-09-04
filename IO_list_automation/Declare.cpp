@@ -1507,7 +1507,35 @@ int Declare_put_adres_grid()
 	}
 	
 	Hide_progress();
-	
+
+
+/*
+	if (signal_index > 0)
+	{
+		wstring address_type_text = L"";
+
+		switch (modul_index)
+		{
+		case DI_index:
+			address_type_text = L"BoolIO";
+			break;
+		case DO_index:
+			address_type_text = L"BoolIO";
+			break;
+		case AI_index:
+			address_type_text = L"RealIO";
+			break;
+		case AO_index:
+			address_type_text = L"RealIO";
+			break;
+		}
+		grid->Rows[row]->Cells[1]->Value = wstring_to_system_string(signal);
+		grid->Rows[row]->Cells[2]->Value = wstring_to_system_string(address_type_text);
+		grid->Rows[row]->Cells[3]->Value = L"retain";
+
+		grid->Rows[row]->Cells[7]->Value = wstring_to_system_string(comment);
+	}
+	*/
 	results_form.ShowDialog();
 
 	results_form.Update();

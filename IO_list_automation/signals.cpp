@@ -51,15 +51,17 @@ std::wstring Signals_get_data_switch(int iCol, int index)
 		break;
 	case 12:	return signals.data[index].IO_text;
 		break;
-	case 13:	return signals.data[index].Module;
+	case 13:	return signals.data[index].Module_name;
 		break;
-	case 14:	return signals.data[index].Channel;
+	case 14:	return signals.data[index].Module_type;
 		break;
-	case 15:	return signals.data[index].Pin;
+	case 15:	return signals.data[index].Channel;
 		break;
-	case 16:	return signals.data[index].Tag;
+	case 16:	return signals.data[index].Pin;
 		break;
-	case 17:	return signals.data[index].Page;
+	case 17:	return signals.data[index].Tag;
+		break;
+	case 18:	return signals.data[index].Page;
 		break;
 	default:return LPWSTR(L"");
 		break;
@@ -96,15 +98,17 @@ void Signals_put_data_switch(int iCol, int index, wstring cell_text)
 		break;
 	case 12:	signals.data[index].IO_text = cell_text;
 		break;
-	case 13:	signals.data[index].Module = cell_text;
+	case 13:	signals.data[index].Module_name = cell_text;
 		break;
-	case 14:	signals.data[index].Channel = cell_text;
+	case 14:	signals.data[index].Module_type = cell_text;
 		break;
-	case 15:	signals.data[index].Pin = cell_text;
+	case 15:	signals.data[index].Channel = cell_text;
 		break;
-	case 16:	signals.data[index].Tag = cell_text;
+	case 16:	signals.data[index].Pin = cell_text;
 		break;
-	case 17:	signals.data[index].Page = cell_text;
+	case 17:	signals.data[index].Tag = cell_text;
+		break;
+	case 18:	signals.data[index].Page = cell_text;
 		break;
 	}
 }
@@ -153,7 +157,11 @@ int Signals_valid_row_check(int row)
 	{
 		return 1;
 	}
-	if (signals.data[row].Module.empty() == 0)
+	if (signals.data[row].Module_name.empty() == 0)
+	{
+		return 1;
+	}
+	if (signals.data[row].Module_type.empty() == 0)
 	{
 		return 1;
 	}
@@ -236,10 +244,19 @@ int Signals_get_data_design()
 		max_digits++;
 	}
 
+	int module_index = 0;
 	for (int row = 0; row <= project.valid_entries; row++)
 	{
 		channel_text = project.data[row].Channel;
 		channel_text_size = channel_text.size();
+
+		module_index = Global_Module_index(project.data[row].Module);
+		if (module_index < 0)
+		{
+			module_index = Global_Module_index(project.data[row].Channel);
+		}
+
+		signals.data[signal_row].Module_type = Global_Module_type(module_index);
 
 		if (channel_text_size>2)
 		{
@@ -256,7 +273,7 @@ int Signals_get_data_design()
 
 		signals.data[signal_row].number = int_to_wstring(signal_row, max_digits);
 		signals.data[signal_row].Cabinet = project.data[row].Cabinet;
-		signals.data[signal_row].Module = project.data[row].Module;
+		signals.data[signal_row].Module_name = project.data[row].Module;
 		signals.data[signal_row].Pin = project.data[row].Pin;
 		signals.data[signal_row].Channel = channel_text;
 		signals.data[signal_row].IO_text = project.data[row].IO_text;
@@ -679,8 +696,8 @@ int Signals_find_function()
 			//selecting where to search for extended data
 			search_in_extended = signals.data[row].Extendet_object_text;
 			//transforming all data to lowercase
-			std::transform(search_in_function_txt.begin(), search_in_function_txt.end(), search_in_function_txt.begin(), ::tolower);
-			std::transform(search_in_extended.begin(), search_in_extended.end(), search_in_extended.begin(), ::tolower);
+			std::transform(search_in_function_txt.begin(), search_in_function_txt.end(), search_in_function_txt.begin(), ::toupper);
+			std::transform(search_in_extended.begin(), search_in_extended.end(), search_in_extended.begin(), ::toupper);
 			
 			find_2_2 = -1;
 			// finding with 2 parts
@@ -688,7 +705,7 @@ int Signals_find_function()
 			{
 				//selecting what to search and putting to lower case
 				search_for = learn.Function_txt2_part1[i];
-				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+				std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 				find_2_1 = search_in_extended.find(search_for);
 				if (find_2_1 >= 0) // if found data search for part 2
@@ -697,7 +714,7 @@ int Signals_find_function()
 					{
 						//selecting what to search and putting to lower case
 						search_for = learn.Function_txt2_part2[i];
-						std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+						std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 						find_2_2 = search_in_function_txt.find(search_for);
 						if (find_2_2 >= 0) // found part 1 and part 2, put function to signals
@@ -719,7 +736,7 @@ int Signals_find_function()
 				{
 					//selecting what to search and putting to lower case
 					search_for = learn.Function_txt1[i];
-					std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::tolower);
+					std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 					find_1 = search_in_function_txt.find(search_for);
 					if (find_1 >= 0) // found data, put function to signals
@@ -731,6 +748,73 @@ int Signals_find_function()
 			}
 		}
 		set_progress_value(row);
+	}
+
+	if (parameters.search_function_in_IO_text>0)
+	{
+		for (int row = 0; row <= signals.valid_entries; ++row)
+		{
+			//selecting where to search for normal data
+			search_in_function_txt = signals.data[row].IO_text;
+
+			if (search_in_function_txt.empty() == 0 && signals.data[row].Function.empty() == 1)
+			{
+				//selecting where to search for extended data
+				search_in_extended = signals.data[row].Extendet_object_text;
+				//transforming all data to lowercase
+				std::transform(search_in_function_txt.begin(), search_in_function_txt.end(), search_in_function_txt.begin(), ::toupper);
+				std::transform(search_in_extended.begin(), search_in_extended.end(), search_in_extended.begin(), ::toupper);
+
+				find_2_2 = -1;
+				// finding with 2 parts
+				for (int i = 0; i < size_part2_1; ++i)
+				{
+					//selecting what to search and putting to lower case
+					search_for = learn.Function_txt2_part1[i];
+					std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
+
+					find_2_1 = search_in_extended.find(search_for);
+					if (find_2_1 >= 0) // if found data search for part 2
+					{
+						for (int j = 0; j < size_part2_2; ++j)
+						{
+							//selecting what to search and putting to lower case
+							search_for = learn.Function_txt2_part2[i];
+							std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
+
+							find_2_2 = search_in_function_txt.find(search_for);
+							if (find_2_2 >= 0) // found part 1 and part 2, put function to signals
+							{
+								signals.data[row].Function = learn.Function_txt2_meaning[j];
+								break;
+							}
+						}
+						if (find_2_2 >= 0)
+						{
+							break;
+						}
+					}
+				}
+				//finding with 1 part 
+				if (find_2_2 != 0)
+				{
+					for (int i = 0; i < size_part1; ++i)
+					{
+						//selecting what to search and putting to lower case
+						search_for = learn.Function_txt1[i];
+						std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
+
+						find_1 = search_in_function_txt.find(search_for);
+						if (find_1 >= 0) // found data, put function to signals
+						{
+							signals.data[row].Function = learn.Function_txt1_meaning[i];
+							break;
+						}
+					}
+				}
+			}
+			set_progress_value(row);
+		}
 	}
 
 	Hide_progress();

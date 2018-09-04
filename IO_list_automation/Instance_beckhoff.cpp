@@ -11,7 +11,7 @@
 #include "IO_declare.h"
 
 #include "Instance_beckhoff.h"
-
+#include "Global_Functions.h"
 
 
 int Instance_Beckhoff_vlv(int index_object, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
@@ -69,17 +69,18 @@ int Instance_Beckhoff_vlv(int index_object, int &grid_row_index, System::Windows
 			}
 			tag_txt = signals.data[row].Tag;
 
-			search_in_module = signals.data[row].Module;
-			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::tolower);
+			search_in_module = signals.data[row].Module_name;
+			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::toupper);
 
 			// return that this IO is used
 			signals.data[row].Used = L"1";
 
 			//di
 			// ,[function]+"_di" := [io] 
-			result = search_in_module.find(L"di");
-			if (result >= 0)
+			int index_module = Global_Module_index(search_in_module);
+			switch (index_module)
 			{
+			case DI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -91,29 +92,8 @@ int Instance_Beckhoff_vlv(int index_object, int &grid_row_index, System::Windows
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//ai
-			// ,[function]+"_ai" := [io] 
-			result = search_in_module.find(L"ai");
-			if (result >= 0)
-			{
-				Instance_grid_add_line(grid_row_index, grid);
-				cell_text = (L",");
-				cell_text.append(signals.data[row].Function);
-				cell_text.append(L"_in :=");
-				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
-				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
-				cell_text = L"(*";
-				cell_text.append(signals.data[row].IO_text);
-				cell_text.append(L"*)");
-				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
-				continue;
-			}
-			//do
-			// ,[function]+"_do" => [io] 
-			result = search_in_module.find(L"do");
-			if (result >= 0)
-			{
+				break;
+			case DO_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -125,25 +105,35 @@ int Instance_Beckhoff_vlv(int index_object, int &grid_row_index, System::Windows
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
+				break;
+			case AI_index:
+				Instance_grid_add_line(grid_row_index, grid);
+				cell_text = (L",");
+				cell_text.append(signals.data[row].Function);
+				cell_text.append(L"_in :=");
+				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
+				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
+				cell_text = L"(*";
+				cell_text.append(signals.data[row].IO_text);
+				cell_text.append(L"*)");
+				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
+				continue;
+				break;
+			case AO_index:
+				Instance_grid_add_line(grid_row_index, grid);
+				cell_text = (L",");
+				cell_text.append(signals.data[row].Function);
+				cell_text.append(L"_out =>");
+				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
+				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
+				cell_text = L"(*";
+				cell_text.append(signals.data[row].IO_text);
+				cell_text.append(L"*)");
+				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
+				continue;
+				break;
 			}
 
-			//ao
-			// ,[function]+"_ao" => [io] 
-			result = search_in_module.find(L"ao");
-			if (result >= 0)
-			{
-				Instance_grid_add_line(grid_row_index, grid);
-				cell_text = (L",");
-				cell_text.append(signals.data[row].Function);
-				cell_text.append(L"_out =>");
-				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
-				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
-				cell_text = L"(*";
-				cell_text.append(signals.data[row].IO_text);
-				cell_text.append(L"*)");
-				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
-				continue;
-			}
 		}
 	}
 	Instance_grid_add_line(grid_row_index, grid);
@@ -208,17 +198,16 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 			}
 			tag_txt = signals.data[row].Tag;
 
-			search_in_module = signals.data[row].Module;
-			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::tolower);
+			search_in_module = signals.data[row].Module_name;
+			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::toupper);
 
 			// return that this IO is used
 			signals.data[row].Used = L"1";
 
-			//di
-			// ,[function]+"_di" := [io] 
-			result = search_in_module.find(L"di");
-			if (result >= 0)
+			int index_module = Global_Module_index(search_in_module);
+			switch (index_module)
 			{
+			case DI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -230,12 +219,21 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//ai
-			// ,[function]+"_ai" := [io] 
-			result = search_in_module.find(L"ai");
-			if (result >= 0)
-			{
+				break;
+			case DO_index:
+				Instance_grid_add_line(grid_row_index, grid);
+				cell_text = (L",");
+				cell_text.append(signals.data[row].Function);
+				cell_text.append(L"_out =>");
+				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
+				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
+				cell_text = L"(*";
+				cell_text.append(signals.data[row].IO_text);
+				cell_text.append(L"*)");
+				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
+				continue;
+				break;
+			case AI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -247,12 +245,8 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//do
-			// ,[function]+"_do" => [io] 
-			result = search_in_module.find(L"do");
-			if (result >= 0)
-			{
+				break;
+			case AO_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -264,25 +258,8 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-
-			//ao
-			// ,[function]+"_ao" => [io] 
-			result = search_in_module.find(L"ao");
-			if (result >= 0)
-			{
-				Instance_grid_add_line(grid_row_index, grid);
-				cell_text = (L",");
-				cell_text.append(signals.data[row].Function);
-				cell_text.append(L"_out =>");
-				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
-				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
-				cell_text = L"(*";
-				cell_text.append(signals.data[row].IO_text);
-				cell_text.append(L"*)");
-				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
-				continue;
-			}
+				break;
+			}			
 		}
 	}
 	Instance_grid_add_line(grid_row_index, grid);
@@ -352,17 +329,16 @@ int Instance_Beckhoff_hc(int index_object, int &grid_row_index, System::Windows:
 				return 1;
 			}
 			tag_txt = signals.data[row].Tag;
-			search_in_module = signals.data[row].Module;
-			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::tolower);
+			search_in_module = signals.data[row].Module_name;
+			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::toupper);
 
 			// return that this IO is used
 			signals.data[row].Used = L"1";
 
-			//di
-			// ,[function]+"_di" := [io] 
-			result = search_in_module.find(L"di");
-			if (result >= 0)
+			int index_module = Global_Module_index(search_in_module);
+			switch (index_module)
 			{
+			case DI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -374,12 +350,21 @@ int Instance_Beckhoff_hc(int index_object, int &grid_row_index, System::Windows:
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//ai
-			// ,[function]+"_ai" := [io] 
-			result = search_in_module.find(L"ai");
-			if (result >= 0)
-			{
+				break;
+			case DO_index:
+				Instance_grid_add_line(grid_row_index, grid);
+				cell_text = (L",");
+				cell_text.append(signals.data[row].Function);
+				cell_text.append(L"_out =>");
+				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
+				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
+				cell_text = L"(*";
+				cell_text.append(signals.data[row].IO_text);
+				cell_text.append(L"*)");
+				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
+				continue;
+				break;
+			case AI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -391,12 +376,8 @@ int Instance_Beckhoff_hc(int index_object, int &grid_row_index, System::Windows:
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//do
-			// ,[function]+"_do" => [io] 
-			result = search_in_module.find(L"do");
-			if (result >= 0)
-			{
+				break;
+			case AO_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -408,24 +389,7 @@ int Instance_Beckhoff_hc(int index_object, int &grid_row_index, System::Windows:
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-
-			//ao
-			// ,[function]+"_ao" => [io] 
-			result = search_in_module.find(L"ao");
-			if (result >= 0)
-			{
-				Instance_grid_add_line(grid_row_index, grid);
-				cell_text = (L",");
-				cell_text.append(signals.data[row].Function);
-				cell_text.append(L"_out =>");
-				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
-				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
-				cell_text = L"(*";
-				cell_text.append(signals.data[row].IO_text);
-				cell_text.append(L"*)");
-				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
-				continue;
+				break;
 			}
 		}
 	}
@@ -487,17 +451,16 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 				return 1;
 			}
 			tag_txt = signals.data[row].Tag;
-			search_in_module = signals.data[row].Module;
-			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::tolower);
+			search_in_module = signals.data[row].Module_name;
+			std::transform(search_in_module.begin(), search_in_module.end(), search_in_module.begin(), ::toupper);
 
 			// return that this IO is used
 			signals.data[row].Used = L"1";
 
-			//di
-			// ,[function]+"_di" := [io] 
-			result = search_in_module.find(L"di");
-			if (result >= 0)
+			int index_module = Global_Module_index(search_in_module);
+			switch (index_module)
 			{
+			case DI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -509,12 +472,21 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//ai
-			// ,[function]+"_ai" := [io] 
-			result = search_in_module.find(L"ai");
-			if (result >= 0)
-			{
+				break;
+			case DO_index:
+				Instance_grid_add_line(grid_row_index, grid);
+				cell_text = (L",");
+				cell_text.append(signals.data[row].Function);
+				cell_text.append(L"_out =>");
+				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
+				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
+				cell_text = L"(*";
+				cell_text.append(signals.data[row].IO_text);
+				cell_text.append(L"*)");
+				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
+				continue;
+				break;
+			case AI_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(L"AI_in :=");
@@ -525,12 +497,8 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-			//do
-			// ,[function]+"_do" => [io] 
-			result = search_in_module.find(L"do");
-			if (result >= 0)
-			{
+				break;
+			case AO_index:
 				Instance_grid_add_line(grid_row_index, grid);
 				cell_text = (L",");
 				cell_text.append(signals.data[row].Function);
@@ -542,25 +510,8 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 				cell_text.append(L"*)");
 				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
 				continue;
-			}
-
-			//ao
-			// ,[function]+"_ao" => [io] 
-			result = search_in_module.find(L"ao");
-			if (result >= 0)
-			{
-				Instance_grid_add_line(grid_row_index, grid);
-				cell_text = (L",");
-				cell_text.append(signals.data[row].Function);
-				cell_text.append(L"_out =>");
-				Instance_grid_write_cell(grid_row_index, 1, cell_text, grid);
-				Instance_grid_write_cell(grid_row_index, 2, tag_txt, grid);
-				cell_text = L"(*";
-				cell_text.append(signals.data[row].IO_text);
-				cell_text.append(L"*)");
-				Instance_grid_write_cell(grid_row_index, 3, cell_text, grid);
-				continue;
-			}
+				break;
+			}			
 		}
 	}
 	Instance_grid_add_line(grid_row_index, grid);

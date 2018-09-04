@@ -61,4 +61,8 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 //check if cell data is valit and then return it as wstring
 std::wstring Global_get_cell_value(int row, int col, System::Windows::Forms::DataGridView^ grid);
 
+//get module type index
+int Global_Module_index(std::wstring module_name);
+//return module type from index
+std::wstring Global_Module_type(int  module_index);
 #endif

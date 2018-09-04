@@ -43,13 +43,20 @@ std::string system_string_to_string(System::String^ text)
 	string new_text = msclr::interop::marshal_as< std::string >(text);
 	return new_text;
 }
-
 std::string wstring_to_string(std::wstring text)
 {
 	string s(text.begin(), text.end());
 	s.assign(text.begin(), text.end());
 	return s;
 }
+std::wstring string_to_wstring(const std::string &s)
+{
+	std::wstring wsTmp(s.begin(), s.end());
+	return wsTmp;
+}
+
+
+
 // convert integer to wstring adding 0 bassed on number of digits
 std::wstring int_to_wstring(int number, int nr_of_digits)
 {	
@@ -289,12 +296,12 @@ void set_progress_value(int value)
 
 
 // parameters that can be added to _cfg file
-char parametrai_str[38][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
+char parametrai_str[40][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
 "Beckhoff_vlv", "Beckhoff_hc", "Beckhoff_mot", "Beckhoff_ai", "Beckhoff_fc", "Beckhoff_pid",
 "Siemens_vlv", "Siemens_hc", "Siemens_mot", "Siemens_ai", "Siemens_fc", "Siemens_pid",
 "ABB_800xA_vlv", "ABB_800xA_hc", "ABB_800xA_mot", "ABB_800xA_ai", "ABB_800xA_fc", "ABB_800xA_pid",
 "Schneider_vlv", "Schneider_hc", "Schneider_mot", "Schneider_ai", "Schneider_fc", "Schneider_pid",
-"try_import_if_corupt", "paste_sel_match" , "adresing_from_1",
+"try_import_if_corupt", "paste_sel_match" , "adresing_from_1", "search_function_in_IO_text","ABB_800xA_app_name",
 };
 
 
@@ -360,6 +367,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 	bool fStringMatch = FALSE;
 	int stringo_nr = 0;
 	int count = 0;
+	string tmp_text = "";
 	//geting which parameter it is read
 	parametras = strtok_s(tekstas, "=", &next_token1);
 	if (parametras == NULL)
@@ -604,6 +612,20 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				{
 					pars->adresing_from_1 = 0;
 				}
+				break;
+			case 38:
+				if (value > 0)
+				{
+					pars->search_function_in_IO_text = 1;
+				}
+				else
+				{
+					pars->search_function_in_IO_text = 0;
+				}
+				break;
+			case 39:
+				tmp_text = value_text;
+				pars->ABB_800xA_app_name = string_to_wstring(tmp_text);
 				break;
 				
 			default:

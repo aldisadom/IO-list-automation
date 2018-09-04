@@ -951,3 +951,55 @@ std::wstring Global_get_cell_value(int row, int col, System::Windows::Forms::Dat
 	}
 	return L"";
 }
+
+//get module type index
+int Global_Module_index(std::wstring module_name)
+{
+	int result = module_name.find(L"DI");
+	if (result >= 0)
+	{
+		return DI_index;
+	}
+
+	result = module_name.find(L"DO");
+	if (result >= 0)
+	{
+		return DO_index;
+	}
+
+	result = module_name.find(L"AI");
+	if (result >= 0)
+	{
+		return AI_index;
+	}
+
+	result = module_name.find(L"AO");
+	if (result >= 0)
+	{
+		return AO_index;
+	}
+
+	return -1;
+}
+
+//return module type from index
+std::wstring Global_Module_type(int  module_index)
+{
+	switch (module_index)
+	{
+	case AI_index:	
+		return L"AI";
+		break;
+	case AO_index: 
+		return L"AO";
+		break;
+	case DI_index: 
+		return L"DI";
+		break;
+	case DO_index:
+		return L"DO";
+		break;
+
+	}
+	return L"";
+}

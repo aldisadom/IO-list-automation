@@ -904,6 +904,23 @@ private:
 
 		this->KeyDown += gcnew KeyEventHandler(this, &MainWindow::KeyDown_event);
 
+		signals.valid_entries = 1;
+		project.valid_entries = 1;
+		objects.valid_entries = 1;
+
+		Global_resize_data(Design_grid_index, 2);
+		Global_resize_data(Signals_grid_index, 2);
+		Global_resize_data(Objects_grid_index, 2);
+
+		Global_get_width_list(Design_grid_index, project.number_collums, project.collumn_with);
+		Global_get_width_list(Signals_grid_index, signals.number_collums, signals.collumn_with);
+		Global_get_width_list(Objects_grid_index, objects.number_collums, objects.collumn_with);
+
+		Global_put_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+		Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+		Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+
+		this->tabControl1->SelectedIndex = Design_grid_index;
 	}
 
 	private: System::Void dataGridView1_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {

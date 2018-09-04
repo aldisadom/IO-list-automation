@@ -2,18 +2,11 @@
 #include "config.h"
 
 
-
-
 using namespace System;
 using namespace System::Windows::Forms;
 using namespace System::Threading;
 
-
-
-
 [STAThreadAttribute]
-
-
 
 void Main() {
 	Application::EnableVisualStyles();
@@ -38,5 +31,7 @@ void Main() {
 	GlobalForm::forma->ClientSize = System::Drawing::Size(parameters.width, parameters.height);
 
 	GlobalForm::forma->Main_init();
+
+
 	Application::Run(GlobalForm::forma);
 }
