@@ -1,26 +1,2 @@
-﻿  AAA_TEST_FORM.cpp
-  Address_Form.cpp
-  config.cpp
-  Declare.cpp
-  design.cpp
-  Global_Functions.cpp
-  Instance.cpp
-  Instance_beckhoff.cpp
-  Instance_schneider.cpp
-  Instance_siemens.cpp
-  IO_declare.cpp
-  IO_Form.cpp
-  KKS_editForm.cpp
-  MainWindow.cpp
-  objects.cpp
-  Object_check_Form.cpp
-  SCADA.cpp
-  signals.cpp
-  String_info.cpp
-  Strings.cpp
-  Generating Code...
-  Compiling...
-  String_errors.cpp
-  String_progress.cpp
-  Generating Code...
+﻿  Instance_siemens.cpp
   IO_list_automation.vcxproj -> C:\IO-list-automation\Release\IO_list_automation.exe
