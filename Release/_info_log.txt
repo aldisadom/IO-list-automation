@@ -1,21 +1,8 @@
-2018-09-04  18:27:12.337 - This program is not stable ant not fully tested, carefully use it !!!
-2018-09-04  18:27:13.507 - ---------------------------------------------------------
-2018-09-04  18:27:13.601 - Data is writen to grid - Design
-2018-09-04  18:27:13.601 - Data is writen to grid - Design --- Done
-2018-09-04  18:27:13.601 - Data is writen to grid - Signals
-2018-09-04  18:27:13.601 - Data is writen to grid - Signals --- Done
-2018-09-04  18:27:13.601 - Data is writen to grid - Objects
-2018-09-04  18:27:13.601 - Data is writen to grid - Objects --- Done
-2018-09-04  18:27:15.582 - File_LoadALL --- Button pressed
-2018-09-04  18:27:17.189 - Loading data - Design
-2018-09-04  18:27:17.204 - Loading data - Design --- Done
-2018-09-04  18:27:17.220 - Data is writen to grid - Design
-2018-09-04  18:27:17.579 - Data is writen to grid - Design --- Done
-2018-09-04  18:27:17.953 - Loading data - Signals
-2018-09-04  18:27:18.031 - Loading data - Signals --- Done
-2018-09-04  18:27:18.094 - Data is writen to grid - Signals
-2018-09-04  18:27:18.281 - Data is writen to grid - Signals --- Done
-2018-09-04  18:27:19.170 - Loading data - Objects
-2018-09-04  18:27:19.279 - Loading data - Objects --- Done
-2018-09-04  18:27:19.357 - Data is writen to grid - Objects
-2018-09-04  18:27:19.498 - Data is writen to grid - Objects --- Done
+2018-09-07  09:30:57.782 - This program is not stable ant not fully tested, carefully use it !!!
+2018-09-07  09:30:59.201 - ---------------------------------------------------------
+2018-09-07  09:30:59.357 - Data is writen to grid - Design
+2018-09-07  09:30:59.357 - Data is writen to grid - Design --- Done
+2018-09-07  09:30:59.357 - Data is writen to grid - Signals
+2018-09-07  09:30:59.357 - Data is writen to grid - Signals --- Done
+2018-09-07  09:30:59.357 - Data is writen to grid - Objects
+2018-09-07  09:30:59.357 - Data is writen to grid - Objects --- Done

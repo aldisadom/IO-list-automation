@@ -3,6 +3,11 @@
 const char * done_txt[]{
 	"Atlikta",
 	"Done",};
+const char * cancel_txt[]{
+	"Atsaukta",
+	"Canceled", };
+
+
 const char * design_txt[]{
 	"Projektavimas",
 	"Design",};

@@ -338,7 +338,8 @@ namespace IOlistautomation {
 
 			for (int i = 0; i <= signals.valid_entries; i++)
 			{
-				IO_generate_module(i, check_module_name);
+				IO_generate_module(signals.data[i].Cabinet, signals.data[i].Module_name, check_module_name);
+
 				if (module_name.compare(check_module_name) == 0)
 				{
 					this->Grid_Module->Rows[row]->Cells[col + 1]->Value = wstring_to_system_string(signals.data[i].Module_type);

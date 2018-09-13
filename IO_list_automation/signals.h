@@ -28,4 +28,6 @@ int Signals_learn_data();
 //finds functions in signal data
 int Signals_find_function();
 
+int Signals_multi_cpu();
+
 #endif

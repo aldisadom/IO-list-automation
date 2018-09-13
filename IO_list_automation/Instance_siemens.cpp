@@ -22,7 +22,7 @@ int Instance_Siemens_vlv(int index_object, int &grid_row_index, System::Windows:
 
 	Instance_grid_add_line(grid_row_index, grid);
 
-	cell_text = L"(//---------------------- ";
+	cell_text = L"//---------------------- ";
 	cell_text.append(search_for_KKS);
 	cell_text.append(L" : ");
 	Instance_grid_write_cell(grid_row_index, 0, cell_text, grid);
@@ -91,7 +91,7 @@ int Instance_Siemens_mot(int index_object, int &grid_row_index, System::Windows:
 
 	Instance_grid_add_line(grid_row_index, grid);
 
-	cell_text = L"(//---------------------- ";
+	cell_text = L"//---------------------- ";
 	cell_text.append(search_for_KKS);
 	cell_text.append(L" : ");
 	Instance_grid_write_cell(grid_row_index, 0, cell_text, grid);
@@ -166,7 +166,7 @@ int Instance_Siemens_hc(int index_object, int &grid_row_index, System::Windows::
 
 	Instance_grid_add_line(grid_row_index, grid);
 
-	cell_text = L"(//---------------------- ";
+	cell_text = L"//---------------------- ";
 	cell_text.append(search_for_KKS);
 	cell_text.append(L" : ");
 	Instance_grid_write_cell(grid_row_index, 0, cell_text, grid);
@@ -235,7 +235,7 @@ int Instance_Siemens_ai(int index_object, int &grid_row_index, System::Windows::
 
 	Instance_grid_add_line(grid_row_index, grid);
 
-	cell_text = L"(//---------------------- ";
+	cell_text = L"//---------------------- ";
 	cell_text.append(search_for_KKS);
 	cell_text.append(L" : ");
 	Instance_grid_write_cell(grid_row_index, 0, cell_text, grid);

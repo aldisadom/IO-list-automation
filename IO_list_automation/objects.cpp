@@ -23,23 +23,25 @@ std::wstring Objects_get_data_switch(int iCol, int index)
 	{
 	case 0:	return objects.data[index].number;
 		break;
-	case 1:	return objects.data[index].operatyv;
+	case 1:	return objects.data[index].CPU;
 		break;
-	case 2:	return objects.data[index].KKS;
+	case 2:	return objects.data[index].operatyv;
 		break;
-	case 3:	return objects.data[index].Object_type;
+	case 3:	return objects.data[index].KKS;
 		break;
-	case 4:	return objects.data[index].Object_text;
+	case 4:	return objects.data[index].Object_type;
 		break;
-	case 5:	return objects.data[index].Adress_val;
+	case 5:	return objects.data[index].Object_text;
 		break;
-	case 6:	return objects.data[index].Adress_sw1;
+	case 6:	return objects.data[index].Adress_val;
 		break;
-	case 7:	return objects.data[index].Adress_sw2;
+	case 7:	return objects.data[index].Adress_sw1;
 		break;
-	case 8:	return objects.data[index].Adress_cmd;
+	case 8:	return objects.data[index].Adress_sw2;
 		break;
-	case 9:	return objects.data[index].Adress_pars;
+	case 9:	return objects.data[index].Adress_cmd;
+		break;
+	case 10:	return objects.data[index].Adress_pars;
 		break;
 	default:return LPWSTR(L"");
 		break;
@@ -52,23 +54,25 @@ void Objects_put_data_switch(int iCol, int index, wstring cell_text)
 	{
 	case 0:	objects.data[index].number = cell_text;
 		break;
-	case 1:	objects.data[index].operatyv = cell_text;
+	case 1:	objects.data[index].CPU = cell_text;
 		break;
-	case 2:	objects.data[index].KKS = cell_text;
+	case 2:	objects.data[index].operatyv = cell_text;
 		break;
-	case 3:	objects.data[index].Object_type = cell_text;
+	case 3:	objects.data[index].KKS = cell_text;
 		break;
-	case 4:	objects.data[index].Object_text = cell_text;
+	case 4:	objects.data[index].Object_type = cell_text;
 		break;
-	case 5:	objects.data[index].Adress_val = cell_text;
+	case 5:	objects.data[index].Object_text = cell_text;
 		break;
-	case 6:	objects.data[index].Adress_sw1 = cell_text;
+	case 6:	objects.data[index].Adress_val = cell_text;
 		break;
-	case 7:	objects.data[index].Adress_sw2 = cell_text;
+	case 7:	objects.data[index].Adress_sw1 = cell_text;
 		break;
-	case 8:	objects.data[index].Adress_cmd = cell_text;
+	case 8:	objects.data[index].Adress_sw2 = cell_text;
 		break;
-	case 9:	objects.data[index].Adress_pars = cell_text;
+	case 9:	objects.data[index].Adress_cmd = cell_text;
+		break;
+	case 10:	objects.data[index].Adress_pars = cell_text;
 		break;
 	}
 }
@@ -198,11 +202,12 @@ int Objects_find_uniques()
 						if (unique_KKS[index].compare(signals.data[j].KKS.Full) == 0) // when found put signal data to object data
 						{
 							new_valid_entries++;
-							Global_resize_data(Objects_grid_index, new_valid_entries + 1);
+							objects.data.resize(new_valid_entries + 1);
 
 							objects.data[new_valid_entries].KKS = signals.data[j].KKS.Full;
 							objects.data[new_valid_entries].number = int_to_wstring(new_valid_entries, max_digits);
 							objects.data[new_valid_entries].Object_text = signals.data[j].Object_text;
+							objects.data[new_valid_entries].CPU = signals.data[j].CPU;
 							break;
 						}
 					}
@@ -217,7 +222,8 @@ int Objects_find_uniques()
 		}
 
 		// if everything matches ask for rewrite everything
-		if (show_confirm_window(conf_objects_overwrite[lang]) == IDOK)
+		int result = show_confirm_window(conf_objects_overwrite[lang]);
+		if (result == IDYES)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
 			strcat_s(info_txt, sizeof info_txt, info_separator);
@@ -237,7 +243,7 @@ int Objects_find_uniques()
 	objects.valid_entries = unique_KKS.size()-1;
 	int size_signals = signals.valid_entries;
 
-	Global_resize_data(Objects_grid_index, objects.valid_entries+1);
+	objects.data.resize(objects.valid_entries + 1);
 
 	Show_progress(prog_uniques_find[lang], objects.valid_entries);
 
@@ -250,7 +256,8 @@ int Objects_find_uniques()
 			{
 				objects.data[index].KKS = signals.data[i].KKS.Full;
 				objects.data[index].number = int_to_wstring(index, max_digits);
-				objects.data[index].Object_text = signals.data[i].Object_text;				
+				objects.data[index].Object_text = signals.data[i].Object_text;		
+				objects.data[index].CPU = signals.data[i].CPU;
 				break;
 			}			
 		}
@@ -399,10 +406,16 @@ int Objects_find_objects()
 			text_confirm.append(objects.data[index].Object_type);
 			text_confirm.append(L" -> ");
 			text_confirm.append(Object_type);
-			if (show_confirm_window(text_confirm.c_str()) == IDOK)
+
+			int result = show_confirm_window(text_confirm.c_str());
+			if (result == IDYES)
 			{
 				objects.data[index].Object_type = Object_type;
 
+			}
+			else if (result == IDCANCEL)
+			{
+				return 0;
 			}
 		}
 
@@ -521,6 +534,22 @@ int Objects_transfer_to_signals()
 						//init, and show edit dialog
 						forma.Object_check_init();
 						forma.ShowDialog();
+
+						if (forma.return_value > 0)
+						{
+							Hide_progress();
+
+							strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
+							strcat_s(info_txt, sizeof info_txt, info_separator);
+							strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
+							strcat_s(info_txt, sizeof info_txt, "->");
+							strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
+							strcat_s(info_txt, sizeof info_txt, error_separator);
+							strcat_s(info_txt, sizeof info_txt, cancel_txt[lang]);
+							info_write(info_txt);
+							Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+							return 0;
+						}
 
 						int a = test.KKS.Full.find(L"_");
 						if (a > 0)

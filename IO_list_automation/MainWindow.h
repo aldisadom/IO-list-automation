@@ -147,6 +147,7 @@ private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator4;
 private: System::Windows::Forms::ToolStripMenuItem^  Instance_ShowIO;
 private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator5;
 private: System::Windows::Forms::ToolStripMenuItem^  Instance_GenerateIO;
+private: System::Windows::Forms::ToolStripMenuItem^  Signals_MultiCPU;
 
 
 private:
@@ -239,6 +240,7 @@ private:
 			this->Object_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->progressBaras = (gcnew System::Windows::Forms::ProgressBar());
 			this->Progress_label = (gcnew System::Windows::Forms::Label());
+			this->Signals_MultiCPU = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Design_grid))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
@@ -499,9 +501,9 @@ private:
 			// 
 			// signalsToolStripMenuItem
 			// 
-			this->signalsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->signalsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->Signals_KKSedit,
-					this->Signals_FindFunction
+					this->Signals_FindFunction, this->Signals_MultiCPU
 			});
 			this->signalsToolStripMenuItem->Name = L"signalsToolStripMenuItem";
 			this->signalsToolStripMenuItem->Size = System::Drawing::Size(56, 20);
@@ -511,7 +513,7 @@ private:
 			// 
 			this->Signals_KKSedit->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_KKSedit->Name = L"Signals_KKSedit";
-			this->Signals_KKSedit->Size = System::Drawing::Size(145, 22);
+			this->Signals_KKSedit->Size = System::Drawing::Size(180, 22);
 			this->Signals_KKSedit->Text = L"KKS edit";
 			this->Signals_KKSedit->Click += gcnew System::EventHandler(this, &MainWindow::Signals_KKSedit_Click);
 			// 
@@ -519,7 +521,7 @@ private:
 			// 
 			this->Signals_FindFunction->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_FindFunction->Name = L"Signals_FindFunction";
-			this->Signals_FindFunction->Size = System::Drawing::Size(145, 22);
+			this->Signals_FindFunction->Size = System::Drawing::Size(180, 22);
 			this->Signals_FindFunction->Text = L"Find function";
 			this->Signals_FindFunction->Click += gcnew System::EventHandler(this, &MainWindow::Signals_FindFunction_Click);
 			// 
@@ -811,6 +813,13 @@ private:
 			this->Progress_label->UseMnemonic = false;
 			this->Progress_label->Visible = false;
 			// 
+			// Signals_MultiCPU
+			// 
+			this->Signals_MultiCPU->Name = L"Signals_MultiCPU";
+			this->Signals_MultiCPU->Size = System::Drawing::Size(180, 22);
+			this->Signals_MultiCPU->Text = L"Multi CPU";
+			this->Signals_MultiCPU->Click += gcnew System::EventHandler(this, &MainWindow::Signals_MultiCPU_Click);
+			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -908,9 +917,9 @@ private:
 		project.valid_entries = 1;
 		objects.valid_entries = 1;
 
-		Global_resize_data(Design_grid_index, 2);
-		Global_resize_data(Signals_grid_index, 2);
-		Global_resize_data(Objects_grid_index, 2);
+		signals.data.resize(2);
+		project.data.resize(2);
+		objects.data.resize(2);
 
 		Global_get_width_list(Design_grid_index, project.number_collums, project.collumn_with);
 		Global_get_width_list(Signals_grid_index, signals.number_collums, signals.collumn_with);
@@ -1082,7 +1091,7 @@ private:
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		if (Project_read_data() == 0)
+		if (Project_read_data(FALSE,project) == 0)
 		{
 			Signals_get_data_design();
 		}
@@ -1094,7 +1103,7 @@ private:
 		string converted_text = button_press_name_write(buttonName);
 		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
+		Project_compare_data();
 	}
 //function done
 	private: System::Void Project_TransferIO_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1354,6 +1363,14 @@ private:
 		const char *button_text = converted_text.c_str();
 		Signals_find_function();
 	}
+//function done
+private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::EventArgs^  e) {
+	String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
+	string converted_text = button_press_name_write(buttonName);
+	const char *button_text = converted_text.c_str();
+
+	Signals_multi_cpu();
+}
 
 
 			 //menu uniques
@@ -1523,8 +1540,6 @@ private:
 
 		Display_no_function(buttonName);		
 	}
-
-
 
 
 

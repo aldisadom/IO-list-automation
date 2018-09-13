@@ -131,7 +131,7 @@ void Global_put_data_switch(int index_function,int iCol, int index, wstring cell
 {
 	switch (index_function)
 	{
-	case Design_grid_index:	 Project_put_data_switch(iCol, index,cell_text);
+	case Design_grid_index:	 Project_put_data_switch(iCol, index, project,cell_text);
 		break;
 	case Signals_grid_index: Signals_put_data_switch(iCol, index, cell_text);
 		break;
@@ -139,7 +139,7 @@ void Global_put_data_switch(int index_function,int iCol, int index, wstring cell
 		break;
 
 
-	default:	 Project_put_data_switch(iCol, index, cell_text);
+	default:	 Project_put_data_switch(iCol, index, project, cell_text);
 		break;
 	}
 }
@@ -188,6 +188,7 @@ void Global_resize_data(int index_function, int size)
 		break;
 	}
 }
+
 //delete memory row based on function index
 void Global_delete_data_row(int index_function, int row)
 {
@@ -424,10 +425,11 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 	importfile->Filter = string_to_system_string(filter) +
 		"|All Files|*.*";
 	
-
+	
 	if (valid_entries > 1) //if there is data ask if ok to overwrite, check if there is atleast 2 entries because one line in grid is empty
 	{
-		if (show_confirm_window(Global_confirm_txt(index_function,lang)) == IDOK)
+		int result = show_confirm_window(Global_confirm_txt(index_function, lang));
+		if (result == IDYES)
 		{			
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
 			strcat_s(info_txt, sizeof info_txt, info_separator);
@@ -921,21 +923,38 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 	info_write(info_txt);
 
 
-
-	Show_progress(prog_paste[lang], rows_in_board);
+	
 
 	int j = 0;
-	for (int i = 0; i<rows_in_board; i++)
+	// paste this one data to all selected cells, is one row selected
+	if (col_in_board == 1 && rows_in_board == 1 )
 	{
-		cellsInrow = rowsInclipboard[i]->Split(columnsplitter);
-		for (j = 0; j < cellsInrow->Length -1; j++)
+		size_rows = sel_row_max - sel_row_min + 1;
+
+		Show_progress(prog_paste[lang], size_rows);
+		rows_in_board = size_rows;
+		for (int i = 0; i<rows_in_board; i++)
 		{
-			grid->Rows[sel_row_min + i]->Cells[sel_col_min + j]->Value = cellsInrow[j];
+			grid->Rows[sel_row_min + i]->Cells[sel_col_min]->Value = cellsInrow[0];
+			set_progress_value(i);
 		}
-		cellsInrow = cellsInrow[j]->Split('\r');
-		grid->Rows[sel_row_min + i]->Cells[sel_col_min + j]->Value = cellsInrow[0];
-		set_progress_value(i);
 	}
+	else
+	{
+		Show_progress(prog_paste[lang], rows_in_board);
+		for (int i = 0; i<rows_in_board; i++)
+		{
+			cellsInrow = rowsInclipboard[i]->Split(columnsplitter);
+			for (j = 0; j < cellsInrow->Length - 1; j++)
+			{
+				grid->Rows[sel_row_min + i]->Cells[sel_col_min + j]->Value = cellsInrow[j];
+			}
+			cellsInrow = cellsInrow[j]->Split('\r');
+			grid->Rows[sel_row_min + i]->Cells[sel_col_min + j]->Value = cellsInrow[0];
+			set_progress_value(i);
+		}
+	}
+	
 
 	Hide_progress();
 

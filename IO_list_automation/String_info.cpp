@@ -49,6 +49,13 @@ const char * info_generate_IO_tags[]{
 const char * info_generate_IO_adress[]{
 	"Kuriami IO tagai su adresais",
 	"Generating IO tags with adresses", };
+const char * info_multi_CPU[]{
+	"Projektas skeliamas i kelis CPU",
+	"Project divided to few CPU", };
+const char * info_compare_project[]{
+	"Tikrinama ar yra pakeitimu projekte",
+	"Testing if there is changes in project", };
+
 
 const char * info_transfer_data[]{
 	"Perkeliami duomenys",

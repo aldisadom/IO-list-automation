@@ -37,6 +37,12 @@ const wchar_t * prog_generate_IO[]{
 const wchar_t * prog_generate_IO_adress[]{
 	L"Kuriami IO adresai",
 	L"Generating IO adressing", };
+const wchar_t * prog_multi_cpu[]{
+	L"Kuriami multi CPU",
+	L"Generating multi-CPU", };
+const wchar_t * prog_search_diference[]{
+	L"Ieskomi pakeitimai",
+	L"Searching diferences", };
 
 
 const wchar_t * prog_grid_put[]{

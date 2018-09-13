@@ -1,48 +1,23 @@
-2018-09-05  10:26:38.246 - This program is not stable ant not fully tested, carefully use it !!!
-2018-09-05  10:26:39.697 - ---------------------------------------------------------
-2018-09-05  10:26:39.993 - Data is writen to grid - Design
-2018-09-05  10:26:39.996 - Data is writen to grid - Design --- Done
-2018-09-05  10:26:39.997 - Data is writen to grid - Signals
-2018-09-05  10:26:39.998 - Data is writen to grid - Signals --- Done
-2018-09-05  10:26:39.998 - Data is writen to grid - Objects
-2018-09-05  10:26:39.999 - Data is writen to grid - Objects --- Done
-2018-09-05  10:26:42.177 - File_LoadALL --- Button pressed
-2018-09-05  10:26:43.577 - Loading data - Design
-2018-09-05  10:26:43.615 - Loading data - Design --- Done
-2018-09-05  10:26:43.635 - Data is writen to grid - Design
-2018-09-05  10:26:44.052 - Data is writen to grid - Design --- Done
-2018-09-05  10:26:44.472 - Loading data - Signals
-2018-09-05  10:26:44.563 - Loading data - Signals --- Done
-2018-09-05  10:26:44.639 - Data is writen to grid - Signals
-2018-09-05  10:26:44.845 - Data is writen to grid - Signals --- Done
-2018-09-05  10:26:45.875 - Loading data - Objects
-2018-09-05  10:26:45.975 - Loading data - Objects --- Done
-2018-09-05  10:26:46.078 - Data is writen to grid - Objects
-2018-09-05  10:26:46.220 - Data is writen to grid - Objects --- Done
-2018-09-05  10:26:50.868 - Instance_Generate --- Button pressed
-2018-09-05  10:26:50.955 - Data is writen to memory - Signals
-2018-09-05  10:26:51.041 - Data is writen to memory - Signals --- Done
-2018-09-05  10:26:51.047 - Saving data - Signals
-2018-09-05  10:26:51.148 - Saving data - Signals --- Done
-2018-09-05  10:26:51.217 - Data is writen to memory - Objects
-2018-09-05  10:26:51.292 - Data is writen to memory - Objects --- Done
-2018-09-05  10:26:51.293 - Saving data - Objects
-2018-09-05  10:26:51.365 - Saving data - Objects --- Done
-2018-09-05  10:26:51.371 - Adresses are put to table - Beckhoff
-2018-09-05  10:26:54.241 - Data is writen to grid - Signals
-2018-09-05  10:26:54.485 - Data is writen to grid - Signals --- Done
-2018-09-05  10:26:55.354 - Adresses are put to table - Beckhoff --- Done
-2018-09-05  10:26:59.185 - Project_CPU_Siemens --- Button pressed
-2018-09-05  10:27:01.288 - Instance_Generate --- Button pressed
-2018-09-05  10:27:01.407 - Data is writen to memory - Signals
-2018-09-05  10:27:01.549 - Data is writen to memory - Signals --- Done
-2018-09-05  10:27:01.551 - Saving data - Signals
-2018-09-05  10:27:01.674 - Saving data - Signals --- Done
-2018-09-05  10:27:01.778 - Data is writen to memory - Objects
-2018-09-05  10:27:01.880 - Data is writen to memory - Objects --- Done
-2018-09-05  10:27:01.881 - Saving data - Objects
-2018-09-05  10:27:01.999 - Saving data - Objects --- Done
-2018-09-05  10:27:02.001 - Adresses are put to table - Siemens
-2018-09-05  10:27:59.791 - Data is writen to grid - Signals
-2018-09-05  10:28:00.259 - Data is writen to grid - Signals --- Done
-2018-09-05  10:28:01.086 - Adresses are put to table - Siemens --- Done
+2018-09-13  11:39:42.634 - This program is not stable ant not fully tested, carefully use it !!!
+2018-09-13  11:39:43.859 - ---------------------------------------------------------
+2018-09-13  11:39:44.140 - Data is writen to grid - Design
+2018-09-13  11:39:44.140 - Data is writen to grid - Design --- Done
+2018-09-13  11:39:44.140 - Data is writen to grid - Signals
+2018-09-13  11:39:44.156 - Data is writen to grid - Signals --- Done
+2018-09-13  11:39:44.156 - Data is writen to grid - Objects
+2018-09-13  11:39:44.156 - Data is writen to grid - Objects --- Done
+2018-09-13  11:39:50.581 - Project_Design --- Button pressed
+2018-09-13  11:39:52.312 - Reading data from excel
+2018-09-13  11:39:53.002 - Reading data from excel --- Done
+2018-09-13  11:39:53.021 - Data is extracted from unwanted data - Design
+2018-09-13  11:39:55.621 - Data is extracted from unwanted data - Design --- Done
+2018-09-13  11:39:55.636 - Data is writen to grid - Design
+2018-09-13  11:39:56.104 - Data is writen to grid - Design --- Done
+2018-09-13  11:39:56.494 - Data is writen to memory - Design
+2018-09-13  11:39:56.619 - Data is writen to memory - Design --- Done
+2018-09-13  11:39:56.635 - Saving data - Design
+2018-09-13  11:39:56.728 - Saving data - Design --- Done
+2018-09-13  11:39:56.728 - Transfering data - Design->Signals
+2018-09-13  11:40:18.418 - Data is writen to grid - Signals
+2018-09-13  11:40:18.683 - Data is writen to grid - Signals --- Done
+2018-09-13  11:40:19.483 - Transfering data - Design->Signals --- Done

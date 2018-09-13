@@ -195,13 +195,13 @@ int Display_error(char *tekstas)
 	return msgboxID;
 }
 // displays confirmation window
-int show_confirm_window(LPCWSTR tekstas)
+int show_confirm_window(LPCWSTR tekstas) // IDYES; IDNO; IDCANCEL
 {
 	int msgboxID = MessageBox(
 		NULL,
 		tekstas,
 		L"Confirmation",
-		MB_OKCANCEL | MB_SYSTEMMODAL | MB_TOPMOST
+		MB_YESNOCANCEL | MB_SYSTEMMODAL | MB_TOPMOST
 	);
 	return msgboxID;
 }

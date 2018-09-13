@@ -9,6 +9,8 @@
 #include "design.h"
 #include "MainWindow.h"
 #include "Global_Functions.h"
+#include "IO_Form.h"
+#include "IO_declare.h"
 
 using namespace std;
 using namespace IOlistautomation;
@@ -27,41 +29,43 @@ std::wstring Signals_get_data_switch(int iCol, int index)
 	{
 	case 0:	return signals.data[index].number;
 		break;
-	case 1:	return signals.data[index].Cabinet;
+	case 1:	return signals.data[index].CPU;
 		break;
-	case 2:	return signals.data[index].operatyv;
+	case 2:	return signals.data[index].Cabinet;
 		break;
-	case 3:	return signals.data[index].KKS.Full;
+	case 3:	return signals.data[index].operatyv;
 		break;
-	case 4:	return signals.data[index].KKS.Part1;
+	case 4:	return signals.data[index].KKS.Full;
 		break;
-	case 5:	return signals.data[index].KKS.Part2;
+	case 5:	return signals.data[index].KKS.Part1;
 		break;
-	case 6:	return signals.data[index].Used;
+	case 6:	return signals.data[index].KKS.Part2;
 		break;
-	case 7:	return signals.data[index].Object_type;
+	case 7:	return signals.data[index].Used;
 		break;
-	case 8:	return signals.data[index].Object_text;
+	case 8:	return signals.data[index].Object_type;
 		break;
-	case 9:	return signals.data[index].Extendet_object_text;
+	case 9:	return signals.data[index].Object_text;
 		break;
-	case 10:	return signals.data[index].Function_text;
+	case 10:	return signals.data[index].Extendet_object_text;
 		break;
-	case 11:	return signals.data[index].Function;
+	case 11:	return signals.data[index].Function_text;
 		break;
-	case 12:	return signals.data[index].IO_text;
+	case 12:	return signals.data[index].Function;
 		break;
-	case 13:	return signals.data[index].Module_name;
+	case 13:	return signals.data[index].IO_text;
 		break;
-	case 14:	return signals.data[index].Module_type;
+	case 14:	return signals.data[index].Module_name;
 		break;
-	case 15:	return signals.data[index].Channel;
+	case 15:	return signals.data[index].Module_type;
 		break;
-	case 16:	return signals.data[index].Pin;
+	case 16:	return signals.data[index].Channel;
 		break;
-	case 17:	return signals.data[index].Tag;
+	case 17:	return signals.data[index].Pin;
 		break;
-	case 18:	return signals.data[index].Page;
+	case 18:	return signals.data[index].Tag;
+		break;
+	case 19:	return signals.data[index].Page;
 		break;
 	default:return LPWSTR(L"");
 		break;
@@ -74,41 +78,43 @@ void Signals_put_data_switch(int iCol, int index, wstring cell_text)
 	{
 	case 0:	signals.data[index].number = cell_text;
 		break;
-	case 1:	signals.data[index].Cabinet = cell_text;
+	case 1:	signals.data[index].CPU = cell_text;
 		break;
-	case 2:	signals.data[index].operatyv = cell_text;
+	case 2:	signals.data[index].Cabinet = cell_text;
 		break;
-	case 3:	signals.data[index].KKS.Full = cell_text;
+	case 3:	signals.data[index].operatyv = cell_text;
 		break;
-	case 4:	signals.data[index].KKS.Part1 = cell_text;
+	case 4:	signals.data[index].KKS.Full = cell_text;
 		break;
-	case 5:	signals.data[index].KKS.Part2 = cell_text;
+	case 5:	signals.data[index].KKS.Part1 = cell_text;
 		break;
-	case 6:	signals.data[index].Used = cell_text;
+	case 6:	signals.data[index].KKS.Part2 = cell_text;
 		break;
-	case 7:	signals.data[index].Object_type = cell_text;
+	case 7:	signals.data[index].Used = cell_text;
 		break;
-	case 8:	signals.data[index].Object_text = cell_text;
+	case 8:	signals.data[index].Object_type = cell_text;
 		break;
-	case 9:	signals.data[index].Extendet_object_text = cell_text;
+	case 9:	signals.data[index].Object_text = cell_text;
 		break;
-	case 10:	signals.data[index].Function_text = cell_text;
+	case 10:	signals.data[index].Extendet_object_text = cell_text;
 		break;
-	case 11:	signals.data[index].Function = cell_text;
+	case 11:	signals.data[index].Function_text = cell_text;
 		break;
-	case 12:	signals.data[index].IO_text = cell_text;
+	case 12:	signals.data[index].Function = cell_text;
 		break;
-	case 13:	signals.data[index].Module_name = cell_text;
+	case 13:	signals.data[index].IO_text = cell_text;
 		break;
-	case 14:	signals.data[index].Module_type = cell_text;
+	case 14:	signals.data[index].Module_name = cell_text;
 		break;
-	case 15:	signals.data[index].Channel = cell_text;
+	case 15:	signals.data[index].Module_type = cell_text;
 		break;
-	case 16:	signals.data[index].Pin = cell_text;
+	case 16:	signals.data[index].Channel = cell_text;
 		break;
-	case 17:	signals.data[index].Tag = cell_text;
+	case 17:	signals.data[index].Pin = cell_text;
 		break;
-	case 18:	signals.data[index].Page = cell_text;
+	case 18:	signals.data[index].Tag = cell_text;
+		break;
+	case 19:	signals.data[index].Page = cell_text;
 		break;
 	}
 }
@@ -196,7 +202,8 @@ int Signals_get_data_design()
 
 	if (signals.valid_entries > 1)
 	{
-		if (show_confirm_window(conf_signal_overwrite[lang]) == IDOK)
+		int result = show_confirm_window(conf_signal_overwrite[lang]);
+		if (result == IDYES)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
 			strcat_s(info_txt, sizeof info_txt, info_separator);
@@ -234,9 +241,10 @@ int Signals_get_data_design()
 	wstring end1_char;
 	wstring channel_text;
 	wstring test_module;
+	wstring test_text = L"";
 
 	signals.valid_entries = project.valid_entries;
-	Global_resize_data(Signals_grid_index, signals.valid_entries + 1);
+	signals.data.resize(signals.valid_entries + 1);
 
 	int max_digits = GetNumberOfDigits(project.valid_entries);
 	if ((pow(10, max_digits - 1) * 9) < signals.valid_entries) // if numbers are 90% filed increase digits by one
@@ -244,13 +252,14 @@ int Signals_get_data_design()
 		max_digits++;
 	}
 
+	int result = 0;
 	int module_index = 0;
 	for (int row = 0; row <= project.valid_entries; row++)
 	{
 		channel_text = project.data[row].Channel;
 		channel_text_size = channel_text.size();
 
-		module_index = Global_Module_index(project.data[row].Module);
+		module_index = Global_Module_index(project.data[row].Module_name);
 		if (module_index < 0)
 		{
 			module_index = Global_Module_index(project.data[row].Channel);
@@ -273,7 +282,7 @@ int Signals_get_data_design()
 
 		signals.data[signal_row].number = int_to_wstring(signal_row, max_digits);
 		signals.data[signal_row].Cabinet = project.data[row].Cabinet;
-		signals.data[signal_row].Module_name = project.data[row].Module;
+		signals.data[signal_row].Module_name = project.data[row].Module_name;
 		signals.data[signal_row].Pin = project.data[row].Pin;
 		signals.data[signal_row].Channel = channel_text;
 		signals.data[signal_row].IO_text = project.data[row].IO_text;
@@ -310,16 +319,17 @@ int Signals_get_data_design()
 			space = 0;
 		}
 
-		
-		if (semi + 2 >= size_text)
+		int ofset_separator = 1;
+
+		if (semi + ofset_separator >= size_text)
 		{
 			semi = -1;
 		}
-		if (colon + 2 >= size_text)
+		if (colon + ofset_separator >= size_text)
 		{
 			colon = -1;
 		}
-		if ((colon >= 0) && (semi >= colon-2))
+		if ((colon >= 0) && (semi >= colon- ofset_separator))
 		{
 			semi = -1;
 		}
@@ -329,20 +339,20 @@ int Signals_get_data_design()
 		if ((colon != -1) && (semi != -1))  // found colon, found semicolon
 		{
 			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space, semi-space);
-			signals.data[signal_row].Extendet_object_text = signals.data[signal_row].IO_text.substr(semi+2, colon- semi-2);
-			signals.data[signal_row].Function_text = signals.data[signal_row].IO_text.substr(colon + 2);
+			signals.data[signal_row].Extendet_object_text = signals.data[signal_row].IO_text.substr(semi+ ofset_separator, colon- semi- ofset_separator);
+			signals.data[signal_row].Function_text = signals.data[signal_row].IO_text.substr(colon + ofset_separator);
 		}
 		else if (semi != -1)						// no colon, found semicolon
 		{
 			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space, semi-space);
-			signals.data[signal_row].Extendet_object_text = signals.data[signal_row].IO_text.substr(semi + 2);
+			signals.data[signal_row].Extendet_object_text = signals.data[signal_row].IO_text.substr(semi + ofset_separator);
 			signals.data[signal_row].Function_text = LPWSTR(L"");
 		}
 		else if (colon != -1)							// found colon, no semicolon
 		{
 			signals.data[signal_row].Object_text = signals.data[signal_row].IO_text.substr(space,colon-space);
 			signals.data[signal_row].Extendet_object_text = LPWSTR(L"");
-			signals.data[signal_row].Function_text = signals.data[signal_row].IO_text.substr(colon + 2);
+			signals.data[signal_row].Function_text = signals.data[signal_row].IO_text.substr(colon + ofset_separator);
 		}
 		else												// no colon, no semicolon
 		{
@@ -350,11 +360,82 @@ int Signals_get_data_design()
 			signals.data[signal_row].Extendet_object_text = LPWSTR(L"");
 			signals.data[signal_row].Function_text = LPWSTR(L"");
 		}
+
+		// object text
+		test_text = signals.data[signal_row].Object_text;
+		if (test_text.empty() == 0)
+		{
+			// removing spaces at end
+			size_text = test_text.size();
+			result = test_text.find_last_of(L" ");
+			while (result == size_text)
+			{
+				test_text.pop_back();
+				size_text = test_text.size();
+				result = test_text.find_last_of(L" ");
+			}
+			// removing spaces at begining
+			result = test_text.find_first_of(L" ");
+			while (result == 0)
+			{
+				test_text.erase(0, 1);
+				result = test_text.find_first_of(L" ");
+			}
+			signals.data[signal_row].Object_text = test_text;
+		}
+
+		// object extended text
+		test_text = signals.data[signal_row].Extendet_object_text;
+		if (test_text.empty() == 0)
+		{
+			// removing spaces at end
+			size_text = test_text.size();
+			result = test_text.find_last_of(L" ");
+			while (result == size_text)
+			{
+				test_text.pop_back();
+				size_text = test_text.size();
+				result = test_text.find_last_of(L" ");
+			}
+			// removing spaces at begining
+			result = test_text.find_first_of(L" ");
+			while (result == 0)
+			{
+				test_text.erase(0, 1);
+				result = test_text.find_first_of(L" ");
+			}
+			signals.data[signal_row].Extendet_object_text = test_text;
+		}
+
+		// function text
+		test_text = signals.data[signal_row].Function_text;
+		if (test_text.empty() == 0)
+		{
+			// removing spaces at end
+			size_text = test_text.size();
+			result = test_text.find_last_of(L" ");
+			while (result == size_text)
+			{
+				test_text.pop_back();
+				size_text = test_text.size();
+				result = test_text.find_last_of(L" ");
+			}
+			// removing spaces at begining
+			result = test_text.find_first_of(L" ");
+			while (result == 0)
+			{
+				test_text.erase(0,1);
+				result = test_text.find_first_of(L" ");
+			}
+			signals.data[signal_row].Function_text = test_text;
+		}
+
+
 		signal_row++;
 		set_progress_value(row);
 	}
 	signals.valid_entries = signal_row-1;
-	Global_resize_data(Signals_grid_index, signal_row);
+	signals.data.resize(signal_row);
 
 	Hide_progress();
 	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
@@ -827,6 +908,80 @@ int Signals_find_function()
 	return 0;
 }
 
+
+int Signals_multi_cpu()
+{
+	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
+
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	if (signals.valid_entries <= 1)
+	{
+		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
+		strcat_s(err_txt, sizeof err_txt, info_separator);
+		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
+		err_write_show(err_txt);
+		return 1;
+	}
+
+	if (signals.data[0].Tag == L"")
+	{
+		IO_generate();
+	}
+
+	strcpy_s(info_txt, sizeof info_txt, info_multi_CPU[lang]);
+	info_write(info_txt);
+
+	IOlistautomation::IO_Form Io_forma;
+	System::Windows::Forms::DataGridView^ grid = Io_forma.Grid_Module;
+//	System::Windows::Forms::DataGridView^ grid_io = Io_forma.Grid_IO;
+	Io_forma.IO_form_init();
+
+	grid->Columns[0]->ReadOnly = false;
+	grid->Columns[4]->Visible = false;
+	grid->Columns[5]->Visible = false;
+	grid->Columns[6]->Visible = false;
+	grid->Columns[7]->Visible = false;
+
+	IO_show_modules(Io_forma.Grid_Module);
+	Io_forma.ShowDialog();
+
+	Show_progress(prog_multi_cpu[lang], grid->RowCount);
+	int result = 0;
+	wstring text=L"";
+	wstring CPU_name = L"";
+	wstring Module_name = L"";
+	for (int index = 0; index < grid->RowCount; ++index)
+	{
+		CPU_name = Global_get_cell_value(index, 0, grid);
+		text = Global_get_cell_value(index, 2, grid);
+		
+		for (int row = 0; row <= signals.valid_entries; row++)
+		{			
+			//test if match	
+			if (IO_generate_module(signals.data[row].Cabinet, signals.data[row].Module_name, Module_name)==1)
+			{
+				continue;
+			}
+			result = Module_name.compare(text);
+			if (result == 0)
+			{
+				signals.data[row].CPU = CPU_name;
+			}
+		}
+		set_progress_value(index);
+	}	
+
+	Hide_progress();
+
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+
+	strcpy_s(info_txt, sizeof info_txt, info_multi_CPU[lang]);
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+	info_write(info_txt);
+
+	return 0;
+}
 
 
 

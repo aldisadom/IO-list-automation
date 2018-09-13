@@ -89,5 +89,7 @@ Class IOlistautomation.IO_Form: AutoLayout, AnsiClass, Class, Public, BeforeFiel
 Class IOlistautomation.Object_check_Form: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 return_value : Public
   Methods:
     Object_check_init(): PrivateScope, Public, HideBySig

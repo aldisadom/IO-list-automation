@@ -19,6 +19,8 @@ extern const char * info_overlap_adresses[];
 extern const char * info_put_adresses[];
 extern const char * info_generate_IO_tags[];
 extern const char * info_generate_IO_adress[];
+extern const char * info_multi_CPU[];
+extern const char * info_compare_project[];
 
 
 extern const char * info_transfer_data[];

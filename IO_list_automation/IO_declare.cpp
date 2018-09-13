@@ -20,9 +20,9 @@ struct begin_adress_str
 
 using namespace std;
 
-int IO_generate_Rack(int index, std::wstring &text)
+int IO_generate_Rack(wstring cabinet, std::wstring &text)
 {
-	text = signals.data[index].Cabinet;
+	text = cabinet;
 	if (text.empty() == 1)
 	{
 		text = L"";
@@ -38,29 +38,29 @@ int IO_generate_Rack(int index, std::wstring &text)
 
 	return 0;
 }
-int IO_generate_module(int index, std::wstring &text)
+int IO_generate_module(wstring cabinet, wstring module, std::wstring &text)
 {
-	if (IO_generate_Rack(index, text)==1)
+	if (IO_generate_Rack(cabinet, text)==1)
 	{
 		text = L"";
 		return 1;
 	}
 
 	text.append(L"_");
-	text.append(signals.data[index].Module_name);
+	text.append(module);
 
 	return 0;
 }
-int IO_generate_signal(int index, std::wstring &text)
+int IO_generate_signal(wstring cabinet, wstring module, wstring channel, std::wstring &text)
 {
-	if (IO_generate_module(index, text) == 1)
+	if (IO_generate_module(cabinet, module, text) == 1)
 	{
 		text = L"";
 		return 1;
 	}
 
 	text.append(L"_");
-	text.append(signals.data[index].Channel);
+	text.append(channel);
 
 	return 0;
 }
@@ -243,7 +243,7 @@ void IO_put_switch(int signal_index, int modul_index, begin_adress_str &begin_ad
 }
 
 
-void IO_show_modules (IOlistautomation::IO_Form^ Io_forma)
+void IO_show_modules (System::Windows::Forms::DataGridView^ grid)
 {
 	vector <wstring> temp_Module;
 	vector <wstring> unique_Module;
@@ -256,8 +256,8 @@ void IO_show_modules (IOlistautomation::IO_Form^ Io_forma)
 	//put all data to temporaty bufer
 	for (int index = 0; index <= signals.valid_entries; index++)
 	{
-		IO_generate_Rack(index, temp_Rack[index]);
-		IO_generate_module(index, temp_Module[index]);
+		IO_generate_Rack(signals.data[index].Cabinet, temp_Rack[index]);
+		IO_generate_module(signals.data[index].Cabinet, signals.data[index].Module_name, temp_Module[index]);
 	}
 	// sort and find uniques then transfer further
 	std::sort(temp_Rack.begin(), temp_Rack.end());
@@ -276,8 +276,6 @@ void IO_show_modules (IOlistautomation::IO_Form^ Io_forma)
 	{
 		unique_Rack.erase(unique_Rack.begin());
 	}
-
-	System::Windows::Forms::DataGridView^ grid = Io_forma->Grid_Module;
 
 	int row = 0;
 	int result_find = 0;
@@ -330,7 +328,7 @@ int IO_generate()
 
 	for (int index = 0; index <= signals.valid_entries; ++index)
 	{
-		IO_generate_signal(index, tag_text);
+		IO_generate_signal(signals.data[index].Cabinet, signals.data[index].Module_name, signals.data[index].Channel, tag_text);
 
 		if (signals.data[index].Tag.empty() == 1)  // if no data, but now its found, then put type in signal
 		{
@@ -346,9 +344,15 @@ int IO_generate()
 			text_confirm.append(signals.data[index].Tag);
 			text_confirm.append(L" -> ");
 			text_confirm.append(tag_text);
-			if (show_confirm_window(text_confirm.c_str()) == IDOK)
+
+			int result = show_confirm_window(text_confirm.c_str());
+			if (result == IDYES)			
 			{
 				signals.data[index].Tag = tag_text;
+			}
+			else if (result == IDCANCEL)
+			{
+				return 0;
 			}
 		}
 
@@ -396,7 +400,7 @@ int IO_show()
 
 	grid->Columns[0]->ReadOnly = true;
 	
-	IO_show_modules(%Io_forma);
+	IO_show_modules(Io_forma.Grid_Module);
 	Io_forma.ShowDialog();
 
 	Show_progress(prog_generate_IO_adress[lang], grid->RowCount);
@@ -484,7 +488,7 @@ int IO_show()
 			signal_value.append(int_to_wstring(sig_nr+ parameters.adresing_from_1, 2));
 			for (row = 0; row <= signals.valid_entries; row++)
 			{
-				if (IO_generate_signal(row, text) == 1)
+				if (IO_generate_signal(signals.data[row].Cabinet, signals.data[row].Module_name, signals.data[row].Channel, text) == 1)
 				{
 					continue;
 				}

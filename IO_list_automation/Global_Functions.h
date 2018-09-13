@@ -25,8 +25,6 @@ const char* Global_function_txt(int index_function, int language);
 // get selected cpu name
 const char* Global_get_CPU_name(int index_cpu);
 
-//resize memory data based on function index
-void Global_resize_data(int index_function, int size);
 //delete memory row based on function index
 void Global_delete_data_row(int index_function, int row);
 

@@ -24,7 +24,7 @@ namespace IOlistautomation {
 			//TODO: Add the constructor code here
 			//
 		}
-
+		int return_value=0;
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.
@@ -46,6 +46,7 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::TextBox^  Text_KKS;
 
 	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::Button^  Exit_button;
 
 	private:
 		/// <summary>
@@ -68,6 +69,7 @@ namespace IOlistautomation {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->Text_KKS = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->Exit_button = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// IO_button
@@ -144,12 +146,24 @@ namespace IOlistautomation {
 			this->label3->TabIndex = 7;
 			this->label3->Text = L"KKS";
 			// 
+			// Exit_button
+			// 
+			this->Exit_button->Cursor = System::Windows::Forms::Cursors::Default;
+			this->Exit_button->Location = System::Drawing::Point(438, 5);
+			this->Exit_button->Name = L"Exit_button";
+			this->Exit_button->Size = System::Drawing::Size(71, 23);
+			this->Exit_button->TabIndex = 8;
+			this->Exit_button->Text = L"Exit";
+			this->Exit_button->UseVisualStyleBackColor = true;
+			this->Exit_button->Click += gcnew System::EventHandler(this, &Object_check_Form::Exit_button_Click);
+			// 
 			// Object_check_Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(521, 214);
 			this->ControlBox = false;
+			this->Controls->Add(this->Exit_button);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->Text_KKS);
 			this->Controls->Add(this->label2);
@@ -183,6 +197,12 @@ namespace IOlistautomation {
 
 		test.KKS.Full = system_string_to_wstring(this->Text_KKS->Text);
 		test.text_to_copy = system_string_to_wstring(this->Text_object->Text);
+		this->Close();
+	}
+
+
+	private: System::Void Exit_button_Click(System::Object^  sender, System::EventArgs^  e) {
+		return_value = 1;
 		this->Close();
 	}
 

@@ -122,7 +122,7 @@ struct project_data_str
 {
 	wstring number;			//collumn 0, in excel no
 	wstring Cabinet;		//collumn 1, in excel 1
-	wstring Module;			//collumn 2, in excel 2
+	wstring Module_name;	//collumn 2, in excel 2
 	wstring Pin;			//collumn 3, in excel 3
 	wstring Channel;		//collumn 4, in excel 4
 	wstring IO_text;		//collumn 5, in excel 5
@@ -149,32 +149,34 @@ struct project_str
 struct Signal_data_str
 {
 	wstring number;					//collumn 0
-	wstring Cabinet;				//collumn 1	
-	wstring operatyv;				//collumn 2	
-	KKS_str KKS;					//collumn 3		KKS.Full
-									//collumn 4		KKS.Part1
-									//collumn 5		KKS.Part2
-	wstring Used;					//collumn 6
-	wstring Object_type;			//collumn 7
-	wstring Object_text;			//collumn 8
-	wstring Extendet_object_text;	//collumn 9
-	wstring Function_text;			//collumn 10
-	wstring Function;				//collumn 11
-	wstring IO_text;				//collumn 12	
-	wstring Module_name;			//collumn 13
-	wstring Module_type;			//collumn 14
-	wstring Channel;				//collumn 15	
-	wstring Pin;					//collumn 16
-	wstring Tag;					//collumn 17
-	wstring Page;					//collumn 18
+	wstring CPU;					//collumn 1
+	wstring Cabinet;				//collumn 2	
+	wstring operatyv;				//collumn 3	
+	KKS_str KKS;					//collumn 4		KKS.Full
+									//collumn 5		KKS.Part1
+									//collumn 6		KKS.Part2
+	wstring Used;					//collumn 7
+	wstring Object_type;			//collumn 8
+	wstring Object_text;			//collumn 9
+	wstring Extendet_object_text;	//collumn 10
+	wstring Function_text;			//collumn 11
+	wstring Function;				//collumn 12
+	wstring IO_text;				//collumn 13	
+	wstring Module_name;			//collumn 14
+	wstring Module_type;			//collumn 15
+	wstring Channel;				//collumn 16	
+	wstring Pin;					//collumn 17
+	wstring Tag;					//collumn 18
+	wstring Page;					//collumn 19
 };
 struct signal_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums = 18;
+	const int number_collums = 19;
 	const vector<wstring> column_name = {
 		L"Nr.",
+		L"CPU",
 		L"Spinta",
 		L"Operatyv",
 		L"KKS",
@@ -215,24 +217,26 @@ struct learning_str
 struct object_data_str
 {
 	wstring number;					//collumn 0
-	wstring operatyv;				//collumn 1	
-	wstring KKS;					//collumn 2	
-	wstring Object_type;			//collumn 3
-	wstring Object_text;			//collumn 4
-	wstring Adress_val;				//collumn 5
-	wstring Adress_sw1;				//collumn 6
-	wstring Adress_sw2;				//collumn 7
-	wstring Adress_cmd;				//collumn 8
-	wstring Adress_pars;			//collumn 9
+	wstring CPU;					//collumn 1
+	wstring operatyv;				//collumn 2	
+	wstring KKS;					//collumn 3	
+	wstring Object_type;			//collumn 4
+	wstring Object_text;			//collumn 5
+	wstring Adress_val;				//collumn 6
+	wstring Adress_sw1;				//collumn 7
+	wstring Adress_sw2;				//collumn 8
+	wstring Adress_cmd;				//collumn 9
+	wstring Adress_pars;			//collumn 10
 };
 
 struct object_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums = 9;
+	const int number_collums = 10;
 	const vector<wstring> column_name = { 
 		L"Nr.",
+		L"CPU",
 		L"Operatyv",
 		L"KKS",
 		L"Type",
@@ -353,6 +357,6 @@ void Hide_progress();
 void set_progress_value(int value);
 
 void reset_logs();
-int show_confirm_window(LPCWSTR tekstas);
+int show_confirm_window(LPCWSTR tekstas); // IDYES; IDNO; IDCANCEL
 
 #endif

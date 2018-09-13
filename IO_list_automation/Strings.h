@@ -13,6 +13,7 @@
 
 
 extern const char * done_txt[];
+extern const char * cancel_txt[];
 
 extern const char * design_txt[];
 extern const char * signals_txt[];
