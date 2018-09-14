@@ -703,6 +703,7 @@ void Global_put_data_listview(int index_function, int &valid_entries, const int 
 	int grid_cell = 0;
 	for (int index = 0; index <= valid_entries; index++)
 	{
+
 		if (Global_valid_row_check(index_function, index) == 1)
 		{
 			grid->Rows->Add();

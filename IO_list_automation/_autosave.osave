@@ -1,244 +1,221 @@
 ﻿Objects
 Nr.☣CPU☣Operatyv☣KKS☣Type☣Objectas☣Val☣SW1☣SW2☣CMD☣Pars☣
-46☣88☣103☣103☣327☣74☣47☣56☣56☣56☣53☣
-000☣ ☣ ☣1942B_JS02GH001☣ ☣ĮVADAS NR.1 AKTYVUS☣ ☣ ☣ ☣ ☣ ☣
-001☣ ☣ ☣CJF10_CH001☣ ☣Vietinis STOP postas Nr.1☣ ☣ ☣ ☣ ☣ ☣
-002☣ ☣ ☣CJF10_CH002☣ ☣Vietinis STOP postas Nr.2☣ ☣ ☣ ☣ ☣ ☣
-003☣ ☣ ☣CJF10_CH003☣ ☣Vietinis STOP postas Nr.3☣ ☣ ☣ ☣ ☣ ☣
-004☣ ☣ ☣CJF10_CH004☣ ☣Vietinis STOP postas Nr.4☣ ☣ ☣ ☣ ☣ ☣
-005☣ ☣V-85☣HAG10_AA001☣VLV☣Termofikacinio vandens sklendė (V-85)☣ ☣ ☣ ☣ ☣ ☣
-006☣ ☣V-86☣HAG10_AA002☣VLV☣Termofikacinio vandens sklendė (V-86)☣ ☣ ☣ ☣ ☣ ☣
-007☣ ☣V-21☣HAG10_AA101☣VLV☣Termofikacinio vandens reguliuojantis vožtuvas (V-21)☣ ☣ ☣ ☣ ☣ ☣
-008☣ ☣ ☣HBK10_CP001☣AI☣Slėgis kūrykloje☣ ☣ ☣ ☣ ☣ ☣
-009☣ ☣ ☣HHA11_CB001☣ ☣Liepsnos skaneris Nr. 1☣ ☣ ☣ ☣ ☣ ☣
-010☣ ☣ ☣HHA11_GB001☣ ☣Degiklio Nr. 1 mazuto pistoletas įstatytas teisingai☣ ☣ ☣ ☣ ☣ ☣
-011☣ ☣ ☣HHA12_CB001☣ ☣Liepsnos skaneris Nr. 2☣ ☣ ☣ ☣ ☣ ☣
-012☣ ☣ ☣HHA12_GB001☣ ☣Degiklio Nr. 2 mazuto pistoletas įstatytas teisingai☣ ☣ ☣ ☣ ☣ ☣
-013☣ ☣ ☣HHA13_CB001☣ ☣Liepsnos skaneris Nr. 3☣ ☣ ☣ ☣ ☣ ☣
-014☣ ☣ ☣HHA13_GB001☣ ☣Degiklio Nr. 3 mazuto pistoletas įstatytas teisingai☣ ☣ ☣ ☣ ☣ ☣
-015☣ ☣ ☣HHA14_CB001☣ ☣Liepsnos skaneris Nr. 4☣ ☣ ☣ ☣ ☣ ☣
-016☣ ☣ ☣HHA14_GB001☣ ☣Degiklio Nr. 4 mazuto pistoletas įstatytas teisingai☣ ☣ ☣ ☣ ☣ ☣
-017☣ ☣ ☣HHA15_CB001☣ ☣Liepsnos skaneris Nr. 5☣ ☣ ☣ ☣ ☣ ☣
-018☣ ☣ ☣HHA15_GB001☣ ☣Degiklio Nr. 5 mazuto pistoletas įstatytas teisingai☣ ☣ ☣ ☣ ☣ ☣
-019☣ ☣ ☣HHA16_CB001☣ ☣Liepsnos skaneris Nr. 6☣ ☣ ☣ ☣ ☣ ☣
-020☣ ☣ ☣HHA16_GB001☣ ☣Degiklio Nr. 6 mazuto pistoletas įstatytas teisingai☣ ☣ ☣ ☣ ☣ ☣
-021☣ ☣MZ-218☣HHF10_AA001☣VLV☣Mazuto įvadinė sklendė (MZ-218)☣ ☣ ☣ ☣ ☣ ☣
-022☣ ☣MZ-225☣HHF20_AA101☣VLV☣Mazuto srauto reguliavimo vožtuvas (MZ-225)☣ ☣ ☣ ☣ ☣ ☣
-023☣ ☣MZ-208☣HHF20_AA191☣VLV☣Mazuto atkirtos vožtuvas (MZ-208)☣ ☣ ☣ ☣ ☣ ☣
-024☣ ☣ ☣HHF20_CF001☣AI☣Mazuto srautas paduodamoje linijoje☣ ☣ ☣ ☣ ☣ ☣
-025☣ ☣ ☣HHF20_CP001☣AI☣Mazuto slėgis katilo mazuto vamzdyne☣ ☣ ☣ ☣ ☣ ☣
-026☣ ☣ ☣HHF20_CP002☣AI☣Mazuto slėgis po reguliavimo vožtuvo☣ ☣ ☣ ☣ ☣ ☣
-027☣ ☣ ☣HHF20_CP003☣AI☣Mazuto slėgis po reguliavimo vožtuvo☣ ☣ ☣ ☣ ☣ ☣
-028☣ ☣ ☣HHF20_CP004☣AI☣Mazuto slėgis po reguliavimo vožtuvo☣ ☣ ☣ ☣ ☣ ☣
-029☣ ☣ ☣HHF20_CT001☣AI☣Mazuto temperatūra katilo mazuto vamzdyne☣ ☣ ☣ ☣ ☣ ☣
-030☣ ☣ ☣HHF20_CT002☣AI☣Mazuto temperatūra katilo mazuto vamzdyne☣ ☣ ☣ ☣ ☣ ☣
-031☣ ☣MZ-217☣HHF30_AA001☣VLV☣Mazuto atkirtos vožtuvas (MZ-217)☣ ☣ ☣ ☣ ☣ ☣
-032☣ ☣MZ-211☣HHF31_AA191☣VLV☣Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-211)☣ ☣ ☣ ☣ ☣ ☣
-033☣ ☣MZ-221☣HHF31_AA192☣VLV☣Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-221)☣ ☣ ☣ ☣ ☣ ☣
-034☣ ☣ ☣HHF31_CP001☣AI☣Mazuto slėgis prieš degiklį Nr.1☣ ☣ ☣ ☣ ☣ ☣
-035☣ ☣MZ-212☣HHF32_AA191☣VLV☣Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-212)☣ ☣ ☣ ☣ ☣ ☣
-036☣ ☣MZ-222☣HHF32_AA192☣VLV☣Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-222)☣ ☣ ☣ ☣ ☣ ☣
-037☣ ☣ ☣HHF32_CP001☣AI☣Mazuto slėgis prieš degiklį Nr.2☣ ☣ ☣ ☣ ☣ ☣
-038☣ ☣MZ-213☣HHF33_AA191☣VLV☣Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-213)☣ ☣ ☣ ☣ ☣ ☣
-039☣ ☣MZ-223☣HHF33_AA192☣VLV☣Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-223)☣ ☣ ☣ ☣ ☣ ☣
-040☣ ☣ ☣HHF33_CP001☣AI☣Mazuto slėgis prieš degiklį Nr.3☣ ☣ ☣ ☣ ☣ ☣
-041☣ ☣MZ-214☣HHF34_AA191☣VLV☣Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-214)☣ ☣ ☣ ☣ ☣ ☣
-042☣ ☣MZ-224☣HHF34_AA192☣VLV☣Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-224)☣ ☣ ☣ ☣ ☣ ☣
-043☣ ☣ ☣HHF34_CP001☣AI☣Mazuto slėgis prieš degiklį Nr.4☣ ☣ ☣ ☣ ☣ ☣
-044☣ ☣MZ-215☣HHF35_AA191☣VLV☣Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-215)☣ ☣ ☣ ☣ ☣ ☣
-045☣ ☣MZ-225☣HHF35_AA192☣VLV☣Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-225)☣ ☣ ☣ ☣ ☣ ☣
-046☣ ☣ ☣HHF35_CP001☣AI☣Mazuto slėgis prieš degiklį Nr.5☣ ☣ ☣ ☣ ☣ ☣
-047☣ ☣MZ-216☣HHF36_AA191☣VLV☣Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-216)☣ ☣ ☣ ☣ ☣ ☣
-048☣ ☣MZ-226☣HHF36_AA192☣VLV☣Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-226)☣ ☣ ☣ ☣ ☣ ☣
-049☣ ☣ ☣HHF36_CP001☣AI☣Mazuto slėgis prieš degiklį Nr.6☣ ☣ ☣ ☣ ☣ ☣
-050☣ ☣D-217☣HHG10_AA001☣VLV☣Įvadinė dujų sklendė (D-217)☣ ☣ ☣ ☣ ☣ ☣
-051☣ ☣D-220☣HHG10_AA192☣VLV☣Dujų į degiklius atkirtos vožtuvas (D-220)☣ ☣ ☣ ☣ ☣ ☣
-052☣ ☣D-227☣HHG10_AA501☣VLV☣Dujotiekio prapūtimo vožtuvas (D-227)☣ ☣ ☣ ☣ ☣ ☣
-053☣ ☣ ☣HHG10_CF901☣AI☣Dujų srautas☣ ☣ ☣ ☣ ☣ ☣
-054☣ ☣ ☣HHG20_CP002☣AI☣Dujų slėgis kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
-055☣ ☣ ☣HHG20_CP003☣AI☣Dujų slėgis kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
-056☣ ☣D-237☣HHG21_AA502☣VLV☣Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-237)☣ ☣ ☣ ☣ ☣ ☣
-057☣ ☣D-240☣HHG22_AA503☣VLV☣Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-240)☣ ☣ ☣ ☣ ☣ ☣
-058☣ ☣D-201A☣HHG31_AA101☣VLV☣Degiklio Nr.1 dujų kiekio reguliavimo vožtuvas (D-201A)☣ ☣ ☣ ☣ ☣ ☣
-059☣ ☣D-201B☣HHG31_AA102☣VLV☣Degiklio Nr.1 dujų kiekio reguliavimo vožtuvas (D-201B)☣ ☣ ☣ ☣ ☣ ☣
-060☣ ☣D-201☣HHG31_AA191☣VLV☣Degiklio Nr.1 dujų kontrolinis vožtuvas (D-201)☣ ☣ ☣ ☣ ☣ ☣
-061☣ ☣D-211☣HHG31_AA192☣VLV☣Degiklio Nr.1 dujų darbinis vožtuvas (D-211)☣ ☣ ☣ ☣ ☣ ☣
-062☣ ☣D-241☣HHG31_AA501☣VLV☣Degiklio Nr.1 atšakos prapūtimo vožtuvas (D-241)☣ ☣ ☣ ☣ ☣ ☣
-063☣ ☣D-221☣HHG31_AA502☣VLV☣Degiklio Nr.1 dujų saugos žvakė (D-221)☣ ☣ ☣ ☣ ☣ ☣
-064☣ ☣ ☣HHG31_CP001☣AI☣Dujų slėgis tarp degiklio Nr.1 darbinės ir kontrolinės dujų sklendės☣ ☣ ☣ ☣ ☣ ☣
-065☣ ☣A atšaka☣HHG31_CP002☣AI☣Dujų slėgis į degiklį Nr. 1 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-066☣ ☣A atšaka☣HHG31_CP003☣AI☣Dujų slėgis į degiklį Nr. 1 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-067☣ ☣A atšaka☣HHG31_CP004☣AI☣Dujų slėgis į degiklį Nr. 1 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-068☣ ☣B atšaka☣HHG31_CP005☣AI☣Dujų slėgis į degiklį Nr. 1 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-069☣ ☣B atšaka☣HHG31_CP006☣AI☣Dujų slėgis į degiklį Nr. 1 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-070☣ ☣B atšaka☣HHG31_CP007☣AI☣Dujų slėgis į degiklį Nr. 1 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-071☣ ☣D-202A☣HHG32_AA101☣VLV☣Degiklio Nr.2 dujų kiekio reguliavimo vožtuvas (D-202A)☣ ☣ ☣ ☣ ☣ ☣
-072☣ ☣D-202B☣HHG32_AA102☣VLV☣Degiklio Nr.2 dujų kiekio reguliavimo vožtuvas (D-202B)☣ ☣ ☣ ☣ ☣ ☣
-073☣ ☣D-202☣HHG32_AA191☣VLV☣Degiklio Nr.2 dujų kontrolinis vožtuvas (D-202)☣ ☣ ☣ ☣ ☣ ☣
-074☣ ☣D-212☣HHG32_AA192☣VLV☣Degiklio Nr.2 dujų darbinis vožtuvas (D-212)☣ ☣ ☣ ☣ ☣ ☣
-075☣ ☣D-242☣HHG32_AA501☣VLV☣Degiklio Nr.2 atšakos prapūtimo vožtuvas (D-242)☣ ☣ ☣ ☣ ☣ ☣
-076☣ ☣D-222☣HHG32_AA502☣VLV☣Degiklio Nr.2 dujų saugos žvakė (D-222)☣ ☣ ☣ ☣ ☣ ☣
-077☣ ☣ ☣HHG32_CP001☣AI☣Dujų slėgis tarp degiklio Nr.2 darbinės ir kontrolinės dujų sklendės☣ ☣ ☣ ☣ ☣ ☣
-078☣ ☣A atšaka☣HHG32_CP002☣AI☣Dujų slėgis į degiklį Nr. 2 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-079☣ ☣A atšaka☣HHG32_CP003☣AI☣Dujų slėgis į degiklį Nr. 2 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-080☣ ☣A atšaka☣HHG32_CP004☣AI☣Dujų slėgis į degiklį Nr. 2 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-081☣ ☣B atšaka☣HHG32_CP005☣AI☣Dujų slėgis į degiklį Nr. 2 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-082☣ ☣B atšaka☣HHG32_CP006☣AI☣Dujų slėgis į degiklį Nr. 2 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-083☣ ☣B atšaka☣HHG32_CP007☣AI☣Dujų slėgis į degiklį Nr. 2 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-084☣ ☣D-203A☣HHG33_AA101☣VLV☣Degiklio Nr.3 dujų kiekio reguliavimo vožtuvas (D-203A)☣ ☣ ☣ ☣ ☣ ☣
-085☣ ☣D-203B☣HHG33_AA102☣VLV☣Degiklio Nr.3 dujų kiekio reguliavimo vožtuvas (D-203B)☣ ☣ ☣ ☣ ☣ ☣
-086☣ ☣D-203☣HHG33_AA191☣VLV☣Degiklio Nr.3 dujų kontrolinis vožtuvas (D-203)☣ ☣ ☣ ☣ ☣ ☣
-087☣ ☣D-213☣HHG33_AA192☣VLV☣Degiklio Nr.3 dujų darbinis vožtuvas (D-213)☣ ☣ ☣ ☣ ☣ ☣
-088☣ ☣D-243☣HHG33_AA501☣VLV☣Degiklio Nr.3 atšakos prapūtimo vožtuvas (D-243)☣ ☣ ☣ ☣ ☣ ☣
-089☣ ☣D-223☣HHG33_AA502☣VLV☣Degiklio Nr.3 dujų saugos žvakė (D-223)☣ ☣ ☣ ☣ ☣ ☣
-090☣ ☣ ☣HHG33_CP001☣AI☣Dujų slėgis tarp degiklio Nr.3 darbinės ir kontrolinės dujų sklendės☣ ☣ ☣ ☣ ☣ ☣
-091☣ ☣A atšaka☣HHG33_CP002☣AI☣Dujų slėgis į degiklį Nr. 3 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-092☣ ☣A atšaka☣HHG33_CP003☣AI☣Dujų slėgis į degiklį Nr. 3 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-093☣ ☣A atšaka☣HHG33_CP004☣AI☣Dujų slėgis į degiklį Nr. 3 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-094☣ ☣B atšaka☣HHG33_CP005☣AI☣Dujų slėgis į degiklį Nr. 3 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-095☣ ☣B atšaka☣HHG33_CP006☣AI☣Dujų slėgis į degiklį Nr. 3 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-096☣ ☣B atšaka☣HHG33_CP007☣AI☣Dujų slėgis į degiklį Nr. 3 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-097☣ ☣D-204A☣HHG34_AA101☣VLV☣Degiklio Nr.4 dujų kiekio reguliavimo vožtuvas (D-204A)☣ ☣ ☣ ☣ ☣ ☣
-098☣ ☣D-204B☣HHG34_AA102☣VLV☣Degiklio Nr.4 dujų kiekio reguliavimo vožtuvas (D-204B)☣ ☣ ☣ ☣ ☣ ☣
-099☣ ☣D-204☣HHG34_AA191☣VLV☣Degiklio Nr.4 dujų kontrolinis vožtuvas (D-204)☣ ☣ ☣ ☣ ☣ ☣
-100☣ ☣D-214☣HHG34_AA192☣VLV☣Degiklio Nr.4 dujų darbinis vožtuvas (D-214)☣ ☣ ☣ ☣ ☣ ☣
-101☣ ☣D-244☣HHG34_AA501☣VLV☣Degiklio Nr.4 atšakos prapūtimo vožtuvas (D-244)☣ ☣ ☣ ☣ ☣ ☣
-102☣ ☣D-224☣HHG34_AA502☣VLV☣Degiklio Nr.4 dujų saugos žvakė (D-224)☣ ☣ ☣ ☣ ☣ ☣
-103☣ ☣ ☣HHG34_CP001☣AI☣Dujų slėgis tarp degiklio Nr.4 darbinės ir kontrolinės dujų sklendės☣ ☣ ☣ ☣ ☣ ☣
-104☣ ☣A atšaka☣HHG34_CP002☣AI☣Dujų slėgis į degiklį Nr. 4 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-105☣ ☣A atšaka☣HHG34_CP003☣AI☣Dujų slėgis į degiklį Nr. 4 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-106☣ ☣A atšaka☣HHG34_CP004☣AI☣Dujų slėgis į degiklį Nr. 4 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-107☣ ☣B atšaka☣HHG34_CP005☣AI☣Dujų slėgis į degiklį Nr. 4 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-108☣ ☣B atšaka☣HHG34_CP006☣AI☣Dujų slėgis į degiklį Nr. 4 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-109☣ ☣B atšaka☣HHG34_CP007☣AI☣Dujų slėgis į degiklį Nr. 4 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-110☣ ☣D-205A☣HHG35_AA101☣VLV☣Degiklio Nr.5 dujų kiekio reguliavimo vožtuvas (D-205A)☣ ☣ ☣ ☣ ☣ ☣
-111☣ ☣D-205B☣HHG35_AA102☣VLV☣Degiklio Nr.5 dujų kiekio reguliavimo vožtuvas (D-205B)☣ ☣ ☣ ☣ ☣ ☣
-112☣ ☣D-205☣HHG35_AA191☣VLV☣Degiklio Nr.5 dujų kontrolinis vožtuvas (D-205)☣ ☣ ☣ ☣ ☣ ☣
-113☣ ☣D-215☣HHG35_AA192☣VLV☣Degiklio Nr.5 dujų darbinis vožtuvas (D-215)☣ ☣ ☣ ☣ ☣ ☣
-114☣ ☣D-245☣HHG35_AA501☣VLV☣Degiklio Nr.5 atšakos prapūtimo vožtuvas (D-245)☣ ☣ ☣ ☣ ☣ ☣
-115☣ ☣D-225☣HHG35_AA502☣VLV☣Degiklio Nr.5 dujų saugos žvakė (D-225)☣ ☣ ☣ ☣ ☣ ☣
-116☣ ☣ ☣HHG35_CP001☣AI☣Dujų slėgis tarp degiklio Nr.5 darbinės ir kontrolinės dujų sklendės☣ ☣ ☣ ☣ ☣ ☣
-117☣ ☣A atšaka☣HHG35_CP002☣AI☣Dujų slėgis į degiklį Nr. 5 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-118☣ ☣A atšaka☣HHG35_CP003☣AI☣Dujų slėgis į degiklį Nr. 5 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-119☣ ☣A atšaka☣HHG35_CP004☣AI☣Dujų slėgis į degiklį Nr. 5 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-120☣ ☣B atšaka☣HHG35_CP005☣AI☣Dujų slėgis į degiklį Nr. 5 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-121☣ ☣B atšaka☣HHG35_CP006☣AI☣Dujų slėgis į degiklį Nr. 5 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-122☣ ☣B atšaka☣HHG35_CP007☣AI☣Dujų slėgis į degiklį Nr. 5 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-123☣ ☣D-206A☣HHG36_AA101☣VLV☣Degiklio Nr.6 dujų kiekio reguliavimo vožtuvas (D-206A)☣ ☣ ☣ ☣ ☣ ☣
-124☣ ☣D-206B☣HHG36_AA102☣VLV☣Degiklio Nr.6 dujų kiekio reguliavimo vožtuvas (D-206B)☣ ☣ ☣ ☣ ☣ ☣
-125☣ ☣D-206☣HHG36_AA191☣VLV☣Degiklio Nr.6 dujų kontrolinis vožtuvas (D-206)☣ ☣ ☣ ☣ ☣ ☣
-126☣ ☣D-216☣HHG36_AA192☣VLV☣Degiklio Nr.6 dujų darbinis vožtuvas (D-216)☣ ☣ ☣ ☣ ☣ ☣
-127☣ ☣D-246☣HHG36_AA501☣VLV☣Degiklio Nr.6 atšakos prapūtimo vožtuvas (D-246)☣ ☣ ☣ ☣ ☣ ☣
-128☣ ☣D-226☣HHG36_AA502☣VLV☣Degiklio Nr.6 dujų saugos žvakė (D-226)☣ ☣ ☣ ☣ ☣ ☣
-129☣ ☣ ☣HHG36_CP001☣AI☣Dujų slėgis tarp degiklio Nr.6 darbinės ir kontrolinės dujų sklendės☣ ☣ ☣ ☣ ☣ ☣
-130☣ ☣A atšaka☣HHG36_CP002☣AI☣Dujų slėgis į degiklį Nr. 6 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-131☣ ☣A atšaka☣HHG36_CP003☣AI☣Dujų slėgis į degiklį Nr. 6 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-132☣ ☣A atšaka☣HHG36_CP004☣AI☣Dujų slėgis į degiklį Nr. 6 (A atšaka)☣ ☣ ☣ ☣ ☣ ☣
-133☣ ☣B atšaka☣HHG36_CP005☣AI☣Dujų slėgis į degiklį Nr. 6 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-134☣ ☣B atšaka☣HHG36_CP006☣AI☣Dujų slėgis į degiklį Nr. 6 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-135☣ ☣B atšaka☣HHG36_CP007☣AI☣Dujų slėgis į degiklį Nr. 6 (B atšaka)☣ ☣ ☣ ☣ ☣ ☣
-136☣ ☣2OD-1☣HHL10_AA101☣VLV☣Degiklio Nr.1 oro užsklanda (2OD-1)☣ ☣ ☣ ☣ ☣ ☣
-137☣ ☣ ☣HHL10_CP001☣AI☣Oro slėgis prieš 1 degiklį☣ ☣ ☣ ☣ ☣ ☣
-138☣ ☣2OD-2☣HHL20_AA101☣VLV☣Degiklio Nr.2 oro užsklanda (2OD-2)☣ ☣ ☣ ☣ ☣ ☣
-139☣ ☣ ☣HHL20_CP001☣AI☣Oro slėgis prieš 2 degiklį☣ ☣ ☣ ☣ ☣ ☣
-140☣ ☣2OD-3☣HHL30_AA101☣VLV☣Degiklio Nr.3 oro užsklanda (2OD-3)☣ ☣ ☣ ☣ ☣ ☣
-141☣ ☣ ☣HHL30_CP001☣AI☣Oro slėgis prieš 3 degiklį☣ ☣ ☣ ☣ ☣ ☣
-142☣ ☣2OD-4☣HHL40_AA101☣VLV☣Degiklio Nr.4 oro užsklanda (2OD-4)☣ ☣ ☣ ☣ ☣ ☣
-143☣ ☣2OD-5☣HHL50_AA101☣VLV☣Degiklio Nr.5 oro užsklanda (2OD-5)☣ ☣ ☣ ☣ ☣ ☣
-144☣ ☣ ☣HHL50_CP001☣AI☣Oro slėgis prieš 5 degiklį☣ ☣ ☣ ☣ ☣ ☣
-145☣ ☣2OD-6☣HHL60_AA101☣VLV☣Degiklio Nr.6 oro užsklanda (2OD-6)☣ ☣ ☣ ☣ ☣ ☣
-146☣ ☣ ☣HHL60_CP001☣AI☣Oro slėgis prieš 6 degiklį☣ ☣ ☣ ☣ ☣ ☣
-147☣ ☣RG-208☣HHM10_AA191☣VLV☣Savų reikmių garo vožtuvas (RG-208)☣ ☣ ☣ ☣ ☣ ☣
-148☣ ☣ ☣HHM10_CF901☣AI☣Garo kiekis☣ ☣ ☣ ☣ ☣ ☣
-149☣ ☣ ☣HHM10_CP001☣AI☣Garo slėgis į mazuto degiklius☣ ☣ ☣ ☣ ☣ ☣
-150☣ ☣ ☣HHM10_CP002☣AI☣Garo slėgis į mazuto degiklius☣ ☣ ☣ ☣ ☣ ☣
-151☣ ☣RG-211☣HHM11_AA191☣VLV☣Degiklio Nr.1 garo vožtuvas (RG-211)☣ ☣ ☣ ☣ ☣ ☣
-152☣ ☣RG-241☣HHM11_AA192☣VLV☣Degiklio Nr.1 garo vožtuvas (RG-241)☣ ☣ ☣ ☣ ☣ ☣
-153☣ ☣RG-212☣HHM12_AA191☣VLV☣Degiklio Nr.2 garo vožtuvas (RG-212)☣ ☣ ☣ ☣ ☣ ☣
-154☣ ☣RG-242☣HHM12_AA192☣VLV☣Degiklio Nr.2 garo vožtuvas (RG-242)☣ ☣ ☣ ☣ ☣ ☣
-155☣ ☣RG-213☣HHM13_AA191☣VLV☣Degiklio Nr.3 garo vožtuvas (RG-213)☣ ☣ ☣ ☣ ☣ ☣
-156☣ ☣RG-243☣HHM13_AA192☣VLV☣Degiklio Nr.3 garo vožtuvas (RG-243)☣ ☣ ☣ ☣ ☣ ☣
-157☣ ☣RG-214☣HHM14_AA191☣VLV☣Degiklio Nr.4 garo vožtuvas (RG-214)☣ ☣ ☣ ☣ ☣ ☣
-158☣ ☣RG-244☣HHM14_AA192☣VLV☣Degiklio Nr.4 garo vožtuvas (RG-244)☣ ☣ ☣ ☣ ☣ ☣
-159☣ ☣RG-215☣HHM15_AA191☣VLV☣Degiklio Nr.5 garo vožtuvas (RG-215)☣ ☣ ☣ ☣ ☣ ☣
-160☣ ☣RG-245☣HHM15_AA192☣VLV☣Degiklio Nr.5 garo vožtuvas (RG-245)☣ ☣ ☣ ☣ ☣ ☣
-161☣ ☣RG-216☣HHM16_AA191☣VLV☣Degiklio Nr.6 garo vožtuvas (RG-216)☣ ☣ ☣ ☣ ☣ ☣
-162☣ ☣RG-246☣HHM16_AA192☣VLV☣Degiklio Nr.6 garo vožtuvas (RG-246)☣ ☣ ☣ ☣ ☣ ☣
-163☣ ☣ ☣HHX10_CP001☣AI☣Suspausto oro slėgis degiklių 2, 4, 6 kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
-164☣ ☣ ☣HHX10_CP002☣AI☣Suspausto oro slėgis degiklių 2, 4, 6 kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
-165☣ ☣SO-261☣HHX21_AA602☣VLV☣Degiklio Nr.1 suspausto oro vožtuvas (SO-261)☣ ☣ ☣ ☣ ☣ ☣
-166☣ ☣SO-262☣HHX22_AA602☣VLV☣Degiklio Nr.2 suspausto oro vožtuvas (SO-262)☣ ☣ ☣ ☣ ☣ ☣
-167☣ ☣SO-263☣HHX23_AA602☣VLV☣Degiklio Nr.3 suspausto oro vožtuvas (SO-263)☣ ☣ ☣ ☣ ☣ ☣
-168☣ ☣SO-264☣HHX24_AA602☣VLV☣Degiklio Nr.4 suspausto oro vožtuvas (SO-264)☣ ☣ ☣ ☣ ☣ ☣
-169☣ ☣SO-265☣HHX25_AA602☣VLV☣Degiklio Nr.5 suspausto oro vožtuvas (SO-265)☣ ☣ ☣ ☣ ☣ ☣
-170☣ ☣SO-266☣HHX26_AA602☣VLV☣Degiklio Nr.6 suspausto oro vožtuvas (SO-266)☣ ☣ ☣ ☣ ☣ ☣
-171☣ ☣ ☣HHX40_CP001☣AI☣Suspausto oro slėgis degiklių 1, 3, 5 kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
-172☣ ☣ ☣HHX40_CP002☣AI☣Suspausto oro slėgis degiklių 1, 3, 5 kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
-173☣ ☣ ☣HJA11_CB001☣MOT☣Uždegtuvas Nr.1☣ ☣ ☣ ☣ ☣ ☣
-174☣ ☣ ☣HJA11_GH001☣MOT☣Uždegtuvas Nr.1☣ ☣ ☣ ☣ ☣ ☣
-175☣ ☣ ☣HJA12_CB001☣MOT☣Uždegtuvas Nr.2☣ ☣ ☣ ☣ ☣ ☣
-176☣ ☣ ☣HJA12_GH001☣MOT☣Uždegtuvas Nr.2☣ ☣ ☣ ☣ ☣ ☣
-177☣ ☣ ☣HJA13_CB001☣MOT☣Uždegtuvas Nr.3☣ ☣ ☣ ☣ ☣ ☣
-178☣ ☣ ☣HJA13_GH001☣MOT☣Uždegtuvas Nr.3☣ ☣ ☣ ☣ ☣ ☣
-179☣ ☣ ☣HJA14_CB001☣MOT☣Uždegtuvas Nr.4☣ ☣ ☣ ☣ ☣ ☣
-180☣ ☣ ☣HJA14_GH001☣MOT☣Uždegtuvas Nr.4☣ ☣ ☣ ☣ ☣ ☣
-181☣ ☣ ☣HJA15_CB001☣MOT☣Uždegtuvas Nr.5☣ ☣ ☣ ☣ ☣ ☣
-182☣ ☣ ☣HJA15_GH001☣MOT☣Uždegtuvas Nr.5☣ ☣ ☣ ☣ ☣ ☣
-183☣ ☣ ☣HJA16_CB001☣MOT☣Uždegtuvas Nr.6☣ ☣ ☣ ☣ ☣ ☣
-184☣ ☣ ☣HJA16_GH001☣MOT☣Uždegtuvas Nr.6☣ ☣ ☣ ☣ ☣ ☣
-185☣ ☣D-243☣HJG20_AA191☣VLV☣Dujų į uždegtuvus atkirtos vožtuvas (D-243)☣ ☣ ☣ ☣ ☣ ☣
-186☣ ☣D-277☣HJG20_AA501☣VLV☣Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D-277)☣ ☣ ☣ ☣ ☣ ☣
-187☣ ☣D-278☣HJG20_AA502☣VLV☣Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D-278)☣ ☣ ☣ ☣ ☣ ☣
-188☣ ☣ ☣HJG20_CP001☣AI☣Dujų slėgis į uždegtuvus☣ ☣ ☣ ☣ ☣ ☣
-189☣ ☣ ☣HJG20_CP002☣AI☣Dujų slėgis į uždegtuvus☣ ☣ ☣ ☣ ☣ ☣
-190☣ ☣D-271☣HJG31_AA191☣VLV☣Uždegtuvo Nr.1 kontrolinis dujų vožtuvas (D-271)☣ ☣ ☣ ☣ ☣ ☣
-191☣ ☣D-281☣HJG31_AA192☣VLV☣Uždegtuvo Nr.1 darbinis dujų vožtuvas (D-281)☣ ☣ ☣ ☣ ☣ ☣
-192☣ ☣D-291☣HJG31_AA501☣VLV☣Uždegtuvo Nr.1 dujų saugos žvakė (D-291)☣ ☣ ☣ ☣ ☣ ☣
-193☣ ☣ ☣HJG31_CP001☣AI☣Dujų slėgis prieš uždegtuvą Nr.1☣ ☣ ☣ ☣ ☣ ☣
-194☣ ☣D-272☣HJG32_AA191☣VLV☣Uždegtuvo Nr.2 kontrolinis dujų vožtuvas (D-272)☣ ☣ ☣ ☣ ☣ ☣
-195☣ ☣D-282☣HJG32_AA192☣VLV☣Uždegtuvo Nr.2 darbinis dujų vožtuvas (D-282)☣ ☣ ☣ ☣ ☣ ☣
-196☣ ☣D-292☣HJG32_AA501☣VLV☣Uždegtuvo Nr.2 dujų saugos žvakė (D-292)☣ ☣ ☣ ☣ ☣ ☣
-197☣ ☣ ☣HJG32_CP001☣AI☣Dujų slėgis prieš uždegtuvą Nr.2☣ ☣ ☣ ☣ ☣ ☣
-198☣ ☣D-273☣HJG33_AA191☣VLV☣Uždegtuvo Nr.3 kontrolinis dujų vožtuvas (D-273)☣ ☣ ☣ ☣ ☣ ☣
-199☣ ☣D-283☣HJG33_AA192☣VLV☣Uždegtuvo Nr.3 darbinis dujų vožtuvas (D-283)☣ ☣ ☣ ☣ ☣ ☣
-200☣ ☣D-293☣HJG33_AA501☣VLV☣Uždegtuvo Nr.3 dujų saugos žvakė (D-293)☣ ☣ ☣ ☣ ☣ ☣
-201☣ ☣ ☣HJG33_CP001☣AI☣Dujų slėgis prieš uždegtuvą Nr.3☣ ☣ ☣ ☣ ☣ ☣
-202☣ ☣D-274☣HJG34_AA191☣VLV☣Uždegtuvo Nr.4 kontrolinis dujų vožtuvas (D-274)☣ ☣ ☣ ☣ ☣ ☣
-203☣ ☣D-284☣HJG34_AA192☣VLV☣Uždegtuvo Nr.4 darbinis dujų vožtuvas (D-284)☣ ☣ ☣ ☣ ☣ ☣
-204☣ ☣D-294☣HJG34_AA501☣VLV☣Uždegtuvo Nr.4 dujų saugos žvakė (D-294)☣ ☣ ☣ ☣ ☣ ☣
-205☣ ☣ ☣HJG34_CP001☣AI☣Dujų slėgis prieš uždegtuvą Nr.4☣ ☣ ☣ ☣ ☣ ☣
-206☣ ☣D-275☣HJG35_AA191☣VLV☣Uždegtuvo Nr.5 kontrolinis dujų vožtuvas (D-275)☣ ☣ ☣ ☣ ☣ ☣
-207☣ ☣D-285☣HJG35_AA192☣VLV☣Uždegtuvo Nr.5 darbinis dujų vožtuvas (D-285)☣ ☣ ☣ ☣ ☣ ☣
-208☣ ☣D-295☣HJG35_AA501☣VLV☣Uždegtuvo Nr.5 dujų saugos žvakė (D-295)☣ ☣ ☣ ☣ ☣ ☣
-209☣ ☣ ☣HJG35_CP001☣AI☣Dujų slėgis prieš uždegtuvą Nr.5☣ ☣ ☣ ☣ ☣ ☣
-210☣ ☣D-276☣HJG36_AA191☣VLV☣Uždegtuvo Nr.6 kontrolinis dujų vožtuvas (D-276)☣ ☣ ☣ ☣ ☣ ☣
-211☣ ☣D-286☣HJG36_AA192☣VLV☣Uždegtuvo Nr.6 darbinis dujų vožtuvas (D-286)☣ ☣ ☣ ☣ ☣ ☣
-212☣ ☣D-296☣HJG36_AA501☣VLV☣Uždegtuvo Nr.6 dujų saugos žvakė (D-296)☣ ☣ ☣ ☣ ☣ ☣
-213☣ ☣ ☣HJG36_CP001☣AI☣Dujų slėgis prieš uždegtuvą Nr.6☣ ☣ ☣ ☣ ☣ ☣
-214☣ ☣ ☣HLA10_CF001☣AI☣Degimo oro srautas A pusėje☣ ☣ ☣ ☣ ☣ ☣
-215☣ ☣ ☣HLA10_CP001☣AI☣Oro slėgis už A ventiliatoriaus☣ ☣ ☣ ☣ ☣ ☣
-216☣ ☣ ☣HLA10_CT001☣AI☣Degimo oro temperatūra A pusėje☣ ☣ ☣ ☣ ☣ ☣
-217☣ ☣ ☣HLA20_CF001☣AI☣HLA20CF001XQ01 Degimo oro srautas B pusėje☣ ☣ ☣ ☣ ☣ ☣
-218☣ ☣ ☣HLA20_CP001☣AI☣Oro slėgis už B ventiliatoriaus☣ ☣ ☣ ☣ ☣ ☣
-219☣ ☣ ☣HLA20_CT001☣AI☣Degimo oro temperatūra B pusėje☣ ☣ ☣ ☣ ☣ ☣
-220☣ ☣VKV-2A☣HLB10_AN001☣MOT☣Pirminio oro ventiliatorius A pusė (VKV-2A)☣ ☣ ☣ ☣ ☣ ☣
-221☣ ☣VKV-2A, VKV-2B☣HLB10_AN001,☣ ☣HLB20AN001 Pirminio oro ventiliatoriai A, B pusė (VKV-2A, VKV-2B)☣ ☣ ☣ ☣ ☣ ☣
-222☣ ☣VKV-2B☣HLB20_AN001☣MOT☣Pirminio oro ventiliatorius B pusė (VKV-2B)☣ ☣ ☣ ☣ ☣ ☣
-223☣ ☣ ☣HNA10_CT001☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
-224☣ ☣2DU-1A☣HNA20_AA101A☣VLV☣Dūmų skląstis (2DU-1A)☣ ☣ ☣ ☣ ☣ ☣
-225☣ ☣2DU-1B☣HNA20_AA101B☣VLV☣Dūmų skląstis (2DU-1B)☣ ☣ ☣ ☣ ☣ ☣
-226☣ ☣ ☣HNA30_CQ001☣ ☣SIDOR analizatorius. NOx☣ ☣ ☣ ☣ ☣ ☣
-227☣ ☣V-81☣NDA10_AA002☣VLV☣Termofikacinio vandens sklendė už katilo (V-81)☣ ☣ ☣ ☣ ☣ ☣
-228☣ ☣V-72☣NDA10_AA101☣VLV☣Termofikacinio vandens reguliuojantis vožtuvas (V-72)☣ ☣ ☣ ☣ ☣ ☣
-229☣ ☣ ☣NDA10_CF201☣AI☣Termofikacinio vandens srautas per katilą☣ ☣ ☣ ☣ ☣ ☣
-230☣ ☣ ☣NDA10_CF202☣AI☣Termofikacinio vandens srautas per katilą☣ ☣ ☣ ☣ ☣ ☣
-231☣ ☣ ☣NDA10_CF901☣AI☣Katilo šilumos galia☣ ☣ ☣ ☣ ☣ ☣
-232☣ ☣ ☣NDA10_CP001☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣ ☣ ☣
-233☣ ☣ ☣NDA10_CP002☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣ ☣ ☣
-234☣ ☣ ☣NDA10_CT001☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
-235☣ ☣ ☣NDA10_CT002☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
-236☣ ☣ ☣NDA10_CT003☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
-237☣ ☣V-12☣NDB10_AA001☣VLV☣Termofikacinio vandens sklendė prieš katilą (V-12)☣ ☣ ☣ ☣ ☣ ☣
-238☣ ☣ ☣NDB10_CP001☣AI☣Vandens slėgis prieš katilą☣ ☣ ☣ ☣ ☣ ☣
-239☣ ☣ ☣NDB10_CT001☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣ ☣ ☣
+46☣54☣75☣94☣56☣379☣47☣56☣56☣56☣53☣
+000☣K1☣ ☣ETG10AB001☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣ ☣ ☣ ☣ ☣
+001☣K1☣ ☣HDA10AF001☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣ ☣ ☣ ☣ ☣
+002☣K1☣ ☣HDA10CS101☣ ☣Pelenų transporterio apsisukimo daviklis☣ ☣ ☣ ☣ ☣ ☣
+003☣K1☣ ☣HDA10GH001☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣ ☣ ☣ ☣ ☣
+004☣K1☣ ☣HFB10AA401☣VLV☣bunkerio sklendė☣ ☣ ☣ ☣ ☣ ☣
+005☣K1☣ ☣HFB10CG101☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+006☣K1☣ ☣HFB10CG102☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+007☣K1☣ ☣HFB10CG103☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+008☣K1☣ ☣HFB10CG104☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+009☣K1☣ ☣HFB10CL001☣AI☣Kuro lygis bunkeryje☣ ☣ ☣ ☣ ☣ ☣
+010☣K1☣ ☣HFB10CT001☣AI☣Kuro bunkerio temperatūra☣ ☣ ☣ ☣ ☣ ☣
+011☣K1☣ ☣HFB10CT002☣AI☣Kuro bunkerio temperatūra☣ ☣ ☣ ☣ ☣ ☣
+012☣K1☣ ☣HHC10CG101☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+013☣K1☣ ☣HHC10CG102☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+014☣K1☣ ☣HHC10CG103☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+015☣K1☣ ☣HHC10CG104☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+016☣K1☣ ☣HHC10CL101☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+017☣K1☣ ☣HHC10CP001☣AI☣Pirminio oro slėgis po ardynu Nr.1☣ ☣ ☣ ☣ ☣ ☣
+018☣K1☣ ☣HHC10CP002☣AI☣Pirminio oro slėgis po ardynu Nr.2☣ ☣ ☣ ☣ ☣ ☣
+019☣K1☣ ☣HHC10CP003☣AI☣Pirminio oro slėgis po ardynu Nr.3☣ ☣ ☣ ☣ ☣ ☣
+020☣K1☣ ☣HHC10CP010☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+021☣K1☣ ☣HHC10CP101☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+022☣K1☣ ☣HHC10CP301☣AI☣Trauka pakuroje☣ ☣ ☣ ☣ ☣ ☣
+023☣K1☣ ☣HHC10CT001☣AI☣Ardyno Nr. 1 temperatūra☣ ☣ ☣ ☣ ☣ ☣
+024☣K1☣ ☣HHC10CT002☣AI☣Ardyno Nr. 2 temperatūra☣ ☣ ☣ ☣ ☣ ☣
+025☣K1☣ ☣HHC10CT003☣AI☣Ardyno Nr. 3 temperatūra☣ ☣ ☣ ☣ ☣ ☣
+026☣K1☣ ☣HHC10CT004☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣ ☣ ☣
+027☣K1☣ ☣HHC10CT005☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣ ☣ ☣
+028☣K1☣ ☣HHC10CT006☣AI☣Dūmų temperatūra išėjime iš pakuros☣ ☣ ☣ ☣ ☣ ☣
+029☣K1☣ ☣HHC10EM001☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣ ☣ ☣ ☣ ☣
+030☣K1☣ ☣HHC10EM002☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣ ☣ ☣ ☣ ☣
+031☣K1☣ ☣HHC10EM003☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣ ☣ ☣ ☣ ☣
+032☣K1☣ ☣HHF20AA201☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+033☣K1☣ ☣HHF40AA201☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+034☣K1☣ ☣HLA10AA201☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣ ☣ ☣ ☣ ☣
+035☣K1☣ ☣HLA10AA202☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣ ☣ ☣ ☣ ☣
+036☣K1☣ ☣HLA10AA203☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣ ☣ ☣ ☣ ☣
+037☣K1☣ ☣HLA10CF001☣AI☣Pirminio oro srautas po ardynu Nr.1☣ ☣ ☣ ☣ ☣ ☣
+038☣K1☣ ☣HLA10CF002☣AI☣Pirminio oro srautas po ardynu Nr.2☣ ☣ ☣ ☣ ☣ ☣
+039☣K1☣ ☣HLA10CF003☣AI☣Pirminio oro srautas po ardynu Nr.3☣ ☣ ☣ ☣ ☣ ☣
+040☣K1☣ ☣HLB10AN001☣MOT☣Pirminio oro ventiliatorius Nr. 1☣ ☣ ☣ ☣ ☣ ☣
+041☣K1☣ ☣HLB10AN002☣MOT☣Pirminio oro ventiliatorius Nr. 2☣ ☣ ☣ ☣ ☣ ☣
+042☣K1☣ ☣HLB10AN003☣MOT☣Pirminio oro ventiliatorius Nr.3☣ ☣ ☣ ☣ ☣ ☣
+043☣K1☣ ☣HLB20AN001☣MOT☣Antrinio oro ventiliatorius☣ ☣ ☣ ☣ ☣ ☣
+044☣K1☣ ☣HLB30AN010☣MOT☣Tretinio oro ventiliatorius☣ ☣ ☣ ☣ ☣ ☣
+045☣K1☣ ☣HNA10CQ001☣AI☣O2 kiekis dūmuose☣ ☣ ☣ ☣ ☣ ☣
+046☣K1☣ ☣HNA10CT001☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
+047☣K1☣ ☣HNC10AN001☣MOT☣Dūmsiurbis☣ ☣ ☣ ☣ ☣ ☣
+048☣K1☣ ☣HNF10AA401☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+049☣K1☣ ☣HNF10AN001☣MOT☣Dūmų recirkuliacijos dūmsiurbis☣ ☣ ☣ ☣ ☣ ☣
+050☣K1☣ ☣HNF10CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+051☣K1☣ ☣HNF20CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+052☣K1☣ ☣HNF30AA201☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+053☣K1☣ ☣HNF30CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+054☣K1☣ ☣HNF40CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+055☣K1☣ ☣NDA10CP001☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣ ☣ ☣
+056☣K1☣ ☣NDA10CT001☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
+057☣K1☣ ☣NDA11AP001☣MOT☣Katilo recirkuliacinis siurblys☣ ☣ ☣ ☣ ☣ ☣
+058☣K1☣ ☣NDB80CP001☣AI☣Termofikacinio vandens slėgis prieš katilą☣ ☣ ☣ ☣ ☣ ☣
+059☣K1☣ ☣NDB80CT001☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣ ☣ ☣
+060☣K1☣ ☣O2☣VLV☣jutiklio apipūtimo solenoidinis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+061☣K1☣ ☣XTA1☣ ☣Rezervas☣ ☣ ☣ ☣ ☣ ☣
+062☣K2☣ ☣ETG10AB001☣VLV☣Rotacinė multiciklono pelenų sklendė☣ ☣ ☣ ☣ ☣ ☣
+063☣K2☣ ☣HDA10AF001☣MOT☣Grandiklinis pelenų šalinimo transporteris☣ ☣ ☣ ☣ ☣ ☣
+064☣K2☣ ☣HDA10CS101☣ ☣Pelenų transporterio apsisukimo daviklis☣ ☣ ☣ ☣ ☣ ☣
+065☣K2☣ ☣HDA10GH001☣ ☣Pelenų šalinimo grandiklinio transporterio vietinio valdymo postas HDA10AF001☣ ☣ ☣ ☣ ☣ ☣
+066☣K2☣ ☣HFB10AA401☣VLV☣bunkerio sklendė☣ ☣ ☣ ☣ ☣ ☣
+067☣K2☣ ☣HFB10CG101☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+068☣K2☣ ☣HFB10CG102☣HC☣Maitintuvo Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+069☣K2☣ ☣HFB10CG103☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+070☣K2☣ ☣HFB10CG104☣HC☣Maitintuvo Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+071☣K2☣ ☣HFB10CL001☣AI☣Kuro lygis bunkeryje☣ ☣ ☣ ☣ ☣ ☣
+072☣K2☣ ☣HFB10CT001☣AI☣Kuro bunkerio temperatūra☣ ☣ ☣ ☣ ☣ ☣
+073☣K2☣ ☣HFB10CT002☣AI☣Kuro bunkerio temperatūra☣ ☣ ☣ ☣ ☣ ☣
+074☣K2☣ ☣HHC10CG101☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+075☣K2☣ ☣HHC10CG102☣HC☣Ardyno Nr.1 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+076☣K2☣ ☣HHC10CG103☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+077☣K2☣ ☣HHC10CG104☣HC☣Ardyno Nr.2 padėties daviklis☣ ☣ ☣ ☣ ☣ ☣
+078☣K2☣ ☣HHC10CL101☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+079☣K2☣ ☣HHC10CP001☣AI☣Pirminio oro slėgis po ardynu Nr.1☣ ☣ ☣ ☣ ☣ ☣
+080☣K2☣ ☣HHC10CP002☣AI☣Pirminio oro slėgis po ardynu Nr.2☣ ☣ ☣ ☣ ☣ ☣
+081☣K2☣ ☣HHC10CP003☣AI☣Pirminio oro slėgis po ardynu Nr.3☣ ☣ ☣ ☣ ☣ ☣
+082☣K2☣ ☣HHC10CP010☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+083☣K2☣ ☣HHC10CP101☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+084☣K2☣ ☣HHC10CP301☣AI☣Trauka pakuroje☣ ☣ ☣ ☣ ☣ ☣
+085☣K2☣ ☣HHC10CT001☣AI☣Ardyno Nr. 1 temperatūra☣ ☣ ☣ ☣ ☣ ☣
+086☣K2☣ ☣HHC10CT002☣AI☣Ardyno Nr. 2 temperatūra☣ ☣ ☣ ☣ ☣ ☣
+087☣K2☣ ☣HHC10CT003☣AI☣Ardyno Nr. 3 temperatūra☣ ☣ ☣ ☣ ☣ ☣
+088☣K2☣ ☣HHC10CT004☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣ ☣ ☣
+089☣K2☣ ☣HHC10CT005☣AI☣Temperatūra pakuroje☣ ☣ ☣ ☣ ☣ ☣
+090☣K2☣ ☣HHC10CT006☣AI☣Dūmų temperatūra išėjime iš pakuros☣ ☣ ☣ ☣ ☣ ☣
+091☣K2☣ ☣HHC10EM001☣MOT☣Maitintuvų hidraulinės stotelės variklis☣ ☣ ☣ ☣ ☣ ☣
+092☣K2☣ ☣HHC10EM002☣HC☣Pakuros hidraulinė stotis - ardynas☣ ☣ ☣ ☣ ☣ ☣
+093☣K2☣ ☣HHC10EM003☣ ☣Pakuros hidraulinė stotis-pelenų žertuvas☣ ☣ ☣ ☣ ☣ ☣
+094☣K2☣ ☣HHF20AA201☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+095☣K2☣ ☣HHF40AA201☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+096☣K2☣ ☣HLA10AA201☣VLV☣Pirminio oro užsklanda Nr.1☣ ☣ ☣ ☣ ☣ ☣
+097☣K2☣ ☣HLA10AA202☣VLV☣Pirminio oro užsklanda Nr.2☣ ☣ ☣ ☣ ☣ ☣
+098☣K2☣ ☣HLA10AA203☣VLV☣Pirminio oro užsklanda Nr.3☣ ☣ ☣ ☣ ☣ ☣
+099☣K2☣ ☣HLA10CF001☣AI☣Pirminio oro srautas po ardynu Nr.1☣ ☣ ☣ ☣ ☣ ☣
+100☣K2☣ ☣HLA10CF002☣AI☣Pirminio oro srautas po ardynu Nr.2☣ ☣ ☣ ☣ ☣ ☣
+101☣K2☣ ☣HLA10CF003☣AI☣Pirminio oro srautas po ardynu Nr.3☣ ☣ ☣ ☣ ☣ ☣
+102☣K2☣ ☣HLB10AN001☣MOT☣Pirminio oro ventiliatorius Nr. 1☣ ☣ ☣ ☣ ☣ ☣
+103☣K2☣ ☣HLB10AN002☣MOT☣Pirminio oro ventiliatorius Nr. 2☣ ☣ ☣ ☣ ☣ ☣
+104☣K2☣ ☣HLB10AN003☣MOT☣Pirminio oro ventiliatorius Nr.3☣ ☣ ☣ ☣ ☣ ☣
+105☣K2☣ ☣HLB20AN001☣MOT☣Antrinio oro ventiliatorius☣ ☣ ☣ ☣ ☣ ☣
+106☣K2☣ ☣HLB30AN010☣MOT☣Tretinio oro ventiliatorius☣ ☣ ☣ ☣ ☣ ☣
+107☣K2☣ ☣HNA10CQ001☣AI☣O2 kiekis dūmuose☣ ☣ ☣ ☣ ☣ ☣
+108☣K2☣ ☣HNA10CT001☣AI☣Dūmų temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
+109☣K2☣ ☣HNC10AN001☣MOT☣Dūmsiurbis☣ ☣ ☣ ☣ ☣ ☣
+110☣K2☣ ☣HNF10AA401☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+111☣K2☣ ☣HNF10AN001☣MOT☣Dūmų recirkuliacijos dūmsiurbis☣ ☣ ☣ ☣ ☣ ☣
+112☣K2☣ ☣HNF10CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+113☣K2☣ ☣HNF20CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+114☣K2☣ ☣HNF30AA201☣VLV☣Dūmų recirkuliacijos užsklanda☣ ☣ ☣ ☣ ☣ ☣
+115☣K2☣ ☣HNF30CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+116☣K2☣ ☣HNF40CP001☣AI☣Dūmų recirkuliacijos slėgis☣ ☣ ☣ ☣ ☣ ☣
+117☣K2☣ ☣NDA10CP001☣AI☣Termofikacinio vandens slėgis už katilo☣ ☣ ☣ ☣ ☣ ☣
+118☣K2☣ ☣NDA10CT001☣AI☣Termofikacinio vandens temperatūra už katilo☣ ☣ ☣ ☣ ☣ ☣
+119☣K2☣ ☣NDA11AP001☣MOT☣Katilo recirkuliacinis siurblys☣ ☣ ☣ ☣ ☣ ☣
+120☣K2☣ ☣NDB80CP001☣AI☣Termofikacinio vandens slėgis prieš katilą☣ ☣ ☣ ☣ ☣ ☣
+121☣K2☣ ☣NDB80CT001☣AI☣Termofikacinio vandens temperatūra prieš katilą☣ ☣ ☣ ☣ ☣ ☣
+122☣K2☣ ☣O2☣VLV☣jutiklio apipūtimo solenoidinis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+123☣K2☣ ☣XTA1☣ ☣Rezervas☣ ☣ ☣ ☣ ☣ ☣
+124☣KU☣ ☣BJA20☣ ☣valdymo grandinių įtampa☣ ☣ ☣ ☣ ☣ ☣
+125☣KU☣ ☣BJA20:☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣ ☣ ☣
+126☣KU☣ ☣BRV10AG001☣ ☣Dyzelinis generatorius☣ ☣ ☣ ☣ ☣ ☣
+127☣KU☣ ☣CT001☣AI☣Lauko oro temperatūra☣ ☣ ☣ ☣ ☣ ☣
+128☣KU☣ ☣DO01☣ ☣Rezervas☣ ☣ ☣ ☣ ☣ ☣
+129☣KU☣ ☣EAC201-SD2☣ ☣Sandėlio grandiklinio kuro transporterio apsisukimų daviklis☣ ☣ ☣ ☣ ☣ ☣
+130☣KU☣ ☣EAC20CG110☣ ☣Kuro sandėlio grandiklinio transporterio dangčio daviklis☣ ☣ ☣ ☣ ☣ ☣
+131☣KU☣ ☣EAC20GH001☣ ☣EAC20AF001 Kuro ūkio grandiklinio transporterio vietinio valdymo postas☣ ☣ ☣ ☣ ☣ ☣
+132☣KU☣ ☣EAY10CL101☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+133☣KU☣ ☣EAY10CP001☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+134☣KU☣ ☣EAY10CP101☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+135☣KU☣ ☣EAY20CL101☣AI☣Žemas tepalo slėgis arba aukšta temperarūra hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+136☣KU☣ ☣EAY20CP001☣AI☣Tepalo slėgis hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+137☣KU☣ ☣EAY20CP101☣MOT☣Užsiterštas filtras hidrostotelėje☣ ☣ ☣ ☣ ☣ ☣
+138☣KU☣ ☣EBA10CG101☣ ☣Kuro sandėlio saugos trosas☣ ☣ ☣ ☣ ☣ ☣
+139☣KU☣ ☣EBC01☣ ☣Kuro ūkio vietinis STOP postas Nr.1☣ ☣ ☣ ☣ ☣ ☣
+140☣KU☣ ☣EBC02☣ ☣Kuro ūkio vietinis STOP postas Nr.2☣ ☣ ☣ ☣ ☣ ☣
+141☣KU☣ ☣EBC03☣ ☣Kuro ūkio vietinis STOP postas Nr.3☣ ☣ ☣ ☣ ☣ ☣
+142☣KU☣ ☣ECA10AA401☣VLV☣Kuro nukreipimo sklendė☣ ☣ ☣ ☣ ☣ ☣
+143☣KU☣ ☣ECA10CG103☣ ☣Tarpinio grandiklinio kuro transporterio dangčio daviklis☣ ☣ ☣ ☣ ☣ ☣
+144☣KU☣ ☣ECA10CS101☣ ☣Sandėlio tarpinio kuro transporterio apsisukimų daviklis☣ ☣ ☣ ☣ ☣ ☣
+145☣KU☣ ☣ECA10GH001☣ ☣Tarpinio grandiklinio transporterio vietinio valdymo postas ECA10AF001☣ ☣ ☣ ☣ ☣ ☣
+146☣KU☣ ☣GAC10CP001☣AI☣Vandens slėgis☣ ☣ ☣ ☣ ☣ ☣
+147☣KU☣ ☣GCK20CF001☣ ☣Vandens skaitiklis☣ ☣ ☣ ☣ ☣ ☣
+148☣KU☣ ☣GCK20CL001☣AI☣Vandens lygis talpoje☣ ☣ ☣ ☣ ☣ ☣
+149☣KU☣ ☣GCK20CL101☣AI☣Žemas vandens lygis talpoje☣ ☣ ☣ ☣ ☣ ☣
+150☣KU☣ ☣GCN10AP001☣MOT☣Chemikalų dozatorius☣ ☣ ☣ ☣ ☣ ☣
+151☣KU☣ ☣K12.1☣ ☣Jėgos grandinė paruošta☣ ☣ ☣ ☣ ☣ ☣
+152☣KU☣ ☣K1EAC20AF001☣MOT☣Kuro padavimo grandiklinis transporteris☣ ☣ ☣ ☣ ☣ ☣
+153☣KU☣ ☣K1EAY10EM001☣MOT☣Hidraulinės stotelės variklis☣ ☣ ☣ ☣ ☣ ☣
+154☣KU☣ ☣K1EAY20EM001☣MOT☣Hidraulinės stotelės variklis☣ ☣ ☣ ☣ ☣ ☣
+155☣KU☣ ☣K1EBC10AJ010☣ ☣Kuro sluoksnio išlygintuvas☣ ☣ ☣ ☣ ☣ ☣
+156☣KU☣ ☣K1EBC20AJ010☣ ☣Kuro sluoksnio išlygintuvas☣ ☣ ☣ ☣ ☣ ☣
+157☣KU☣ ☣K1EBE10EM001☣MOT☣Vibrosieto variklis☣ ☣ ☣ ☣ ☣ ☣
+158☣KU☣ ☣K1EBE10EM002☣MOT☣Vibrosieto variklis☣ ☣ ☣ ☣ ☣ ☣
+159☣KU☣ ☣K1EBE10EM003☣MOT☣Vibrosieto variklis☣ ☣ ☣ ☣ ☣ ☣
+160☣KU☣ ☣K1EBE10EM004☣MOT☣Vibrosieto variklis☣ ☣ ☣ ☣ ☣ ☣
+161☣KU☣ ☣K1EBE10EM005☣MOT☣Vibrosieto variklis☣ ☣ ☣ ☣ ☣ ☣
+162☣KU☣ ☣K1EBE10EM006☣MOT☣Vibrosieto variklis☣ ☣ ☣ ☣ ☣ ☣
+163☣KU☣ ☣K1ECA10AF001☣MOT☣Tarpinis kuro grandiklinis transporteris☣ ☣ ☣ ☣ ☣ ☣
+164☣KU☣ ☣K1NDB21AP0001☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣ ☣ ☣ ☣ ☣
+165☣KU☣ ☣K1NDB22AP0001☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣ ☣ ☣ ☣ ☣
+166☣KU☣ ☣K1NDB23AP0001☣MOT☣Išorinio cirkuliacijos kontūro siurblys☣ ☣ ☣ ☣ ☣ ☣
+167☣KU☣ ☣K1NDB53AP001☣MOT☣Slėgio palaikymo siurblys☣ ☣ ☣ ☣ ☣ ☣
+168☣KU☣ ☣K1NDB61AP001☣MOT☣Katilo cirkuliacijo siurblys☣ ☣ ☣ ☣ ☣ ☣
+169☣KU☣ ☣K1NDB62AP001☣MOT☣Katilo cirkuliacijo siurblys☣ ☣ ☣ ☣ ☣ ☣
+170☣KU☣ ☣NDA10CF001☣AI☣Termofikato srautas į katilą Nr.1 :☣ ☣ ☣ ☣ ☣ ☣
+171☣KU☣ ☣NDA10CT002☣AI☣Termofikacinio vandens temperatūra už katilo Nr.1☣ ☣ ☣ ☣ ☣ ☣
+172☣KU☣ ☣NDA20CP001☣AI☣Paduodamo termofikacinio vandens slėgis kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
+173☣KU☣ ☣NDA20CT001☣AI☣Paduodamo termofikacinio vandens temperatūra kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
+174☣KU☣ ☣NDA41CP001☣AI☣Paduodamo termofikacinio vandens slėgis už šilumokaičio☣ ☣ ☣ ☣ ☣ ☣
+175☣KU☣ ☣NDA41CT001☣AI☣Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣ ☣ ☣ ☣ ☣ ☣
+176☣KU☣ ☣NDA42CP001☣AI☣Paduodamo termofikacinio vandens slėgis už šilumokaičio☣ ☣ ☣ ☣ ☣ ☣
+177☣KU☣ ☣NDA42CT001☣AI☣Paduodamo termofikacinio vandens temperatūra už šilumokaičio☣ ☣ ☣ ☣ ☣ ☣
+178☣KU☣ ☣NDA50AA201☣VLV☣Reguliuojantis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+179☣KU☣ ☣NDA50CF001☣AI☣Termofikato srautas į tinklus:☣ ☣ ☣ ☣ ☣ ☣
+180☣KU☣ ☣NDA50CP001☣AI☣Paduodamo termofikacinio vandens slėgis☣ ☣ ☣ ☣ ☣ ☣
+181☣KU☣ ☣NDA50CT001☣AI☣Paduodamo termofikacinio vandens temperatūra prieš reguliavimo vožtuvą☣ ☣ ☣ ☣ ☣ ☣
+182☣KU☣ ☣NDA50CT002☣AI☣Paduodamo termofikacinio vandens temperatūra už reguliavimo vožtuvo☣ ☣ ☣ ☣ ☣ ☣
+183☣KU☣ ☣NDA50CT003☣AI☣Paduodamo termofikacinio vandens temperatūra☣ ☣ ☣ ☣ ☣ ☣
+184☣KU☣ ☣NDA51AA201☣VLV☣Reguliuojantis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+185☣KU☣ ☣NDB10CP001☣AI☣Grįžtamo termofikacinio vandens slėgis☣ ☣ ☣ ☣ ☣ ☣
+186☣KU☣ ☣NDB10CP002☣AI☣Grįžtamo termofikacinio vandens slėgis už filtro☣ ☣ ☣ ☣ ☣ ☣
+187☣KU☣ ☣NDB10CT001☣AI☣Grįžtamo termofikacinio vandens temperatūra☣ ☣ ☣ ☣ ☣ ☣
+188☣KU☣ ☣NDB10CT002☣AI☣Grįžtamo termofikacinio vandens temperatūra už filtro☣ ☣ ☣ ☣ ☣ ☣
+189☣KU☣ ☣NDB30CP001☣AI☣Grįžtamo termofikacinio vandens slėgis prieš šilumokaičius☣ ☣ ☣ ☣ ☣ ☣
+190☣KU☣ ☣NDB30CT001☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaičius☣ ☣ ☣ ☣ ☣ ☣
+191☣KU☣ ☣NDB31CP001☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣ ☣ ☣ ☣ ☣ ☣
+192☣KU☣ ☣NDB32CP001☣AI☣Grįžtamo termofikacinio vandens temperatūra prieš šilumokaitį☣ ☣ ☣ ☣ ☣ ☣
+193☣KU☣ ☣NDB35AA201☣VLV☣Reguliuojantis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+194☣KU☣ ☣NDB35CP001☣AI☣Žalio vandens slėgis☣ ☣ ☣ ☣ ☣ ☣
+195☣KU☣ ☣NDB41CP001☣AI☣Grįžtamo termofikacinio vandens slėgis į kolektorių☣ ☣ ☣ ☣ ☣ ☣
+196☣KU☣ ☣NDB41CT001☣AI☣Grįžtamo termofikacinio vandens temperatūra į kolektorių☣ ☣ ☣ ☣ ☣ ☣
+197☣KU☣ ☣NDB42CP001☣AI☣Grįžtamo termofikacinio vandens slėgis į kolektorių☣ ☣ ☣ ☣ ☣ ☣
+198☣KU☣ ☣NDB42CT001☣AI☣Grįžtamo termofikacinio vandens temperatūra į kolektorių☣ ☣ ☣ ☣ ☣ ☣
+199☣KU☣ ☣NDB50CP001☣AI☣Grįžtamo termofikacinio vandens slėgis kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
+200☣KU☣ ☣NDB50CT001☣AI☣Grįžtamo termofikacinio vandens temperatūra kolektoriuje☣ ☣ ☣ ☣ ☣ ☣
+201☣KU☣ ☣NDB51CP001☣AI☣Švaraus vandens slėgis☣ ☣ ☣ ☣ ☣ ☣
+202☣KU☣ ☣NDB56AA201☣VLV☣Reguliuojantis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+203☣KU☣ ☣NDB80CP002☣AI☣Termofikacinio vandens slėgis prieš katilą Nr.1☣ ☣ ☣ ☣ ☣ ☣
+204☣KU☣ ☣QFB10CP001☣AI☣Suspausto oro slėgis☣ ☣ ☣ ☣ ☣ ☣
+205☣KU☣ ☣XTA1☣ ☣Rezervas☣ ☣ ☣ ☣ ☣ ☣
+206☣KU☣ ☣XTI1☣ ☣Rezervas☣ ☣ ☣ ☣ ☣ ☣
+207☣Pagalb☣ ☣K1NDA50AA101☣VLV☣Trieigis reguliuojantis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+208☣Pagalb☣ ☣K1NDB10AA101☣VLV☣Trieigis reguliuojantis vožtuvas☣ ☣ ☣ ☣ ☣ ☣
+209☣Pagalb☣ ☣K1NDB22AA101☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣ ☣ ☣ ☣ ☣
+210☣Pagalb☣ ☣K1NDB23AA101☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣ ☣ ☣ ☣ ☣
+211☣Pagalb☣ ☣K1NDB54AP001☣MOT☣Slėgio palaikymo siurblys☣ ☣ ☣ ☣ ☣ ☣
+212☣Pagalb☣ ☣K1NDB61AA101☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣ ☣ ☣ ☣ ☣
+213☣Pagalb☣ ☣K1NDB62AA101☣VLV☣Uždarymo vožtuvas su elektros pavara☣ ☣ ☣ ☣ ☣ ☣
+214☣ ☣ ☣K1EAY10EM001☣MOT☣Hidraulinės stotelės variklis☣ ☣ ☣ ☣ ☣ ☣
+215☣ ☣ ☣K1EAY20EM001☣MOT☣Hidraulinės stotelės variklis☣ ☣ ☣ ☣ ☣ ☣
+216☣ ☣ ☣K1EBC10AJ010☣ ☣Kuro sluoksnio išlygintuvas☣ ☣ ☣ ☣ ☣ ☣
  ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣

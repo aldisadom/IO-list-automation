@@ -127,13 +127,14 @@ struct project_data_str
 	wstring Channel;		//collumn 4, in excel 4
 	wstring IO_text;		//collumn 5, in excel 5
 	wstring Page;			//collumn 6, in excel 6
+	wstring Changed;		//collumn 7, in excel no
 };
 
 struct project_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums =6;
+	const int number_collums =7;
 	const vector<wstring> column_name =	{
 		L"Nr.",
 		L"Spinta",
@@ -142,6 +143,7 @@ struct project_str
 		L"Kanalas",
 		L"IO tekstas",		
 		L"Projekto reference",
+		L"Changed",
 	};
 	vector <project_data_str> data;
 };

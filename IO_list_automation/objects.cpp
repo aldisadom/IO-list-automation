@@ -106,7 +106,6 @@ int Objects_valid_row_check(int row)
 }
 
 
-
 //find unique objects in signals data
 int Objects_find_uniques()
 {
@@ -122,6 +121,8 @@ int Objects_find_uniques()
 
 	vector <wstring> temp_KKS;
 	vector <wstring> unique_KKS;
+	wstring KKS_to_compare;
+
 
 	temp_KKS.resize(signals.valid_entries+1);
 
@@ -132,7 +133,12 @@ int Objects_find_uniques()
 	//put all data to temporaty KKS bufer
 	for (int index = 0; index <= signals.valid_entries; index++)
 	{
-		temp_KKS[index] = signals.data[index].KKS.Full;
+		if (signals.data[index].KKS.Full.empty() == 0)
+		{
+			temp_KKS[index] = signals.data[index].CPU;
+			temp_KKS[index].append(separator);
+			temp_KKS[index].append(signals.data[index].KKS.Full);
+		}
 	}
 	// sort and find uniques then transfer further
 	std::sort(temp_KKS.begin(), temp_KKS.end());
@@ -165,7 +171,20 @@ int Objects_find_uniques()
 			{
 				for (i = 0; i <= size_temp; i++)
 				{
-					if (unique_KKS[index].compare(objects.data[i].KKS) == 0)
+					int result = unique_KKS[index].find(separator);
+					if (result > 0)
+					{
+						KKS_to_compare = unique_KKS[index].substr(0, result);
+					}
+					else
+					{
+						KKS_to_compare = L"";
+					}
+
+					KKS_to_compare.append(separator);
+					KKS_to_compare.append(objects.data[i].KKS);
+
+					if (unique_KKS[index].compare(KKS_to_compare) == 0)
 					{
 						break;
 					}
@@ -190,16 +209,40 @@ int Objects_find_uniques()
 			{
 				for (i = 0; i <= objects.valid_entries; i++)
 				{
-					if (unique_KKS[index].compare(objects.data[i].KKS) == 0)
+					int result = unique_KKS[index].find(separator);
+					if (result > 0)
+					{
+						KKS_to_compare = unique_KKS[index].substr(0, result);
+					}
+					else
+					{
+						KKS_to_compare = L"";
+					}
+
+					KKS_to_compare.append(separator);
+					KKS_to_compare.append(objects.data[i].KKS);
+
+					if (unique_KKS[index].compare(KKS_to_compare) == 0)
 					{
 						break;
-					}					
+					}
 				}
 				if (i > objects.valid_entries)  // if havent found matching kks addd to end of list
 				{
 					for (int j = 0; j <= signals.valid_entries; ++j) // find unique KKS in signal data
 					{
-						if (unique_KKS[index].compare(signals.data[j].KKS.Full) == 0) // when found put signal data to object data
+						int result = unique_KKS[index].find(separator);
+						int size_KKS = unique_KKS[index].size();
+						if ((result >= 0) && (size_KKS > result) )
+						{
+							KKS_to_compare = unique_KKS[index].substr(result+1);
+						}
+						else
+						{
+							KKS_to_compare = L"";
+						}
+
+						if (KKS_to_compare.compare(signals.data[j].KKS.Full) == 0) // when found put signal data to object data
 						{
 							new_valid_entries++;
 							objects.data.resize(new_valid_entries + 1);
@@ -252,7 +295,12 @@ int Objects_find_uniques()
 	{
 		for (int i = 0; i <= signals.valid_entries; ++i) 
 		{
-			if (unique_KKS[index].compare(signals.data[i].KKS.Full) == 0) // match unique KKS to signal KKS, and then transfer signal data to object data 
+			
+			KKS_to_compare = signals.data[i].CPU;
+			KKS_to_compare.append(separator);
+			KKS_to_compare.append(signals.data[i].KKS.Full);
+
+			if (unique_KKS[index].compare(KKS_to_compare) == 0) // match unique KKS to signal KKS, and then transfer signal data to object data 
 			{
 				objects.data[index].KKS = signals.data[i].KKS.Full;
 				objects.data[index].number = int_to_wstring(index, max_digits);

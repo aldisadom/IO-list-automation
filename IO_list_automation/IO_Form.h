@@ -110,10 +110,6 @@ namespace IOlistautomation {
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->Grid_Module = (gcnew System::Windows::Forms::DataGridView());
-			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->Grid_IO = (gcnew System::Windows::Forms::DataGridView());
 			this->Column0 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -122,6 +118,10 @@ namespace IOlistautomation {
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->Grid_IO = (gcnew System::Windows::Forms::DataGridView());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_Module))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -148,6 +148,70 @@ namespace IOlistautomation {
 			this->Grid_Module->Name = L"Grid_Module";
 			this->Grid_Module->Size = System::Drawing::Size(993, 441);
 			this->Grid_Module->TabIndex = 0;
+			// 
+			// Column0
+			// 
+			this->Column0->HeaderText = L"CPU";
+			this->Column0->Name = L"Column0";
+			this->Column0->Width = 54;
+			// 
+			// Column1
+			// 
+			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column1->DefaultCellStyle = dataGridViewCellStyle1;
+			this->Column1->HeaderText = L"Rack example";
+			this->Column1->Name = L"Column1";
+			this->Column1->ReadOnly = true;
+			this->Column1->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
+			this->Column1->Width = 73;
+			// 
+			// Column2
+			// 
+			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column2->DefaultCellStyle = dataGridViewCellStyle2;
+			this->Column2->HeaderText = L"Module example";
+			this->Column2->Name = L"Column2";
+			this->Column2->ReadOnly = true;
+			this->Column2->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
+			this->Column2->Width = 81;
+			// 
+			// Column5
+			// 
+			this->Column5->HeaderText = L"";
+			this->Column5->MinimumWidth = 20;
+			this->Column5->Name = L"Column5";
+			this->Column5->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
+			this->Column5->Width = 20;
+			// 
+			// Column3
+			// 
+			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column3->DefaultCellStyle = dataGridViewCellStyle3;
+			this->Column3->HeaderText = L"Rack";
+			this->Column3->Name = L"Column3";
+			this->Column3->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
+			this->Column3->Width = 39;
+			// 
+			// Column4
+			// 
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column4->DefaultCellStyle = dataGridViewCellStyle4;
+			this->Column4->HeaderText = L"Module";
+			this->Column4->Name = L"Column4";
+			this->Column4->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
+			this->Column4->Width = 48;
+			// 
+			// Column6
+			// 
+			this->Column6->HeaderText = L"Type";
+			this->Column6->Name = L"Column6";
+			this->Column6->Width = 56;
+			// 
+			// Column7
+			// 
+			this->Column7->HeaderText = L"input count";
+			this->Column7->Name = L"Column7";
+			this->Column7->Width = 78;
 			// 
 			// tabControl1
 			// 
@@ -202,70 +266,6 @@ namespace IOlistautomation {
 			this->Grid_IO->Size = System::Drawing::Size(993, 441);
 			this->Grid_IO->TabIndex = 1;
 			// 
-			// Column0
-			// 
-			this->Column0->HeaderText = L"CPU";
-			this->Column0->Name = L"Column0";
-			this->Column0->Width = 54;
-			// 
-			// Column1
-			// 
-			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column1->DefaultCellStyle = dataGridViewCellStyle1;
-			this->Column1->HeaderText = L"Rack example";
-			this->Column1->Name = L"Column1";
-			this->Column1->ReadOnly = true;
-			this->Column1->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
-			this->Column1->Width = 81;
-			// 
-			// Column2
-			// 
-			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column2->DefaultCellStyle = dataGridViewCellStyle2;
-			this->Column2->HeaderText = L"Module example";
-			this->Column2->Name = L"Column2";
-			this->Column2->ReadOnly = true;
-			this->Column2->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
-			this->Column2->Width = 81;
-			// 
-			// Column5
-			// 
-			this->Column5->HeaderText = L"";
-			this->Column5->MinimumWidth = 20;
-			this->Column5->Name = L"Column5";
-			this->Column5->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
-			this->Column5->Width = 20;
-			// 
-			// Column3
-			// 
-			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column3->DefaultCellStyle = dataGridViewCellStyle3;
-			this->Column3->HeaderText = L"Rack";
-			this->Column3->Name = L"Column3";
-			this->Column3->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
-			this->Column3->Width = 39;
-			// 
-			// Column4
-			// 
-			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column4->DefaultCellStyle = dataGridViewCellStyle4;
-			this->Column4->HeaderText = L"Module";
-			this->Column4->Name = L"Column4";
-			this->Column4->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
-			this->Column4->Width = 48;
-			// 
-			// Column6
-			// 
-			this->Column6->HeaderText = L"Type";
-			this->Column6->Name = L"Column6";
-			this->Column6->Width = 56;
-			// 
-			// Column7
-			// 
-			this->Column7->HeaderText = L"input count";
-			this->Column7->Name = L"Column7";
-			this->Column7->Width = 78;
-			// 
 			// IO_Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -274,6 +274,7 @@ namespace IOlistautomation {
 			this->Controls->Add(this->tabControl1);
 			this->KeyPreview = true;
 			this->Name = L"IO_Form";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"IO_Form";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_Module))->EndInit();
 			this->tabControl1->ResumeLayout(false);

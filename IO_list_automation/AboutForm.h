@@ -84,6 +84,7 @@ namespace IOlistautomation {
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
 			this->Name = L"AboutForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"About";
 			this->TopMost = true;
 			this->ResumeLayout(false);

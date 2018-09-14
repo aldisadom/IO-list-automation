@@ -251,6 +251,7 @@ namespace IOlistautomation {
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
 			this->Name = L"KKS_edit";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"KKS_edit";
 			this->ResumeLayout(false);
 			this->PerformLayout();

@@ -1,23 +1,8 @@
-2018-09-13  11:39:42.634 - This program is not stable ant not fully tested, carefully use it !!!
-2018-09-13  11:39:43.859 - ---------------------------------------------------------
-2018-09-13  11:39:44.140 - Data is writen to grid - Design
-2018-09-13  11:39:44.140 - Data is writen to grid - Design --- Done
-2018-09-13  11:39:44.140 - Data is writen to grid - Signals
-2018-09-13  11:39:44.156 - Data is writen to grid - Signals --- Done
-2018-09-13  11:39:44.156 - Data is writen to grid - Objects
-2018-09-13  11:39:44.156 - Data is writen to grid - Objects --- Done
-2018-09-13  11:39:50.581 - Project_Design --- Button pressed
-2018-09-13  11:39:52.312 - Reading data from excel
-2018-09-13  11:39:53.002 - Reading data from excel --- Done
-2018-09-13  11:39:53.021 - Data is extracted from unwanted data - Design
-2018-09-13  11:39:55.621 - Data is extracted from unwanted data - Design --- Done
-2018-09-13  11:39:55.636 - Data is writen to grid - Design
-2018-09-13  11:39:56.104 - Data is writen to grid - Design --- Done
-2018-09-13  11:39:56.494 - Data is writen to memory - Design
-2018-09-13  11:39:56.619 - Data is writen to memory - Design --- Done
-2018-09-13  11:39:56.635 - Saving data - Design
-2018-09-13  11:39:56.728 - Saving data - Design --- Done
-2018-09-13  11:39:56.728 - Transfering data - Design->Signals
-2018-09-13  11:40:18.418 - Data is writen to grid - Signals
-2018-09-13  11:40:18.683 - Data is writen to grid - Signals --- Done
-2018-09-13  11:40:19.483 - Transfering data - Design->Signals --- Done
+2018-09-14  11:29:51.875 - This program is not stable ant not fully tested, carefully use it !!!
+2018-09-14  11:29:54.833 - ---------------------------------------------------------
+2018-09-14  11:29:55.130 - Data is writen to grid - Design
+2018-09-14  11:29:55.130 - Data is writen to grid - Design --- Done
+2018-09-14  11:29:55.130 - Data is writen to grid - Signals
+2018-09-14  11:29:55.130 - Data is writen to grid - Signals --- Done
+2018-09-14  11:29:55.130 - Data is writen to grid - Objects
+2018-09-14  11:29:55.130 - Data is writen to grid - Objects --- Done

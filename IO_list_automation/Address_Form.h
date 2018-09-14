@@ -2850,6 +2850,7 @@ private: System::Windows::Forms::Button^  Cancel_button;
 			this->Controls->Add(this->label26);
 			this->Controls->Add(this->label27);
 			this->Name = L"Address_Form";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"Address_Form";
 			this->ResumeLayout(false);
 			this->PerformLayout();

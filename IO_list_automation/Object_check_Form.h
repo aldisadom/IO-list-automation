@@ -173,7 +173,7 @@ namespace IOlistautomation {
 			this->Controls->Add(this->Object_button);
 			this->Controls->Add(this->IO_button);
 			this->Name = L"Object_check_Form";
-			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"Object_check_Form";
 			this->ResumeLayout(false);
 			this->PerformLayout();

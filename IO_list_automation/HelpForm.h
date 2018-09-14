@@ -56,6 +56,7 @@ namespace IOlistautomation {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(790, 428);
 			this->Name = L"HelpForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"HelpForm";
 			this->ResumeLayout(false);
 

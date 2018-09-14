@@ -211,6 +211,7 @@ private:
 			this->signalsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Signals_KKSedit = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Signals_FindFunction = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Signals_MultiCPU = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->uniquesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_FindUniques = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Uniques_FindObjects = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -240,7 +241,6 @@ private:
 			this->Object_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->progressBaras = (gcnew System::Windows::Forms::ProgressBar());
 			this->Progress_label = (gcnew System::Windows::Forms::Label());
-			this->Signals_MultiCPU = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Design_grid))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
@@ -377,8 +377,7 @@ private:
 			// 
 			// Project_IOcompare
 			// 
-			this->Project_IOcompare->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->Project_IOcompare->BackColor = System::Drawing::SystemColors::Control;
 			this->Project_IOcompare->Name = L"Project_IOcompare";
 			this->Project_IOcompare->Size = System::Drawing::Size(201, 22);
 			this->Project_IOcompare->Text = L"IO compare";
@@ -513,7 +512,7 @@ private:
 			// 
 			this->Signals_KKSedit->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_KKSedit->Name = L"Signals_KKSedit";
-			this->Signals_KKSedit->Size = System::Drawing::Size(180, 22);
+			this->Signals_KKSedit->Size = System::Drawing::Size(145, 22);
 			this->Signals_KKSedit->Text = L"KKS edit";
 			this->Signals_KKSedit->Click += gcnew System::EventHandler(this, &MainWindow::Signals_KKSedit_Click);
 			// 
@@ -521,9 +520,16 @@ private:
 			// 
 			this->Signals_FindFunction->BackColor = System::Drawing::SystemColors::Control;
 			this->Signals_FindFunction->Name = L"Signals_FindFunction";
-			this->Signals_FindFunction->Size = System::Drawing::Size(180, 22);
+			this->Signals_FindFunction->Size = System::Drawing::Size(145, 22);
 			this->Signals_FindFunction->Text = L"Find function";
 			this->Signals_FindFunction->Click += gcnew System::EventHandler(this, &MainWindow::Signals_FindFunction_Click);
+			// 
+			// Signals_MultiCPU
+			// 
+			this->Signals_MultiCPU->Name = L"Signals_MultiCPU";
+			this->Signals_MultiCPU->Size = System::Drawing::Size(145, 22);
+			this->Signals_MultiCPU->Text = L"Multi CPU";
+			this->Signals_MultiCPU->Click += gcnew System::EventHandler(this, &MainWindow::Signals_MultiCPU_Click);
 			// 
 			// uniquesToolStripMenuItem
 			// 
@@ -813,13 +819,6 @@ private:
 			this->Progress_label->UseMnemonic = false;
 			this->Progress_label->Visible = false;
 			// 
-			// Signals_MultiCPU
-			// 
-			this->Signals_MultiCPU->Name = L"Signals_MultiCPU";
-			this->Signals_MultiCPU->Size = System::Drawing::Size(180, 22);
-			this->Signals_MultiCPU->Text = L"Multi CPU";
-			this->Signals_MultiCPU->Click += gcnew System::EventHandler(this, &MainWindow::Signals_MultiCPU_Click);
-			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -1097,7 +1096,7 @@ private:
 		}
 
 	}
-//empty
+//function done
 	private: System::Void Project_IOcompare_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
 		string converted_text = button_press_name_write(buttonName);

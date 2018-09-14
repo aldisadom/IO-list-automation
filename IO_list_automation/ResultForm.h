@@ -98,31 +98,31 @@ namespace IOlistautomation {
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_AI = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_HC = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_VLV = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_MOT = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_PID = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_FC = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_SCADA = (gcnew System::Windows::Forms::DataGridView());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_AI))->BeginInit();
 			this->tabPage2->SuspendLayout();
-			this->tabPage3->SuspendLayout();
-			this->tabPage4->SuspendLayout();
-			this->tabPage5->SuspendLayout();
-			this->tabPage6->SuspendLayout();
-			this->tabPage7->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_HC))->BeginInit();
+			this->tabPage3->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_VLV))->BeginInit();
+			this->tabPage4->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_MOT))->BeginInit();
+			this->tabPage5->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_PID))->BeginInit();
+			this->tabPage6->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_FC))->BeginInit();
+			this->tabPage7->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_SCADA))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -184,61 +184,6 @@ namespace IOlistautomation {
 			this->tabPage2->Text = L"HC";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
-			// tabPage3
-			// 
-			this->tabPage3->Controls->Add(this->Grid_VLV);
-			this->tabPage3->Location = System::Drawing::Point(4, 22);
-			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(911, 472);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"VLV";
-			this->tabPage3->UseVisualStyleBackColor = true;
-			// 
-			// tabPage4
-			// 
-			this->tabPage4->Controls->Add(this->Grid_MOT);
-			this->tabPage4->Location = System::Drawing::Point(4, 22);
-			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage4->Size = System::Drawing::Size(911, 472);
-			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"MOT";
-			this->tabPage4->UseVisualStyleBackColor = true;
-			// 
-			// tabPage5
-			// 
-			this->tabPage5->Controls->Add(this->Grid_PID);
-			this->tabPage5->Location = System::Drawing::Point(4, 22);
-			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage5->Size = System::Drawing::Size(911, 472);
-			this->tabPage5->TabIndex = 4;
-			this->tabPage5->Text = L"PID";
-			this->tabPage5->UseVisualStyleBackColor = true;
-			// 
-			// tabPage6
-			// 
-			this->tabPage6->Controls->Add(this->Grid_FC);
-			this->tabPage6->Location = System::Drawing::Point(4, 22);
-			this->tabPage6->Name = L"tabPage6";
-			this->tabPage6->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage6->Size = System::Drawing::Size(911, 472);
-			this->tabPage6->TabIndex = 5;
-			this->tabPage6->Text = L"FC";
-			this->tabPage6->UseVisualStyleBackColor = true;
-			// 
-			// tabPage7
-			// 
-			this->tabPage7->Controls->Add(this->Grid_SCADA);
-			this->tabPage7->Location = System::Drawing::Point(4, 22);
-			this->tabPage7->Name = L"tabPage7";
-			this->tabPage7->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage7->Size = System::Drawing::Size(911, 472);
-			this->tabPage7->TabIndex = 6;
-			this->tabPage7->Text = L"SCADA";
-			this->tabPage7->UseVisualStyleBackColor = true;
-			// 
 			// Grid_HC
 			// 
 			this->Grid_HC->AllowUserToAddRows = false;
@@ -256,6 +201,17 @@ namespace IOlistautomation {
 			this->Grid_HC->ReadOnly = true;
 			this->Grid_HC->Size = System::Drawing::Size(915, 479);
 			this->Grid_HC->TabIndex = 1;
+			// 
+			// tabPage3
+			// 
+			this->tabPage3->Controls->Add(this->Grid_VLV);
+			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Name = L"tabPage3";
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage3->Size = System::Drawing::Size(911, 472);
+			this->tabPage3->TabIndex = 2;
+			this->tabPage3->Text = L"VLV";
+			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// Grid_VLV
 			// 
@@ -275,6 +231,17 @@ namespace IOlistautomation {
 			this->Grid_VLV->Size = System::Drawing::Size(915, 479);
 			this->Grid_VLV->TabIndex = 1;
 			// 
+			// tabPage4
+			// 
+			this->tabPage4->Controls->Add(this->Grid_MOT);
+			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage4->Size = System::Drawing::Size(911, 472);
+			this->tabPage4->TabIndex = 3;
+			this->tabPage4->Text = L"MOT";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
 			// Grid_MOT
 			// 
 			this->Grid_MOT->AllowUserToAddRows = false;
@@ -292,6 +259,17 @@ namespace IOlistautomation {
 			this->Grid_MOT->ReadOnly = true;
 			this->Grid_MOT->Size = System::Drawing::Size(915, 479);
 			this->Grid_MOT->TabIndex = 1;
+			// 
+			// tabPage5
+			// 
+			this->tabPage5->Controls->Add(this->Grid_PID);
+			this->tabPage5->Location = System::Drawing::Point(4, 22);
+			this->tabPage5->Name = L"tabPage5";
+			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage5->Size = System::Drawing::Size(911, 472);
+			this->tabPage5->TabIndex = 4;
+			this->tabPage5->Text = L"PID";
+			this->tabPage5->UseVisualStyleBackColor = true;
 			// 
 			// Grid_PID
 			// 
@@ -311,6 +289,17 @@ namespace IOlistautomation {
 			this->Grid_PID->Size = System::Drawing::Size(915, 479);
 			this->Grid_PID->TabIndex = 1;
 			// 
+			// tabPage6
+			// 
+			this->tabPage6->Controls->Add(this->Grid_FC);
+			this->tabPage6->Location = System::Drawing::Point(4, 22);
+			this->tabPage6->Name = L"tabPage6";
+			this->tabPage6->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage6->Size = System::Drawing::Size(911, 472);
+			this->tabPage6->TabIndex = 5;
+			this->tabPage6->Text = L"FC";
+			this->tabPage6->UseVisualStyleBackColor = true;
+			// 
 			// Grid_FC
 			// 
 			this->Grid_FC->AllowUserToAddRows = false;
@@ -328,6 +317,17 @@ namespace IOlistautomation {
 			this->Grid_FC->ReadOnly = true;
 			this->Grid_FC->Size = System::Drawing::Size(915, 479);
 			this->Grid_FC->TabIndex = 1;
+			// 
+			// tabPage7
+			// 
+			this->tabPage7->Controls->Add(this->Grid_SCADA);
+			this->tabPage7->Location = System::Drawing::Point(4, 22);
+			this->tabPage7->Name = L"tabPage7";
+			this->tabPage7->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage7->Size = System::Drawing::Size(911, 472);
+			this->tabPage7->TabIndex = 6;
+			this->tabPage7->Text = L"SCADA";
+			this->tabPage7->UseVisualStyleBackColor = true;
 			// 
 			// Grid_SCADA
 			// 
@@ -354,21 +354,22 @@ namespace IOlistautomation {
 			this->ClientSize = System::Drawing::Size(921, 497);
 			this->Controls->Add(this->tabControl1);
 			this->Name = L"ResultForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"ResultForm";
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_AI))->EndInit();
 			this->tabPage2->ResumeLayout(false);
-			this->tabPage3->ResumeLayout(false);
-			this->tabPage4->ResumeLayout(false);
-			this->tabPage5->ResumeLayout(false);
-			this->tabPage6->ResumeLayout(false);
-			this->tabPage7->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_HC))->EndInit();
+			this->tabPage3->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_VLV))->EndInit();
+			this->tabPage4->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_MOT))->EndInit();
+			this->tabPage5->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_PID))->EndInit();
+			this->tabPage6->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_FC))->EndInit();
+			this->tabPage7->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_SCADA))->EndInit();
 			this->ResumeLayout(false);
 

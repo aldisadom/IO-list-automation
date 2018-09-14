@@ -41,6 +41,8 @@ std::wstring Project_get_data_switch(int iCol, int index)
 		break;
 	case 6:	return project.data[index].Page;
 		break;
+	case 7:	return project.data[index].Changed;
+		break;
 	default:return LPWSTR(L"");
 		break;
 	}
@@ -63,6 +65,8 @@ void Project_put_data_switch(int iCol, int index, project_str &project_data, std
 	case 5:	project_data.data[index].IO_text = cell_text;
 		break;
 	case 6:	project_data.data[index].Page = cell_text;
+		break;
+	case 7:	project_data.data[index].Changed = cell_text;
 		break;
 	}
 }
@@ -355,7 +359,7 @@ int Project_compare_data()
 
 	Show_progress(prog_search_diference[lang], project_data_test.valid_entries);
 
-	//going through all data and testing if there is diserences
+	//going through all data and testing if there is diferences
 	for (int index = 0; index <= project_data_test.valid_entries; index++)
 	{
 		if (IO_generate_signal(project_data_test.data[index].Cabinet, project_data_test.data[index].Module_name, project_data_test.data[index].Channel, test_IO) != 0)
@@ -409,38 +413,73 @@ int Project_compare_data()
 
 	Show_progress(prog_search_diference[lang], size);
 	row = project.valid_entries;
-
-	project.valid_entries = project.valid_entries + size;
-	project.data.resize(project.valid_entries + 1);
+	
+	project.data.resize(project.valid_entries +size+1);
 
 	//adding new data
 	for (int index = 0; index < size; index++)
 	{
 		row++;
+		
+		project.data[row].IO_text = project_data_test.data[test_res[index]].IO_text;
+		project.data[row].Cabinet = project_data_test.data[test_res[index]].Cabinet;
+		project.data[row].Channel = project_data_test.data[test_res[index]].Channel;
+		project.data[row].Module_name = project_data_test.data[test_res[index]].Module_name;
+		project.data[row].number = project_data_test.data[test_res[index]].number;
+		project.data[row].Page = project_data_test.data[test_res[index]].Page;
+		project.data[row].Pin = project_data_test.data[test_res[index]].Pin;
+		project.data[row].Changed = L"1";
 
-		text_confirm = conf_objects_type_overwrite[lang];
-		text_confirm.append(L" --- ");
-		text_confirm.append(project_data_test.data[index].IO_text);
+		set_progress_value(index);
+	}
 
-		result = show_confirm_window(text_confirm.c_str());
-		if (result == IDYES)
+	Show_progress(prog_search_diference[lang], project.valid_entries);
+
+	//change data
+	for (int index = 0; index <= project.valid_entries; index++)
+	{
+		project.data[index].Changed = L"";
+		if (proj_res[index].nr_change>=0)
 		{
-			project.data[row].IO_text = project_data_test.data[index].IO_text;
-			project.data[row].Cabinet = project_data_test.data[index].Cabinet;
-			project.data[row].Channel = project_data_test.data[index].Channel;
-			project.data[row].Module_name = project_data_test.data[index].Module_name;
-			project.data[row].number = project_data_test.data[index].number;
-			project.data[row].Page = project_data_test.data[index].Page;
-			project.data[row].Pin = project_data_test.data[index].Pin;
-		}
-		else if (result == IDCANCEL)
-		{
-			return 0;
+			int number_change = proj_res[index].nr_change;
+
+			text_confirm = project.data[index].IO_text;
+			text_confirm.append(L" ---> \n");
+			text_confirm.append(project_data_test.data[number_change].IO_text);			
+
+			result = show_confirm_window(text_confirm.c_str());
+			if (result == IDYES)
+			{
+				project.data[index].IO_text = project_data_test.data[number_change].IO_text;
+				project.data[index].Cabinet = project_data_test.data[number_change].Cabinet;
+				project.data[index].Channel = project_data_test.data[number_change].Channel;
+				project.data[index].Module_name = project_data_test.data[number_change].Module_name;
+				project.data[index].Page = project_data_test.data[number_change].Page;
+				project.data[index].Pin = project_data_test.data[number_change].Pin;
+				project.data[index].Changed = L"1";
+			}
+			else if (result == IDCANCEL)
+			{
+				return 0;
+			}
 		}
 		set_progress_value(index);
 	}
-//	Global_put_data_listview(Design_grid_index, project_data_test.valid_entries, project_data_test.number_collums, project_data_test.column_name, project_data_test.collumn_with);
 
+	//remove data
+	for (int index = 0; index <= project.valid_entries; index++)
+	{
+		if (proj_res[index].delete_row == true)
+		{
+			project.data.erase(project.data.begin()+index);
+			project.valid_entries--;
+		}		
+		set_progress_value(index);
+	}
+
+	project.valid_entries = project.data.size()-1;
+
+	Global_put_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
 
 	strcpy_s(info_txt, sizeof info_txt, info_compare_project[lang]);
 	strcat_s(info_txt, sizeof info_txt, error_separator);

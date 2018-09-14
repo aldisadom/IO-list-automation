@@ -366,12 +366,12 @@ int Signals_get_data_design()
 		if (test_text.empty() == 0)
 		{
 			// removing spaces at end
-			size_text = test_text.size();
+			size_text = test_text.size()-1;
 			result = test_text.find_last_of(L" ");
 			while (result == size_text)
 			{
 				test_text.pop_back();
-				size_text = test_text.size();
+				size_text = test_text.size()-1;
 				result = test_text.find_last_of(L" ");
 			}
 			// removing spaces at begining
@@ -389,12 +389,12 @@ int Signals_get_data_design()
 		if (test_text.empty() == 0)
 		{
 			// removing spaces at end
-			size_text = test_text.size();
+			size_text = test_text.size()-1;
 			result = test_text.find_last_of(L" ");
 			while (result == size_text)
 			{
 				test_text.pop_back();
-				size_text = test_text.size();
+				size_text = test_text.size()-1;
 				result = test_text.find_last_of(L" ");
 			}
 			// removing spaces at begining
@@ -412,12 +412,12 @@ int Signals_get_data_design()
 		if (test_text.empty() == 0)
 		{
 			// removing spaces at end
-			size_text = test_text.size();
+			size_text = test_text.size()-1;
 			result = test_text.find_last_of(L" ");
 			while (result == size_text)
 			{
 				test_text.pop_back();
-				size_text = test_text.size();
+				size_text = test_text.size()-1;
 				result = test_text.find_last_of(L" ");
 			}
 			// removing spaces at begining
