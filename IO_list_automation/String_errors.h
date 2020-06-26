@@ -29,6 +29,8 @@ extern const char * err_excel_no_sheet[];
 extern const char * err_excel_cant_open[];
 extern const char * err_no_learn_file[];
 
+extern const char * err_test_fail[];
+
 
 
 extern const char * err_clickboard_no_data[];

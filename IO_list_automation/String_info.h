@@ -21,8 +21,10 @@ extern const char * info_generate_IO_tags[];
 extern const char * info_generate_IO_adress[];
 extern const char * info_multi_CPU[];
 extern const char * info_compare_project[];
+extern const char * info_dump_declare[];
+extern const char * info_dump_instance[];
 
-
+extern const char * info_color_grid[];
 extern const char * info_transfer_data[];
 extern const char * info_put_to_grid[];
 extern const char * info_extract_from_grid[];

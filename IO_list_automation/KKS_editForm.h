@@ -67,6 +67,9 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::Button^  OK_button;
 
 	private: System::Windows::Forms::Button^  Cancel_button;
+	private: System::Windows::Forms::CheckBox^  Underscore_box;
+	private: System::Windows::Forms::CheckBox^  Underscore_delete_box;
+			 int init_done = 0;
 
 
 			 /// <summary>
@@ -92,6 +95,8 @@ namespace IOlistautomation {
 			this->KKS_delete_box2 = (gcnew System::Windows::Forms::TextBox());
 			this->OK_button = (gcnew System::Windows::Forms::Button());
 			this->Cancel_button = (gcnew System::Windows::Forms::Button());
+			this->Underscore_box = (gcnew System::Windows::Forms::CheckBox());
+			this->Underscore_delete_box = (gcnew System::Windows::Forms::CheckBox());
 			this->SuspendLayout();
 			// 
 			// label
@@ -115,7 +120,7 @@ namespace IOlistautomation {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(63, 41);
+			this->label1->Location = System::Drawing::Point(63, 108);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(50, 18);
 			this->label1->TabIndex = 1;
@@ -129,7 +134,7 @@ namespace IOlistautomation {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(217, 41);
+			this->label2->Location = System::Drawing::Point(217, 108);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(50, 18);
 			this->label2->TabIndex = 2;
@@ -142,7 +147,7 @@ namespace IOlistautomation {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->KKS_in_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->KKS_in_label->Location = System::Drawing::Point(12, 19);
+			this->KKS_in_label->Location = System::Drawing::Point(12, 26);
 			this->KKS_in_label->Name = L"KKS_in_label";
 			this->KKS_in_label->Size = System::Drawing::Size(309, 21);
 			this->KKS_in_label->TabIndex = 3;
@@ -155,7 +160,7 @@ namespace IOlistautomation {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->KKS2_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->KKS2_label->Location = System::Drawing::Point(163, 64);
+			this->KKS2_label->Location = System::Drawing::Point(163, 131);
 			this->KKS2_label->Name = L"KKS2_label";
 			this->KKS2_label->Size = System::Drawing::Size(158, 23);
 			this->KKS2_label->TabIndex = 5;
@@ -168,7 +173,7 @@ namespace IOlistautomation {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->KKS1_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->KKS1_label->Location = System::Drawing::Point(12, 64);
+			this->KKS1_label->Location = System::Drawing::Point(12, 131);
 			this->KKS1_label->Name = L"KKS1_label";
 			this->KKS1_label->Size = System::Drawing::Size(152, 23);
 			this->KKS1_label->TabIndex = 4;
@@ -181,7 +186,7 @@ namespace IOlistautomation {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->KKS_out_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->KKS_out_label->Location = System::Drawing::Point(12, 84);
+			this->KKS_out_label->Location = System::Drawing::Point(12, 151);
 			this->KKS_out_label->Name = L"KKS_out_label";
 			this->KKS_out_label->Size = System::Drawing::Size(309, 21);
 			this->KKS_out_label->TabIndex = 6;
@@ -191,7 +196,7 @@ namespace IOlistautomation {
 			// KKS_delete_box1
 			// 
 			this->KKS_delete_box1->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->KKS_delete_box1->Location = System::Drawing::Point(15, 108);
+			this->KKS_delete_box1->Location = System::Drawing::Point(15, 175);
 			this->KKS_delete_box1->Name = L"KKS_delete_box1";
 			this->KKS_delete_box1->Size = System::Drawing::Size(55, 20);
 			this->KKS_delete_box1->TabIndex = 7;
@@ -202,7 +207,7 @@ namespace IOlistautomation {
 			// KKS_delete_box2
 			// 
 			this->KKS_delete_box2->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->KKS_delete_box2->Location = System::Drawing::Point(266, 108);
+			this->KKS_delete_box2->Location = System::Drawing::Point(266, 175);
 			this->KKS_delete_box2->Name = L"KKS_delete_box2";
 			this->KKS_delete_box2->Size = System::Drawing::Size(55, 20);
 			this->KKS_delete_box2->TabIndex = 8;
@@ -212,7 +217,7 @@ namespace IOlistautomation {
 			// 
 			// OK_button
 			// 
-			this->OK_button->Location = System::Drawing::Point(89, 108);
+			this->OK_button->Location = System::Drawing::Point(89, 175);
 			this->OK_button->Name = L"OK_button";
 			this->OK_button->Size = System::Drawing::Size(55, 23);
 			this->OK_button->TabIndex = 9;
@@ -222,7 +227,7 @@ namespace IOlistautomation {
 			// 
 			// Cancel_button
 			// 
-			this->Cancel_button->Location = System::Drawing::Point(196, 108);
+			this->Cancel_button->Location = System::Drawing::Point(196, 175);
 			this->Cancel_button->Name = L"Cancel_button";
 			this->Cancel_button->Size = System::Drawing::Size(55, 23);
 			this->Cancel_button->TabIndex = 10;
@@ -230,12 +235,40 @@ namespace IOlistautomation {
 			this->Cancel_button->UseVisualStyleBackColor = true;
 			this->Cancel_button->Click += gcnew System::EventHandler(this, &KKS_edit::Cancel_button_Click);
 			// 
+			// Underscore_box
+			// 
+			this->Underscore_box->AutoSize = true;
+			this->Underscore_box->Checked = true;
+			this->Underscore_box->CheckState = System::Windows::Forms::CheckState::Checked;
+			this->Underscore_box->Location = System::Drawing::Point(5, 50);
+			this->Underscore_box->Name = L"Underscore_box";
+			this->Underscore_box->Size = System::Drawing::Size(108, 17);
+			this->Underscore_box->TabIndex = 11;
+			this->Underscore_box->Text = L"Use \"_\" in middle";
+			this->Underscore_box->UseVisualStyleBackColor = true;
+			this->Underscore_box->CheckedChanged += gcnew System::EventHandler(this, &KKS_edit::Underscore_box_CheckedChanged);
+			// 
+			// Underscore_delete_box
+			// 
+			this->Underscore_delete_box->AutoSize = true;
+			this->Underscore_delete_box->Checked = true;
+			this->Underscore_delete_box->CheckState = System::Windows::Forms::CheckState::Checked;
+			this->Underscore_delete_box->Location = System::Drawing::Point(5, 73);
+			this->Underscore_delete_box->Name = L"Underscore_delete_box";
+			this->Underscore_delete_box->Size = System::Drawing::Size(137, 17);
+			this->Underscore_delete_box->TabIndex = 12;
+			this->Underscore_delete_box->Text = L"Delete after underscore";
+			this->Underscore_delete_box->UseVisualStyleBackColor = true;
+			this->Underscore_delete_box->CheckedChanged += gcnew System::EventHandler(this, &KKS_edit::Underscore_delete_box_CheckedChanged);
+			// 
 			// KKS_edit
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(333, 133);
+			this->ClientSize = System::Drawing::Size(333, 206);
 			this->ControlBox = false;
+			this->Controls->Add(this->Underscore_delete_box);
+			this->Controls->Add(this->Underscore_box);
 			this->Controls->Add(this->Cancel_button);
 			this->Controls->Add(this->OK_button);
 			this->Controls->Add(this->KKS_delete_box2);
@@ -260,6 +293,7 @@ namespace IOlistautomation {
 #pragma endregion
 		private: void KKS_init(void)
 		{
+			init_done = 0;
 			if (parameters.KKS_del1 == 0)
 			{
 				this->KKS_delete_box1->Text = L"";
@@ -278,10 +312,16 @@ namespace IOlistautomation {
 			}
 			test.KKS = Signals_KKS_trim(test.test_KKS);
 
+		
+			this->Underscore_delete_box->Checked = parameters.KKS_delete_from_underscore;
+			this->Underscore_box->Checked = parameters.KKS_underscore;
+			
+
 			this->KKS1_label->Text = wstring_to_system_string(test.KKS.Part1);
 			this->KKS2_label->Text = wstring_to_system_string(test.KKS.Part2);
 			this->KKS_out_label->Text = wstring_to_system_string(test.KKS.Full);
 			this->KKS_in_label->Text = wstring_to_system_string(test.test_KKS);
+			init_done = 1;
 		}
 
 		private: System::Void KKS_delete_box1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
@@ -341,5 +381,30 @@ namespace IOlistautomation {
 			return_value = 1;
 			this->Close();
 		}
+
+		private: System::Void Underscore_box_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			if (init_done == 1)
+			{
+				parameters.KKS_underscore = 1 - parameters.KKS_underscore;
+				test.KKS = Signals_KKS_trim(test.test_KKS);
+
+				this->KKS1_label->Text = wstring_to_system_string(test.KKS.Part1);
+				this->KKS2_label->Text = wstring_to_system_string(test.KKS.Part2);
+				this->KKS_out_label->Text = wstring_to_system_string(test.KKS.Full);
+				this->KKS_in_label->Text = wstring_to_system_string(test.test_KKS);
+			}
+		}
+private: System::Void Underscore_delete_box_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			if (init_done == 1)
+			{
+				parameters.KKS_delete_from_underscore = 1 - parameters.KKS_delete_from_underscore;
+				test.KKS = Signals_KKS_trim(test.test_KKS);
+
+				this->KKS1_label->Text = wstring_to_system_string(test.KKS.Part1);
+				this->KKS2_label->Text = wstring_to_system_string(test.KKS.Part2);
+				this->KKS_out_label->Text = wstring_to_system_string(test.KKS.Full);
+				this->KKS_in_label->Text = wstring_to_system_string(test.test_KKS);
+			}
+}
 };
 }

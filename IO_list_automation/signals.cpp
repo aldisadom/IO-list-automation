@@ -190,7 +190,7 @@ int Signals_valid_row_check(int row)
 //get data from project to signals
 int Signals_get_data_design()
 {
-	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with, false);
 	if (project.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -228,7 +228,7 @@ int Signals_get_data_design()
 	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
 
 	info_write(info_txt);
-	Show_progress(prog_transfer_data[lang], project.valid_entries);
+	
 	int colon = 0;
 	int semi= 0;
 	int space = 0;
@@ -245,6 +245,8 @@ int Signals_get_data_design()
 
 	signals.valid_entries = project.valid_entries;
 	signals.data.resize(signals.valid_entries + 1);
+
+	Show_progress(prog_transfer_data[lang], signals.valid_entries);
 
 	int max_digits = GetNumberOfDigits(project.valid_entries);
 	if ((pow(10, max_digits - 1) * 9) < signals.valid_entries) // if numbers are 90% filed increase digits by one
@@ -280,7 +282,7 @@ int Signals_get_data_design()
 			continue;
 		}
 
-		signals.data[signal_row].number = int_to_wstring(signal_row, max_digits);
+		signals.data[signal_row].number = project.data[row].number;
 		signals.data[signal_row].Cabinet = project.data[row].Cabinet;
 		signals.data[signal_row].Module_name = project.data[row].Module_name;
 		signals.data[signal_row].Pin = project.data[row].Pin;
@@ -289,11 +291,11 @@ int Signals_get_data_design()
 		signals.data[signal_row].Page = project.data[row].Page;
 
 
-
+		//									extended separator		function separator
 		// IO_signal = (KKS_text) (Object text) ; (extendext object) : (signal function) 
 
-		colon = signals.data[signal_row].IO_text.find(L":");
-		semi = signals.data[signal_row].IO_text.find(L";");
+		colon = signals.data[signal_row].IO_text.find(parameters.separator_function);
+		semi = signals.data[signal_row].IO_text.find(parameters.separator_detailed);
 		space = signals.data[signal_row].IO_text.find(L" ");
 		size_text = signals.data[signal_row].IO_text.size();
 
@@ -463,9 +465,18 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 	if (KKS_text.empty() == 0)
 	{
 		a = KKS_text.size() - parameters.KKS_del1 - parameters.KKS_del2;
-		if (a > 0) // if delete to much clear KKS
+		if (parameters.KKS_delete_from_underscore == 1)
 		{
+			int b = 0;
+			b = KKS_text.find(L"_", 0);
+			if (b >= 0)
+				a = b - parameters.KKS_del1 - parameters.KKS_del2;
+		}
+
+		if (a > 0) // if delete to much clear KKS
+		{			
 			KKS.Full = KKS_text.substr(parameters.KKS_del1, a);
+
 			if (KKS.Full.size() < 10)
 			{
 				i = KKS.Full.size() - 5;
@@ -484,7 +495,7 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 			KKS.Part1 = KKS.Full.substr(0, KKS.Full.find(KKS.Part2));
 
 			KKS.Full = KKS.Part1;
-			if (KKS.Part1.empty() == 0)
+			if (KKS.Part1.empty() == 0 && parameters.KKS_underscore == 1)
 			{
 				KKS.Full.append(L"_");
 			}
@@ -506,9 +517,9 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 	return KKS;
 }
 //trims all KKS data in signals
-int Signals_all_KKS_trim()
+int Signals_all_KKS_trim(bool test_mode)
 {
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 	if (signals.valid_entries > 1)
 	{
 		int i = 0;
@@ -528,7 +539,14 @@ int Signals_all_KKS_trim()
 		}
 
 		IOlistautomation::KKS_edit KKS;
-		KKS.ShowDialog();	// open KKS edit dialog with example
+		if (test_mode == false)
+			KKS.ShowDialog();	// open KKS edit dialog with example
+		else
+		{
+			parameters.KKS_del1 = 0;
+			parameters.KKS_del2 = 4;
+
+		}
 		if (KKS.return_value == 0)
 		{
 			strcpy_s(info_txt, sizeof info_txt, info_KKS_edit[lang]);
@@ -656,8 +674,8 @@ int Signals_learn_data()
 							}
 							if (parameters.debug)
 							{
-								//	strcpy_s(info_txt, sizeof info_txt, "Per nauja atidarytas excel failas kad apeiti bibliotekos licenzijavima");
-								//	info_write(info_txt);
+									strcpy_s(info_txt, sizeof info_txt, "Bypassing excel file reading licenses");
+									info_write(info_txt);
 							}
 						}
 					}
@@ -733,7 +751,7 @@ int Signals_learn_data()
 //finds functions in signal data
 int Signals_find_function()
 {
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 
 	if (signals.valid_entries <= 1)
 	{
@@ -794,7 +812,7 @@ int Signals_find_function()
 					for (int j = 0; j < size_part2_2; ++j)
 					{
 						//selecting what to search and putting to lower case
-						search_for = learn.Function_txt2_part2[i];
+						search_for = learn.Function_txt2_part2[j];
 						std::transform(search_for.begin(), search_for.end(), search_for.begin(), ::toupper);
 
 						find_2_2 = search_in_function_txt.find(search_for);
@@ -909,11 +927,11 @@ int Signals_find_function()
 }
 
 
-int Signals_multi_cpu()
+int Signals_multi_cpu(bool test_mode)
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -942,8 +960,10 @@ int Signals_multi_cpu()
 	grid->Columns[6]->Visible = false;
 	grid->Columns[7]->Visible = false;
 
-	IO_show_modules(Io_forma.Grid_Module);
+	IO_show_modules(Io_forma.Grid_Module, test_mode);
 	Io_forma.ShowDialog();
+	if (IO_form_result == 0)
+		return 0;
 
 	Show_progress(prog_multi_cpu[lang], grid->RowCount);
 	int result = 0;

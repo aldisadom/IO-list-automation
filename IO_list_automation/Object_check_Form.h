@@ -24,7 +24,7 @@ namespace IOlistautomation {
 			//TODO: Add the constructor code here
 			//
 		}
-		int return_value=0;
+		int return_value= Result_Undefined;
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.
@@ -191,18 +191,20 @@ namespace IOlistautomation {
 
 		test.KKS.Full = system_string_to_wstring(this->Text_KKS->Text);
 		test.text_to_copy = system_string_to_wstring (this->Text_io->Text);
+		return_value = Result_Yes;
 		this->Close();
 	}
 	private: System::Void Object_button_Click(System::Object^  sender, System::EventArgs^  e) {
 
 		test.KKS.Full = system_string_to_wstring(this->Text_KKS->Text);
 		test.text_to_copy = system_string_to_wstring(this->Text_object->Text);
+		return_value = Result_Yes;
 		this->Close();
 	}
 
 
 	private: System::Void Exit_button_Click(System::Object^  sender, System::EventArgs^  e) {
-		return_value = 1;
+		return_value = Result_Exit;
 		this->Close();
 	}
 

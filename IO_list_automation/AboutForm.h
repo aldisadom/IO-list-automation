@@ -37,6 +37,7 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::Label^  label1;
 	protected:
 	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::Label^  label3;
 
 	private:
 		/// <summary>
@@ -53,12 +54,13 @@ namespace IOlistautomation {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(12, 49);
+			this->label1->Location = System::Drawing::Point(12, 72);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(185, 13);
 			this->label1->TabIndex = 0;
@@ -73,11 +75,21 @@ namespace IOlistautomation {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"IO list Masteris - tai excelio pakeitimas apdorojant IO sarasus";
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(13, 43);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(109, 13);
+			this->label3->TabIndex = 2;
+			this->label3->Text = L"Version 0.1 (unstable)";
+			// 
 			// AboutForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(315, 94);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;

@@ -43,8 +43,15 @@ const wchar_t * prog_multi_cpu[]{
 const wchar_t * prog_search_diference[]{
 	L"Ieskomi pakeitimai",
 	L"Searching diferences", };
+const wchar_t * prog_dump_data[]{
+	L"Saugomi duomenys",
+	L"Dumping data", };
 
 
+const wchar_t * prog_grid_color[]{
+	L"Spalvojama lentele",
+	L"Coloring grid",
+};
 const wchar_t * prog_grid_put[]{
 	L"Pildoma lentele",
 	L"Puting data to grid", };

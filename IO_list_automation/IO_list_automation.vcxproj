@@ -143,6 +143,7 @@
     <ClCompile Include="AboutForm.cpp" />
     <ClCompile Include="Address_Form.cpp" />
     <ClCompile Include="config.cpp" />
+    <ClCompile Include="Compare_result.cpp" />
     <ClCompile Include="Declare.cpp" />
     <ClCompile Include="design.cpp" />
     <ClCompile Include="Global_Functions.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="Strings.cpp" />
     <ClCompile Include="String_errors.cpp" />
     <ClCompile Include="String_progress.cpp" />
+    <ClCompile Include="tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AAA_TEST_FORM.h">
@@ -176,6 +178,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="config.h" />
+    <ClInclude Include="Compare_result.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Declare.h" />
     <ClInclude Include="design.h" />
     <ClInclude Include="Global_Functions.h" />
@@ -210,6 +215,7 @@
     <ClInclude Include="Strings.h" />
     <ClInclude Include="String_errors.h" />
     <ClInclude Include="String_info.h" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AAA_TEST_FORM.resx">
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Address_Form.resx">
       <DependentUpon>Address_Form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compare_result.resx">
+      <DependentUpon>Compare_result.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HelpForm.resx">
       <DependentUpon>HelpForm.h</DependentUpon>
@@ -249,6 +258,10 @@
     <Image Include="icon1.ico" />
     <Image Include="icon2.ico" />
     <Image Include="icon_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Change_log.txt" />
+    <Text Include="Documentation.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

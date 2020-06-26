@@ -1,0 +1,1034 @@
+﻿Signals
+Nr.☣CPU☣Spinta☣Operatyv☣KKS☣KKS1☣KKS2☣Used☣Type☣Objektas☣objekto patikslinimas☣Funkcinis tekstas☣Funkcija☣IO tekstas☣Modulis☣Type☣Kanalas☣Pinas☣Tag☣Projekto reference☣
+46☣54☣65☣75☣53☣59☣59☣57☣56☣376☣129☣114☣72☣376☣68☣56☣70☣58☣51☣123☣
+0000☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - in remote☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - in remote☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0001☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - in running☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - in running☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0002☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - supply fault☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - supply fault☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0003☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - start/stop☣ ☣ ☣ ☣compr. CK1106A lime pneu.convey. - start/stop☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0004☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - in remote☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - in remote☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0005☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - in runninguytg☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - in runninguytg☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0006☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - supply fault☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - supply fault☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0007☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - start/stop☣ ☣ ☣ ☣compr. CK1106B lime pneu.convey. - start/stop☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0008☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1120 lime silos SL1100 - in running☣ ☣ ☣ ☣elec.heater EH1120 lime silos SL1100 - in running☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0009☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1120 lime silos SL1100 - supply fault☣ ☣ ☣ ☣elec.heater EH1120 lime silos SL1100 - supply fault☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0010☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1120 lime silos SL1100 - start/stop☣ ☣ ☣ ☣elec.heater EH1120 lime silos SL1100 - start/stop☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0011☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1121A lime conveyor SW1103A - in running☣ ☣ ☣ ☣elec.heater EH1121A lime conveyor SW1103A - in running☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0012☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1121A lime conveyor SW1103A - supply fault☣ ☣ ☣ ☣elec.heater EH1121A lime conveyor SW1103A - supply fault☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0013☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1121A lime conveyor SW1103A - start/stop☣ ☣ ☣ ☣elec.heater EH1121A lime conveyor SW1103A - start/stop☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0014☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1121B lime conveyor SW1103B - in running☣ ☣ ☣ ☣elec.heater EH1121B lime conveyor SW1103B - in running☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0015☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1121B lime conveyor SW1103B - supply fault☣ ☣ ☣ ☣elec.heater EH1121B lime conveyor SW1103B - supply fault☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0016☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1121B lime conveyor SW1103B - start/stop☣ ☣ ☣ ☣elec.heater EH1121B lime conveyor SW1103B - start/stop☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0017☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1122A lime conveyor SW1104A - in running☣ ☣ ☣ ☣elec.heater EH1122A lime conveyor SW1104A - in running☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0018☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1122A lime conveyor SW1104A - supply fault☣ ☣ ☣ ☣elec.heater EH1122A lime conveyor SW1104A - supply fault☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0019☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1122A lime conveyor SW1104A - start/stop☣ ☣ ☣ ☣elec.heater EH1122A lime conveyor SW1104A - start/stop☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0020☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1122B lime conveyor SW1104B - in running☣ ☣ ☣ ☣elec.heater EH1122B lime conveyor SW1104B - in running☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0021☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1122B lime conveyor SW1104B - supply fault☣ ☣ ☣ ☣elec.heater EH1122B lime conveyor SW1104B - supply fault☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0022☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1122B lime conveyor SW1104B - start/stop☣ ☣ ☣ ☣elec.heater EH1122B lime conveyor SW1104B - start/stop☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0023☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1107A lime 1th stage - in running☣ ☣ ☣ ☣elec.heater EH1107A lime 1th stage - in running☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0024☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1107A lime 1th stage - supply fault☣ ☣ ☣ ☣elec.heater EH1107A lime 1th stage - supply fault☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0025☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1107A lime 1th stage - start/stop☣ ☣ ☣ ☣elec.heater EH1107A lime 1th stage - start/stop☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0026☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1107B lime 1th stage - in running☣ ☣ ☣ ☣elec.heater EH1107B lime 1th stage - in running☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0027☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1107B lime 1th stage - supply fault☣ ☣ ☣ ☣elec.heater EH1107B lime 1th stage - supply fault☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0028☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1107B lime 1th stage - start/stop☣ ☣ ☣ ☣elec.heater EH1107B lime 1th stage - start/stop☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0029☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1108A lime 2th stage - in running☣ ☣ ☣ ☣elec.heater EH1108A lime 2th stage - in running☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0030☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1108A lime 2th stage - supply fault☣ ☣ ☣ ☣elec.heater EH1108A lime 2th stage - supply fault☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0031☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1108A lime 2th stage - start/stop☣ ☣ ☣ ☣elec.heater EH1108A lime 2th stage - start/stop☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0032☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1108B lime 2th stage - in running☣ ☣ ☣ ☣elec.heater EH1108B lime 2th stage - in running☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0033☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1108B lime 2th stage - supply fault☣ ☣ ☣ ☣elec.heater EH1108B lime 2th stage - supply fault☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0034☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1108B lime 2th stage - start/stop☣ ☣ ☣ ☣elec.heater EH1108B lime 2th stage - start/stop☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0035☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1109A lime 3th stage - in running☣ ☣ ☣ ☣elec.heater EH1109A lime 3th stage - in running☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0036☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1109A lime 3th stage - supply fault☣ ☣ ☣ ☣elec.heater EH1109A lime 3th stage - supply fault☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0037☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1109A lime 3th stage - start/stop☣ ☣ ☣ ☣elec.heater EH1109A lime 3th stage - start/stop☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0038☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1109B lime 3th stage - in running☣ ☣ ☣ ☣elec.heater EH1109B lime 3th stage - in running☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0039☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1109B lime 3th stage - supply fault☣ ☣ ☣ ☣elec.heater EH1109B lime 3th stage - supply fault☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0040☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1109B lime 3th stage - start/stop☣ ☣ ☣ ☣elec.heater EH1109B lime 3th stage - start/stop☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0041☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105A cooling lime M1104A - in running☣ ☣ ☣ ☣fan FN1105A cooling lime M1104A - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0042☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105A cooling lime M1104A - supply fault☣ ☣ ☣ ☣fan FN1105A cooling lime M1104A - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0043☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105A cooling lime M1104A - start/stop☣ ☣ ☣ ☣fan FN1105A cooling lime M1104A - start/stop☣DO☣DO☣14☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0044☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105B cooling lime M1104B - in running☣ ☣ ☣ ☣fan FN1105B cooling lime M1104B - in running☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0045☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105B cooling lime M1104B - supply fault☣ ☣ ☣ ☣fan FN1105B cooling lime M1104B - supply fault☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0046☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105B cooling lime M1104B - start/stop☣ ☣ ☣ ☣fan FN1105B cooling lime M1104B - start/stop☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0047☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣flow L FSL1106A lime pneu.convey.☣ ☣ ☣ ☣flow L FSL1106A lime pneu.convey.☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0048☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣flow L FSL1106B lime pneu.convey.☣ ☣ ☣ ☣flow L FSL1106B lime pneu.convey.☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0049☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1101A extract. lime silos SL1100 - opened☣ ☣ ☣ ☣vlv. HV1101A extract. lime silos SL1100 - opened☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0050☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1101B extract. lime silos SL1100 - opened☣ ☣ ☣ ☣vlv. HV1101B extract. lime silos SL1100 - opened☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0051☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - reset☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - reset☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0052☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - charge alarm☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - charge alarm☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0053☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - charge ready☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - charge ready☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0054☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - visive alarm☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - visive alarm☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0055☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - acustic alarm☣ ☣ ☣ ☣loc.pan. LP1100 filling lime SL1100 - acustic alarm☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0056☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300 cleaning lime FF1100 - in remote☣ ☣ ☣ ☣aut.pan. AP1300 cleaning lime FF1100 - in remote☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0057☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300 cleaning lime FF1100 - com.alarm☣ ☣ ☣ ☣aut.pan. AP1300 cleaning lime FF1100 - com.alarm☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0058☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300 cleaning lime FF1100 - enable☣ ☣ ☣ ☣aut.pan. AP1300 cleaning lime FF1100 - enable☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0059☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1101A lime hopper HP1101A☣ ☣ ☣ ☣lev. H LSH1101A lime hopper HP1101A☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0060☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1101B lime hopper HP1101B☣ ☣ ☣ ☣lev. H LSH1101B lime hopper HP1101B☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0061☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. HH LSHH1100 lime silos SL1100☣ ☣ ☣ ☣lev. HH LSHH1100 lime silos SL1100☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0062☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1101A lime hopper HP1101A☣ ☣ ☣ ☣lev. L LSL1101A lime hopper HP1101A☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0063☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1101B lime hopper HP1101B☣ ☣ ☣ ☣lev. L LSL1101B lime hopper HP1101B☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0064☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1100 lime silos SL1100☣ ☣ ☣ ☣lev. LL LSLL1100 lime silos SL1100☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0065☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. lime silos SL1100 - opened☣ ☣ ☣ ☣vlv. POV1102A extract. lime silos SL1100 - opened☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0066☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. lime silos SL1100 - open☣ ☣ ☣ ☣vlv. POV1102A extract. lime silos SL1100 - open☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0067☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. lime silos SL1100 - close☣ ☣ ☣ ☣vlv. POV1102A extract. lime silos SL1100 - close☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0068☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. lime silos SL1100 - opened☣ ☣ ☣ ☣vlv. POV1102B extract. lime silos SL1100 - opened☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0069☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. lime silos SL1100 - open☣ ☣ ☣ ☣vlv. POV1102B extract. lime silos SL1100 - open☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0070☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. lime silos SL1100 - close☣ ☣ ☣ ☣vlv. POV1102B extract. lime silos SL1100 - close☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0071☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. HH PSHH1100 lime compr.air FF1100☣ ☣ ☣ ☣pres. HH PSHH1100 lime compr.air FF1100☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0072☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1301 lime compr.air PRV1301☣ ☣ ☣ ☣pres. L PSL1301 lime compr.air PRV1301☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0073☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - in remote☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0074☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - in running☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0075☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - supply fault☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0076☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1110A lime pneu.convey. - start/stop☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0077☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - in remote☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0078☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - in running☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0079☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - supply fault☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0080☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1110B lime pneu.convey. - start/stop☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0081☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1304 fluid lime compr.air SI1100 - open☣ ☣ ☣ ☣vlv. SOV1304 fluid lime compr.air SI1100 - open☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0082☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1305 fluid lime compr.air SI1100 - open☣ ☣ ☣ ☣vlv. SOV1305 fluid lime compr.air SI1100 - open☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0083☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1306A fluid lime compr.air HP1101A - open☣ ☣ ☣ ☣vlv. SOV1306A fluid lime compr.air HP1101A - open☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0084☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1306B fluid lime compr.air HP1101B - open☣ ☣ ☣ ☣vlv. SOV1306B fluid lime compr.air HP1101B - open☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0085☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1307A fluid lime compr.air HP1101A - open☣ ☣ ☣ ☣vlv. SOV1307A fluid lime compr.air HP1101A - open☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0086☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1307B fluid lime compr.air HP1101B - open☣ ☣ ☣ ☣vlv. SOV1307B fluid lime compr.air HP1101B - open☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0087☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1308A fluid lime compr.air RV1110A - open☣ ☣ ☣ ☣vlv. SOV1308A fluid lime compr.air RV1110A - open☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0088☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1308B fluid lime compr.air RV1110B - open☣ ☣ ☣ ☣vlv. SOV1308B fluid lime compr.air RV1110B - open☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0089☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1103A lime conveyor SW1103A☣ ☣ ☣ ☣speed L SSL1103A lime conveyor SW1103A☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0090☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1103B lime conveyor SW1103B☣ ☣ ☣ ☣speed L SSL1103B lime conveyor SW1103B☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0091☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1104A lime conveyor SW1104A☣ ☣ ☣ ☣speed L SSL1104A lime conveyor SW1104A☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0092☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1104B lime conveyor SW1104B☣ ☣ ☣ ☣speed L SSL1104B lime conveyor SW1104B☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0093☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1110A lime rot.vlv. RV1110A☣ ☣ ☣ ☣speed L SSL1110A lime rot.vlv. RV1110A☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0094☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1110B lime rot.vlv. RV1110B☣ ☣ ☣ ☣speed L SSL1110B lime rot.vlv. RV1110B☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0095☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - in remote☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - in remote☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0096☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - in running☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - in running☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0097☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - supply fault☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - supply fault☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0098☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - start/stop☣ ☣ ☣ ☣screw conv. SW1103A extract. lime - start/stop☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0099☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - in remote☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - in remote☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0100☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - in running☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - in running☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0101☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - supply fault☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - supply fault☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0102☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - start/stop☣ ☣ ☣ ☣screw conv. SW1103B extract. lime - start/stop☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0103☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - in remote☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - in remote☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0104☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - in running☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - in running☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0105☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - gen.fault☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - gen.fault☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0106☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - supply fault☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - supply fault☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0107☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - start/stop☣ ☣ ☣ ☣screw conv. SW1104A dosag. lime - start/stop☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0108☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - in remote☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - in remote☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0109☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - in running☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - in running☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0110☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - gen.fault☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - gen.fault☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0111☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - supply fault☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - supply fault☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0112☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - start/stop☣ ☣ ☣ ☣screw conv. SW1104B dosag. lime - start/stop☣DO☣DO☣25☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0113☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1120 lime Heater EH1120☣ ☣ ☣ ☣temp. H TSH1120 lime Heater EH1120☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0114☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1121A lime Heater EH1121A☣ ☣ ☣ ☣temp. H TSH1121A lime Heater EH1121A☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0115☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1121B lime Heater EH1121B☣ ☣ ☣ ☣temp. H TSH1121B lime Heater EH1121B☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0116☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1122A lime Heater EH1122A☣ ☣ ☣ ☣temp. H TSH1122A lime Heater EH1122A☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0117☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1122B lime Heater EH1122B☣ ☣ ☣ ☣temp. H TSH1122B lime Heater EH1122B☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0118☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. HH TSHH1107A lime pneu.convey. A☣ ☣ ☣ ☣temp. HH TSHH1107A lime pneu.convey. A☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0119☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. HH TSHH1107B lime pneu.convey. B☣ ☣ ☣ ☣temp. HH TSHH1107B lime pneu.convey. B☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0120☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pos. H ZSH1100 filling lime SL1100☣ ☣ ☣ ☣pos. H ZSH1100 filling lime SL1100☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 A17 DP01 ☣
+0121☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - in remote☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - in remote☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0122☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - in running☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - in running☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0123☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - supply fault☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - supply fault☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0124☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - start/stop☣ ☣ ☣ ☣compr. CK1106A act.carb. pneu.convey. - start/stop☣DO☣DO☣26☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0125☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - in remote☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - in remote☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0126☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - in running☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - in running☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0127☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - supply fault☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - supply fault☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0128☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - start/stop☣ ☣ ☣ ☣compr. CK1106B act.carb. pneu.convey. - start/stop☣DO☣DO☣27☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0129☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105A cooling act.carb. M1104A - in running☣ ☣ ☣ ☣fan FN1105A cooling act.carb. M1104A - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0130☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105A cooling act.carb. M1104A - supply fault☣ ☣ ☣ ☣fan FN1105A cooling act.carb. M1104A - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0131☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105A cooling act.carb. M1104A - start/stop☣ ☣ ☣ ☣fan FN1105A cooling act.carb. M1104A - start/stop☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0132☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105B cooling act.carb. M1104B - in running☣ ☣ ☣ ☣fan FN1105B cooling act.carb. M1104B - in running☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0133☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105B cooling act.carb. M1104B - supply fault☣ ☣ ☣ ☣fan FN1105B cooling act.carb. M1104B - supply fault☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0134☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105B cooling act.carb. M1104B - start/stop☣ ☣ ☣ ☣fan FN1105B cooling act.carb. M1104B - start/stop☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0135☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣flow L FSL1106A act.carb. pneu.convey.☣ ☣ ☣ ☣flow L FSL1106A act.carb. pneu.convey.☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0136☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣flow L FSL1106B act.carb. pneu.convey.☣ ☣ ☣ ☣flow L FSL1106B act.carb. pneu.convey.☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0137☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1101A extract. act.carb. silos SL1100 - opened☣ ☣ ☣ ☣vlv. HV1101A extract. act.carb. silos SL1100 - opened☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0138☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1101B extract. act.carb. silos SL1100 - opened☣ ☣ ☣ ☣vlv. HV1101B extract. act.carb. silos SL1100 - opened☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0139☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - reset☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - reset☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0140☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - charge alarm☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - charge alarm☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0141☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - charge ready☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - charge ready☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0142☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - visive alarm☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - visive alarm☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0143☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - acustic alarm☣ ☣ ☣ ☣loc.pan. LP1100 filling act.carb. SL1100 - acustic alarm☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0144☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1110 earth act.carb. SL1100 - check ok☣ ☣ ☣ ☣loc.pan. LP1110 earth act.carb. SL1100 - check ok☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0145☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300 cleaning act.carb. FF1100 - in remote☣ ☣ ☣ ☣aut.pan. AP1300 cleaning act.carb. FF1100 - in remote☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0146☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300 cleaning act.carb. FF1100 - com.alarm☣ ☣ ☣ ☣aut.pan. AP1300 cleaning act.carb. FF1100 - com.alarm☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0147☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300 cleaning act.carb. FF1100 - enable☣ ☣ ☣ ☣aut.pan. AP1300 cleaning act.carb. FF1100 - enable☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0148☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1101A act.carb. hopper HP1101A☣ ☣ ☣ ☣lev. H LSH1101A act.carb. hopper HP1101A☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0149☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1101B act.carb. hopper HP1101B☣ ☣ ☣ ☣lev. H LSH1101B act.carb. hopper HP1101B☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0150☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. HH LSHH1100 act.carb. silos SL1100☣ ☣ ☣ ☣lev. HH LSHH1100 act.carb. silos SL1100☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0151☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1101A act.carb. hopper HP1101A☣ ☣ ☣ ☣lev. L LSL1101A act.carb. hopper HP1101A☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0152☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1101B act.carb. hopper HP1101B☣ ☣ ☣ ☣lev. L LSL1101B act.carb. hopper HP1101B☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0153☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1100 act.carb. silos SL1100☣ ☣ ☣ ☣lev. LL LSLL1100 act.carb. silos SL1100☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0154☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1100 filling act.carb. silos SL1100 - closed☣ ☣ ☣ ☣vlv. POV1100 filling act.carb. silos SL1100 - closed☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0155☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1100 filling act.carb. silos SL1100 - open☣ ☣ ☣ ☣vlv. POV1100 filling act.carb. silos SL1100 - open☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0156☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. act.carb. silos SL1100 - opened☣ ☣ ☣ ☣vlv. POV1102A extract. act.carb. silos SL1100 - opened☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0157☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. act.carb. silos SL1100 - open☣ ☣ ☣ ☣vlv. POV1102A extract. act.carb. silos SL1100 - open☣DO☣DO☣28☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0158☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. act.carb. silos SL1100 - close☣ ☣ ☣ ☣vlv. POV1102A extract. act.carb. silos SL1100 - close☣DO☣DO☣29☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0159☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. act.carb. silos SL1100 - opened☣ ☣ ☣ ☣vlv. POV1102B extract. act.carb. silos SL1100 - opened☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0160☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. act.carb. silos SL1100 - open☣ ☣ ☣ ☣vlv. POV1102B extract. act.carb. silos SL1100 - open☣DO☣DO☣30☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0161☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. act.carb. silos SL1100 - close☣ ☣ ☣ ☣vlv. POV1102B extract. act.carb. silos SL1100 - close☣DO☣DO☣31☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0162☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. HH PSHH1100 act.carb. compr.air FF1100☣ ☣ ☣ ☣pres. HH PSHH1100 act.carb. compr.air FF1100☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0163☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1301 act.carb. compr.air PRV1301☣ ☣ ☣ ☣pres. L PSL1301 act.carb. compr.air PRV1301☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0164☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1307 act.carb. Nitrogen gas☣ ☣ ☣ ☣pres. L PSL1307 act.carb. Nitrogen gas☣DI☣DI☣31☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0165☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - in remote☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0166☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - in running☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0167☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - supply fault☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0168☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1107A act.carb. pneu.convey. - start/stop☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0169☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - in remote☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0170☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - in running☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0171☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - supply fault☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0172☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1107B act.carb. pneu.convey. - start/stop☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0173☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1304 fluid act.carb. compr.air SI1100 - open☣ ☣ ☣ ☣vlv. SOV1304 fluid act.carb. compr.air SI1100 - open☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0174☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1305 fluid act.carb. compr.air SI1100 - open☣ ☣ ☣ ☣vlv. SOV1305 fluid act.carb. compr.air SI1100 - open☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0175☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1306A fluid act.carb. compr.air HP1101A - open☣ ☣ ☣ ☣vlv. SOV1306A fluid act.carb. compr.air HP1101A - open☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0176☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1306B fluid act.carb. compr.air HP1101B - open☣ ☣ ☣ ☣vlv. SOV1306B fluid act.carb. compr.air HP1101B - open☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0177☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1307 inert act.carb. nitrog. SI1100 - open☣ ☣ ☣ ☣vlv. SOV1307 inert act.carb. nitrog. SI1100 - open☣DOS☣DO☣00☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0178☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1103A act.carb. conveyor SW1103A☣ ☣ ☣ ☣speed L SSL1103A act.carb. conveyor SW1103A☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0179☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1103B act.carb. conveyor SW1103B☣ ☣ ☣ ☣speed L SSL1103B act.carb. conveyor SW1103B☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0180☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1104A act.carb. conveyor SW1104A☣ ☣ ☣ ☣speed L SSL1104A act.carb. conveyor SW1104A☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0181☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1104B act.carb. conveyor SW1104B☣ ☣ ☣ ☣speed L SSL1104B act.carb. conveyor SW1104B☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0182☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1107A act.carb. rot.vlv. RV1107A☣ ☣ ☣ ☣speed L SSL1107A act.carb. rot.vlv. RV1107A☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0183☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1107B act.carb. rot.vlv. RV1107B☣ ☣ ☣ ☣speed L SSL1107B act.carb. rot.vlv. RV1107B☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0184☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - in remote☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - in remote☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0185☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - in running☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - in running☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0186☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - supply fault☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - supply fault☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0187☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - start/stop☣ ☣ ☣ ☣screw conv. SW1103A extract. act.carb. - start/stop☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0188☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - in remote☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - in remote☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0189☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - in running☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - in running☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0190☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - supply fault☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - supply fault☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0191☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - start/stop☣ ☣ ☣ ☣screw conv. SW1103B extract. act.carb. - start/stop☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0192☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - in remote☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - in remote☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0193☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - in running☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - in running☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0194☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - gen.fault☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - gen.fault☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0195☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - supply fault☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - supply fault☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0196☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - start/stop☣ ☣ ☣ ☣screw conv. SW1104A dosag. act.carb. - start/stop☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0197☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - in remote☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - in remote☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0198☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - in running☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - in running☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0199☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - gen.fault☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - gen.fault☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0200☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - supply fault☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - supply fault☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0201☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - start/stop☣ ☣ ☣ ☣screw conv. SW1104B dosag. act.carb. - start/stop☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0202☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pos. H ZSH1100 filling act.carb. SL1100☣ ☣ ☣ ☣pos. H ZSH1100 filling act.carb. SL1100☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 A18 DP01 ☣
+0203☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - in remote☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - in remote☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0204☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - in running☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - in running☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0205☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - supply fault☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - supply fault☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0206☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - start/stop☣ ☣ ☣ ☣conveyor CY1155 dolomia to EL1156 - start/stop☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0207☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - in remote☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - in remote☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0208☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - in running☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - in running☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0209☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - supply fault☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - supply fault☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0210☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - start/stop☣ ☣ ☣ ☣compr. CK1106A dolomia pneu.convey. - start/stop☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0211☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - in remote☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - in remote☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0212☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - in running☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - in running☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0213☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - supply fault☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - supply fault☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0214☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - start/stop☣ ☣ ☣ ☣compr. CK1106B dolomia pneu.convey. - start/stop☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0215☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104A - in running☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104A - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0216☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104A - supply fault☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104A - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0217☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104A - start/stop☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104A - start/stop☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0218☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104B - in running☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104B - in running☣DI☣DI☣31☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0219☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104B - supply fault☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104B - supply fault☣DI☣DI☣32☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0220☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104B - start/stop☣ ☣ ☣ ☣fan FN1105Acooling dolomia M1104B - start/stop☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0221☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣flow L FSL1106A dolomia pneu.convey.☣ ☣ ☣ ☣flow L FSL1106A dolomia pneu.convey.☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0222☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣flow L FSL1106B dolomia pneu.convey.☣ ☣ ☣ ☣flow L FSL1106B dolomia pneu.convey.☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0223☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1101 extract. dolomia silos SL1100A - opened☣ ☣ ☣ ☣vlv. HV1101 extract. dolomia silos SL1100A - opened☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0224☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1151 extract. dolomia silos SL1100B - opened☣ ☣ ☣ ☣vlv. HV1151 extract. dolomia silos SL1100B - opened☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0225☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - reset☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - reset☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0226☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - charge alarm☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - charge alarm☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0227☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - charge ready☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - charge ready☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0228☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - visive alarm☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - visive alarm☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0229☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - acustic alarm☣ ☣ ☣ ☣loc.pan. LP1100A filling dolomia SL1100A - acustic alarm☣DO☣DO☣14☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0230☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - reset☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - reset☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0231☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - charge alarm☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - charge alarm☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0232☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - charge ready☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - charge ready☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0233☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - visive alarm☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - visive alarm☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0234☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - acustic alarm☣ ☣ ☣ ☣loc.pan. LP1100B filling dolomia SL1100B - acustic alarm☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0235☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300A cleaning dolomia FF1100A - in remote☣ ☣ ☣ ☣aut.pan. AP1300A cleaning dolomia FF1100A - in remote☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0236☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300A cleaning dolomia FF1100A - com.alarm☣ ☣ ☣ ☣aut.pan. AP1300A cleaning dolomia FF1100A - com.alarm☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0237☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300A cleaning dolomia FF1100A - enable☣ ☣ ☣ ☣aut.pan. AP1300A cleaning dolomia FF1100A - enable☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0238☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300B cleaning dolomia FF1100B - in remote☣ ☣ ☣ ☣aut.pan. AP1300B cleaning dolomia FF1100B - in remote☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0239☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300B cleaning dolomia FF1100B - com.alarm☣ ☣ ☣ ☣aut.pan. AP1300B cleaning dolomia FF1100B - com.alarm☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0240☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1300B cleaning dolomia FF1100B - enable☣ ☣ ☣ ☣aut.pan. AP1300B cleaning dolomia FF1100B - enable☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0241☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1358 cleaning dolomia FF1158 - in remote☣ ☣ ☣ ☣aut.pan. AP1358 cleaning dolomia FF1158 - in remote☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0242☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1358 cleaning dolomia FF1158 - com.alarm☣ ☣ ☣ ☣aut.pan. AP1358 cleaning dolomia FF1158 - com.alarm☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0243☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1358 cleaning dolomia FF1158 - enable☣ ☣ ☣ ☣aut.pan. AP1358 cleaning dolomia FF1158 - enable☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0244☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1101 dolomia hopper HP1101A☣ ☣ ☣ ☣lev. H LSH1101 dolomia hopper HP1101A☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0245☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1151 dolomia hopper HP1101B☣ ☣ ☣ ☣lev. H LSH1151 dolomia hopper HP1101B☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0246☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1158 dolomia FF1158☣ ☣ ☣ ☣lev. H LSH1158 dolomia FF1158☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0247☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. HH LSHH1100A dolomia silos SL1100A☣ ☣ ☣ ☣lev. HH LSHH1100A dolomia silos SL1100A☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0248☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. HH LSHH1100B dolomia silos SL1100B☣ ☣ ☣ ☣lev. HH LSHH1100B dolomia silos SL1100B☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0249☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1101A dolomia hopper HP1101A☣ ☣ ☣ ☣lev. L LSL1101A dolomia hopper HP1101A☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0250☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1101B dolomia hopper HP1101B☣ ☣ ☣ ☣lev. L LSL1101B dolomia hopper HP1101B☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0251☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1100A dolomia silos SL1100A☣ ☣ ☣ ☣lev. LL LSLL1100A dolomia silos SL1100A☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0252☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1100B dolomia silos SL1100B☣ ☣ ☣ ☣lev. LL LSLL1100B dolomia silos SL1100B☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0253☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. dolomia silos SL1100A - opened☣ ☣ ☣ ☣vlv. POV1102A extract. dolomia silos SL1100A - opened☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0254☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. dolomia silos SL1100A - open☣ ☣ ☣ ☣vlv. POV1102A extract. dolomia silos SL1100A - open☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0255☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102A extract. dolomia silos SL1100A - close☣ ☣ ☣ ☣vlv. POV1102A extract. dolomia silos SL1100A - close☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0256☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. dolomia silos SL1100B - opened☣ ☣ ☣ ☣vlv. POV1102B extract. dolomia silos SL1100B - opened☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0257☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. dolomia silos SL1100B - open☣ ☣ ☣ ☣vlv. POV1102B extract. dolomia silos SL1100B - open☣DO☣DO☣14☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0258☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102B extract. dolomia silos SL1100B - close☣ ☣ ☣ ☣vlv. POV1102B extract. dolomia silos SL1100B - close☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0259☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1158 dolomia to rotary kiln - opened☣ ☣ ☣ ☣vlv. POV1158 dolomia to rotary kiln - opened☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0260☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1158 dolomia to rotary kiln - open☣ ☣ ☣ ☣vlv. POV1158 dolomia to rotary kiln - open☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0261☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1158 dolomia to rotary kiln - close☣ ☣ ☣ ☣vlv. POV1158 dolomia to rotary kiln - close☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0262☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. HH PSHH1100 dolomia compr.air FF1100☣ ☣ ☣ ☣pres. HH PSHH1100 dolomia compr.air FF1100☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0263☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. HH PSHH1150 dolomia compr.air FF1150☣ ☣ ☣ ☣pres. HH PSHH1150 dolomia compr.air FF1150☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0264☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. HH PSHH1158 dolomia compr.air FF1158☣ ☣ ☣ ☣pres. HH PSHH1158 dolomia compr.air FF1158☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0265☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1301 dolomia compr.air PRV1301☣ ☣ ☣ ☣pres. L PSL1301 dolomia compr.air PRV1301☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0266☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1351 dolomia compr.air PRV1351☣ ☣ ☣ ☣pres. L PSL1351 dolomia compr.air PRV1351☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0267☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1358 dolomia compr.air PRV1358☣ ☣ ☣ ☣pres. L PSL1358 dolomia compr.air PRV1358☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0268☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - in remote☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0269☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - in running☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0270☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - supply fault☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0271☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1107A dolomia pneu.convey. - start/stop☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0272☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - in remote☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0273☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - in running☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0274☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - supply fault☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0275☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1107B dolomia pneu.convey. - start/stop☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0276☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - in remote☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - in remote☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0277☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - in running☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - in running☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0278☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - supply fault☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - supply fault☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0279☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - start/stop☣ ☣ ☣ ☣rot.vlv. RV1159 dolomia pneu.convey. - start/stop☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0280☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1304A fluid dolomia compr.air SI1100A - open☣ ☣ ☣ ☣vlv. SOV1304A fluid dolomia compr.air SI1100A - open☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0281☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1305A fluid dolomia compr.air SI1100A - open☣ ☣ ☣ ☣vlv. SOV1305A fluid dolomia compr.air SI1100A - open☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0282☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1306A fluid dolomia compr.air HP1101A - open☣ ☣ ☣ ☣vlv. SOV1306A fluid dolomia compr.air HP1101A - open☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0283☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1304B fluid dolomia compr.air SI1100B - open☣ ☣ ☣ ☣vlv. SOV1304B fluid dolomia compr.air SI1100B - open☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0284☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1305B fluid dolomia compr.air SI1100B - open☣ ☣ ☣ ☣vlv. SOV1305B fluid dolomia compr.air SI1100B - open☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0285☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1306B fluid dolomia compr.air HP1100B - open☣ ☣ ☣ ☣vlv. SOV1306B fluid dolomia compr.air HP1100B - open☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0286☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1357 fluid dolomia EL1156 - open☣ ☣ ☣ ☣vlv. SOV1357 fluid dolomia EL1156 - open☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0287☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1103 dolomia conveyor SW1103A☣ ☣ ☣ ☣speed L SSL1103 dolomia conveyor SW1103A☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0288☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1104 dolomia conveyor SW1104A☣ ☣ ☣ ☣speed L SSL1104 dolomia conveyor SW1104A☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0289☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1107 dolomia rot.vlv. RV1107A☣ ☣ ☣ ☣speed L SSL1107 dolomia rot.vlv. RV1107A☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0290☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1153 dolomia conveyor SW1103B☣ ☣ ☣ ☣speed L SSL1153 dolomia conveyor SW1103B☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0291☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1104B dolomia conveyor SW1104B☣ ☣ ☣ ☣speed L SSL1104B dolomia conveyor SW1104B☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0292☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1157 dolomia rot.vlv. RV1107B☣ ☣ ☣ ☣speed L SSL1157 dolomia rot.vlv. RV1107B☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0293☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1159 dolomia rot.vlv. RV1159☣ ☣ ☣ ☣speed L SSL1159 dolomia rot.vlv. RV1159☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0294☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - in remote☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - in remote☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0295☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - in running☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - in running☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0296☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - supply fault☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - supply fault☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0297☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - start/stop☣ ☣ ☣ ☣screw conv. SW1103A extract. dolomia - start/stop☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0298☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - in remote☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - in remote☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0299☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - in running☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - in running☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0300☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - gen.fault☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - gen.fault☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0301☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - supply fault☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - supply fault☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0302☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - start/stop☣ ☣ ☣ ☣screw conv. SW1104A dosag. dolomia - start/stop☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0303☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - in remote☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - in remote☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0304☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - in running☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - in running☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0305☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - supply fault☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - supply fault☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0306☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - start/stop☣ ☣ ☣ ☣screw conv. SW1103B extract. dolomia - start/stop☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0307☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - in remote☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - in remote☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0308☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - in running☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - in running☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0309☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - gen.fault☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - gen.fault☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0310☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - supply fault☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - supply fault☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0311☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - start/stop☣ ☣ ☣ ☣screw conv. SW1104B dosag. dolomia - start/stop☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0312☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pos. H ZSH1100A filling dolomia SL1100A☣ ☣ ☣ ☣pos. H ZSH1100A filling dolomia SL1100A☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0313☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pos. H ZSH1100B filling dolomia SL1100B☣ ☣ ☣ ☣pos. H ZSH1100B filling dolomia SL1100B☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0314☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣dryer DR1108A dolomia pneu.convey.- in running☣ ☣ ☣ ☣dryer DR1108A dolomia pneu.convey.- in running☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0315☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣dryer DR1108A dolomia pneu.convey.- com.alarm☣ ☣ ☣ ☣dryer DR1108A dolomia pneu.convey.- com.alarm☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0316☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣dryer DR1108A dolomia pneu.convey.- start/stop☣ ☣ ☣ ☣dryer DR1108A dolomia pneu.convey.- start/stop☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0317☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣dryer DR1108B dolomia pneu.convey.- in running☣ ☣ ☣ ☣dryer DR1108B dolomia pneu.convey.- in running☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0318☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣dryer DR1108B dolomia pneu.convey.- com.alarm☣ ☣ ☣ ☣dryer DR1108B dolomia pneu.convey.- com.alarm☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0319☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣dryer DR1108B dolomia pneu.convey.- start/stop☣ ☣ ☣ ☣dryer DR1108B dolomia pneu.convey.- start/stop☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 A19 DP01 ☣
+0320☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1300A FG quenc. compr.air - in running☣ ☣ ☣ ☣compr. CK1300A FG quenc. compr.air - in running☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0321☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1300A FG quenc. compr.air - com.alarm☣ ☣ ☣ ☣compr. CK1300A FG quenc. compr.air - com.alarm☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0322☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1300A FG quenc. compr.air - enable☣ ☣ ☣ ☣compr. CK1300A FG quenc. compr.air - enable☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0323☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1300B FG quenc. compr.air - in running☣ ☣ ☣ ☣compr. CK1300B FG quenc. compr.air - in running☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0324☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1300B FG quenc. compr.air - com.alarm☣ ☣ ☣ ☣compr. CK1300B FG quenc. compr.air - com.alarm☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0325☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣compr. CK1300B FG quenc. compr.air - enable☣ ☣ ☣ ☣compr. CK1300B FG quenc. compr.air - enable☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0326☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1220 FG quenc. TK1200 - in running☣ ☣ ☣ ☣elec.heater EH1220 FG quenc. TK1200 - in running☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0327☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1220 FG quenc. TK1200 - supply fault☣ ☣ ☣ ☣elec.heater EH1220 FG quenc. TK1200 - supply fault☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0328☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1220 FG quenc. TK1200 - start/stop☣ ☣ ☣ ☣elec.heater EH1220 FG quenc. TK1200 - start/stop☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0329☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1221 FG quenc. recircul - in running☣ ☣ ☣ ☣elec.heater EH1221 FG quenc. recircul - in running☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0330☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1221 FG quenc. recircul - supply fault☣ ☣ ☣ ☣elec.heater EH1221 FG quenc. recircul - supply fault☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0331☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1221 FG quenc. recircul - start/stop☣ ☣ ☣ ☣elec.heater EH1221 FG quenc. recircul - start/stop☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0332☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1222 FG quenc. water to nebul 1- in running☣ ☣ ☣ ☣elec.heater EH1222 FG quenc. water to nebul 1- in running☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0333☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1222 FG quenc. water to nebul 1- supply fault☣ ☣ ☣ ☣elec.heater EH1222 FG quenc. water to nebul 1- supply fault☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0334☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1222 FG quenc. water to nebul 1- start/stop☣ ☣ ☣ ☣elec.heater EH1222 FG quenc. water to nebul 1- start/stop☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0335☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1223 FG quenc. water to nebul 2- in running☣ ☣ ☣ ☣elec.heater EH1223 FG quenc. water to nebul 2- in running☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0336☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1223 FG quenc. water to nebul 2- supply fault☣ ☣ ☣ ☣elec.heater EH1223 FG quenc. water to nebul 2- supply fault☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0337☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1223 FG quenc. water to nebul 2- start/stop☣ ☣ ☣ ☣elec.heater EH1223 FG quenc. water to nebul 2- start/stop☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0338☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1224 FG quenc. water to nebul 3- in running☣ ☣ ☣ ☣elec.heater EH1224 FG quenc. water to nebul 3- in running☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0339☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1224 FG quenc. water to nebul 3- supply fault☣ ☣ ☣ ☣elec.heater EH1224 FG quenc. water to nebul 3- supply fault☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0340☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1224 FG quenc. water to nebul 3- start/stop☣ ☣ ☣ ☣elec.heater EH1224 FG quenc. water to nebul 3- start/stop☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0341☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1320 FG quenc. PRV1300 - in running☣ ☣ ☣ ☣elec.heater EH1320 FG quenc. PRV1300 - in running☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0342☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1320 FG quenc. PRV1300 - supply fault☣ ☣ ☣ ☣elec.heater EH1320 FG quenc. PRV1300 - supply fault☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0343☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1320 FG quenc. PRV1300 - start/stop☣ ☣ ☣ ☣elec.heater EH1320 FG quenc. PRV1300 - start/stop☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0344☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1321 FG quenc. service air - in running☣ ☣ ☣ ☣elec.heater EH1321 FG quenc. service air - in running☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0345☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1321 FG quenc. service air - supply fault☣ ☣ ☣ ☣elec.heater EH1321 FG quenc. service air - supply fault☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0346☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1321 FG quenc. service air - start/stop☣ ☣ ☣ ☣elec.heater EH1321 FG quenc. service air - start/stop☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0347☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1322 FG quenc. service air - in running☣ ☣ ☣ ☣elec.heater EH1322 FG quenc. service air - in running☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0348☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1322 FG quenc. service air - supply fault☣ ☣ ☣ ☣elec.heater EH1322 FG quenc. service air - supply fault☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0349☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1322 FG quenc. service air - start/stop☣ ☣ ☣ ☣elec.heater EH1322 FG quenc. service air - start/stop☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0350☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1201 recirc. FG quenc. wat.util. - closed☣ ☣ ☣ ☣vlv. FV1201 recirc. FG quenc. wat.util. - closed☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0351☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1210 FG quenc. wat.util. to NZ1110 - closed☣ ☣ ☣ ☣vlv. FV1210 FG quenc. wat.util. to NZ1110 - closed☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0352☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1211 FG quenc. wat.util. to NZ1111 - closed☣ ☣ ☣ ☣vlv. FV1211 FG quenc. wat.util. to NZ1111 - closed☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0353☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1212 FG quenc. wat.util. to NZ1112 - closed☣ ☣ ☣ ☣vlv. FV1212 FG quenc. wat.util. to NZ1112 - closed☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0354☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1301 FG quenc. compr.air to nebul - closed☣ ☣ ☣ ☣vlv. FV1301 FG quenc. compr.air to nebul - closed☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0355☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1200 FG quenc. wat.util. TK1200☣ ☣ ☣ ☣lev. LL LSLL1200 FG quenc. wat.util. TK1200☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0356☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - in remote☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - in remote☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0357☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - in running☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - in running☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0358☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - supply fault☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - supply fault☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0359☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - start/stop☣ ☣ ☣ ☣pump PM1200A FG quenc. wat.util. - start/stop☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0360☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - in remote☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - in remote☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0361☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - in running☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - in running☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0362☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - supply fault☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - supply fault☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0363☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - start/stop☣ ☣ ☣ ☣pump PM1200B FG quenc. wat.util. - start/stop☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0364☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - opened☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - opened☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0365☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - closed☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - closed☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0366☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - open☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - open☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0367☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - close☣ ☣ ☣ ☣vlv. POV1100 FG quenc. inlet QT1100 - close☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0368☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - opened☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - opened☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0369☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - closed☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - closed☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0370☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - open☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - open☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0371☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - close☣ ☣ ☣ ☣vlv. POV1200 filling FG quenc. wat.util. TK1200 - close☣DO☣DO☣25☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0372☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - opened☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - opened☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0373☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - closed☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - closed☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0374☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - open☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - open☣DO☣DO☣26☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0375☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - close☣ ☣ ☣ ☣vlv. POV1202 block FG quenc. wat.util. - close☣DO☣DO☣27☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0376☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - opened☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - opened☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0377☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - closed☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - closed☣DI☣DI☣31☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0378☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - open☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - open☣DO☣DO☣28☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0379☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - close☣ ☣ ☣ ☣vlv. POV1300 block FG quenc. compr.air - close☣DO☣DO☣29☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0380☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - opened☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - opened☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0381☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - closed☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - closed☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0382☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - open☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - open☣DO☣DO☣30☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0383☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - close☣ ☣ ☣ ☣vlv. POV1310 FG quenc. compr.air to NZ1110 - close☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0384☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - opened☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - opened☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0385☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - closed☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - closed☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0386☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - open☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - open☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0387☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - close☣ ☣ ☣ ☣vlv. POV1311 FG quenc. compr.air to NZ1111 - close☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0388☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - opened☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - opened☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0389☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - closed☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - closed☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0390☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - open☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - open☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0391☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - close☣ ☣ ☣ ☣vlv. POV1312 FG quenc. compr.air to NZ1112 - close☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0392☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. L TSL1220 FG quenc. ambient air☣ ☣ ☣ ☣temp. L TSL1220 FG quenc. ambient air☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P30 DP01 ☣
+0393☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1131 dry FG clean. Unit1 - in running☣ ☣ ☣ ☣elec.heater EH1131 dry FG clean. Unit1 - in running☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0394☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1131 dry FG clean. Unit1 - supply fault☣ ☣ ☣ ☣elec.heater EH1131 dry FG clean. Unit1 - supply fault☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0395☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1131 dry FG clean. Unit1 - start/stop☣ ☣ ☣ ☣elec.heater EH1131 dry FG clean. Unit1 - start/stop☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0396☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1132 dry FG clean. Unit2 - in running☣ ☣ ☣ ☣elec.heater EH1132 dry FG clean. Unit2 - in running☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0397☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1132 dry FG clean. Unit2 - supply fault☣ ☣ ☣ ☣elec.heater EH1132 dry FG clean. Unit2 - supply fault☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0398☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1132 dry FG clean. Unit2 - start/stop☣ ☣ ☣ ☣elec.heater EH1132 dry FG clean. Unit2 - start/stop☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0399☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1133 dry FG clean. Unit3 - in running☣ ☣ ☣ ☣elec.heater EH1133 dry FG clean. Unit3 - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0400☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1133 dry FG clean. Unit3 - supply fault☣ ☣ ☣ ☣elec.heater EH1133 dry FG clean. Unit3 - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0401☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1133 dry FG clean. Unit3 - start/stop☣ ☣ ☣ ☣elec.heater EH1133 dry FG clean. Unit3 - start/stop☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0402☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1134 dry FG clean. Unit4 - in running☣ ☣ ☣ ☣elec.heater EH1134 dry FG clean. Unit4 - in running☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0403☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1134 dry FG clean. Unit4 - supply fault☣ ☣ ☣ ☣elec.heater EH1134 dry FG clean. Unit4 - supply fault☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0404☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1134 dry FG clean. Unit4 - start/stop☣ ☣ ☣ ☣elec.heater EH1134 dry FG clean. Unit4 - start/stop☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0405☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1152 dry FG clean. 1°stage - in running☣ ☣ ☣ ☣elec.heater EH1152 dry FG clean. 1°stage - in running☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0406☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1152 dry FG clean. 1°stage - supply fault☣ ☣ ☣ ☣elec.heater EH1152 dry FG clean. 1°stage - supply fault☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0407☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1152 dry FG clean. 1°stage - start/stop☣ ☣ ☣ ☣elec.heater EH1152 dry FG clean. 1°stage - start/stop☣DO☣DO☣25☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0408☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1153 dry FG clean. 2°stage - in running☣ ☣ ☣ ☣elec.heater EH1153 dry FG clean. 2°stage - in running☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0409☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1153 dry FG clean. 2°stage - supply fault☣ ☣ ☣ ☣elec.heater EH1153 dry FG clean. 2°stage - supply fault☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0410☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1153 dry FG clean. 2°stage - start/stop☣ ☣ ☣ ☣elec.heater EH1153 dry FG clean. 2°stage - start/stop☣DO☣DO☣26☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0411☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1154 dry FG clean. 3°stage - in running☣ ☣ ☣ ☣elec.heater EH1154 dry FG clean. 3°stage - in running☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0412☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1154 dry FG clean. 3°stage - supply fault☣ ☣ ☣ ☣elec.heater EH1154 dry FG clean. 3°stage - supply fault☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0413☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1154 dry FG clean. 3°stage - start/stop☣ ☣ ☣ ☣elec.heater EH1154 dry FG clean. 3°stage - start/stop☣DO☣DO☣27☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0414☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - in remote☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - in remote☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0415☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - in running☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - in running☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0416☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - supply fault☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - supply fault☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0417☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - start/stop☣ ☣ ☣ ☣fan FN1151 preheat dry FG clean. - start/stop☣DO☣DO☣28☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0418☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1121 dry FG clean. dust from Unit1 - opened☣ ☣ ☣ ☣vlv. HV1121 dry FG clean. dust from Unit1 - opened☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0419☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1122 dry FG clean. dust from Unit2 - opened☣ ☣ ☣ ☣vlv. HV1122 dry FG clean. dust from Unit2 - opened☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0420☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1123 dry FG clean. dust from Unit3 - opened☣ ☣ ☣ ☣vlv. HV1123 dry FG clean. dust from Unit3 - opened☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0421☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1124 dry FG clean. dust from Unit4 - opened☣ ☣ ☣ ☣vlv. HV1124 dry FG clean. dust from Unit4 - opened☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0422☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - in running☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - in running☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0423☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - in remote☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - in remote☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0424☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - com.alarm☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - com.alarm☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0425☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - start check alarm☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - start check alarm☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0426☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - ev stopped☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - ev stopped☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0427☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - start/stop☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - start/stop☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0428☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 1☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 1☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0429☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 2☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 2☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0430☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 3☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 3☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0431☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 4☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - disable unit 4☣DO☣DO☣25☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0432☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - sel. man/auto mode☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - sel. man/auto mode☣DO☣DO☣26☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0433☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - sel. startup/shutdown mode☣ ☣ ☣ ☣aut.pan. AP1110 cleaning dry FG clean. FF1101 - sel. startup/shutdown mode☣DO☣DO☣27☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0434☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. L TSL1101 dry FG clean. hopper Unit1☣ ☣ ☣ ☣temp. L TSL1101 dry FG clean. hopper Unit1☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0435☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. L TSL1102 dry FG clean. hopper Unit2☣ ☣ ☣ ☣temp. L TSL1102 dry FG clean. hopper Unit2☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0436☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. L TSL1103 dry FG clean. hopper Unit3☣ ☣ ☣ ☣temp. L TSL1103 dry FG clean. hopper Unit3☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0437☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. L TSL1104 dry FG clean. hopper Unit4☣ ☣ ☣ ☣temp. L TSL1104 dry FG clean. hopper Unit4☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0438☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - opened☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - opened☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0439☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - closed☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - closed☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0440☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - open☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - open☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0441☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - close☣ ☣ ☣ ☣vlv. POV1101 dry FG clean. inlet FF1101 Unit1 - close☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0442☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - opened☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - opened☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0443☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - closed☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - closed☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0444☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - open☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - open☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0445☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - close☣ ☣ ☣ ☣vlv. POV1102 dry FG clean. inlet FF1101 Unit2 - close☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0446☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - opened☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - opened☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0447☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - closed☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - closed☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0448☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - open☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - open☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0449☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - close☣ ☣ ☣ ☣vlv. POV1103 dry FG clean. inlet FF1101 Unit3 - close☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0450☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - opened☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - opened☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0451☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - closed☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - closed☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0452☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - open☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - open☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0453☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - close☣ ☣ ☣ ☣vlv. POV1104 dry FG clean. inlet FF1101 Unit4 - close☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0454☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - opened☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - opened☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0455☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - closed☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - closed☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0456☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - open☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - open☣DO☣DO☣14☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0457☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - close☣ ☣ ☣ ☣vlv. POV1115 dry FG clean. outlet FF1101 - close☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0458☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - opened☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - opened☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0459☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - closed☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - closed☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0460☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - open☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - open☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0461☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - close☣ ☣ ☣ ☣vlv. POV1116 dry FG clean. outlet FF1101 - close☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0462☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - opened☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - opened☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0463☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - closed☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - closed☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0464☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - open☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - open☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0465☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - close☣ ☣ ☣ ☣vlv. POV1150 preheat dry FG clean. inlet - close☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0466☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - opened☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - opened☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0467☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - closed☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - closed☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0468☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - open☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - open☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0469☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - close☣ ☣ ☣ ☣vlv. POV1155 preheat dry FG clean. outlet - close☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0470☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1300 dry FG clean. compr.air☣ ☣ ☣ ☣pres. L PSL1300 dry FG clean. compr.air☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0471☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - in remote☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - in remote☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0472☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - in running☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - in running☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0473☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - supply fault☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - supply fault☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0474☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - start/stop☣ ☣ ☣ ☣rot.vlv. RV1121 dry FG clean. dust from Unit1 - start/stop☣DO☣DO☣29☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0475☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - in remote☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - in remote☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0476☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - in running☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - in running☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0477☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - supply fault☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - supply fault☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0478☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - start/stop☣ ☣ ☣ ☣rot.vlv. RV1122 dry FG clean. dust from Unit2 - start/stop☣DO☣DO☣30☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0479☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - in remote☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - in remote☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0480☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - in running☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - in running☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0481☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - supply fault☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - supply fault☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0482☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - start/stop☣ ☣ ☣ ☣rot.vlv. RV1123 dry FG clean. dust from Unit3 - start/stop☣DO☣DO☣01☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0483☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - in remote☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - in remote☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0484☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - in running☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - in running☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0485☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - supply fault☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - supply fault☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0486☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - start/stop☣ ☣ ☣ ☣rot.vlv. RV1124 dry FG clean. dust from Unit4 - start/stop☣DO☣DO☣02☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0487☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1125 dry FG clean. RV1125☣ ☣ ☣ ☣speed L SSL1125 dry FG clean. RV1125☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0488☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1126 dry FG clean. RV1126☣ ☣ ☣ ☣speed L SSL1126 dry FG clean. RV1126☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0489☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1127 dry FG clean. RV1127☣ ☣ ☣ ☣speed L SSL1127 dry FG clean. RV1127☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0490☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1128 dry FG clean. RV1128☣ ☣ ☣ ☣speed L SSL1128 dry FG clean. RV1128☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0491☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. HH TSHH1152 preheat dry FG clean. heater☣ ☣ ☣ ☣temp. HH TSHH1152 preheat dry FG clean. heater☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0492☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit1 - open☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit1 - open☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0493☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit2 - open☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit2 - open☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0494☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit3 - open☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit3 - open☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0495☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit4 - open☣ ☣ ☣ ☣vlv. SOV1105 dry FG clean. hopper unit4 - open☣DO☣DO☣25☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0496☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. TV1100 dry FG clean. inlet amb. air - closed☣ ☣ ☣ ☣vlv. TV1100 dry FG clean. inlet amb. air - closed☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0497☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. TV1100 dry FG clean. inlet amb. air - forced open☣ ☣ ☣ ☣vlv. TV1100 dry FG clean. inlet amb. air - forced open☣DOS☣DO☣00☣ ☣ ☣CHN1 TDZ2 P32 DP01 ☣
+0498☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1210 wet FG clean. TK1200 - in running☣ ☣ ☣ ☣elec.heater EH1210 wet FG clean. TK1200 - in running☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0499☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1210 wet FG clean. TK1200 - supply fault☣ ☣ ☣ ☣elec.heater EH1210 wet FG clean. TK1200 - supply fault☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0500☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1210 wet FG clean. TK1200 - start/stop☣ ☣ ☣ ☣elec.heater EH1210 wet FG clean. TK1200 - start/stop☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0501☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1211 wet FG clean. sod.hydr. piping - in running☣ ☣ ☣ ☣elec.heater EH1211 wet FG clean. sod.hydr. piping - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0502☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1211 wet FG clean. sod.hydr. piping - supply fault☣ ☣ ☣ ☣elec.heater EH1211 wet FG clean. sod.hydr. piping - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0503☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1211 wet FG clean. sod.hydr. piping - start/stop☣ ☣ ☣ ☣elec.heater EH1211 wet FG clean. sod.hydr. piping - start/stop☣DO☣DO☣14☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0504☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1102 extract. wet FG clean. wat. - closed☣ ☣ ☣ ☣vlv. FV1102 extract. wet FG clean. wat. - closed☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0505☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1152 extract. wet FG clean. sod.hydr. - closed☣ ☣ ☣ ☣vlv. FV1152 extract. wet FG clean. sod.hydr. - closed☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0506☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1100 wet FG clean. SB1100☣ ☣ ☣ ☣lev. LL LSLL1100 wet FG clean. SB1100☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0507☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1150 wet FG clean. TK1150☣ ☣ ☣ ☣lev. LL LSLL1150 wet FG clean. TK1150☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0508☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1200 wet FG clean. TK1200☣ ☣ ☣ ☣lev. LL LSLL1200 wet FG clean. TK1200☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0509☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. LV1101 filling wet FG clean. wat. SB1100 - closed☣ ☣ ☣ ☣vlv. LV1101 filling wet FG clean. wat. SB1100 - closed☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0510☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. LV1151 filling wet FG clean. sod.hydr. TK1150 - closed☣ ☣ ☣ ☣vlv. LV1151 filling wet FG clean. sod.hydr. TK1150 - closed☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0511☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 cooling wet FG clean. wat. SB1100 - opened☣ ☣ ☣ ☣vlv. POV1103 cooling wet FG clean. wat. SB1100 - opened☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0512☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 cooling wet FG clean. wat. SB1100 - closed☣ ☣ ☣ ☣vlv. POV1103 cooling wet FG clean. wat. SB1100 - closed☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0513☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 cooling wet FG clean. wat. SB1100 - close☣ ☣ ☣ ☣vlv. POV1103 cooling wet FG clean. wat. SB1100 - close☣DOS☣DO☣00☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0514☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - in remote☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - in remote☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0515☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - in running☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - in running☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0516☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - supply fault☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - supply fault☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0517☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - start/stop☣ ☣ ☣ ☣pump PM1100A recirc. wet FG clean. wat. - start/stop☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0518☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - in remote☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - in remote☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0519☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - in running☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - in running☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0520☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - supply fault☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - supply fault☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0521☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - start/stop☣ ☣ ☣ ☣pump PM1100B recirc. wet FG clean. wat. - start/stop☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0522☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - in remote☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - in remote☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0523☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - in running☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - in running☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0524☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - supply fault☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - supply fault☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0525☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - start/stop☣ ☣ ☣ ☣pump PM1150A recirc. wet FG clean. sod.hydr. - start/stop☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0526☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - in remote☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - in remote☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0527☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - in running☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - in running☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0528☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - supply fault☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - supply fault☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P33 DP02 ☣
+0529☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - start/stop☣ ☣ ☣ ☣pump PM1150B recirc. wet FG clean. sod.hydr. - start/stop☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0530☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - in remote☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - in remote☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0531☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - in running☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - in running☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0532☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - supply fault☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - supply fault☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0533☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - start/stop☣ ☣ ☣ ☣pump PM1200A dosag. wet FG clean. sod.hydr. - start/stop☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0534☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - in remote☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - in remote☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0535☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - in running☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - in running☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0536☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - supply fault☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - supply fault☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0537☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - start/stop☣ ☣ ☣ ☣pump PM1200B dosag. wet FG clean. sod.hydr. - start/stop☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0538☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - in remote☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - in remote☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0539☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - in running☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - in running☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0540☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - supply fault☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - supply fault☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0541☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - start/stop☣ ☣ ☣ ☣pump PM1300A dosag. wet FG clean. reagen. - start/stop☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0542☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - in remote☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - in remote☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0543☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - in running☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - in running☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0544☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - supply fault☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - supply fault☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0545☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - start/stop☣ ☣ ☣ ☣pump PM1300B dosag. wet FG clean. reagen. - start/stop☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0546☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - in remote☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - in remote☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0547☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - in running☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - in running☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0548☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - supply fault☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - supply fault☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0549☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - start/stop☣ ☣ ☣ ☣pump PM1400A dosag. wet FG clean. reagen. - start/stop☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0550☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - in remote☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - in remote☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0551☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - in running☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0552☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - supply fault☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0553☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - start/stop☣ ☣ ☣ ☣pump PM1400B dosag. wet FG clean. reagen. - start/stop☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0554☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - in remote☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - in remote☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0555☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - in running☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - in running☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0556☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - supply fault☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - supply fault☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0557☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - start/stop☣ ☣ ☣ ☣pump PM1400C dosag. wet FG clean. reagen. - start/stop☣DO☣DO☣25☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0558☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - in remote☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - in remote☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0559☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - in running☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - in running☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0560☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - supply fault☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - supply fault☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0561☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - start/stop☣ ☣ ☣ ☣pump PM1500A dosag. wet FG clean. pot.perm. - start/stop☣DO☣DO☣26☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0562☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - in remote☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - in remote☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0563☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - in running☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - in running☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0564☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - supply fault☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - supply fault☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0565☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - start/stop☣ ☣ ☣ ☣pump PM1500B dosag. wet FG clean. pot.perm. - start/stop☣DO☣DO☣27☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0566☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1101 filling wet FG clean. wat.☣ ☣ ☣ ☣pres. L PSL1101 filling wet FG clean. wat.☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0567☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1103 cooling wet FG clean. wat. SB1100☣ ☣ ☣ ☣pres. L PSL1103 cooling wet FG clean. wat. SB1100☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0568☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1410 - Insolub. TMT stor. tank - in running☣ ☣ ☣ ☣elec.heater EH1410 - Insolub. TMT stor. tank - in running☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0569☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1410 - Insolub. TMT stor. tank - supply fault☣ ☣ ☣ ☣elec.heater EH1410 - Insolub. TMT stor. tank - supply fault☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0570☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1410 - Insolub. TMT stor. tank - start/stop☣ ☣ ☣ ☣elec.heater EH1410 - Insolub. TMT stor. tank - start/stop☣DO☣DO☣28☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0571☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1411 - RE012 line - in running☣ ☣ ☣ ☣elec.heater EH1411 - RE012 line - in running☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0572☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1411 - RE012 line - supply fault☣ ☣ ☣ ☣elec.heater EH1411 - RE012 line - supply fault☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0573☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1411 - RE012 line - start/stop☣ ☣ ☣ ☣elec.heater EH1411 - RE012 line - start/stop☣DO☣DO☣29☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0574☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1510 - Potass. Permang. stor. tank - in running☣ ☣ ☣ ☣elec.heater EH1510 - Potass. Permang. stor. tank - in running☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0575☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1510 - Potass. Permang. stor. tank - supply fault☣ ☣ ☣ ☣elec.heater EH1510 - Potass. Permang. stor. tank - supply fault☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0576☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1510 - Potass. Permang. stor. tank - start/stop☣ ☣ ☣ ☣elec.heater EH1510 - Potass. Permang. stor. tank - start/stop☣DO☣DO☣30☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0577☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1511 - RE001 line - in running☣ ☣ ☣ ☣elec.heater EH1511 - RE001 line - in running☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0578☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1511 - RE001 line - supply fault☣ ☣ ☣ ☣elec.heater EH1511 - RE001 line - supply fault☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0579☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1511 - RE001 line - start/stop☣ ☣ ☣ ☣elec.heater EH1511 - RE001 line - start/stop☣DO☣DO☣31☣ ☣ ☣CHN1 TDZ2 P33 DP01 ☣
+0580☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1210 wet FG clean. TK1200☣ ☣ ☣ ☣temp. H TSH1210 wet FG clean. TK1200☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P33 DP02☣
+0581☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1101 f.gas extr. - in remote☣ ☣ ☣ ☣fan FN1101 f.gas extr. - in remote☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0582☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1101 f.gas extr. - in running☣ ☣ ☣ ☣fan FN1101 f.gas extr. - in running☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0583☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1101 f.gas extr. - gen.fault☣ ☣ ☣ ☣fan FN1101 f.gas extr. - gen.fault☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0584☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1101 f.gas extr. - supply fault☣ ☣ ☣ ☣fan FN1101 f.gas extr. - supply fault☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0585☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1101 f.gas extr. - start/stop☣ ☣ ☣ ☣fan FN1101 f.gas extr. - start/stop☣DO☣DO☣03☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0586☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1101 f.gas extr. - interlock☣ ☣ ☣ ☣fan FN1101 f.gas extr. - interlock☣DOS☣DO☣00☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0587☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. LV1202 f.gas extr. moist outlet PRV1200 - closed☣ ☣ ☣ ☣vlv. LV1202 f.gas extr. moist outlet PRV1200 - closed☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0588☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - in running☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - in running☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0589☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - supply fault☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - supply fault☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0590☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - start/stop☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - start/stop☣DO☣DO☣04☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0591☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - interlock☣ ☣ ☣ ☣elec.mot. EM1101B f.gas extr. emergency - interlock☣DOS☣DO☣00☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0592☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1110 f.gas extr. EM1101B - in running☣ ☣ ☣ ☣elec.heater EH1110 f.gas extr. EM1101B - in running☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0593☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1110 f.gas extr. EM1101B - supply fault☣ ☣ ☣ ☣elec.heater EH1110 f.gas extr. EM1101B - supply fault☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0594☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1110 f.gas extr. EM1101B - start/stop☣ ☣ ☣ ☣elec.heater EH1110 f.gas extr. EM1101B - start/stop☣DO☣DO☣05☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0595☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1120 cooling f.gas extr. acustic cabin - in running☣ ☣ ☣ ☣fan FN1120 cooling f.gas extr. acustic cabin - in running☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0596☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1120 cooling f.gas extr. acustic cabin - supply fault☣ ☣ ☣ ☣fan FN1120 cooling f.gas extr. acustic cabin - supply fault☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0597☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1120 cooling f.gas extr. acustic cabin - start/stop☣ ☣ ☣ ☣fan FN1120 cooling f.gas extr. acustic cabin - start/stop☣DO☣DO☣06☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0598☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1120 f.gas extr. Acoustic cabin☣ ☣ ☣ ☣temp. H TSH1120 f.gas extr. Acoustic cabin☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0599☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. HH TSHH1120 f.gas extr. Acoustic cabin☣ ☣ ☣ ☣temp. HH TSHH1120 f.gas extr. Acoustic cabin☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0600☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. TV1200 f.gas extr. steam inlet HE1100 - closed☣ ☣ ☣ ☣vlv. TV1200 f.gas extr. steam inlet HE1100 - closed☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P35 DP01 ☣
+0601☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1350 cleaning dust FF1150 - in remote☣ ☣ ☣ ☣aut.pan. AP1350 cleaning dust FF1150 - in remote☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0602☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1350 cleaning dust FF1150 - com.alarm☣ ☣ ☣ ☣aut.pan. AP1350 cleaning dust FF1150 - com.alarm☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0603☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣aut.pan. AP1350 cleaning dust FF1150 - enable☣ ☣ ☣ ☣aut.pan. AP1350 cleaning dust FF1150 - enable☣DO☣DO☣28☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0604☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - in remote☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - in remote☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0605☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - in running☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - in running☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0606☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - supply fault☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - supply fault☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0607☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - start/stop☣ ☣ ☣ ☣bin activ. BAC1153A dust silos SL1150 - start/stop☣DO☣DO☣07☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0608☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - on truck☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - on truck☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0609☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - high position☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - high position☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0610☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - in running☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - in running☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0611☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - stopped☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - stopped☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0612☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - com.alarm☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - com.alarm☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0613☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - enable☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - enable☣DO☣DO☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0614☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - POV155 open☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - POV155 open☣DO☣DO☣30☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0615☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - POV155 closed☣ ☣ ☣ ☣cmd.aut.pan. CAP1156 extract. dust SL1100 - POV155 closed☣DO☣DO☣31☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0616☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1100 dust from filter - in remote☣ ☣ ☣ ☣conveyor CY1100 dust from filter - in remote☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0617☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1100 dust from filter - in running☣ ☣ ☣ ☣conveyor CY1100 dust from filter - in running☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0618☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1100 dust from filter - supply fault☣ ☣ ☣ ☣conveyor CY1100 dust from filter - supply fault☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0619☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1100 dust from filter - start/stop☣ ☣ ☣ ☣conveyor CY1100 dust from filter - start/stop☣DO☣DO☣08☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0620☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - in remote☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - in remote☣DI☣DI☣01☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0621☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - in running☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - in running☣DI☣DI☣02☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0622☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - supply fault☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - supply fault☣DI☣DI☣03☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0623☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - start/stop☣ ☣ ☣ ☣conveyor CY1101 dust to bucket elev. - start/stop☣DO☣DO☣09☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0624☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1110 dust CY1100 SL1150 - in running☣ ☣ ☣ ☣elec.heater EH1110 dust CY1100 SL1150 - in running☣DI☣DI☣04☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0625☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1110 dust CY1100 SL1150 - supply fault☣ ☣ ☣ ☣elec.heater EH1110 dust CY1100 SL1150 - supply fault☣DI☣DI☣05☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0626☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1110 dust CY1100 SL1150 - start/stop☣ ☣ ☣ ☣elec.heater EH1110 dust CY1100 SL1150 - start/stop☣DO☣DO☣10☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0627☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1111 dust CY1101 SL1150 - in running☣ ☣ ☣ ☣elec.heater EH1111 dust CY1101 SL1150 - in running☣DI☣DI☣06☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0628☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1111 dust CY1101 SL1150 - supply fault☣ ☣ ☣ ☣elec.heater EH1111 dust CY1101 SL1150 - supply fault☣DI☣DI☣07☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0629☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1111 dust CY1101 SL1150 - start/stop☣ ☣ ☣ ☣elec.heater EH1111 dust CY1101 SL1150 - start/stop☣DO☣DO☣11☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0630☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1112 dust EL1102 SL1150 - in running☣ ☣ ☣ ☣elec.heater EH1112 dust EL1102 SL1150 - in running☣DI☣DI☣08☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0631☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1112 dust EL1102 SL1150 - supply fault☣ ☣ ☣ ☣elec.heater EH1112 dust EL1102 SL1150 - supply fault☣DI☣DI☣09☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0632☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1112 dust EL1102 SL1150 - start/stop☣ ☣ ☣ ☣elec.heater EH1112 dust EL1102 SL1150 - start/stop☣DO☣DO☣12☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0633☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1160 dust silos SL1150 - in running☣ ☣ ☣ ☣elec.heater EH1160 dust silos SL1150 - in running☣DI☣DI☣10☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0634☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1160 dust silos SL1150 - supply fault☣ ☣ ☣ ☣elec.heater EH1160 dust silos SL1150 - supply fault☣DI☣DI☣11☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0635☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1160 dust silos SL1150 - start/stop☣ ☣ ☣ ☣elec.heater EH1160 dust silos SL1150 - start/stop☣DO☣DO☣13☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0636☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1161 dust hopper SL1150 - in running☣ ☣ ☣ ☣elec.heater EH1161 dust hopper SL1150 - in running☣DI☣DI☣12☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0637☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1161 dust hopper SL1150 - supply fault☣ ☣ ☣ ☣elec.heater EH1161 dust hopper SL1150 - supply fault☣DI☣DI☣13☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0638☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1161 dust hopper SL1150 - start/stop☣ ☣ ☣ ☣elec.heater EH1161 dust hopper SL1150 - start/stop☣DO☣DO☣14☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0639☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1162 dust conveyor SW1154 - in running☣ ☣ ☣ ☣elec.heater EH1162 dust conveyor SW1154 - in running☣DI☣DI☣14☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0640☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1162 dust conveyor SW1154 - supply fault☣ ☣ ☣ ☣elec.heater EH1162 dust conveyor SW1154 - supply fault☣DI☣DI☣15☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0641☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1162 dust conveyor SW1154 - start/stop☣ ☣ ☣ ☣elec.heater EH1162 dust conveyor SW1154 - start/stop☣DO☣DO☣15☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0642☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elevator EL1102 dust - in remote☣ ☣ ☣ ☣elevator EL1102 dust - in remote☣DI☣DI☣16☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0643☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elevator EL1102 dust - in running☣ ☣ ☣ ☣elevator EL1102 dust - in running☣DI☣DI☣17☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0644☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elevator EL1102 dust - supply fault☣ ☣ ☣ ☣elevator EL1102 dust - supply fault☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0645☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣elevator EL1102 dust - start/stop☣ ☣ ☣ ☣elevator EL1102 dust - start/stop☣DO☣DO☣16☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0646☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - in remote☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - in remote☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0647☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - in running☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - in running☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0648☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - supply fault☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - supply fault☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0649☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - start/stop☣ ☣ ☣ ☣fan FN1157 vent dust CV1156 - start/stop☣DO☣DO☣17☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0650☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - opened☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - opened☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0651☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - in remote☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - in remote☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0652☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - com.alarm☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - com.alarm☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0653☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - enable☣ ☣ ☣ ☣vlv. HV1151 extract. dust silos SL1150 - enable☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0654☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in remote☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in remote☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0655☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in running☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in running☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0656☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - supply fault☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - supply fault☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0657☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - start/stop☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - start/stop☣DO☣DO☣18☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0658☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1101 dust emergency discharge☣ ☣ ☣ ☣lev. H LSH1101 dust emergency discharge☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0659☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. HH LSHH1150 dust silos SL1150☣ ☣ ☣ ☣lev. HH LSHH1150 dust silos SL1150☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0660☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣lev. LL LSLL1150 dust silos SL1150☣ ☣ ☣ ☣lev. LL LSLL1150 dust silos SL1150☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0661☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dust to emergency discharge - opened☣ ☣ ☣ ☣vlv. POV1103 dust to emergency discharge - opened☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0662☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dust to emergency discharge - open☣ ☣ ☣ ☣vlv. POV1103 dust to emergency discharge - open☣DO☣DO☣26☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0663☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1103 dust to emergency discharge - close☣ ☣ ☣ ☣vlv. POV1103 dust to emergency discharge - close☣DO☣DO☣27☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0664☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1150 vent dust CV1156 - closed☣ ☣ ☣ ☣vlv. POV1150 vent dust CV1156 - closed☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0665☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1150 vent dust CV1156 - close☣ ☣ ☣ ☣vlv. POV1150 vent dust CV1156 - close☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0666☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - opened☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - opened☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0667☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - closed☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - closed☣DI☣DI☣31☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0668☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - open☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - open☣DO☣DO☣19☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0669☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - close☣ ☣ ☣ ☣vlv. POV1152 extract. dust silos SL1150 - close☣DO☣DO☣20☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0670☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - opened☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - opened☣DI☣DI☣18☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0671☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - closed☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - closed☣DI☣DI☣19☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0672☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - open☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - open☣DO☣DO☣21☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0673☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - close☣ ☣ ☣ ☣vlv. POV1155 dust outlet SW1154 - close☣DO☣DO☣22☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0674☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - in remote☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - in remote☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0675☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - in running☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - in running☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0676☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - supply fault☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - supply fault☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0677☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - start/stop☣ ☣ ☣ ☣bin activ. BAC1153B dust silos SL1151 - start/stop☣DO☣DO☣23☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0678☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. HH PSHH1150 dust compr.air FF1150☣ ☣ ☣ ☣pres. HH PSHH1150 dust compr.air FF1150☣DI☣DI☣20☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0679☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1351 dust compr.air PRV1351☣ ☣ ☣ ☣pres. L PSL1351 dust compr.air PRV1351☣DI☣DI☣21☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0680☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1300 dust compr.air EL1102 - open☣ ☣ ☣ ☣vlv. SOV1300 dust compr.air EL1102 - open☣DO☣DO☣28☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0681☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1301 dust compr.air EL1102 - open☣ ☣ ☣ ☣vlv. SOV1301 dust compr.air EL1102 - open☣DO☣DO☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0682☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1357 fluid dust compr.air PRV1357 - open☣ ☣ ☣ ☣vlv. SOV1357 fluid dust compr.air PRV1357 - open☣DO☣DO☣30☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0683☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1358 fluid dust compr.air PRV1358 - open☣ ☣ ☣ ☣vlv. SOV1358 fluid dust compr.air PRV1358 - open☣DO☣DO☣31☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0684☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1359 fluid dust compr.air PRV1359 - open☣ ☣ ☣ ☣vlv. SOV1359 fluid dust compr.air PRV1359 - open☣DO☣DO☣32☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0685☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1100 dust conveyor CY1100☣ ☣ ☣ ☣speed L SSL1100 dust conveyor CY1100☣DI☣DI☣22☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0686☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1101 dust conveyor CY1101☣ ☣ ☣ ☣speed L SSL1101 dust conveyor CY1101☣DI☣DI☣23☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0687☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1102 dust conveyor EL1102☣ ☣ ☣ ☣speed L SSL1102 dust conveyor EL1102☣DI☣DI☣24☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0688☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1154 dust conveyor SW1154☣ ☣ ☣ ☣speed L SSL1154 dust conveyor SW1154☣DI☣DI☣25☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0689☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - in remote☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - in remote☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0690☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - in running☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - in running☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0691☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - supply fault☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - supply fault☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0692☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - start/stop☣ ☣ ☣ ☣screw conv. SW1154 extract. dust - start/stop☣DO☣DO☣24☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0693☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in remote☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in remote☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0694☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in running☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - in running☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0695☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - supply fault☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - supply fault☣DI☣DI☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0696☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - start/stop☣ ☣ ☣ ☣load.bell. LB1156 dust silos SL1150 - start/stop☣DO☣DO☣00☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0697☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1110 dust Heater EH1110☣ ☣ ☣ ☣temp. H TSH1110 dust Heater EH1110☣DI☣DI☣26☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0698☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1111 dust Heater EH1111☣ ☣ ☣ ☣temp. H TSH1111 dust Heater EH1111☣DI☣DI☣27☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0699☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1112 dust Heater EH1112☣ ☣ ☣ ☣temp. H TSH1112 dust Heater EH1112☣DI☣DI☣28☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0700☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1160 dust silos Heater EH1160☣ ☣ ☣ ☣temp. H TSH1160 dust silos Heater EH1160☣DI☣DI☣29☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0701☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1161 dust Heater EH1161☣ ☣ ☣ ☣temp. H TSH1161 dust Heater EH1161☣DI☣DI☣30☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0702☣ ☣S01AP1030☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1162 dust Heater EH1162☣ ☣ ☣ ☣temp. H TSH1162 dust Heater EH1162☣DI☣DI☣31☣ ☣ ☣CHN1 TDZ2 P82 DP01 ☣
+0703☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - in remote☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - in remote☣DI☣DI☣01☣ ☣ ☣ ☣
+0704☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - in running☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - in running☣DI☣DI☣02☣ ☣ ☣ ☣
+0705☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - gen.fault☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - gen.fault☣DI☣DI☣03☣ ☣ ☣ ☣
+0706☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - start/stop☣ ☣ ☣ ☣conveyor CY1003 was. from bunker - start/stop☣DO☣DO☣01☣ ☣ ☣ ☣
+0707☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - truck ready☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - truck ready☣DI☣DI☣04☣ ☣ ☣ ☣
+0708☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - sequence started☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - sequence started☣DI☣DI☣05☣ ☣ ☣ ☣
+0709☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - excessive weight☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - excessive weight☣DI☣DI☣06☣ ☣ ☣ ☣
+0710☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - arrival at the upper floor☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - arrival at the upper floor☣DI☣DI☣07☣ ☣ ☣ ☣
+0711☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - charge carried out☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - charge carried out☣DI☣DI☣08☣ ☣ ☣ ☣
+0712☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - stem on the elevator☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - stem on the elevator☣DI☣DI☣09☣ ☣ ☣ ☣
+0713☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - enabling at the exhaust☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - enabling at the exhaust☣DO☣DO☣02☣ ☣ ☣ ☣
+0714☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - request loading☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - request loading☣DO☣DO☣03☣ ☣ ☣ ☣
+0715☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - load door open☣ ☣ ☣ ☣loc.pan. LP1010 elevator drums - load door open☣DO☣DO☣04☣ ☣ ☣ ☣
+0716☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1002 main motor - in remote☣ ☣ ☣ ☣rot.kiln RK1002 main motor - in remote☣DI☣DI☣10☣ ☣ ☣ ☣
+0717☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1002 main motor - in running☣ ☣ ☣ ☣rot.kiln RK1002 main motor - in running☣DI☣DI☣11☣ ☣ ☣ ☣
+0718☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1002 main motor - gen.fault☣ ☣ ☣ ☣rot.kiln RK1002 main motor - gen.fault☣DI☣DI☣12☣ ☣ ☣ ☣
+0719☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1002 main motor - start/stop☣ ☣ ☣ ☣rot.kiln RK1002 main motor - start/stop☣DO☣DO☣05☣ ☣ ☣ ☣
+0720☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - in remote☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - in remote☣DI☣DI☣13☣ ☣ ☣ ☣
+0721☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - in running☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - in running☣DI☣DI☣14☣ ☣ ☣ ☣
+0722☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - supply fault☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - supply fault☣DI☣DI☣15☣ ☣ ☣ ☣
+0723☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - start/stop☣ ☣ ☣ ☣rot.kiln RK1003 auxiliary motor - start/stop☣DO☣DO☣06☣ ☣ ☣ ☣
+0724☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - in remote☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - in remote☣DI☣DI☣16☣ ☣ ☣ ☣
+0725☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - in running☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - in running☣DI☣DI☣17☣ ☣ ☣ ☣
+0726☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - gen.fault☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - gen.fault☣DI☣DI☣18☣ ☣ ☣ ☣
+0727☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - start/stop☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - start/stop☣DO☣DO☣07☣ ☣ ☣ ☣
+0728☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - interlock☣ ☣ ☣ ☣fan FN1017 was.comb. primary air - interlock☣DOS☣DO☣00☣ ☣ ☣ ☣
+0729☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1018 was.comb. - in remote☣ ☣ ☣ ☣fan FN1018 was.comb. - in remote☣DI☣DI☣19☣ ☣ ☣ ☣
+0730☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1018 was.comb. - in running☣ ☣ ☣ ☣fan FN1018 was.comb. - in running☣DI☣DI☣20☣ ☣ ☣ ☣
+0731☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1018 was.comb. - gen.fault☣ ☣ ☣ ☣fan FN1018 was.comb. - gen.fault☣DI☣DI☣21☣ ☣ ☣ ☣
+0732☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1018 was.comb. - start/stop☣ ☣ ☣ ☣fan FN1018 was.comb. - start/stop☣DO☣DO☣08☣ ☣ ☣ ☣
+0733☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - in remote☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - in remote☣DI☣DI☣22☣ ☣ ☣ ☣
+0734☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - in running☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - in running☣DI☣DI☣23☣ ☣ ☣ ☣
+0735☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - supply fault☣DI☣DI☣24☣ ☣ ☣ ☣
+0736☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣elec.heater EH1012 hydr.unit HU1009 - start/stop☣DO☣DO☣09☣ ☣ ☣ ☣
+0737☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - in remote☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - in remote☣DI☣DI☣25☣ ☣ ☣ ☣
+0738☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - in running☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - in running☣DI☣DI☣26☣ ☣ ☣ ☣
+0739☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - supply fault☣DI☣DI☣27☣ ☣ ☣ ☣
+0740☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣pump PM1010A hydr.unit HU1009 - start/stop☣DO☣DO☣10☣ ☣ ☣ ☣
+0741☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - in remote☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - in remote☣DI☣DI☣28☣ ☣ ☣ ☣
+0742☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - in running☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - in running☣DI☣DI☣29☣ ☣ ☣ ☣
+0743☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - supply fault☣DI☣DI☣30☣ ☣ ☣ ☣
+0744☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣pump PM1010B hydr.unit HU1009 - start/stop☣DO☣DO☣11☣ ☣ ☣ ☣
+0745☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - in remote☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - in remote☣DI☣DI☣01☣ ☣ ☣ ☣
+0746☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - in running☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - in running☣DI☣DI☣02☣ ☣ ☣ ☣
+0747☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - supply fault☣DI☣DI☣03☣ ☣ ☣ ☣
+0748☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣pump PM1011A hydr.unit HU1009 - start/stop☣DO☣DO☣12☣ ☣ ☣ ☣
+0749☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - in remote☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - in remote☣DI☣DI☣04☣ ☣ ☣ ☣
+0750☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - in running☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - in running☣DI☣DI☣05☣ ☣ ☣ ☣
+0751☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - supply fault☣DI☣DI☣06☣ ☣ ☣ ☣
+0752☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣pump PM1011B hydr.unit HU1009 - start/stop☣DO☣DO☣13☣ ☣ ☣ ☣
+0753☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - in remote☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - in remote☣DI☣DI☣07☣ ☣ ☣ ☣
+0754☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - in running☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - in running☣DI☣DI☣08☣ ☣ ☣ ☣
+0755☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - supply fault☣DI☣DI☣09☣ ☣ ☣ ☣
+0756☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣pump PM1027A hydr.unit HU1009 - start/stop☣DO☣DO☣14☣ ☣ ☣ ☣
+0757☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - in remote☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - in remote☣DI☣DI☣10☣ ☣ ☣ ☣
+0758☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - in running☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - in running☣DI☣DI☣11☣ ☣ ☣ ☣
+0759☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - supply fault☣DI☣DI☣12☣ ☣ ☣ ☣
+0760☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣pump PM1027B hydr.unit HU1009 - start/stop☣DO☣DO☣15☣ ☣ ☣ ☣
+0761☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - in remote☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - in remote☣DI☣DI☣13☣ ☣ ☣ ☣
+0762☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - in running☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - in running☣DI☣DI☣14☣ ☣ ☣ ☣
+0763☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - supply fault☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - supply fault☣DI☣DI☣15☣ ☣ ☣ ☣
+0764☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - start/stop☣ ☣ ☣ ☣fan FN1013B hydr.unit HU1009 - start/stop☣DO☣DO☣16☣ ☣ ☣ ☣
+0765☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - trip☣ ☣ ☣ ☣burner BR1020 - trip☣DOS☣DO☣00☣ ☣ ☣ ☣
+0766☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - emergency☣ ☣ ☣ ☣burner BR1020 - emergency☣DO☣DO☣17☣ ☣ ☣ ☣
+0767☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - burner start-stop☣ ☣ ☣ ☣burner BR1020 - burner start-stop☣DO☣DO☣18☣ ☣ ☣ ☣
+0768☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - stand by☣ ☣ ☣ ☣burner BR1020 - stand by☣DO☣DO☣19☣ ☣ ☣ ☣
+0769☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - combust. select.☣ ☣ ☣ ☣burner BR1020 - combust. select.☣DO☣DO☣20☣ ☣ ☣ ☣
+0770☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - perm. burn liq. waste☣ ☣ ☣ ☣burner BR1020 - perm. burn liq. waste☣DO☣DO☣21☣ ☣ ☣ ☣
+0771☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - burner vent. run☣ ☣ ☣ ☣burner BR1020 - burner vent. run☣DO☣DO☣22☣ ☣ ☣ ☣
+0772☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - burner in rem☣ ☣ ☣ ☣burner BR1020 - burner in rem☣DI☣DI☣16☣ ☣ ☣ ☣
+0773☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - burner ON☣ ☣ ☣ ☣burner BR1020 - burner ON☣DI☣DI☣17☣ ☣ ☣ ☣
+0774☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - common warning☣ ☣ ☣ ☣burner BR1020 - common warning☣DI☣DI☣18☣ ☣ ☣ ☣
+0775☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - commnon trips☣ ☣ ☣ ☣burner BR1020 - commnon trips☣DI☣DI☣19☣ ☣ ☣ ☣
+0776☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1020 - emergency pressed☣ ☣ ☣ ☣burner BR1020 - emergency pressed☣DI☣DI☣20☣ ☣ ☣ ☣
+0777☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1021 burner BR1020 - in remote☣ ☣ ☣ ☣fan FN1021 burner BR1020 - in remote☣DI☣DI☣21☣ ☣ ☣ ☣
+0778☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1021 burner BR1020 - in running☣ ☣ ☣ ☣fan FN1021 burner BR1020 - in running☣DI☣DI☣22☣ ☣ ☣ ☣
+0779☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1021 burner BR1020 - supply fault☣ ☣ ☣ ☣fan FN1021 burner BR1020 - supply fault☣DI☣DI☣23☣ ☣ ☣ ☣
+0780☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1021 burner BR1020 - start/stop☣ ☣ ☣ ☣fan FN1021 burner BR1020 - start/stop☣DO☣DO☣23☣ ☣ ☣ ☣
+0781☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1021 burner BR1020 - interlock☣ ☣ ☣ ☣fan FN1021 burner BR1020 - interlock☣DOS☣DO☣00☣ ☣ ☣ ☣
+0782☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025A burner BR1024A - in remote☣ ☣ ☣ ☣fan FN1025A burner BR1024A - in remote☣DI☣DI☣24☣ ☣ ☣ ☣
+0783☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025A burner BR1024A - in running☣ ☣ ☣ ☣fan FN1025A burner BR1024A - in running☣DI☣DI☣25☣ ☣ ☣ ☣
+0784☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025A burner BR1024A - supply fault☣ ☣ ☣ ☣fan FN1025A burner BR1024A - supply fault☣DI☣DI☣26☣ ☣ ☣ ☣
+0785☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025A burner BR1024A - start/stop☣ ☣ ☣ ☣fan FN1025A burner BR1024A - start/stop☣DO☣DO☣24☣ ☣ ☣ ☣
+0786☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025A burner BR1024A - interlock☣ ☣ ☣ ☣fan FN1025A burner BR1024A - interlock☣DOS☣DO☣00☣ ☣ ☣ ☣
+0787☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025B burner BR1024B - in remote☣ ☣ ☣ ☣fan FN1025B burner BR1024B - in remote☣DI☣DI☣27☣ ☣ ☣ ☣
+0788☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025B burner BR1024B - in running☣ ☣ ☣ ☣fan FN1025B burner BR1024B - in running☣DI☣DI☣28☣ ☣ ☣ ☣
+0789☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025B burner BR1024B - supply fault☣ ☣ ☣ ☣fan FN1025B burner BR1024B - supply fault☣DI☣DI☣29☣ ☣ ☣ ☣
+0790☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025B burner BR1024B - start/stop☣ ☣ ☣ ☣fan FN1025B burner BR1024B - start/stop☣DO☣DO☣25☣ ☣ ☣ ☣
+0791☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1025B burner BR1024B - interlock☣ ☣ ☣ ☣fan FN1025B burner BR1024B - interlock☣DOS☣DO☣00☣ ☣ ☣ ☣
+0792☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - trip☣ ☣ ☣ ☣burner BR1024A - trip☣DOS☣DO☣00☣ ☣ ☣ ☣
+0793☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - emergency☣ ☣ ☣ ☣burner BR1024A - emergency☣DO☣DO☣26☣ ☣ ☣ ☣
+0794☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - burner start-stop☣ ☣ ☣ ☣burner BR1024A - burner start-stop☣DO☣DO☣27☣ ☣ ☣ ☣
+0795☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - stand by☣ ☣ ☣ ☣burner BR1024A - stand by☣DO☣DO☣28☣ ☣ ☣ ☣
+0796☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - combust. select.☣ ☣ ☣ ☣burner BR1024A - combust. select.☣DO☣DO☣29☣ ☣ ☣ ☣
+0797☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - perm. burn liq. waste☣ ☣ ☣ ☣burner BR1024A - perm. burn liq. waste☣DO☣DO☣30☣ ☣ ☣ ☣
+0798☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - burner vent. run☣ ☣ ☣ ☣burner BR1024A - burner vent. run☣DO☣DO☣01☣ ☣ ☣ ☣
+0799☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - burner in rem☣ ☣ ☣ ☣burner BR1024A - burner in rem☣DI☣DI☣01☣ ☣ ☣ ☣
+0800☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - burner ON☣ ☣ ☣ ☣burner BR1024A - burner ON☣DI☣DI☣02☣ ☣ ☣ ☣
+0801☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - common warning☣ ☣ ☣ ☣burner BR1024A - common warning☣DI☣DI☣03☣ ☣ ☣ ☣
+0802☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - commnon trips☣ ☣ ☣ ☣burner BR1024A - commnon trips☣DI☣DI☣04☣ ☣ ☣ ☣
+0803☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024A - emergency pressed☣ ☣ ☣ ☣burner BR1024A - emergency pressed☣DI☣DI☣05☣ ☣ ☣ ☣
+0804☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - trip☣ ☣ ☣ ☣burner BR1024B - trip☣DOS☣DO☣00☣ ☣ ☣ ☣
+0805☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - emergency☣ ☣ ☣ ☣burner BR1024B - emergency☣DO☣DO☣02☣ ☣ ☣ ☣
+0806☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - burner start-stop☣ ☣ ☣ ☣burner BR1024B - burner start-stop☣DO☣DO☣03☣ ☣ ☣ ☣
+0807☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - stand by☣ ☣ ☣ ☣burner BR1024B - stand by☣DO☣DO☣04☣ ☣ ☣ ☣
+0808☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - combust. select.☣ ☣ ☣ ☣burner BR1024B - combust. select.☣DO☣DO☣05☣ ☣ ☣ ☣
+0809☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - perm. burn liq. waste☣ ☣ ☣ ☣burner BR1024B - perm. burn liq. waste☣DO☣DO☣06☣ ☣ ☣ ☣
+0810☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - burner vent. run☣ ☣ ☣ ☣burner BR1024B - burner vent. run☣DO☣DO☣07☣ ☣ ☣ ☣
+0811☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - burner in rem☣ ☣ ☣ ☣burner BR1024B - burner in rem☣DI☣DI☣06☣ ☣ ☣ ☣
+0812☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - burner ON☣ ☣ ☣ ☣burner BR1024B - burner ON☣DI☣DI☣07☣ ☣ ☣ ☣
+0813☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - common warning☣ ☣ ☣ ☣burner BR1024B - common warning☣DI☣DI☣08☣ ☣ ☣ ☣
+0814☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - commnon trips☣ ☣ ☣ ☣burner BR1024B - commnon trips☣DI☣DI☣09☣ ☣ ☣ ☣
+0815☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣burner BR1024B - emergency pressed☣ ☣ ☣ ☣burner BR1024B - emergency pressed☣DI☣DI☣10☣ ☣ ☣ ☣
+0816☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1019 was.comb. - in remote☣ ☣ ☣ ☣conveyor CY1019 was.comb. - in remote☣DI☣DI☣11☣ ☣ ☣ ☣
+0817☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1019 was.comb. - in running☣ ☣ ☣ ☣conveyor CY1019 was.comb. - in running☣DI☣DI☣12☣ ☣ ☣ ☣
+0818☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1019 was.comb. - supply fault☣ ☣ ☣ ☣conveyor CY1019 was.comb. - supply fault☣DI☣DI☣13☣ ☣ ☣ ☣
+0819☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1019 was.comb. - start/stop☣ ☣ ☣ ☣conveyor CY1019 was.comb. - start/stop☣DO☣DO☣08☣ ☣ ☣ ☣
+0820☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1012 conveyor CY1003☣ ☣ ☣ ☣speed L SSL1012 conveyor CY1003☣DI☣DI☣14☣ ☣ ☣ ☣
+0821☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1011 was.comb. - opened☣ ☣ ☣ ☣vlv. FV1011 was.comb. - opened☣DI☣DI☣15☣ ☣ ☣ ☣
+0822☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1011 was.comb. - closed☣ ☣ ☣ ☣vlv. FV1011 was.comb. - closed☣DI☣DI☣16☣ ☣ ☣ ☣
+0823☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. FV1011 was.comb. - interlock☣ ☣ ☣ ☣vlv. FV1011 was.comb. - interlock☣DO☣DO☣01☣ ☣ ☣ ☣
+0824☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣man.contr.vlv. HCV1011 steam from LP Header - opened☣ ☣ ☣ ☣man.contr.vlv. HCV1011 steam from LP Header - opened☣DI☣DI☣17☣ ☣ ☣ ☣
+0825☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣man.contr.vlv. HCV1011 steam from LP Header - closed☣ ☣ ☣ ☣man.contr.vlv. HCV1011 steam from LP Header - closed☣DI☣DI☣18☣ ☣ ☣ ☣
+0826☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣man.contr.vlv. HCV1011 steam from LP Header - interlock☣ ☣ ☣ ☣man.contr.vlv. HCV1011 steam from LP Header - interlock☣DOS☣DO☣00☣ ☣ ☣ ☣
+0827☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pos. L ZSL1016 rot.kiln driving unit☣ ☣ ☣ ☣pos. L ZSL1016 rot.kiln driving unit☣DI☣DI☣19☣ ☣ ☣ ☣
+0828☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1001 wat. to conveyor CY1019 - opened☣ ☣ ☣ ☣vlv. MOV1001 wat. to conveyor CY1019 - opened☣DI☣DI☣20☣ ☣ ☣ ☣
+0829☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1001 wat. to conveyor CY1019 - closed☣ ☣ ☣ ☣vlv. MOV1001 wat. to conveyor CY1019 - closed☣DI☣DI☣21☣ ☣ ☣ ☣
+0830☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1001 wat. to conveyor CY1019 - open/close☣ ☣ ☣ ☣vlv. MOV1001 wat. to conveyor CY1019 - open/close☣DO☣DO☣02☣ ☣ ☣ ☣
+0831☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣speed L SSL1001 conveyor CY1019☣ ☣ ☣ ☣speed L SSL1001 conveyor CY1019☣DI☣DI☣22☣ ☣ ☣ ☣
+0832☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣lev. L LSL1001 wat. conveyor CY1019☣ ☣ ☣ ☣lev. L LSL1001 wat. conveyor CY1019☣DI☣DI☣23☣ ☣ ☣ ☣
+0833☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣lev. H LSH1001 wat. conveyor CY1019☣ ☣ ☣ ☣lev. H LSH1001 wat. conveyor CY1019☣DI☣DI☣24☣ ☣ ☣ ☣
+0834☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1001 stack SK1029 - opened☣ ☣ ☣ ☣clapet vlv. CLV1001 stack SK1029 - opened☣DI☣DI☣25☣ ☣ ☣ ☣
+0835☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1001 stack SK1029 - closed☣ ☣ ☣ ☣clapet vlv. CLV1001 stack SK1029 - closed☣DI☣DI☣26☣ ☣ ☣ ☣
+0836☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1001 stack SK1029 - force open☣ ☣ ☣ ☣clapet vlv. CLV1001 stack SK1029 - force open☣DOS☣DO☣00☣ ☣ ☣ ☣
+0837☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1002 compr.air to TT1002☣ ☣ ☣ ☣vlv. SOV1002 compr.air to TT1002☣DO☣DO☣03☣ ☣ ☣ ☣
+0838☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1003 compr.air to TT1003☣ ☣ ☣ ☣vlv. SOV1003 compr.air to TT1003☣DO☣DO☣04☣ ☣ ☣ ☣
+0839☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1023 hydr.unit HU1009☣ ☣ ☣ ☣pres. L PSL1023 hydr.unit HU1009☣DI☣DI☣27☣ ☣ ☣ ☣
+0840☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1024 hydr.unit HU1009☣ ☣ ☣ ☣pres. L PSL1024 hydr.unit HU1009☣DI☣DI☣28☣ ☣ ☣ ☣
+0841☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1025 hydr.unit HU1009☣ ☣ ☣ ☣pres. L PSL1025 hydr.unit HU1009☣DI☣DI☣29☣ ☣ ☣ ☣
+0842☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1026 hydr.unit HU1009☣ ☣ ☣ ☣pres. L PSL1026 hydr.unit HU1009☣DI☣DI☣01☣ ☣ ☣ ☣
+0843☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pres. L PSL1027 hydr.unit HU1009☣ ☣ ☣ ☣pres. L PSL1027 hydr.unit HU1009☣DI☣DI☣02☣ ☣ ☣ ☣
+0844☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣temp. H TSH1022 hydr.unit HU1009☣ ☣ ☣ ☣temp. H TSH1022 hydr.unit HU1009☣DI☣DI☣03☣ ☣ ☣ ☣
+0845☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1021 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1021 hydr.unit HU1009☣DO☣DO☣05☣ ☣ ☣ ☣
+0846☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1022 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1022 hydr.unit HU1009☣DO☣DO☣06☣ ☣ ☣ ☣
+0847☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1023 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1023 hydr.unit HU1009☣DO☣DO☣07☣ ☣ ☣ ☣
+0848☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1024 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1024 hydr.unit HU1009☣DO☣DO☣08☣ ☣ ☣ ☣
+0849☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1025 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1025 hydr.unit HU1009☣DO☣DO☣09☣ ☣ ☣ ☣
+0850☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1026 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1026 hydr.unit HU1009☣DO☣DO☣10☣ ☣ ☣ ☣
+0851☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1027 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1027 hydr.unit HU1009☣DO☣DO☣11☣ ☣ ☣ ☣
+0852☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1028 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1028 hydr.unit HU1009☣DO☣DO☣12☣ ☣ ☣ ☣
+0853☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1029 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1029 hydr.unit HU1009☣DO☣DO☣13☣ ☣ ☣ ☣
+0854☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1030 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1030 hydr.unit HU1009☣DO☣DO☣14☣ ☣ ☣ ☣
+0855☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1031 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1031 hydr.unit HU1009☣DO☣DO☣15☣ ☣ ☣ ☣
+0856☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1032 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1032 hydr.unit HU1009☣DO☣DO☣16☣ ☣ ☣ ☣
+0857☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1033 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1033 hydr.unit HU1009☣DO☣DO☣17☣ ☣ ☣ ☣
+0858☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1034 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1034 hydr.unit HU1009☣DO☣DO☣18☣ ☣ ☣ ☣
+0859☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1035 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1035 hydr.unit HU1009☣DO☣DO☣19☣ ☣ ☣ ☣
+0860☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1036 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1036 hydr.unit HU1009☣DO☣DO☣20☣ ☣ ☣ ☣
+0861☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1037 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1037 hydr.unit HU1009☣DO☣DO☣21☣ ☣ ☣ ☣
+0862☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1038 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1038 hydr.unit HU1009☣DO☣DO☣22☣ ☣ ☣ ☣
+0863☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1039 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1039 hydr.unit HU1009☣DO☣DO☣23☣ ☣ ☣ ☣
+0864☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1040A hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1040A hydr.unit HU1009☣DO☣DO☣24☣ ☣ ☣ ☣
+0865☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1040B hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1040B hydr.unit HU1009☣DO☣DO☣25☣ ☣ ☣ ☣
+0866☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1042 hydr.unit HU1009☣ ☣ ☣ ☣vlv. SOV1042 hydr.unit HU1009☣DO☣DO☣26☣ ☣ ☣ ☣
+0867☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣drum - lev. LL☣ ☣ ☣ ☣drum - lev. LL☣DIS☣DI☣00☣ ☣ ☣P29 DP20 F☣
+0868☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣drum - lev. HH☣ ☣ ☣ ☣drum - lev. HH☣DIS☣DI☣00☣ ☣ ☣P29 DP20 F☣
+0869☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - in remote☣ ☣ ☣ ☣vlv. MOV1040 purge drum - in remote☣DI☣DI☣04☣ ☣ ☣P29 DP20 F☣
+0870☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - opened☣ ☣ ☣ ☣vlv. MOV1040 purge drum - opened☣DI☣DI☣05☣ ☣ ☣P29 DP20 F☣
+0871☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - closed☣ ☣ ☣ ☣vlv. MOV1040 purge drum - closed☣DI☣DI☣06☣ ☣ ☣P29 DP20 F☣
+0872☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - gen.fault☣ ☣ ☣ ☣vlv. MOV1040 purge drum - gen.fault☣DI☣DI☣07☣ ☣ ☣P29 DP20 F☣
+0873☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - open☣ ☣ ☣ ☣vlv. MOV1040 purge drum - open☣DO☣DO☣27☣ ☣ ☣P29 DP20 F☣
+0874☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - close☣ ☣ ☣ ☣vlv. MOV1040 purge drum - close☣DO☣DO☣28☣ ☣ ☣P29 DP20 F☣
+0875☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1040 purge drum - pos. stop☣ ☣ ☣ ☣vlv. MOV1040 purge drum - pos. stop☣DO☣DO☣29☣ ☣ ☣P29 DP20 F☣
+0876☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - in remote☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - in remote☣DI☣DI☣08☣ ☣ ☣P29 DP20 F☣
+0877☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - opened☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - opened☣DI☣DI☣09☣ ☣ ☣P29 DP20 F☣
+0878☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - closed☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - closed☣DI☣DI☣10☣ ☣ ☣P29 DP20 F☣
+0879☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - gen.fault☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - gen.fault☣DI☣DI☣11☣ ☣ ☣P29 DP20 F☣
+0880☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - open☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - open☣DO☣DO☣30☣ ☣ ☣P29 DP20 F☣
+0881☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - close☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - close☣DO☣DO☣31☣ ☣ ☣P29 DP20 F☣
+0882☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - pos. stop☣ ☣ ☣ ☣vlv. MOV1137 block steam SH HT - pos. stop☣DO☣DO☣32☣ ☣ ☣P29 DP20 F☣
+0883☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - in remote☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - in remote☣DI☣DI☣12☣ ☣ ☣P29 DP30 F☣
+0884☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - in running☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - in running☣DI☣DI☣13☣ ☣ ☣P29 DP30 F☣
+0885☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - supply fault☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - supply fault☣DI☣DI☣14☣ ☣ ☣P29 DP30 F☣
+0886☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - start/stop☣ ☣ ☣ ☣conveyor CY1310 extract. fly.ashes radiant - start/stop☣DO☣DO☣09☣ ☣ ☣P29 DP30 F☣
+0887☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - in remote☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - in remote☣DI☣DI☣15☣ ☣ ☣P29 DP30 F☣
+0888☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - in running☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - in running☣DI☣DI☣16☣ ☣ ☣P29 DP30 F☣
+0889☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - supply fault☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - supply fault☣DI☣DI☣17☣ ☣ ☣P29 DP30 F☣
+0890☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - start/stop☣ ☣ ☣ ☣fan FN1311 cool. fly.ashes conveyor - start/stop☣DO☣DO☣10☣ ☣ ☣P29 DP30 F☣
+0891☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - in remote☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - in remote☣DI☣DI☣18☣ ☣ ☣P29 DP30 F☣
+0892☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - in running☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - in running☣DI☣DI☣19☣ ☣ ☣P29 DP30 F☣
+0893☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - supply fault☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - supply fault☣DI☣DI☣20☣ ☣ ☣P29 DP30 F☣
+0894☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - start/stop☣ ☣ ☣ ☣conveyor CY1312 extract. fly.ashes radiant - start/stop☣DO☣DO☣11☣ ☣ ☣P29 DP30 F☣
+0895☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - in remote☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - in remote☣DI☣DI☣21☣ ☣ ☣P29 DP30 F☣
+0896☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - in running☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - in running☣DI☣DI☣22☣ ☣ ☣P29 DP30 F☣
+0897☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - supply fault☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - supply fault☣DI☣DI☣23☣ ☣ ☣P29 DP30 F☣
+0898☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - start/stop☣ ☣ ☣ ☣conveyor CY1313 extract. fly.ashes bypass - start/stop☣DO☣DO☣12☣ ☣ ☣P29 DP30 F☣
+0899☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - in remote☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - in remote☣DI☣DI☣24☣ ☣ ☣P29 DP30 F☣
+0900☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - in running☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - in running☣DI☣DI☣25☣ ☣ ☣P29 DP30 F☣
+0901☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - supply fault☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - supply fault☣DI☣DI☣26☣ ☣ ☣P29 DP30 F☣
+0902☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - start/stop☣ ☣ ☣ ☣conveyor CY1340 extract. fly.ashes convective - start/stop☣DO☣DO☣13☣ ☣ ☣P29 DP30 F☣
+0903☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - in remote☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - in remote☣DI☣DI☣01☣ ☣ ☣P29 DP30 F☣
+0904☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - in running☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - in running☣DI☣DI☣02☣ ☣ ☣P29 DP30 F☣
+0905☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - supply fault☣DI☣DI☣03☣ ☣ ☣P29 DP30 F☣
+0906☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1320 extract. fly.ashes radiant - start/stop☣DO☣DO☣14☣ ☣ ☣P29 DP30 F☣
+0907☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - in remote☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - in remote☣DI☣DI☣04☣ ☣ ☣P29 DP30 F☣
+0908☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - in running☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - in running☣DI☣DI☣05☣ ☣ ☣P29 DP30 F☣
+0909☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - supply fault☣DI☣DI☣06☣ ☣ ☣P29 DP30 F☣
+0910☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1321 extract. fly.ashes radiant - start/stop☣DO☣DO☣15☣ ☣ ☣P29 DP30 F☣
+0911☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - in remote☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - in remote☣DI☣DI☣07☣ ☣ ☣P29 DP30 F☣
+0912☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - in running☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - in running☣DI☣DI☣08☣ ☣ ☣P29 DP30 F☣
+0913☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - supply fault☣DI☣DI☣09☣ ☣ ☣P29 DP30 F☣
+0914☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1322 extract. fly.ashes SH HT/LT - start/stop☣DO☣DO☣16☣ ☣ ☣P29 DP30 F☣
+0915☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - in remote☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - in remote☣DI☣DI☣10☣ ☣ ☣P29 DP30 F☣
+0916☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - in running☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - in running☣DI☣DI☣11☣ ☣ ☣P29 DP30 F☣
+0917☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - supply fault☣DI☣DI☣12☣ ☣ ☣P29 DP30 F☣
+0918☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1323 extract. fly.ashes bypass - start/stop☣DO☣DO☣17☣ ☣ ☣P29 DP30 F☣
+0919☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - in remote☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - in remote☣DI☣DI☣13☣ ☣ ☣P29 DP30 F☣
+0920☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - in running☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - in running☣DI☣DI☣14☣ ☣ ☣P29 DP30 F☣
+0921☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - supply fault☣DI☣DI☣15☣ ☣ ☣P29 DP30 F☣
+0922☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1324 extract. fly.ashes EVA 1 - start/stop☣DO☣DO☣18☣ ☣ ☣P29 DP30 F☣
+0923☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - in remote☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - in remote☣DI☣DI☣16☣ ☣ ☣P29 DP30 F☣
+0924☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - in running☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - in running☣DI☣DI☣17☣ ☣ ☣P29 DP30 F☣
+0925☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - supply fault☣DI☣DI☣00☣ ☣ ☣P29 DP30 F☣
+0926☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1325 extract. fly.ashes EVA 2 - start/stop☣DO☣DO☣19☣ ☣ ☣P29 DP30 F☣
+0927☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - in remote☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - in remote☣DI☣DI☣19☣ ☣ ☣P29 DP30 F☣
+0928☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - in running☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - in running☣DI☣DI☣20☣ ☣ ☣P29 DP30 F☣
+0929☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - supply fault☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - supply fault☣DI☣DI☣21☣ ☣ ☣P29 DP30 F☣
+0930☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - start/stop☣ ☣ ☣ ☣clapet vlv. CLV1326 extract. fly.ashes ECO - start/stop☣DO☣DO☣20☣ ☣ ☣P29 DP30 F☣
+0931☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - in remote☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - in remote☣DI☣DI☣22☣ ☣ ☣P29 DP30 F☣
+0932☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - in running☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - in running☣DI☣DI☣23☣ ☣ ☣P29 DP30 F☣
+0933☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - supply fault☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - supply fault☣DI☣DI☣24☣ ☣ ☣P29 DP30 F☣
+0934☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - start/stop☣ ☣ ☣ ☣hammer HAM1503 extract. fly.ashes SH HT - start/stop☣DO☣DO☣21☣ ☣ ☣P29 DP30 F☣
+0935☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - in remote☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - in remote☣DI☣DI☣25☣ ☣ ☣P29 DP30 F☣
+0936☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - in running☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - in running☣DI☣DI☣26☣ ☣ ☣P29 DP30 F☣
+0937☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - supply fault☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - supply fault☣DI☣DI☣27☣ ☣ ☣P29 DP30 F☣
+0938☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - start/stop☣ ☣ ☣ ☣hammer HAM1504 extract. fly.ashes SH LT - start/stop☣DO☣DO☣22☣ ☣ ☣P29 DP30 F☣
+0939☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - in remote☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - in remote☣DI☣DI☣28☣ ☣ ☣P29 DP30 F☣
+0940☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - in running☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - in running☣DI☣DI☣29☣ ☣ ☣P29 DP30 F☣
+0941☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - supply fault☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - supply fault☣DI☣DI☣01☣ ☣ ☣P29 DP30 F☣
+0942☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - start/stop☣ ☣ ☣ ☣hammer HAM1505 extract. fly.ashes EVA 1 - start/stop☣DO☣DO☣23☣ ☣ ☣P29 DP30 F☣
+0943☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - in remote☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - in remote☣DI☣DI☣02☣ ☣ ☣P29 DP30 F☣
+0944☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - in running☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - in running☣DI☣DI☣03☣ ☣ ☣P29 DP30 F☣
+0945☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - supply fault☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - supply fault☣DI☣DI☣04☣ ☣ ☣P29 DP30 F☣
+0946☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - start/stop☣ ☣ ☣ ☣hammer HAM1506 extract. fly.ashes EVA 1 - start/stop☣DO☣DO☣24☣ ☣ ☣P29 DP30 F☣
+0947☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - in remote☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - in remote☣DI☣DI☣05☣ ☣ ☣P29 DP30 F☣
+0948☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - in running☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - in running☣DI☣DI☣06☣ ☣ ☣P29 DP30 F☣
+0949☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - supply fault☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - supply fault☣DI☣DI☣07☣ ☣ ☣P29 DP30 F☣
+0950☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - start/stop☣ ☣ ☣ ☣hammer HAM1507 extract. fly.ashes EVA 2 - start/stop☣DO☣DO☣25☣ ☣ ☣P29 DP30 F☣
+0951☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - in remote☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - in remote☣DI☣DI☣08☣ ☣ ☣P29 DP30 F☣
+0952☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - in running☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - in running☣DI☣DI☣09☣ ☣ ☣P29 DP30 F☣
+0953☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - supply fault☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - supply fault☣DI☣DI☣10☣ ☣ ☣P29 DP30 F☣
+0954☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - start/stop☣ ☣ ☣ ☣hammer HAM1508 extract. fly.ashes EVA 2 - start/stop☣DO☣DO☣26☣ ☣ ☣P29 DP30 F☣
+0955☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - in remote☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - in remote☣DI☣DI☣11☣ ☣ ☣P29 DP30 F☣
+0956☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - in running☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - in running☣DI☣DI☣12☣ ☣ ☣P29 DP30 F☣
+0957☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - supply fault☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - supply fault☣DI☣DI☣13☣ ☣ ☣P29 DP30 F☣
+0958☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - start/stop☣ ☣ ☣ ☣hammer HAM1509 extract. fly.ashes ECO - start/stop☣DO☣DO☣27☣ ☣ ☣P29 DP30 F☣
+0959☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - in remote☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - in remote☣DI☣DI☣14☣ ☣ ☣P29 DP30 F☣
+0960☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - in running☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - in running☣DI☣DI☣15☣ ☣ ☣P29 DP30 F☣
+0961☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - supply fault☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - supply fault☣DI☣DI☣16☣ ☣ ☣P29 DP30 F☣
+0962☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - start/stop☣ ☣ ☣ ☣hammer HAM1510 extract. fly.ashes ECO - start/stop☣DO☣DO☣28☣ ☣ ☣P29 DP30 F☣
+0963☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1909 cleaning pyrom. TT1406 - open/close☣ ☣ ☣ ☣vlv. SOV1909 cleaning pyrom. TT1406 - open/close☣DO☣DO☣01☣ ☣ ☣P29 DP30 F☣
+0964☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1914 cleaning pyrom. TT1407 - open/close☣ ☣ ☣ ☣vlv. SOV1914 cleaning pyrom. TT1407 - open/close☣DO☣DO☣02☣ ☣ ☣P29 DP30 F☣
+0965☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. SOV1919 cleaning pyrom. TT1408 - open/close☣ ☣ ☣ ☣vlv. SOV1919 cleaning pyrom. TT1408 - open/close☣DO☣DO☣03☣ ☣ ☣P29 DP30 F☣
+0966☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣flue gas radiant - oxig.☣ ☣ ☣ ☣flue gas radiant - oxig.☣DI☣DI☣17☣ ☣ ☣P29 DP30 F☣
+0967☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣flue gas radiant - oxig.☣ ☣ ☣ ☣flue gas radiant - oxig.☣DI☣DI☣18☣ ☣ ☣P29 DP30 F☣
+0968☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1310 - speed sens.☣ ☣ ☣ ☣conveyor CY1310 - speed sens.☣DI☣DI☣19☣ ☣ ☣P29 DP30 F☣
+0969☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1312 - speed sens.☣ ☣ ☣ ☣conveyor CY1312 - speed sens.☣DI☣DI☣20☣ ☣ ☣P29 DP30 F☣
+0970☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1313 - speed sens.☣ ☣ ☣ ☣conveyor CY1313 - speed sens.☣DI☣DI☣21☣ ☣ ☣P29 DP30 F☣
+0971☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣conveyor CY1340 - speed sens.☣ ☣ ☣ ☣conveyor CY1340 - speed sens.☣DI☣DI☣22☣ ☣ ☣P29 DP30 F☣
+0972☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1320 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1320 - speed sens.☣DI☣DI☣23☣ ☣ ☣P29 DP30 F☣
+0973☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1321 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1321 - speed sens.☣DI☣DI☣24☣ ☣ ☣P29 DP30 F☣
+0974☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1322 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1322 - speed sens.☣DI☣DI☣25☣ ☣ ☣P29 DP30 F☣
+0975☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1323 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1323 - speed sens.☣DI☣DI☣26☣ ☣ ☣P29 DP30 F☣
+0976☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1324 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1324 - speed sens.☣DI☣DI☣27☣ ☣ ☣P29 DP30 F☣
+0977☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1325 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1325 - speed sens.☣DI☣DI☣28☣ ☣ ☣P29 DP30 F☣
+0978☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1326 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1326 - speed sens.☣DI☣DI☣01☣ ☣ ☣P29 DP30 F☣
+0979☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1320 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1320 - speed sens.☣DI☣DI☣02☣ ☣ ☣P29 DP30 F☣
+0980☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1321 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1321 - speed sens.☣DI☣DI☣03☣ ☣ ☣P29 DP30 F☣
+0981☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1322 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1322 - speed sens.☣DI☣DI☣04☣ ☣ ☣P29 DP30 F☣
+0982☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1323 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1323 - speed sens.☣DI☣DI☣05☣ ☣ ☣P29 DP30 F☣
+0983☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1324 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1324 - speed sens.☣DI☣DI☣06☣ ☣ ☣P29 DP30 F☣
+0984☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1325 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1325 - speed sens.☣DI☣DI☣07☣ ☣ ☣P29 DP30 F☣
+0985☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣clapet vlv. RV1326 - speed sens.☣ ☣ ☣ ☣clapet vlv. RV1326 - speed sens.☣DI☣DI☣08☣ ☣ ☣P29 DP30 F☣
+0986☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - in remote☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - in remote☣DI☣DI☣09☣ ☣ ☣P29 DP60 E☣
+0987☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - in running☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - in running☣DI☣DI☣10☣ ☣ ☣P29 DP60 E☣
+0988☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - supply fault☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - supply fault☣DI☣DI☣11☣ ☣ ☣P29 DP60 E☣
+0989☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - start/stop☣ ☣ ☣ ☣pmp. PM1601A cool.wat. for flue gas vlv. - start/stop☣DO☣DO☣29☣ ☣ ☣P29 DP60 E☣
+0990☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - in remote☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - in remote☣DI☣DI☣12☣ ☣ ☣P29 DP60 E☣
+0991☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - in running☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - in running☣DI☣DI☣13☣ ☣ ☣P29 DP60 E☣
+0992☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - supply fault☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - supply fault☣DI☣DI☣14☣ ☣ ☣P29 DP60 E☣
+0993☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - start/stop☣ ☣ ☣ ☣pmp. PM1601B cool.wat. for flue gas vlv. - start/stop☣DO☣DO☣30☣ ☣ ☣P29 DP60 E☣
+0994☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cool.wat. - flow LL☣ ☣ ☣ ☣cool.wat. - flow LL☣DI☣DI☣15☣ ☣ ☣P29 DP60 E☣
+0995☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1612 cool.wat. outlet pmp. - opened☣ ☣ ☣ ☣vlv. POV1612 cool.wat. outlet pmp. - opened☣DI☣DI☣16☣ ☣ ☣P29 DP60 E☣
+0996☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1612 cool.wat. outlet pmp. - closed☣ ☣ ☣ ☣vlv. POV1612 cool.wat. outlet pmp. - closed☣DI☣DI☣17☣ ☣ ☣P29 DP60 E☣
+0997☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1612 cool.wat. outlet pmp. - open/close☣ ☣ ☣ ☣vlv. POV1612 cool.wat. outlet pmp. - open/close☣DO☣DO☣04☣ ☣ ☣P29 DP60 E☣
+0998☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1613 cool.wat. outlet FV 1436 - opened☣ ☣ ☣ ☣vlv. POV1613 cool.wat. outlet FV 1436 - opened☣DI☣DI☣18☣ ☣ ☣P29 DP60 E☣
+0999☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1613 cool.wat. outlet FV 1436 - closed☣ ☣ ☣ ☣vlv. POV1613 cool.wat. outlet FV 1436 - closed☣DI☣DI☣19☣ ☣ ☣P29 DP60 E☣
+1000☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣vlv. POV1613 cool.wat. outlet FV 1436 - open/close☣ ☣ ☣ ☣vlv. POV1613 cool.wat. outlet FV 1436 - open/close☣DO☣DO☣05☣ ☣ ☣P29 DP60 E☣
+1001☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - in remote☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - in remote☣DI☣DI☣20☣ ☣ ☣P34 DP50 D☣
+1002☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - in running☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - in running☣DI☣DI☣21☣ ☣ ☣P34 DP50 D☣
+1003☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - com.trip☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - com.trip☣DI☣DI☣22☣ ☣ ☣P34 DP50 D☣
+1004☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - enable☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - enable☣DO☣DO☣06☣ ☣ ☣P34 DP50 D☣
+1005☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - disable☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - disable☣DO☣DO☣07☣ ☣ ☣P34 DP50 D☣
+1006☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - reset☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - reset☣DO☣DO☣08☣ ☣ ☣P34 DP50 D☣
+1007☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - interlock☣ ☣ ☣ ☣cmd.aut.pan. CAP1701 ammon. SNCR - interlock☣DO☣DO☣09☣ ☣ ☣P34 DP50 D☣
+1008☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣stir. SR1640 reag. deox. - in remote☣ ☣ ☣ ☣stir. SR1640 reag. deox. - in remote☣DI☣DI☣23☣ ☣ ☣A23 DP40 A☣
+1009☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣stir. SR1640 reag. deox. - in running☣ ☣ ☣ ☣stir. SR1640 reag. deox. - in running☣DI☣DI☣24☣ ☣ ☣A23 DP40 A☣
+1010☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣stir. SR1640 reag. deox. - start/stop☣ ☣ ☣ ☣stir. SR1640 reag. deox. - start/stop☣DO☣DO☣10☣ ☣ ☣A23 DP40 A☣
+1011☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - in remote☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - in remote☣DI☣DI☣25☣ ☣ ☣A23 DP40 A☣
+1012☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - in running☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - in running☣DI☣DI☣26☣ ☣ ☣A23 DP40 A☣
+1013☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - supply fault☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - supply fault☣DI☣DI☣27☣ ☣ ☣A23 DP40 A☣
+1014☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - start/stop☣ ☣ ☣ ☣pmp. PM1645A dosage reag. deox. - start/stop☣DO☣DO☣11☣ ☣ ☣A23 DP40 A☣
+1015☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - in remote☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - in remote☣DI☣DI☣01☣ ☣ ☣A23 DP40 A☣
+1016☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - in running☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - in running☣DI☣DI☣02☣ ☣ ☣A23 DP40 A☣
+1017☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - supply fault☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - supply fault☣DI☣DI☣03☣ ☣ ☣A23 DP40 A☣
+1018☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - start/stop☣ ☣ ☣ ☣pmp. PM1645B dosage reag. deox. - start/stop☣DO☣DO☣12☣ ☣ ☣A23 DP40 A☣
+1019☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣stir. SR1660 reag. alkal. - in remote☣ ☣ ☣ ☣stir. SR1660 reag. alkal. - in remote☣DI☣DI☣04☣ ☣ ☣A23 DP40 A☣
+1020☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣stir. SR1660 reag. alkal. - in running☣ ☣ ☣ ☣stir. SR1660 reag. alkal. - in running☣DI☣DI☣05☣ ☣ ☣A23 DP40 A☣
+1021☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣stir. SR1660 reag. alkal. - start/stop☣ ☣ ☣ ☣stir. SR1660 reag. alkal. - start/stop☣DO☣DO☣13☣ ☣ ☣A23 DP40 A☣
+1022☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - in remote☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - in remote☣DI☣DI☣06☣ ☣ ☣A23 DP40 A☣
+1023☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - in running☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - in running☣DI☣DI☣07☣ ☣ ☣A23 DP40 A☣
+1024☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - supply fault☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - supply fault☣DI☣DI☣08☣ ☣ ☣A23 DP40 A☣
+1025☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - start/stop☣ ☣ ☣ ☣pmp. PM1665A dosage reag. alkal. - start/stop☣DO☣DO☣14☣ ☣ ☣A23 DP40 A☣
+1026☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - in remote☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - in remote☣DI☣DI☣09☣ ☣ ☣A23 DP40 A☣
+1027☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - in running☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - in running☣DI☣DI☣10☣ ☣ ☣A23 DP40 A☣
+1028☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - supply fault☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - supply fault☣DI☣DI☣11☣ ☣ ☣A23 DP40 A☣
+1029☣ ☣S01AP1020☣ ☣ ☣ ☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - start/stop☣ ☣ ☣ ☣pmp. PM1665B dosage reag. alkal. - start/stop☣DO☣DO☣15☣ ☣ ☣A23 DP40 A☣
+ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣ ☣

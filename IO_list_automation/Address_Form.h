@@ -325,6 +325,24 @@ private: System::Windows::Forms::Label^  label45;
 private: System::Windows::Forms::Button^  Check_button;
 private: System::Windows::Forms::Button^  Done_button;
 private: System::Windows::Forms::Button^  Cancel_button;
+private: System::Windows::Forms::Label^  label46;
+private: System::Windows::Forms::Label^  label47;
+private: System::Windows::Forms::Label^  label48;
+private: System::Windows::Forms::Label^  label49;
+private: System::Windows::Forms::Label^  label50;
+private: System::Windows::Forms::Label^  label51;
+private: System::Windows::Forms::Label^  label53;
+
+private: System::Windows::Forms::Label^  label55;
+private: System::Windows::Forms::Label^  label56;
+private: System::Windows::Forms::Label^  label57;
+private: System::Windows::Forms::Label^  label58;
+private: System::Windows::Forms::Label^  label59;
+private: System::Windows::Forms::Label^  label60;
+private: System::Windows::Forms::Label^  label61;
+private: System::Windows::Forms::Label^  label62;
+private: System::Windows::Forms::Label^  label63;
+private: System::Windows::Forms::Label^  label64;
 
 
 	private:
@@ -546,6 +564,23 @@ private: System::Windows::Forms::Button^  Cancel_button;
 			this->Check_button = (gcnew System::Windows::Forms::Button());
 			this->Done_button = (gcnew System::Windows::Forms::Button());
 			this->Cancel_button = (gcnew System::Windows::Forms::Button());
+			this->label46 = (gcnew System::Windows::Forms::Label());
+			this->label47 = (gcnew System::Windows::Forms::Label());
+			this->label48 = (gcnew System::Windows::Forms::Label());
+			this->label49 = (gcnew System::Windows::Forms::Label());
+			this->label50 = (gcnew System::Windows::Forms::Label());
+			this->label51 = (gcnew System::Windows::Forms::Label());
+			this->label53 = (gcnew System::Windows::Forms::Label());
+			this->label55 = (gcnew System::Windows::Forms::Label());
+			this->label56 = (gcnew System::Windows::Forms::Label());
+			this->label57 = (gcnew System::Windows::Forms::Label());
+			this->label58 = (gcnew System::Windows::Forms::Label());
+			this->label59 = (gcnew System::Windows::Forms::Label());
+			this->label60 = (gcnew System::Windows::Forms::Label());
+			this->label61 = (gcnew System::Windows::Forms::Label());
+			this->label62 = (gcnew System::Windows::Forms::Label());
+			this->label63 = (gcnew System::Windows::Forms::Label());
+			this->label64 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// VLV_CPU_area_w1
@@ -2638,11 +2673,234 @@ private: System::Windows::Forms::Button^  Cancel_button;
 			this->Cancel_button->UseVisualStyleBackColor = true;
 			this->Cancel_button->Click += gcnew System::EventHandler(this, &Address_Form::Cancel_button_Click);
 			// 
+			// label46
+			// 
+			this->label46->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label46->Location = System::Drawing::Point(12, 7);
+			this->label46->Name = L"label46";
+			this->label46->Size = System::Drawing::Size(53, 18);
+			this->label46->TabIndex = 363;
+			this->label46->Text = L"Area";
+			this->label46->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->label46->Click += gcnew System::EventHandler(this, &Address_Form::label46_Click);
+			// 
+			// label47
+			// 
+			this->label47->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label47->Location = System::Drawing::Point(6, 115);
+			this->label47->Margin = System::Windows::Forms::Padding(0);
+			this->label47->Name = L"label47";
+			this->label47->Size = System::Drawing::Size(30, 18);
+			this->label47->TabIndex = 369;
+			this->label47->Text = L"-4";
+			this->label47->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label48
+			// 
+			this->label48->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label48->Location = System::Drawing::Point(6, 97);
+			this->label48->Margin = System::Windows::Forms::Padding(0);
+			this->label48->Name = L"label48";
+			this->label48->Size = System::Drawing::Size(30, 18);
+			this->label48->TabIndex = 368;
+			this->label48->Text = L"-3";
+			this->label48->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->label48->Click += gcnew System::EventHandler(this, &Address_Form::label48_Click);
+			// 
+			// label49
+			// 
+			this->label49->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label49->Location = System::Drawing::Point(6, 79);
+			this->label49->Margin = System::Windows::Forms::Padding(0);
+			this->label49->Name = L"label49";
+			this->label49->Size = System::Drawing::Size(30, 18);
+			this->label49->TabIndex = 367;
+			this->label49->Text = L"-2";
+			this->label49->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label50
+			// 
+			this->label50->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label50->Location = System::Drawing::Point(6, 61);
+			this->label50->Margin = System::Windows::Forms::Padding(0);
+			this->label50->Name = L"label50";
+			this->label50->Size = System::Drawing::Size(30, 18);
+			this->label50->TabIndex = 366;
+			this->label50->Text = L"-1";
+			this->label50->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label51
+			// 
+			this->label51->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label51->Location = System::Drawing::Point(6, 43);
+			this->label51->Margin = System::Windows::Forms::Padding(0);
+			this->label51->Name = L"label51";
+			this->label51->Size = System::Drawing::Size(30, 18);
+			this->label51->TabIndex = 365;
+			this->label51->Text = L"0";
+			this->label51->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label53
+			// 
+			this->label53->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label53->Location = System::Drawing::Point(6, 25);
+			this->label53->Margin = System::Windows::Forms::Padding(0);
+			this->label53->Name = L"label53";
+			this->label53->Size = System::Drawing::Size(30, 18);
+			this->label53->TabIndex = 364;
+			this->label53->Text = L">0";
+			this->label53->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label55
+			// 
+			this->label55->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label55->Location = System::Drawing::Point(36, 115);
+			this->label55->Margin = System::Windows::Forms::Padding(0);
+			this->label55->Name = L"label55";
+			this->label55->Size = System::Drawing::Size(60, 18);
+			this->label55->TabIndex = 376;
+			this->label55->Text = L"IX";
+			this->label55->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label56
+			// 
+			this->label56->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label56->Location = System::Drawing::Point(36, 97);
+			this->label56->Margin = System::Windows::Forms::Padding(0);
+			this->label56->Name = L"label56";
+			this->label56->Size = System::Drawing::Size(60, 18);
+			this->label56->TabIndex = 375;
+			this->label56->Text = L"%QW";
+			this->label56->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label57
+			// 
+			this->label57->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label57->Location = System::Drawing::Point(36, 79);
+			this->label57->Margin = System::Windows::Forms::Padding(0);
+			this->label57->Name = L"label57";
+			this->label57->Size = System::Drawing::Size(60, 18);
+			this->label57->TabIndex = 374;
+			this->label57->Text = L"%QX";
+			this->label57->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label58
+			// 
+			this->label58->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label58->Location = System::Drawing::Point(36, 61);
+			this->label58->Margin = System::Windows::Forms::Padding(0);
+			this->label58->Name = L"label58";
+			this->label58->Size = System::Drawing::Size(60, 18);
+			this->label58->TabIndex = 373;
+			this->label58->Text = L"%M";
+			this->label58->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label59
+			// 
+			this->label59->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label59->Location = System::Drawing::Point(36, 43);
+			this->label59->Margin = System::Windows::Forms::Padding(0);
+			this->label59->Name = L"label59";
+			this->label59->Size = System::Drawing::Size(60, 18);
+			this->label59->TabIndex = 372;
+			this->label59->Text = L"%MQ";
+			this->label59->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label60
+			// 
+			this->label60->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label60->Location = System::Drawing::Point(36, 25);
+			this->label60->Margin = System::Windows::Forms::Padding(0);
+			this->label60->Name = L"label60";
+			this->label60->Size = System::Drawing::Size(60, 18);
+			this->label60->TabIndex = 371;
+			this->label60->Text = L"DB [nr]";
+			this->label60->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label61
+			// 
+			this->label61->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label61->Location = System::Drawing::Point(36, 133);
+			this->label61->Margin = System::Windows::Forms::Padding(0);
+			this->label61->Name = L"label61";
+			this->label61->Size = System::Drawing::Size(60, 18);
+			this->label61->TabIndex = 378;
+			this->label61->Text = L"IW";
+			this->label61->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label62
+			// 
+			this->label62->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label62->Location = System::Drawing::Point(6, 133);
+			this->label62->Margin = System::Windows::Forms::Padding(0);
+			this->label62->Name = L"label62";
+			this->label62->Size = System::Drawing::Size(30, 18);
+			this->label62->TabIndex = 377;
+			this->label62->Text = L"-5";
+			this->label62->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label63
+			// 
+			this->label63->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label63->Location = System::Drawing::Point(36, 151);
+			this->label63->Margin = System::Windows::Forms::Padding(0);
+			this->label63->Name = L"label63";
+			this->label63->Size = System::Drawing::Size(90, 18);
+			this->label63->TabIndex = 380;
+			this->label63->Text = L"Ignore adress";
+			this->label63->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->label63->Click += gcnew System::EventHandler(this, &Address_Form::label63_Click);
+			// 
+			// label64
+			// 
+			this->label64->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label64->Location = System::Drawing::Point(6, 151);
+			this->label64->Margin = System::Windows::Forms::Padding(0);
+			this->label64->Name = L"label64";
+			this->label64->Size = System::Drawing::Size(30, 18);
+			this->label64->TabIndex = 379;
+			this->label64->Text = L"-99";
+			this->label64->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
 			// Address_Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(826, 463);
+			this->Controls->Add(this->label63);
+			this->Controls->Add(this->label64);
+			this->Controls->Add(this->label61);
+			this->Controls->Add(this->label62);
+			this->Controls->Add(this->label55);
+			this->Controls->Add(this->label56);
+			this->Controls->Add(this->label57);
+			this->Controls->Add(this->label58);
+			this->Controls->Add(this->label59);
+			this->Controls->Add(this->label60);
+			this->Controls->Add(this->label47);
+			this->Controls->Add(this->label48);
+			this->Controls->Add(this->label49);
+			this->Controls->Add(this->label50);
+			this->Controls->Add(this->label51);
+			this->Controls->Add(this->label53);
+			this->Controls->Add(this->label46);
 			this->Controls->Add(this->Cancel_button);
 			this->Controls->Add(this->Done_button);
 			this->Controls->Add(this->Check_button);
@@ -3165,5 +3423,11 @@ public: int return_value = -1;
 		this->Close();
 	}
 
+private: System::Void label46_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label48_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label63_Click(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }

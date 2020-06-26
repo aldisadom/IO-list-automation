@@ -17,9 +17,11 @@ extern const wchar_t * prog_generate_IO[];
 extern const wchar_t * prog_generate_IO_adress[];
 extern const wchar_t * prog_multi_cpu[];
 extern const wchar_t * prog_search_diference[];
+extern const wchar_t * prog_dump_data[];
 
 
 extern const wchar_t * prog_grid_put[];
+extern const wchar_t * prog_grid_color[];
 extern const wchar_t * prog_grid_take[];
 extern const wchar_t * prog_save[];
 extern const wchar_t * prog_load[];

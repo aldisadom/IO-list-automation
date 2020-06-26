@@ -5,11 +5,23 @@
 #include "objects.h"
 #include "Global_Functions.h"
 
-
 using namespace std;
 using namespace IOlistautomation;
 
 
+
+wstring String_remove_trailing_zero(wstring text)
+{
+	wstring str = text;
+	str.erase(str.find_last_not_of('0') + 1, std::string::npos);
+	int a = str.size() - 1;
+	int b = str.find(L".");
+	if (a == b)
+	{
+		str.erase(b);
+	}
+	return str;
+}
 // --------Need to add more casses if there is added more tabs in gridview----------------
 
 // get grid based on function index
@@ -213,10 +225,13 @@ void Global_delete_all_data(int index_function)
 	switch (index_function)
 	{
 	case Design_grid_index:	project.data = {};
+							project.valid_entries = 0;
 		break;
 	case Signals_grid_index: signals.data = {};
+							 signals.valid_entries = 0;
 		break;
 	case Objects_grid_index: objects.data = {};
+							 objects.valid_entries = 0;
 		break;
 
 
@@ -271,6 +286,8 @@ void Global_choose_Load(int index_function, std::string file_name_global)
 // saving data to file
 int Global_save (int index_function, bool auto_save, std::string file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with)
 {
+	Global_get_data_listview(index_function,valid_entries, number_collums, column_name, collumn_with, true);
+
 	const char* funcion_text = Global_function_txt(index_function, lang);
 	string extension = Global_function_extension_txt(index_function);
 	string filter = "Save document | *";
@@ -445,13 +462,6 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 	}
 	Global_delete_all_data(index_function); // delete all data
 
-	Show_progress(prog_load[lang], 500); //making guess that load data is 500 long
-
-	strcpy_s(info_txt, sizeof info_txt, info_load_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	info_write(info_txt);
-
 	FILE* inFile;
 	string file_name;
 
@@ -473,6 +483,15 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 		file_name = file_name_global;
 		file_name.append(extension);
 	}
+
+
+	Show_progress(prog_load[lang], 500); //making guess that load data is 500 long
+
+	strcpy_s(info_txt, sizeof info_txt, info_load_data[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, funcion_text);
+	info_write(info_txt);
+
 
 	//create file with UTF-8 encoding
 	fopen_s(&inFile, file_name.c_str(), "r+,ccs=UTF-8");
@@ -701,26 +720,29 @@ void Global_put_data_listview(int index_function, int &valid_entries, const int 
 	wstring cell_text = L"";
 
 	int grid_cell = 0;
-	for (int index = 0; index <= valid_entries; index++)
+	if (valid_entries > 0)
 	{
-
-		if (Global_valid_row_check(index_function, index) == 1)
+		for (int index = 0; index <= valid_entries; index++)
 		{
-			grid->Rows->Add();
 
-			// fill all cells with data
-			for (iCol = 0; iCol <= number_collums; iCol++)
+			if (Global_valid_row_check(index_function, index) == 1)
 			{
-				cell_text = Global_get_data_switch(index_function, iCol, index);
+				grid->Rows->Add();
 
-				String^ textas = wstring_to_system_string(cell_text);
+				// fill all cells with data
+				for (iCol = 0; iCol <= number_collums; iCol++)
+				{
+					cell_text = Global_get_data_switch(index_function, iCol, index);
 
-				// Insert items into the list.
-				grid->Rows[grid_cell]->Cells[iCol]->Value = textas;
+					String^ textas = wstring_to_system_string(cell_text);
+
+					// Insert items into the list.
+					grid->Rows[grid_cell]->Cells[iCol]->Value = textas;
+				}
+				grid_cell++;
 			}
-			grid_cell++;
+			set_progress_value(index);
 		}
-		set_progress_value(index);
 	}
 	Hide_progress();
 
@@ -736,12 +758,67 @@ void Global_put_data_listview(int index_function, int &valid_entries, const int 
 	Global_put_width_list(index_function,number_collums, collumn_with);
 
 	GlobalForm::forma->Update();
+	
+	GlobalForm::forma->Global_Change_filter_position(index_function);
 }
+
+
+//colors list view
+void Global_color_data_listview(int index_function, int &valid_entries, const int &number_collums, vector <color_change_array_str> &color_array, int color_entries)
+{
+	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
+
+	const char* funcion_text = Global_function_txt(index_function, lang);
+
+	int iCol;
+	int rows_check;
+	rows_check = min(valid_entries, color_entries);
+
+	Show_progress(prog_grid_color[lang], rows_check);
+
+	strcpy_s(info_txt, sizeof info_txt, info_color_grid[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, funcion_text);
+	info_write(info_txt);
+
+	if (rows_check > 0)
+	{
+		for (int index = 0; index <= rows_check; index++)
+		{
+			if (color_array[index].changed == false)
+				continue;
+
+			// color cell
+			for (iCol = 0; iCol <= number_collums; iCol++)
+			{		
+				if (color_array[index].column_changed[iCol] == true)
+					grid->Rows[index]->Cells[iCol]->Style->BackColor= grid->Rows[index]->Cells[iCol]->Style->BackColor.Yellow;
+			}
+
+			set_progress_value(index);
+		}
+	}
+	Hide_progress();
+
+	strcpy_s(info_txt, sizeof info_txt, info_color_grid[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, funcion_text);
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+	info_write(info_txt);
+
+	GlobalForm::forma->tabControl1->SelectedIndex = index_function;
+
+	GlobalForm::forma->Update();
+}
+
 //get data from gridview to memory based on function index
-void Global_get_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with)
+void Global_get_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with, bool data_for_save)
 {
 	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
 	const char* funcion_text = Global_function_txt(index_function,lang);
+
+	
 
 	// if there is data get it
 	if (grid->RowCount > 0)
@@ -781,7 +858,7 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 		strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
 		info_write(info_txt);
 
-		if (unstable_release == 1 && valid_entries>1)
+		if (unstable_release == 1 && valid_entries>1 && data_for_save == false)
 		{
 			Global_choose_save(index_function,true, " ");
 		}
@@ -1022,4 +1099,116 @@ std::wstring Global_Module_type(int  module_index)
 
 	}
 	return L"";
+}
+
+void Global_Filter_drop_down(int index_function,int filter_column, vector <wstring> &unique_texts)
+{
+	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
+	int column_count = grid->ColumnCount;
+	int valid_entries = grid->RowCount - 1;
+
+	vector <wstring> filter_texts = { L"" };
+//	vector <wstring> unique_texts = { L"" };
+	filter_texts.resize(valid_entries);
+//	unique_texts.resize(valid_entries);
+
+	wstring text_cell = L"";
+
+	if (valid_entries > 1)
+	{
+		column_count = min(column_count, Filter_Count - 1);			
+		for (int j = 0; j < valid_entries; j++)
+		{	
+			if (grid->Rows[j]->Cells[filter_column]->Visible == true)
+				filter_texts[j] = Global_get_cell_value(j, filter_column, grid);
+		}
+
+		// sort and find uniques then transfer further
+		std::sort(filter_texts.begin(), filter_texts.end());
+		unique_copy(filter_texts.begin(), filter_texts.end(), back_inserter(unique_texts));
+
+		// check if first data is empty, then delete it
+		if (unique_texts[0].empty() == 1)
+		{
+			unique_texts.erase(unique_texts.begin());
+		}
+	}
+	unique_texts.push_back(L"*NULL*");
+}
+
+void Global_Filter_apply(int index_function, filter_str filter)
+{
+
+	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
+	int column_count = grid->ColumnCount;
+	int valid_entries = grid->RowCount-1;		
+
+	vector <bool> hiden_rows = { false };
+	hiden_rows.resize(valid_entries);
+	wstring filter_text = L"";
+	wstring text_cell = L"";
+	int result = 0;
+	bool search_blank = false;
+
+	if (valid_entries > 1)
+	{
+		column_count = min(column_count, Filter_Count-1);
+		for (int i = 0; i < column_count; i++)
+		{
+			filter_text = filter.Filter_text[i];
+			if (filter_text.empty() == false && filter_text.compare(L"") != 0)
+			{
+				search_blank = filter_text.compare(L"*NULL*") == 0;
+				if (search_blank == false)
+				{
+					for (int j = 0; j < valid_entries; j++)
+					{
+						if (hiden_rows[j] == false)
+						{
+							text_cell = Global_get_cell_value(j, i, grid);
+							result = text_cell.find(filter_text);
+							hiden_rows[j] = result < 0;
+						}
+					}
+				}
+				else
+				{
+					for (int j = 0; j < valid_entries; j++)
+					{
+						if (hiden_rows[j] == false)
+						{
+							text_cell = Global_get_cell_value(j, i, grid);
+							hiden_rows[j] = (text_cell.empty() == false && text_cell.compare(L"") != 0);
+						}
+					}
+				}
+			}
+		}
+
+		for (int j = 0; j < valid_entries; j++)
+		{
+			grid->Rows[j]->Visible = hiden_rows[j] == false;
+		}
+	}
+}
+
+void Global_Filter_text_changed(wstring text, int column, int index_function)
+{
+
+	switch (index_function)
+	{
+	case Design_grid_index:
+		design_filter.Filter_text[column] = text;
+		Global_Filter_apply(index_function, design_filter);
+		break;
+	case Signals_grid_index:
+		signal_filter.Filter_text[column] = text;
+		Global_Filter_apply(index_function, signal_filter);
+		break;
+	case Objects_grid_index:
+		object_filter.Filter_text[column] = text;
+		Global_Filter_apply(index_function, object_filter);
+		break;
+	}
+	
 }

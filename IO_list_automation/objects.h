@@ -20,6 +20,6 @@ int Objects_find_objects();
 //find operative marking
 int Objects_find_operatyv();
 //transfer objects data back to signals
-int Objects_transfer_to_signals();
+int Objects_transfer_to_signals(bool test_mode);
 
 #endif

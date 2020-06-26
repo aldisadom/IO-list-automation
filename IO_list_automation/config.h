@@ -18,6 +18,15 @@
 #include <CommCtrl.h>
 #include "Strings.h"
 
+#define Result_Undefined	0
+#define Result_Exit			1
+#define Result_Yes			2
+#define Result_Yes_all		3
+#define Result_No			4
+#define Result_No_all		5
+
+
+
 
 #define unstable_release 1
 
@@ -32,6 +41,8 @@
 #define default_AI_size 8
 #define default_DO_size 16
 #define default_AO_size 8
+
+#define Filter_Count 20
 
 using namespace std;
 using namespace System;
@@ -95,7 +106,27 @@ enum Variable_index {
 	pars_index =5,
 };
 
-
+struct project_data_column // -1 data is not writen from excel
+{
+	int Number = -1;
+	int KKS = -1;
+	int Section = -1;
+	int Range_min = -1;
+	int Range_max = -1;
+	int Units = -1;
+	int False_text = -1;
+	int True_text = -1;
+	int Revision = -1;
+	int Cable = -1;
+	int Cabinet = -1;
+	int Module_name = -1;
+	int Pin = -1;
+	int Channel = -1;
+	int IO_text = -1;
+	int Page = -1;
+	int Changed = -1;
+	int CPU = -1;
+};
 
 struct parameters_str
 {
@@ -109,48 +140,125 @@ struct parameters_str
 	int SCADA = System_platform;
 	int KKS_del1 = 0;
 	int KKS_del2 = 0;
+	int KKS_underscore = 1;
+	int KKS_delete_from_underscore = 1;
 	int auto_column_with = 1;
 	int indirect = 1;
 	int try_import_if_corupt = 0;
 	int paste_sel_match = 1;
 	int adresing_from_1 = 1;
 	int search_function_in_IO_text = 0;
+	project_data_column column_in_import;
 	wstring ABB_800xA_app_name = L"VK";
-
+	wstring separator_function = L":";
+	wstring separator_detailed = L";";
+	int Delete_if_no_module = 1;
+	int Compare_by_IO = 1;
 };
 struct project_data_str
 {
-	wstring number;			//collumn 0, in excel no
-	wstring Cabinet;		//collumn 1, in excel 1
-	wstring Module_name;	//collumn 2, in excel 2
-	wstring Pin;			//collumn 3, in excel 3
-	wstring Channel;		//collumn 4, in excel 4
-	wstring IO_text;		//collumn 5, in excel 5
-	wstring Page;			//collumn 6, in excel 6
-	wstring Changed;		//collumn 7, in excel no
+	wstring number;			
+	wstring CPU;
+	wstring KKS;
+	wstring Section;	
+	wstring Range_min;
+	wstring Range_max;
+	wstring Units;
+	wstring False_text;
+	wstring True_text;
+	wstring Revision;
+	wstring Cable;
+	wstring Cabinet;		
+	wstring Module_name;	
+	wstring Pin;			
+	wstring Channel;		
+	wstring IO_text;		
+	wstring Page;			
+	wstring Changed;	
 };
+
+
+#define design_column_number		0
+#define design_column_CPU			1
+#define design_column_KKS			2
+#define design_column_Section		3
+#define design_column_Range_min		4
+#define design_column_Range_max		5
+#define design_column_Units			6
+#define design_column_False_text	7
+#define design_column_True_text		8
+#define design_column_Revision		9
+#define design_column_Cable			10
+#define design_column_Cabinet		11
+#define design_column_Module_name	12
+#define design_column_Pin			13
+#define design_column_Channel		14
+#define design_column_IO_text		15
+#define design_column_Page			16
+#define design_column_Changed		17
+
 
 struct project_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums =7;
+	const int number_collums =17;
 	const vector<wstring> column_name =	{
-		L"Nr.",
-		L"Spinta",
-		L"Modulis",		
-		L"Pinas",
-		L"Kanalas",
-		L"IO tekstas",		
-		L"Projekto reference",
-		L"Changed",
+		L"Nr.",						//collumn 0
+		L"CPU",						//collumn 1
+		L"KKS",						//collumn 2	
+		L"Sekcija",					//collumn 3	
+		L"Range Min",				//collumn 4	
+		L"Range Max",				//collumn 5	
+		L"Units",					//collumn 6	
+		L"False text",				//collumn 7	
+		L"True text",				//collumn 8	
+		L"Revision",				//collumn 9	
+		L"Cable",					//collumn 10	
+		L"Spinta",					//collumn 11	
+		L"Modulis",					//collumn 12
+		L"Pinas",					//collumn 13
+		L"Kanalas",					//collumn 14
+		L"IO tekstas",				//collumn 15	
+		L"Projekto reference",		//collumn 16	
+		L"Changed",					//collumn 17	
 	};
 	vector <project_data_str> data;
 };
+/* missing in siglal str
+struct project_data_str
+{	wstring Section;
+	wstring Range_min;
+	wstring Range_max;
+	wstring Units;
+	wstring False_text;
+	wstring True_text;
+	wstring Revision;
+	wstring Cable;
+};
+*/
 
+#define signal_column_number		0
+#define signal_column_CPU			1
+#define signal_column_KKS			2
+#define signal_column_Section		3
+#define signal_column_Range_min		4
+#define signal_column_Range_max		5
+#define signal_column_Units			6
+#define signal_column_False_text	7
+#define signal_column_True_text		8
+#define signal_column_Revision		9
+#define signal_column_Cable			10
+#define signal_column_Cabinet		11
+#define signal_column_Module_name	12
+#define signal_column_Pin			13
+#define signal_column_Channel		14
+#define signal_column_IO_text		15
+#define signal_column_Page			16
+#define signal_column_Changed		17
 struct Signal_data_str
 {
-	wstring number;					//collumn 0
+	wstring number;					//collumn 0				
 	wstring CPU;					//collumn 1
 	wstring Cabinet;				//collumn 2	
 	wstring operatyv;				//collumn 3	
@@ -186,7 +294,7 @@ struct signal_str
 		L"KKS2",
 		L"Used",
 		L"Type",
-		L"Objectas",
+		L"Objektas",
 		L"objekto patikslinimas",
 		L"Funkcinis tekstas",
 		L"Funkcija",
@@ -242,7 +350,7 @@ struct object_str
 		L"Operatyv",
 		L"KKS",
 		L"Type",
-		L"Objectas",
+		L"Objektas",
 		L"Val",
 		L"SW1",
 		L"SW2",
@@ -321,6 +429,11 @@ struct addres_str
 						/*pid*/		-3,9500,2,		0,0,0,			0,0,0,			0,0,0,			-3,10000,100 };
 };
 
+struct filter_str
+{
+	wstring Filter_text[Filter_Count] = { L"" };
+};
+
 extern struct test_str test;
 extern struct parameters_str parameters;
 extern struct project_str project;
@@ -328,6 +441,10 @@ extern struct signal_str signals;
 extern struct object_str objects;
 extern struct learning_str learn;
 extern struct addres_str adres;
+extern int IO_form_result;
+extern struct filter_str design_filter;
+extern struct filter_str signal_filter;
+extern struct filter_str object_filter;
 
 
 extern int lang;
@@ -342,6 +459,8 @@ wstring system_string_to_wstring(System::String^ text);
 string system_string_to_string(System::String^ text);
 
 string wstring_to_string(wstring text);
+wstring string_to_wstring(const std::string &s);
+
 wstring int_to_wstring(int number, int nr_of_digits);
 
 void err_write(char *tekstas);

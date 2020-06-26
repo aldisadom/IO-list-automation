@@ -75,6 +75,10 @@ const char * err_no_learn_file[]{
 	"Nera mokinimo duomenu failo",
 	"No learning data file", };
 
+const char * err_test_fail[]{
+"!!!!!!!!!!!!!TESTAS NEPAVYKO!!!!!!!!!!!",
+"!!!!!!!!!!!!!TEST FAILED!!!!!!!!!!!!!!!", };
+
 
 const char * err_clickboard_no_data[]{
 	"Nera duomenu perkelimui",

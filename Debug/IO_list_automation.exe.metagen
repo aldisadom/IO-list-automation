@@ -1,6 +1,7 @@
   IOlistautomation.AAA_TEST_FORM.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.AboutForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.Address_Form.resources - Embedded, ContainedInManifestFile, 
+  IOlistautomation.Compare_result.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.HelpForm.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.IO_Form.resources - Embedded, ContainedInManifestFile, 
   IOlistautomation.KKS_editForm.resources - Embedded, ContainedInManifestFile, 
@@ -62,10 +63,18 @@ Class IOlistautomation.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeF
     System.Windows.Forms.DataGridView Object_grid : Public
   Methods:
     Main_init(): PrivateScope, Public, HideBySig
+    Global_Change_filter_position(Int32): PrivateScope, Public, HideBySig
 Class GlobalForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     IOlistautomation.MainWindow forma : Public, Static
+Class IOlistautomation.Compare_result: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 return_value : Public
+  Methods:
+    Confirm_check_init(basic_string<wchar_t\,std::char_traits<wchar_t>\,std::allocator<wchar_t> >*, basic_string<wchar_t\,std::char_traits<wchar_t>\,std::allocator<wchar_t> >*): PrivateScope, Public, HideBySig
 Class IOlistautomation.ResultForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

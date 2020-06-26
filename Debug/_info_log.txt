@@ -1,41 +1,11 @@
-2018-09-04  17:39:20.109 - This program is not stable ant not fully tested, carefully use it !!!
-2018-09-04  17:39:21.063 - ---------------------------------------------------------
-2018-09-04  17:39:22.146 - Data is writen to grid - Design
-2018-09-04  17:39:22.170 - Data is writen to grid - Design --- Done
-2018-09-04  17:39:22.182 - Data is writen to grid - Signals
-2018-09-04  17:39:22.201 - Data is writen to grid - Signals --- Done
-2018-09-04  17:39:22.203 - Data is writen to grid - Objects
-2018-09-04  17:39:22.226 - Data is writen to grid - Objects --- Done
-2018-09-04  17:39:50.416 - File_LoadALL --- Button pressed
-2018-09-04  17:39:58.183 - Loading data - Design
-2018-09-04  17:39:58.277 - Loading data - Design --- Done
-2018-09-04  17:39:58.292 - Data is writen to grid - Design
-2018-09-04  17:39:58.706 - Data is writen to grid - Design --- Done
-2018-09-04  17:39:59.073 - Loading data - Signals
-2018-09-04  17:39:59.269 - Loading data - Signals --- Done
-2018-09-04  17:39:59.349 - Data is writen to grid - Signals
-2018-09-04  17:39:59.605 - Data is writen to grid - Signals --- Done
-2018-09-04  17:40:00.434 - Loading data - Objects
-2018-09-04  17:40:00.559 - Loading data - Objects --- Done
-2018-09-04  17:40:00.656 - Data is writen to grid - Objects
-2018-09-04  17:40:00.785 - Data is writen to grid - Objects --- Done
-2018-09-04  17:40:04.155 - Project_CPU_Beckhoff --- Button pressed
-2018-09-04  17:40:09.019 - Instance_GenerateIO --- Button pressed
-2018-09-04  17:40:09.122 - Data is writen to memory - Signals
-2018-09-04  17:40:09.321 - Data is writen to memory - Signals --- Done
-2018-09-04  17:40:09.324 - Saving data - Signals
-2018-09-04  17:40:09.452 - Saving data - Signals --- Done
-2018-09-04  17:40:09.453 - Generating IO tags in signals
-2018-09-04  17:40:09.636 - Generating IO tags in signals --- Done
-2018-09-04  17:40:09.655 - Data is writen to grid - Signals
-2018-09-04  17:40:10.181 - Data is writen to grid - Signals --- Done
-2018-09-04  17:40:10.945 - Data is writen to memory - Signals
-2018-09-04  17:40:11.169 - Data is writen to memory - Signals --- Done
-2018-09-04  17:40:11.170 - Saving data - Signals
-2018-09-04  17:40:11.298 - Saving data - Signals --- Done
-2018-09-04  17:40:11.299 - Generating IO tags with adresses
-2018-09-04  17:40:21.351 - Data size dont match for pasting - IO_modules --- Clipboard:Rows 69 Cols 2 Sel: [0;4] - [0;4]
-2018-09-04  17:40:27.468 - Data size dont match for pasting - IO_modules --- Clipboard:Rows 69 Cols 2 Sel: [0;4] - [68;6]
-2018-09-04  17:40:41.257 - Data size dont match for pasting - IO_modules --- Clipboard:Rows 69 Cols 2 Sel: [0;4] - [68;6]
-2018-09-04  17:41:02.461 - Pasting data - IO_modules --- Clipboard:Rows 68 Cols 2 Sel: [0;4] - [67;5]
-2018-09-04  17:53:58.410 - Generating IO tags with adresses --- Done
+2020-01-07  14:08:44.266 - This program is not stable ant not fully tested, carefully use it !!!
+2020-01-07  14:08:45.310 - ---------------------------------------------------------
+2020-01-07  14:08:45.389 - Data is writen to grid - Design
+2020-01-07  14:08:45.393 - Data is writen to grid - Design --- Done
+2020-01-07  14:08:45.393 - Data is writen to grid - Signals
+2020-01-07  14:08:45.394 - Data is writen to grid - Signals --- Done
+2020-01-07  14:08:45.394 - Data is writen to grid - Objects
+2020-01-07  14:08:45.395 - Data is writen to grid - Objects --- Done
+2020-01-07  14:09:00.026 - Project_IOcompare --- Button pressed
+2020-01-07  14:09:00.028 - Testing if there is changes in project
+2020-01-07  14:09:02.330 - File selection canceled

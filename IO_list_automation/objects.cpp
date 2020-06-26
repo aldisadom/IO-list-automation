@@ -109,7 +109,7 @@ int Objects_valid_row_check(int row)
 //find unique objects in signals data
 int Objects_find_uniques()
 {
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -156,7 +156,7 @@ int Objects_find_uniques()
 		max_digits++;
 	}
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
 	bool transfer_new=false;
 
 	if (objects.valid_entries > 1)
@@ -331,7 +331,7 @@ int Objects_find_objects()
 	}
 
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -481,7 +481,7 @@ int Objects_find_objects()
 //find operative marking
 int Objects_find_operatyv()
 {
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -524,11 +524,11 @@ int Objects_find_operatyv()
 	return 0;
 }
 //transfer objects data back to signals
-int Objects_transfer_to_signals()
+int Objects_transfer_to_signals(bool test_mode)
 {
 	IOlistautomation::Object_check_Form forma;
 	GlobalForm::forma->tabControl1->SelectedIndex =Signals_grid_index;
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -537,7 +537,7 @@ int Objects_transfer_to_signals()
 		err_write_show(err_txt);
 		return 1;
 	}
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -581,9 +581,10 @@ int Objects_transfer_to_signals()
 
 						//init, and show edit dialog
 						forma.Object_check_init();
-						forma.ShowDialog();
+						if (test_mode == false)
+							forma.ShowDialog();
 
-						if (forma.return_value > 0)
+						if ((forma.return_value == Result_Yes || forma.return_value == Result_Yes_all) && test_mode == false)
 						{
 							Hide_progress();
 
@@ -606,6 +607,9 @@ int Objects_transfer_to_signals()
 							signals.data[index].KKS.Part2 = test.KKS.Full.substr(a+1);
 
 						}
+						if (test_mode == true)
+							test.text_to_copy = objects.data[i].Object_text;
+
 						signals.data[index].KKS.Full = test.KKS.Full;
 						signals.data[index].Object_text = test.text_to_copy;
 					}

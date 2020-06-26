@@ -1,0 +1,43 @@
+Project-Design
+Project-IO Compare
+Signals-Find function
+Signals-Multi CPU
+Uniques-Find uniques
+Uniques-Transfer data to Signals
+Uniques-Correct comments 
+
+(800xA, Beckhoff, Siemens, Scheneider)
+Declare-Generate Adressing
+Declare-Declare Adressing
+Instance-Generate IO
+Instance-Generate Instances
+
+LT
+LT_Project-Design				(done)
+LT_Project-IO Compare				(done)
+LT_Signals-KKS Edit				(done)
+LT_Signals-Find function			(done)
+LT_Signals-Multi CPU				-----
+LT_Uniques-Find uniques				(done)
+LT_Uniques-Transfer data to Signals		(done)
+LT_Uniques-Correct comments 			-----
+
+LT_ABB 800xA_Declare_generate			(done)	
+LT_ABB 800xA_Declare_adresses			(done)
+LT_ABB 800xA_Instance_IO			(done)
+LT_ABB 800xA_Instance_Gen			(done)	
+LT_Beckhoff_Declare-Generate Adressing	
+LT_Beckhoff_Declare-Declare Adressing		
+LT_Beckhoff_Instance-Generate IO		
+LT_Beckhoff_Instance-Generate Instances	
+LT_Siemens_Declare-Generate Adressing	
+LT_Siemens_Declare-Declare Adressing		
+LT_Siemens_Instance-Generate IO		
+LT_Siemens_Instance-Generate Instances	
+LT_Schneider_Declare-Generate Adressing	
+LT_Schneider_Declare-Declare Adressing		
+LT_Schneider_Instance-Generate IO		
+LT_Schneider_Instance-Generate Instances	
+
+RU	(to be done)
+EN	(to be done)

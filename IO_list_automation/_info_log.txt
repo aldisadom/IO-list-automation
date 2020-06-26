@@ -1,8 +1,160 @@
-2018-09-14  11:29:51.875 - This program is not stable ant not fully tested, carefully use it !!!
-2018-09-14  11:29:54.833 - ---------------------------------------------------------
-2018-09-14  11:29:55.130 - Data is writen to grid - Design
-2018-09-14  11:29:55.130 - Data is writen to grid - Design --- Done
-2018-09-14  11:29:55.130 - Data is writen to grid - Signals
-2018-09-14  11:29:55.130 - Data is writen to grid - Signals --- Done
-2018-09-14  11:29:55.130 - Data is writen to grid - Objects
-2018-09-14  11:29:55.130 - Data is writen to grid - Objects --- Done
+2020-02-05  09:07:12.124 - This program is not stable ant not fully tested, carefully use it !!!
+2020-02-05  09:07:13.216 - ---------------------------------------------------------
+2020-02-05  09:07:13.496 - Data is writen to grid - Design
+2020-02-05  09:07:13.501 - Data is writen to grid - Design --- Done
+2020-02-05  09:07:13.503 - Data is writen to grid - Signals
+2020-02-05  09:07:13.504 - Data is writen to grid - Signals --- Done
+2020-02-05  09:07:13.505 - Data is writen to grid - Objects
+2020-02-05  09:07:13.505 - Data is writen to grid - Objects --- Done
+2020-02-05  09:07:16.213 - Project_Design --- Button pressed
+2020-02-05  09:07:19.900 - Reading data from excel
+2020-02-05  09:07:20.836 - Excel file licesing bypass
+2020-02-05  09:07:21.270 - Excel file licesing bypass
+2020-02-05  09:07:21.705 - Excel file licesing bypass
+2020-02-05  09:07:22.160 - Excel file licesing bypass
+2020-02-05  09:07:22.598 - Excel file licesing bypass
+2020-02-05  09:07:23.061 - Excel file licesing bypass
+2020-02-05  09:07:23.486 - Excel file licesing bypass
+2020-02-05  09:07:23.909 - Excel file licesing bypass
+2020-02-05  09:07:24.330 - Excel file licesing bypass
+2020-02-05  09:07:24.745 - Excel file licesing bypass
+2020-02-05  09:07:25.160 - Excel file licesing bypass
+2020-02-05  09:07:25.609 - Excel file licesing bypass
+2020-02-05  09:07:26.021 - Excel file licesing bypass
+2020-02-05  09:07:26.437 - Excel file licesing bypass
+2020-02-05  09:07:26.859 - Excel file licesing bypass
+2020-02-05  09:07:27.274 - Excel file licesing bypass
+2020-02-05  09:07:27.691 - Excel file licesing bypass
+2020-02-05  09:07:28.122 - Excel file licesing bypass
+2020-02-05  09:07:28.539 - Excel file licesing bypass
+2020-02-05  09:07:28.967 - Excel file licesing bypass
+2020-02-05  09:07:29.419 - Excel file licesing bypass
+2020-02-05  09:07:29.839 - Excel file licesing bypass
+2020-02-05  09:07:30.260 - Excel file licesing bypass
+2020-02-05  09:07:30.686 - Excel file licesing bypass
+2020-02-05  09:07:31.108 - Excel file licesing bypass
+2020-02-05  09:07:31.538 - Excel file licesing bypass
+2020-02-05  09:07:31.980 - Excel file licesing bypass
+2020-02-05  09:07:32.407 - Excel file licesing bypass
+2020-02-05  09:07:32.821 - Excel file licesing bypass
+2020-02-05  09:07:33.245 - Excel file licesing bypass
+2020-02-05  09:07:33.672 - Excel file licesing bypass
+2020-02-05  09:07:34.091 - Excel file licesing bypass
+2020-02-05  09:07:34.506 - Excel file licesing bypass
+2020-02-05  09:07:34.935 - Excel file licesing bypass
+2020-02-05  09:07:35.370 - Excel file licesing bypass
+2020-02-05  09:07:35.905 - Excel file licesing bypass
+2020-02-05  09:07:36.330 - Excel file licesing bypass
+2020-02-05  09:07:36.746 - Excel file licesing bypass
+2020-02-05  09:07:37.168 - Excel file licesing bypass
+2020-02-05  09:07:37.582 - Excel file licesing bypass
+2020-02-05  09:07:38.000 - Excel file licesing bypass
+2020-02-05  09:07:38.430 - Excel file licesing bypass
+2020-02-05  09:07:38.859 - Excel file licesing bypass
+2020-02-05  09:07:39.275 - Excel file licesing bypass
+2020-02-05  09:07:39.696 - Excel file licesing bypass
+2020-02-05  09:07:40.121 - Excel file licesing bypass
+2020-02-05  09:07:40.536 - Excel file licesing bypass
+2020-02-05  09:07:40.953 - Excel file licesing bypass
+2020-02-05  09:07:41.374 - Excel file licesing bypass
+2020-02-05  09:07:41.791 - Excel file licesing bypass
+2020-02-05  09:07:42.204 - Excel file licesing bypass
+2020-02-05  09:07:42.629 - Excel file licesing bypass
+2020-02-05  09:07:43.043 - Excel file licesing bypass
+2020-02-05  09:07:43.471 - Excel file licesing bypass
+2020-02-05  09:07:43.900 - Excel file licesing bypass
+2020-02-05  09:07:44.316 - Excel file licesing bypass
+2020-02-05  09:07:44.728 - Excel file licesing bypass
+2020-02-05  09:07:45.153 - Excel file licesing bypass
+2020-02-05  09:07:45.576 - Excel file licesing bypass
+2020-02-05  09:07:45.992 - Excel file licesing bypass
+2020-02-05  09:07:46.424 - Excel file licesing bypass
+2020-02-05  09:07:46.838 - Excel file licesing bypass
+2020-02-05  09:07:47.251 - Excel file licesing bypass
+2020-02-05  09:07:47.690 - Excel file licesing bypass
+2020-02-05  09:07:48.110 - Excel file licesing bypass
+2020-02-05  09:07:48.530 - Excel file licesing bypass
+2020-02-05  09:07:48.959 - Excel file licesing bypass
+2020-02-05  09:07:49.396 - Excel file licesing bypass
+2020-02-05  09:07:49.842 - Excel file licesing bypass
+2020-02-05  09:07:50.277 - Excel file licesing bypass
+2020-02-05  09:07:50.708 - Excel file licesing bypass
+2020-02-05  09:07:51.121 - Excel file licesing bypass
+2020-02-05  09:07:51.587 - Excel file licesing bypass
+2020-02-05  09:07:52.095 - Excel file licesing bypass
+2020-02-05  09:07:52.510 - Excel file licesing bypass
+2020-02-05  09:07:52.941 - Excel file licesing bypass
+2020-02-05  09:07:53.362 - Excel file licesing bypass
+2020-02-05  09:07:53.777 - Excel file licesing bypass
+2020-02-05  09:07:54.208 - Excel file licesing bypass
+2020-02-05  09:07:54.639 - Excel file licesing bypass
+2020-02-05  09:07:55.064 - Excel file licesing bypass
+2020-02-05  09:07:55.490 - Excel file licesing bypass
+2020-02-05  09:07:55.923 - Excel file licesing bypass
+2020-02-05  09:07:56.344 - Excel file licesing bypass
+2020-02-05  09:07:56.766 - Excel file licesing bypass
+2020-02-05  09:07:57.198 - Excel file licesing bypass
+2020-02-05  09:07:57.627 - Excel file licesing bypass
+2020-02-05  09:07:58.044 - Excel file licesing bypass
+2020-02-05  09:07:58.477 - Excel file licesing bypass
+2020-02-05  09:07:58.898 - Excel file licesing bypass
+2020-02-05  09:07:59.311 - Excel file licesing bypass
+2020-02-05  09:07:59.725 - Excel file licesing bypass
+2020-02-05  09:08:00.169 - Excel file licesing bypass
+2020-02-05  09:08:00.596 - Excel file licesing bypass
+2020-02-05  09:08:01.031 - Excel file licesing bypass
+2020-02-05  09:08:01.445 - Excel file licesing bypass
+2020-02-05  09:08:01.864 - Excel file licesing bypass
+2020-02-05  09:08:02.303 - Excel file licesing bypass
+2020-02-05  09:08:02.725 - Excel file licesing bypass
+2020-02-05  09:08:03.173 - Excel file licesing bypass
+2020-02-05  09:08:03.621 - Excel file licesing bypass
+2020-02-05  09:08:04.050 - Excel file licesing bypass
+2020-02-05  09:08:04.478 - Excel file licesing bypass
+2020-02-05  09:08:04.892 - Excel file licesing bypass
+2020-02-05  09:08:05.311 - Excel file licesing bypass
+2020-02-05  09:08:05.734 - Excel file licesing bypass
+2020-02-05  09:08:06.175 - Excel file licesing bypass
+2020-02-05  09:08:06.594 - Excel file licesing bypass
+2020-02-05  09:08:07.003 - Excel file licesing bypass
+2020-02-05  09:08:07.432 - Excel file licesing bypass
+2020-02-05  09:08:07.932 - Excel file licesing bypass
+2020-02-05  09:08:08.341 - Excel file licesing bypass
+2020-02-05  09:08:08.761 - Excel file licesing bypass
+2020-02-05  09:08:09.177 - Excel file licesing bypass
+2020-02-05  09:08:09.591 - Excel file licesing bypass
+2020-02-05  09:08:10.013 - Excel file licesing bypass
+2020-02-05  09:08:10.429 - Excel file licesing bypass
+2020-02-05  09:08:10.850 - Excel file licesing bypass
+2020-02-05  09:08:11.267 - Excel file licesing bypass
+2020-02-05  09:08:11.681 - Excel file licesing bypass
+2020-02-05  09:08:12.101 - Excel file licesing bypass
+2020-02-05  09:08:12.516 - Excel file licesing bypass
+2020-02-05  09:08:12.926 - Excel file licesing bypass
+2020-02-05  09:08:13.340 - Excel file licesing bypass
+2020-02-05  09:08:13.752 - Excel file licesing bypass
+2020-02-05  09:08:14.168 - Excel file licesing bypass
+2020-02-05  09:08:14.583 - Excel file licesing bypass
+2020-02-05  09:08:14.999 - Excel file licesing bypass
+2020-02-05  09:08:15.424 - Excel file licesing bypass
+2020-02-05  09:08:15.834 - Excel file licesing bypass
+2020-02-05  09:08:16.251 - Excel file licesing bypass
+2020-02-05  09:08:16.664 - Excel file licesing bypass
+2020-02-05  09:08:17.081 - Excel file licesing bypass
+2020-02-05  09:08:17.113 - Reading data from excel --- Done
+2020-02-05  09:08:17.135 - Data is extracted from unwanted data - Design
+2020-02-05  09:08:17.198 - Data is extracted from unwanted data - Design --- Done
+2020-02-05  09:08:17.215 - Data is writen to grid - Design
+2020-02-05  09:08:18.423 - Data is writen to grid - Design --- Done
+2020-02-05  09:08:19.345 - Data is writen to memory - Design
+2020-02-05  09:08:19.627 - Data is writen to memory - Design --- Done
+2020-02-05  09:08:19.709 - Data is writen to memory - Design
+2020-02-05  09:08:20.015 - Data is writen to memory - Design --- Done
+2020-02-05  09:08:20.016 - Saving data - Design
+2020-02-05  09:08:20.717 - Saving data - Design --- Done
+2020-02-05  09:08:20.717 - Transfering data - Design->Signals
+2020-02-05  09:08:21.015 - Data is writen to grid - Signals
+2020-02-05  09:08:21.304 - Data is writen to grid - Signals --- Done
+2020-02-05  09:08:22.272 - Transfering data - Design->Signals --- Done
+2020-02-14  09:09:31.821 - Pasting data - Design --- Clipboard:Rows 1 Cols 1 Sel: [707;2] - [707;2]
+2020-02-14  09:17:55.223 - Pasting data - Design --- Clipboard:Rows 1 Cols 1 Sel: [116;0] - [116;0]

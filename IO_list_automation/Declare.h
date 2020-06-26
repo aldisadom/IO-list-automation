@@ -58,5 +58,7 @@ int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_
 // adress declaring
 int Declare_addreses();
 
-int Declare_put_adres_grid();
+int Declare_dump_to_file(bool test_mode, System::Windows::Forms::DataGridView^ grid, char* grid_name);
+
+int Declare_put_adres_grid(bool test_mode);
 #endif

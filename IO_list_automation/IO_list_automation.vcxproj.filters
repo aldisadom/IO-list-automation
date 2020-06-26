@@ -31,11 +31,11 @@
     <Filter Include="Source Files\Functions\Instances">
       <UniqueIdentifier>{aed93b05-6bd4-49aa-be58-eaa3ae34dd15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Forms">
+      <UniqueIdentifier>{e013502a-2342-4512-bf77-6da8d79e7fd9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="config.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="String_errors.cpp">
       <Filter>Source Files\Strings</Filter>
     </ClCompile>
@@ -108,6 +108,15 @@
     <ClCompile Include="IO_Form.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tests.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Compare_result.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow.h">
@@ -152,9 +161,6 @@
     <ClInclude Include="signals.h">
       <Filter>Header Files\Functions</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Object_check_Form.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -187,6 +193,15 @@
     </ClInclude>
     <ClInclude Include="IO_Form.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Compare_result.h">
+      <Filter>Header Files\Forms</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -236,5 +251,16 @@
     <EmbeddedResource Include="ResultForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="IO_Form.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Documentation.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Change_log.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

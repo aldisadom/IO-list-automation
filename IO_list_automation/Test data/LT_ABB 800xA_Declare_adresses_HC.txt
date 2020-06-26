@@ -1,0 +1,10 @@
+﻿indirect_HC	HC_str	retain									
+HHA10_AE001	HC_str	retain				Degiklio Nr.1 įstūmimo į ambrazūrą cilindras					
+HHA20_AE001	HC_str	retain				Degiklio Nr.2 įstūmimo į ambrazūrą cilindras					
+HHA30_AE001	HC_str	retain				Degiklio Nr.3 įstūmimo į ambrazūrą cilindras					
+HHA40_AE001	HC_str	retain				Degiklio Nr.4 įstūmimo į ambrazūrą cilindras					
+HHA50_AE001	HC_str	retain				Degiklio Nr.5 įstūmimo į ambrazūrą cilindras					
+HHA60_AE001	HC_str	retain				Degiklio Nr.6 įstūmimo į ambrazūrą cilindras					
+											
+											
+											

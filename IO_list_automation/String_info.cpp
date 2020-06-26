@@ -9,7 +9,9 @@ const char * info_exit_aplication[]{
 	"Exited pressing exit button",};
 
 
-
+const char * info_color_grid[]{
+	"Spalvojami lenteles duomenys",
+	"Coloring grid data", };
 const char * info_excel_read_data[]{
 	"Skaitomi duomenys is excelio",
 	"Reading data from excel",};
@@ -55,6 +57,13 @@ const char * info_multi_CPU[]{
 const char * info_compare_project[]{
 	"Tikrinama ar yra pakeitimu projekte",
 	"Testing if there is changes in project", };
+const char * info_dump_declare[]{
+	"Saugojami deklaravimo duomenys",
+	"Dumping declare data", };
+const char * info_dump_instance[]{
+	"Saugojami instanciju duomenys",
+	"Dumping instance data", };
+
 
 
 const char * info_transfer_data[]{

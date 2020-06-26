@@ -14,8 +14,13 @@ char info_txt[255];
 struct parameters_str parameters;
 struct test_str test;
 struct addres_str adres;
+int IO_form_result = 0;
 
-int lang = 0;
+struct filter_str design_filter;
+struct filter_str signal_filter;
+struct filter_str object_filter;
+
+int lang = 1;
 
 // get number of digits from integer
 int GetNumberOfDigits(int i)
@@ -296,12 +301,28 @@ void set_progress_value(int value)
 
 
 // parameters that can be added to _cfg file
-char parametrai_str[40][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
-"Beckhoff_vlv", "Beckhoff_hc", "Beckhoff_mot", "Beckhoff_ai", "Beckhoff_fc", "Beckhoff_pid",
-"Siemens_vlv", "Siemens_hc", "Siemens_mot", "Siemens_ai", "Siemens_fc", "Siemens_pid",
-"ABB_800xA_vlv", "ABB_800xA_hc", "ABB_800xA_mot", "ABB_800xA_ai", "ABB_800xA_fc", "ABB_800xA_pid",
-"Schneider_vlv", "Schneider_hc", "Schneider_mot", "Schneider_ai", "Schneider_fc", "Schneider_pid",
-"try_import_if_corupt", "paste_sel_match" , "adresing_from_1", "search_function_in_IO_text","ABB_800xA_app_name",
+char parametrai_str[38][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
+"try_import_if_corupt", "paste_sel_match" , "adresing_from_1", "search_function_in_IO_text","ABB_800xA_app_name", "separator_function", "separator_detailed",
+"number_column_in_excel",
+"KKS_column_in_excel",
+"Section_column_in_excel",
+"Range_min_column_in_excel",
+"Range_max_column_in_excel",
+"Units_column_in_excel",
+"False_text_column_in_excel",
+"True_text_column_in_excel",
+"Revision_column_in_excel",
+"Cable_column_in_excel",
+"Cabinet_column_in_excel",
+"Module_name_column_in_excel",
+"Pin_column_in_excel",
+"Channel_column_in_excel",
+"IO_text_column_in_excel",
+"Page_column_in_excel",
+"Changed_column_in_excel",
+"Delete_if_no_module",
+"Compare_by_IO",
+"CPU_column_in_excel",
 };
 
 
@@ -486,7 +507,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				}				
 				else
 				{
-					pars->SCADA = Beckhoff_index;
+					pars->SCADA = System_platform;
 					strcpy_s(err_txt, sizeof err_txt, parametras);
 					strcat_s(err_txt, sizeof err_txt, error_separator);
 					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
@@ -524,86 +545,14 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				break;
 			case 10:
 				pars->indirect = (value !=0);
-				break;
+				break;			
 			case 11:
-				adr_par_retrieve(value_text, adres.Beckhoff.vlv);
-				break;
-			case 12:
-				adr_par_retrieve(value_text, adres.Beckhoff.hc);
-				break;
-			case 13:
-				adr_par_retrieve(value_text, adres.Beckhoff.mot);
-				break;
-			case 14:
-				adr_par_retrieve(value_text, adres.Beckhoff.ai);
-				break;
-			case 15:
-				adr_par_retrieve(value_text, adres.Beckhoff.fc);
-				break;
-			case 16:
-				adr_par_retrieve(value_text, adres.Beckhoff.pid);
-				break;
-			case 17:
-				adr_par_retrieve(value_text, adres.Siemens.vlv);
-				break;
-			case 18:
-				adr_par_retrieve(value_text, adres.Siemens.hc);
-				break;
-			case 19:
-				adr_par_retrieve(value_text, adres.Siemens.mot);
-				break;
-			case 20:
-				adr_par_retrieve(value_text, adres.Siemens.ai);
-				break;
-			case 21:
-				adr_par_retrieve(value_text, adres.Siemens.fc);
-				break;
-			case 22:
-				adr_par_retrieve(value_text, adres.Siemens.pid);
-				break;
-			case 23:
-				adr_par_retrieve(value_text, adres.ABB_800xA.vlv);
-				break;
-			case 24:
-				adr_par_retrieve(value_text, adres.ABB_800xA.hc);
-				break;
-			case 25:
-				adr_par_retrieve(value_text, adres.ABB_800xA.mot);
-				break;
-			case 26:
-				adr_par_retrieve(value_text, adres.ABB_800xA.ai);
-				break;
-			case 27:
-				adr_par_retrieve(value_text, adres.ABB_800xA.fc);
-				break;
-			case 28:
-				adr_par_retrieve(value_text, adres.ABB_800xA.pid);
-				break;
-			case 29:
-				adr_par_retrieve(value_text, adres.Schneider.vlv);
-				break;
-			case 30:
-				adr_par_retrieve(value_text, adres.Schneider.hc);
-				break;
-			case 31:
-				adr_par_retrieve(value_text, adres.Schneider.mot);
-				break;
-			case 32:
-				adr_par_retrieve(value_text, adres.Schneider.ai);
-				break;
-			case 33:
-				adr_par_retrieve(value_text, adres.Schneider.fc);
-				break;
-			case 34:
-				adr_par_retrieve(value_text, adres.Schneider.pid);
-				break;
-			case 35:
 				pars->try_import_if_corupt = value;
 				break;
-			case 36:
+			case 12:
 				pars->paste_sel_match = value;
 				break;	
-			case 37:
+			case 13:
 				if (value > 0)
 				{
 					pars->adresing_from_1 = 1;
@@ -613,7 +562,7 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 					pars->adresing_from_1 = 0;
 				}
 				break;
-			case 38:
+			case 14:
 				if (value > 0)
 				{
 					pars->search_function_in_IO_text = 1;
@@ -623,11 +572,78 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 					pars->search_function_in_IO_text = 0;
 				}
 				break;
-			case 39:
+			case 15:
 				tmp_text = value_text;
 				pars->ABB_800xA_app_name = string_to_wstring(tmp_text);
 				break;
-				
+			case 16:
+				tmp_text = value_text;
+				pars->separator_function = string_to_wstring(tmp_text);
+				break;
+			case 17:
+				tmp_text = value_text;
+				pars->separator_detailed = string_to_wstring(tmp_text);
+				break;
+			case 18:
+				pars->column_in_import.Number = value;
+				break;
+			case 19:
+				pars->column_in_import.KKS = value;
+				break;
+			case 20:
+				pars->column_in_import.Section = value;
+				break;
+			case 21:
+				pars->column_in_import.Range_min = value;
+				break;
+			case 22:
+				pars->column_in_import.Range_max = value;
+				break;
+			case 23:
+				pars->column_in_import.Units = value;
+				break;
+			case 24:
+				pars->column_in_import.False_text = value;
+				break;
+			case 25:
+				pars->column_in_import.True_text = value;
+				break;
+			case 26:
+				pars->column_in_import.Revision = value;
+				break;
+			case 27:
+				pars->column_in_import.Cable = value;
+				break;
+			case 28:
+				pars->column_in_import.Cabinet = value;
+				break;
+			case 29:
+				pars->column_in_import.Module_name = value;
+				break;
+			case 30:
+				pars->column_in_import.Pin = value;
+				break;
+			case 31:
+				pars->column_in_import.Channel = value;
+				break;
+			case 32:
+				pars->column_in_import.IO_text = value;
+				break;
+			case 33:
+				pars->column_in_import.Page = value;
+				break;
+			case 34:
+				pars->column_in_import.Changed = value;
+				break;
+			case 35:
+				pars->Delete_if_no_module = value;
+				break;
+			case 36:
+				pars->Compare_by_IO = value;
+				break;		
+			case 37:
+				pars->column_in_import.CPU = value;
+				break;
 			default:
 				strcpy_s(err_txt, sizeof err_txt, parametras);
 				strcat_s(err_txt, sizeof err_txt, error_separator);

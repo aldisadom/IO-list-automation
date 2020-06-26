@@ -1,0 +1,840 @@
+﻿Module  --- CJF10GH001_AI1										
+0										
+1	VK2_app.HLA10_CT001.ioc	HLA10CT001XQ01 Oro iš lauko temperatūra A pusėje								
+2	VK2_app.NDB10_CP001.ioc	NDB10CP001XQ01 Vandens slėgis prieš katilą								
+3	VK2_app.HLA20_CT001.ioc	HLA20CT001XQ01 Oro iš lauko temperatūra B pusėje								
+4	VK2_app.HHF15_CT001.ioc	HHF15CT001XQ01 Mazuto temperatūra katilo mazuto vamzdyne								
+5	VK2_app.HHF22_CF001.ioc	HHF22CF001XQ01 Mazuto srautas paduodamoje linijoje (Degikliai Nr.2, 4, 6)								
+6	VK2_app.HHF30_CF001.ioc	HHF30CF001XQ01 Mazuto srautas grąžinimo linijoje								
+7	VK2_app.HHF15_CP001.ioc	HHF15CP001XQ01 Mazuto slėgis už redukcinio vožtuvo								
+										
+Module  --- CJF10GH001_AI10										
+0	VK2_app.HHG10_CT001.ioc	HHG10CT001XQ01 dujų temperatūra								
+1	VK2_app.H_HG10C.ioc	HHG10CF001 dujų srautas į katilą								
+2	VK2_app.H_HG20C.ioc	HHG20CF001 dujų srautas į katilą								
+3										
+4										
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_AI11										
+0	VK2_app.HHA11_CB001.ioc	HHA11CB001XQ01 Liepsnos skaneris Nr. 1: Liepsnos intensyvumas								
+1	VK2_app.HHA12_CB001.ioc	HHA12CB001XQ01 Liepsnos skaneris Nr. 2: Liepsnos intensyvumas								
+2	VK2_app.HHA13_CB001.ioc	HHA13CB001XQ01 Liepsnos skaneris Nr. 3: Liepsnos intensyvumas								
+3	VK2_app.HHA14_CB001.ioc	HHA14CB001XQ01 Liepsnos skaneris Nr. 4: Liepsnos intensyvumas								
+4	VK2_app.HHA15_CB001.ioc	HHA15CB001XQ01 Liepsnos skaneris Nr. 5: Liepsnos intensyvumas								
+5	VK2_app.HHA16_CB001.ioc	HHA16CB001XQ01 Liepsnos skaneris Nr. 6: Liepsnos intensyvumas								
+6										
+7										
+										
+Module  --- CJF10GH001_AI12										
+0	VK2_app.HHG31_CP002.ioc	HHG31CP002XQ01 Dujų slėgis į degiklį Nr. 1								
+1	VK2_app.HHG32_CP002.ioc	HHG32CP002XQ01 Dujų slėgis į degiklį Nr. 2								
+2	VK2_app.HHG33_CP002.ioc	HHG33CP002XQ01 Dujų slėgis į degiklį Nr. 3								
+3	VK2_app.HHG34_CP002.ioc	HHG34CP002XQ01 Dujų slėgis į degiklį Nr. 4								
+4	VK2_app.HHG35_CP002.ioc	HHG35CP002XQ01 Dujų slėgis į degiklį Nr. 5								
+5	VK2_app.HHG36_CP002.ioc	HHG36CP002XQ01 Dujų slėgis į degiklį Nr. 6								
+6	VK2_app.HHG36_CP002.ioc	HHG36CP002XQ01 Dujų slėgis į degiklį Nr. 6								
+7										
+										
+Module  --- CJF10GH001_AI2										
+0										
+1	VK2_app.HLA10_CP001.ioc	HLA10CP001XQ01 Oro slėgis už A ventiliatoriaus								
+2	VK2_app.HLA20_CP001.ioc	HLA20CP001XQ01 Oro slėgis už B ventiliatoriaus								
+3	VK2_app.HLB10_AN001.ioc	HLB10AN001XQ01 Oro pūtimo ventiliatorius VKV-1A: Srovė, A								
+4	VK2_app.HHL10_CP001.ioc	HHL10CP001XQ01 Oro slėgis prieš 1 degiklį								
+5	VK2_app.HHL20_CP001.ioc	HHL20CP001XQ01 Oro slėgis prieš 2 degiklį								
+6	VK2_app.HHL30_CP001.ioc	HHL30CP001XQ01 Oro slėgis prieš 3 degiklį								
+7	VK2_app.HHL40_CP001.ioc	HHL40CP001XQ01 Oro slėgis prieš 4 degiklį								
+										
+Module  --- CJF10GH001_AI3										
+0	VK2_app.HHL50_CP001.ioc	HHL50CP001XQ01 Oro slėgis prieš 5 degiklį								
+1	VK2_app.HHL60_CP001.ioc	HHL60CP001XQ01 Oro slėgis prieš 6 degiklį								
+2										
+3										
+4	VK2_app.HNA30_CT001.ioc	HNA30CT001XQ01 Dūmų temperatūra už dūmų skląsčio								
+5	VK2_app.HNA10_CQ001.ioc	HNA10CQ001XQ01 Deguonies kiekis dūmuose								
+6	VK2_app.HLA10_CM001.ioc	HLA10CM001XQ01 Degimo oro drėgmė A pusėje								
+7	VK2_app.HLA10_CM001.ioc	HLA10CM001XQ02 Degimo oro temperatūra A pusėje								
+										
+Module  --- CJF10GH001_AI4										
+0	VK2_app.HNA10_CT001.ioc	HNA10CT001XQ01 dūmų temperatūra už katilo								
+1	VK2_app.HNF10_CP001.ioc	HNF10CP001XQ01 Dūmų recirkuliacijos slėgis už ventiliatoriaus								
+2	VK2_app.HNF11_CF001.ioc	HNF11CF001XQ01 Dūmų recirkuliacijos srautas A pusėje								
+3	VK2_app.HNF12_CF001.ioc	HNF12CF001XQ01 Dūmų recirkuliacijos srautas B pusėje								
+4	VK2_app.HLA20_CM001.ioc	HLA20CM001XQ01 Degimo oro drėgmė B pusėje								
+5	VK2_app.HLA20_CM001.ioc	HLA20CM001XQ02 Degimo oro temperatūra B pusėje								
+6	VK2_app.HNF10_CT001.ioc	HNF10CT001XQ01 Dūmų recirkuliacijos temperatūra								
+7	VK2_app.HHT10_CT001.ioc	HHT10CT001XQ01 Savų reikmių garo temperatūra prieš VK-1 A kaloriferį								
+										
+Module  --- CJF10GH001_AI5										
+0	VK2_app.HLA10_CT002.ioc	HLA10CT002XQ01 Degimo oro temperatūra A pusėje								
+1	VK2_app.HLA20_CT002.ioc	HLA20CT002XQ01 Degimo oro temperatūra B pusėje								
+2	VK2_app.HHT20_CT001.ioc	HHT20CT001XQ01 Savų reikmių garo temperatūra prieš VK-1 B kaloriferį								
+3										
+4	VK2_app.LCN10_CT001.ioc	LCN10CT001XQ01 Kondensato po kaloriferio VK-1 A temperatūra								
+5	VK2_app.LCN20_CT001.ioc	LCN20CT001XQ01 Kondensato po kaloriferio VK-1 B temperatūra								
+6	VK2_app.HHT20_CP001.ioc	HHT20CP001XQ01 Savųjų reikmių garo slėgis į VK-1 B kaloriferį								
+7	VK2_app.HHT10_CP001.ioc	HHT10CP001XQ01 Savųjų reikmių garo slėgis į VK-1 A kaloriferį								
+										
+Module  --- CJF10GH001_AI6										
+0										
+1	VK2_app.NDA10_CT003.ioc	NDA10CT003XQ01 Termofikacinio vandens temperatūra už katilo								
+2	VK2_app.NDB10_CT002.ioc	NDB10CT002XQ01 Termofikacinio vandens temperatūra prieš katilą								
+3	VK2_app.NDB10_CT001.ioc	NDB10CT001XQ01 Termofikacinio vandens temperatūra prieš katilą								
+4										
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_AI7										
+0										
+1										
+2	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XQ01 SIDOR analizatorius. NOx								
+3	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XQ02 SIDOR analizatorius. CO								
+4	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XQ03 SIDOR analizatorius. O2								
+5	VK2_app.H_NA30C.ioc	HNA30CQ001 SIDOR analizatorius. Rezervas								
+6										
+7										
+										
+Module  --- CJF10GH001_AI8										
+0	VK2_app.HNF11_AA001.ioc.PV	HNF11AA001XQ01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Padėtis I+								
+1	VK2_app.HNF12_AA001.ioc.PV	HNF12AA001XQ01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Padėtis I+								
+2	VK2_app.HHG20_CF901.ioc	HHG20CF901XQ01 Dujų srautas (B pusė)								
+3	VK2_app.HNA20_AA101B.ioc.PV	HNA20AA101BXQ01 Dūmų skląstis (DS-11): Padėtis I+								
+4	VK2_app.HNA10_CQ001.ioc	HNA10CQ001XQ02 Dūmų temperatūra prieš recirkuliaciją								
+5										
+6	VK2_app.HHG10_CF901.ioc	HHG10CF901XQ01 Dujų srautas (A pusė)								
+7										
+										
+Module  --- CJF10GH001_AI9										
+0	VK2_app.HHF21_AA101.ioc.PV	HHF21AA101XQ01 Mazuto srauto reguliavimo vožtuvas (MZ-131): Padėtis								
+1										
+2										
+3	VK2_app.HHF20_AA101.ioc.PV	HHF20AA101XQ01 Garo srauto į kaloriferį VK-1 B reguliavimo vožtuvas (RG-169): Padėtis								
+4	VK2_app.HHF22_AA101.ioc.PV	HHF22AA101XQ01 Mazuto srauto reguliavimo vožtuvas (MZ-130): Padėtis								
+5	VK2_app.HHF20_AA101.ioc.PV	HHF20AA101XQ01 Garo srauto į kaloriferį VK-1 A reguliavimo vožtuvas (RG-168): Padėtis								
+6										
+7										
+										
+Module  --- CJF10GH001_AO1										
+0	VK2_app.HHF22_AA101.ioc.SP	HHF22AA101YQ70 Mazuto srauto reguliavimo vožtuvas (MZ-1310): Padėties uždavimas								
+1	VK2_app.HHF20_AA101.ioc.SP	HHF20AA101YQ70 Garo srauto į kaloriferį VK-1 A reguliavimo vožtuvas (RG-168): Padėties uždavimas								
+2										
+3	VK2_app.HHF21_AA101.ioc.SP	HHF21AA101YQ70 Mazuto srauto reguliavimo vožtuvas (MZ-131): Padėties uždavimas								
+4	VK2_app.HHF20_AA101.ioc.SP	HHF20AA101YQ70 Garo srauto į kaloriferį VK-1 B reguliavimo vožtuvas (RG-169): Padėties uždavimas								
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_AO2										
+0	VK2_app.HNA20_AA101B.ioc.SP	HNA20AA101BYQ70 Dūmų skląstis (DS-11): Padėties uždavimas								
+1	VK2_app.HHG20_AA102.ioc.SP	HHG20AA102YQ70 Dujų slėgio reguliatorius (D-132): Valdymas								
+2	VK2_app.HHG10_AA102.ioc.SP	HHG10AA102YQ70 Dujų slėgio reguliatorius (D-133): Valdymas								
+3										
+4										
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_AO3										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_DI1										
+0	VK2_app.1944B_JS02GH001.ioc	1944BJS02GH001XB01 ĮVADAS NR.1 AKTYVUS								
+1	VK2_app.1944B_JS02GH001.ioc	1944BJS02GH001XB01 ĮVADAS NR.2 AKTYVUS								
+2	VK2_app.1944B_JS02GH001.ioc	1944BJS02GH001XB01 ĮVADAS NR.1 ĮTAMPA								
+3	VK2_app.1944B_JS02GH001.ioc	1944BJS02GH001XB01 ĮVADAS NR.2 ĮTAMPA								
+4	VK2_app.1944B_JS02G.ioc	1944BJS02GH001 REZERVAS 1								
+5	VK2_app.1944B_JS02G.ioc	1944BJS02GH001 REZERVAS 2								
+6	VK2_app.HNF10_AN001.ioc	HNF10AN001XB03 Recirkuliacinis dūmsiurbis (VK-1RDS): DK įtampos kontrolė								
+7										
+8										
+9										
+10										
+11	VK2_app.CYQ10_FQ001..ioc	CYQ10FQ001.XG01 Paveikė VK-1 uždujinimo jutiklis Nr.1								
+12	VK2_app.CYQ10_FQ001..ioc	CYQ10FQ001.XG03 Paveikė VK-1 uždujinimo jutiklis Nr.2								
+13	VK2_app.CYQ10_FQ001..ioc	CYQ10FQ001.XG05 Paveikė VK-1 uždujinimo jutiklis Nr.3								
+14	VK2_app.CYQ10_FQ001..ioc	CYQ10FQ001.XG07 Paveikė VK-1 uždujinimo jutiklis Nr.4								
+15	VK2_app.CYQ10_FQ001..ioc	CYQ10FQ001.XM01 Išjungta VK-1 uždujinimo signalizatoriaus maitinimo įtampa								
+										
+Module  --- CJF10GH001_DI10										
+0	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XB49 SIDOR analizatorius. Klaida								
+1	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XB32 SIDOR analizatorius. Analizatorius serviso rėžime								
+2	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XB48 SIDOR analizatorius. Analizatoriaus gedimas								
+3	VK2_app.H_NA30C.ioc	HNA30CQ001 SIDOR analizatorius. Rezervas								
+4	VK2_app.HNA30_CQ001.ioc	HNA30CQ001XB25 DAS maitinimo šaltinio gedimas								
+5	VK2_app.HHG20_AA102.ioc.CLD	HHG20AA102XB02 Dujų slėgio reguliatorius (D-132): Uždarytas								
+6	VK2_app.HHG20_AA102.ioc.OPD	HHG20AA102XB01 Dujų slėgio reguliatorius (D-132): Atidarytas								
+7										
+8	VK2_app.HLB10_AN001.ioc	HLB10AN001XB01 Oro pūtimo ventiliatorius VKV-1A: I-as greitis								
+9	VK2_app.HLB10_AN001.ioc	HLB10AN001XB02 Oro pūtimo ventiliatorius VKV-1A: II-as greitis								
+10	VK2_app.HLB10_AN001.ioc	HLB10AN001XB03 Oro pūtimo ventiliatorius VKV-1A: Įtampos kontrolė paleidimo grandinėse								
+11	VK2_app.HLB10_AN001.ioc	HLB10AN001XB04 Oro pūtimo ventiliatorius VKV-1A: Pirmo guolio temperatūros kontrolė								
+12	VK2_app.HLB10_AN001.ioc	HLB10AN001XB05 Oro pūtimo ventiliatorius VKV-1A: I-o greičio apvijų temperatūros kontrolė								
+13	VK2_app.HLB10_AN001.ioc	HLB10AN001XB06 Oro pūtimo ventiliatorius VKV-1A: II-o greičio apvijų temperatūros kontrolė								
+14	VK2_app.HLB10_AN001.ioc	HLB10AN001XB07 Oro pūtimo ventiliatorius VKV-1A: Antro guolio temperatūros kontrolė								
+15	VK2_app.HLB10_AN001.ioc	HLB10AN001XB08 Oro pūtimo ventiliatorius VKV-1A: Avarinis stabdymas								
+										
+Module  --- CJF10GH001_DI11										
+0	VK2_app.HHM14_AA191.ioc.CLD	HHM14AA191XB02 Degiklio Nr.4 garo vožtuvas (RG-104A): Uždaryta								
+1	VK2_app.HHM14_AA191.ioc.OPD	HHM14AA191XB01 Degiklio Nr.4 garo vožtuvas (RG-104A): Atidaryta								
+2	VK2_app.HHM14_AA192.ioc.CLD	HHM14AA192XB02 Degiklio Nr.4 garo vožtuvas (RG-104B): Uždaryta								
+3	VK2_app.HHM14_AA192.ioc.OPD	HHM14AA192XB01 Degiklio Nr.4 garo vožtuvas (RG-104B): Atidaryta								
+4	VK2_app.HHF34_AA191.ioc.OPD	HHF34AA191XB01 Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-104): Atidaryta								
+5	VK2_app.HHF34_AA192.ioc.OPD	HHF34AA192XB01 Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-104A): Atidaryta								
+6	VK2_app.HHM15_AA191.ioc.CLD	HHM15AA191XB02 Degiklio Nr.5 garo vožtuvas (RG-105A): Uždaryta								
+7	VK2_app.HHM15_AA191.ioc.OPD	HHM15AA191XB01 Degiklio Nr.5 garo vožtuvas (RG-105A): Atidaryta								
+8	VK2_app.HHM15_AA192.ioc.CLD	HHM15AA192XB02 Degiklio Nr.5 garo vožtuvas (RG-105B): Uždaryta								
+9	VK2_app.HHM15_AA192.ioc.OPD	HHM15AA192XB01 Degiklio Nr.5 garo vožtuvas (RG-105B): Atidaryta								
+10	VK2_app.HHF35_AA191.ioc.OPD	HHF35AA191XB01 Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-105): Atidaryta								
+11	VK2_app.HHF35_AA192.ioc.OPD	HHF35AA192XB01 Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-105A): Atidaryta								
+12	VK2_app.HHM16_AA191.ioc.CLD	HHM16AA191XB02 Degiklio Nr.6 garo vožtuvas (RG-106A): Uždaryta								
+13	VK2_app.HHM16_AA191.ioc.OPD	HHM16AA191XB01 Degiklio Nr.6 garo vožtuvas (RG-106A): Atidaryta								
+14	VK2_app.HHM16_AA192.ioc.CLD	HHM16AA192XB02 Degiklio Nr.6 garo vožtuvas (RG-106B): Uždaryta								
+15	VK2_app.HHM16_AA192.ioc.OPD	HHM16AA192XB01 Degiklio Nr.6 garo vožtuvas (RG-106B): Atidaryta								
+										
+Module  --- CJF10GH001_DI12										
+0	VK2_app.HHF36_AA191.ioc.OPD	HHF36AA191XB01 Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-106): Atidaryta								
+1	VK2_app.HHF36_AA192.ioc.OPD	HHF36AA192XB01 Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-106A): Atidaryta								
+2	VK2_app.HHG20_AA191.ioc.CLD	HHG20AA191XB02 Dujų į uždegtuvus atkirtos vožtuvas (D-126): Uždaryta								
+3	VK2_app.HHG20_AA191.ioc.OPD	HHG20AA191XB01 Dujų į uždegtuvus atkirtos vožtuvas (D-126): Atidaryta								
+4	VK2_app.HHG10_AA191.ioc.CLD	HHG10AA191XB02 Dujų į degiklius atkirtos vožtuvas (D-127): Uždaryta								
+5	VK2_app.HHG10_AA191.ioc.OPD	HHG10AA191XB01 Dujų į degiklius atkirtos vožtuvas (D-127): Atidaryta								
+6	VK2_app.HHG10_AA102.ioc.CLD	HHG10AA102XB02 Dujų slėgio reguliatorius (D-133): Uždarytas								
+7	VK2_app.HHG10_AA102.ioc.OPD	HHG10AA102XB01 Dujų slėgio reguliatorius (D-133): Atidarytas								
+8										
+9										
+10	VK2_app.HHG31_AA191.ioc.OPD	HHG31AA191XB01 Degiklio Nr.1 dujų kontrolinis vožtuvas (D-101A): Atidaryta								
+11										
+12										
+13	VK2_app.HHG31_AA502.ioc.CLD	HHG31AA502XB02 Degiklio Nr.1 dujų saugos žvakė (D-101C): Uždaryta								
+14	VK2_app.HHG31_AA502.ioc.OPD	HHG31AA502XB01 Degiklio Nr.1 dujų saugos žvakė (D-101C1): Atidaryta								
+15	VK2_app.HHG32_AA191.ioc.OPD	HHG32AA191XB01 Degiklio Nr.2 dujų kontrolinis vožtuvas (D-102A): Atidaryta								
+										
+Module  --- CJF10GH001_DI13										
+0										
+1	VK2_app.HHG32_AA502.ioc.CLD	HHG32AA502XB02 Degiklio Nr.2 dujų saugos žvakė (D-102C): Uždaryta								
+2	VK2_app.HHG32_AA502.ioc.OPD	HHG32AA502XB01 Degiklio Nr.2 dujų saugos žvakė (D-102C): Atidaryta								
+3										
+4										
+5	VK2_app.HHG33_AA502.ioc.CLD	HHG33AA502XB02 Degiklio Nr.3 dujų saugos žvakė (D-103C): Uždaryta								
+6	VK2_app.HHG33_AA502.ioc.OPD	HHG33AA502XB01 Degiklio Nr.3 dujų saugos žvakė (D-103C): Atidaryta								
+7	VK2_app.HHG33_AA191.ioc.OPD	HHG33AA191XB01 Degiklio Nr.3 dujų kontrolinis vožtuvas (D-103A): Atidaryta								
+8	VK2_app.HHG34_AA191.ioc.OPD	HHG34AA191XB01 Degiklio Nr.4 dujų kontrolinis vožtuvas (D-104A): Atidaryta								
+9										
+10										
+11	VK2_app.HHG34_AA502.ioc.CLD	HHG34AA502XB02 Degiklio Nr.4 dujų saugos žvakė (D-104C): Uždaryta								
+12	VK2_app.HHG34_AA502.ioc.OPD	HHG34AA502XB01 Degiklio Nr.4 dujų saugos žvakė (D-104C): Atidaryta								
+13										
+14										
+15	VK2_app.HHG35_AA191.ioc.OPD	HHG35AA191XB01 Degiklio Nr.5 dujų kontrolinis vožtuvas (D-105A): Atidaryta								
+										
+Module  --- CJF10GH001_DI14										
+0	VK2_app.HHG35_AA502.ioc.CLD	HHG35AA502XB02 Degiklio Nr.5 dujų saugos žvakė (D-105C): Uždaryta								
+1	VK2_app.HHG35_AA502.ioc.OPD	HHG35AA502XB01 Degiklio Nr.5 dujų saugos žvakė (D-105C): Atidaryta								
+2	VK2_app.HHG36_AA191.ioc.OPD	HHG36AA191XB01 Degiklio Nr.6 dujų kontrolinis vožtuvas (D-106A): Atidaryta								
+3										
+4										
+5	VK2_app.HHG36_AA502.ioc.CLD	HHG36AA502XB02 Degiklio Nr.6 dujų saugos žvakė (D-106C): Uždaryta								
+6	VK2_app.HHG36_AA502.ioc.OPD	HHG36AA502XB01 Degiklio Nr.6 dujų saugos žvakė (D-106C): Atidaryta								
+7	VK2_app.HHG21_AA502.ioc.CLD	HHG21AA502XB02 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-113): Uždaryta								
+8	VK2_app.HHG21_AA502.ioc.OPD	HHG21AA502XB01 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-113): Atidaryta								
+9	VK2_app.HHG22_AA502.ioc.CLD	HHG22AA502XB02 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-114): Uždaryta								
+10	VK2_app.HHG22_AA502.ioc.OPD	HHG22AA502XB01 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-114): Atidaryta								
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DI15										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DI16										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DI17										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DI18										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DI2										
+0	VK2_app.HNF10_AA001.ioc.OPD	HNF10AA001XB01 Dūmų recirkuliacijos skląstis (1DU-2): Atidaryta								
+1	VK2_app.HNF10_AA001.ioc.CLD	HNF10AA001XB02 Dūmų recirkuliacijos skląstis (1DU-2): Uždaryta								
+2	VK2_app.HNF10_AA001.ioc.Ready	HNF10AA001XB03 Dūmų recirkuliacijos skląstis (1DU-2): Paruošta								
+3	VK2_app.HNF10_AA001.ioc.SP	HNF10AA001XB31 Dūmų recirkuliacijos skląstis (1DU-2): Distancinis valdymas								
+4	VK2_app.HNF11_AA001.ioc.OPD	HNF11AA001XB01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Atidaryta								
+5	VK2_app.HNF11_AA001.ioc.CLD	HNF11AA001XB02 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Uždaryta								
+6	VK2_app.HNF11_AA001.ioc.Ready	HNF11AA001XB03 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Paruošta								
+7	VK2_app.HNF11_AA001.ioc.SP	HNF11AA001XB31 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Distancinis valdymas								
+8	VK2_app.HNF12_AA001.ioc.OPD	HNF12AA001XB01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Atidaryta								
+9	VK2_app.HNF12_AA001.ioc.CLD	HNF12AA001XB02 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Uždaryta								
+10	VK2_app.HNF12_AA001.ioc.Ready	HNF12AA001XB03 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Paruošta								
+11	VK2_app.HNF12_AA001.ioc.SP	HNF12AA001XB31 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Distancinis valdymas								
+12	VK2_app.HLA20_AA101.ioc.OPD	HLA20AA101XB01 Oro iš aplinkos skląstis (OS-10B): Atidaryta								
+13	VK2_app.HLA20_AA101.ioc.CLD	HLA20AA101XB02 Oro iš aplinkos skląstis (OS-10B): Uždaryta								
+14	VK2_app.HLA20_AA101.ioc.Ready	HLA20AA101XB03 Oro iš aplinkos skląstis (OS-10B): Paruošta								
+15	VK2_app.HLA20_AA101.ioc.SP	HLA20AA101XB31 Oro iš aplinkos skląstis (OS-10B): Distancinis valdymas								
+										
+Module  --- CJF10GH001_DI3										
+0	VK2_app.HLA10_AA101.ioc.OPD	HLA10AA101XB01 Oro iš aplinkos skląstis (OS-10A): Atidaryta								
+1	VK2_app.HLA10_AA101.ioc.CLD	HLA10AA101XB02 Oro iš aplinkos skląstis (OS-10A): Uždaryta								
+2	VK2_app.HLA10_AA101.ioc.Ready	HLA10AA101XB03 Oro iš aplinkos skląstis (OS-10A): Paruošta								
+3	VK2_app.HLA10_AA101.ioc.SP	HLA10AA101XB31 Oro iš aplinkos skląstis (OS-10A): Distancinis valdymas								
+4										
+5										
+6										
+7										
+8	VK2_app.HHF05_AA001.ioc.OPD	HHF05AA001XB01 Mazuto įvadinė sklendė (MZ-119): Atidaryta								
+9	VK2_app.HHF05_AA001.ioc.CLD	HHF05AA001XB02 Mazuto įvadinė sklendė (MZ-119): Uždaryta								
+10	VK2_app.HHF05_AA001.ioc.Ready	HHF05AA001XB03 Mazuto įvadinė sklendė (MZ-119): Paruošta								
+11										
+12	VK2_app.HHF40_AA001.ioc.OPD	HHF40AA001XB01 Mazuto recirkuliacijos sklendė (MZ-125): Atidaryta								
+13	VK2_app.HHF40_AA001.ioc.CLD	HHF40AA001XB02 Mazuto recirkuliacijos sklendė (MZ-125): Uždaryta								
+14	VK2_app.HHF40_AA001.ioc.Ready	HHF40AA001XB03 Mazuto recirkuliacijos sklendė (MZ-125): Paruošta								
+15										
+										
+Module  --- CJF10GH001_DI4										
+0	VK2_app.HHF21_AA004.ioc.OPD	HHF21AA004YB21 Mazuto vožtuvas (MZ-137): Atidaryta								
+1	VK2_app.HHF21_AA004.ioc.CLD	HHF21AA004YB21 Mazuto vožtuvas (MZ-137): Uždaryta								
+2	VK2_app.HHF22_AA004.ioc.OPD	HHF22AA004YB21 Mazuto vožtuvas (MZ-136): Atidaryta								
+3	VK2_app.HHF22_AA004.ioc.CLD	HHF22AA004YB21 Mazuto vožtuvas (MZ-136): Uždaryta								
+4	VK2_app.HHA11_CB001.ioc.trip	HHA11CB001XB02 Liepsnos skaneris Nr. 1: Skanerio gedimas								
+5	VK2_app.HHA12_CB001.ioc.trip	HHA12CB001XB02 Liepsnos skaneris Nr. 2: Skanerio gedimas								
+6	VK2_app.HHA13_CB001.ioc.trip	HHA13CB001XB02 Liepsnos skaneris Nr. 3: Skanerio gedimas								
+7	VK2_app.HHA14_CB001.ioc.trip	HHA14CB001XB02 Liepsnos skaneris Nr. 4: Skanerio gedimas								
+8										
+9										
+10										
+11										
+12										
+13										
+14	VK2_app.HHA15_CB001.ioc.trip	HHA15CB001XB02 Liepsnos skaneris Nr. 5: Skanerio gedimas								
+15	VK2_app.HHA16_CB001.ioc.trip	HHA16CB001XB02 Liepsnos skaneris Nr. 6: Skanerio gedimas								
+										
+Module  --- CJF10GH001_DI5										
+0	VK2_app.HHL10_AA002.ioc.CLD	HHL10AA002XB02 Degiklio Nr.1 oro užsklanda (OS-14A): Uždaryta								
+1	VK2_app.HHL10_AA002.ioc.OPD	HHL10AA002XB01 Degiklio Nr.1 oro užsklanda (OS-14A): Atidaryta								
+2	VK2_app.HHL20_AA002.ioc.CLD	HHL20AA002XB02 Degiklio Nr.2 oro užsklanda (OS-14B): Uždaryta								
+3	VK2_app.HHL20_AA002.ioc.OPD	HHL20AA002XB01 Degiklio Nr.2 oro užsklanda (OS-14B): Atidaryta								
+4	VK2_app.HHL30_AA002.ioc.CLD	HHL30AA002XB02 Degiklio Nr.3 oro užsklanda (OS-15A): Uždaryta								
+5	VK2_app.HHL3_0AA02.ioc.OPD	HHL30AA02XB01 Degiklio Nr.3 oro užsklanda (OS-15A): Atidaryta								
+6	VK2_app.HHL40_AA002.ioc.CLD	HHL40AA002XB02 Degiklio Nr.4 oro užsklanda (OS-15B): Uždaryta								
+7	VK2_app.HHL40_AA002.ioc.OPD	HHL40AA002XB01 Degiklio Nr.4 oro užsklanda (OS-15B): Atidaryta								
+8	VK2_app.HHL50_AA002.ioc.CLD	HHL50AA002XB02 Degiklio Nr.5 oro užsklanda (OS-16A): Uždaryta								
+9	VK2_app.HHL50_AA002.ioc.OPD	HHL50AA002XB01 Degiklio Nr.5 oro užsklanda (OS-16A): Atidaryta								
+10	VK2_app.HHL60_AA002.ioc.CLD	HHL60AA002XB02 Degiklio Nr.6 oro užsklanda (OS-16B): Uždaryta								
+11	VK2_app.HHL60_AA002.ioc.OPD	HHL60AA002XB01 Degiklio Nr.6 oro užsklanda (OS-16B): Atidaryta								
+12	VK2_app.HHM11_AA191.ioc.CLD	HHM11AA191XB02 Degiklio Nr.1 garo vožtuvas (RG-101A): Uždaryta								
+13	VK2_app.HHM11_AA191.ioc.OPD	HHM11AA191XB01 Degiklio Nr.1 garo vožtuvas (RG-101A): Atidaryta								
+14	VK2_app.HHM11_AA192.ioc.CLD	HHM11AA192XB02 Degiklio Nr.1 garo vožtuvas (RG-101B): Uždaryta								
+15	VK2_app.HHM11_AA192.ioc.OPD	HHM11AA192XB01 Degiklio Nr.1 garo vožtuvas (RG-101B): Atidaryta								
+										
+Module  --- CJF10GH001_DI6										
+0	VK2_app.HHF31_AA191.ioc.OPD	HHF31AA191XB01 Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-101): Atidaryta								
+1	VK2_app.HHF31_AA192.ioc.OPD	HHF31AA192XB01 Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-101A): Atidaryta								
+2	VK2_app.HHM12_AA191.ioc.CLD	HHM12AA191XB02 Degiklio Nr.2 garo vožtuvas (RG-102A): Uždaryta								
+3	VK2_app.HHM12_AA191.ioc.OPD	HHM12AA191XB01 Degiklio Nr.2 garo vožtuvas (RG-102A): Atidaryta								
+4	VK2_app.HHM12_AA192.ioc.CLD	HHM12AA192XB02 Degiklio Nr.2 garo vožtuvas (RG-102B): Uždaryta								
+5	VK2_app.HHM12_AA192.ioc.OPD	HHM12AA192XB01 Degiklio Nr.2 garo vožtuvas (RG-102B): Atidaryta								
+6	VK2_app.HHF32_AA191.ioc.OPD	HHF32AA191XB01 Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-102): Atidaryta								
+7	VK2_app.HHF32_AA192.ioc.OPD	HHF32AA192XB01 Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-102A): Atidaryta								
+8	VK2_app.HHM13_AA191.ioc.CLD	HHM13AA191XB02 Degiklio Nr.3 garo vožtuvas (RG-103A): Uždaryta								
+9	VK2_app.HHM13_AA191.ioc.OPD	HHM13AA191XB01 Degiklio Nr.3 garo vožtuvas (RG-103A): Atidaryta								
+10	VK2_app.HHM13_AA192.ioc.CLD	HHM13AA192XB02 Degiklio Nr.3 garo vožtuvas (RG-103B): Uždaryta								
+11	VK2_app.HHM13_AA192.ioc.OPD	HHM13AA192XB01 Degiklio Nr.3 garo vožtuvas (RG-103B): Atidaryta								
+12	VK2_app.HHF33_AA191.ioc.OPD	HHF33AA191XB01 Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-103): Atidaryta								
+13	VK2_app.HHF33_AA192.ioc.OPD	HHF33AA192XB01 Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-103A): Atidaryta								
+14										
+15										
+										
+Module  --- CJF10GH001_DI7										
+0	VK2_app.HHA10_AE001.ioc.OPD	HHA10AE001XB02 Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Įstumtas								
+1	VK2_app.HHA10_AE001.ioc.Cld	HHA10AE001XB01 Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+2	VK2_app.HHA20_AE001.ioc.OPD	HHA20AE001XB02 Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Įstumtas								
+3	VK2_app.HHA20_AE001.ioc.Cld	HHA20AE001XB01 Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+4	VK2_app.HHA30_AE001.ioc.OPD	HHA30AE001XB02 Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Įstumtas								
+5	VK2_app.HHA30_AE001.ioc.Cld	HHA30AE001XB01 Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+6	VK2_app.HHA40_AE001.ioc.OPD	HHA40AE001XB02 Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Įstumtas								
+7	VK2_app.HHA40_AE001.ioc.Cld	HHA40AE001XB01 Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+8										
+9										
+10										
+11										
+12	VK2_app.HNA20_AA101B.ioc.OPD	HNA20AA101BXB01 Dūmų skląstis (DS-11): Atidaryta								
+13	VK2_app.HNA20_AA101B.ioc.CLD	HNA20AA101BXB02 Dūmų skląstis (DS-11): Uždaryta								
+14	VK2_app.HNA20_AA101B.ioc.Ready	HNA20AA101BXB03 Dūmų skląstiss (DS-11): Paruošta								
+15	VK2_app.HNA20_AA101B.ioc.SP	HNA20AA101BXB31 Dūmų skląstis (DS-11): Distancinis valdymas								
+										
+Module  --- CJF10GH001_DI8										
+0	VK2_app.NDB10_AA001.ioc.Ready	NDB10AA001XB03 Termofikacinio vandens sklendė prieš katilą (V-10): Paruošta								
+1	VK2_app.NDB10_AA001.ioc.OPD	NDB10AA001XB01 Termofikacinio vandens sklendė prieš katilą (V-10): Atidaryta								
+2	VK2_app.NDB10_AA001.ioc.CLD	NDB10AA001XB02 Termofikacinio vandens sklendė prieš katilą (V-10): Uždaryta								
+3	VK2_app.NDA10_AA002.ioc.Ready	NDA10AA002XB03 Termofikacinio vandens sklendė už katilo (V-11): Paruošta								
+4	VK2_app.NDA10_AA002.ioc.OPD	NDA10AA002XB01 Termofikacinio vandens sklendė už katilo (V-11): Atidaryta								
+5	VK2_app.NDA10_AA002.ioc.CLD	NDA10AA002XB02 Termofikacinio vandens sklendė už katilo (V-11): Uždaryta								
+6	VK2_app.HAG10_AA001.ioc.Ready	HAG10AA001XB03 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Paruošta								
+7	VK2_app.HAG10_AA001.ioc.OPD	HAG10AA001XB01 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Atidaryta								
+8	VK2_app.HAG10_AA001.ioc.CLD	HAG10AA001XB02 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Uždaryta								
+9	VK2_app.HAG10_AA002.ioc.Ready	HAG10AA002XB03 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Paruošta								
+10	VK2_app.HAG10_AA002.ioc.OPD	HAG10AA002XB01 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Atidaryta								
+11	VK2_app.HAG10_AA002.ioc.CLD	HAG10AA002XB02 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Uždaryta								
+12	VK2_app.HAG10_AA101.ioc.Ready	HAG10AA101XB03 Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V-83): Paruošta								
+13	VK2_app.HAG10_AA101.ioc.OPN	HAG10AA101YB21 Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V-83): Atidaryti								
+14	VK2_app.HAG10_AA101.ioc.CLS	HAG10AA101YB22 Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V-83): Uždaryti								
+15										
+										
+Module  --- CJF10GH001_DI9										
+0										
+1										
+2										
+3										
+4										
+5	VK2_app.HHA60_AE001.ioc.OPD	HHA60AE001XB02 Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Įstumtas								
+6	VK2_app.HHA60_AE001.ioc.Cld	HHA60AE001XB01 Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+7	VK2_app.HHA50_AE001.ioc.OPD	HHA50AE001XB02 Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Įstumtas								
+8	VK2_app.HHA50_AE001.ioc.Cld	HHA50AE001XB01 Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+9	VK2_app.HHG31_AA001.ioc.OPD	HHG31AA001XB01 Degiklio Nr.1 dujų darbinis vožtuvas (D-101B): Atidaryta								
+10	VK2_app.HHG32_AA001.ioc.OPD	HHG32AA001XB01 Degiklio Nr.2 dujų darbinis vožtuvas (D-102B): Atidaryta								
+11	VK2_app.HHG33_AA001.ioc.OPD	HHG33AA001XB01 Degiklio Nr.3 dujų darbinis vožtuvas (D-103B): Atidaryta								
+12	VK2_app.HHG34_AA001.ioc.OPD	HHG34AA001XB01 Degiklio Nr.4 dujų darbinis vožtuvas (D-104B): Atidaryta								
+13	VK2_app.HHG35_AA001.ioc.OPD	HHG35AA001XB01 Degiklio Nr.5 dujų darbinis vožtuvas (D-105B): Atidaryta								
+14	VK2_app.HHG36_AA001.ioc.OPD	HHG36AA001XB01 Degiklio Nr.6 dujų darbinis vožtuvas (D-106B): Atidaryta								
+15										
+										
+Module  --- CJF10GH001_DO1										
+0	VK2_app.HNF10_AA001.ioc.CLS	HNF10AA001YB22 Dūmų ;recirkuliacijos skląstis (1DU-2): Uždaryti								
+1	VK2_app.HNF10_AA001.ioc	HNF10AA001YB21 Dūmų recirkuliacijos skląstis (1DU-2); Atidaryti								
+2	VK2_app.HNF11_AA001.ioc.CLS	HNF11AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Uždaryti								
+3	VK2_app.HNF11_AA001.ioc.OPN	HNF11AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Atidaryti								
+4	VK2_app.HNF12_AA001.ioc.CLS	HNF12AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Uždaryti								
+5	VK2_app.HNF12_AA001.ioc.OPN	HNF12AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Atidaryti								
+6	VK2_app.HLA20_AA101.ioc.CLS	HLA20AA101YB22 Oro iš aplinkos skląstis (OS-10B): Uždaryti								
+7	VK2_app.HLA20_AA101.ioc.OPN	HLA20AA101YB21 Oro iš aplinkos skląstis (OS-10B): Atidaryti								
+8	VK2_app.HLA10_AA101.ioc.CLS	HLA10AA101YB22 Oro iš aplinkos skląstis (OS-10A): Uždaryti								
+9	VK2_app.HLA10_AA101.ioc.OPN	HLA10AA101YB21 Oro iš aplinkos skląstis (OS-10A): Atidaryti								
+10	VK2_app.HHF05_AA001.ioc.CLS	HHF05AA001YB22 Mazuto įvadinė sklendė (MZ-119): Uždaryti								
+11	VK2_app.HHF05_AA001.ioc.OPN	HHF05AA001YB21 Mazuto įvadinė sklendė (MZ-119): Atidaryti								
+12	VK2_app.HHF40_AA001.ioc.CLS	HHF40AA001YB22 Mazuto recirkuliacijos sklendė (MZ-125): Uždaryti								
+13	VK2_app.HHF40_AA001.ioc.OPN	HHF40AA001YB21 Mazuto recirkuliacijos sklendė (MZ-125): Atidaryti								
+14										
+15										
+										
+Module  --- CJF10GH001_DO2										
+0	VK2_app.HLB10_AN001.ioc	HLB10AN001YB01 Oro pūtimo ventiliatorius VKV-1A: įjungti I-ą greitį								
+1	VK2_app.HLB10_AN001.ioc	HLB10AN001YB02 Oro pūtimo ventiliatorius VKV-1A: įjungti II-ą greitį								
+2	VK2_app.HLB10_AN001.ioc	HLB10AN001YB03 Oro pūtimo ventiliatorius VKV-1A: stabdyti								
+3	VK2_app.HLB10_AN001.ioc.Nen	HLB10AN001YB04 Oro pūtimo ventiliatorius VKV-1A: Apsaugų deblokavimas								
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DO3										
+0	VK2_app.NDB10_AA001.ioc.OPN	NDB10AA001YB21 Termofikacinio vandens sklendė prieš katilą (V-10): Atidaryti								
+1	VK2_app.NDB10_AA001.ioc.CLS	NDB10AA001YB22 Termofikacinio vandens sklendė prieš katilą (V-10): Uždaryti								
+2	VK2_app.NDA10_AA002.ioc.OPN	NDA10AA002YB21 Termofikacinio vandens sklendė už katilo (V-11): Atidaryti								
+3	VK2_app.NDA10_AA002.ioc.CLS	NDA10AA002YB22 Termofikacinio vandens sklendė už katilo (V-11): Uždaryti								
+4	VK2_app.HAG10_AA001.ioc.OPN	HAG10AA001YB21 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Atidaryti								
+5	VK2_app.HAG10_AA001.ioc.CLS	HAG10AA001YB22 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Uždaryti								
+6	VK2_app.HAG10_AA002.ioc.OPN	HAG10AA002YB21 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Atidaryti								
+7	VK2_app.HAG10_AA002.ioc.CLS	HAG10AA002YB22 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Uždaryti								
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DO4										
+0	VK2_app.HHA10_AE001.ioc.Opn	HHA10AE001YB21 Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Pirmyn								
+1	VK2_app.HHA20_AE001.ioc.Opn	HHA20AE001YB21 Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Pirmyn								
+2	VK2_app.HHA30_AE001.ioc.Opn	HHA30AE001YB21 Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Pirmyn								
+3	VK2_app.HHA40_AE001.ioc.Opn	HHA40AE001YB21 Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Pirmyn								
+4	VK2_app.HHA50_AE001.ioc.Opn	HHA50AE001YB21 Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Pirmyn								
+5	VK2_app.HHA60_AE001.ioc.Opn	HHA60AE001YB21 Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Pirmyn								
+6										
+7										
+8	VK2_app.HHG20_AA102.ioc.PV	HHG20AA102YB22 Dujų slėgio reguliatorius (D-132): Saugi padėtis								
+9	VK2_app.HJG10_AA501.ioc.CLS	HJG10AA501YB22 Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D-115): Uždaryti								
+10	VK2_app.HJG20_AA501.ioc.CLS	HJG20AA501YB22 Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D-116): Uždaryti								
+11	VK2_app.HJG31_AA501.ioc.CLS	HJG31AA501YB22 Uždegtuvo Nr.1 dujų saugos žvakė (D-107C): Uždaryti								
+12	VK2_app.HJG32_AA501.ioc.CLS	HJG32AA501YB22 Uždegtuvo Nr.2 dujų saugos žvakė (D-108C): Uždaryti								
+13	VK2_app.HJG33_AA501.ioc.CLS	HJG33AA501YB22 Uždegtuvo Nr.3 dujų saugos žvakė (D-109C): Uždaryti								
+14	VK2_app.HJG34_AA501.ioc.CLS	HJG34AA501YB22 Uždegtuvo Nr.4 dujų saugos žvakė (D-110C): Uždaryti								
+15	VK2_app.HJG35_AA501.ioc.CLS	HJG35AA501YB22 Uždegtuvo Nr.5 dujų saugos žvakė (D-111C): Uždaryti								
+										
+Module  --- CJF10GH001_DO5										
+0	VK2_app.HJG36_AA501.ioc.CLS	HJG36AA501YB22 Uždegtuvo Nr.6 dujų saugos žvakė (D-112C): Uždaryti								
+1	VK2_app.HHG10_AA102.ioc.PV	HHG10AA102YB22 Dujų slėgio reguliatorius (D-133): Saugi padėtis								
+2	VK2_app.CJF10_EZ001.ioc	CJF10EZ001YL84 Sirenos paleidimas								
+3										
+4	VK2_app.HHG31_AA502.ioc.CLS	HHG31AA502YB22 Degiklio Nr.1 dujų saugos žvakė (D-101C): Uždaryti								
+5										
+6	VK2_app.HHG32_AA502.ioc.CLS	HHG32AA502YB22 Degiklio Nr.2 dujų saugos žvakė (D-102C): Uždaryti								
+7										
+8	VK2_app.HHG33_AA502.ioc.CLS	HHG33AA502YB22 Degiklio Nr.3 dujų saugos žvakė (D-103C): Uždaryti								
+9										
+10	VK2_app.HHG34_AA502.ioc.CLS	HHG34AA502YB22 Degiklio Nr.4 dujų saugos žvakė (D-104C): Uždaryti								
+11										
+12	VK2_app.HHG35_AA502.ioc.CLS	HHG35AA502YB22 Degiklio Nr.5 dujų saugos žvakė (D-105C): Uždaryti								
+13										
+14	VK2_app.HHG36_AA502.ioc.CLS	HHG36AA502YB22 Degiklio Nr.6 dujų saugos žvakė (D-106C): Uždaryti								
+15	VK2_app.HHG21_AA502.ioc.CLS	HHG21AA502YB22 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-113): Uždaryti								
+										
+Module  --- CJF10GH001_DO6										
+0	VK2_app.HHG22_AA502.ioc.CLS	HHG22AA502YB22 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-114): Uždaryti								
+1	VK2_app.HHL10_AA002.ioc.OPN	HHL10AA002YB22 Degiklio Nr.1 oro užsklanda (OS-14A): Atidaryti								
+2	VK2_app.HHL20_AA002.ioc.OPN	HHL20AA002YB22 Degiklio Nr.2 oro užsklanda (OS-14B): Atidaryti								
+3	VK2_app.HHL30_AA002.ioc.OPN	HHL30AA002YB22 Degiklio Nr.3 oro užsklanda (OS-15A): Atidaryti								
+4	VK2_app.HHL40_AA002.ioc.OPN	HHL40AA002YB22 Degiklio Nr.4 oro užsklanda (OS-15B): Atidaryti								
+5	VK2_app.HHL50_AA002.ioc.OPN	HHL50AA002YB22 Degiklio Nr.5 oro užsklanda (OS-16A): Atidaryti								
+6	VK2_app.HHL60_AA002.ioc.OPN	HHL60AA002YB22 Degiklio Nr.6 oro užsklanda (OS-16B): Atidaryti								
+7	VK2_app.HHM11_AA191.ioc.OPN	HHM11AA191YB21 Degiklio Nr.1 garo vožtuvas (RG-101A): Atidaryti								
+8	VK2_app.HHM11_AA192.ioc.OPN	HHM11AA192YB21 Degiklio Nr.1 garo vožtuvas (RG-101B): Atidaryti								
+9	VK2_app.HHM12_AA191.ioc.OPN	HHM12AA191YB21 Degiklio Nr.2 garo vožtuvas (RG-102A): Atidaryti								
+10	VK2_app.HHM12_AA192.ioc.OPN	HHM12AA192YB21 Degiklio Nr.2 garo vožtuvas (RG-102B): Atidaryti								
+11	VK2_app.HHM13_AA191.ioc.OPN	HHM13AA191YB21 Degiklio Nr.3 garo vožtuvas (RG-103A): Atidaryti								
+12	VK2_app.HHM13_AA192.ioc.OPN	HHM13AA192YB21 Degiklio Nr.3 garo vožtuvas (RG-103B): Atidaryti								
+13	VK2_app.HHM14_AA191.ioc.OPN	HHM14AA191YB21 Degiklio Nr.4 garo vožtuvas (RG-104A): Atidaryti								
+14	VK2_app.HHM14_AA192.ioc.OPN	HHM14AA192YB21 Degiklio Nr.4 garo vožtuvas (RG-104B): Atidaryti								
+15	VK2_app.HHM15_AA191.ioc.OPN	HHM15AA191YB21 Degiklio Nr.5 garo vožtuvas (RG-105A): Atidaryti								
+										
+Module  --- CJF10GH001_DO7										
+0	VK2_app.HHM15_AA192.ioc.OPN	HHM15AA192YB21 Degiklio Nr.5 garo vožtuvas (RG-105B): Atidaryti								
+1	VK2_app.HHM16_AA191.ioc.OPN	HHM16AA191YB21 Degiklio Nr.6 garo vožtuvas (RG-106A): Atidaryti								
+2	VK2_app.HHM16_AA192.ioc.OPN	HHM16AA192YB21 Degiklio Nr.6 garo vožtuvas (RG-106B): Atidaryti								
+3	VK2_app.HHF21_AA004.ioc.OPN	HHF21AA004YB21 Mazuto vožtuvas (MZ-137): Atidaryti								
+4	VK2_app.HHF22_AA004.ioc.OPN	HHF22AA004YB21 Mazuto vožtuvas (MZ-136): Atidaryti								
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_DO8										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_FSAI1										
+0	VK2_app_SRS.NDA10_CP001	NDA10CP001XQ01 Termofikacinio vandens slėgis už katilo								
+1	VK2_app_SRS.NDA10_CP002	NDA10CP002XQ01 Termofikacinio vandens slėgis už katilo								
+2	VK2_app_SRS.HHF22_CP002	HHF22CP002XQ01 Mazuto slėgis po reguliavimo vožtuvo (B pusė)								
+3	VK2_app_SRS.HHF22_CP003	HHF22CP003XQ01 Mazuto slėgis po reguliavimo vožtuvo (B pusė)								
+4	VK2_app_SRS.HLA10_CF001	HLA10CF001XQ01 Degimo oro srautas A pusėje								
+5	VK2_app_SRS.HLA20_CF001	HLA20CF001XQ01 Degimo oro srautas B pusėje								
+6	VK2_app_SRS.NDA10_CT001	NDA10CT001XQ01 Termofikacinio vandens temperatūra už katilo								
+7	VK2_app_SRS.NDA10_CT002	NDA10CT002XQ01 Termofikacinio vandens temperatūra už katilo								
+										
+Module  --- CJF10GH001_FSAI2										
+0	VK2_app_SRS.NDA10_CF201	NDA10CF201XQ01 Termofikacinio vandens srautas per katilą								
+1	VK2_app_SRS.HHF21_CP002	HHF21CP002XQ01 Mazuto slėgis po reguliavimo vožtuvo (A pusė)								
+2	VK2_app_SRS.HHF21_CP003	HHF21CP003XQ01 Mazuto slėgis po reguliavimo vožtuvo (A pusė)								
+3	VK2_app_SRS.HBK10_CP001	HBK10CP001XQ01 Slėgis kūrykloje								
+4	VK2_app_SRS.HBK20_CP001	HBK20CP001XQ01 Slėgis kūrykloje								
+5	VK2_app_SRS.HHX33_CP001	HHX33CP001XQ01 Suspausto oro slėgis suspausto oro slėgio 1, 3, 5 kolektoriuje								
+6	VK2_app_SRS.HHX34_CP001	HHX34CP001XQ01 Suspausto oro slėgis 2, 4, 6 kolektoriuje								
+7	VK2_app_SRS.NDA10_CF202	NDA10CF202XQ01 Termofikacinio vandens srautas per katilą								
+										
+Module  --- CJF10GH001_FSAI3										
+0	VK2_app_SRS.HJG31_CP001	HJG31CP001XQ01 Dujų slėgis tarp degiklio Nr.1 uždegtuvo atkirtos vožtuvų								
+1	VK2_app_SRS.HJG32_CP001	HJG32CP001XQ01 Dujų slėgis tarp degiklio Nr.2 uždegtuvo atkirtos vožtuvų								
+2	VK2_app_SRS.HJG33_CP001	HJG33CP001XQ01 Dujų slėgis tarp degiklio Nr.3 uždegtuvo atkirtos vožtuvų								
+3	VK2_app_SRS.HJG34_CP001	HJG34CP001XQ01 Dujų slėgis tarp degiklio Nr.4 uždegtuvo atkirtos vožtuvų								
+4	VK2_app_SRS.HJG35_CP001	HJG35CP001XQ01 Dujų slėgis tarp degiklio Nr.5 uždegtuvo atkirtos vožtuvų								
+5	VK2_app_SRS.HJG36_CP001	HJG36CP001XQ01 Dujų slėgis tarp degiklio Nr.6 uždegtuvo atkirtos vožtuvų								
+6	VK2_app_SRS.HHG20_CP003	HHG20CP003XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+7	VK2_app_SRS.HHG10_CP003	HHG10CP003XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+										
+Module  --- CJF10GH001_FSAI4										
+0	VK2_app_SRS.HHG31_CP001	HHG31CP001XQ01 Dujų slėgis tarp degiklio Nr.1 darbinės ir kontrolinės dujų sklendės								
+1	VK2_app_SRS.HHG32_CP001	HHG32CP001XQ01 Dujų slėgis tarp degiklio Nr.2 darbinės ir kontrolinės dujų sklendės								
+2	VK2_app_SRS.HHG33_CP001	HHG33CP001XQ01 Dujų slėgis tarp degiklio Nr.3 darbinės ir kontrolinės dujų sklendės								
+3	VK2_app_SRS.HHG34_CP001	HHG34CP001XQ01 Dujų slėgis tarp degiklio Nr.4 darbinės ir kontrolinės dujų sklendės								
+4	VK2_app_SRS.HHG35_CP001	HHG35CP001XQ01 Dujų slėgis tarp degiklio Nr.5 darbinės ir kontrolinės dujų sklendės								
+5	VK2_app_SRS.HHG36_CP001	HHG36CP001XQ01 Dujų slėgis tarp degiklio Nr.6 darbinės ir kontrolinės dujų sklendės								
+6	VK2_app_SRS.HHG20_CP002	HHG20CP002XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+7	VK2_app_SRS.HHG10_CP002	HHG10CP002XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+										
+Module  --- CJF10GH001_FSAI5										
+0	VK2_app_SRS.HJG20_CP001	HJG20CP001XQ01 Dujų slėgis į uždegtuvus								
+1	VK2_app_SRS.HJG10_CP001	HJG10CP001XQ01 Dujų slėgis į uždegtuvus								
+2										
+3										
+4										
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_FSAI6										
+0										
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+										
+Module  --- CJF10GH001_FSDI1										
+0										
+1	VK2_app_SRS.HNF10_AN001X.ON	HNF10AN001XB001 Dūmų recirkuliacijos ventiliatorius VK-1RDS: Veikia								
+2	VK2_app_SRS.HHF31_AA191.CLD	HHF31AA191XB02 Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-101): Uždaryta								
+3	VK2_app_SRS.HHF31_AA192.CLD	HHF31AA192XB02 Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-101A): Uždaryta								
+4	VK2_app_SRS.HHF32_AA191.CLD	HHF32AA191XB02 Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-102): Uždaryta								
+5	VK2_app_SRS.HHF32_AA192.CLD	HHF32AA192XB02 Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-102A): Uždaryta								
+6	VK2_app_SRS.HHF33_AA191.CLD	HHF33AA191XB02 Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-103): Uždaryta								
+7	VK2_app_SRS.HHF33_AA192.CLD	HHF33AA192XB02 Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-103A): Uždaryta								
+8	VK2_app_SRS.HHF34_AA191.CLD	HHF34AA191XB02 Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-104): Uždaryta								
+9	VK2_app_SRS.HHF34_AA192.CLD	HHF34AA192XB02 Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-104A): Uždaryta								
+10	VK2_app_SRS.HHF35_AA191.CLD	HHF35AA191XB02 Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-105): Uždaryta								
+11	VK2_app_SRS.HHF35_AA192.CLD	HHF35AA192XB02 Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-105A): Uždaryta								
+12	VK2_app_SRS.HHF36_AA191.CLD	HHF36AA191XB02 Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-106): Uždaryta								
+13	VK2_app_SRS.HHF36_AA192.CLD	HHF36AA192XB02 Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-106A): Uždaryta								
+14										
+15										
+										
+Module  --- CJF10GH001_FSDI2										
+0	VK2_app_SRS.HJA11_CB001	HJA11CB001XB01 Uždegtuvas Nr.1: Liepsnos būsena								
+1	VK2_app_SRS.HJA12_CB001	HJA12CB001XB01 Uždegtuvas Nr.2: Liepsnos būsena								
+2	VK2_app_SRS.HJA13_CB001	HJA13CB001XB01 Uždegtuvas Nr.3: Liepsnos būsena								
+3	VK2_app_SRS.HJA14_CB001	HJA14CB001XB01 Uždegtuvas Nr.4: Liepsnos būsena								
+4	VK2_app_SRS.HJA15_CB001	HJA15CB001XB01 Uždegtuvas Nr.5: Liepsnos būsena								
+5	VK2_app_SRS.HJA16_CB001	HJA16CB001XB01 Uždegtuvas Nr.6: Liepsnos būsena								
+6	VK2_app_SRS.HHA11_CB001	HHA11CB001XB01 Liepsnos skaneris Nr. 1: Liepsna yra, gedimų nėra								
+7	VK2_app_SRS.HHA12_CB001	HHA12CB001XB01 Liepsnos skaneris Nr. 2: Liepsna yra, gedimų nėra								
+8	VK2_app_SRS.HHA13_CB001	HHA13CB001XB01 Liepsnos skaneris Nr. 3: Liepsna yra, gedimų nėra								
+9	VK2_app_SRS.HHA14_CB001	HHA14CB001XB01 Liepsnos skaneris Nr. 4: Liepsna yra, gedimų nėra								
+10	VK2_app_SRS.HHA15_CB001	HHA15CB001XB01 Liepsnos skaneris Nr. 5: Liepsna yra, gedimų nėra								
+11	VK2_app_SRS.HHA16_CB001	HHA16CB001XB01 Liepsnos skaneris Nr. 6: Liepsna yra, gedimų nėra								
+12	VK2_app_SRS.CJF10_CH001	CJF10CH001YL54 Vietinis STOP postas Nr.1								
+13	VK2_app_SRS.CJF10_CH002	CJF10CH002YL54 Vietinis STOP postas Nr.2								
+14	VK2_app_SRS.CJF10_CH003	CJF10CH003YL54 Vietinis STOP postas Nr.3								
+15	VK2_app_SRS.CJF10_CH004	CJF10CH004YL54 Vietinis STOP postas Nr.4								
+										
+Module  --- CJF10GH001_FSDI3										
+0	VK2_app_SRS.HHG31_AA191.CLD	HHG31AA191XB02 Degiklio Nr.1 dujų kontrolinis vožtuvas (D-101A): Uždaryta								
+1	VK2_app_SRS.HHG32_AA191.CLD	HHG32AA191XB02 Degiklio Nr.2 dujų kontrolinis vožtuvas (D-102A): Uždaryta								
+2										
+3	VK2_app_SRS.HHG33_AA191.CLD	HHG33AA191XB02 Degiklio Nr.3 dujų kontrolinis vožtuvas (D-103A): Uždaryta								
+4	VK2_app_SRS.HHG34_AA191.CLD	HHG34AA191XB02 Degiklio Nr.4 dujų kontrolinis vožtuvas (D-104A): Uždaryta								
+5	VK2_app_SRS.HHG35_AA191.CLD	HHG35AA191XB02 Degiklio Nr.5 dujų kontrolinis vožtuvas (D-105A): Uždaryta								
+6	VK2_app_SRS.HHG36_AA191.CLD	HHG36AA191XB02 Degiklio Nr.6 dujų kontrolinis vožtuvas (D-106A): Uždaryta								
+7	VK2_app_SRS.HHG31_AA001.CLD	HHG31AA001XB02 Degiklio Nr.1 dujų darbinis vožtuvas (D-101B): Uždaryta								
+8	VK2_app_SRS.HHG32_AA001.CLD	HHG32AA001XB02 Degiklio Nr.2 dujų darbinis vožtuvas (D-102B): Uždaryta								
+9	VK2_app_SRS.HHG33_AA001.CLD	HHG33AA001XB02 Degiklio Nr.3 dujų darbinis vožtuvas (D-103B): Uždaryta								
+10	VK2_app_SRS.HHG34_AA001.CLD	HHG34AA001XB02 Degiklio Nr.4 dujų darbinis vožtuvas (D-104B): Uždaryta								
+11	VK2_app_SRS.HHG35_AA001.CLD	HHG35AA001XB02 Degiklio Nr.5 dujų darbinis vožtuvas (D-105B): Uždaryta								
+12	VK2_app_SRS.HHG36_AA001.CLD	HHG36AA001XB02 Degiklio Nr.6 dujų darbinis vožtuvas (D-106B): Uždaryta								
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_FSDI4										
+0	VK2_app_SRS.HHA11_CG201	HHA11CG201XB01 Degiklio Nr. 1 mazuto pistoletas įstatytas teisingai								
+1	VK2_app_SRS.HHA12_CG201	HHA12CG201XB01 Degiklio Nr. 2 mazuto pistoletas įstatytas teisingai								
+2	VK2_app_SRS.HHA13_CG201	HHA13CG201XB01 Degiklio Nr. 3 mazuto pistoletas įstatytas teisingai								
+3	VK2_app_SRS.HHA14_CG201	HHA14CG201XB01 Degiklio Nr. 4 mazuto pistoletas įstatytas teisingai								
+4	VK2_app_SRS.HHA15_CG201	HHA15CG201XB01 Degiklio Nr. 5 mazuto pistoletas įstatytas teisingai								
+5	VK2_app_SRS.HHA16_CG201	HHA16CG201XB01 Degiklio Nr. 6 mazuto pistoletas įstatytas teisingai								
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_FSDO1										
+0										
+1										
+2										
+3										
+4										
+5										
+6	VK2_app_SRS.HHX21_AA602.OPN	HHX21AA602YB21 Degiklio Nr.1 suspausto oro vožtuvas (SO-V187): Atidaryti								
+7	VK2_app_SRS.HHX22_AA602.OPN	HHX22AA602YB21 Degiklio Nr.2 suspausto oro vožtuvas (SO-V196): Atidaryti								
+8	VK2_app_SRS.HHX23_AA602.OPN	HHX23AA602YB21 Degiklio Nr.3 suspausto oro vožtuvas (SO-V188): Atidaryti								
+9	VK2_app_SRS.HHX24_AA602.OPN	HHX24AA602YB21 Degiklio Nr.4 suspausto oro vožtuvas (SO-V164): Atidaryti								
+10	VK2_app_SRS.HHX25_AA602.OPN	HHX25AA602YB21 Degiklio Nr.5 suspausto oro vožtuvas (SO-V189): Atidaryti								
+11	VK2_app_SRS.HHX26_AA602.OPN	HHX26AA602YB21 Degiklio Nr.6 suspausto oro vožtuvas (SO-V198): Atidaryti								
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_FSDO2										
+0	VK2_app_SRS.HJA11_GH001.Start	HJA11GH001YB01 Uždegtuvas Nr.1: Startas								
+1	VK2_app_SRS.HJA12_GH001.Start	HJA12GH001YB01 Uždegtuvas Nr.2: Startas								
+2	VK2_app_SRS.HJA13_GH001.Start	HJA13GH001YB01 Uždegtuvas Nr.3: Startas								
+3	VK2_app_SRS.HJA14_GH001.Start	HJA14GH001YB01 Uždegtuvas Nr.4: Startas								
+4	VK2_app_SRS.HJA15_GH001.Start	HJA15GH001YB01 Uždegtuvas Nr.5: Startas								
+5	VK2_app_SRS.HJA16_GH001.Start	HJA16GH001YB01 Uždegtuvas Nr.6: Startas								
+6	VK2_app_SRS.HJG31_AA191.OPN	HJG31AA191YB21 Uždegtuvo Nr.1 kontrolinis dujų vožtuvas (D-107A): Atidaryti								
+7	VK2_app_SRS.HJG31_AA192.OPN	HJG31AA192YB21 Uždegtuvo Nr.1 darbinis dujų vožtuvas (D-107B): Atidaryti								
+8	VK2_app_SRS.HJG32_AA191.OPN	HJG32AA191YB21 Uždegtuvo Nr.2 kontrolinis dujų vožtuvas (D-108A): Atidaryti								
+9	VK2_app_SRS.HJG32_AA192.OPN	HJG32AA192YB21 Uždegtuvo Nr.2 darbinis dujų vožtuvas (D-108B): Atidaryti								
+10	VK2_app_SRS.HJG33_AA191.OPN	HJG33AA191YB21 Uždegtuvo Nr.3 kontrolinis dujų vožtuvas (D-109A): Atidaryti								
+11	VK2_app_SRS.HJG33_AA192.OPN	HJG33AA192YB21 Uždegtuvo Nr.3 darbinis dujų vožtuvas (D-109B): Atidaryti								
+12	VK2_app_SRS.HJG34_AA191.OPN	HJG34AA191YB21 Uždegtuvo Nr.4 kontrolinis dujų vožtuvas (D-110A): Atidaryti								
+13	VK2_app_SRS.HJG34_AA192.OPN	HJG34AA192YB21 Uždegtuvo Nr.4 darbinis dujų vožtuvas (D-110B): Atidaryti								
+14	VK2_app_SRS.HJG35_AA191.OPN	HJG35AA191YB21 Uždegtuvo Nr.5 kontrolinis dujų vožtuvas (D-111A): Atidaryti								
+15	VK2_app_SRS.HJG35_AA192.OPN	HJG35AA192YB21 Uždegtuvo Nr.5 darbinis dujų vožtuvas (D-111B): Atidaryti								
+										
+Module  --- CJF10GH001_FSDO3										
+0	VK2_app_SRS.HJG36_AA191.OPN	HJG36AA191YB21 Uždegtuvo Nr.6 kontrolinis dujų vožtuvas (D-112A): Atidaryti								
+1	VK2_app_SRS.HJG36_AA192.OPN	HJG36AA192YB21 Uždegtuvo Nr.6 darbinis dujų vožtuvas (D-112B): Atidaryti								
+2										
+3										
+4										
+5	VK2_app_SRS.HHG20_AA191.OPN	HHG20AA191YB21 Dujų į uždegtuvus atkirtos vožtuvas (D-126): Atidaryti								
+6	VK2_app_SRS.HHG10_AA191.OPN	HHG10AA191YB21 Dujų į degiklius atkirtos vožtuvas (D-127): Atidaryti								
+7	VK2_app_SRS.HHG31_AA191.OPN	HHG31AA191YB21 Degiklio Nr.1 dujų kontrolinis vožtuvas (D-101A): Atidaryti								
+8	VK2_app_SRS.HHG32_AA191.OPN	HHG32AA191YB21 Degiklio Nr.2 dujų kontrolinis vožtuvas (D-102A): Atidaryti								
+9	VK2_app_SRS.HHG34_AA191.OPN	HHG34AA191YB21 Degiklio Nr.4 dujų kontrolinis vožtuvas (D-104A): Atidaryti								
+10	VK2_app_SRS.HHG33_AA191.OPN	HHG33AA191YB21 Degiklio Nr.3 dujų kontrolinis vožtuvas (D-103A): Atidaryti								
+11	VK2_app_SRS.HHG35_AA191.OPN	HHG35AA191YB21 Degiklio Nr.5 dujų kontrolinis vožtuvas (D-105A): Atidaryti								
+12	VK2_app_SRS.HHG36_AA191.OPN	HHG36AA191YB21 Degiklio Nr.6 dujų kontrolinis vožtuvas (D-106A): Atidaryti								
+13	VK2_app_SRS.HHG32_AA001.PV	HHG32AA001YB21 Degiklio Nr.2 dujų darbinis vožtuvas (D-102B): Safety padėtis								
+14	VK2_app_SRS.HHG31_AA001.PV	HHG31AA001YB21 Degiklio Nr.1 dujų darbinis vožtuvas (D-101B): Safety padėtis								
+15	VK2_app_SRS.HHG34_AA001.PV	HHG34AA001YB21 Degiklio Nr.4 dujų darbinis vožtuvas (D-104B): Safety padėtis								
+										
+Module  --- CJF10GH001_FSDO4										
+0	VK2_app_SRS.HHG33_AA001.PV	HHG33AA001YB21 Degiklio Nr.3 dujų darbinis vožtuvas (D-103B): Safety padėtis								
+1	VK2_app_SRS.HHG35_AA001.PV	HHG35AA001YB21 Degiklio Nr.5 dujų darbinis vožtuvas (D-105B): Safety padėtis								
+2	VK2_app_SRS.HHG36_AA001.PV	HHG36AA001YB21 Degiklio Nr.6 dujų darbinis vožtuvas (D-106B): Safety padėtis								
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10										
+11										
+12										
+13										
+14										
+15										
+										
+Module  --- CJF10GH001_FSDO5										
+0	VK2_app_SRS.HHF31_AA191.OPN	HHF31AA191YB21 Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-101): Atidaryti								
+1	VK2_app_SRS.HHF31_AA192.OPN	HHF31AA192YB21 Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-101A): Atidaryti								
+2	VK2_app_SRS.HHF32_AA191.OPN	HHF32AA191YB21 Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-102): Atidaryti								
+3	VK2_app_SRS.HHF32_AA192.OPN	HHF32AA192YB21 Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-102A): Atidaryti								
+4	VK2_app_SRS.HHF33_AA191.OPN	HHF33AA191YB21 Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-103): Atidaryti								
+5	VK2_app_SRS.HHF33_AA192.OPN	HHF33AA192YB21 Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-103A): Atidaryti								
+6	VK2_app_SRS.HHF34_AA191.OPN	HHF34AA191YB21 Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-104): Atidaryti								
+7	VK2_app_SRS.HHF34_AA192.OPN	HHF34AA192YB21 Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-104A): Atidaryti								
+8	VK2_app_SRS.HHF35_AA192.OPN	HHF35AA192YB21 Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-105A): Atidaryti								
+9	VK2_app_SRS.HHF35_AA191.OPN	HHF35AA191YB21 Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-105): Atidaryti								
+10	VK2_app_SRS.HHF36_AA191.OPN	HHF36AA191YB21 Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-106): Atidaryti								
+11	VK2_app_SRS.HHF36_AA192.OPN	HHF36AA192YB21 Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-106A): Atidaryti								
+12										
+13										
+14										
+15										
+										

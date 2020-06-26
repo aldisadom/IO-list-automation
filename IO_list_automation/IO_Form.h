@@ -61,6 +61,8 @@ namespace IOlistautomation {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column4;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column6;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column7;
+	private: System::Windows::Forms::Button^  OK_button;
+	private: System::Windows::Forms::Button^  Cancel_button;
 
 	public:
 
@@ -105,10 +107,10 @@ namespace IOlistautomation {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle7 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle8 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->Grid_Module = (gcnew System::Windows::Forms::DataGridView());
 			this->Column0 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -122,6 +124,8 @@ namespace IOlistautomation {
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_IO = (gcnew System::Windows::Forms::DataGridView());
+			this->OK_button = (gcnew System::Windows::Forms::Button());
+			this->Cancel_button = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_Module))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -146,7 +150,7 @@ namespace IOlistautomation {
 			});
 			this->Grid_Module->Location = System::Drawing::Point(0, 0);
 			this->Grid_Module->Name = L"Grid_Module";
-			this->Grid_Module->Size = System::Drawing::Size(993, 441);
+			this->Grid_Module->Size = System::Drawing::Size(993, 463);
 			this->Grid_Module->TabIndex = 0;
 			// 
 			// Column0
@@ -157,8 +161,8 @@ namespace IOlistautomation {
 			// 
 			// Column1
 			// 
-			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column1->DefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column1->DefaultCellStyle = dataGridViewCellStyle5;
 			this->Column1->HeaderText = L"Rack example";
 			this->Column1->Name = L"Column1";
 			this->Column1->ReadOnly = true;
@@ -167,8 +171,8 @@ namespace IOlistautomation {
 			// 
 			// Column2
 			// 
-			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column2->DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column2->DefaultCellStyle = dataGridViewCellStyle6;
 			this->Column2->HeaderText = L"Module example";
 			this->Column2->Name = L"Column2";
 			this->Column2->ReadOnly = true;
@@ -185,8 +189,8 @@ namespace IOlistautomation {
 			// 
 			// Column3
 			// 
-			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column3->DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle7->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column3->DefaultCellStyle = dataGridViewCellStyle7;
 			this->Column3->HeaderText = L"Rack";
 			this->Column3->Name = L"Column3";
 			this->Column3->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
@@ -194,8 +198,8 @@ namespace IOlistautomation {
 			// 
 			// Column4
 			// 
-			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->Column4->DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle8->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Column4->DefaultCellStyle = dataGridViewCellStyle8;
 			this->Column4->HeaderText = L"Module";
 			this->Column4->Name = L"Column4";
 			this->Column4->SortMode = System::Windows::Forms::DataGridViewColumnSortMode::NotSortable;
@@ -220,10 +224,10 @@ namespace IOlistautomation {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
-			this->tabControl1->Location = System::Drawing::Point(1, 34);
+			this->tabControl1->Location = System::Drawing::Point(1, 12);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(997, 460);
+			this->tabControl1->Size = System::Drawing::Size(997, 482);
 			this->tabControl1->TabIndex = 2;
 			// 
 			// tabPage1
@@ -232,7 +236,7 @@ namespace IOlistautomation {
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(989, 434);
+			this->tabPage1->Size = System::Drawing::Size(989, 456);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Modules";
 			this->tabPage1->UseVisualStyleBackColor = true;
@@ -266,11 +270,33 @@ namespace IOlistautomation {
 			this->Grid_IO->Size = System::Drawing::Size(993, 441);
 			this->Grid_IO->TabIndex = 1;
 			// 
+			// OK_button
+			// 
+			this->OK_button->Location = System::Drawing::Point(838, 5);
+			this->OK_button->Name = L"OK_button";
+			this->OK_button->Size = System::Drawing::Size(75, 23);
+			this->OK_button->TabIndex = 3;
+			this->OK_button->Text = L"OK";
+			this->OK_button->UseVisualStyleBackColor = true;
+			this->OK_button->Click += gcnew System::EventHandler(this, &IO_Form::OK_button_Click);
+			// 
+			// Cancel_button
+			// 
+			this->Cancel_button->Location = System::Drawing::Point(919, 5);
+			this->Cancel_button->Name = L"Cancel_button";
+			this->Cancel_button->Size = System::Drawing::Size(75, 23);
+			this->Cancel_button->TabIndex = 4;
+			this->Cancel_button->Text = L"Cancel";
+			this->Cancel_button->UseVisualStyleBackColor = true;
+			this->Cancel_button->Click += gcnew System::EventHandler(this, &IO_Form::Cancel_button_Click);
+			// 
 			// IO_Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(999, 490);
+			this->Controls->Add(this->Cancel_button);
+			this->Controls->Add(this->OK_button);
 			this->Controls->Add(this->tabControl1);
 			this->KeyPreview = true;
 			this->Name = L"IO_Form";
@@ -320,6 +346,7 @@ namespace IOlistautomation {
 
 		public: void IO_form_init()
 		{
+			IO_form_result = 0;
 			this->KeyDown += gcnew KeyEventHandler(this, &IO_Form::KeyDown_event);
 			this->Grid_Module->CellValueChanged += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &IO_Form::Module_cell_edit);
 
@@ -374,5 +401,13 @@ namespace IOlistautomation {
 		}
 	}
 
+	private: System::Void OK_button_Click(System::Object^  sender, System::EventArgs^  e) {
+		IO_form_result = 1;
+		this->Close();
+	}
+	private: System::Void Cancel_button_Click(System::Object^  sender, System::EventArgs^  e) {
+		IO_form_result = 0;
+		this->Close();
+	}
 };
 }

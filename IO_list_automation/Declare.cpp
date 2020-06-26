@@ -525,7 +525,7 @@ int Declare_addreses()
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Objects_grid_index;
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -1261,10 +1261,80 @@ void Declare_init_grids(int AI_nr_max,int  VLV_nr_max, int HC_nr_max,int  FC_nr_
 	}
 }
 
-// puting data to grids
-int Declare_put_adres_grid()
+int Declare_dump_to_file(bool test_mode, System::Windows::Forms::DataGridView^ grid, char* grid_name)
 {
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+
+	FILE* outFile;
+	int iCol;
+	const wchar_t* x;
+	string file_name;
+	string temp_text;
+
+	temp_text = grid_name;
+
+	if (test_mode == false)
+		file_name = "_dump_";
+	else
+	{
+		file_name = ".\\Test data\\_test_dump_";
+		temp_text.erase(0,5);
+	}
+	file_name.append(temp_text);
+	file_name.append(".txt");
+
+	int number_rows = grid->RowCount;
+	int number_collums = grid->ColumnCount;
+
+	if (number_rows < 1 && number_collums < 1)
+		return 0;
+
+	//create file with UTF-8 encoding
+	fopen_s(&outFile, file_name.c_str(), "w+,ccs=UTF-8");
+
+	strcpy_s(info_txt, sizeof info_txt, info_dump_declare[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
+	info_write(info_txt);
+
+	Show_progress(prog_dump_data[lang], number_rows);
+
+	wstring cell_text_write, cell_text;
+	for (int index = 0; index < number_rows; index++)
+	{
+		cell_text_write = L"";
+		// fill all cells with data
+		for (iCol = 0; iCol < number_collums; iCol++)
+		{
+			cell_text = Global_get_cell_value(index, iCol, grid);
+			cell_text_write.append(cell_text);
+			cell_text_write.append(L"\t");
+		}
+		// write all row data to file
+		cell_text_write.append(L"\n");
+		x = cell_text_write.c_str();
+		fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
+
+		set_progress_value(index);
+	}
+	
+	Hide_progress();
+
+	strcpy_s(info_txt, sizeof info_txt, info_dump_declare[lang]);
+	strcat_s(info_txt, sizeof info_txt, info_separator);
+	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
+	strcat_s(info_txt, sizeof info_txt, error_separator);
+	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
+	info_write(info_txt);
+	
+	fclose(outFile);
+	return 0;
+	
+}
+
+// puting data to grids
+int Declare_put_adres_grid(bool test_mode)
+{
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -1352,6 +1422,7 @@ int Declare_put_adres_grid()
 	int MOT_valid = 1;
 
 	bool row_valid = 1;
+	System::Windows::Forms::DataGridView^ grid;
 
 	for (int variable_index = start_param; variable_index <= max_vars_in_object; ++variable_index)
 	{
@@ -1425,7 +1496,7 @@ int Declare_put_adres_grid()
 			{
 				if (Declare_valid_adress(index) == 1) // there is adress in line
 				{
-					System::Windows::Forms::DataGridView^ grid;
+				//	System::Windows::Forms::DataGridView^ grid;
 
 					if (object_type.compare(AI_type) == 0)
 					{
@@ -1508,37 +1579,19 @@ int Declare_put_adres_grid()
 	
 	Hide_progress();
 
+	Declare_dump_to_file(test_mode, results_form.Grid_AI, "decl_AI");
+	Declare_dump_to_file(test_mode, results_form.Grid_FC, "decl_FC");
+	Declare_dump_to_file(test_mode, results_form.Grid_HC, "decl_HC");
+	Declare_dump_to_file(test_mode, results_form.Grid_MOT, "decl_MOT");
+	Declare_dump_to_file(test_mode, results_form.Grid_PID, "decl_PID");
+	Declare_dump_to_file(test_mode, results_form.Grid_VLV, "decl_VLV");
+	Declare_dump_to_file(test_mode, results_form.Grid_SCADA, "decl_SCADA");
 
-/*
-	if (signal_index > 0)
+	if (test_mode == false)
 	{
-		wstring address_type_text = L"";
-
-		switch (modul_index)
-		{
-		case DI_index:
-			address_type_text = L"BoolIO";
-			break;
-		case DO_index:
-			address_type_text = L"BoolIO";
-			break;
-		case AI_index:
-			address_type_text = L"RealIO";
-			break;
-		case AO_index:
-			address_type_text = L"RealIO";
-			break;
-		}
-		grid->Rows[row]->Cells[1]->Value = wstring_to_system_string(signal);
-		grid->Rows[row]->Cells[2]->Value = wstring_to_system_string(address_type_text);
-		grid->Rows[row]->Cells[3]->Value = L"retain";
-
-		grid->Rows[row]->Cells[7]->Value = wstring_to_system_string(comment);
+		results_form.ShowDialog();
+		results_form.Update();
 	}
-	*/
-	results_form.ShowDialog();
-
-	results_form.Update();
 
 	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
 	strcat_s(info_txt, sizeof info_txt, info_separator);
@@ -1548,3 +1601,5 @@ int Declare_put_adres_grid()
 	info_write(info_txt);	
 	return 0;
 }
+
+

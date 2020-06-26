@@ -4,6 +4,7 @@
 
 #include "config.h"
 
+
 // get data from memory to wstring
 std::wstring Project_get_data_switch(int iCol, int index);
 // put data from wstring to memory
@@ -15,10 +16,10 @@ int Project_valid_row_check(int row);
 
 
 //read data from design file
-int Project_read_data(bool put_data, project_str &project_data);
+int Project_read_data(bool put_data, char* test_mode, project_str &project_data);
 
 
 // compares current data with new data
-int Project_compare_data();
+int Project_compare_data(char* test_mode);
 #endif
 

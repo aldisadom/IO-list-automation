@@ -9,6 +9,7 @@
 
 #include "signals.h"
 #include "IO_declare.h"
+#include "Declare.h"
 
 struct begin_adress_str
 {
@@ -243,7 +244,7 @@ void IO_put_switch(int signal_index, int modul_index, begin_adress_str &begin_ad
 }
 
 
-void IO_show_modules (System::Windows::Forms::DataGridView^ grid)
+void IO_show_modules (System::Windows::Forms::DataGridView^ grid, bool test_mode)
 {
 	vector <wstring> temp_Module;
 	vector <wstring> unique_Module;
@@ -294,11 +295,15 @@ void IO_show_modules (System::Windows::Forms::DataGridView^ grid)
 				grid->Rows->Add();
 				row++;
 				grid->Rows[row - 1]->Cells[2]->Value = wstring_to_system_string(unique_Module[j]);
+				if (test_mode == true)
+					grid->Rows[row - 1]->Cells[5]->Value = wstring_to_system_string(unique_Module[j]);
 
 			}
 		}
 
 		grid->Rows[rack_row]->Cells[1]->Value = wstring_to_system_string(unique_Rack[i]);
+		if (test_mode == true)
+			grid->Rows[rack_row]->Cells[4]->Value = wstring_to_system_string(unique_Rack[i]);
 	}
 }
 
@@ -307,7 +312,7 @@ int IO_generate()
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -371,11 +376,11 @@ int IO_generate()
 	return 0;
 }
 
-int IO_show()
+int IO_show(bool test_mode)
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
 		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
@@ -400,8 +405,14 @@ int IO_show()
 
 	grid->Columns[0]->ReadOnly = true;
 	
-	IO_show_modules(Io_forma.Grid_Module);
-	Io_forma.ShowDialog();
+	IO_show_modules(Io_forma.Grid_Module, test_mode);
+
+	if (test_mode == false)
+	{
+		Io_forma.ShowDialog();
+		if (IO_form_result == 0)
+			return 0;
+	}
 
 	Show_progress(prog_generate_IO_adress[lang], grid->RowCount);
 
@@ -538,8 +549,14 @@ int IO_show()
 	}
 	Hide_progress();
 
-	Io_forma.Update();
-	Io_forma.ShowDialog();
+	Declare_dump_to_file(test_mode, Io_forma.Grid_Module, "decl_Modules");
+	Declare_dump_to_file(test_mode, Io_forma.Grid_IO, "decl_IO");
+
+	if (test_mode == false)
+	{
+		Io_forma.Update();
+		Io_forma.ShowDialog();
+	}
 
 	strcpy_s(info_txt, sizeof info_txt, info_generate_IO_adress[lang]);
 	strcat_s(info_txt, sizeof info_txt, error_separator);

@@ -20,7 +20,7 @@ int Signals_get_data_design();
 //KKS triming algorithm removes back ant front parts, and splits into two parts
 KKS_str Signals_KKS_trim(wstring KKS_text);
 //trims all KKS data in signals
-int Signals_all_KKS_trim();
+int Signals_all_KKS_trim(bool test_mode);
 
 
 //reads learning data for object and function recognition
@@ -28,6 +28,6 @@ int Signals_learn_data();
 //finds functions in signal data
 int Signals_find_function();
 
-int Signals_multi_cpu();
+int Signals_multi_cpu(bool test_mode);
 
 #endif
