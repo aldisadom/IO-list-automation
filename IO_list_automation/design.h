@@ -16,10 +16,10 @@ int Project_valid_row_check(int row);
 
 
 //read data from design file
-int Project_read_data(bool put_data, char* test_mode, project_str &project_data);
+int Project_read_data(bool put_data, wstring test_mode, project_str &project_data);
 
 
 // compares current data with new data
-int Project_compare_data(char* test_mode);
+int Project_compare_data(wstring test_mode);
 #endif
 

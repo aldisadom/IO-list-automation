@@ -310,22 +310,23 @@ void IO_show_modules (System::Windows::Forms::DataGridView^ grid, bool test_mode
 
 int IO_generate()
 {
+	wstring texts;
 	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
+
 		return 1;
 	}
+	texts = str.Info.generate_IO_tags.s[lang];
+	info_write(texts);
 
-	strcpy_s(info_txt, sizeof info_txt, info_generate_IO_tags[lang]);
-	info_write(info_txt);
-
-	Show_progress(prog_generate_IO[lang], signals.valid_entries);
+	Show_progress(str.Progress.generate_IO.s[lang], signals.valid_entries);
 
 	wstring tag_text = L"";
 	wstring text_confirm = L"";
@@ -344,7 +345,7 @@ int IO_generate()
 			GlobalForm::forma->Signals_grid->FirstDisplayedScrollingRowIndex = index;
 			GlobalForm::forma->Signals_grid->CurrentCell = GlobalForm::forma->Signals_grid[16, index]; // show which cell is overwriten
 
-			text_confirm = conf_signal_TAG_overwrite[lang];
+			text_confirm = str.Confirm.signal_TAG_overwrite.s[lang];
 			text_confirm.append(L" --- ");
 			text_confirm.append(signals.data[index].Tag);
 			text_confirm.append(L" -> ");
@@ -365,28 +366,28 @@ int IO_generate()
 	}
 	Hide_progress();
 
+	texts = str.Info.generate_IO_tags.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
-	strcpy_s(info_txt, sizeof info_txt, info_generate_IO_tags[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-
-	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 
 	return 0;
 }
 
-int IO_show(bool test_mode)
+int IO_show(bool test_mode, wstring gen_test_mode)
 {
+	wstring texts;
 	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -394,9 +395,8 @@ int IO_show(bool test_mode)
 	{
 		IO_generate();
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_generate_IO_adress[lang]);
-	info_write(info_txt);
+	texts = str.Info.generate_IO_adress.s[lang];
+	info_write(texts);
 
 	IOlistautomation::IO_Form Io_forma;
 	System::Windows::Forms::DataGridView^ grid = Io_forma.Grid_Module;
@@ -414,7 +414,7 @@ int IO_show(bool test_mode)
 			return 0;
 	}
 
-	Show_progress(prog_generate_IO_adress[lang], grid->RowCount);
+	Show_progress(str.Progress.generate_IO_adress.s[lang], grid->RowCount);
 
 	Io_forma.tabControl1->SelectedIndex = 1;
 	
@@ -535,8 +535,7 @@ int IO_show(bool test_mode)
 			break;
 
 		default:
-			strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-			err_write_show(err_txt);
+			err_prog();
 			return 1;
 			break;
 		}
@@ -549,19 +548,17 @@ int IO_show(bool test_mode)
 	}
 	Hide_progress();
 
-	Declare_dump_to_file(test_mode, Io_forma.Grid_Module, "decl_Modules");
-	Declare_dump_to_file(test_mode, Io_forma.Grid_IO, "decl_IO");
+	Declare_dump_to_file(test_mode, gen_test_mode, Io_forma.Grid_Module, Dump_names.decl_Modules);
+	Declare_dump_to_file(test_mode, gen_test_mode, Io_forma.Grid_IO, Dump_names.decl_IO);
 
 	if (test_mode == false)
 	{
 		Io_forma.Update();
 		Io_forma.ShowDialog();
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_generate_IO_adress[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-	
+	texts = str.Info.generate_IO_adress.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);	
 	return 0;
 }

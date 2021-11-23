@@ -1,0 +1,733 @@
+﻿//---------------------- HHF05_AA001 : 	Mazuto įvadinė sklendė (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF05_AA001"										
+	OPD_in :=	CJF10GH001_DI3_09	//HHF05AA001XB01 Mazuto įvadinė sklendė (MZ-119): Atidaryta								
+	CLD_in :=	CJF10GH001_DI3_10	//HHF05AA001XB02 Mazuto įvadinė sklendė (MZ-119): Uždaryta								
+	Ready_in :=	CJF10GH001_DI3_11	//HHF05AA001XB03 Mazuto įvadinė sklendė (MZ-119): Paruošta								
+	CLS_in :=	CJF10GH001_DO1_11	//HHF05AA001YB22 Mazuto įvadinė sklendė (MZ-119): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_12	//HHF05AA001YB21 Mazuto įvadinė sklendė (MZ-119): Atidaryti								
+											
+//---------------------- HHF21_AA004 : 	Mazuto vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF21_AA004"										
+	OPD_in :=	CJF10GH001_DI4_01	//HHF21AA004YB21 Mazuto vožtuvas (MZ-137): Atidaryta								
+	CLD_in :=	CJF10GH001_DI4_02	//HHF21AA004YB21 Mazuto vožtuvas (MZ-137): Uždaryta								
+	OPN_in :=	CJF10GH001_DO7_04	//HHF21AA004YB21 Mazuto vožtuvas (MZ-137): Atidaryti								
+											
+//---------------------- HHF21_AA101 : 	Mazuto srauto reguliavimo vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF21_AA101"										
+	PV_in :=	CJF10GH001_AI9_01	//HHF21AA101XQ01 Mazuto srauto reguliavimo vožtuvas (MZ-131): Padėtis								
+	SP_in :=	CJF10GH001_AO1_04	//HHF21AA101YQ70 Mazuto srauto reguliavimo vožtuvas (MZ-131): Padėties uždavimas								
+											
+//---------------------- HHF22_AA004 : 	Mazuto vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF22_AA004"										
+	OPD_in :=	CJF10GH001_DI4_03	//HHF22AA004YB21 Mazuto vožtuvas (MZ-136): Atidaryta								
+	CLD_in :=	CJF10GH001_DI4_04	//HHF22AA004YB21 Mazuto vožtuvas (MZ-136): Uždaryta								
+	OPN_in :=	CJF10GH001_DO7_05	//HHF22AA004YB21 Mazuto vožtuvas (MZ-136): Atidaryti								
+											
+//---------------------- HHF22_AA101 : 	Mazuto srauto reguliavimo vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF22_AA101"										
+	PV_in :=	CJF10GH001_AI9_05	//HHF22AA101XQ01 Mazuto srauto reguliavimo vožtuvas (MZ-130): Padėtis								
+	SP_in :=	CJF10GH001_AO1_01	//HHF22AA101YQ70 Mazuto srauto reguliavimo vožtuvas (MZ-1310): Padėties uždavimas								
+											
+//---------------------- HHF31_AA191 : 	Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF31_AA191"										
+	OPD_in :=	CJF10GH001_DI6_01	//HHF31AA191XB01 Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-101): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_03	//HHF31AA191XB02 Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-101): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_01	//HHF31AA191YB21 Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ-101): Atidaryti								
+											
+//---------------------- HHF31_AA192 : 	Degiklio Nr.1 mazuto darbinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF31_AA192"										
+	OPD_in :=	CJF10GH001_DI6_02	//HHF31AA192XB01 Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-101A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_04	//HHF31AA192XB02 Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-101A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_02	//HHF31AA192YB21 Degiklio Nr.1 mazuto darbinis vožtuvas (MZ-101A): Atidaryti								
+											
+//---------------------- HHF32_AA191 : 	Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF32_AA191"										
+	OPD_in :=	CJF10GH001_DI6_07	//HHF32AA191XB01 Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-102): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_05	//HHF32AA191XB02 Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-102): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_03	//HHF32AA191YB21 Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ-102): Atidaryti								
+											
+//---------------------- HHF32_AA192 : 	Degiklio Nr.2 mazuto darbinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF32_AA192"										
+	OPD_in :=	CJF10GH001_DI6_08	//HHF32AA192XB01 Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-102A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_06	//HHF32AA192XB02 Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-102A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_04	//HHF32AA192YB21 Degiklio Nr.2 mazuto darbinis vožtuvas (MZ-102A): Atidaryti								
+											
+//---------------------- HHF33_AA191 : 	Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF33_AA191"										
+	OPD_in :=	CJF10GH001_DI6_13	//HHF33AA191XB01 Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-103): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_07	//HHF33AA191XB02 Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-103): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_05	//HHF33AA191YB21 Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ-103): Atidaryti								
+											
+//---------------------- HHF33_AA192 : 	Degiklio Nr.3 mazuto darbinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF33_AA192"										
+	OPD_in :=	CJF10GH001_DI6_14	//HHF33AA192XB01 Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-103A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_08	//HHF33AA192XB02 Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-103A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_06	//HHF33AA192YB21 Degiklio Nr.3 mazuto darbinis vožtuvas (MZ-103A): Atidaryti								
+											
+//---------------------- HHF34_AA191 : 	Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF34_AA191"										
+	OPD_in :=	CJF10GH001_DI11_05	//HHF34AA191XB01 Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-104): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_09	//HHF34AA191XB02 Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-104): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_07	//HHF34AA191YB21 Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ-104): Atidaryti								
+											
+//---------------------- HHF34_AA192 : 	Degiklio Nr.4 mazuto darbinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF34_AA192"										
+	OPD_in :=	CJF10GH001_DI11_06	//HHF34AA192XB01 Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-104A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_10	//HHF34AA192XB02 Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-104A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_08	//HHF34AA192YB21 Degiklio Nr.4 mazuto darbinis vožtuvas (MZ-104A): Atidaryti								
+											
+//---------------------- HHF35_AA191 : 	Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF35_AA191"										
+	OPD_in :=	CJF10GH001_DI11_11	//HHF35AA191XB01 Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-105): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_11	//HHF35AA191XB02 Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-105): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_10	//HHF35AA191YB21 Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ-105): Atidaryti								
+											
+//---------------------- HHF35_AA192 : 	Degiklio Nr.5 mazuto darbinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF35_AA192"										
+	OPD_in :=	CJF10GH001_DI11_12	//HHF35AA192XB01 Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-105A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_12	//HHF35AA192XB02 Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-105A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_09	//HHF35AA192YB21 Degiklio Nr.5 mazuto darbinis vožtuvas (MZ-105A): Atidaryti								
+											
+//---------------------- HHF36_AA191 : 	Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF36_AA191"										
+	OPD_in :=	CJF10GH001_DI12_01	//HHF36AA191XB01 Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-106): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_13	//HHF36AA191XB02 Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-106): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_11	//HHF36AA191YB21 Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ-106): Atidaryti								
+											
+//---------------------- HHF36_AA192 : 	Degiklio Nr.6 mazuto darbinis vožtuvas (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF36_AA192"										
+	OPD_in :=	CJF10GH001_DI12_02	//HHF36AA192XB01 Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-106A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI1_14	//HHF36AA192XB02 Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-106A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO5_12	//HHF36AA192YB21 Degiklio Nr.6 mazuto darbinis vožtuvas (MZ-106A): Atidaryti								
+											
+//---------------------- HHF40_AA001 : 	Mazuto recirkuliacijos sklendė (MZ ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHF40_AA001"										
+	OPD_in :=	CJF10GH001_DI3_13	//HHF40AA001XB01 Mazuto recirkuliacijos sklendė (MZ-125): Atidaryta								
+	CLD_in :=	CJF10GH001_DI3_14	//HHF40AA001XB02 Mazuto recirkuliacijos sklendė (MZ-125): Uždaryta								
+	Ready_in :=	CJF10GH001_DI3_15	//HHF40AA001XB03 Mazuto recirkuliacijos sklendė (MZ-125): Paruošta								
+	CLS_in :=	CJF10GH001_DO1_13	//HHF40AA001YB22 Mazuto recirkuliacijos sklendė (MZ-125): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_14	//HHF40AA001YB21 Mazuto recirkuliacijos sklendė (MZ-125): Atidaryti								
+											
+//---------------------- HHG10_AA102 : 	Dujų slėgio reguliatorius (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG10_AA102"										
+	SP_in :=	CJF10GH001_AO2_03	//HHG10AA102YQ70 Dujų slėgio reguliatorius (D-133): Valdymas								
+	CLD_in :=	CJF10GH001_DI12_07	//HHG10AA102XB02 Dujų slėgio reguliatorius (D-133): Uždarytas								
+	OPD_in :=	CJF10GH001_DI12_08	//HHG10AA102XB01 Dujų slėgio reguliatorius (D-133): Atidarytas								
+	PV_in :=	CJF10GH001_DO5_02	//HHG10AA102YB22 Dujų slėgio reguliatorius (D-133): Saugi padėtis								
+											
+//---------------------- HHG10_AA191 : 	Dujų į degiklius atkirtos vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG10_AA191"										
+	CLD_in :=	CJF10GH001_DI12_05	//HHG10AA191XB02 Dujų į degiklius atkirtos vožtuvas (D-127): Uždaryta								
+	OPD_in :=	CJF10GH001_DI12_06	//HHG10AA191XB01 Dujų į degiklius atkirtos vožtuvas (D-127): Atidaryta								
+	OPN_in :=	CJF10GH001_FSDO3_07	//HHG10AA191YB21 Dujų į degiklius atkirtos vožtuvas (D-127): Atidaryti								
+											
+//---------------------- HHG20_AA102 : 	Dujų slėgio reguliatorius (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG20_AA102"										
+	SP_in :=	CJF10GH001_AO2_02	//HHG20AA102YQ70 Dujų slėgio reguliatorius (D-132): Valdymas								
+	CLD_in :=	CJF10GH001_DI10_06	//HHG20AA102XB02 Dujų slėgio reguliatorius (D-132): Uždarytas								
+	OPD_in :=	CJF10GH001_DI10_07	//HHG20AA102XB01 Dujų slėgio reguliatorius (D-132): Atidarytas								
+	PV_in :=	CJF10GH001_DO4_09	//HHG20AA102YB22 Dujų slėgio reguliatorius (D-132): Saugi padėtis								
+											
+//---------------------- HHG20_AA191 : 	Dujų į uždegtuvus atkirtos vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG20_AA191"										
+	CLD_in :=	CJF10GH001_DI12_03	//HHG20AA191XB02 Dujų į uždegtuvus atkirtos vožtuvas (D-126): Uždaryta								
+	OPD_in :=	CJF10GH001_DI12_04	//HHG20AA191XB01 Dujų į uždegtuvus atkirtos vožtuvas (D-126): Atidaryta								
+	OPN_in :=	CJF10GH001_FSDO3_06	//HHG20AA191YB21 Dujų į uždegtuvus atkirtos vožtuvas (D-126): Atidaryti								
+											
+//---------------------- HHG21_AA502 : 	Degiklių dujų kolektoriaus prapūtimo vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG21_AA502"										
+	CLD_in :=	CJF10GH001_DI14_08	//HHG21AA502XB02 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-113): Uždaryta								
+	OPD_in :=	CJF10GH001_DI14_09	//HHG21AA502XB01 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-113): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_16	//HHG21AA502YB22 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-113): Uždaryti								
+											
+//---------------------- HHG22_AA502 : 	Degiklių dujų kolektoriaus prapūtimo vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG22_AA502"										
+	CLD_in :=	CJF10GH001_DI14_10	//HHG22AA502XB02 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-114): Uždaryta								
+	OPD_in :=	CJF10GH001_DI14_11	//HHG22AA502XB01 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-114): Atidaryta								
+	CLS_in :=	CJF10GH001_DO6_01	//HHG22AA502YB22 Degiklių dujų kolektoriaus prapūtimo vožtuvas (D-114): Uždaryti								
+											
+//---------------------- HHG31_AA001 : 	Degiklio Nr.1 dujų darbinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG31_AA001"										
+	OPD_in :=	CJF10GH001_DI9_10	//HHG31AA001XB01 Degiklio Nr.1 dujų darbinis vožtuvas (D-101B): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_08	//HHG31AA001XB02 Degiklio Nr.1 dujų darbinis vožtuvas (D-101B): Uždaryta								
+	PV_in :=	CJF10GH001_FSDO3_15	//HHG31AA001YB21 Degiklio Nr.1 dujų darbinis vožtuvas (D-101B): Safety padėtis								
+											
+//---------------------- HHG31_AA191 : 	Degiklio Nr.1 dujų kontrolinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG31_AA191"										
+	OPD_in :=	CJF10GH001_DI12_11	//HHG31AA191XB01 Degiklio Nr.1 dujų kontrolinis vožtuvas (D-101A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_01	//HHG31AA191XB02 Degiklio Nr.1 dujų kontrolinis vožtuvas (D-101A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO3_08	//HHG31AA191YB21 Degiklio Nr.1 dujų kontrolinis vožtuvas (D-101A): Atidaryti								
+											
+//---------------------- HHG31_AA502 : 	Degiklio Nr.1 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG31_AA502"										
+	CLD_in :=	CJF10GH001_DI12_14	//HHG31AA502XB02 Degiklio Nr.1 dujų saugos žvakė (D-101C): Uždaryta								
+	OPD_in :=	CJF10GH001_DI12_15	//HHG31AA502XB01 Degiklio Nr.1 dujų saugos žvakė (D-101C1): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_05	//HHG31AA502YB22 Degiklio Nr.1 dujų saugos žvakė (D-101C): Uždaryti								
+											
+//---------------------- HHG32_AA001 : 	Degiklio Nr.2 dujų darbinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG32_AA001"										
+	OPD_in :=	CJF10GH001_DI9_11	//HHG32AA001XB01 Degiklio Nr.2 dujų darbinis vožtuvas (D-102B): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_09	//HHG32AA001XB02 Degiklio Nr.2 dujų darbinis vožtuvas (D-102B): Uždaryta								
+	PV_in :=	CJF10GH001_FSDO3_14	//HHG32AA001YB21 Degiklio Nr.2 dujų darbinis vožtuvas (D-102B): Safety padėtis								
+											
+//---------------------- HHG32_AA191 : 	Degiklio Nr.2 dujų kontrolinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG32_AA191"										
+	OPD_in :=	CJF10GH001_DI12_16	//HHG32AA191XB01 Degiklio Nr.2 dujų kontrolinis vožtuvas (D-102A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_02	//HHG32AA191XB02 Degiklio Nr.2 dujų kontrolinis vožtuvas (D-102A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO3_09	//HHG32AA191YB21 Degiklio Nr.2 dujų kontrolinis vožtuvas (D-102A): Atidaryti								
+											
+//---------------------- HHG32_AA502 : 	Degiklio Nr.2 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG32_AA502"										
+	CLD_in :=	CJF10GH001_DI13_02	//HHG32AA502XB02 Degiklio Nr.2 dujų saugos žvakė (D-102C): Uždaryta								
+	OPD_in :=	CJF10GH001_DI13_03	//HHG32AA502XB01 Degiklio Nr.2 dujų saugos žvakė (D-102C): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_07	//HHG32AA502YB22 Degiklio Nr.2 dujų saugos žvakė (D-102C): Uždaryti								
+											
+//---------------------- HHG33_AA001 : 	Degiklio Nr.3 dujų darbinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG33_AA001"										
+	OPD_in :=	CJF10GH001_DI9_12	//HHG33AA001XB01 Degiklio Nr.3 dujų darbinis vožtuvas (D-103B): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_10	//HHG33AA001XB02 Degiklio Nr.3 dujų darbinis vožtuvas (D-103B): Uždaryta								
+	PV_in :=	CJF10GH001_FSDO4_01	//HHG33AA001YB21 Degiklio Nr.3 dujų darbinis vožtuvas (D-103B): Safety padėtis								
+											
+//---------------------- HHG33_AA191 : 	Degiklio Nr.3 dujų kontrolinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG33_AA191"										
+	OPD_in :=	CJF10GH001_DI13_08	//HHG33AA191XB01 Degiklio Nr.3 dujų kontrolinis vožtuvas (D-103A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_04	//HHG33AA191XB02 Degiklio Nr.3 dujų kontrolinis vožtuvas (D-103A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO3_11	//HHG33AA191YB21 Degiklio Nr.3 dujų kontrolinis vožtuvas (D-103A): Atidaryti								
+											
+//---------------------- HHG33_AA502 : 	Degiklio Nr.3 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG33_AA502"										
+	CLD_in :=	CJF10GH001_DI13_06	//HHG33AA502XB02 Degiklio Nr.3 dujų saugos žvakė (D-103C): Uždaryta								
+	OPD_in :=	CJF10GH001_DI13_07	//HHG33AA502XB01 Degiklio Nr.3 dujų saugos žvakė (D-103C): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_09	//HHG33AA502YB22 Degiklio Nr.3 dujų saugos žvakė (D-103C): Uždaryti								
+											
+//---------------------- HHG34_AA001 : 	Degiklio Nr.4 dujų darbinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG34_AA001"										
+	OPD_in :=	CJF10GH001_DI9_13	//HHG34AA001XB01 Degiklio Nr.4 dujų darbinis vožtuvas (D-104B): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_11	//HHG34AA001XB02 Degiklio Nr.4 dujų darbinis vožtuvas (D-104B): Uždaryta								
+	PV_in :=	CJF10GH001_FSDO3_16	//HHG34AA001YB21 Degiklio Nr.4 dujų darbinis vožtuvas (D-104B): Safety padėtis								
+											
+//---------------------- HHG34_AA191 : 	Degiklio Nr.4 dujų kontrolinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG34_AA191"										
+	OPD_in :=	CJF10GH001_DI13_09	//HHG34AA191XB01 Degiklio Nr.4 dujų kontrolinis vožtuvas (D-104A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_05	//HHG34AA191XB02 Degiklio Nr.4 dujų kontrolinis vožtuvas (D-104A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO3_10	//HHG34AA191YB21 Degiklio Nr.4 dujų kontrolinis vožtuvas (D-104A): Atidaryti								
+											
+//---------------------- HHG34_AA502 : 	Degiklio Nr.4 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG34_AA502"										
+	CLD_in :=	CJF10GH001_DI13_12	//HHG34AA502XB02 Degiklio Nr.4 dujų saugos žvakė (D-104C): Uždaryta								
+	OPD_in :=	CJF10GH001_DI13_13	//HHG34AA502XB01 Degiklio Nr.4 dujų saugos žvakė (D-104C): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_11	//HHG34AA502YB22 Degiklio Nr.4 dujų saugos žvakė (D-104C): Uždaryti								
+											
+//---------------------- HHG35_AA001 : 	Degiklio Nr.5 dujų darbinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG35_AA001"										
+	OPD_in :=	CJF10GH001_DI9_14	//HHG35AA001XB01 Degiklio Nr.5 dujų darbinis vožtuvas (D-105B): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_12	//HHG35AA001XB02 Degiklio Nr.5 dujų darbinis vožtuvas (D-105B): Uždaryta								
+	PV_in :=	CJF10GH001_FSDO4_02	//HHG35AA001YB21 Degiklio Nr.5 dujų darbinis vožtuvas (D-105B): Safety padėtis								
+											
+//---------------------- HHG35_AA191 : 	Degiklio Nr.5 dujų kontrolinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG35_AA191"										
+	OPD_in :=	CJF10GH001_DI13_16	//HHG35AA191XB01 Degiklio Nr.5 dujų kontrolinis vožtuvas (D-105A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_06	//HHG35AA191XB02 Degiklio Nr.5 dujų kontrolinis vožtuvas (D-105A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO3_12	//HHG35AA191YB21 Degiklio Nr.5 dujų kontrolinis vožtuvas (D-105A): Atidaryti								
+											
+//---------------------- HHG35_AA502 : 	Degiklio Nr.5 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG35_AA502"										
+	CLD_in :=	CJF10GH001_DI14_01	//HHG35AA502XB02 Degiklio Nr.5 dujų saugos žvakė (D-105C): Uždaryta								
+	OPD_in :=	CJF10GH001_DI14_02	//HHG35AA502XB01 Degiklio Nr.5 dujų saugos žvakė (D-105C): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_13	//HHG35AA502YB22 Degiklio Nr.5 dujų saugos žvakė (D-105C): Uždaryti								
+											
+//---------------------- HHG36_AA001 : 	Degiklio Nr.6 dujų darbinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG36_AA001"										
+	OPD_in :=	CJF10GH001_DI9_15	//HHG36AA001XB01 Degiklio Nr.6 dujų darbinis vožtuvas (D-106B): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_13	//HHG36AA001XB02 Degiklio Nr.6 dujų darbinis vožtuvas (D-106B): Uždaryta								
+	PV_in :=	CJF10GH001_FSDO4_03	//HHG36AA001YB21 Degiklio Nr.6 dujų darbinis vožtuvas (D-106B): Safety padėtis								
+											
+//---------------------- HHG36_AA191 : 	Degiklio Nr.6 dujų kontrolinis vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG36_AA191"										
+	OPD_in :=	CJF10GH001_DI14_03	//HHG36AA191XB01 Degiklio Nr.6 dujų kontrolinis vožtuvas (D-106A): Atidaryta								
+	CLD_in :=	CJF10GH001_FSDI3_07	//HHG36AA191XB02 Degiklio Nr.6 dujų kontrolinis vožtuvas (D-106A): Uždaryta								
+	OPN_in :=	CJF10GH001_FSDO3_13	//HHG36AA191YB21 Degiklio Nr.6 dujų kontrolinis vožtuvas (D-106A): Atidaryti								
+											
+//---------------------- HHG36_AA502 : 	Degiklio Nr.6 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHG36_AA502"										
+	CLD_in :=	CJF10GH001_DI14_06	//HHG36AA502XB02 Degiklio Nr.6 dujų saugos žvakė (D-106C): Uždaryta								
+	OPD_in :=	CJF10GH001_DI14_07	//HHG36AA502XB01 Degiklio Nr.6 dujų saugos žvakė (D-106C): Atidaryta								
+	CLS_in :=	CJF10GH001_DO5_15	//HHG36AA502YB22 Degiklio Nr.6 dujų saugos žvakė (D-106C): Uždaryti								
+											
+//---------------------- HHL10_AA002 : 	Degiklio Nr.1 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL10_AA002"										
+	CLD_in :=	CJF10GH001_DI5_01	//HHL10AA002XB02 Degiklio Nr.1 oro užsklanda (OS-14A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_02	//HHL10AA002XB01 Degiklio Nr.1 oro užsklanda (OS-14A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_02	//HHL10AA002YB22 Degiklio Nr.1 oro užsklanda (OS-14A): Atidaryti								
+											
+//---------------------- HHL20_AA002 : 	Degiklio Nr.2 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL20_AA002"										
+	CLD_in :=	CJF10GH001_DI5_03	//HHL20AA002XB02 Degiklio Nr.2 oro užsklanda (OS-14B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_04	//HHL20AA002XB01 Degiklio Nr.2 oro užsklanda (OS-14B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_03	//HHL20AA002YB22 Degiklio Nr.2 oro užsklanda (OS-14B): Atidaryti								
+											
+//---------------------- HHL30_AA002 : 	Degiklio Nr.3 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL30_AA002"										
+	CLD_in :=	CJF10GH001_DI5_05	//HHL30AA002XB02 Degiklio Nr.3 oro užsklanda (OS-15A): Uždaryta								
+	OPN_in :=	CJF10GH001_DO6_04	//HHL30AA002YB22 Degiklio Nr.3 oro užsklanda (OS-15A): Atidaryti								
+											
+//---------------------- HHL3_0AA02 : 	Degiklio Nr.3 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL3_0AA02"										
+	OPD_in :=	CJF10GH001_DI5_06	//HHL30AA02XB01 Degiklio Nr.3 oro užsklanda (OS-15A): Atidaryta								
+											
+//---------------------- HHL40_AA002 : 	Degiklio Nr.4 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL40_AA002"										
+	CLD_in :=	CJF10GH001_DI5_07	//HHL40AA002XB02 Degiklio Nr.4 oro užsklanda (OS-15B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_08	//HHL40AA002XB01 Degiklio Nr.4 oro užsklanda (OS-15B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_05	//HHL40AA002YB22 Degiklio Nr.4 oro užsklanda (OS-15B): Atidaryti								
+											
+//---------------------- HHL50_AA002 : 	Degiklio Nr.5 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL50_AA002"										
+	CLD_in :=	CJF10GH001_DI5_09	//HHL50AA002XB02 Degiklio Nr.5 oro užsklanda (OS-16A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_10	//HHL50AA002XB01 Degiklio Nr.5 oro užsklanda (OS-16A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_06	//HHL50AA002YB22 Degiklio Nr.5 oro užsklanda (OS-16A): Atidaryti								
+											
+//---------------------- HHL60_AA002 : 	Degiklio Nr.6 oro užsklanda (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHL60_AA002"										
+	CLD_in :=	CJF10GH001_DI5_11	//HHL60AA002XB02 Degiklio Nr.6 oro užsklanda (OS-16B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_12	//HHL60AA002XB01 Degiklio Nr.6 oro užsklanda (OS-16B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_07	//HHL60AA002YB22 Degiklio Nr.6 oro užsklanda (OS-16B): Atidaryti								
+											
+//---------------------- HHM11_AA191 : 	Degiklio Nr.1 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM11_AA191"										
+	CLD_in :=	CJF10GH001_DI5_13	//HHM11AA191XB02 Degiklio Nr.1 garo vožtuvas (RG-101A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_14	//HHM11AA191XB01 Degiklio Nr.1 garo vožtuvas (RG-101A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_08	//HHM11AA191YB21 Degiklio Nr.1 garo vožtuvas (RG-101A): Atidaryti								
+											
+//---------------------- HHM11_AA192 : 	Degiklio Nr.1 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM11_AA192"										
+	CLD_in :=	CJF10GH001_DI5_15	//HHM11AA192XB02 Degiklio Nr.1 garo vožtuvas (RG-101B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI5_16	//HHM11AA192XB01 Degiklio Nr.1 garo vožtuvas (RG-101B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_09	//HHM11AA192YB21 Degiklio Nr.1 garo vožtuvas (RG-101B): Atidaryti								
+											
+//---------------------- HHM12_AA191 : 	Degiklio Nr.2 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM12_AA191"										
+	CLD_in :=	CJF10GH001_DI6_03	//HHM12AA191XB02 Degiklio Nr.2 garo vožtuvas (RG-102A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI6_04	//HHM12AA191XB01 Degiklio Nr.2 garo vožtuvas (RG-102A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_10	//HHM12AA191YB21 Degiklio Nr.2 garo vožtuvas (RG-102A): Atidaryti								
+											
+//---------------------- HHM12_AA192 : 	Degiklio Nr.2 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM12_AA192"										
+	CLD_in :=	CJF10GH001_DI6_05	//HHM12AA192XB02 Degiklio Nr.2 garo vožtuvas (RG-102B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI6_06	//HHM12AA192XB01 Degiklio Nr.2 garo vožtuvas (RG-102B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_11	//HHM12AA192YB21 Degiklio Nr.2 garo vožtuvas (RG-102B): Atidaryti								
+											
+//---------------------- HHM13_AA191 : 	Degiklio Nr.3 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM13_AA191"										
+	CLD_in :=	CJF10GH001_DI6_09	//HHM13AA191XB02 Degiklio Nr.3 garo vožtuvas (RG-103A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI6_10	//HHM13AA191XB01 Degiklio Nr.3 garo vožtuvas (RG-103A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_12	//HHM13AA191YB21 Degiklio Nr.3 garo vožtuvas (RG-103A): Atidaryti								
+											
+//---------------------- HHM13_AA192 : 	Degiklio Nr.3 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM13_AA192"										
+	CLD_in :=	CJF10GH001_DI6_11	//HHM13AA192XB02 Degiklio Nr.3 garo vožtuvas (RG-103B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI6_12	//HHM13AA192XB01 Degiklio Nr.3 garo vožtuvas (RG-103B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_13	//HHM13AA192YB21 Degiklio Nr.3 garo vožtuvas (RG-103B): Atidaryti								
+											
+//---------------------- HHM14_AA191 : 	Degiklio Nr.4 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM14_AA191"										
+	CLD_in :=	CJF10GH001_DI11_01	//HHM14AA191XB02 Degiklio Nr.4 garo vožtuvas (RG-104A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI11_02	//HHM14AA191XB01 Degiklio Nr.4 garo vožtuvas (RG-104A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_14	//HHM14AA191YB21 Degiklio Nr.4 garo vožtuvas (RG-104A): Atidaryti								
+											
+//---------------------- HHM14_AA192 : 	Degiklio Nr.4 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM14_AA192"										
+	CLD_in :=	CJF10GH001_DI11_03	//HHM14AA192XB02 Degiklio Nr.4 garo vožtuvas (RG-104B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI11_04	//HHM14AA192XB01 Degiklio Nr.4 garo vožtuvas (RG-104B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_15	//HHM14AA192YB21 Degiklio Nr.4 garo vožtuvas (RG-104B): Atidaryti								
+											
+//---------------------- HHM15_AA191 : 	Degiklio Nr.5 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM15_AA191"										
+	CLD_in :=	CJF10GH001_DI11_07	//HHM15AA191XB02 Degiklio Nr.5 garo vožtuvas (RG-105A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI11_08	//HHM15AA191XB01 Degiklio Nr.5 garo vožtuvas (RG-105A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO6_16	//HHM15AA191YB21 Degiklio Nr.5 garo vožtuvas (RG-105A): Atidaryti								
+											
+//---------------------- HHM15_AA192 : 	Degiklio Nr.5 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM15_AA192"										
+	CLD_in :=	CJF10GH001_DI11_09	//HHM15AA192XB02 Degiklio Nr.5 garo vožtuvas (RG-105B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI11_10	//HHM15AA192XB01 Degiklio Nr.5 garo vožtuvas (RG-105B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO7_01	//HHM15AA192YB21 Degiklio Nr.5 garo vožtuvas (RG-105B): Atidaryti								
+											
+//---------------------- HHM16_AA191 : 	Degiklio Nr.6 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM16_AA191"										
+	CLD_in :=	CJF10GH001_DI11_13	//HHM16AA191XB02 Degiklio Nr.6 garo vožtuvas (RG-106A): Uždaryta								
+	OPD_in :=	CJF10GH001_DI11_14	//HHM16AA191XB01 Degiklio Nr.6 garo vožtuvas (RG-106A): Atidaryta								
+	OPN_in :=	CJF10GH001_DO7_02	//HHM16AA191YB21 Degiklio Nr.6 garo vožtuvas (RG-106A): Atidaryti								
+											
+//---------------------- HHM16_AA192 : 	Degiklio Nr.6 garo vožtuvas (RG ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHM16_AA192"										
+	CLD_in :=	CJF10GH001_DI11_15	//HHM16AA192XB02 Degiklio Nr.6 garo vožtuvas (RG-106B): Uždaryta								
+	OPD_in :=	CJF10GH001_DI11_16	//HHM16AA192XB01 Degiklio Nr.6 garo vožtuvas (RG-106B): Atidaryta								
+	OPN_in :=	CJF10GH001_DO7_03	//HHM16AA192YB21 Degiklio Nr.6 garo vožtuvas (RG-106B): Atidaryti								
+											
+//---------------------- HHX21_AA602 : 	Degiklio Nr.1 suspausto oro vožtuvas (SO ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHX21_AA602"										
+	OPN_in :=	CJF10GH001_FSDO1_07	//HHX21AA602YB21 Degiklio Nr.1 suspausto oro vožtuvas (SO-V187): Atidaryti								
+											
+//---------------------- HHX22_AA602 : 	Degiklio Nr.2 suspausto oro vožtuvas (SO ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHX22_AA602"										
+	OPN_in :=	CJF10GH001_FSDO1_08	//HHX22AA602YB21 Degiklio Nr.2 suspausto oro vožtuvas (SO-V196): Atidaryti								
+											
+//---------------------- HHX23_AA602 : 	Degiklio Nr.3 suspausto oro vožtuvas (SO ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHX23_AA602"										
+	OPN_in :=	CJF10GH001_FSDO1_09	//HHX23AA602YB21 Degiklio Nr.3 suspausto oro vožtuvas (SO-V188): Atidaryti								
+											
+//---------------------- HHX24_AA602 : 	Degiklio Nr.4 suspausto oro vožtuvas (SO ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHX24_AA602"										
+	OPN_in :=	CJF10GH001_FSDO1_10	//HHX24AA602YB21 Degiklio Nr.4 suspausto oro vožtuvas (SO-V164): Atidaryti								
+											
+//---------------------- HHX25_AA602 : 	Degiklio Nr.5 suspausto oro vožtuvas (SO ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHX25_AA602"										
+	OPN_in :=	CJF10GH001_FSDO1_11	//HHX25AA602YB21 Degiklio Nr.5 suspausto oro vožtuvas (SO-V189): Atidaryti								
+											
+//---------------------- HHX26_AA602 : 	Degiklio Nr.6 suspausto oro vožtuvas (SO ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HHX26_AA602"										
+	OPN_in :=	CJF10GH001_FSDO1_12	//HHX26AA602YB21 Degiklio Nr.6 suspausto oro vožtuvas (SO-V198): Atidaryti								
+											
+//---------------------- HJG10_AA501 : 	Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG10_AA501"										
+	CLS_in :=	CJF10GH001_DO4_10	//HJG10AA501YB22 Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D-115): Uždaryti								
+											
+//---------------------- HJG20_AA501 : 	Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG20_AA501"										
+	CLS_in :=	CJF10GH001_DO4_11	//HJG20AA501YB22 Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D-116): Uždaryti								
+											
+//---------------------- HJG31_AA191 : 	Uždegtuvo Nr.1 kontrolinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG31_AA191"										
+	OPN_in :=	CJF10GH001_FSDO2_07	//HJG31AA191YB21 Uždegtuvo Nr.1 kontrolinis dujų vožtuvas (D-107A): Atidaryti								
+											
+//---------------------- HJG31_AA192 : 	Uždegtuvo Nr.1 darbinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG31_AA192"										
+	OPN_in :=	CJF10GH001_FSDO2_08	//HJG31AA192YB21 Uždegtuvo Nr.1 darbinis dujų vožtuvas (D-107B): Atidaryti								
+											
+//---------------------- HJG31_AA501 : 	Uždegtuvo Nr.1 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG31_AA501"										
+	CLS_in :=	CJF10GH001_DO4_12	//HJG31AA501YB22 Uždegtuvo Nr.1 dujų saugos žvakė (D-107C): Uždaryti								
+											
+//---------------------- HJG32_AA191 : 	Uždegtuvo Nr.2 kontrolinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG32_AA191"										
+	OPN_in :=	CJF10GH001_FSDO2_09	//HJG32AA191YB21 Uždegtuvo Nr.2 kontrolinis dujų vožtuvas (D-108A): Atidaryti								
+											
+//---------------------- HJG32_AA192 : 	Uždegtuvo Nr.2 darbinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG32_AA192"										
+	OPN_in :=	CJF10GH001_FSDO2_10	//HJG32AA192YB21 Uždegtuvo Nr.2 darbinis dujų vožtuvas (D-108B): Atidaryti								
+											
+//---------------------- HJG32_AA501 : 	Uždegtuvo Nr.2 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG32_AA501"										
+	CLS_in :=	CJF10GH001_DO4_13	//HJG32AA501YB22 Uždegtuvo Nr.2 dujų saugos žvakė (D-108C): Uždaryti								
+											
+//---------------------- HJG33_AA191 : 	Uždegtuvo Nr.3 kontrolinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG33_AA191"										
+	OPN_in :=	CJF10GH001_FSDO2_11	//HJG33AA191YB21 Uždegtuvo Nr.3 kontrolinis dujų vožtuvas (D-109A): Atidaryti								
+											
+//---------------------- HJG33_AA192 : 	Uždegtuvo Nr.3 darbinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG33_AA192"										
+	OPN_in :=	CJF10GH001_FSDO2_12	//HJG33AA192YB21 Uždegtuvo Nr.3 darbinis dujų vožtuvas (D-109B): Atidaryti								
+											
+//---------------------- HJG33_AA501 : 	Uždegtuvo Nr.3 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG33_AA501"										
+	CLS_in :=	CJF10GH001_DO4_14	//HJG33AA501YB22 Uždegtuvo Nr.3 dujų saugos žvakė (D-109C): Uždaryti								
+											
+//---------------------- HJG34_AA191 : 	Uždegtuvo Nr.4 kontrolinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG34_AA191"										
+	OPN_in :=	CJF10GH001_FSDO2_13	//HJG34AA191YB21 Uždegtuvo Nr.4 kontrolinis dujų vožtuvas (D-110A): Atidaryti								
+											
+//---------------------- HJG34_AA192 : 	Uždegtuvo Nr.4 darbinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG34_AA192"										
+	OPN_in :=	CJF10GH001_FSDO2_14	//HJG34AA192YB21 Uždegtuvo Nr.4 darbinis dujų vožtuvas (D-110B): Atidaryti								
+											
+//---------------------- HJG34_AA501 : 	Uždegtuvo Nr.4 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG34_AA501"										
+	CLS_in :=	CJF10GH001_DO4_15	//HJG34AA501YB22 Uždegtuvo Nr.4 dujų saugos žvakė (D-110C): Uždaryti								
+											
+//---------------------- HJG35_AA191 : 	Uždegtuvo Nr.5 kontrolinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG35_AA191"										
+	OPN_in :=	CJF10GH001_FSDO2_15	//HJG35AA191YB21 Uždegtuvo Nr.5 kontrolinis dujų vožtuvas (D-111A): Atidaryti								
+											
+//---------------------- HJG35_AA192 : 	Uždegtuvo Nr.5 darbinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG35_AA192"										
+	OPN_in :=	CJF10GH001_FSDO2_16	//HJG35AA192YB21 Uždegtuvo Nr.5 darbinis dujų vožtuvas (D-111B): Atidaryti								
+											
+//---------------------- HJG35_AA501 : 	Uždegtuvo Nr.5 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG35_AA501"										
+	CLS_in :=	CJF10GH001_DO4_16	//HJG35AA501YB22 Uždegtuvo Nr.5 dujų saugos žvakė (D-111C): Uždaryti								
+											
+//---------------------- HJG36_AA191 : 	Uždegtuvo Nr.6 kontrolinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG36_AA191"										
+	OPN_in :=	CJF10GH001_FSDO3_01	//HJG36AA191YB21 Uždegtuvo Nr.6 kontrolinis dujų vožtuvas (D-112A): Atidaryti								
+											
+//---------------------- HJG36_AA192 : 	Uždegtuvo Nr.6 darbinis dujų vožtuvas (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG36_AA192"										
+	OPN_in :=	CJF10GH001_FSDO3_02	//HJG36AA192YB21 Uždegtuvo Nr.6 darbinis dujų vožtuvas (D-112B): Atidaryti								
+											
+//---------------------- HJG36_AA501 : 	Uždegtuvo Nr.6 dujų saugos žvakė (D ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HJG36_AA501"										
+	CLS_in :=	CJF10GH001_DO5_01	//HJG36AA501YB22 Uždegtuvo Nr.6 dujų saugos žvakė (D-112C): Uždaryti								
+											
+//---------------------- HLA10_AA101 : 	Oro iš aplinkos skląstis (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HLA10_AA101"										
+	OPD_in :=	CJF10GH001_DI3_01	//HLA10AA101XB01 Oro iš aplinkos skląstis (OS-10A): Atidaryta								
+	CLD_in :=	CJF10GH001_DI3_02	//HLA10AA101XB02 Oro iš aplinkos skląstis (OS-10A): Uždaryta								
+	Ready_in :=	CJF10GH001_DI3_03	//HLA10AA101XB03 Oro iš aplinkos skląstis (OS-10A): Paruošta								
+	SP_in :=	CJF10GH001_DI3_04	//HLA10AA101XB31 Oro iš aplinkos skląstis (OS-10A): Distancinis valdymas								
+	CLS_in :=	CJF10GH001_DO1_09	//HLA10AA101YB22 Oro iš aplinkos skląstis (OS-10A): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_10	//HLA10AA101YB21 Oro iš aplinkos skląstis (OS-10A): Atidaryti								
+											
+//---------------------- HLA20_AA101 : 	Oro iš aplinkos skląstis (OS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HLA20_AA101"										
+	OPD_in :=	CJF10GH001_DI2_13	//HLA20AA101XB01 Oro iš aplinkos skląstis (OS-10B): Atidaryta								
+	CLD_in :=	CJF10GH001_DI2_14	//HLA20AA101XB02 Oro iš aplinkos skląstis (OS-10B): Uždaryta								
+	Ready_in :=	CJF10GH001_DI2_15	//HLA20AA101XB03 Oro iš aplinkos skląstis (OS-10B): Paruošta								
+	SP_in :=	CJF10GH001_DI2_16	//HLA20AA101XB31 Oro iš aplinkos skląstis (OS-10B): Distancinis valdymas								
+	CLS_in :=	CJF10GH001_DO1_07	//HLA20AA101YB22 Oro iš aplinkos skląstis (OS-10B): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_08	//HLA20AA101YB21 Oro iš aplinkos skląstis (OS-10B): Atidaryti								
+											
+//---------------------- HNA20_AA101B : 	Dūmų skląstis (DS ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HNA20_AA101B"										
+	PV_in :=	CJF10GH001_AI8_04	//HNA20AA101BXQ01 Dūmų skląstis (DS-11): Padėtis I+								
+	SP_in :=	CJF10GH001_AO2_01	//HNA20AA101BYQ70 Dūmų skląstis (DS-11): Padėties uždavimas								
+	OPD_in :=	CJF10GH001_DI7_13	//HNA20AA101BXB01 Dūmų skląstis (DS-11): Atidaryta								
+	CLD_in :=	CJF10GH001_DI7_14	//HNA20AA101BXB02 Dūmų skląstis (DS-11): Uždaryta								
+	Ready_in :=	CJF10GH001_DI7_15	//HNA20AA101BXB03 Dūmų skląstiss (DS-11): Paruošta								
+	SP_in :=	CJF10GH001_DI7_16	//HNA20AA101BXB31 Dūmų skląstis (DS-11): Distancinis valdymas								
+											
+//---------------------- HNF10_AA001 : 	Dūmų recirkuliacijos skląstis (1DU ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HNF10_AA001"										
+	OPD_in :=	CJF10GH001_DI2_01	//HNF10AA001XB01 Dūmų recirkuliacijos skląstis (1DU-2): Atidaryta								
+	CLD_in :=	CJF10GH001_DI2_02	//HNF10AA001XB02 Dūmų recirkuliacijos skląstis (1DU-2): Uždaryta								
+	Ready_in :=	CJF10GH001_DI2_03	//HNF10AA001XB03 Dūmų recirkuliacijos skląstis (1DU-2): Paruošta								
+	SP_in :=	CJF10GH001_DI2_04	//HNF10AA001XB31 Dūmų recirkuliacijos skląstis (1DU-2): Distancinis valdymas								
+	CLS_in :=	CJF10GH001_DO1_01	//HNF10AA001YB22 Dūmų ;recirkuliacijos skląstis (1DU-2): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_02	//HNF10AA001YB21 Dūmų recirkuliacijos skląstis (1DU-2); Atidaryti								
+											
+//---------------------- HNF11_AA001 : 	Dūmų recirkuliacijos reguliuojantis skląstis (1DU ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HNF11_AA001"										
+	PV_in :=	CJF10GH001_AI8_01	//HNF11AA001XQ01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Padėtis I+								
+	OPD_in :=	CJF10GH001_DI2_05	//HNF11AA001XB01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Atidaryta								
+	CLD_in :=	CJF10GH001_DI2_06	//HNF11AA001XB02 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Uždaryta								
+	Ready_in :=	CJF10GH001_DI2_07	//HNF11AA001XB03 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Paruošta								
+	SP_in :=	CJF10GH001_DI2_08	//HNF11AA001XB31 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Distancinis valdymas								
+	CLS_in :=	CJF10GH001_DO1_03	//HNF11AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_04	//HNF11AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-5): Atidaryti								
+											
+//---------------------- HNF12_AA001 : 	Dūmų recirkuliacijos reguliuojantis skląstis (1DU ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."HNF12_AA001"										
+	PV_in :=	CJF10GH001_AI8_02	//HNF12AA001XQ01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Padėtis I+								
+	OPD_in :=	CJF10GH001_DI2_09	//HNF12AA001XB01 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Atidaryta								
+	CLD_in :=	CJF10GH001_DI2_10	//HNF12AA001XB02 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Uždaryta								
+	Ready_in :=	CJF10GH001_DI2_11	//HNF12AA001XB03 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Paruošta								
+	SP_in :=	CJF10GH001_DI2_12	//HNF12AA001XB31 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Distancinis valdymas								
+	CLS_in :=	CJF10GH001_DO1_05	//HNF12AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Uždaryti								
+	OPN_in :=	CJF10GH001_DO1_06	//HNF12AA001YQ70 Dūmų recirkuliacijos reguliuojantis skląstis (1DU-6): Atidaryti								
+											
+//---------------------- NDA10_AA002 : 	Termofikacinio vandens sklendė už katilo (V ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."NDA10_AA002"										
+	Ready_in :=	CJF10GH001_DI8_04	//NDA10AA002XB03 Termofikacinio vandens sklendė už katilo (V-11): Paruošta								
+	OPD_in :=	CJF10GH001_DI8_05	//NDA10AA002XB01 Termofikacinio vandens sklendė už katilo (V-11): Atidaryta								
+	CLD_in :=	CJF10GH001_DI8_06	//NDA10AA002XB02 Termofikacinio vandens sklendė už katilo (V-11): Uždaryta								
+	OPN_in :=	CJF10GH001_DO3_03	//NDA10AA002YB21 Termofikacinio vandens sklendė už katilo (V-11): Atidaryti								
+	CLS_in :=	CJF10GH001_DO3_04	//NDA10AA002YB22 Termofikacinio vandens sklendė už katilo (V-11): Uždaryti								
+											
+//---------------------- NDB10_AA001 : 	Termofikacinio vandens sklendė prieš katilą (V ----------------------										
+CALL fb_VLV											
+	Puls_100ms:= pulsas										
+	dv := "V"."NDB10_AA001"										
+	Ready_in :=	CJF10GH001_DI8_01	//NDB10AA001XB03 Termofikacinio vandens sklendė prieš katilą (V-10): Paruošta								
+	OPD_in :=	CJF10GH001_DI8_02	//NDB10AA001XB01 Termofikacinio vandens sklendė prieš katilą (V-10): Atidaryta								
+	CLD_in :=	CJF10GH001_DI8_03	//NDB10AA001XB02 Termofikacinio vandens sklendė prieš katilą (V-10): Uždaryta								
+	OPN_in :=	CJF10GH001_DO3_01	//NDB10AA001YB21 Termofikacinio vandens sklendė prieš katilą (V-10): Atidaryti								
+	CLS_in :=	CJF10GH001_DO3_02	//NDB10AA001YB22 Termofikacinio vandens sklendė prieš katilą (V-10): Uždaryti								
+											

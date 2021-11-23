@@ -56,9 +56,9 @@ void Declare_count_indirects(int &ai_indirect_ats, int &hc_indirect_ats, int &fc
 int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_max, int PID_nr_max, int MOT_nr_max, check_result_str &result_obj, adr_cpu_test_str &test_CPU_adr);
 
 // adress declaring
-int Declare_addreses();
+int Declare_addreses(bool test_mode);
 
-int Declare_dump_to_file(bool test_mode, System::Windows::Forms::DataGridView^ grid, char* grid_name);
+int Declare_dump_to_file(bool test_mode, wstring gen_test_mode, System::Windows::Forms::DataGridView^ grid, wstring grid_name);
 
-int Declare_put_adres_grid(bool test_mode);
+int Declare_put_adres_grid(bool test_mode, wstring gen_test_mode);
 #endif

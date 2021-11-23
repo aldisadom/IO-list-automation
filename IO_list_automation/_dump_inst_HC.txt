@@ -1,0 +1,48 @@
+﻿//---------------------- HHA10_AE001 : 	Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Įstumtas ----------------------										
+CALL fb_HC											
+	Puls_100ms:= pulsas										
+	dv := "HC"."HHA10_AE001"										
+	_in :=	CJF10GH001_DI7_01	//HHA10AE001XB02 Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Įstumtas								
+	_in :=	CJF10GH001_DI7_02	//HHA10AE001XB01 Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+	_in :=	CJF10GH001_DO4_01	//HHA10AE001YB21 Degiklio Nr.1 įstūmimo į ambrazūrą cilindras: Pirmyn								
+											
+//---------------------- HHA20_AE001 : 	Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Įstumtas ----------------------										
+CALL fb_HC											
+	Puls_100ms:= pulsas										
+	dv := "HC"."HHA20_AE001"										
+	_in :=	CJF10GH001_DI7_03	//HHA20AE001XB02 Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Įstumtas								
+	_in :=	CJF10GH001_DI7_04	//HHA20AE001XB01 Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+	_in :=	CJF10GH001_DO4_02	//HHA20AE001YB21 Degiklio Nr.2 įstūmimo į ambrazūrą cilindras: Pirmyn								
+											
+//---------------------- HHA30_AE001 : 	Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Įstumtas ----------------------										
+CALL fb_HC											
+	Puls_100ms:= pulsas										
+	dv := "HC"."HHA30_AE001"										
+	_in :=	CJF10GH001_DI7_05	//HHA30AE001XB02 Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Įstumtas								
+	_in :=	CJF10GH001_DI7_06	//HHA30AE001XB01 Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+	_in :=	CJF10GH001_DO4_03	//HHA30AE001YB21 Degiklio Nr.3 įstūmimo į ambrazūrą cilindras: Pirmyn								
+											
+//---------------------- HHA40_AE001 : 	Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Įstumtas ----------------------										
+CALL fb_HC											
+	Puls_100ms:= pulsas										
+	dv := "HC"."HHA40_AE001"										
+	_in :=	CJF10GH001_DI7_07	//HHA40AE001XB02 Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Įstumtas								
+	_in :=	CJF10GH001_DI7_08	//HHA40AE001XB01 Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+	_in :=	CJF10GH001_DO4_04	//HHA40AE001YB21 Degiklio Nr.4 įstūmimo į ambrazūrą cilindras: Pirmyn								
+											
+//---------------------- HHA50_AE001 : 	Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Įstumtas ----------------------										
+CALL fb_HC											
+	Puls_100ms:= pulsas										
+	dv := "HC"."HHA50_AE001"										
+	_in :=	CJF10GH001_DI9_08	//HHA50AE001XB02 Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Įstumtas								
+	_in :=	CJF10GH001_DI9_09	//HHA50AE001XB01 Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+	_in :=	CJF10GH001_DO4_05	//HHA50AE001YB21 Degiklio Nr.5 įstūmimo į ambrazūrą cilindras: Pirmyn								
+											
+//---------------------- HHA60_AE001 : 	Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Įstumtas ----------------------										
+CALL fb_HC											
+	Puls_100ms:= pulsas										
+	dv := "HC"."HHA60_AE001"										
+	_in :=	CJF10GH001_DI9_06	//HHA60AE001XB02 Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Įstumtas								
+	_in :=	CJF10GH001_DI9_07	//HHA60AE001XB01 Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Ištrauktas								
+	_in :=	CJF10GH001_DO4_06	//HHA60AE001YB21 Degiklio Nr.6 įstūmimo į ambrazūrą cilindras: Pirmyn								
+											

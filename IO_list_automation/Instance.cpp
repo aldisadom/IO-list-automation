@@ -97,10 +97,10 @@ void Instance_grid_write_cell(int &grid_row_index, int collumn,wstring cell_text
 
 
 
-int Instance_vlv_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid, int cpu_index)
+int Instance_vlv_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
 	int return_val = 0;
-	switch (cpu_index)
+	switch (parameters.CPU)
 	{
 	case Beckhoff_index:	
 		return_val =Instance_Beckhoff_vlv(index, grid_row_index, grid);
@@ -115,18 +115,17 @@ int Instance_vlv_switch(int index, int &grid_row_index, System::Windows::Forms::
 
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return -1;
 		break;
 	}
 	return return_val;
 }
 
-int Instance_ai_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid, int cpu_index)
+int Instance_ai_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
 	int return_val = 0;
-	switch (cpu_index)
+	switch (parameters.CPU)
 	{
 	case Beckhoff_index:
 		return_val = Instance_Beckhoff_ai(index, grid_row_index, grid);
@@ -141,18 +140,17 @@ int Instance_ai_switch(int index, int &grid_row_index, System::Windows::Forms::D
 
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return -1;
 		break;
 	}
 	return return_val;
 }
 
-int Instance_mot_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid, int cpu_index)
+int Instance_mot_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
 	int return_val = 0;
-	switch (cpu_index)
+	switch (parameters.CPU)
 	{
 	case Beckhoff_index:
 		return_val = Instance_Beckhoff_mot(index, grid_row_index, grid);
@@ -167,18 +165,17 @@ int Instance_mot_switch(int index, int &grid_row_index, System::Windows::Forms::
 
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return -1;
 		break;
 	}
 	return return_val;
 }
 
-int Instance_pid_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid, int cpu_index)
+int Instance_pid_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
 	int return_val = 0;
-	switch (cpu_index)
+	switch (parameters.CPU)
 	{
 	case Beckhoff_index:
 		return_val = Instance_Beckhoff_pid(index, grid_row_index, grid);
@@ -193,18 +190,17 @@ int Instance_pid_switch(int index, int &grid_row_index, System::Windows::Forms::
 
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return -1;
 		break;
 	}
 	return return_val;
 }
 
-int Instance_hc_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid, int cpu_index)
+int Instance_hc_switch(int index, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
 	int return_val = 0;
-	switch (cpu_index)
+	switch (parameters.CPU)
 	{
 	case Beckhoff_index:
 		return_val = Instance_Beckhoff_hc(index, grid_row_index, grid);
@@ -219,8 +215,7 @@ int Instance_hc_switch(int index, int &grid_row_index, System::Windows::Forms::D
 
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return -1;
 		break;
 	}
@@ -229,36 +224,37 @@ int Instance_hc_switch(int index, int &grid_row_index, System::Windows::Forms::D
 
 
 
-int Instance_gen(bool test_mode, int cpu_index)
+int Instance_gen(bool test_mode, wstring gen_test_mode)
 {
-	if (cpu_index == ABB_800xA_index)
+	wstring texts;
+	if (parameters.CPU == ABB_800xA_index)
 	{
 		if (test_mode == true)
 			return 0;
-		strcpy_s(err_txt, sizeof err_txt, err_no_function_for_this[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, Global_get_CPU_name(cpu_index));
-		err_write_show(err_txt);
+		texts = str.Error.no_function_for_this.s[lang];
+		texts.append(error_separator);
+		texts.append(Global_get_CPU_name(parameters.CPU));
+		err_write_show(texts);
 		return 0;
 	}
 
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -276,16 +272,15 @@ int Instance_gen(bool test_mode, int cpu_index)
 	{
 		return 1;
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(cpu_index));
-	info_write(info_txt);
+	texts = str.Info.put_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	info_write(texts);
 
 	Instance_init_grids(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max,%results_form);
 
 
-	Show_progress(prog_declare[lang], objects.valid_entries);
+	Show_progress(str.Progress.declare.s[lang], objects.valid_entries);
 
 	int AI_grid_row = 0;
 	int VLV_grid_row = 0;
@@ -339,23 +334,23 @@ int Instance_gen(bool test_mode, int cpu_index)
 
 		if (object_type.compare(AI_type) == 0)
 		{
-			return_val=Instance_ai_switch(index, AI_grid_row, results_form.Grid_AI, cpu_index);
+			return_val=Instance_ai_switch(index, AI_grid_row, results_form.Grid_AI);
 		}
 		else if (object_type.compare(Vlv_type) == 0)
 		{
-			return_val=Instance_vlv_switch(index, VLV_grid_row, results_form.Grid_VLV, cpu_index);
+			return_val=Instance_vlv_switch(index, VLV_grid_row, results_form.Grid_VLV);
 		}
 		else if (object_type.compare(HC_type) == 0)
 		{
-			return_val =Instance_hc_switch(index, HC_grid_row, results_form.Grid_HC, cpu_index);
+			return_val =Instance_hc_switch(index, HC_grid_row, results_form.Grid_HC);
 		}
 		else if (object_type.compare(PID_type) == 0)
 		{
-			return_val =Instance_pid_switch(index, PID_grid_row, results_form.Grid_PID, cpu_index);
+			return_val =Instance_pid_switch(index, PID_grid_row, results_form.Grid_PID);
 		}
 		else if (object_type.compare(Mot_type) == 0)
 		{
-			return_val=Instance_mot_switch(index, MOT_grid_row, results_form.Grid_MOT, cpu_index);
+			return_val=Instance_mot_switch(index, MOT_grid_row, results_form.Grid_MOT);
 		}
 
 		if (return_val != 0)
@@ -369,13 +364,12 @@ int Instance_gen(bool test_mode, int cpu_index)
 
 	Hide_progress();
 
-	Declare_dump_to_file(test_mode, results_form.Grid_AI, "inst_AI");
-	Declare_dump_to_file(test_mode, results_form.Grid_FC, "inst_FC");
-	Declare_dump_to_file(test_mode, results_form.Grid_HC, "inst_HC");
-	Declare_dump_to_file(test_mode, results_form.Grid_MOT, "inst_MOT");
-	Declare_dump_to_file(test_mode, results_form.Grid_PID, "inst_PID");
-	Declare_dump_to_file(test_mode, results_form.Grid_VLV, "inst_VLV");
-	Declare_dump_to_file(test_mode, results_form.Grid_SCADA, "inst_SCADA");
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_AI, Dump_names.inst_AI);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_FC, Dump_names.inst_FC);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_HC, Dump_names.inst_HC);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_MOT, Dump_names.inst_MOT);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_PID, Dump_names.inst_PID);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_VLV, Dump_names.inst_VLV);
 
 	if (test_mode == false)
 	{
@@ -384,14 +378,14 @@ int Instance_gen(bool test_mode, int cpu_index)
 	}
 
 	// after succesful instance generation update where used IO is
-	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 
-	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(cpu_index));
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.put_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	return 0;
 }

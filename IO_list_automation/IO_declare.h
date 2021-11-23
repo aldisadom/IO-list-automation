@@ -7,7 +7,7 @@ int IO_generate_module(wstring cabinet, wstring module, std::wstring &text);
 
 int IO_generate();
 
-int IO_show(bool test_mode);
+int IO_show(bool test_mode, wstring gen_test_mode);
 
 void IO_show_modules(System::Windows::Forms::DataGridView^ grid, bool test_mode);
 #endif

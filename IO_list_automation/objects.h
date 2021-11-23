@@ -11,6 +11,8 @@ void Objects_put_data_switch(int iCol, int index, wstring cell_text);
 
 //check if there is data in any variable
 int Objects_valid_row_check(int row);
+//get object link for object
+int Object_find_obj_link(int index, bool pid_index);
 
 
 //find unique objects in signals data
@@ -21,5 +23,7 @@ int Objects_find_objects();
 int Objects_find_operatyv();
 //transfer objects data back to signals
 int Objects_transfer_to_signals(bool test_mode);
+//get lenght of description
+int Objects_get_description_lenght();
 
 #endif

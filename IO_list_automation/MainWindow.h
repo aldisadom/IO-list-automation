@@ -12,6 +12,8 @@
 #include "Instance.h"
 #include "IO_declare.h"
 #include "tests.h"
+#include "Trend_data.h"
+#include "Instance_scada.h"
 
 #include <msclr/marshal_cppstd.h>
 
@@ -117,16 +119,17 @@ namespace IOlistautomation {
 
 
 	private: System::Windows::Forms::ToolStripMenuItem^  Instance_Generate;
+	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_Instances;
 
 
 
 
 
-	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_PID;
-	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_Valve;
-	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_HC;
-	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_AI;
-	private: System::Windows::Forms::ToolStripMenuItem^  SCADA_Motor;
+
+
+
+
+
 	private: System::Windows::Forms::ToolStripMenuItem^  Project_SCADA_WinCC;
 	public: System::Windows::Forms::ProgressBar^  progressBaras;
 
@@ -206,6 +209,22 @@ private: System::Windows::Forms::ComboBox^  Filter_18;
 private: System::Windows::Forms::ComboBox^  Filter_19;
 private: System::Windows::Forms::Button^  Find_button;
 private: System::Windows::Forms::TextBox^  Find_text;
+private: System::Windows::Forms::TabPage^  tabPage4;
+public: System::Windows::Forms::DataGridView^  Trend_data_grid;
+private:
+
+private:
+private: System::Windows::Forms::TabPage^  tabPage5;
+private: System::Windows::Forms::Button^  Clear_button;
+private: System::Windows::Forms::Button^  Poly_calc_button;
+private: System::Windows::Forms::ToolStripMenuItem^  File_ReadCFG;
+private: System::Windows::Forms::ToolStripMenuItem^  Gen_tests;
+private: System::Windows::Forms::Button^  Plot_button;
+
+
+
+
+public:
 
 
 
@@ -239,6 +258,7 @@ private:
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MainWindow::typeid));
 			this->Design_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
@@ -247,10 +267,12 @@ private:
 			this->File_SaveALL = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->File_Load = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->File_LoadALL = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->File_ReadCFG = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->File_Help = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->File_About = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Test_app = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Gen_tests = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->File_Exit = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->projectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -291,17 +313,18 @@ private:
 			this->toolStripSeparator5 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->Instance_Generate = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sCADAToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->SCADA_PID = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->SCADA_Valve = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->SCADA_HC = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->SCADA_AI = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->SCADA_Motor = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->SCADA_Instances = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->Signals_grid = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->Object_grid = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->Poly_calc_button = (gcnew System::Windows::Forms::Button());
+			this->Clear_button = (gcnew System::Windows::Forms::Button());
+			this->Trend_data_grid = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
 			this->Filter_0 = (gcnew System::Windows::Forms::ComboBox());
 			this->Filter_7 = (gcnew System::Windows::Forms::ComboBox());
 			this->Filter_16 = (gcnew System::Windows::Forms::ComboBox());
@@ -326,6 +349,7 @@ private:
 			this->Filter_19 = (gcnew System::Windows::Forms::ComboBox());
 			this->Find_button = (gcnew System::Windows::Forms::Button());
 			this->Find_text = (gcnew System::Windows::Forms::TextBox());
+			this->Plot_button = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Design_grid))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
@@ -334,6 +358,8 @@ private:
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Signals_grid))->BeginInit();
 			this->tabPage3->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Object_grid))->BeginInit();
+			this->tabPage4->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Trend_data_grid))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Design_grid
@@ -376,10 +402,10 @@ private:
 			// 
 			// fileToolStripMenuItem
 			// 
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(10) {
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(12) {
 				this->File_Save,
-					this->File_SaveALL, this->File_Load, this->File_LoadALL, this->toolStripSeparator1, this->File_Help, this->File_About, this->Test_app,
-					this->toolStripSeparator2, this->File_Exit
+					this->File_SaveALL, this->File_Load, this->File_LoadALL, this->File_ReadCFG, this->toolStripSeparator1, this->File_Help, this->File_About,
+					this->Test_app, this->Gen_tests, this->toolStripSeparator2, this->File_Exit
 			});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
 			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
@@ -413,6 +439,13 @@ private:
 			this->File_LoadALL->Text = L"Load all";
 			this->File_LoadALL->Click += gcnew System::EventHandler(this, &MainWindow::File_LoadALL_Click);
 			// 
+			// File_ReadCFG
+			// 
+			this->File_ReadCFG->Name = L"File_ReadCFG";
+			this->File_ReadCFG->Size = System::Drawing::Size(153, 22);
+			this->File_ReadCFG->Text = L"Read CFG";
+			this->File_ReadCFG->Click += gcnew System::EventHandler(this, &MainWindow::File_ReadCFG_Click);
+			// 
 			// toolStripSeparator1
 			// 
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
@@ -438,6 +471,13 @@ private:
 			this->Test_app->Size = System::Drawing::Size(153, 22);
 			this->Test_app->Text = L"Test_aplication";
 			this->Test_app->Click += gcnew System::EventHandler(this, &MainWindow::Test_app_Click);
+			// 
+			// Gen_tests
+			// 
+			this->Gen_tests->Name = L"Gen_tests";
+			this->Gen_tests->Size = System::Drawing::Size(153, 22);
+			this->Gen_tests->Text = L"Generate tests";
+			this->Gen_tests->Click += gcnew System::EventHandler(this, &MainWindow::Gen_tests_click);
 			// 
 			// toolStripSeparator2
 			// 
@@ -523,6 +563,8 @@ private:
 			// 
 			// Project_CPU_Schneider
 			// 
+			this->Project_CPU_Schneider->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->Project_CPU_Schneider->Name = L"Project_CPU_Schneider";
 			this->Project_CPU_Schneider->Size = System::Drawing::Size(126, 22);
 			this->Project_CPU_Schneider->Text = L"Schneider";
@@ -541,6 +583,8 @@ private:
 			// 
 			// Project_SCADA_SystemPlatform
 			// 
+			this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->Project_SCADA_SystemPlatform->Name = L"Project_SCADA_SystemPlatform";
 			this->Project_SCADA_SystemPlatform->Size = System::Drawing::Size(161, 22);
 			this->Project_SCADA_SystemPlatform->Text = L"System Platform";
@@ -548,6 +592,8 @@ private:
 			// 
 			// Project_SCADA_WinCC
 			// 
+			this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->Project_SCADA_WinCC->Name = L"Project_SCADA_WinCC";
 			this->Project_SCADA_WinCC->Size = System::Drawing::Size(161, 22);
 			this->Project_SCADA_WinCC->Text = L"WinCC";
@@ -580,6 +626,8 @@ private:
 			// 
 			// Project_Language_LV
 			// 
+			this->Project_Language_LV->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->Project_Language_LV->Name = L"Project_Language_LV";
 			this->Project_Language_LV->Size = System::Drawing::Size(89, 22);
 			this->Project_Language_LV->Text = L"LV";
@@ -587,6 +635,8 @@ private:
 			// 
 			// Project_Language_RU
 			// 
+			this->Project_Language_RU->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->Project_Language_RU->Name = L"Project_Language_RU";
 			this->Project_Language_RU->Size = System::Drawing::Size(89, 22);
 			this->Project_Language_RU->Text = L"RU";
@@ -744,58 +794,18 @@ private:
 			// 
 			// sCADAToolStripMenuItem
 			// 
-			this->sCADAToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
-				this->SCADA_PID,
-					this->SCADA_Valve, this->SCADA_HC, this->SCADA_AI, this->SCADA_Motor
-			});
+			this->sCADAToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->SCADA_Instances });
 			this->sCADAToolStripMenuItem->Name = L"sCADAToolStripMenuItem";
 			this->sCADAToolStripMenuItem->Size = System::Drawing::Size(57, 20);
 			this->sCADAToolStripMenuItem->Text = L"SCADA";
 			// 
-			// SCADA_PID
+			// SCADA_Instances
 			// 
-			this->SCADA_PID->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->SCADA_PID->Name = L"SCADA_PID";
-			this->SCADA_PID->Size = System::Drawing::Size(107, 22);
-			this->SCADA_PID->Text = L"PID";
-			this->SCADA_PID->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_PID_Click);
-			// 
-			// SCADA_Valve
-			// 
-			this->SCADA_Valve->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->SCADA_Valve->Name = L"SCADA_Valve";
-			this->SCADA_Valve->Size = System::Drawing::Size(107, 22);
-			this->SCADA_Valve->Text = L"Valve";
-			this->SCADA_Valve->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Valve_Click);
-			// 
-			// SCADA_HC
-			// 
-			this->SCADA_HC->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->SCADA_HC->Name = L"SCADA_HC";
-			this->SCADA_HC->Size = System::Drawing::Size(107, 22);
-			this->SCADA_HC->Text = L"HC";
-			this->SCADA_HC->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_HC_Click);
-			// 
-			// SCADA_AI
-			// 
-			this->SCADA_AI->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->SCADA_AI->Name = L"SCADA_AI";
-			this->SCADA_AI->Size = System::Drawing::Size(107, 22);
-			this->SCADA_AI->Text = L"AI";
-			this->SCADA_AI->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_AI_Click);
-			// 
-			// SCADA_Motor
-			// 
-			this->SCADA_Motor->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->SCADA_Motor->Name = L"SCADA_Motor";
-			this->SCADA_Motor->Size = System::Drawing::Size(107, 22);
-			this->SCADA_Motor->Text = L"Motor";
-			this->SCADA_Motor->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Motor_Click);
+			this->SCADA_Instances->BackColor = System::Drawing::Color::White;
+			this->SCADA_Instances->Name = L"SCADA_Instances";
+			this->SCADA_Instances->Size = System::Drawing::Size(123, 22);
+			this->SCADA_Instances->Text = L"Instances";
+			this->SCADA_Instances->Click += gcnew System::EventHandler(this, &MainWindow::SCADA_Instances_Click);
 			// 
 			// tabControl1
 			// 
@@ -805,6 +815,8 @@ private:
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
+			this->tabControl1->Controls->Add(this->tabPage4);
+			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Location = System::Drawing::Point(0, 57);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -888,10 +900,78 @@ private:
 			this->Object_grid->Location = System::Drawing::Point(1, 3);
 			this->Object_grid->Name = L"Object_grid";
 			this->Object_grid->RowHeadersWidth = 10;
-			this->Object_grid->Size = System::Drawing::Size(850, 296);
+			this->Object_grid->Size = System::Drawing::Size(850, 268);
 			this->Object_grid->TabIndex = 1;
 			this->Object_grid->ColumnWidthChanged += gcnew System::Windows::Forms::DataGridViewColumnEventHandler(this, &MainWindow::O_column_width_changed);
 			this->Object_grid->Scroll += gcnew System::Windows::Forms::ScrollEventHandler(this, &MainWindow::O_scroll);
+			// 
+			// tabPage4
+			// 
+			this->tabPage4->Controls->Add(this->Plot_button);
+			this->tabPage4->Controls->Add(this->Poly_calc_button);
+			this->tabPage4->Controls->Add(this->Clear_button);
+			this->tabPage4->Controls->Add(this->Trend_data_grid);
+			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage4->Size = System::Drawing::Size(853, 271);
+			this->tabPage4->TabIndex = 3;
+			this->tabPage4->Text = L"Trend data";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// Poly_calc_button
+			// 
+			this->Poly_calc_button->Anchor = System::Windows::Forms::AnchorStyles::Left;
+			this->Poly_calc_button->Location = System::Drawing::Point(3, 60);
+			this->Poly_calc_button->Name = L"Poly_calc_button";
+			this->Poly_calc_button->Size = System::Drawing::Size(45, 23);
+			this->Poly_calc_button->TabIndex = 22;
+			this->Poly_calc_button->Text = L"Poly";
+			this->Poly_calc_button->UseVisualStyleBackColor = true;
+			this->Poly_calc_button->Click += gcnew System::EventHandler(this, &MainWindow::Poly_calc_button_Click);
+			// 
+			// Clear_button
+			// 
+			this->Clear_button->Anchor = System::Windows::Forms::AnchorStyles::Left;
+			this->Clear_button->Location = System::Drawing::Point(3, 21);
+			this->Clear_button->Name = L"Clear_button";
+			this->Clear_button->Size = System::Drawing::Size(45, 23);
+			this->Clear_button->TabIndex = 21;
+			this->Clear_button->Text = L"Clear";
+			this->Clear_button->UseVisualStyleBackColor = true;
+			this->Clear_button->Click += gcnew System::EventHandler(this, &MainWindow::Clear_button_Click);
+			// 
+			// Trend_data_grid
+			// 
+			this->Trend_data_grid->AllowUserToResizeRows = false;
+			this->Trend_data_grid->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->Trend_data_grid->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			this->Trend_data_grid->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->Trend_data_grid->Location = System::Drawing::Point(54, 1);
+			this->Trend_data_grid->Name = L"Trend_data_grid";
+			this->Trend_data_grid->RowHeadersWidth = 10;
+			this->Trend_data_grid->Size = System::Drawing::Size(797, 268);
+			this->Trend_data_grid->TabIndex = 2;
+			// 
+			// tabPage5
+			// 
+			this->tabPage5->Location = System::Drawing::Point(4, 22);
+			this->tabPage5->Name = L"tabPage5";
+			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage5->Size = System::Drawing::Size(853, 271);
+			this->tabPage5->TabIndex = 4;
+			this->tabPage5->Text = L"PID calculation";
+			this->tabPage5->UseVisualStyleBackColor = true;
 			// 
 			// Filter_0
 			// 
@@ -934,7 +1014,7 @@ private:
 			this->Filter_6->Size = System::Drawing::Size(36, 21);
 			this->Filter_6->TabIndex = 6;
 			this->Filter_6->DropDown += gcnew System::EventHandler(this, &MainWindow::Filter_Drop_down_6);
-			this->Filter_6->ValueMemberChanged += gcnew System::EventHandler(this, &MainWindow::Filter_Changed_Text_6);
+			this->Filter_6->TextChanged += gcnew System::EventHandler(this, &MainWindow::Filter_Changed_Text_6);
 			this->Filter_6->Click += gcnew System::EventHandler(this, &MainWindow::Filter_click_6);
 			// 
 			// Filter_8
@@ -1160,6 +1240,17 @@ private:
 			this->Find_text->Click += gcnew System::EventHandler(this, &MainWindow::Find_text_Click);
 			this->Find_text->TextChanged += gcnew System::EventHandler(this, &MainWindow::Filter_click_13);
 			// 
+			// Plot_button
+			// 
+			this->Plot_button->Anchor = System::Windows::Forms::AnchorStyles::Left;
+			this->Plot_button->Location = System::Drawing::Point(3, 112);
+			this->Plot_button->Name = L"Plot_button";
+			this->Plot_button->Size = System::Drawing::Size(45, 23);
+			this->Plot_button->TabIndex = 23;
+			this->Plot_button->Text = L"Plot";
+			this->Plot_button->UseVisualStyleBackColor = true;
+			this->Plot_button->Click += gcnew System::EventHandler(this, &MainWindow::Plot_button_Click);
+			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -1205,6 +1296,8 @@ private:
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Signals_grid))->EndInit();
 			this->tabPage3->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Object_grid))->EndInit();
+			this->tabPage4->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Trend_data_grid))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -1213,7 +1306,7 @@ private:
 	
 	private: System::Void KeyDown_event(Object^ sender, System::Windows::Forms::KeyEventArgs^ e)
 	{
-		
+		// Delete function
 		if ((e->KeyCode == Keys::Delete) || (e->KeyCode == Keys::Back))
 		{
 			int index_function = this->tabControl1->SelectedIndex;
@@ -1225,7 +1318,7 @@ private:
 					grid->SelectedCells[i]->Value = L"";
 				}
 			}
-		}
+		}// Paste function
 		else if ((e->Modifiers == Keys::Control) && (e->KeyCode == Keys::V))
 		{
 			int index_function = this->tabControl1->SelectedIndex;
@@ -1267,29 +1360,39 @@ private:
 
 		switch (parameters.SCADA)
 		{
-		case System_platform:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
+		case System_platform_index:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
 			break;
-		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
+		case WinCC_index:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
 
 		this->KeyDown += gcnew KeyEventHandler(this, &MainWindow::KeyDown_event);
-
+/*
 		signals.valid_entries = 1;
 		project.valid_entries = 1;
 		objects.valid_entries = 1;
+		Trend_data.valid_entries = 1999;
 
 		signals.data.resize(2);
 		project.data.resize(2);
 		objects.data.resize(2);
+		Trend_data.data.resize(2001);
+*/
 
 		Global_get_width_list(Design_grid_index, project.number_collums, project.collumn_with);
 		Global_get_width_list(Signals_grid_index, signals.number_collums, signals.collumn_with);
 		Global_get_width_list(Objects_grid_index, objects.number_collums, objects.collumn_with);
+		Global_get_width_list(Trend_data_grid_index, Trend_data.number_collums, Trend_data.collumn_with);
 
-		Global_put_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
-		Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
-		Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+		
+
+		Global_put_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name_EN, project.column_name_LT, project.collumn_with);
+		Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
+		Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
+		Global_put_data_listview(Trend_data_grid_index, Trend_data.valid_entries, Trend_data.number_collums, Trend_data.column_name_EN, Trend_data.column_name_LT, Trend_data.collumn_with);
+
+		int result = Global_trend_data_check(Max_Trend_data);
+
 
 		this->tabControl1->SelectedIndex = Design_grid_index;
 	}
@@ -1302,40 +1405,39 @@ private:
 //function done
 	private: System::Void File_Save_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
+
 
 		int index_function = this->tabControl1->SelectedIndex;
 		
-		Global_choose_save(index_function, false, " ");
+		Global_choose_save(index_function, false, L" ");
 	}
 //function done
 	private: System::Void File_SaveALL_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 		
 		SaveFileDialog^ sfd = gcnew SaveFileDialog();
 		
 		sfd->Filter = "Save document |*.psave;*.osave;*.ssave";
 
 		sfd->FileName = "";
-		std::string file_name;
+		std::wstring file_name;
 		
 		if (sfd->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 		{
-			file_name = system_string_to_string(sfd->FileName);
-			std::string extension;
+			file_name = system_string_to_wstring(sfd->FileName);
+			std::wstring extension;
 			
 			int a = -1;
 			bool continue_save = true;
-			a = file_name.find_last_of(".");
+			a = file_name.find_last_of(L".");
 
 			if (a > 0)
 			{
 				continue_save = false;
 				extension = file_name.substr(a + 2);
-				if (extension.compare("save") >= 0)
+				if (extension.compare(L"save") >= 0)
 				{
 					file_name = file_name.substr(0, a);
 					continue_save = true;
@@ -1348,28 +1450,26 @@ private:
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, button_text);
-			strcat_s(err_txt, sizeof err_txt, error_separator);
-			strcat_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			wstring texts = button_text;
+			texts.append(error_separator);
+			texts.append(str.Error.canceled_selection.s[lang]);
+			err_write_show(texts);
 		}
 				
 	}
 //function done
 	private: System::Void File_Load_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		int index_function = this->tabControl1->SelectedIndex;
 			
-		Global_choose_Load(index_function," ");			
+		Global_choose_Load(index_function,L" ");			
 	}
 
 	private: System::Void File_LoadALL_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		OpenFileDialog^ importfile = gcnew OpenFileDialog();
 		importfile->Filter = "Load document |*.psave;*.osave;*.ssave";
@@ -1377,20 +1477,20 @@ private:
 
 		if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 		{
-			std::string file_name;
-			std::string extension;
+			std::wstring file_name;
+			std::wstring extension;
 
-			file_name = system_string_to_string(importfile->FileName);
+			file_name = system_string_to_wstring(importfile->FileName);
 			int a = -1;
 			int b = 0;
 			bool continue_load = true;
-			a = file_name.find_last_of(".");			
+			a = file_name.find_last_of(L".");			
 
 			if (a > 0)
 			{
 				continue_load = false;
 				extension = file_name.substr(a + 2);
-				if (extension.compare("save") >=0)
+				if (extension.compare(L"save") >=0)
 				{
 					file_name = file_name.substr(0, a);
 					continue_load = true;				
@@ -1406,17 +1506,16 @@ private:
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, button_text);
-			strcat_s(err_txt, sizeof err_txt, error_separator);
-			strcat_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			wstring texts = button_text;
+			texts.append(error_separator);
+			texts.append(str.Error.canceled_selection.s[lang]);
+			err_write_show(texts);
 		}
 	}
 //function done
 	private: System::Void File_Help_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		IOlistautomation::HelpForm helpas;
 		helpas.ShowDialog();
@@ -1424,8 +1523,7 @@ private:
 //function done
 	private: System::Void File_About_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		IOlistautomation::AboutForm about;
 		about.ShowDialog();
@@ -1433,19 +1531,17 @@ private:
 //function done
 	private: System::Void Test_app_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
-		Test_All();
+		Test_All(false);
 	}
 //function done
 	private: System::Void File_Exit_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
-		strcpy_s(info_txt, sizeof info_txt, info_exit_aplication[lang]);
-		info_write(info_txt);
+		wstring texts = str.Info.exit_aplication.s[lang];
+		info_write(texts);
 		Application::Exit();
 	}
 
@@ -1453,10 +1549,9 @@ private:
 //function done
 	private: System::Void Project_Design_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
-		if (Project_read_data(FALSE," ", project) == 0)
+		if (Project_read_data(FALSE,L" ", project) == 0)
 		{
 			Signals_get_data_design();
 		}
@@ -1465,25 +1560,20 @@ private:
 //function done
 	private: System::Void Project_IOcompare_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
-		Project_compare_data(" ");
+		Project_compare_data(L" ");
 	}
 //function done
 	private: System::Void Project_TransferIO_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
 		Signals_get_data_design();
 	}
 //function done
 	private: System::Void Project_CPU_Beckhoff_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
 		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_CPU_Schneider->BackColor = System::Drawing::SystemColors::Control;
@@ -1506,8 +1596,7 @@ private:
 //function done
 	private: System::Void Project_CPU_800xA_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
@@ -1530,8 +1619,7 @@ private:
 //function done
 	private: System::Void Project_CPU_Siemens_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
@@ -1554,9 +1642,8 @@ private:
 //function done
 	private: System::Void Project_CPU_Schneider_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
+		
 		this->Project_CPU_Beckhoff->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_CPU_Siemens->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_CPU_Schneider->BackColor = System::Drawing::SystemColors::Control;
@@ -1578,44 +1665,41 @@ private:
 //function done
 	private: System::Void Project_SCADA_SystemPlatform_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_SCADA_WinCC->BackColor = System::Drawing::SystemColors::Control;
 
-		parameters.SCADA = System_platform;
+		parameters.SCADA = System_platform_index;
 		switch (parameters.SCADA)
 		{
-		case System_platform:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
+		case System_platform_index:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
 			break;
-		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
+		case WinCC_index:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
 	}
 //function done
 	private: System::Void Project_SCADA_WinCC_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::SystemColors::Control;
 		this->Project_SCADA_WinCC->BackColor = System::Drawing::SystemColors::Control;
 
-		parameters.SCADA = WinCC;
+		parameters.SCADA = WinCC_index;
 		switch (parameters.SCADA)
 		{
-		case System_platform:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
+		case System_platform_index:	this->Project_SCADA_SystemPlatform->BackColor = System::Drawing::Color::Aqua;;
 			break;
-		case WinCC:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
+		case WinCC_index:	this->Project_SCADA_WinCC->BackColor = System::Drawing::Color::Aqua;;
 			break;
 		}
 	}
 //function done
 	private: System::Void Project_Language_LT_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 		
 		learn = {};
 		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
@@ -1639,8 +1723,7 @@ private:
 //function done
 	private: System::Void Project_Language_LV_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		learn = {};
 		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
@@ -1664,8 +1747,7 @@ private:
 //function done
 	private: System::Void Project_Language_EN_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		learn = {};
 		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
@@ -1689,8 +1771,7 @@ private:
 //function done
 	private: System::Void Project_Language_RU_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 
 		learn = {};
 		this->Project_Language_LT->BackColor = System::Drawing::SystemColors::Control;
@@ -1717,23 +1798,19 @@ private:
 //function done
 	private: System::Void Signals_KKSedit_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 		Signals_all_KKS_trim(false);		
 	}
 //function done
 	private: System::Void Signals_FindFunction_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 		Signals_find_function();
 	}
 //function done
 private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::EventArgs^  e) {
 	String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-	string converted_text = button_press_name_write(buttonName);
-	const char *button_text = converted_text.c_str();
-
+	wstring button_text = button_press_name_write(buttonName);
 	Signals_multi_cpu(false);
 }
 
@@ -1742,8 +1819,7 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 //function done
 	private: System::Void Uniques_FindUniques_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
+		wstring button_text = button_press_name_write(buttonName);
 		
 		int a = this->Object_grid->RowCount;
 		if (Objects_find_uniques() == 0)
@@ -1763,9 +1839,7 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 //function done
 	private: System::Void Uniques_FindObjects_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
 		if (Objects_find_objects() == 0)
 		{
 
@@ -1775,9 +1849,7 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 //function done
 	private: System::Void Uniques_FindOperatyv_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
 		if (Objects_find_operatyv() == 0)
 		{
 
@@ -1787,17 +1859,14 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 //empty
 	private: System::Void Uniques_CorrectComments_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
+		Objects_get_description_lenght();
 		Display_no_function(buttonName);
 	}
 //function done
 	private: System::Void Uniques_TransferSignals_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
 		if (Objects_transfer_to_signals(false))
 		{
 
@@ -1809,32 +1878,24 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 //function done
 	private: System::Void Declare_GenerateAdress_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Declare_addreses();
+		wstring button_text = button_press_name_write(buttonName);
+		Declare_addreses(false);
 	}
 //function done
 	private: System::Void Declare_Adressing_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-		
-		Declare_put_adres_grid(false);
-
+		wstring button_text = button_press_name_write(buttonName);
+		Declare_put_adres_grid(false,L" ");
 	}
-
 			 //menu instance
 
 	//function done
 	private: System::Void Instance_GenerateIO_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
+		wstring button_text = button_press_name_write(buttonName);
 		if (IO_generate() == 0)
 		{
-			if (IO_show(false) == 0)
+			if (IO_show(false,L" ") == 0)
 			{
 
 			}
@@ -1844,10 +1905,8 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 	//function done
 	private: System::Void Instance_ShowIO_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		if (IO_show(false) == 0)
+		wstring button_text = button_press_name_write(buttonName);
+		if (IO_show(false,L" ") == 0)
 		{
 
 		}
@@ -1856,55 +1915,21 @@ private: System::Void Signals_MultiCPU_Click(System::Object^  sender, System::Ev
 //function done
 	private: System::Void Instance_Generate_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Instance_gen(false, parameters.CPU);
+		wstring button_text = button_press_name_write(buttonName);
+		Instance_gen(false,L" ");
 	}
 
 
 
 			 //menu SCADA
-//empty
-	private: System::Void SCADA_PID_Click(System::Object^  sender, System::EventArgs^  e) {
+//function done
+	private: System::Void SCADA_Instances_Click(System::Object^  sender, System::EventArgs^  e) {
 		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
+		wstring button_text = button_press_name_write(buttonName);
+		Instance_scada_gen(false,L" ");
 	}
-//empty
-	private: System::Void SCADA_Valve_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void SCADA_HC_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
 
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void SCADA_AI_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);
-	}
-//empty
-	private: System::Void SCADA_Motor_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ buttonName = safe_cast<ToolStripMenuItem^>(sender)->Name;
-		string converted_text = button_press_name_write(buttonName);
-		const char *button_text = converted_text.c_str();
-
-		Display_no_function(buttonName);		
-	}
 
 	private: void Change_filter_position(vector <int> &collumn_with, int collumn_count, int index_function)
 	{
@@ -2576,6 +2601,32 @@ private: System::Void Find_button_Click(System::Object^  sender, System::EventAr
 
 private: System::Void Find_text_Click(System::Object^  sender, System::EventArgs^  e) {
 	Filter_clicked();
+}
+private: System::Void Clear_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	int index_function = this->tabControl1->SelectedIndex;
+
+	Global_delete_all_data(index_function);
+	int result = Global_trend_data_check(Max_Trend_data);
+//	Global_put_data_listview(Trend_data_grid_index, Trend_data.valid_entries, Trend_data.number_collums, Trend_data.column_name, Trend_data.collumn_with);
+
+}
+private: System::Void Poly_calc_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	Global_Polynom_calc();
+}
+private: System::Void File_ReadCFG_Click(System::Object^  sender, System::EventArgs^  e) {
+	cfg_reads(&parameters, L" ");
+
+}
+
+private: System::Void Gen_tests_click(System::Object^  sender, System::EventArgs^  e) {
+	Generate_Test_All();
+}
+private: System::Void Plot_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	int index_function = this->tabControl1->SelectedIndex;
+	vector <wstring> unique_texts;
+
+	Plot_data_to_file(index_function,0,1);
+	Global_show_trend_data();
 }
 };
 }

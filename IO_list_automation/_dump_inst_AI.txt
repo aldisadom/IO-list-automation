@@ -1,0 +1,496 @@
+﻿//---------------------- HBK20_CP001 : 	Slėgis kūrykloje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HBK20_CP001"										
+	value_in :=	CJF10GH001_FSAI2_05	//HBK20CP001XQ01 Slėgis kūrykloje								
+											
+//---------------------- HHA11_CB001 : 	Liepsnos skaneris Nr. 1: Liepsnos intensyvumas ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHA11_CB001"										
+	value_in :=	CJF10GH001_AI11_01	//HHA11CB001XQ01 Liepsnos skaneris Nr. 1: Liepsnos intensyvumas								
+	value_in :=	CJF10GH001_DI4_05	//HHA11CB001XB02 Liepsnos skaneris Nr. 1: Skanerio gedimas								
+	value_in :=	CJF10GH001_FSDI2_07	//HHA11CB001XB01 Liepsnos skaneris Nr. 1: Liepsna yra, gedimų nėra								
+											
+//---------------------- HHA12_CB001 : 	Liepsnos skaneris Nr. 2: Liepsnos intensyvumas ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHA12_CB001"										
+	value_in :=	CJF10GH001_AI11_02	//HHA12CB001XQ01 Liepsnos skaneris Nr. 2: Liepsnos intensyvumas								
+	value_in :=	CJF10GH001_DI4_06	//HHA12CB001XB02 Liepsnos skaneris Nr. 2: Skanerio gedimas								
+	value_in :=	CJF10GH001_FSDI2_08	//HHA12CB001XB01 Liepsnos skaneris Nr. 2: Liepsna yra, gedimų nėra								
+											
+//---------------------- HHA13_CB001 : 	Liepsnos skaneris Nr. 3: Liepsnos intensyvumas ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHA13_CB001"										
+	value_in :=	CJF10GH001_AI11_03	//HHA13CB001XQ01 Liepsnos skaneris Nr. 3: Liepsnos intensyvumas								
+	value_in :=	CJF10GH001_DI4_07	//HHA13CB001XB02 Liepsnos skaneris Nr. 3: Skanerio gedimas								
+	value_in :=	CJF10GH001_FSDI2_09	//HHA13CB001XB01 Liepsnos skaneris Nr. 3: Liepsna yra, gedimų nėra								
+											
+//---------------------- HHA14_CB001 : 	Liepsnos skaneris Nr. 4: Liepsnos intensyvumas ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHA14_CB001"										
+	value_in :=	CJF10GH001_AI11_04	//HHA14CB001XQ01 Liepsnos skaneris Nr. 4: Liepsnos intensyvumas								
+	value_in :=	CJF10GH001_DI4_08	//HHA14CB001XB02 Liepsnos skaneris Nr. 4: Skanerio gedimas								
+	value_in :=	CJF10GH001_FSDI2_10	//HHA14CB001XB01 Liepsnos skaneris Nr. 4: Liepsna yra, gedimų nėra								
+											
+//---------------------- HHA15_CB001 : 	Liepsnos skaneris Nr. 5: Liepsnos intensyvumas ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHA15_CB001"										
+	value_in :=	CJF10GH001_AI11_05	//HHA15CB001XQ01 Liepsnos skaneris Nr. 5: Liepsnos intensyvumas								
+	value_in :=	CJF10GH001_DI4_15	//HHA15CB001XB02 Liepsnos skaneris Nr. 5: Skanerio gedimas								
+	value_in :=	CJF10GH001_FSDI2_11	//HHA15CB001XB01 Liepsnos skaneris Nr. 5: Liepsna yra, gedimų nėra								
+											
+//---------------------- HHA16_CB001 : 	Liepsnos skaneris Nr. 6: Liepsnos intensyvumas ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHA16_CB001"										
+	value_in :=	CJF10GH001_AI11_06	//HHA16CB001XQ01 Liepsnos skaneris Nr. 6: Liepsnos intensyvumas								
+	value_in :=	CJF10GH001_DI4_16	//HHA16CB001XB02 Liepsnos skaneris Nr. 6: Skanerio gedimas								
+	value_in :=	CJF10GH001_FSDI2_12	//HHA16CB001XB01 Liepsnos skaneris Nr. 6: Liepsna yra, gedimų nėra								
+											
+//---------------------- HHF15_CP001 : 	Mazuto slėgis už redukcinio vožtuvo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF15_CP001"										
+	value_in :=	CJF10GH001_AI1_08	//HHF15CP001XQ01 Mazuto slėgis už redukcinio vožtuvo								
+											
+//---------------------- HHF15_CT001 : 	Mazuto temperatūra katilo mazuto vamzdyne ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF15_CT001"										
+	value_in :=	CJF10GH001_AI1_05	//HHF15CT001XQ01 Mazuto temperatūra katilo mazuto vamzdyne								
+											
+//---------------------- HHF21_CP002 : 	Mazuto slėgis po reguliavimo vožtuvo (A pusė) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF21_CP002"										
+	value_in :=	CJF10GH001_FSAI2_02	//HHF21CP002XQ01 Mazuto slėgis po reguliavimo vožtuvo (A pusė)								
+											
+//---------------------- HHF21_CP003 : 	Mazuto slėgis po reguliavimo vožtuvo (A pusė) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF21_CP003"										
+	value_in :=	CJF10GH001_FSAI2_03	//HHF21CP003XQ01 Mazuto slėgis po reguliavimo vožtuvo (A pusė)								
+											
+//---------------------- HHF22_CF001 : 	Mazuto srautas paduodamoje linijoje (Degikliai Nr.2, 4, 6) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF22_CF001"										
+	value_in :=	CJF10GH001_AI1_06	//HHF22CF001XQ01 Mazuto srautas paduodamoje linijoje (Degikliai Nr.2, 4, 6)								
+											
+//---------------------- HHF22_CP002 : 	Mazuto slėgis po reguliavimo vožtuvo (B pusė) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF22_CP002"										
+	value_in :=	CJF10GH001_FSAI1_03	//HHF22CP002XQ01 Mazuto slėgis po reguliavimo vožtuvo (B pusė)								
+											
+//---------------------- HHF22_CP003 : 	Mazuto slėgis po reguliavimo vožtuvo (B pusė) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF22_CP003"										
+	value_in :=	CJF10GH001_FSAI1_04	//HHF22CP003XQ01 Mazuto slėgis po reguliavimo vožtuvo (B pusė)								
+											
+//---------------------- HHF30_CF001 : 	Mazuto srautas grąžinimo linijoje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHF30_CF001"										
+	value_in :=	CJF10GH001_AI1_07	//HHF30CF001XQ01 Mazuto srautas grąžinimo linijoje								
+											
+//---------------------- HHG10_CF901 : 	Dujų srautas (A pusė) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG10_CF901"										
+	value_in :=	CJF10GH001_AI8_07	//HHG10CF901XQ01 Dujų srautas (A pusė)								
+											
+//---------------------- HHG10_CP002 : 	Dujų slėgis už reguliuojančio vožtuvo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG10_CP002"										
+	value_in :=	CJF10GH001_FSAI4_08	//HHG10CP002XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+											
+//---------------------- HHG10_CP003 : 	Dujų slėgis už reguliuojančio vožtuvo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG10_CP003"										
+	value_in :=	CJF10GH001_FSAI3_08	//HHG10CP003XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+											
+//---------------------- HHG10_CT001 : 	dujų temperatūra ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG10_CT001"										
+	value_in :=	CJF10GH001_AI10_01	//HHG10CT001XQ01 dujų temperatūra								
+											
+//---------------------- HHG20_CF901 : 	Dujų srautas (B pusė) ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG20_CF901"										
+	value_in :=	CJF10GH001_AI8_03	//HHG20CF901XQ01 Dujų srautas (B pusė)								
+											
+//---------------------- HHG20_CP002 : 	Dujų slėgis už reguliuojančio vožtuvo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG20_CP002"										
+	value_in :=	CJF10GH001_FSAI4_07	//HHG20CP002XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+											
+//---------------------- HHG20_CP003 : 	Dujų slėgis už reguliuojančio vožtuvo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG20_CP003"										
+	value_in :=	CJF10GH001_FSAI3_07	//HHG20CP003XQ01 Dujų slėgis už reguliuojančio vožtuvo								
+											
+//---------------------- HHG31_CP001 : 	Dujų slėgis tarp degiklio Nr.1 darbinės ir kontrolinės dujų sklendės ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG31_CP001"										
+	value_in :=	CJF10GH001_FSAI4_01	//HHG31CP001XQ01 Dujų slėgis tarp degiklio Nr.1 darbinės ir kontrolinės dujų sklendės								
+											
+//---------------------- HHG31_CP002 : 	Dujų slėgis į degiklį Nr. 1 ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG31_CP002"										
+	value_in :=	CJF10GH001_AI12_01	//HHG31CP002XQ01 Dujų slėgis į degiklį Nr. 1								
+											
+//---------------------- HHG32_CP001 : 	Dujų slėgis tarp degiklio Nr.2 darbinės ir kontrolinės dujų sklendės ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG32_CP001"										
+	value_in :=	CJF10GH001_FSAI4_02	//HHG32CP001XQ01 Dujų slėgis tarp degiklio Nr.2 darbinės ir kontrolinės dujų sklendės								
+											
+//---------------------- HHG32_CP002 : 	Dujų slėgis į degiklį Nr. 2 ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG32_CP002"										
+	value_in :=	CJF10GH001_AI12_02	//HHG32CP002XQ01 Dujų slėgis į degiklį Nr. 2								
+											
+//---------------------- HHG33_CP001 : 	Dujų slėgis tarp degiklio Nr.3 darbinės ir kontrolinės dujų sklendės ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG33_CP001"										
+	value_in :=	CJF10GH001_FSAI4_03	//HHG33CP001XQ01 Dujų slėgis tarp degiklio Nr.3 darbinės ir kontrolinės dujų sklendės								
+											
+//---------------------- HHG33_CP002 : 	Dujų slėgis į degiklį Nr. 3 ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG33_CP002"										
+	value_in :=	CJF10GH001_AI12_03	//HHG33CP002XQ01 Dujų slėgis į degiklį Nr. 3								
+											
+//---------------------- HHG34_CP001 : 	Dujų slėgis tarp degiklio Nr.4 darbinės ir kontrolinės dujų sklendės ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG34_CP001"										
+	value_in :=	CJF10GH001_FSAI4_04	//HHG34CP001XQ01 Dujų slėgis tarp degiklio Nr.4 darbinės ir kontrolinės dujų sklendės								
+											
+//---------------------- HHG34_CP002 : 	Dujų slėgis į degiklį Nr. 4 ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG34_CP002"										
+	value_in :=	CJF10GH001_AI12_04	//HHG34CP002XQ01 Dujų slėgis į degiklį Nr. 4								
+											
+//---------------------- HHG35_CP001 : 	Dujų slėgis tarp degiklio Nr.5 darbinės ir kontrolinės dujų sklendės ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG35_CP001"										
+	value_in :=	CJF10GH001_FSAI4_05	//HHG35CP001XQ01 Dujų slėgis tarp degiklio Nr.5 darbinės ir kontrolinės dujų sklendės								
+											
+//---------------------- HHG35_CP002 : 	Dujų slėgis į degiklį Nr. 5 ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG35_CP002"										
+	value_in :=	CJF10GH001_AI12_05	//HHG35CP002XQ01 Dujų slėgis į degiklį Nr. 5								
+											
+//---------------------- HHG36_CP001 : 	Dujų slėgis tarp degiklio Nr.6 darbinės ir kontrolinės dujų sklendės ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG36_CP001"										
+	value_in :=	CJF10GH001_FSAI4_06	//HHG36CP001XQ01 Dujų slėgis tarp degiklio Nr.6 darbinės ir kontrolinės dujų sklendės								
+											
+//---------------------- HHG36_CP002 : 	Dujų slėgis į degiklį Nr. 6 ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHG36_CP002"										
+	value_in :=	CJF10GH001_AI12_06	//HHG36CP002XQ01 Dujų slėgis į degiklį Nr. 6								
+	value_in :=	CJF10GH001_AI12_07	//HHG36CP002XQ01 Dujų slėgis į degiklį Nr. 6								
+											
+//---------------------- HHL10_CP001 : 	Oro slėgis prieš 1 degiklį ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHL10_CP001"										
+	value_in :=	CJF10GH001_AI2_05	//HHL10CP001XQ01 Oro slėgis prieš 1 degiklį								
+											
+//---------------------- HHL20_CP001 : 	Oro slėgis prieš 2 degiklį ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHL20_CP001"										
+	value_in :=	CJF10GH001_AI2_06	//HHL20CP001XQ01 Oro slėgis prieš 2 degiklį								
+											
+//---------------------- HHL30_CP001 : 	Oro slėgis prieš 3 degiklį ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHL30_CP001"										
+	value_in :=	CJF10GH001_AI2_07	//HHL30CP001XQ01 Oro slėgis prieš 3 degiklį								
+											
+//---------------------- HHL40_CP001 : 	Oro slėgis prieš 4 degiklį ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHL40_CP001"										
+	value_in :=	CJF10GH001_AI2_08	//HHL40CP001XQ01 Oro slėgis prieš 4 degiklį								
+											
+//---------------------- HHL50_CP001 : 	Oro slėgis prieš 5 degiklį ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHL50_CP001"										
+	value_in :=	CJF10GH001_AI3_01	//HHL50CP001XQ01 Oro slėgis prieš 5 degiklį								
+											
+//---------------------- HHL60_CP001 : 	Oro slėgis prieš 6 degiklį ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHL60_CP001"										
+	value_in :=	CJF10GH001_AI3_02	//HHL60CP001XQ01 Oro slėgis prieš 6 degiklį								
+											
+//---------------------- HHT10_CP001 : 	Savųjų reikmių garo slėgis į VK ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHT10_CP001"										
+	value_in :=	CJF10GH001_AI5_08	//HHT10CP001XQ01 Savųjų reikmių garo slėgis į VK-1 A kaloriferį								
+											
+//---------------------- HHT10_CT001 : 	Savų reikmių garo temperatūra prieš VK ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHT10_CT001"										
+	value_in :=	CJF10GH001_AI4_08	//HHT10CT001XQ01 Savų reikmių garo temperatūra prieš VK-1 A kaloriferį								
+											
+//---------------------- HHT20_CP001 : 	Savųjų reikmių garo slėgis į VK ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHT20_CP001"										
+	value_in :=	CJF10GH001_AI5_07	//HHT20CP001XQ01 Savųjų reikmių garo slėgis į VK-1 B kaloriferį								
+											
+//---------------------- HHT20_CT001 : 	Savų reikmių garo temperatūra prieš VK ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHT20_CT001"										
+	value_in :=	CJF10GH001_AI5_03	//HHT20CT001XQ01 Savų reikmių garo temperatūra prieš VK-1 B kaloriferį								
+											
+//---------------------- HHX33_CP001 : 	Suspausto oro slėgis suspausto oro slėgio 1, 3, 5 kolektoriuje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHX33_CP001"										
+	value_in :=	CJF10GH001_FSAI2_06	//HHX33CP001XQ01 Suspausto oro slėgis suspausto oro slėgio 1, 3, 5 kolektoriuje								
+											
+//---------------------- HHX34_CP001 : 	Suspausto oro slėgis 2, 4, 6 kolektoriuje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HHX34_CP001"										
+	value_in :=	CJF10GH001_FSAI2_07	//HHX34CP001XQ01 Suspausto oro slėgis 2, 4, 6 kolektoriuje								
+											
+//---------------------- HJG10_CP001 : 	Dujų slėgis į uždegtuvus ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG10_CP001"										
+	value_in :=	CJF10GH001_FSAI5_02	//HJG10CP001XQ01 Dujų slėgis į uždegtuvus								
+											
+//---------------------- HJG20_CP001 : 	Dujų slėgis į uždegtuvus ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG20_CP001"										
+	value_in :=	CJF10GH001_FSAI5_01	//HJG20CP001XQ01 Dujų slėgis į uždegtuvus								
+											
+//---------------------- HJG31_CP001 : 	Dujų slėgis tarp degiklio Nr.1 uždegtuvo atkirtos vožtuvų ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG31_CP001"										
+	value_in :=	CJF10GH001_FSAI3_01	//HJG31CP001XQ01 Dujų slėgis tarp degiklio Nr.1 uždegtuvo atkirtos vožtuvų								
+											
+//---------------------- HJG32_CP001 : 	Dujų slėgis tarp degiklio Nr.2 uždegtuvo atkirtos vožtuvų ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG32_CP001"										
+	value_in :=	CJF10GH001_FSAI3_02	//HJG32CP001XQ01 Dujų slėgis tarp degiklio Nr.2 uždegtuvo atkirtos vožtuvų								
+											
+//---------------------- HJG33_CP001 : 	Dujų slėgis tarp degiklio Nr.3 uždegtuvo atkirtos vožtuvų ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG33_CP001"										
+	value_in :=	CJF10GH001_FSAI3_03	//HJG33CP001XQ01 Dujų slėgis tarp degiklio Nr.3 uždegtuvo atkirtos vožtuvų								
+											
+//---------------------- HJG34_CP001 : 	Dujų slėgis tarp degiklio Nr.4 uždegtuvo atkirtos vožtuvų ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG34_CP001"										
+	value_in :=	CJF10GH001_FSAI3_04	//HJG34CP001XQ01 Dujų slėgis tarp degiklio Nr.4 uždegtuvo atkirtos vožtuvų								
+											
+//---------------------- HJG35_CP001 : 	Dujų slėgis tarp degiklio Nr.5 uždegtuvo atkirtos vožtuvų ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG35_CP001"										
+	value_in :=	CJF10GH001_FSAI3_05	//HJG35CP001XQ01 Dujų slėgis tarp degiklio Nr.5 uždegtuvo atkirtos vožtuvų								
+											
+//---------------------- HJG36_CP001 : 	Dujų slėgis tarp degiklio Nr.6 uždegtuvo atkirtos vožtuvų ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HJG36_CP001"										
+	value_in :=	CJF10GH001_FSAI3_06	//HJG36CP001XQ01 Dujų slėgis tarp degiklio Nr.6 uždegtuvo atkirtos vožtuvų								
+											
+//---------------------- HLA10_CF001 : 	Degimo oro srautas A pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA10_CF001"										
+	value_in :=	CJF10GH001_FSAI1_05	//HLA10CF001XQ01 Degimo oro srautas A pusėje								
+											
+//---------------------- HLA10_CM001 : 	Degimo oro drėgmė A pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA10_CM001"										
+	value_in :=	CJF10GH001_AI3_07	//HLA10CM001XQ01 Degimo oro drėgmė A pusėje								
+	value_in :=	CJF10GH001_AI3_08	//HLA10CM001XQ02 Degimo oro temperatūra A pusėje								
+											
+//---------------------- HLA10_CP001 : 	Oro slėgis už A ventiliatoriaus ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA10_CP001"										
+	value_in :=	CJF10GH001_AI2_02	//HLA10CP001XQ01 Oro slėgis už A ventiliatoriaus								
+											
+//---------------------- HLA10_CT001 : 	Oro iš lauko temperatūra A pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA10_CT001"										
+	value_in :=	CJF10GH001_AI1_02	//HLA10CT001XQ01 Oro iš lauko temperatūra A pusėje								
+											
+//---------------------- HLA10_CT002 : 	Degimo oro temperatūra A pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA10_CT002"										
+	value_in :=	CJF10GH001_AI5_01	//HLA10CT002XQ01 Degimo oro temperatūra A pusėje								
+											
+//---------------------- HLA20_CF001 : 	Degimo oro srautas B pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA20_CF001"										
+	value_in :=	CJF10GH001_FSAI1_06	//HLA20CF001XQ01 Degimo oro srautas B pusėje								
+											
+//---------------------- HLA20_CM001 : 	Degimo oro drėgmė B pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA20_CM001"										
+	value_in :=	CJF10GH001_AI4_05	//HLA20CM001XQ01 Degimo oro drėgmė B pusėje								
+	value_in :=	CJF10GH001_AI4_06	//HLA20CM001XQ02 Degimo oro temperatūra B pusėje								
+											
+//---------------------- HLA20_CP001 : 	Oro slėgis už B ventiliatoriaus ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA20_CP001"										
+	value_in :=	CJF10GH001_AI2_03	//HLA20CP001XQ01 Oro slėgis už B ventiliatoriaus								
+											
+//---------------------- HLA20_CT001 : 	Oro iš lauko temperatūra B pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA20_CT001"										
+	value_in :=	CJF10GH001_AI1_04	//HLA20CT001XQ01 Oro iš lauko temperatūra B pusėje								
+											
+//---------------------- HLA20_CT002 : 	Degimo oro temperatūra B pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HLA20_CT002"										
+	value_in :=	CJF10GH001_AI5_02	//HLA20CT002XQ01 Degimo oro temperatūra B pusėje								
+											
+//---------------------- HNA10_CQ001 : 	Deguonies kiekis dūmuose ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNA10_CQ001"										
+	value_in :=	CJF10GH001_AI3_06	//HNA10CQ001XQ01 Deguonies kiekis dūmuose								
+	value_in :=	CJF10GH001_AI8_05	//HNA10CQ001XQ02 Dūmų temperatūra prieš recirkuliaciją								
+											
+//---------------------- HNA10_CT001 : 	dūmų temperatūra už katilo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNA10_CT001"										
+	value_in :=	CJF10GH001_AI4_01	//HNA10CT001XQ01 dūmų temperatūra už katilo								
+											
+//---------------------- HNA30_CT001 : 	Dūmų temperatūra už dūmų skląsčio ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNA30_CT001"										
+	value_in :=	CJF10GH001_AI3_05	//HNA30CT001XQ01 Dūmų temperatūra už dūmų skląsčio								
+											
+//---------------------- HNF10_CP001 : 	Dūmų recirkuliacijos slėgis už ventiliatoriaus ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNF10_CP001"										
+	value_in :=	CJF10GH001_AI4_02	//HNF10CP001XQ01 Dūmų recirkuliacijos slėgis už ventiliatoriaus								
+											
+//---------------------- HNF10_CT001 : 	Dūmų recirkuliacijos temperatūra ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNF10_CT001"										
+	value_in :=	CJF10GH001_AI4_07	//HNF10CT001XQ01 Dūmų recirkuliacijos temperatūra								
+											
+//---------------------- HNF11_CF001 : 	Dūmų recirkuliacijos srautas A pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNF11_CF001"										
+	value_in :=	CJF10GH001_AI4_03	//HNF11CF001XQ01 Dūmų recirkuliacijos srautas A pusėje								
+											
+//---------------------- HNF12_CF001 : 	Dūmų recirkuliacijos srautas B pusėje ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."HNF12_CF001"										
+	value_in :=	CJF10GH001_AI4_04	//HNF12CF001XQ01 Dūmų recirkuliacijos srautas B pusėje								
+											
+//---------------------- H_HG10C : 	dujų srautas į katilą ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."H_HG10C"										
+	value_in :=	CJF10GH001_AI10_02	//HHG10CF001 dujų srautas į katilą								
+											
+//---------------------- H_HG20C : 	dujų srautas į katilą ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."H_HG20C"										
+	value_in :=	CJF10GH001_AI10_03	//HHG20CF001 dujų srautas į katilą								
+											
+//---------------------- NDA10_CF201 : 	Termofikacinio vandens srautas per katilą ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CF201"										
+	value_in :=	CJF10GH001_FSAI2_01	//NDA10CF201XQ01 Termofikacinio vandens srautas per katilą								
+											
+//---------------------- NDA10_CF202 : 	Termofikacinio vandens srautas per katilą ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CF202"										
+	value_in :=	CJF10GH001_FSAI2_08	//NDA10CF202XQ01 Termofikacinio vandens srautas per katilą								
+											
+//---------------------- NDA10_CP001 : 	Termofikacinio vandens slėgis už katilo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CP001"										
+	value_in :=	CJF10GH001_FSAI1_01	//NDA10CP001XQ01 Termofikacinio vandens slėgis už katilo								
+											
+//---------------------- NDA10_CP002 : 	Termofikacinio vandens slėgis už katilo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CP002"										
+	value_in :=	CJF10GH001_FSAI1_02	//NDA10CP002XQ01 Termofikacinio vandens slėgis už katilo								
+											
+//---------------------- NDA10_CT001 : 	Termofikacinio vandens temperatūra už katilo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CT001"										
+	value_in :=	CJF10GH001_FSAI1_07	//NDA10CT001XQ01 Termofikacinio vandens temperatūra už katilo								
+											
+//---------------------- NDA10_CT002 : 	Termofikacinio vandens temperatūra už katilo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CT002"										
+	value_in :=	CJF10GH001_FSAI1_08	//NDA10CT002XQ01 Termofikacinio vandens temperatūra už katilo								
+											
+//---------------------- NDA10_CT003 : 	Termofikacinio vandens temperatūra už katilo ----------------------										
+CALL fb_AI											
+	Puls_100ms:= pulsas										
+	dv := "A"."NDA10_CT003"										
+	value_in :=	CJF10GH001_AI6_02	//NDA10CT003XQ01 Termofikacinio vandens temperatūra už katilo								
+											

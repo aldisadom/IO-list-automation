@@ -16,6 +16,36 @@
 using namespace std;
 using namespace IOlistautomation;
 
+
+int Object_find_obj_link(int index, bool pid_link)
+{
+	wstring text = objects.data[index].Object_link;
+	wstring compare_string;
+	int result = 0;
+	for (int i = 0; i < objects.valid_entries; i++)
+	{
+		if (pid_link)
+			compare_string = objects.data[i].PID_link;
+		else
+			compare_string = objects.data[i].Object_link;
+
+		result = compare_string.compare(L"");
+		if (result != 0)
+		{
+			result = text.compare(compare_string);
+			if (result >= 0)
+				return i;
+		}
+	}
+	wstring texts = objects.data[index].KKS;
+	texts.append(error_separator);
+	texts.append(str.Error.bad_link.s[lang]);
+	texts.append(error_separator);
+	texts.append(text);
+	err_write_show(texts);
+	return -1;
+}
+
 // get data from memory to wstring
 std::wstring Objects_get_data_switch(int iCol, int index)
 {
@@ -33,15 +63,21 @@ std::wstring Objects_get_data_switch(int iCol, int index)
 		break;
 	case 5:	return objects.data[index].Object_text;
 		break;
-	case 6:	return objects.data[index].Adress_val;
+	case 6:	return objects.data[index].Object_link;
 		break;
-	case 7:	return objects.data[index].Adress_sw1;
+	case 7:	return objects.data[index].PID_link;
 		break;
-	case 8:	return objects.data[index].Adress_sw2;
+	case 8:	return objects.data[index].Lenght;
 		break;
-	case 9:	return objects.data[index].Adress_cmd;
+	case 9:	return objects.data[index].Adress_val;
 		break;
-	case 10:	return objects.data[index].Adress_pars;
+	case 10:	return objects.data[index].Adress_sw1;
+		break;
+	case 11:	return objects.data[index].Adress_sw2;
+		break;
+	case 12:	return objects.data[index].Adress_cmd;
+		break;
+	case 13:	return objects.data[index].Adress_pars;
 		break;
 	default:return LPWSTR(L"");
 		break;
@@ -64,15 +100,21 @@ void Objects_put_data_switch(int iCol, int index, wstring cell_text)
 		break;
 	case 5:	objects.data[index].Object_text = cell_text;
 		break;
-	case 6:	objects.data[index].Adress_val = cell_text;
+	case 6:	objects.data[index].Object_link = cell_text;
 		break;
-	case 7:	objects.data[index].Adress_sw1 = cell_text;
+	case 7:	objects.data[index].PID_link = cell_text;
 		break;
-	case 8:	objects.data[index].Adress_sw2 = cell_text;
+	case 8:	objects.data[index].Lenght = cell_text;
 		break;
-	case 9:	objects.data[index].Adress_cmd = cell_text;
+	case 9:	objects.data[index].Adress_val = cell_text;
 		break;
-	case 10:	objects.data[index].Adress_pars = cell_text;
+	case 10:	objects.data[index].Adress_sw1 = cell_text;
+		break;
+	case 11:	objects.data[index].Adress_sw2 = cell_text;
+		break;
+	case 12:	objects.data[index].Adress_cmd = cell_text;
+		break;
+	case 13:	objects.data[index].Adress_pars = cell_text;
 		break;
 	}
 }
@@ -105,17 +147,49 @@ int Objects_valid_row_check(int row)
 	return 0;
 }
 
+int Objects_get_description_lenght()
+{
+	wstring texts;
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
+	if (objects.valid_entries <= 1)
+	{
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
+		return 1;
+	}
+
+	Show_progress(str.Progress.lenght.s[lang], objects.valid_entries);
+	texts = str.Info.lenght.s[lang];
+	info_write(texts);
+
+	for (int index = 0; index <= objects.valid_entries; ++index)
+	{
+		objects.data[index].Lenght = int_to_wstring(objects.data[index].Object_text.size(),0);
+		set_progress_value(index);
+	}
+	Hide_progress();
+
+	texts = str.Info.lenght.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
+	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
+	return 0;
+}
 
 //find unique objects in signals data
 int Objects_find_uniques()
 {
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	wstring texts;
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -126,9 +200,9 @@ int Objects_find_uniques()
 
 	temp_KKS.resize(signals.valid_entries+1);
 
-	Show_progress(prog_uniques_find[lang], project.valid_entries);
-	strcpy_s(info_txt, sizeof info_txt, info_find_uniques[lang]);
-	info_write(info_txt);
+	Show_progress(str.Progress.uniques_find.s[lang], project.valid_entries);
+	texts = str.Info.find_uniques.s[lang];
+	info_write(texts);
 
 	//put all data to temporaty KKS bufer
 	for (int index = 0; index <= signals.valid_entries; index++)
@@ -156,7 +230,7 @@ int Objects_find_uniques()
 		max_digits++;
 	}
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	bool transfer_new=false;
 
 	if (objects.valid_entries > 1)
@@ -204,7 +278,7 @@ int Objects_find_uniques()
 		{
 			//put all new data to end of list
 			int new_valid_entries = objects.valid_entries;			
-			Show_progress(prog_uniques_find[lang], size_temp);
+			Show_progress(str.Progress.uniques_find.s[lang], size_temp);
 			for (int index = 0; index <= size_temp; ++index)
 			{
 				for (i = 0; i <= objects.valid_entries; i++)
@@ -260,25 +334,26 @@ int Objects_find_uniques()
 			objects.valid_entries = new_valid_entries;
 
 			Hide_progress();
-			Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+			Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
 			return 0;
 		}
 
 		// if everything matches ask for rewrite everything
-		int result = show_confirm_window(conf_objects_overwrite[lang]);
+		int result = show_confirm_window(str.Confirm.objects_overwrite.s[lang]);
 		if (result == IDYES)
 		{
-			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
-			strcat_s(info_txt, sizeof info_txt, info_separator);
-			strcat_s(info_txt, sizeof info_txt, objects_txt[lang]);
+			texts = str.Info.erase_data.s[lang];
+			texts.append(info_separator);
+			texts.append(str.General.objects_txt.s[lang]);
+			info_write(texts);
+
 			objects.data = {};
 			Global_get_width_list(Objects_grid_index,objects.number_collums, objects.collumn_with);
-			info_write(info_txt);
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			texts = str.Error.canceled_selection.s[lang];
+			err_write(texts);
 			return 1;
 		}
 	}
@@ -288,7 +363,7 @@ int Objects_find_uniques()
 
 	objects.data.resize(objects.valid_entries + 1);
 
-	Show_progress(prog_uniques_find[lang], objects.valid_entries);
+	Show_progress(str.Progress.uniques_find.s[lang], objects.valid_entries);
 
 
 	for (int index = 0; index <= objects.valid_entries; ++index) // for all unique kks 
@@ -312,18 +387,21 @@ int Objects_find_uniques()
 		set_progress_value(index);
 	}
 	Hide_progress();
+	texts = str.Info.find_uniques.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
-	strcpy_s(info_txt, sizeof info_txt, info_find_uniques[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
+	Objects_get_description_lenght();
+
 	return 0;
 }
 //find what kind of object it is
 int Objects_find_objects()
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Objects_grid_index;
+	wstring texts;
 
 	if (Signals_learn_data() == 1)
 	{
@@ -331,22 +409,21 @@ int Objects_find_objects()
 	}
 
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
-	Show_progress(prog_uniques_object_type[lang], project.valid_entries);
-	strcpy_s(info_txt, sizeof info_txt, info_find_objects[lang]);
-	info_write(info_txt);
+	Show_progress(str.Progress.uniques_object_type.s[lang], project.valid_entries);
+	texts = str.Info.find_objects.s[lang];
+	info_write(texts);
 
-	Show_progress(prog_process_data[lang], objects.valid_entries);
-
+	Show_progress(str.Progress.process_data.s[lang], objects.valid_entries);
 
 	wstring search_in = L"";
 	wstring search_for=L"";
@@ -449,7 +526,7 @@ int Objects_find_objects()
 			GlobalForm::forma->Object_grid->FirstDisplayedScrollingRowIndex = index;
 			GlobalForm::forma->Object_grid->CurrentCell = GlobalForm::forma->Object_grid[3, index]; // show whitch cell is overwriten
 
-			text_confirm = conf_objects_type_overwrite[lang];
+			text_confirm = str.Confirm.objects_type_overwrite.s[lang];
 			text_confirm.append(L" --- ");
 			text_confirm.append(objects.data[index].Object_type);
 			text_confirm.append(L" -> ");
@@ -471,29 +548,30 @@ int Objects_find_objects()
 	}
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_find_objects[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	texts = str.Info.find_objects.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
+	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
 	return 0;
 }
 //find operative marking
 int Objects_find_operatyv()
 {
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	wstring texts;
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
-	Show_progress(prog_operatyv[lang], objects.valid_entries);
-	strcpy_s(info_txt, sizeof info_txt, info_find_operatyv[lang]);
-	info_write(info_txt);
+	Show_progress(str.Progress.operatyv.s[lang], objects.valid_entries);
+	texts = str.Info.find_operatyv.s[lang];
+	info_write(texts);
 
 	int find_1;
 	int find_2;
@@ -516,44 +594,46 @@ int Objects_find_operatyv()
 	}
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_find_operatyv[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	texts = str.Info.find_operatyv.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
+	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
 	return 0;
 }
 //transfer objects data back to signals
 int Objects_transfer_to_signals(bool test_mode)
 {
+	wstring texts;
 	IOlistautomation::Object_check_Form forma;
 	GlobalForm::forma->tabControl1->SelectedIndex =Signals_grid_index;
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
-	Show_progress(prog_transfer_data[lang], signals.valid_entries);
-	strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, "->");
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	info_write(info_txt);
+	Show_progress(str.Progress.transfer_data.s[lang], signals.valid_entries);
+
+	texts = str.Info.transfer_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.design_txt.s[lang]);
+	texts.append(L"->");
+	texts.append(str.General.signals_txt.s[lang]);
+	info_write(texts);
 
 	//for all signals search matching objects
 	for (int index = 0; index <= signals.valid_entries; ++index)  
@@ -584,19 +664,19 @@ int Objects_transfer_to_signals(bool test_mode)
 						if (test_mode == false)
 							forma.ShowDialog();
 
-						if ((forma.return_value == Result_Yes || forma.return_value == Result_Yes_all) && test_mode == false)
+						if ((forma.return_value == Result_Exit ) && test_mode == false)
 						{
 							Hide_progress();
-
-							strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
-							strcat_s(info_txt, sizeof info_txt, info_separator);
-							strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-							strcat_s(info_txt, sizeof info_txt, "->");
-							strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-							strcat_s(info_txt, sizeof info_txt, error_separator);
-							strcat_s(info_txt, sizeof info_txt, cancel_txt[lang]);
-							info_write(info_txt);
-							Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+							texts = str.Info.transfer_data.s[lang];
+							texts.append(info_separator);
+							texts.append(str.General.design_txt.s[lang]);
+							texts.append(L"->");
+							texts.append(str.General.signals_txt.s[lang]);
+							texts.append(error_separator);
+							texts.append(str.General.cancel_txt.s[lang]);
+							info_write(texts);
+							
+							Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 							return 0;
 						}
 
@@ -621,15 +701,16 @@ int Objects_transfer_to_signals(bool test_mode)
 	}
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, "->");
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	texts = str.Info.transfer_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.design_txt.s[lang]);
+	texts.append(L"->");
+	texts.append(str.General.signals_txt.s[lang]);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
+
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 	return 0;
 }
 

@@ -337,7 +337,7 @@ namespace IOlistautomation {
 					System::Windows::Forms::DataGridView^ grid = this->Grid_Module;
 					if (grid->SelectedCells->Count > 0)
 					{
-						Global_paste("IO_modules", this->Grid_Module);
+						Global_paste(L"IO_modules", this->Grid_Module);
 					}
 					this->Update();
 				}

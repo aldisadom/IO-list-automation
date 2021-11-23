@@ -2,14 +2,27 @@
 #include "MainWindow.h"
 #include "Global_Functions.h"
 
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+#include<sstream>
+#include <string>
+#include <filesystem>
+#include <wchar.h>
+#include <codecvt>
+
+#include <experimental/filesystem> // Header file for pre-standard implementation
+
+using namespace std::experimental::filesystem;
+
 using namespace std;
 using namespace System;
 
 
 HWND confirmWND;
-
-char err_txt[255];
-char info_txt[255];
 
 struct parameters_str parameters;
 struct test_str test;
@@ -21,6 +34,8 @@ struct filter_str signal_filter;
 struct filter_str object_filter;
 
 int lang = 1;
+
+Dump_names_str Dump_names;
 
 // get number of digits from integer
 int GetNumberOfDigits(int i)
@@ -40,7 +55,7 @@ System::String^ wstring_to_system_string(std::wstring text)
 }
 std::wstring system_string_to_wstring(System::String^ text)
 {
-	wstring new_text = msclr::interop::marshal_as< std::wstring >(text);
+	std::wstring new_text = msclr::interop::marshal_as< std::wstring >(text);
 	return new_text;
 }
 std::string system_string_to_string(System::String^ text)
@@ -65,7 +80,7 @@ std::wstring string_to_wstring(const std::string &s)
 // convert integer to wstring adding 0 bassed on number of digits
 std::wstring int_to_wstring(int number, int nr_of_digits)
 {	
-	wstring text = L"";
+	std::wstring text = L"";
 	int b = nr_of_digits - GetNumberOfDigits(number);
 	
 	for (int a = 0; a < b; a++)
@@ -75,9 +90,32 @@ std::wstring int_to_wstring(int number, int nr_of_digits)
 	text.append(to_wstring(number));
 	return text;
 }
+// convert wstring to integer
+long wstring_to_long(std::wstring text)
+{
+	string textas = wstring_to_string(text);
+	long tmp = atol(textas.c_str());
+	return tmp;
+}
 
 
-std::string get_time_string()
+// convert double to wstring
+std::wstring double_to_wstring(double number)
+{
+	wstring text = L"";
+
+	text.append(to_wstring(number));
+	return text;
+}
+// convert wstring to double
+double wstring_to_double(wstring text)
+{
+	string textas = wstring_to_string(text);
+	double tmp = strtod(textas.c_str(), NULL);
+	return tmp;
+}
+
+std::wstring get_time_string()
 {
 	char ats[255];
 	char tmp[255];
@@ -145,21 +183,22 @@ std::string get_time_string()
 
 
 	strcat_s(ats, sizeof ats, tmp);
-	return ats;
+	
+	return string_to_wstring(ats);
 //	strcat_s( at, sizeof at, ats);
 }
 
 
 // writes to info which button is pressed and returns converted to string
-std::string button_press_name_write(System::String^ buttonName)
+std::wstring button_press_name_write(System::String^ buttonName)
 {
-	string converted_text = system_string_to_string(buttonName).c_str();
-	const char *button_text= converted_text.c_str();
+	wstring converted_text = system_string_to_wstring(buttonName).c_str();
 
-	strcpy_s(info_txt, sizeof info_txt, button_text);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, info_button_press[lang]);
-	info_write(info_txt);
+	wstring texts = converted_text;
+	texts.append(error_separator);
+	texts.append(str.Info.button_press.s[lang]);
+
+	info_write(texts);
 
 	return converted_text;
 }
@@ -169,42 +208,42 @@ std::string button_press_name_write(System::String^ buttonName)
 // shows messagebox with button name which function doesnt exists
 int Display_no_function(System::String^ buttonName)
 {
-	string converted_text = system_string_to_string(buttonName).c_str();
-	const char *tekstas = converted_text.c_str();
+	wstring converted_text = system_string_to_wstring(buttonName).c_str();
 
-	strcpy_s(info_txt, sizeof info_txt, tekstas);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, info_no_function[lang]);
-	info_write(info_txt);
+	wstring texts = converted_text;
+	texts.append(error_separator);
+	texts.append(str.Info.no_function.s[lang]);
 
-	wstring wstr(info_txt, info_txt + strlen(info_txt));
+	info_write(texts);
+
 
 	int msgboxID = MessageBox(
 		NULL,
-		wstr.c_str(),
+		texts.c_str(),
 		L"Error",
 		NULL
 	);	
 	return msgboxID;
 }
 // displays error as messagebox
-int Display_error(char *tekstas)
+int Display_error(wstring tekstas)
 {
-	wstring wstr(tekstas, tekstas + strlen(tekstas));
 	int msgboxID = MessageBox(
 		NULL,
-		wstr.c_str(),
+		tekstas.c_str(),
 		L"Error",
 		NULL
 	);
 	return msgboxID;
 }
 // displays confirmation window
-int show_confirm_window(LPCWSTR tekstas) // IDYES; IDNO; IDCANCEL
+int show_confirm_window(wstring tekstas) // IDYES; IDNO; IDCANCEL
 {
+	
+	LPCWSTR tekstas_show = tekstas.c_str();
 	int msgboxID = MessageBox(
 		NULL,
-		tekstas,
+		tekstas_show,
 		L"Confirmation",
 		MB_YESNOCANCEL | MB_SYSTEMMODAL | MB_TOPMOST
 	);
@@ -214,42 +253,49 @@ int show_confirm_window(LPCWSTR tekstas) // IDYES; IDNO; IDCANCEL
 
 
 //writes error to log file
-void err_write(char *tekstas)
+void err_write(wstring tekstas)
 {
-	FILE *fp;
-	string laiks;
-	char ats[255];
+	std::wofstream temp_file("_error_log.txt", std::ios::binary | fstream::app);
 
+	wstring laiks;
 	laiks = get_time_string();
-	strcpy_s(ats, sizeof ats, laiks.c_str());
 
-	fopen_s(&fp, "_error_log.txt", "a");
-	fprintf(fp, "%s", ats);
-	fprintf(fp, " - %s: ", err_string[lang]);
-	fprintf(fp, "%s\n", tekstas);
-
-	fclose(fp);
+	temp_file << laiks;
+	temp_file << L" - ";
+	temp_file << str.Error.string.s[lang];
+	temp_file << L": ";
+	temp_file << tekstas;
+	temp_file << L"\r\n";
+	temp_file.close();
 
 	info_write(tekstas);
 }
 //writes error and shows it as messagebox
-void err_write_show(char *tekstas)
+void err_write_show(wstring tekstas)
 {
 	err_write(tekstas);
 	Display_error(tekstas);
 }
-// writes information to log
-void info_write(char *tekstas)
-{
-	FILE *fp;
-	string laiks;
-	char ats[255];
 
+//writes programming error and shows it as messagebox
+void err_prog()
+{
+	wstring texts = str.Error.cfg_parameter_programing_error.s[lang];
+	err_write_show(texts);
+}
+// writes information to log
+void info_write(wstring tekstas)
+{
+	std::wofstream temp_file("_info_log.txt", std::ios::binary | fstream::app);
+
+	wstring laiks;
 	laiks = get_time_string();
-	strcpy_s(ats, sizeof ats, laiks.c_str());
-	fopen_s(&fp, "_info_log.txt", "a");
-	fprintf(fp, "%s - %s\n", ats, tekstas);
-	fclose(fp);
+
+	temp_file << laiks;
+	temp_file << L" - ";
+	temp_file << tekstas;
+	temp_file << L"\r\n";
+	temp_file.close();
 }
 // resets all logs
 void reset_logs()
@@ -301,136 +347,112 @@ void set_progress_value(int value)
 
 
 // parameters that can be added to _cfg file
-char parametrai_str[38][255] = { "height", "width" , "debug", "clr_logs_on_start", "excel_row_nr_with_name","CPU","text_Language","SCADA","IO_list_Language","auto_column_with","indirect",
-"try_import_if_corupt", "paste_sel_match" , "adresing_from_1", "search_function_in_IO_text","ABB_800xA_app_name", "separator_function", "separator_detailed",
-"number_column_in_excel",
-"KKS_column_in_excel",
-"Section_column_in_excel",
-"Range_min_column_in_excel",
-"Range_max_column_in_excel",
-"Units_column_in_excel",
-"False_text_column_in_excel",
-"True_text_column_in_excel",
-"Revision_column_in_excel",
-"Cable_column_in_excel",
-"Cabinet_column_in_excel",
-"Module_name_column_in_excel",
-"Pin_column_in_excel",
-"Channel_column_in_excel",
-"IO_text_column_in_excel",
-"Page_column_in_excel",
-"Changed_column_in_excel",
-"Delete_if_no_module",
-"Compare_by_IO",
-"CPU_column_in_excel",
+wstring parametrai_str[38]= { 
+L"height",
+L"width" ,
+L"debug",
+L"clr_logs_on_start",
+L"excel_row_nr_with_name",
+L"CPU",
+L"text_Language",
+L"SCADA",
+L"IO_list_Language",
+L"auto_column_with",
+L"indirect",
+L"try_import_if_corupt",
+L"paste_sel_match" ,
+L"adresing_from_1",
+L"search_function_in_IO_text",
+L"ABB_800xA_app_name",
+L"separator_function",
+L"separator_detailed",
+L"number_column_in_excel",
+L"KKS_column_in_excel",
+L"Section_column_in_excel",
+L"Range_min_column_in_excel",
+L"Range_max_column_in_excel",
+L"Units_column_in_excel",
+L"False_text_column_in_excel",
+L"True_text_column_in_excel",
+L"Revision_column_in_excel",
+L"Cable_column_in_excel",
+L"Cabinet_column_in_excel",
+L"Module_name_column_in_excel",
+L"Pin_column_in_excel",
+L"Channel_column_in_excel",
+L"IO_text_column_in_excel",
+L"Page_column_in_excel",
+L"Changed_column_in_excel",
+L"Delete_if_no_module",
+L"Compare_by_IO",
+L"CPU_column_in_excel",
 };
 
-
-
-int adr_par_retrieve(char * text, addres_pars_str &adr_pars)
-{
-	char *next_token1 = NULL;
-	int index = 0;
-	text = strtok_s(text, ",\n", &next_token1);
-
-	while (text != NULL)
-	{
-		switch (index)
-		{
-		case 0:	adr_pars.w1.area = atoi(text);
-			break;
-		case 1:	adr_pars.w1.start_adr = atoi(text);
-			break;
-		case 2:	adr_pars.w1.offset = atoi(text);
-			break;
-		case 3:	adr_pars.w2.area = atoi(text);
-			break;
-		case 4:	adr_pars.w2.start_adr = atoi(text);
-			break;
-		case 5:	adr_pars.w2.offset = atoi(text);
-			break;
-		case 6:	adr_pars.cmd.area = atoi(text);
-			break;
-		case 7:	adr_pars.cmd.start_adr = atoi(text);
-			break;
-		case 8:	adr_pars.cmd.offset = atoi(text);
-			break;
-		case 9:	adr_pars.val.area = atoi(text);
-			break;
-		case 10:	adr_pars.val.start_adr = atoi(text);
-			break;
-		case 11:	adr_pars.val.offset = atoi(text);
-			break;
-		case 12:	adr_pars.pars.area = atoi(text);
-			break;
-		case 13:	adr_pars.pars.start_adr = atoi(text);
-			break;
-		case 14:	adr_pars.pars.offset = atoi(text);
-			break;
-		default:
-			return 1;
-			break;
-		}
-
-		index++;
-		text = strtok_s(NULL, ",\n", &next_token1);
-	}
-	return 0;	
-}
-
 //puts parameter in structure
-int cfg_puts(char *tekstas, struct parameters_str *pars)
+int cfg_puts(wstring tekstas, struct parameters_str *pars, int comment_pos)
 {
-	char * parametras;
-	char * value_text;
 	long value;
-	char *next_token1 = NULL;
-	bool fStringMatch = FALSE;
+	int fStringMatch;
 	int stringo_nr = 0;
 	int count = 0;
-	string tmp_text = "";
+	wstring tmp_text = L"";
+	wstring parametras = L"";
+	wstring value_text = L"";
+	int separator_nr = 0;
+	int lenght_value_text = 0;
+
 	//geting which parameter it is read
-	parametras = strtok_s(tekstas, "=", &next_token1);
-	if (parametras == NULL)
+	separator_nr = tekstas.find(L"=", 0);
+
+	parametras = tekstas.substr(0, separator_nr);
+
+	if (comment_pos > 0)
+		lenght_value_text = comment_pos - separator_nr - 2;
+	else
+		lenght_value_text = tekstas.length() - separator_nr - 1;
+
+	value_text = tekstas.substr(separator_nr + 1, lenght_value_text);
+	if (tekstas.empty())
+		return 0;
+
+	if (parametras.empty())
 	{
-		strcpy_s(err_txt, sizeof err_txt, tekstas);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, err_cfg_empty_parameter[lang]);
-		err_write_show(err_txt);
+		wstring texts = tekstas;
+		texts.append(error_separator);
+		texts.append(str.Error.cfg_empty_parameter.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
-	//get parameter value
-	value_text = strtok_s(NULL, "\n", &next_token1);
-	if (value_text == NULL)
+
+	if (value_text.empty())
 	{
-		strcpy_s(err_txt, sizeof err_txt, parametras);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, err_cfg_empty_value[lang]);
-		err_write_show(err_txt);
+		wstring texts = parametras;
+		texts.append(error_separator);
+		texts.append(str.Error.cfg_empty_value.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 	// matching parameter whith parameter strings
 	count = sizeof parametrai_str / sizeof parametrai_str[0];
 	for (int i = 0; i < count; i++)
 	{
-		fStringMatch = (strcmp(parametrai_str[i], parametras) == 0);
-		if (fStringMatch)
+		fStringMatch = parametras.compare(parametrai_str[i]);
+		if (fStringMatch == 0)
 		{
-			value =atoi(value_text);
+			value = _wtol(value_text.c_str());
 			stringo_nr = i;
 			break;
 		}
 	}
 
-	if (!fStringMatch)
+	if (fStringMatch != 0)
 	{
-		strcpy_s(err_txt, sizeof err_txt, parametras);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, err_cfg_bad_parameter[lang]);
-		err_write_show(err_txt);
+		wstring texts = parametras;
+		texts.append(error_separator);
+		texts.append(str.Error.cfg_bad_parameter.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
-
 	else
 	{
 		// putting parameter value to structure
@@ -452,92 +474,95 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				pars->excel_row_nr_with_name = value;
 				break;
 			case 5:
-				if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(Beckhoff_index)) == 0))
+				if (fStringMatch = value_text.compare(Global_get_CPU_name(Beckhoff_index)) == 0)
 				{
 					pars->CPU = Beckhoff_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(Siemens_index)) == 0))
+				else if (fStringMatch = value_text.compare(Global_get_CPU_name(Siemens_index)) == 0)
 				{
 					pars->CPU = Siemens_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(Schneider_index)) == 0))
+				else if (fStringMatch = value_text.compare(Global_get_CPU_name(Schneider_index)) == 0)
 				{
 					pars->CPU = Schneider_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, Global_get_CPU_name(ABB_800xA_index)) == 0))
+				else if (fStringMatch = value_text.compare(Global_get_CPU_name(ABB_800xA_index)) == 0)
 				{
 					pars->CPU = ABB_800xA_index;
 				}
 				else
 				{
 					pars->CPU = Beckhoff_index;
-					strcpy_s(err_txt, sizeof err_txt, parametras);
-					strcat_s(err_txt, sizeof err_txt, error_separator);
-					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
-					err_write_show(err_txt);
+
+					wstring texts = parametras;
+					texts.append(error_separator);
+					texts.append(str.Error.cfg_bad_value.s[lang]);
+					err_write_show(texts);
 				}
 				break;
 
 			case 6:
-				if (fStringMatch = (strcmp(value_text, "LT") == 0))
+				if (fStringMatch = value_text.compare(str.General.language.s[LT_index]) == 0)
 				{
 					lang = LT_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "EN") == 0))
+				else if (fStringMatch = value_text.compare(str.General.language.s[EN_index]) == 0)
 				{
 					lang = EN_index;
 				}
 				else
 				{
 					lang = LT_index;
-					strcpy_s(err_txt, sizeof err_txt, parametras);
-					strcat_s(err_txt, sizeof err_txt, error_separator);
-					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
-					err_write_show(err_txt);
+
+					wstring texts = parametras;
+					texts.append(error_separator);
+					texts.append(str.Error.cfg_bad_value.s[lang]);
+					err_write_show(texts);
 				}
 				break;
 			case 7:
-				if (fStringMatch = (strcmp(value_text, "System Platform") == 0))
+				if (fStringMatch = value_text.compare(Global_get_scada_name(System_platform_index)) == 0)
 				{
-					pars->SCADA = System_platform;
+					pars->SCADA = System_platform_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "WinCC") == 0))
+				else if (fStringMatch = value_text.compare(Global_get_scada_name(WinCC_index)) == 0)
 				{
-					pars->SCADA = WinCC;
+					pars->SCADA = WinCC_index;
 				}				
 				else
 				{
-					pars->SCADA = System_platform;
-					strcpy_s(err_txt, sizeof err_txt, parametras);
-					strcat_s(err_txt, sizeof err_txt, error_separator);
-					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
-					err_write_show(err_txt);
+					pars->SCADA = System_platform_index;
+					wstring texts = parametras;
+					texts.append(error_separator);
+					texts.append(str.Error.cfg_bad_value.s[lang]);
+					err_write_show(texts);
 				}
 				break;				
 			case 8:
-				if (fStringMatch = (strcmp(value_text, "LT") == 0))
+				if (fStringMatch = value_text.compare(str.General.language.s[LT_index]) == 0)
 				{
 					pars->Language = LT_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "EN") == 0))
+				else if (fStringMatch = value_text.compare(str.General.language.s[EN_index]) == 0)
 				{
 					pars->Language = EN_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "LV") == 0))
+				else if (fStringMatch = value_text.compare(str.General.language.s[LV_index]) == 0)
 				{
 					pars->Language = LV_index;
 				}
-				else if (fStringMatch = (strcmp(value_text, "RU") == 0))
+				else if (fStringMatch = value_text.compare(str.General.language.s[RU_index]) == 0)
 				{
 					pars->Language = RU_index;
 				}
 				else
 				{
 					pars->Language = LT_index;
-					strcpy_s(err_txt, sizeof err_txt, parametras);
-					strcat_s(err_txt, sizeof err_txt, error_separator);
-					strcat_s(err_txt, sizeof err_txt, err_cfg_bad_value[lang]);
-					err_write_show(err_txt);
+
+					wstring texts = parametras;
+					texts.append(error_separator);
+					texts.append(str.Error.cfg_bad_value.s[lang]);
+					err_write_show(texts);
 				}
 				break;
 			case 9:
@@ -573,16 +598,13 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				}
 				break;
 			case 15:
-				tmp_text = value_text;
-				pars->ABB_800xA_app_name = string_to_wstring(tmp_text);
+				pars->ABB_800xA_app_name = value_text;
 				break;
 			case 16:
-				tmp_text = value_text;
-				pars->separator_function = string_to_wstring(tmp_text);
+				pars->separator_function = value_text;
 				break;
 			case 17:
-				tmp_text = value_text;
-				pars->separator_detailed = string_to_wstring(tmp_text);
+				pars->separator_detailed = value_text;
 				break;
 			case 18:
 				pars->column_in_import.Number = value;
@@ -645,44 +667,58 @@ int cfg_puts(char *tekstas, struct parameters_str *pars)
 				pars->column_in_import.CPU = value;
 				break;
 			default:
-				strcpy_s(err_txt, sizeof err_txt, parametras);
-				strcat_s(err_txt, sizeof err_txt, error_separator);
-				strcat_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-				err_write_show(err_txt);
+				wstring texts = parametras;
+				texts.append(error_separator);
+				texts.append(str.Error.cfg_parameter_programing_error.s[lang]);
+				err_write_show(texts);
 				break;
 		}
 		if (pars->debug)
 		{
-			strcpy_s(info_txt, sizeof info_txt, parametras);
-			strcat_s(info_txt, sizeof info_txt, " = ");
-			strcat_s(info_txt, sizeof info_txt, value_text);
-			info_write(info_txt);
+			wstring texts = parametras;
+			texts.append(L" = ");
+			texts.append(value_text);
+			info_write(texts);
 		}
 	}
 	return 0;
 }
 //reads parameters from config file
-int cfg_reads(struct parameters_str *params)
+int cfg_reads(struct parameters_str *params, wstring test_mode)
 {
-	FILE *fp;
-	errno_t  erroras;
-	char str[255];
-	int par_klaida;
-
-	erroras = fopen_s(&fp, "_cfg.txt", "r");
-	if (erroras != 0) {
-		strcpy_s(err_txt, sizeof err_txt, err_no_cfg_file[lang]);
-		err_write_show(err_txt);
-		return 1;
-	}
-	while (fgets(str, 255, fp) != NULL)
+	
+	int par_klaida = 0;
+	wstring test_mode_str;
+	wstring file_name = L"_cfg.txt";
+	
+	if (test_mode.compare(L" ") != 0)
 	{
-		if (strcmp(str, "\n") != 0)
+		file_name = L".\\Test data\\IO\\_cfg_";
+		file_name.append(test_mode);
+		file_name.append(L".txt");
+	}
+
+	std::wifstream files(file_name);
+
+	if (files) 
+	{
+		std::wstring lines;
+
+		while (std::getline(files, lines))
 		{
-			par_klaida = cfg_puts(str, params);
+			int result = lines.find(L"#");
+			if (result != 0)
+				if (lines.compare(L"\n") != 0)
+					par_klaida = cfg_puts(lines, params, result);
 		}
 	}
-	fclose(fp);
+	else
+	{
+		wstring texts = str.Error.no_cfg_file.s[lang];
+		err_write_show(texts);
+		return 1;
+	}
+	files.close();
 	return 0;
 }
 

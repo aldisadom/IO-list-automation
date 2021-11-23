@@ -1,3 +1,2 @@
-2020-01-07  14:08:44.265 - Error: This program is not stable ant not fully tested, carefully use it !!!
-2020-01-07  14:08:45.310 - Error: ---------------------------------------------------------
-2020-01-07  14:09:02.329 - Error: File selection canceled
+2020-12-22  20:52:02.162 - Error: This program is not stable ant not fully tested, carefully use it !!!
+2020-12-22  20:52:03.742 - Error: ---------------------------------------------------------

@@ -1,0 +1,6 @@
+﻿indirect_PID	PID_str	retain									
+1944B_JS02GH001	PID_str	retain				ĮVADAS NR.1 AKTYVUS					
+CJF10_CH002	PID_str	retain				Vietinis STOP postas Nr.2					
+											
+											
+											

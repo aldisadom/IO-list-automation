@@ -1,0 +1,5 @@
+﻿indirect_FC	FC_str	retain									
+CJF10_CH001	FC_str	retain				Vietinis STOP postas Nr.1					
+											
+											
+											

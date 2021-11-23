@@ -66,14 +66,14 @@ namespace IOlistautomation {
 	private:
 
 
-	private: System::Windows::Forms::TabPage^  tabPage7;
+
 	public: System::Windows::Forms::DataGridView^  Grid_HC;
 	private:
 	public: System::Windows::Forms::DataGridView^  Grid_VLV;
 	public: System::Windows::Forms::DataGridView^  Grid_MOT;
 	public: System::Windows::Forms::DataGridView^  Grid_PID;
 	public: System::Windows::Forms::DataGridView^  Grid_FC;
-	public: System::Windows::Forms::DataGridView^  Grid_SCADA;
+
 
 	private:
 
@@ -107,8 +107,6 @@ namespace IOlistautomation {
 			this->Grid_PID = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
 			this->Grid_FC = (gcnew System::Windows::Forms::DataGridView());
-			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
-			this->Grid_SCADA = (gcnew System::Windows::Forms::DataGridView());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_AI))->BeginInit();
@@ -122,8 +120,6 @@ namespace IOlistautomation {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_PID))->BeginInit();
 			this->tabPage6->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_FC))->BeginInit();
-			this->tabPage7->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_SCADA))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -137,7 +133,6 @@ namespace IOlistautomation {
 			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Controls->Add(this->tabPage6);
-			this->tabControl1->Controls->Add(this->tabPage7);
 			this->tabControl1->Location = System::Drawing::Point(0, 0);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -318,35 +313,6 @@ namespace IOlistautomation {
 			this->Grid_FC->Size = System::Drawing::Size(915, 479);
 			this->Grid_FC->TabIndex = 1;
 			// 
-			// tabPage7
-			// 
-			this->tabPage7->Controls->Add(this->Grid_SCADA);
-			this->tabPage7->Location = System::Drawing::Point(4, 22);
-			this->tabPage7->Name = L"tabPage7";
-			this->tabPage7->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage7->Size = System::Drawing::Size(911, 472);
-			this->tabPage7->TabIndex = 6;
-			this->tabPage7->Text = L"SCADA";
-			this->tabPage7->UseVisualStyleBackColor = true;
-			// 
-			// Grid_SCADA
-			// 
-			this->Grid_SCADA->AllowUserToAddRows = false;
-			this->Grid_SCADA->AllowUserToDeleteRows = false;
-			this->Grid_SCADA->AllowUserToResizeColumns = false;
-			this->Grid_SCADA->AllowUserToResizeRows = false;
-			this->Grid_SCADA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->Grid_SCADA->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
-			this->Grid_SCADA->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->Grid_SCADA->ColumnHeadersVisible = false;
-			this->Grid_SCADA->Location = System::Drawing::Point(-2, -3);
-			this->Grid_SCADA->Name = L"Grid_SCADA";
-			this->Grid_SCADA->ReadOnly = true;
-			this->Grid_SCADA->Size = System::Drawing::Size(915, 479);
-			this->Grid_SCADA->TabIndex = 1;
-			// 
 			// ResultForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -369,8 +335,6 @@ namespace IOlistautomation {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_PID))->EndInit();
 			this->tabPage6->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_FC))->EndInit();
-			this->tabPage7->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Grid_SCADA))->EndInit();
 			this->ResumeLayout(false);
 
 		}

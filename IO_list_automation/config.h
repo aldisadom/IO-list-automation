@@ -1,8 +1,7 @@
 ﻿#pragma once
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
-#include <stdio.h>
-#include <stdlib.h>
+
 
 #include<iostream>
 #include<fstream>
@@ -44,6 +43,8 @@
 
 #define Filter_Count 20
 
+#define Max_Trend_data 2000
+
 using namespace std;
 using namespace System;
 
@@ -83,7 +84,11 @@ enum Grid_index {
 	Design_grid_index = 0,
 	Signals_grid_index = 1,
 	Objects_grid_index = 2,
+	Trend_data_grid_index = 3,
 };
+
+const int  Max_cpu_nr=3;
+const int  Max_scada_nr = 1;
 
 enum CPU_index {
 	Beckhoff_index = 0,
@@ -93,8 +98,8 @@ enum CPU_index {
 };
 
 enum SCADA_index {
-	System_platform = 0,
-	WinCC = 1,
+	System_platform_index = 0,
+	WinCC_index = 1,
 };
 
 enum Variable_index {
@@ -137,7 +142,7 @@ struct parameters_str
 	int excel_row_nr_with_name = 2;
 	int CPU = Beckhoff_index;
 	int Language = LT_index;
-	int SCADA = System_platform;
+	int SCADA = System_platform_index;
 	int KKS_del1 = 0;
 	int KKS_del2 = 0;
 	int KKS_underscore = 1;
@@ -203,11 +208,31 @@ struct project_str
 	vector <int> collumn_with;
 	int valid_entries;
 	const int number_collums =17;
-	const vector<wstring> column_name =	{
+	const vector<wstring> column_name_LT =	{
+		L"Nr.",						//collumn 0
+		L"PLC",						//collumn 1
+		L"KKS",						//collumn 2	
+		L"Sekcija",					//collumn 3	
+		L"Reiksme Min",				//collumn 4	
+		L"Reiksme Max",				//collumn 5	
+		L"Vienetai",				//collumn 6	
+		L"False tekstas",			//collumn 7	
+		L"True tekstas",			//collumn 8	
+		L"Revizija",				//collumn 9	
+		L"Kabelis",					//collumn 10	
+		L"Spinta",					//collumn 11	
+		L"Modulis",					//collumn 12
+		L"Pinas",					//collumn 13
+		L"Kanalas",					//collumn 14
+		L"IO tekstas",				//collumn 15	
+		L"Projekto reference",		//collumn 16	
+		L"Pakeistas",				//collumn 17	
+	};
+	const vector<wstring> column_name_EN = {
 		L"Nr.",						//collumn 0
 		L"CPU",						//collumn 1
 		L"KKS",						//collumn 2	
-		L"Sekcija",					//collumn 3	
+		L"Section",					//collumn 3	
 		L"Range Min",				//collumn 4	
 		L"Range Max",				//collumn 5	
 		L"Units",					//collumn 6	
@@ -215,28 +240,16 @@ struct project_str
 		L"True text",				//collumn 8	
 		L"Revision",				//collumn 9	
 		L"Cable",					//collumn 10	
-		L"Spinta",					//collumn 11	
-		L"Modulis",					//collumn 12
-		L"Pinas",					//collumn 13
-		L"Kanalas",					//collumn 14
-		L"IO tekstas",				//collumn 15	
-		L"Projekto reference",		//collumn 16	
+		L"Cabinet",					//collumn 11	
+		L"Module",					//collumn 12
+		L"Pin",						//collumn 13
+		L"Channel",					//collumn 14
+		L"IO text",					//collumn 15	
+		L"Project reference",		//collumn 16	
 		L"Changed",					//collumn 17	
 	};
 	vector <project_data_str> data;
 };
-/* missing in siglal str
-struct project_data_str
-{	wstring Section;
-	wstring Range_min;
-	wstring Range_max;
-	wstring Units;
-	wstring False_text;
-	wstring True_text;
-	wstring Revision;
-	wstring Cable;
-};
-*/
 
 #define signal_column_number		0
 #define signal_column_CPU			1
@@ -284,27 +297,49 @@ struct signal_str
 	vector <int> collumn_with;
 	int valid_entries;
 	const int number_collums = 19;
-	const vector<wstring> column_name = {
+	const vector<wstring> column_name_LT = {
+		L"Nr.",
+		L"PLC",
+		L"Spinta",
+		L"Operatyvinis",
+		L"KKS",
+		L"KKS1",
+		L"KKS2",
+		L"Naudotas",
+		L"Tipas",
+		L"Objekto pavadinimas",
+		L"Objekto patikslinimas",
+		L"Funkcinis tekstas",
+		L"Funkcija",
+		L"IO tekstas",
+		L"Modulis",
+		L"Signalo tipas",
+		L"Kanalas",
+		L"Pinas",
+		L"Tag",
+		L"Projekto reference",
+	};
+	const vector<wstring> column_name_EN = {
 		L"Nr.",
 		L"CPU",
-		L"Spinta",
-		L"Operatyv",
+		L"Cabinet",
+		L"Operative",
 		L"KKS",
 		L"KKS1",
 		L"KKS2",
 		L"Used",
 		L"Type",
-		L"Objektas",
-		L"objekto patikslinimas",
-		L"Funkcinis tekstas",
-		L"Funkcija",
-		L"IO tekstas",
-		L"Modulis",
-		L"Type",
-		L"Kanalas",
-		L"Pinas",
+		L"Object name",
+		L"Objekt detalisation",
+		L"Function text",
+		L"Function",
+		L"IO text",
+		L"Module",
+		L"Signal type",
+		L"Channel",
+		L"Pin",
 		L"Tag",
-		L"Projekto reference",
+		L"Project reference",
 	};
 	vector <Signal_data_str> data;
 };
@@ -332,25 +367,47 @@ struct object_data_str
 	wstring KKS;					//collumn 3	
 	wstring Object_type;			//collumn 4
 	wstring Object_text;			//collumn 5
-	wstring Adress_val;				//collumn 6
-	wstring Adress_sw1;				//collumn 7
-	wstring Adress_sw2;				//collumn 8
-	wstring Adress_cmd;				//collumn 9
-	wstring Adress_pars;			//collumn 10
+	wstring Object_link;			//collumn 6
+	wstring PID_link;				//collumn 7
+	wstring Lenght;					//collumn 8
+	wstring Adress_val;				//collumn 9
+	wstring Adress_sw1;				//collumn 10
+	wstring Adress_sw2;				//collumn 11
+	wstring Adress_cmd;				//collumn 12
+	wstring Adress_pars;			//collumn 13
 };
 
 struct object_str
 {
 	vector <int> collumn_with;
 	int valid_entries;
-	const int number_collums = 10;
-	const vector<wstring> column_name = { 
+	const int number_collums = 13;
+	const vector<wstring> column_name_LT = { 
+		L"Nr.",
+		L"PLC",
+		L"Operatyvinis",
+		L"KKS",
+		L"Tipas",
+		L"Objektas pavadinimas",
+		L"Objekto link",
+		L"PID link",
+		L"Ilgis",
+		L"Val",
+		L"SW1",
+		L"SW2",
+		L"CMD",
+		L"Pars",
+	};
+	const vector<wstring> column_name_EN = {
 		L"Nr.",
 		L"CPU",
-		L"Operatyv",
+		L"Operative",
 		L"KKS",
 		L"Type",
-		L"Objektas",
+		L"Object name",
+		L"Object link",
+		L"PID link",
+		L"Lenght",
 		L"Val",
 		L"SW1",
 		L"SW2",
@@ -360,6 +417,39 @@ struct object_str
 	vector <object_data_str> data;	
 };
 
+struct Trend_data_str
+{
+	wstring Time;						//collumn 0
+	wstring PV;							//collumn 1
+	wstring OUTs;						//collumn 2	
+	wstring Disturb;					//collumn 3	
+	wstring PV_pol;						//collumn 4
+	wstring Out_pol;					//collumn 5
+};
+
+struct Trend_str
+{
+	vector <int> collumn_with;
+	int valid_entries = 0;
+	const int number_collums = 5;
+	const vector<wstring> column_name_LT = {
+		L"Laikas",
+		L"PV reiksme",
+		L"OUT reiksme",
+		L"Trikdis",
+		L"PV polinomas",
+		L"OUT polinomas",
+	};
+	const vector<wstring> column_name_EN = {
+		L"Time",
+		L"Process value",
+		L"Output value",
+		L"Disturbance",
+		L"PV polynom",
+		L"Out polynom",
+	};
+	vector <Trend_data_str> data;
+};
 
 struct addres_1par_str
 {
@@ -429,6 +519,30 @@ struct addres_str
 						/*pid*/		-3,9500,2,		0,0,0,			0,0,0,			0,0,0,			-3,10000,100 };
 };
 
+struct Dump_names_str
+{
+	wstring decl_AI = L"decl_AI";
+	wstring decl_FC = L"decl_FC";
+	wstring decl_HC = L"decl_HC";
+	wstring decl_MOT = L"decl_MOT";
+	wstring decl_PID = L"decl_PID";
+	wstring decl_VLV = L"decl_VLV";
+	wstring scada_decl_AI = L"scada_decl_AI";
+	wstring scada_decl_FC = L"scada_decl_FC";
+	wstring scada_decl_HC = L"scada_decl_HC";
+	wstring scada_decl_MOT = L"scada_decl_MOT";
+	wstring scada_decl_PID = L"scada_decl_PID";
+	wstring scada_decl_VLV = L"scada_decl_VLV";
+	wstring inst_AI = L"inst_AI";
+	wstring inst_FC = L"inst_FC";
+	wstring inst_HC = L"inst_HC";
+	wstring inst_MOT = L"inst_MOT";
+	wstring inst_PID = L"inst_PID";
+	wstring inst_VLV = L"inst_VLV";
+	wstring decl_Modules = L"decl_Modules";
+	wstring decl_IO = L"decl_IO";
+};
+
 struct filter_str
 {
 	wstring Filter_text[Filter_Count] = { L"" };
@@ -439,18 +553,18 @@ extern struct parameters_str parameters;
 extern struct project_str project;
 extern struct signal_str signals;
 extern struct object_str objects;
+
+
 extern struct learning_str learn;
 extern struct addres_str adres;
 extern int IO_form_result;
 extern struct filter_str design_filter;
 extern struct filter_str signal_filter;
 extern struct filter_str object_filter;
+extern struct Dump_names_str Dump_names;
 
 
 extern int lang;
-
-extern char err_txt[255];
-extern char info_txt[255];
 
 int GetNumberOfDigits(int i);
 String^ string_to_system_string(string text);
@@ -463,14 +577,18 @@ wstring string_to_wstring(const std::string &s);
 
 wstring int_to_wstring(int number, int nr_of_digits);
 
-void err_write(char *tekstas);
-void err_write_show(char *tekstas);
-void info_write(char *tekstas);
+wstring double_to_wstring(double number);
+double wstring_to_double(wstring text);
+long wstring_to_long(wstring text);
 
-int cfg_puts(char *tekstas, struct parameters_str *pars);
-int cfg_reads(struct parameters_str *pars);
+void err_write(wstring tekstas);
+void err_write_show(wstring tekstas);
+void err_prog();
+void info_write(wstring tekstas);
 
-string button_press_name_write(String^ buttonName);
+int cfg_reads(struct parameters_str *pars, wstring test_mode);
+
+wstring button_press_name_write(String^ buttonName);
 int Display_no_function(System::String^ buttonName);
 
 void Show_progress(wstring text, int max);
@@ -478,6 +596,8 @@ void Hide_progress();
 void set_progress_value(int value);
 
 void reset_logs();
-int show_confirm_window(LPCWSTR tekstas); // IDYES; IDNO; IDCANCEL
+int show_confirm_window(wstring tekstas); // IDYES; IDNO; IDCANCEL
+
+
 
 #endif

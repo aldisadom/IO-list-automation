@@ -1,0 +1,136 @@
+﻿//---------------------- HAG10_AA001 : 	Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HAG10_AA001"										
+	Ready_in :=	CJF10GH001_DI8_07	//HAG10AA001XB03 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Paruošta								
+	OPD_in :=	CJF10GH001_DI8_08	//HAG10AA001XB01 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Atidaryta								
+	CLD_in :=	CJF10GH001_DI8_09	//HAG10AA001XB02 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Uždaryta								
+	OPN_in :=	CJF10GH001_DO3_05	//HAG10AA001YB21 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Atidaryti								
+	CLS_in :=	CJF10GH001_DO3_06	//HAG10AA001YB22 Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V-82): Uždaryti								
+											
+//---------------------- HAG10_AA002 : 	Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HAG10_AA002"										
+	Ready_in :=	CJF10GH001_DI8_10	//HAG10AA002XB03 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Paruošta								
+	OPD_in :=	CJF10GH001_DI8_11	//HAG10AA002XB01 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Atidaryta								
+	CLD_in :=	CJF10GH001_DI8_12	//HAG10AA002XB02 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Uždaryta								
+	OPN_in :=	CJF10GH001_DO3_07	//HAG10AA002YB21 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Atidaryti								
+	CLS_in :=	CJF10GH001_DO3_08	//HAG10AA002YB22 Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V-84): Uždaryti								
+											
+//---------------------- HAG10_AA101 : 	Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HAG10_AA101"										
+	Ready_in :=	CJF10GH001_DI8_13	//HAG10AA101XB03 Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V-83): Paruošta								
+	OPN_in :=	CJF10GH001_DI8_14	//HAG10AA101YB21 Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V-83): Atidaryti								
+	CLS_in :=	CJF10GH001_DI8_15	//HAG10AA101YB22 Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V-83): Uždaryti								
+											
+//---------------------- HBK10_CP001 : 	Slėgis kūrykloje ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HBK10_CP001"										
+	_in :=	CJF10GH001_FSAI2_04	//HBK10CP001XQ01 Slėgis kūrykloje								
+											
+//---------------------- HJA11_CB001 : 	Uždegtuvas Nr.1: Liepsnos būsena ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA11_CB001"										
+	_in :=	CJF10GH001_FSDI2_01	//HJA11CB001XB01 Uždegtuvas Nr.1: Liepsnos būsena								
+											
+//---------------------- HJA11_GH001 : 	Uždegtuvas Nr.1: Startas ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA11_GH001"										
+	_in :=	CJF10GH001_FSDO2_01	//HJA11GH001YB01 Uždegtuvas Nr.1: Startas								
+											
+//---------------------- HJA12_CB001 : 	Uždegtuvas Nr.2: Liepsnos būsena ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA12_CB001"										
+	_in :=	CJF10GH001_FSDI2_02	//HJA12CB001XB01 Uždegtuvas Nr.2: Liepsnos būsena								
+											
+//---------------------- HJA12_GH001 : 	Uždegtuvas Nr.2: Startas ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA12_GH001"										
+	_in :=	CJF10GH001_FSDO2_02	//HJA12GH001YB01 Uždegtuvas Nr.2: Startas								
+											
+//---------------------- HJA13_CB001 : 	Uždegtuvas Nr.3: Liepsnos būsena ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA13_CB001"										
+	_in :=	CJF10GH001_FSDI2_03	//HJA13CB001XB01 Uždegtuvas Nr.3: Liepsnos būsena								
+											
+//---------------------- HJA13_GH001 : 	Uždegtuvas Nr.3: Startas ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA13_GH001"										
+	_in :=	CJF10GH001_FSDO2_03	//HJA13GH001YB01 Uždegtuvas Nr.3: Startas								
+											
+//---------------------- HJA14_CB001 : 	Uždegtuvas Nr.4: Liepsnos būsena ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA14_CB001"										
+	_in :=	CJF10GH001_FSDI2_04	//HJA14CB001XB01 Uždegtuvas Nr.4: Liepsnos būsena								
+											
+//---------------------- HJA14_GH001 : 	Uždegtuvas Nr.4: Startas ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA14_GH001"										
+	_in :=	CJF10GH001_FSDO2_04	//HJA14GH001YB01 Uždegtuvas Nr.4: Startas								
+											
+//---------------------- HJA15_CB001 : 	Uždegtuvas Nr.5: Liepsnos būsena ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA15_CB001"										
+	_in :=	CJF10GH001_FSDI2_05	//HJA15CB001XB01 Uždegtuvas Nr.5: Liepsnos būsena								
+											
+//---------------------- HJA15_GH001 : 	Uždegtuvas Nr.5: Startas ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA15_GH001"										
+	_in :=	CJF10GH001_FSDO2_05	//HJA15GH001YB01 Uždegtuvas Nr.5: Startas								
+											
+//---------------------- HJA16_CB001 : 	Uždegtuvas Nr.6: Liepsnos būsena ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA16_CB001"										
+	_in :=	CJF10GH001_FSDI2_06	//HJA16CB001XB01 Uždegtuvas Nr.6: Liepsnos būsena								
+											
+//---------------------- HJA16_GH001 : 	Uždegtuvas Nr.6: Startas ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HJA16_GH001"										
+	_in :=	CJF10GH001_FSDO2_06	//HJA16GH001YB01 Uždegtuvas Nr.6: Startas								
+											
+//---------------------- HLB10_AN001 : 	Oro pūtimo ventiliatorius VKV ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HLB10_AN001"										
+	_in :=	CJF10GH001_AI2_04	//HLB10AN001XQ01 Oro pūtimo ventiliatorius VKV-1A: Srovė, A								
+	_in :=	CJF10GH001_DI10_09	//HLB10AN001XB01 Oro pūtimo ventiliatorius VKV-1A: I-as greitis								
+	_in :=	CJF10GH001_DI10_10	//HLB10AN001XB02 Oro pūtimo ventiliatorius VKV-1A: II-as greitis								
+	_in :=	CJF10GH001_DI10_11	//HLB10AN001XB03 Oro pūtimo ventiliatorius VKV-1A: Įtampos kontrolė paleidimo grandinėse								
+	_in :=	CJF10GH001_DI10_12	//HLB10AN001XB04 Oro pūtimo ventiliatorius VKV-1A: Pirmo guolio temperatūros kontrolė								
+	_in :=	CJF10GH001_DI10_13	//HLB10AN001XB05 Oro pūtimo ventiliatorius VKV-1A: I-o greičio apvijų temperatūros kontrolė								
+	_in :=	CJF10GH001_DI10_14	//HLB10AN001XB06 Oro pūtimo ventiliatorius VKV-1A: II-o greičio apvijų temperatūros kontrolė								
+	_in :=	CJF10GH001_DI10_15	//HLB10AN001XB07 Oro pūtimo ventiliatorius VKV-1A: Antro guolio temperatūros kontrolė								
+	_in :=	CJF10GH001_DI10_16	//HLB10AN001XB08 Oro pūtimo ventiliatorius VKV-1A: Avarinis stabdymas								
+	_in :=	CJF10GH001_DO2_01	//HLB10AN001YB01 Oro pūtimo ventiliatorius VKV-1A: įjungti I-ą greitį								
+	_in :=	CJF10GH001_DO2_02	//HLB10AN001YB02 Oro pūtimo ventiliatorius VKV-1A: įjungti II-ą greitį								
+	_in :=	CJF10GH001_DO2_03	//HLB10AN001YB03 Oro pūtimo ventiliatorius VKV-1A: stabdyti								
+	Nen_in :=	CJF10GH001_DO2_04	//HLB10AN001YB04 Oro pūtimo ventiliatorius VKV-1A: Apsaugų deblokavimas								
+											
+//---------------------- HNF10_AN001 : 	Recirkuliacinis dūmsiurbis (VK ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HNF10_AN001"										
+	_in :=	CJF10GH001_DI1_07	//HNF10AN001XB03 Recirkuliacinis dūmsiurbis (VK-1RDS): DK įtampos kontrolė								
+											
+//---------------------- HNF10_AN001X : 	Dūmų recirkuliacijos ventiliatorius VK ----------------------										
+CALL fb_MOT											
+	Puls_100ms:= pulsas										
+	dv := "M"."HNF10_AN001X"										
+	ON_in :=	CJF10GH001_FSDI1_02	//HNF10AN001XB001 Dūmų recirkuliacijos ventiliatorius VK-1RDS: Veikia								
+											

@@ -3,11 +3,113 @@
 #include "signals.h"
 #include "design.h"
 #include "objects.h"
+#include "Trend_data.h"
 #include "Global_Functions.h"
+#include <codecvt>
+#include <conio.h>
+#include <tchar.h>
+#pragma comment(lib, "user32.lib")
+
 
 using namespace std;
 using namespace IOlistautomation;
 
+HANDLE hMapFile_out;
+LPCTSTR pBuf_out;
+
+HANDLE hMapFile_in;
+LPCTSTR pBuf_in;
+
+int create_shared_memmory(wstring name, DWORD buff_size)
+{
+	wstring texts;
+
+	hMapFile_out = CreateFileMapping(
+		INVALID_HANDLE_VALUE,    // use paging file
+		NULL,                    // default security
+		PAGE_READWRITE,          // read/write access
+		0,                       // maximum object size (high-order DWORD)
+		buff_size,                // maximum object size (low-order DWORD)
+		name.c_str());                 // name of mapping object
+
+	if (hMapFile_out == NULL)
+	{
+		texts = str.Error.Create_memory_map_obj.s[lang];
+		texts.append(info_separator);
+		texts.append(name);
+		err_write_show(texts);
+		return 1;
+	}
+	pBuf_out = (LPTSTR)MapViewOfFile(hMapFile_out,   // handle to map object
+		FILE_MAP_ALL_ACCESS, // read/write permission
+		0,
+		0,
+		buff_size);
+
+	if (pBuf_out == NULL)
+	{
+		texts = str.Error.Create_memory_map_view.s[lang];
+		texts.append(info_separator);
+		texts.append(name);
+		err_write_show(texts);
+
+		CloseHandle(hMapFile_out);
+		return 1;
+	}
+
+	LPWSTR szMsg = L"asdfghjkl 123456789";
+	CopyMemory((PVOID)pBuf_out, szMsg, (_tcslen(szMsg) * sizeof(TCHAR)));
+
+	return 0;
+}
+
+int read_shared_memory(wstring name, DWORD buff_size)
+{
+	wstring texts;
+
+	hMapFile_in = OpenFileMapping(
+		FILE_MAP_ALL_ACCESS,   // read/write access
+		FALSE,                 // do not inherit the name
+		name.c_str());               // name of mapping object
+
+	if (hMapFile_in == NULL)
+	{
+		texts = str.Error.Open_memory_map_view.s[lang];
+		texts.append(info_separator);
+		texts.append(name);
+		err_write_show(texts);
+		return 1;
+	}
+
+	pBuf_in = (LPTSTR)MapViewOfFile(hMapFile_in, // handle to map object
+		FILE_MAP_ALL_ACCESS,  // read/write permission
+		0,
+		0,
+		buff_size);
+
+	if (pBuf_in == NULL)
+	{
+		texts = str.Error.Create_memory_map_view.s[lang];
+		texts.append(info_separator);
+		texts.append(name);
+		err_write_show(texts);
+
+		CloseHandle(hMapFile_in);
+
+		return 1;
+	}
+
+	return 0;
+}
+
+void clear_shared_memmory()
+{
+	UnmapViewOfFile(pBuf_in);
+	CloseHandle(hMapFile_in);
+
+	UnmapViewOfFile(pBuf_out);
+	CloseHandle(hMapFile_out);
+}
 
 
 wstring String_remove_trailing_zero(wstring text)
@@ -35,7 +137,8 @@ System::Windows::Forms::DataGridView^ Global_function_grid(int index_function)
 		break;
 	case Objects_grid_index:return GlobalForm::forma->Object_grid;
 		break;
-
+	case Trend_data_grid_index:return GlobalForm::forma->Trend_data_grid;
+		break;
 
 
 
@@ -46,56 +149,56 @@ System::Windows::Forms::DataGridView^ Global_function_grid(int index_function)
 
 
 // get function text based on function index
-const char* Global_function_txt(int index_function, int language)
+wstring Global_function_txt(int index_function, int language)
 {
 	switch (index_function)
 	{
-	case Design_grid_index:	return  design_txt[language];
+	case Design_grid_index:	return  str.General.design_txt.s[language];
 		break;
-	case Signals_grid_index:return signals_txt[language];
+	case Signals_grid_index:return str.General.signals_txt.s[language];
 		break;
-	case Objects_grid_index:return  objects_txt[language];
+	case Objects_grid_index:return  str.General.objects_txt.s[language];
 		break;
 
 
 
-	default:	return design_txt[language];
+	default:	return str.General.design_txt.s[language];
 		break;
 	}
 }
 // get confirm text based on function index
-const wchar_t* Global_confirm_txt(int index_function, int language)
+wstring Global_confirm_txt(int index_function, int language)
 {
 	switch (index_function)
 	{
-	case Design_grid_index:	return conf_design_overwrite[language];
+	case Design_grid_index:	return str.Confirm.design_overwrite.s[language];
 		break;
-	case Signals_grid_index:return conf_signal_overwrite[language];
+	case Signals_grid_index:return str.Confirm.signal_overwrite.s[language];
 		break;
-	case Objects_grid_index:return conf_objects_overwrite[language];
+	case Objects_grid_index:return str.Confirm.objects_overwrite.s[language];
 		break;
 
 
 
-	default:	return conf_design_overwrite[language];
+	default:	return str.Confirm.design_overwrite.s[language];
 		break;
 	}
 }
 // get extension text based on function index
-string Global_function_extension_txt(int index_function)
+wstring Global_function_extension_txt(int index_function)
 {
 	switch (index_function)
 	{
-	case Design_grid_index:	return ".psave";
+	case Design_grid_index:	return L".psave";
 		break;
-	case Signals_grid_index:return ".ssave";
+	case Signals_grid_index:return L".ssave";
 		break;
-	case Objects_grid_index:return ".osave";
+	case Objects_grid_index:return L".osave";
 		break;
 
 
 
-	default:	return  ".psave";
+	default:	return  L".psave";
 		break;
 	}
 }
@@ -112,7 +215,8 @@ int Global_valid_row_check(int index_function, int index)
 		break;
 	case Objects_grid_index: return Objects_valid_row_check(index);
 		break;
-
+	case Trend_data_grid_index:return Trend_data_valid_row_check(index);
+		break;
 
 
 	default: return Project_valid_row_check(index);
@@ -130,7 +234,8 @@ wstring Global_get_data_switch(int index_function, int iCol, int index)
 		break;
 	case Objects_grid_index: return Objects_get_data_switch(iCol, index);
 		break;
-
+	case Trend_data_grid_index:return Trend_data_get_data_switch(iCol, index);
+		break;
 
 
 	default:  return Project_get_data_switch(iCol, index);
@@ -149,39 +254,56 @@ void Global_put_data_switch(int index_function,int iCol, int index, wstring cell
 		break;
 	case Objects_grid_index: Objects_put_data_switch(iCol, index, cell_text);
 		break;
-
+	case Trend_data_grid_index: Trend_data_put_data_switch(iCol, index, cell_text);
+		break;
 
 	default:	 Project_put_data_switch(iCol, index, project, cell_text);
 		break;
 	}
 }
 // get selected cpu name
-const char* Global_get_CPU_name(int index_cpu)
+wstring Global_get_CPU_name(int index_cpu)
 {
 	switch (index_cpu)
 	{
 	case Beckhoff_index:
-		return "Beckhoff";
+		return L"Beckhoff";
 		break;
 	case Siemens_index:
-		return "Siemens";
+		return L"Siemens";
 		break;
 	case Schneider_index:
-		return "Schneider";
+		return L"Schneider";
 		break;
 	case ABB_800xA_index:
-		return "ABB 800xA";
+		return L"ABB 800xA";
 		break;
 
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
-		return " ";
+		err_prog();
+		return L" ";
 		break;
 	}
 	return 0;
 }
-
+// get selected scada name
+wstring Global_get_scada_name(int index_scada)
+{
+	switch (index_scada)
+	{
+	case System_platform_index:
+		return L"System platform";
+		break;
+	case WinCC_index:
+		return L"WinCC";
+		break;
+	default:
+		err_prog();
+		return L" ";
+		break;
+	}
+	return 0;
+}
 //resize memory data based on function index
 void Global_resize_data(int index_function, int size)
 {
@@ -193,7 +315,8 @@ void Global_resize_data(int index_function, int size)
 		break;
 	case Objects_grid_index: objects.data.resize(size);
 		break;
-
+	case Trend_data_grid_index: Trend_data.data.resize(size);
+		break;
 
 
 	default:	 project.data.resize(size);
@@ -212,7 +335,8 @@ void Global_delete_data_row(int index_function, int row)
 		break;
 	case Objects_grid_index: objects.data.erase(objects.data.begin() + row);
 		break;
-
+	case Trend_data_grid_index: Trend_data.data.erase(Trend_data.data.begin() + row);
+		break;
 
 
 	default:	 project.data.erase(project.data.begin() + row);
@@ -233,7 +357,9 @@ void Global_delete_all_data(int index_function)
 	case Objects_grid_index: objects.data = {};
 							 objects.valid_entries = 0;
 		break;
-
+	case Trend_data_grid_index: Trend_data.data = {};
+								Trend_data.valid_entries = 0;
+							 break;
 
 
 	default:	 project.data = {};
@@ -243,38 +369,40 @@ void Global_delete_all_data(int index_function)
 
 
 //save data based on function index
-void Global_choose_save(int index_function, bool auto_save, std::string file_name_global)
+void Global_choose_save(int index_function, bool auto_save, std::wstring file_name_global)
 {
 	switch (index_function)
 	{
-	case Design_grid_index:	 Global_save(index_function, auto_save, file_name_global, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+	case Design_grid_index:	 Global_save(index_function, auto_save, file_name_global, project.valid_entries, project.number_collums, project.column_name_EN, project.column_name_LT, project.collumn_with);
 		break;
-	case Signals_grid_index: Global_save(index_function, auto_save, file_name_global, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	case Signals_grid_index: Global_save(index_function, auto_save, file_name_global, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 		break;
-	case Objects_grid_index: Global_save(index_function, auto_save, file_name_global, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	case Objects_grid_index: Global_save(index_function, auto_save, file_name_global, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
+		break;
+	case Trend_data_grid_index: Global_save(index_function, auto_save, file_name_global, Trend_data.valid_entries, Trend_data.number_collums, Trend_data.column_name_EN, Trend_data.column_name_LT, Trend_data.collumn_with);
 		break;
 
 
-
-	default:	 Global_save(index_function, auto_save, file_name_global, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+	default:	 Global_save(index_function, auto_save, file_name_global, project.valid_entries, project.number_collums, project.column_name_EN, project.column_name_LT, project.collumn_with);
 		break;
 	}
 }
 //load data based on function index
-void Global_choose_Load(int index_function, std::string file_name_global)
+void Global_choose_Load(int index_function, std::wstring file_name_global)
 {
 	switch (index_function)
 	{
-	case Design_grid_index:	 Global_load(index_function, file_name_global, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+	case Design_grid_index:	 Global_load(index_function, file_name_global, project.valid_entries, project.number_collums, project.column_name_EN, project.column_name_LT, project.collumn_with);
 		break;
-	case Signals_grid_index: Global_load(index_function, file_name_global, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	case Signals_grid_index: Global_load(index_function, file_name_global, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 		break;
-	case Objects_grid_index: Global_load(index_function, file_name_global, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	case Objects_grid_index: Global_load(index_function, file_name_global, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
+		break;
+	case Trend_data_grid_index: Global_load(index_function, file_name_global, Trend_data.valid_entries, Trend_data.number_collums, Trend_data.column_name_EN, Trend_data.column_name_LT, Trend_data.collumn_with);
 		break;
 
 
-
-	default:	 Global_load(index_function, file_name_global, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+	default:	 Global_load(index_function, file_name_global, project.valid_entries, project.number_collums, project.column_name_EN, project.column_name_LT, project.collumn_with);
 		break;
 	}
 }
@@ -284,58 +412,56 @@ void Global_choose_Load(int index_function, std::string file_name_global)
 
 // --------Global function----------------------------------------------------
 // saving data to file
-int Global_save (int index_function, bool auto_save, std::string file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with)
+int Global_save (int index_function, bool auto_save, std::wstring file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name_EN, const vector <wstring> &column_name_LT, vector <int> &collumn_with)
 {
-	Global_get_data_listview(index_function,valid_entries, number_collums, column_name, collumn_with, true);
+	wstring texts;
+	Global_get_data_listview(index_function,valid_entries, number_collums, collumn_with, true);
 
-	const char* funcion_text = Global_function_txt(index_function, lang);
-	string extension = Global_function_extension_txt(index_function);
-	string filter = "Save document | *";
+	wstring funcion_text = Global_function_txt(index_function, lang);
+	wstring extension = Global_function_extension_txt(index_function);
+	wstring filter = L"Save document | *";
 
 	// for knowing what function it is saved and its used for restoration
-	string file_type = Global_function_txt(index_function, 1);
+	wstring file_type = Global_function_txt(index_function, 1);
 
 
 	filter.append(extension); //add extension to filter
 
 	SaveFileDialog^ sfd = gcnew SaveFileDialog();
-	sfd->Filter = string_to_system_string(filter) +
+	sfd->Filter = wstring_to_system_string(filter) +
 		"|All Files|*.*";
 
-	sfd->FileName = string_to_system_string(file_type);
+	sfd->FileName = wstring_to_system_string(file_type);
 
 	// first line is function text
 	wstring cell_text = system_string_to_wstring(sfd->FileName);
 
-	std::string file_name = "_autosave";
+	std::wstring file_name = L"_autosave";
 	file_name.append(extension);
 
 	if (valid_entries <= 1) //if there is no data no need to save, check if there is atleast 2 entries because one line in grid is empty
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_save[lang]);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, funcion_text);
-		err_write_show(err_txt);
+		wstring texts = str.Error.no_data_save.s[lang];
+		texts.append(error_separator);
+		texts.append(funcion_text);
+		err_write_show(texts);
 		return 1;
 	}
-
-	FILE* outFile;
 	int iCol;
-
 	
 	// when autosave=1 use _autosave.extension
 	if (auto_save == 0) 
 	{
-		if (file_name_global.compare(" ") == 0) // when no global file name open save dialog
+		if (file_name_global.compare(L" ") == 0) // when no global file name open save dialog
 		{
 			if (sfd->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 			{
-				file_name = system_string_to_string(sfd->FileName);
+				file_name = system_string_to_wstring(sfd->FileName);
 			}
 			else
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-				err_write(err_txt);
+				texts = str.Error.canceled_selection.s[lang];
+				err_write(texts);
 				return 1;
 			}
 		}
@@ -344,39 +470,41 @@ int Global_save (int index_function, bool auto_save, std::string file_name_globa
 			file_name = file_name_global;
 			file_name.append(extension);
 		}
-		Show_progress(prog_save[lang], valid_entries);
+		Show_progress(str.Progress.save.s[lang], valid_entries);
 	}
 	//create file with UTF-8 encoding
-	fopen_s(&outFile, file_name.c_str(), "w+,ccs=UTF-8");
+	std::wofstream file_out(file_name, std::ios::binary);
+	std::locale utf16_locale(file_out.getloc(), new std::codecvt_utf16<wchar_t, 0x10ffff, std::generate_header>);
+	file_out.imbue(utf16_locale);
 
-	strcpy_s(info_txt, sizeof info_txt, info_save_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	info_write(info_txt);
+	texts = str.Info.save_data.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	info_write(texts);
 
-	if (outFile == NULL)
+	if (!file_out)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_file_save[lang]);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, funcion_text);
-		err_write_show(err_txt);
+		texts = str.Error.no_file_save.s[lang];
+		texts.append(error_separator);
+		texts.append(funcion_text);
+		err_write_show(texts);
 		return 1;
 	}
 
-	cell_text.append(L"\n");
-	const wchar_t* x = cell_text.c_str();
-	fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
+	cell_text.append(L"\r\n");
+	file_out << cell_text;
 	cell_text = L"";
 
 	// second line is collums names
+	wstring column_name = L"";
 	for ( iCol = 0; iCol <= number_collums; iCol++)
 	{
-		cell_text.append(column_name[iCol]);
+		column_name = column_name_EN[iCol];
+		cell_text.append(column_name);
 		cell_text.append(separator);
 	}
-	cell_text.append(L"\n");
-	x = cell_text.c_str();
-	fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
+	cell_text.append(L"\r\n");
+	file_out << cell_text;
 	cell_text = L"";
 
 	// third line is collums width
@@ -386,9 +514,8 @@ int Global_save (int index_function, bool auto_save, std::string file_name_globa
 		cell_text.append(separator);
 	}
 
-	cell_text.append(L"\n");
-	x = cell_text.c_str();
-	fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
+	cell_text.append(L"\r\n");
+	file_out << cell_text;
 
 	wstring cell_text_write;
 	for (int index = 0; index <= valid_entries; index++)
@@ -407,39 +534,38 @@ int Global_save (int index_function, bool auto_save, std::string file_name_globa
 
 		}
 		// write all row data to file
-		cell_text_write.append(L"\n");
-		x = cell_text_write.c_str();
-		fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
-
+		cell_text_write.append(L"\r\n");
+		file_out << cell_text_write;
 		set_progress_value(index);
 	}
-	fclose(outFile);
+	file_out.close();
 
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_save_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.save_data.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	return 0;
 }
 //loading data from file	
-int Global_load(int index_function,  std::string file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with)
+int Global_load(int index_function,  std::wstring file_name_global, int &valid_entries, const int &number_collums, const vector <wstring> &column_name_EN, const vector <wstring> &column_name_LT, vector <int> &collumn_with)
 {
-	const char* funcion_text = Global_function_txt(index_function, lang);
-	string extension = Global_function_extension_txt(index_function);
-	string filter = "Load document | *";
+	wstring texts;
+	wstring funcion_text = Global_function_txt(index_function, lang);
+	wstring extension = Global_function_extension_txt(index_function);
+	wstring filter = L"Load document | *";
 
 	// for knowing what function it is saved and its used for restoration
-	string file_type = Global_function_txt(index_function, 1);
+	wstring file_type = Global_function_txt(index_function, 1);
 
 	filter.append(extension); //add extension to filter
 
 	OpenFileDialog^ importfile = gcnew OpenFileDialog();
-	importfile->Filter = string_to_system_string(filter) +
+	importfile->Filter = wstring_to_system_string(filter) +
 		"|All Files|*.*";
 	
 	
@@ -447,34 +573,33 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 	{
 		int result = show_confirm_window(Global_confirm_txt(index_function, lang));
 		if (result == IDYES)
-		{			
-			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
-			strcat_s(info_txt, sizeof info_txt, info_separator);
-			strcat_s(info_txt, sizeof info_txt, funcion_text);
-			info_write(info_txt);
+		{
+			texts = str.Info.erase_data.s[lang];
+			texts.append(info_separator);
+			texts.append(funcion_text);
+			info_write(texts);
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			texts = str.Error.canceled_selection.s[lang];
+			err_write(texts);
 			return 1;
 		}
 	}
 	Global_delete_all_data(index_function); // delete all data
 
-	FILE* inFile;
-	string file_name;
+	wstring file_name;
 
-	if (file_name_global.compare(" ") == 0) // when no global file name open load dialog
+	if (file_name_global.compare(L" ") == 0) // when no global file name open load dialog
 	{
 		if (importfile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 		{
-			file_name = system_string_to_string(importfile->FileName);
+			file_name = system_string_to_wstring(importfile->FileName);
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			texts = str.Error.canceled_selection.s[lang];
+			err_write(texts);
 			return 1;
 		}
 	}
@@ -485,133 +610,137 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 	}
 
 
-	Show_progress(prog_load[lang], 500); //making guess that load data is 500 long
+	Show_progress(str.Progress.load.s[lang], 500); //making guess that load data is 500 long
 
-	strcpy_s(info_txt, sizeof info_txt, info_load_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	info_write(info_txt);
+	texts = str.Info.load_data.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	info_write(texts);
 
 
 	//create file with UTF-8 encoding
-	fopen_s(&inFile, file_name.c_str(), "r+,ccs=UTF-8");
-	if (inFile == NULL)
+	std::wifstream file_in(file_name);
+	file_in.imbue(std::locale(file_in.getloc(), new std::codecvt_utf16<wchar_t, 0x10ffff, std::consume_header>));
+	if (!file_in)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_cant_open[lang]);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, funcion_text);
-		err_write_show(err_txt);
+		texts = str.Error.cant_open.s[lang];
+		texts.append(error_separator);
+		texts.append(funcion_text);
+		err_write_show(texts);
 		return 1;
 	}
 
-	wchar_t x[1024];
-	wchar_t * cell_text;
-	wchar_t *next_token1 = NULL;
 	int iCol = 0;
 	int index = 0;
 
-	fgetws(x, sizeof x, inFile);
-
-
-
-	string testas = funcion_text;
-	std::wstring wsTmp(testas.begin(), testas.end());
+	wstring lines;
+	wstring cell_text;
+	std::getline(file_in, lines);
 
 	// check if first line matches function that is called
-	if (wcsstr(x, wsTmp.c_str()) == NULL)
+	if (lines.find(funcion_text) < 0)
 	{
-		fclose(inFile);
-
-		strcpy_s(err_txt, sizeof err_txt, err_wrong_file[lang]);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, funcion_text);
-		err_write_show(err_txt);
+		file_in.close();
+		texts = str.Error.wrong_file.s[lang];
+		texts.append(error_separator);
+		texts.append(funcion_text);
+		err_write_show(texts);
 		return 1;
 	}
-	fgetws(x, sizeof x, inFile);
+	int separator_loc = 0;
 
-	cell_text = wcstok_s(x, separator, &next_token1);
-	if (cell_text == NULL)
+	std::getline(file_in, lines);
+	separator_loc = lines.find(separator);
+	if (separator_loc < 0)
 	{
-		fclose(inFile);
-
-		strcpy_s(err_txt, sizeof err_txt, err_corrupted_file[lang]);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		strcat_s(err_txt, sizeof err_txt, funcion_text);
-		err_write_show(err_txt);
+		file_in.close();
+		texts = str.Error.corrupted_file.s[lang];
+		texts.append(error_separator);
+		texts.append(funcion_text);
+		err_write_show(texts);
 		return 1;
 	}
+	cell_text = lines.substr(0, separator_loc);
 
+	wstring column_name = L"";
 	// check collumns names if all doesnt match, corrupted
-	while (cell_text != NULL && wcsstr(cell_text, L"\n") == NULL)
+
+	while (!lines.empty() && lines.compare(L"\n") != 0 && lines.compare(L"\r\n") != 0 && lines.compare(L"\r") != 0)
 	{
 		if (iCol > number_collums)
 		{
 			break;
 		}
-		if (wcsstr(column_name[iCol].c_str(), cell_text) == NULL)
+		column_name = column_name_EN[iCol];
+
+		if (cell_text.compare(column_name) < 0)
 		{
 			if (parameters.try_import_if_corupt < 1)
 			{
-				fclose(inFile);
-				
-				strcpy_s(err_txt, sizeof err_txt, err_corrupted_file[lang]);
-				strcat_s(err_txt, sizeof err_txt, error_separator);
-				strcat_s(err_txt, sizeof err_txt, funcion_text);
-				err_write_show(err_txt);
+				file_in.close();			
+				texts = str.Error.corrupted_file.s[lang];
+				texts.append(error_separator);
+				texts.append(funcion_text);
+				err_write_show(texts);
 				return 1;
 			}
 			else
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_corrupted_file_continue[lang]);
-				strcat_s(err_txt, sizeof err_txt, error_separator);
-				strcat_s(err_txt, sizeof err_txt, funcion_text);
-				err_write(err_txt);
+				texts = str.Error.corrupted_file_continue.s[lang];
+				texts.append(error_separator);
+				texts.append(funcion_text);
+				err_write_show(texts);
 			}
 		}
 		iCol++;
-		cell_text = wcstok_s(NULL, separator, &next_token1);
-	}
+		lines=lines.substr(separator_loc+1);
+		separator_loc = lines.find(separator);
+		cell_text = lines.substr(0, separator_loc);		
+	}	
 	
-	
-
-	fgetws(x, sizeof x, inFile);
+	std::getline(file_in, lines);
 
 	// needs editing, check column names if ok and get with of columns
-	cell_text = wcstok_s(x, separator, &next_token1);
+	separator_loc = lines.find(separator);
 
 	collumn_with.resize(number_collums+1);
-	// check collumns names if all doesnt match, corrupted
+	// get collumn with
 	iCol = 0;
-	while (cell_text != NULL && wcsstr(cell_text, L"\n") == NULL)
+	while (!lines.empty() && lines.compare(L"\n") != 0 && lines.compare(L"\r\n") != 0 && lines.compare(L"\r") != 0)
 	{
+		cell_text = lines.substr(0, separator_loc);
+		lines=lines.substr(separator_loc + 1);
+		separator_loc = lines.find(separator);
+
 		if (iCol > number_collums)
 		{
 			break;
 		}
-		collumn_with[iCol] = _wtoi(cell_text);
-		iCol++;
-		cell_text = wcstok_s(NULL, separator, &next_token1);
+		collumn_with[iCol] = wstring_to_long(cell_text);
+		iCol++;		
 	}
 
 	int a = 0;
 	
-	while (fgetws(x, sizeof x, inFile) != NULL)  // continue till end of file
+	while (std::getline(file_in, lines))  // continue till end of file
 	{
 		//extend memory data at each line
 		valid_entries = index;
 		Global_resize_data(index_function,index + 1);
 		iCol = 0;
+		separator_loc = lines.find(separator);
 
-		cell_text = wcstok_s(x, separator, &next_token1);
-		while (cell_text != NULL && wcsstr(cell_text, L"\n") == NULL)
+		while (!lines.empty() && lines.compare(L"\n") != 0 && lines.compare(L"\r\n") != 0 && lines.compare(L"\r") != 0)
 		{
-			if (wcscmp(cell_text, L" ") != 0) // if there is thext between separators, put data to memory
+			cell_text = lines.substr(0, separator_loc);
+			lines=lines.substr(separator_loc + 1);
+			separator_loc = lines.find(separator);
+
+			if (cell_text.compare(L" ") != 0) // if there is thext between separators, put data to memory
 			{
 				Global_put_data_switch(index_function,iCol, index, cell_text);
 			}
 			iCol++;
-			cell_text = wcstok_s(NULL, separator, &next_token1);
 		}
 		a++;
 		index++;
@@ -621,19 +750,19 @@ int Global_load(int index_function,  std::string file_name_global, int &valid_en
 		}
 		set_progress_value(a);
 	}
-	fclose(inFile);
+	file_in.close();
 
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_load_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.load_data.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	// after load put data to gridview
-	Global_put_data_listview(index_function, valid_entries, number_collums, column_name, collumn_with);
+	Global_put_data_listview(index_function, valid_entries, number_collums, column_name_EN, column_name_LT, collumn_with);
 
 	return 0;
 }
@@ -688,33 +817,37 @@ void Global_delete_list(int index_function, vector <int> &collumn_with)
 
 
 //put data from memory to gridview based on function index
-void Global_put_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with)
+void Global_put_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name_EN, const vector <wstring> &column_name_LT, vector <int> &collumn_with)
 {
+	wstring texts;
 	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
 
 	//before puting data clear list
 	Global_delete_list(index_function, collumn_with);
 	GlobalForm::forma->Update();
 
-	const char* funcion_text = Global_function_txt(index_function,lang);
+	wstring funcion_text = Global_function_txt(index_function,lang);
 
 	int iCol;
 
-	Show_progress(prog_grid_put[lang], valid_entries);
-
-	strcpy_s(info_txt, sizeof info_txt, info_put_to_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	info_write(info_txt);
-
+	Show_progress(str.Progress.grid_put.s[lang], valid_entries);
+	texts = str.Info.put_to_grid.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	info_write(texts);
 
 	// Add the columns.
 	grid->ColumnCount = number_collums + 1;
+	wstring column_name = L"";
 
 	for (iCol = 0; iCol <= number_collums; iCol++)
 	{
 		// Load the names of the column headings from the string resources.
-		grid->Columns[iCol]->Name = wstring_to_system_string(column_name[iCol]);
+		if (parameters.Language = LT_index)
+			column_name = column_name_LT[iCol];
+		else
+			column_name = column_name_EN[iCol];
+		grid->Columns[iCol]->Name = wstring_to_system_string(column_name);
 	}
 
 	wstring cell_text = L"";
@@ -745,13 +878,12 @@ void Global_put_data_listview(int index_function, int &valid_entries, const int 
 		}
 	}
 	Hide_progress();
-
-	strcpy_s(info_txt, sizeof info_txt, info_put_to_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.put_to_grid.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	GlobalForm::forma->tabControl1->SelectedIndex = index_function;
 
@@ -766,20 +898,20 @@ void Global_put_data_listview(int index_function, int &valid_entries, const int 
 //colors list view
 void Global_color_data_listview(int index_function, int &valid_entries, const int &number_collums, vector <color_change_array_str> &color_array, int color_entries)
 {
+	wstring texts;
 	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
 
-	const char* funcion_text = Global_function_txt(index_function, lang);
+	wstring funcion_text = Global_function_txt(index_function, lang);
 
 	int iCol;
 	int rows_check;
 	rows_check = min(valid_entries, color_entries);
 
-	Show_progress(prog_grid_color[lang], rows_check);
-
-	strcpy_s(info_txt, sizeof info_txt, info_color_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	info_write(info_txt);
+	Show_progress(str.Progress.grid_color.s[lang], rows_check);
+	texts = str.Info.color_grid.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	info_write(texts);
 
 	if (rows_check > 0)
 	{
@@ -799,13 +931,12 @@ void Global_color_data_listview(int index_function, int &valid_entries, const in
 		}
 	}
 	Hide_progress();
-
-	strcpy_s(info_txt, sizeof info_txt, info_color_grid[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, funcion_text);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.color_grid.s[lang];
+	texts.append(info_separator);
+	texts.append(funcion_text);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	GlobalForm::forma->tabControl1->SelectedIndex = index_function;
 
@@ -813,10 +944,11 @@ void Global_color_data_listview(int index_function, int &valid_entries, const in
 }
 
 //get data from gridview to memory based on function index
-void Global_get_data_listview(int index_function, int &valid_entries, const int &number_collums, const vector <wstring> &column_name, vector <int> &collumn_with, bool data_for_save)
+void Global_get_data_listview(int index_function, int &valid_entries, const int &number_collums, vector <int> &collumn_with, bool data_for_save)
 {
+	wstring texts;
 	System::Windows::Forms::DataGridView^ grid = Global_function_grid(index_function);
-	const char* funcion_text = Global_function_txt(index_function,lang);
+	wstring funcion_text = Global_function_txt(index_function,lang);
 
 	
 
@@ -826,12 +958,11 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 		valid_entries = grid->RowCount - 1;
 		Global_resize_data(index_function, valid_entries + 1);
 
-		Show_progress(prog_grid_take[lang], valid_entries);
-
-		strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
-		strcat_s(info_txt, sizeof info_txt, info_separator);
-		strcat_s(info_txt, sizeof info_txt, funcion_text);
-		info_write(info_txt);
+		Show_progress(str.Progress.grid_take.s[lang], valid_entries);
+		texts = str.Info.extract_from_grid.s[lang];
+		texts.append(info_separator);
+		texts.append(funcion_text);
+		info_write(texts);
 
 		wstring cell_text = L"";
 
@@ -850,17 +981,16 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 			set_progress_value(index);
 		}
 		Hide_progress();
-
-		strcpy_s(info_txt, sizeof info_txt, info_extract_from_grid[lang]);
-		strcat_s(info_txt, sizeof info_txt, info_separator);
-		strcat_s(info_txt, sizeof info_txt, funcion_text);
-		strcat_s(info_txt, sizeof info_txt, error_separator);
-		strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-		info_write(info_txt);
+		texts = str.Info.extract_from_grid.s[lang];
+		texts.append(info_separator);
+		texts.append(funcion_text);
+		texts.append(error_separator);
+		texts.append(str.General.done_txt.s[lang]);
+		info_write(texts);
 
 		if (unstable_release == 1 && valid_entries>1 && data_for_save == false)
 		{
-			Global_choose_save(index_function,true, " ");
+			Global_choose_save(index_function,true, L" ");
 		}
 		Global_get_width_list(index_function, number_collums, collumn_with);
 	}
@@ -871,16 +1001,17 @@ void Global_get_data_listview(int index_function, int &valid_entries, const int 
 }
 
 
-int Global_paste(const char* function_text, System::Windows::Forms::DataGridView^ grid)
+int Global_paste(wstring function_text, System::Windows::Forms::DataGridView^ grid)
 {
+	wstring texts;
 	System::Windows::Forms::IDataObject^ dataInclipboard = System::Windows::Forms::Clipboard::GetDataObject();
 
 	String^ stringInclipboard = (System::String ^)dataInclipboard->GetData(DataFormats::UnicodeText);
 	if (stringInclipboard == nullptr)
 	{
 		// no row data
-		strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_data[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.clickboard_no_data.s[lang];
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -919,7 +1050,6 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 
 	int max_row = grid->RowCount-1;
 	int max_collumn = grid->ColumnCount-1;
-	string text="";
 
 	cli::array <wchar_t>^ separators = {'\n' };
 	cli::array <wchar_t>^ columnsplitter = { '\t' };
@@ -929,8 +1059,8 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 	if (rows_in_board < 1)
 	{
 		// no row data
-		strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_data[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.clickboard_no_data.s[lang];
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -939,28 +1069,30 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 	if (col_in_board < 1)
 	{
 		// no collumn data
-		strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_data[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.clickboard_no_data.s[lang];
+		err_write_show(texts);
 		return 1;
 	}
 	int size_rows = 0;
 	int size_cols = 0;
 	
+	wstring text;
+
 	text = function_text;
 	text.append(error_separator);
-	text.append ("Clipboard:Rows ");
-	text.append(to_string(rows_in_board));
-	text.append(" Cols ");
-	text.append(to_string(col_in_board));
-	text.append(" Sel: [");
-	text.append(to_string(sel_row_min));
-	text.append(";");
-	text.append(to_string(sel_col_min));
-	text.append("] - [");
-	text.append(to_string(sel_row_max));
-	text.append(";");
-	text.append(to_string(sel_col_max));
-	text.append("]");
+	text.append(L"Clipboard:Rows ");
+	text.append(to_wstring(rows_in_board));
+	text.append(L" Cols ");
+	text.append(to_wstring(col_in_board));
+	text.append(L" Sel: [");
+	text.append(to_wstring(sel_row_min));
+	text.append(L";");
+	text.append(to_wstring(sel_col_min));
+	text.append(L"] - [");
+	text.append(to_wstring(sel_row_max));
+	text.append(L";");
+	text.append(to_wstring(sel_col_max));
+	text.append(L"]");
 	
 	if (parameters.paste_sel_match > 0)
 	{
@@ -970,10 +1102,10 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 		if ((size_rows != rows_in_board) || (size_cols != col_in_board))
 		{
 			// diferent size selected
-			strcpy_s(err_txt, sizeof err_txt, err_clickboard_no_match[lang]);
-			strcat_s(err_txt, sizeof err_txt, info_separator);
-			strcat_s(err_txt, sizeof err_txt, text.c_str());
-			err_write_show(err_txt);
+			texts = str.Error.clickboard_no_match.s[lang];
+			texts.append(info_separator);
+			texts.append(text);
+			err_write_show(texts);
 			return 1;
 		}
 
@@ -986,30 +1118,27 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 		if ((size_rows < rows_in_board) || (size_cols < col_in_board))
 		{
 			// to much data to paste, select other
-			strcpy_s(err_txt, sizeof err_txt, err_clickboard_overrange[lang]);
-			strcat_s(err_txt, sizeof err_txt, info_separator);
-			strcat_s(err_txt, sizeof err_txt, text.c_str());
-			err_write_show(err_txt);
+			texts = str.Error.clickboard_overrange.s[lang];
+			texts.append(info_separator);
+			texts.append(text);
+			err_write_show(texts);
 			return 1;
 		}
 	}
 
 	// write info how much data is pasted
-	strcpy_s(info_txt, sizeof info_txt, info_paste_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, text.c_str());
-	info_write(info_txt);
-
-
-	
-
+	texts = str.Info.paste_data.s[lang];
+	texts.append(error_separator);
+	texts.append(text);
+	info_write(texts);
+	   
 	int j = 0;
 	// paste this one data to all selected cells, is one row selected
 	if (col_in_board == 1 && rows_in_board == 1 )
 	{
 		size_rows = sel_row_max - sel_row_min + 1;
 
-		Show_progress(prog_paste[lang], size_rows);
+		Show_progress(str.Progress.paste.s[lang], size_rows);
 		rows_in_board = size_rows;
 		for (int i = 0; i<rows_in_board; i++)
 		{
@@ -1019,7 +1148,7 @@ int Global_paste(const char* function_text, System::Windows::Forms::DataGridView
 	}
 	else
 	{
-		Show_progress(prog_paste[lang], rows_in_board);
+		Show_progress(str.Progress.paste.s[lang], rows_in_board);
 		for (int i = 0; i<rows_in_board; i++)
 		{
 			cellsInrow = rowsInclipboard[i]->Split(columnsplitter);
@@ -1212,3 +1341,114 @@ void Global_Filter_text_changed(wstring text, int column, int index_function)
 	}
 	
 }
+
+int Global_trend_data_check(int valid_entries)
+{
+	System::Windows::Forms::DataGridView^ grid = Global_function_grid(Trend_data_grid_index);
+	if (grid->RowCount < Max_Trend_data)
+	{
+		for (int index = grid->RowCount; index <= Max_Trend_data; index++)
+		{
+			grid->Rows->Add();
+		}
+		return 1;
+	}
+	if (Trend_data.valid_entries < 1)
+	{
+		Trend_data.valid_entries = valid_entries + 1;
+
+		if (valid_entries > 0)
+		{
+			for (int index = 0; index <= valid_entries; index++)
+			{
+				grid->Rows->Add();
+			}
+		}
+		return 2;
+	}
+	return 0;
+}
+
+
+int Plot_data_to_file(int index_function, int col_from, int col_to)
+{
+	wstring texts;
+	int iCol;
+	string file_name;
+
+	file_name = "_plot.txt";
+	System::Windows::Forms::DataGridView^ grid;
+	grid = Global_function_grid(index_function);
+
+	int number_rows = grid->RowCount;
+	int number_collums = grid->ColumnCount;
+
+	if (number_rows < 1 && (col_to < col_from || col_to>number_collums))
+		return 0;
+
+	//create file with UTF-8 encoding
+	std::wofstream file_out(file_name, std::ios::binary);
+	std::locale utf16_locale(file_out.getloc(), new std::codecvt_utf16<wchar_t, 0x10ffff, std::generate_header>);
+	file_out.imbue(utf16_locale);
+
+	texts = str.Info.dump_declare.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	info_write(texts);
+
+	Show_progress(str.Progress.dump_data.s[lang], number_rows);
+
+	wstring cell_text_write, cell_text;
+	for (int index = 0; index < number_rows; index++)
+	{
+		cell_text_write = L"";
+		cell_text = Global_get_cell_value(index, col_from, grid);
+		if (cell_text != L"")
+		{
+			// fill all cells with data
+			for (iCol = col_from; iCol <= col_to; iCol++)
+			{
+				cell_text = Global_get_cell_value(index, iCol, grid);
+				cell_text_write.append(cell_text);
+				cell_text_write.append(separator);
+			}
+			// write all row data to file
+			cell_text_write.append(L"\r\n");
+			file_out << cell_text_write;
+		}
+		set_progress_value(index);
+	}
+
+	Hide_progress();
+	texts = str.Info.dump_declare.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
+
+	file_out.close();
+	return 0;
+
+}
+
+int Global_show_trend_data()
+{
+	wstring texts;
+
+	create_shared_memmory(L"IO-automationas_out", 255);
+	texts = str.Info.show_trend.s[lang];
+	info_write(texts);
+
+	int result = system("Trend_plot.exe");
+	if (result != 0)
+	{
+		texts = str.Error.show_trend.s[lang];
+		err_write_show(texts);
+	}
+
+	clear_shared_memmory();
+
+	return result;
+}
+

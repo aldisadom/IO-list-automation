@@ -204,12 +204,12 @@ int Project_valid_row_check(int row)
 void Project_data_extract_useful_data( project_str &project_data)
 {
 	int a = 0;
-	Show_progress(prog_process_data[lang], 100);
+	Show_progress(str.Progress.process_data.s[lang], 100);
 
-	strcpy_s(info_txt, sizeof info_txt, info_extract_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	info_write(info_txt);
+	wstring texts = str.Info.extract_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.design_txt.s[lang]);
+	info_write(texts);
 
 	//clearing rows thant dont have data
 	for (int row = 0; row < parameters.excel_row_nr_with_name; ++row)
@@ -279,37 +279,39 @@ void Project_data_extract_useful_data( project_str &project_data)
 	}
 
 	Hide_progress();
-	strcpy_s(info_txt, sizeof info_txt, info_extract_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.extract_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.design_txt.s[lang]);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 }
 //read data from design file
-int Project_read_data(bool compare_data,char* test_mode, project_str &project_data)
+int Project_read_data(bool compare_data,wstring test_mode, project_str &project_data)
 {
-	string test_mode_str = test_mode;
+	wstring texts;
+	wstring test_mode_str = test_mode;
 	GlobalForm::forma->tabControl1->SelectedIndex = Design_grid_index; // select working cell
 	OpenFileDialog^ importfile;
-	if (test_mode_str.compare(" ")== 0)
+	if (test_mode_str.compare(L" ")== 0)
 	{
 		if (project_data.valid_entries > 1 && compare_data == FALSE)
 		{
-			int result = show_confirm_window(conf_design_overwrite[lang]);
+			int result = show_confirm_window(str.Confirm.design_overwrite.s[lang]);
 			if (result == IDYES)
 			{
-				strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
-				strcat_s(info_txt, sizeof info_txt, info_separator);
-				strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
+				texts = str.Info.erase_data.s[lang];
+				texts.append(info_separator);
+				texts.append(str.General.design_txt.s[lang]);
+				info_write(texts);
+
 				project_data.data = {};
 				Global_get_width_list(Design_grid_index, project_data.number_collums, project_data.collumn_with);
-				info_write(info_txt);
 			}
 			else
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-				err_write_show(err_txt);
+				texts = str.Error.canceled_selection.s[lang];
+				err_write_show(texts);
 				return 1;
 			}
 		}
@@ -318,7 +320,7 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 			"|All Files|*.*";
 	}
 	bool pass = false;
-	if (test_mode_str.compare(" ") != 0)
+	if (test_mode_str.compare(L" ") != 0)
 	{
 		pass = true;
 	}
@@ -330,23 +332,21 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 	if (pass == true)
 	{
 		Book* book = xlCreateBook();
-		strcpy_s(info_txt, sizeof info_txt, info_excel_read_data[lang]);
-		info_write(info_txt);
+		texts = str.Info.excel_read_data.s[lang];
+		info_write(texts);
 		const char* error_lic = "can't read more cells in trial version";
 		bool fStringMatch = FALSE;
 
 		wstring asd;
-		if (test_mode_str.compare(" ") == 0)
+		if (test_mode_str.compare(L" ") == 0)
 		{
 			asd = system_string_to_wstring(importfile->FileName);
 		}
 		else
 		{
-			asd = L".\\Test data\\";
-			std::string texts(test_mode);
-			asd.append(string_to_wstring(texts));
+			asd = L".\\Test data\\IO\\";
+			asd.append(test_mode);
 			asd.append(L".xls");
-//			strcpy_s(asd, sizeof asd, L".\\Test data\\Input_LT.xls");
 		}
 
 		const wchar_t* file_name = asd.c_str();
@@ -360,10 +360,10 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 				int max_col = sheet->lastCol();
 				int nr = 0;
 				const wchar_t* s = L" ";
-				wstring texts = L" ";
+				wstring text = L" ";
 				const char* error_message = " ";
 
-				Show_progress(prog_read_data[lang], max_rows);
+				Show_progress(str.Progress.read_data.s[lang], max_rows);
 
 				project_data.valid_entries = max_rows - 1;
 
@@ -375,9 +375,9 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 					for (int col = sheet->firstCol(); col < max_col; ++col)
 					{
 						
-						texts = Project_get_cell_data(row, col, sheet);
+						text = Project_get_cell_data(row, col, sheet);
 						
-						if (texts.empty()==true)
+						if (text.empty()==true)
 						{
 							error_message = book->errorMessage();
 							fStringMatch = (strcmp(error_message, error_lic) == 0);
@@ -388,29 +388,29 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 								book->load(file_name);
 								sheet = book->getSheet(0);
 								
-								texts = Project_get_cell_data(row, col,sheet);
-								if (texts.empty() == true)
-									texts = L"";
+								text = Project_get_cell_data(row, col,sheet);
+								if (text.empty() == true)
+									text = L"";
 
 								if (parameters.debug)
 								{
-										strcpy_s(info_txt, sizeof info_txt, "Excel file licesing bypass");
-										info_write(info_txt);
+									texts = L"Excel file licesing bypass";
+									info_write(texts);
 								}
 							}
 							else
 							{
-								texts = L"";
+								text = L"";
 							}
 						}
 
 						int a = 0;
 						while (a != -1)
 						{						
-							a=texts.find(L"\n", sizeof L"\n");
+							a= text.find(L"\n", sizeof L"\n");
 							if (a > 0)
 							{
-								texts.replace(a, 1, L" ");
+								text.replace(a, 1, L" ");
 							}
 						}
 
@@ -453,7 +453,7 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 							Column_write = design_column_Changed;
 
 						if (Column_write >= 0)
-							Project_put_data_switch(Column_write, row, project_data, texts);
+							Project_put_data_switch(Column_write, row, project_data, text);
 					}
 					set_progress_value(row);
 				}
@@ -461,36 +461,35 @@ int Project_read_data(bool compare_data,char* test_mode, project_str &project_da
 			}
 			else
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_excel_no_sheet[lang]);
-				err_write_show(err_txt);
+				texts = str.Error.excel_no_sheet.s[lang];
+				err_write_show(texts);
 				return 1;
 			}
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_excel_cant_open[lang]);
-			err_write_show(err_txt);
+			texts = str.Error.excel_cant_open.s[lang];
+			err_write_show(texts);
 			return 1;
 		}
 	}
 	else
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-		err_write(err_txt);
+		texts = str.Error.canceled_selection.s[lang];
+		err_write(texts);
 		return 1;
 	}
 
 	Hide_progress();
-
-	strcpy_s(info_txt, sizeof info_txt, info_excel_read_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.excel_read_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	Project_data_extract_useful_data(project_data);
 	if (compare_data == FALSE)
 	{
-		Global_put_data_listview(Design_grid_index, project_data.valid_entries, project_data.number_collums, project_data.column_name, project_data.collumn_with);
+		Global_put_data_listview(Design_grid_index, project_data.valid_entries, project_data.number_collums, project_data.column_name_EN, project_data.column_name_LT, project_data.collumn_with);
 	}
 	return 0;
 }
@@ -702,19 +701,20 @@ void Project_compare_line(project_data_str data, project_data_str test, test_res
 
 
 // compares current data with new data
-int Project_compare_data(char* test_mode)
+int Project_compare_data(wstring test_mode)
 {
-	string test_mode_str = test_mode;
-	strcpy_s(info_txt, sizeof info_txt, info_compare_project[lang]);
-	info_write(info_txt);
+	wstring test_mode_str = test_mode;
 
-	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with, false);
+	wstring texts = str.Info.compare_project.s[lang];
+	info_write(texts);
+
+	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.collumn_with, false);
 	if (project.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, design_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.design_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -741,7 +741,7 @@ int Project_compare_data(char* test_mode)
 	int test_nr = 0;
 	int ok_count = 0;
 
-	Show_progress(prog_search_diference[lang], project_data_test.valid_entries);
+	Show_progress(str.Progress.search_diference.s[lang], project_data_test.valid_entries);
 
 	bool skip1_test, skip2_test;
 	bool skip1, skip2;
@@ -808,7 +808,7 @@ int Project_compare_data(char* test_mode)
 		return 0;
 	}
 
-	Show_progress(prog_search_diference[lang], size);
+	Show_progress(str.Progress.search_diference.s[lang], size);
 	row = project.valid_entries;
 	
 	project.data.resize(project.valid_entries +size+1);
@@ -895,7 +895,7 @@ int Project_compare_data(char* test_mode)
 		set_progress_value(index);
 	}
 
-	Show_progress(prog_search_diference[lang], project.valid_entries);
+	Show_progress(str.Progress.search_diference.s[lang], project.valid_entries);
 
 	IOlistautomation::Compare_result forma;
 
@@ -928,7 +928,7 @@ int Project_compare_data(char* test_mode)
 
 			if (result != Result_No_all && result != Result_Yes_all)
 			{
-				if (test_mode_str.compare(" ") == 0)
+				if (test_mode_str.compare(L" ") == 0)
 				{
 					forma.Confirm_check_init(text_current, text_test);
 					//				forma.return_value == Result_Yes;
@@ -939,7 +939,7 @@ int Project_compare_data(char* test_mode)
 					result = Result_No;
 			}
 
-			if (result == Result_Yes || result == Result_Yes_all || test_mode_str.compare(" ") != 0)
+			if (result == Result_Yes || result == Result_Yes_all || test_mode_str.compare(L" ") != 0)
 			{
 				if (change_array[index].column_changed[0] == true)
 					project.data[index].number = project_data_test.data[number_change].number;
@@ -1004,13 +1004,13 @@ int Project_compare_data(char* test_mode)
 
 	project.valid_entries = project.data.size()-1;
 
-	Global_put_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with);
+	Global_put_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name_EN, project.column_name_LT, project.collumn_with);
 	Global_color_data_listview(Design_grid_index, project.valid_entries, project.number_collums, change_array, change_array.size());
 
-	strcpy_s(info_txt, sizeof info_txt, info_compare_project[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.compare_project.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	Hide_progress();
 

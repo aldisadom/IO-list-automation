@@ -14,6 +14,7 @@
 #include "Global_Functions.h"
 
 
+
 int Instance_Beckhoff_vlv(int index_object, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
 	wstring search_for_KKS = objects.data[index_object].KKS;
@@ -61,10 +62,10 @@ int Instance_Beckhoff_vlv(int index_object, int &grid_row_index, System::Windows
 		{
 			if (signals.data[row].Tag.empty() == 1)
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_no_tag[lang]);
-				strcat_s(err_txt, sizeof err_txt, info_separator);
-				strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-				err_write_show(err_txt);
+				wstring texts = str.Error.no_tag.s[lang];
+				texts.append(error_separator);
+				texts.append(str.General.signals_txt.s[lang]);
+				err_write_show(texts);
 				return 1;
 			}
 			tag_txt = signals.data[row].Tag;
@@ -149,9 +150,17 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 	wstring cell_text = L"";
 	wstring search_in_module = L"";
 	wstring tag_txt = L"";
-	int result = 0;
+	int index_object2 = 0;
 
 	Instance_grid_add_line(grid_row_index, grid);
+
+	if (objects.data[index_object].Object_link != L"")
+		index_object2 = Object_find_obj_link(index_object, false);
+
+	if (index_object2 >= 0)
+	{
+		index_object2 = index_object2; // pritet kuo skirias kai su DK
+	}
 
 	cell_text = L"(*---------------------- ";
 	cell_text.append(search_for_KKS);
@@ -190,10 +199,10 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 		{
 			if (signals.data[row].Tag.empty() == 1)
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_no_tag[lang]);
-				strcat_s(err_txt, sizeof err_txt, info_separator);
-				strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-				err_write_show(err_txt);
+				wstring texts = str.Error.no_tag.s[lang];
+				texts.append(error_separator);
+				texts.append(str.General.signals_txt.s[lang]);
+				err_write_show(texts);
 				return 1;
 			}
 			tag_txt = signals.data[row].Tag;
@@ -271,6 +280,21 @@ int Instance_Beckhoff_mot(int index_object, int &grid_row_index, System::Windows
 
 int Instance_Beckhoff_pid(int index_object, int &grid_row_index, System::Windows::Forms::DataGridView^ grid)
 {
+	wstring search_for_KKS = objects.data[index_object].KKS;
+	wstring cell_text = L"";
+	wstring search_in_module = L"";
+	wstring tag_txt = L"";
+	int index_object2 = 0;
+
+	Instance_grid_add_line(grid_row_index, grid);
+
+	if (objects.data[index_object].Object_link != L"")
+		index_object2 = Object_find_obj_link(index_object, true);
+
+	if (index_object2 >= 0)
+	{
+		index_object2 = index_object2; // pritet kuo skirias kai zinai AI
+	}
 	Display_no_function(L"");
 	return 1;
 }
@@ -322,10 +346,10 @@ int Instance_Beckhoff_hc(int index_object, int &grid_row_index, System::Windows:
 		{
 			if (signals.data[row].Tag.empty() == 1)
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_no_tag[lang]);
-				strcat_s(err_txt, sizeof err_txt, info_separator);
-				strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-				err_write_show(err_txt);
+				wstring texts = str.Error.no_tag.s[lang];
+				texts.append(error_separator);
+				texts.append(str.General.signals_txt.s[lang]);
+				err_write_show(texts);
 				return 1;
 			}
 			tag_txt = signals.data[row].Tag;
@@ -444,10 +468,10 @@ int Instance_Beckhoff_ai(int index_object, int &grid_row_index, System::Windows:
 		{
 			if (signals.data[row].Tag.empty() == 1)
 			{
-				strcpy_s(err_txt, sizeof err_txt, err_no_tag[lang]);
-				strcat_s(err_txt, sizeof err_txt, info_separator);
-				strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-				err_write_show(err_txt);
+				wstring texts = str.Error.no_tag.s[lang];
+				texts.append(error_separator);
+				texts.append(str.General.signals_txt.s[lang]);
+				err_write_show(texts);
 				return 1;
 			}
 			tag_txt = signals.data[row].Tag;

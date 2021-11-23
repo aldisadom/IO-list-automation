@@ -1,11 +1,15 @@
-2020-01-07  14:08:44.266 - This program is not stable ant not fully tested, carefully use it !!!
-2020-01-07  14:08:45.310 - ---------------------------------------------------------
-2020-01-07  14:08:45.389 - Data is writen to grid - Design
-2020-01-07  14:08:45.393 - Data is writen to grid - Design --- Done
-2020-01-07  14:08:45.393 - Data is writen to grid - Signals
-2020-01-07  14:08:45.394 - Data is writen to grid - Signals --- Done
-2020-01-07  14:08:45.394 - Data is writen to grid - Objects
-2020-01-07  14:08:45.395 - Data is writen to grid - Objects --- Done
-2020-01-07  14:09:00.026 - Project_IOcompare --- Button pressed
-2020-01-07  14:09:00.028 - Testing if there is changes in project
-2020-01-07  14:09:02.330 - File selection canceled
+2020-12-22  20:52:02.162 - This program is not stable ant not fully tested, carefully use it !!!
+2020-12-22  20:52:03.752 - ---------------------------------------------------------
+2020-12-22  20:52:04.342 - Data is writen to grid - Design
+2020-12-22  20:52:04.352 - Data is writen to grid - Design --- Done
+2020-12-22  20:52:04.362 - Data is writen to grid - Signals
+2020-12-22  20:52:04.372 - Data is writen to grid - Signals --- Done
+2020-12-22  20:52:04.372 - Data is writen to grid - Objects
+2020-12-22  20:52:04.382 - Data is writen to grid - Objects --- Done
+2020-12-22  20:52:04.382 - Data is writen to grid - Design
+2020-12-22  20:52:04.382 - Data is writen to grid - Design --- Done
+2020-12-22  20:52:18.642 - Pasting data - Design --- Clipboard:Rows 1692 Cols 2 Sel: [0;0] - [0;0]
+2020-12-22  20:52:21.352 - Data is writen to memory - Design
+2020-12-22  20:52:21.772 - Data is writen to memory - Design --- Done
+2020-12-22  20:52:22.492 - Data is writen to grid - Design
+2020-12-22  20:52:25.682 - Data is writen to grid - Design --- Done

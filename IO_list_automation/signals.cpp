@@ -19,7 +19,9 @@ using namespace libxl;
 
 struct signal_str signals;
 struct object_str objects;
+
 struct learning_str learn;
+
 
 
 // get data from memory to wstring
@@ -190,44 +192,42 @@ int Signals_valid_row_check(int row)
 //get data from project to signals
 int Signals_get_data_design()
 {
-	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.column_name, project.collumn_with, false);
+	wstring texts;
+	Global_get_data_listview(Design_grid_index, project.valid_entries, project.number_collums, project.collumn_with, false);
 	if (project.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, design_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.design_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
 	if (signals.valid_entries > 1)
 	{
-		int result = show_confirm_window(conf_signal_overwrite[lang]);
+		int result = show_confirm_window(str.Confirm.signal_overwrite.s[lang]);
 		if (result == IDYES)
 		{
-			strcpy_s(info_txt, sizeof info_txt, info_erase_data[lang]);
-			strcat_s(info_txt, sizeof info_txt, info_separator);
-			strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
+			texts = str.Info.erase_data.s[lang];
+			texts.append(info_separator);
+			texts.append(str.General.signals_txt.s[lang]);
+			info_write(texts);
 			signals.data = {};
 			Global_get_width_list(Signals_grid_index,signals.number_collums, signals.collumn_with);
-			info_write(info_txt);
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			texts = str.Error.canceled_selection.s[lang];
+			err_write(texts);
 			return 1;
 		}
 	}
-	
-	
-	strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, "->");
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-
-	info_write(info_txt);
+	texts = str.Info.transfer_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.design_txt.s[lang]);
+	texts.append(L"->");
+	texts.append(str.General.signals_txt.s[lang]);
+	info_write(texts);
 	
 	int colon = 0;
 	int semi= 0;
@@ -246,7 +246,7 @@ int Signals_get_data_design()
 	signals.valid_entries = project.valid_entries;
 	signals.data.resize(signals.valid_entries + 1);
 
-	Show_progress(prog_transfer_data[lang], signals.valid_entries);
+	Show_progress(str.Progress.transfer_data.s[lang], signals.valid_entries);
 
 	int max_digits = GetNumberOfDigits(project.valid_entries);
 	if ((pow(10, max_digits - 1) * 9) < signals.valid_entries) // if numbers are 90% filed increase digits by one
@@ -440,19 +440,17 @@ int Signals_get_data_design()
 	signals.data.resize(signal_row);
 
 	Hide_progress();
-	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 
-	strcpy_s(info_txt, sizeof info_txt, info_transfer_data[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, design_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, "->");
-	strcat_s(info_txt, sizeof info_txt, signals_txt[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-
-	info_write(info_txt);
+	texts = str.Info.transfer_data.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.design_txt.s[lang]);
+	texts.append(L"->");
+	texts.append(str.General.signals_txt.s[lang]);
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 	return 0;
-
 }
 
 
@@ -519,7 +517,8 @@ KKS_str Signals_KKS_trim(wstring KKS_text)
 //trims all KKS data in signals
 int Signals_all_KKS_trim(bool test_mode)
 {
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	wstring texts;
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries > 1)
 	{
 		int i = 0;
@@ -549,37 +548,37 @@ int Signals_all_KKS_trim(bool test_mode)
 		}
 		if (KKS.return_value == 0)
 		{
-			strcpy_s(info_txt, sizeof info_txt, info_KKS_edit[lang]);
-			info_write(info_txt);
+			texts = str.Info.KKS_edit.s[lang];
+			info_write(texts);
 
-			Show_progress(prog_read_data[lang], signals.valid_entries);
+			Show_progress(str.Progress.read_data.s[lang], signals.valid_entries);
 
 			for (int row = 0; row <= signals.valid_entries; row++)
 			{
 				signals.data[row].KKS = Signals_KKS_trim(signals.data[row].KKS.Full);
 			}
 
-			strcpy_s(info_txt, sizeof info_txt, info_KKS_edit[lang]);
-			strcat_s(info_txt, sizeof info_txt, error_separator);
-			strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-			info_write(info_txt);
+			texts = str.Info.KKS_edit.s[lang];
+			texts.append(error_separator);
+			texts.append(str.General.done_txt.s[lang]);
+			info_write(texts);
 
 			Hide_progress();
-			Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
+			Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_canceled_selection[lang]);
-			err_write(err_txt);
+			texts = str.Error.canceled_selection.s[lang];
+			err_write_show(texts);
 			return 1;
 		}
 	}
 	else
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 	
@@ -590,6 +589,7 @@ int Signals_all_KKS_trim(bool test_mode)
 //reads learning data for object and function recognition
 int Signals_learn_data()
 {
+	wstring texts;
 	learn = {};
 	
 	std::wstring file_name = L".\\learning\\";	
@@ -605,8 +605,7 @@ int Signals_learn_data()
 	case RU_index:	file_name.append(L"RU");
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return 1;
 		break;
 	}
@@ -615,21 +614,17 @@ int Signals_learn_data()
 	ifstream f(file_name.c_str());
 	if (f.good()== false)
 	{
-		string s = wstring_to_string(file_name);
-
-		strcpy_s(err_txt, sizeof err_txt, err_no_learn_file[lang]);
-		strcat_s(err_txt, sizeof err_txt, error_separator);
-		
-		strcat_s(err_txt, sizeof err_txt, s.c_str());
-		err_write_show(err_txt);
+		texts = str.Error.no_learn_file.s[lang];
+		texts.append(error_separator);
+		texts.append(file_name);
+		err_write_show(texts);
 		return 1;
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_learning[lang]);
-	info_write(info_txt);
+	texts = str.Info.learning.s[lang];
+	info_write(texts);
 
 	Book* book = xlCreateBook();	
-	const char* error_lic = "can't read more cells in trial version";
+	wstring error_lic = L"can't read more cells in trial version";
 	bool fStringMatch = FALSE;		
 
 	if (book->load(file_name.c_str()))
@@ -641,9 +636,9 @@ int Signals_learn_data()
 			int max_col = sheet->lastCol();
 			const wchar_t* s = L" ";
 			wstring texts = L" ";
-			const char* error_message = " ";
+			wstring error_message = L" ";
 
-			Show_progress(prog_learning_data[lang], max_rows);
+			Show_progress(str.Progress.learning_data.s[lang], max_rows);
 
 			// first two rows are for comments
 			for (int row = sheet->firstRow()+2; row < max_rows; ++row)
@@ -654,8 +649,8 @@ int Signals_learn_data()
 					if (s == NULL)
 					{
 						texts = L"";
-						error_message = book->errorMessage();
-						fStringMatch = (strcmp(error_message, error_lic) == 0);
+						error_message = string_to_wstring(book->errorMessage());
+						fStringMatch = error_message.compare(error_lic) == 0;
 						if (fStringMatch)	// trial version walkthrough for reading					
 						{
 							book->release();
@@ -674,8 +669,8 @@ int Signals_learn_data()
 							}
 							if (parameters.debug)
 							{
-									strcpy_s(info_txt, sizeof info_txt, "Bypassing excel file reading licenses");
-									info_write(info_txt);
+								texts = L"Bypassing excel file reading licenses";
+								info_write(texts);
 							}
 						}
 					}
@@ -727,38 +722,35 @@ int Signals_learn_data()
 		}
 		else
 		{
-			strcpy_s(err_txt, sizeof err_txt, err_excel_no_sheet[lang]);
-			err_write_show(err_txt);
+			texts = str.Error.excel_no_sheet.s[lang];
+			err_write_show(texts);
 			return 1;
 		}
 	}
 	else
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_excel_cant_open[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.excel_cant_open.s[lang];
+		err_write_show(texts);
 		return 1;
 	}	
-
 	Hide_progress();
-
-	strcpy_s(info_txt, sizeof info_txt, info_learning[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-
+	texts = str.Info.learning.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 	return 0;
 }
 //finds functions in signal data
 int Signals_find_function()
 {
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
-
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
+	wstring texts;
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -774,12 +766,10 @@ int Signals_find_function()
 	{
 		return 1;
 	}
-	
+	texts = str.Info.find_function.s[lang];
+	info_write(texts);
 
-	strcpy_s(info_txt, sizeof info_txt, info_find_function[lang]);
-	info_write(info_txt);
-
-	Show_progress(prog_learning_data[lang], signals.valid_entries);
+	Show_progress(str.Progress.learning_data.s[lang], signals.valid_entries);
 
 	int size_part1 = learn.Function_txt1.size();
 	int size_part2_1 = learn.Function_txt2_part1.size();
@@ -917,12 +907,11 @@ int Signals_find_function()
 	}
 
 	Hide_progress();
-	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
-
-	strcpy_s(info_txt, sizeof info_txt, info_find_function[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
+	texts = str.Info.find_function.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 	return 0;
 }
 
@@ -930,14 +919,14 @@ int Signals_find_function()
 int Signals_multi_cpu(bool test_mode)
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Signals_grid_index;
-
-	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with, false);
+	wstring texts;
+	Global_get_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.collumn_with, false);
 	if (signals.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, signals_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.signals_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -945,9 +934,8 @@ int Signals_multi_cpu(bool test_mode)
 	{
 		IO_generate();
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_multi_CPU[lang]);
-	info_write(info_txt);
+	texts = str.Info.multi_CPU.s[lang];
+	info_write(texts);
 
 	IOlistautomation::IO_Form Io_forma;
 	System::Windows::Forms::DataGridView^ grid = Io_forma.Grid_Module;
@@ -965,7 +953,7 @@ int Signals_multi_cpu(bool test_mode)
 	if (IO_form_result == 0)
 		return 0;
 
-	Show_progress(prog_multi_cpu[lang], grid->RowCount);
+	Show_progress(str.Progress.multi_cpu.s[lang], grid->RowCount);
 	int result = 0;
 	wstring text=L"";
 	wstring CPU_name = L"";
@@ -993,13 +981,11 @@ int Signals_multi_cpu(bool test_mode)
 
 	Hide_progress();
 
-	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name, signals.collumn_with);
-
-	strcpy_s(info_txt, sizeof info_txt, info_multi_CPU[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-
+	Global_put_data_listview(Signals_grid_index, signals.valid_entries, signals.number_collums, signals.column_name_EN, signals.column_name_LT, signals.collumn_with);
+	texts = str.Info.multi_CPU.s[lang];
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 	return 0;
 }
 

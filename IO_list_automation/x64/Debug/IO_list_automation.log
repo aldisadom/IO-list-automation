@@ -1,0 +1,350 @@
+﻿  Using triplet "x64-windows" from "C:\src\vcpkg\installed\x64-windows\"
+  AAA_TEST_FORM.cpp
+  AboutForm.cpp
+  Address_Form.cpp
+  config.cpp
+  Compare_result.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file config.cpp)
+  Declare.cpp
+  design.cpp
+  Global_Functions.cpp
+  HelpForm.cpp
+  Instance.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Declare.cpp)
+c:\io-list-automation\io_list_automation\declare.cpp(185): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\declare.cpp(190): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file design.cpp)
+c:\io-list-automation\io_list_automation\design.cpp(410): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\design.cpp(802): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\design.cpp(1005): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\design.cpp(1008): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Global_Functions.cpp)
+c:\io-list-automation\io_list_automation\global_functions.cpp(18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(657): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(1066): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(1072): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(1078): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(1084): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\global_functions.cpp(1180): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Instance_beckhoff.cpp
+  Instance_schneider.cpp
+  Instance_siemens.cpp
+  IO_declare.cpp
+  IO_Form.cpp
+  KKS_editForm.cpp
+  MainWindow.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file IO_declare.cpp)
+c:\io-list-automation\io_list_automation\io_declare.cpp(190): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\io_declare.cpp(291): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  objects.cpp
+  Object_check_Form.cpp
+  ResultForm.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file MainWindow.cpp)
+  SCADA.cpp
+  signals.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file objects.cpp)
+c:\io-list-automation\io_list_automation\objects.cpp(130): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(187): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(198): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(208): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(246): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(268): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(269): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(320): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(393): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(394): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(395): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(396): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(417): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(435): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(453): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(471): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(540): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(541): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\objects.cpp(640): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file SCADA.cpp)
+  String_info.cpp
+  Strings.cpp
+  String_errors.cpp
+  String_progress.cpp
+  tests.cpp
+  Trend_data.cpp
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file signals.cpp)
+c:\io-list-automation\io_list_automation\signals.cpp(264): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(299): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(300): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(301): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(302): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(373): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(374): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(378): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(379): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(382): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(386): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(396): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(397): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(401): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(402): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(405): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(409): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(420): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(424): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(425): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(428): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(432): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(469): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(473): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(484): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(786): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(787): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(788): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(811): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(820): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(842): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(877): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(886): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\signals.cpp(908): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file tests.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1452): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(1507): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2419): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2434): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2442): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2450): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2466): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2482): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2490): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2498): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2506): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2514): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2522): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2530): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2538): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2546): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2554): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2562): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2570): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+c:\io-list-automation\io_list_automation\mainwindow.h(2683): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file Trend_data.cpp)
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  AAA_TEST_FORM.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+signals.obj : error LNK2020: unresolved token (0A0009AE) "extern "C" struct libxl::IBookT<wchar_t> * __cdecl xlCreateBookW(void)" (?xlCreateBookW@@$$J0YAPEAU?$IBookT@_W@libxl@@XZ)
+design.obj : error LNK2028: unresolved token (0A0009A8) "extern "C" struct libxl::IBookT<wchar_t> * __cdecl xlCreateBookW(void)" (?xlCreateBookW@@$$J0YAPEAU?$IBookT@_W@libxl@@XZ) referenced in function "int __cdecl Project_read_data(bool,char *,struct project_str &)" (?Project_read_data@@$$FYAH_NPEADAEAUproject_str@@@Z)
+LINK : error LNK2001: unresolved external symbol MAIN
+design.obj : error LNK2019: unresolved external symbol "extern "C" struct libxl::IBookT<wchar_t> * __cdecl xlCreateBookW(void)" (?xlCreateBookW@@$$J0YAPEAU?$IBookT@_W@libxl@@XZ) referenced in function "int __cdecl Project_read_data(bool,char *,struct project_str &)" (?Project_read_data@@$$FYAH_NPEADAEAUproject_str@@@Z)
+signals.obj : error LNK2001: unresolved external symbol "extern "C" struct libxl::IBookT<wchar_t> * __cdecl xlCreateBookW(void)" (?xlCreateBookW@@$$J0YAPEAU?$IBookT@_W@libxl@@XZ)
+C:\libxl-3.8.2.0\lib\libxl.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\IO-list-automation\x64\Debug\IO_list_automation.exe : fatal error LNK1120: 4 unresolved externals

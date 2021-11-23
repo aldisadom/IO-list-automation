@@ -1,0 +1,101 @@
+﻿indirect_VLV	VLV_str	retain									
+HAG10_AA001	VLV_str	retain				Termofikacinio vandens sklendė prieš recirkuliacijos reguliavimo vožtuvą (V					
+HAG10_AA002	VLV_str	retain				Termofikacinio vandens sklendė už recirkuliacijos reguliavimo vožtuvo (V					
+HAG10_AA101	VLV_str	retain				Termofikacinio vandens recirkuliacijos reguliavimo vožtuvas (V					
+HHF05_AA001	VLV_str	retain				Mazuto įvadinė sklendė (MZ					
+HHF21_AA004	VLV_str	retain				Mazuto vožtuvas (MZ					
+HHF21_AA101	VLV_str	retain				Mazuto srauto reguliavimo vožtuvas (MZ					
+HHF22_AA004	VLV_str	retain				Mazuto vožtuvas (MZ					
+HHF22_AA101	VLV_str	retain				Mazuto srauto reguliavimo vožtuvas (MZ					
+HHF31_AA191	VLV_str	retain				Degiklio Nr.1 mazuto kontrolinis vožtuvas (MZ					
+HHF31_AA192	VLV_str	retain				Degiklio Nr.1 mazuto darbinis vožtuvas (MZ					
+HHF32_AA191	VLV_str	retain				Degiklio Nr.2 mazuto kontrolinis vožtuvas (MZ					
+HHF32_AA192	VLV_str	retain				Degiklio Nr.2 mazuto darbinis vožtuvas (MZ					
+HHF33_AA191	VLV_str	retain				Degiklio Nr.3 mazuto kontrolinis vožtuvas (MZ					
+HHF33_AA192	VLV_str	retain				Degiklio Nr.3 mazuto darbinis vožtuvas (MZ					
+HHF34_AA191	VLV_str	retain				Degiklio Nr.4 mazuto kontrolinis vožtuvas (MZ					
+HHF34_AA192	VLV_str	retain				Degiklio Nr.4 mazuto darbinis vožtuvas (MZ					
+HHF35_AA191	VLV_str	retain				Degiklio Nr.5 mazuto kontrolinis vožtuvas (MZ					
+HHF35_AA192	VLV_str	retain				Degiklio Nr.5 mazuto darbinis vožtuvas (MZ					
+HHF36_AA191	VLV_str	retain				Degiklio Nr.6 mazuto kontrolinis vožtuvas (MZ					
+HHF36_AA192	VLV_str	retain				Degiklio Nr.6 mazuto darbinis vožtuvas (MZ					
+HHF40_AA001	VLV_str	retain				Mazuto recirkuliacijos sklendė (MZ					
+HHG10_AA102	VLV_str	retain				Dujų slėgio reguliatorius (D					
+HHG10_AA191	VLV_str	retain				Dujų į degiklius atkirtos vožtuvas (D					
+HHG20_AA102	VLV_str	retain				Dujų slėgio reguliatorius (D					
+HHG20_AA191	VLV_str	retain				Dujų į uždegtuvus atkirtos vožtuvas (D					
+HHG21_AA502	VLV_str	retain				Degiklių dujų kolektoriaus prapūtimo vožtuvas (D					
+HHG22_AA502	VLV_str	retain				Degiklių dujų kolektoriaus prapūtimo vožtuvas (D					
+HHG31_AA001	VLV_str	retain				Degiklio Nr.1 dujų darbinis vožtuvas (D					
+HHG31_AA191	VLV_str	retain				Degiklio Nr.1 dujų kontrolinis vožtuvas (D					
+HHG31_AA502	VLV_str	retain				Degiklio Nr.1 dujų saugos žvakė (D					
+HHG32_AA001	VLV_str	retain				Degiklio Nr.2 dujų darbinis vožtuvas (D					
+HHG32_AA191	VLV_str	retain				Degiklio Nr.2 dujų kontrolinis vožtuvas (D					
+HHG32_AA502	VLV_str	retain				Degiklio Nr.2 dujų saugos žvakė (D					
+HHG33_AA001	VLV_str	retain				Degiklio Nr.3 dujų darbinis vožtuvas (D					
+HHG33_AA191	VLV_str	retain				Degiklio Nr.3 dujų kontrolinis vožtuvas (D					
+HHG33_AA502	VLV_str	retain				Degiklio Nr.3 dujų saugos žvakė (D					
+HHG34_AA001	VLV_str	retain				Degiklio Nr.4 dujų darbinis vožtuvas (D					
+HHG34_AA191	VLV_str	retain				Degiklio Nr.4 dujų kontrolinis vožtuvas (D					
+HHG34_AA502	VLV_str	retain				Degiklio Nr.4 dujų saugos žvakė (D					
+HHG35_AA001	VLV_str	retain				Degiklio Nr.5 dujų darbinis vožtuvas (D					
+HHG35_AA191	VLV_str	retain				Degiklio Nr.5 dujų kontrolinis vožtuvas (D					
+HHG35_AA502	VLV_str	retain				Degiklio Nr.5 dujų saugos žvakė (D					
+HHG36_AA001	VLV_str	retain				Degiklio Nr.6 dujų darbinis vožtuvas (D					
+HHG36_AA191	VLV_str	retain				Degiklio Nr.6 dujų kontrolinis vožtuvas (D					
+HHG36_AA502	VLV_str	retain				Degiklio Nr.6 dujų saugos žvakė (D					
+HHL10_AA002	VLV_str	retain				Degiklio Nr.1 oro užsklanda (OS					
+HHL20_AA002	VLV_str	retain				Degiklio Nr.2 oro užsklanda (OS					
+HHL30_AA002	VLV_str	retain				Degiklio Nr.3 oro užsklanda (OS					
+HHL3_0AA02	VLV_str	retain				Degiklio Nr.3 oro užsklanda (OS					
+HHL40_AA002	VLV_str	retain				Degiklio Nr.4 oro užsklanda (OS					
+HHL50_AA002	VLV_str	retain				Degiklio Nr.5 oro užsklanda (OS					
+HHL60_AA002	VLV_str	retain				Degiklio Nr.6 oro užsklanda (OS					
+HHM11_AA191	VLV_str	retain				Degiklio Nr.1 garo vožtuvas (RG					
+HHM11_AA192	VLV_str	retain				Degiklio Nr.1 garo vožtuvas (RG					
+HHM12_AA191	VLV_str	retain				Degiklio Nr.2 garo vožtuvas (RG					
+HHM12_AA192	VLV_str	retain				Degiklio Nr.2 garo vožtuvas (RG					
+HHM13_AA191	VLV_str	retain				Degiklio Nr.3 garo vožtuvas (RG					
+HHM13_AA192	VLV_str	retain				Degiklio Nr.3 garo vožtuvas (RG					
+HHM14_AA191	VLV_str	retain				Degiklio Nr.4 garo vožtuvas (RG					
+HHM14_AA192	VLV_str	retain				Degiklio Nr.4 garo vožtuvas (RG					
+HHM15_AA191	VLV_str	retain				Degiklio Nr.5 garo vožtuvas (RG					
+HHM15_AA192	VLV_str	retain				Degiklio Nr.5 garo vožtuvas (RG					
+HHM16_AA191	VLV_str	retain				Degiklio Nr.6 garo vožtuvas (RG					
+HHM16_AA192	VLV_str	retain				Degiklio Nr.6 garo vožtuvas (RG					
+HHX21_AA602	VLV_str	retain				Degiklio Nr.1 suspausto oro vožtuvas (SO					
+HHX22_AA602	VLV_str	retain				Degiklio Nr.2 suspausto oro vožtuvas (SO					
+HHX23_AA602	VLV_str	retain				Degiklio Nr.3 suspausto oro vožtuvas (SO					
+HHX24_AA602	VLV_str	retain				Degiklio Nr.4 suspausto oro vožtuvas (SO					
+HHX25_AA602	VLV_str	retain				Degiklio Nr.5 suspausto oro vožtuvas (SO					
+HHX26_AA602	VLV_str	retain				Degiklio Nr.6 suspausto oro vožtuvas (SO					
+HJG10_AA501	VLV_str	retain				Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D					
+HJG20_AA501	VLV_str	retain				Uždegtuvų dujų kolektoriaus prapūtimo vožtuvas (D					
+HJG31_AA191	VLV_str	retain				Uždegtuvo Nr.1 kontrolinis dujų vožtuvas (D					
+HJG31_AA192	VLV_str	retain				Uždegtuvo Nr.1 darbinis dujų vožtuvas (D					
+HJG31_AA501	VLV_str	retain				Uždegtuvo Nr.1 dujų saugos žvakė (D					
+HJG32_AA191	VLV_str	retain				Uždegtuvo Nr.2 kontrolinis dujų vožtuvas (D					
+HJG32_AA192	VLV_str	retain				Uždegtuvo Nr.2 darbinis dujų vožtuvas (D					
+HJG32_AA501	VLV_str	retain				Uždegtuvo Nr.2 dujų saugos žvakė (D					
+HJG33_AA191	VLV_str	retain				Uždegtuvo Nr.3 kontrolinis dujų vožtuvas (D					
+HJG33_AA192	VLV_str	retain				Uždegtuvo Nr.3 darbinis dujų vožtuvas (D					
+HJG33_AA501	VLV_str	retain				Uždegtuvo Nr.3 dujų saugos žvakė (D					
+HJG34_AA191	VLV_str	retain				Uždegtuvo Nr.4 kontrolinis dujų vožtuvas (D					
+HJG34_AA192	VLV_str	retain				Uždegtuvo Nr.4 darbinis dujų vožtuvas (D					
+HJG34_AA501	VLV_str	retain				Uždegtuvo Nr.4 dujų saugos žvakė (D					
+HJG35_AA191	VLV_str	retain				Uždegtuvo Nr.5 kontrolinis dujų vožtuvas (D					
+HJG35_AA192	VLV_str	retain				Uždegtuvo Nr.5 darbinis dujų vožtuvas (D					
+HJG35_AA501	VLV_str	retain				Uždegtuvo Nr.5 dujų saugos žvakė (D					
+HJG36_AA191	VLV_str	retain				Uždegtuvo Nr.6 kontrolinis dujų vožtuvas (D					
+HJG36_AA192	VLV_str	retain				Uždegtuvo Nr.6 darbinis dujų vožtuvas (D					
+HJG36_AA501	VLV_str	retain				Uždegtuvo Nr.6 dujų saugos žvakė (D					
+HLA10_AA101	VLV_str	retain				Oro iš aplinkos skląstis (OS					
+HLA20_AA101	VLV_str	retain				Oro iš aplinkos skląstis (OS					
+HNA20_AA101B	VLV_str	retain				Dūmų skląstis (DS					
+HNF10_AA001	VLV_str	retain				Dūmų recirkuliacijos skląstis (1DU					
+HNF11_AA001	VLV_str	retain				Dūmų recirkuliacijos reguliuojantis skląstis (1DU					
+HNF12_AA001	VLV_str	retain				Dūmų recirkuliacijos reguliuojantis skląstis (1DU					
+NDA10_AA002	VLV_str	retain				Termofikacinio vandens sklendė už katilo (V					
+											
+											
+											

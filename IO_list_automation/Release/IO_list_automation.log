@@ -1,25 +1,3 @@
-﻿  AAA_TEST_FORM.cpp
-  AboutForm.cpp
-  Address_Form.cpp
-  Declare.cpp
-  Global_Functions.cpp
-  HelpForm.cpp
-  IO_Form.cpp
-  IO_declare.cpp
-  Instance.cpp
-  Instance_beckhoff.cpp
-  Instance_schneider.cpp
-  Instance_siemens.cpp
-  KKS_editForm.cpp
-  MainWindow.cpp
-  Object_check_Form.cpp
-  ResultForm.cpp
-  SCADA.cpp
-  config.cpp
-  design.cpp
-  objects.cpp
-  Generating Code...
-  Compiling...
-  signals.cpp
-  Generating Code...
+﻿  Trend_data.cpp
+  AboutForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   IO_list_automation.vcxproj -> C:\IO-list-automation\Release\IO_list_automation.exe

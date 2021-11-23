@@ -7,6 +7,7 @@
 #include "Address_Form.h"
 #include "ResultForm.h"
 
+#include <codecvt>
 #include "objects.h"
 
 #define max_objects  6
@@ -55,8 +56,7 @@ wstring Declare_area_switch(int area)
 		return L"";
 		break;
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return NULL;
 		break;
 	}
@@ -81,8 +81,7 @@ int Declare_adress_get_CPU_switch(addres_pars_CPU_str &CPU_adr)
 		break;
 
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return 1;
 		break;
 	}
@@ -107,8 +106,7 @@ int Declare_adress_put_CPU_switch(addres_pars_CPU_str &CPU_adr)
 		break;
 
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return 1;
 		break;
 	}
@@ -161,10 +159,10 @@ int Declare_count_objects(int &AI_nr_max, int &VLV_nr_max, int &HC_nr_max, int &
 	}
 	if ((AI_nr_max + VLV_nr_max + HC_nr_max + FC_nr_max + PID_nr_max + MOT_nr_max) == 0)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_object_types_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		wstring texts = str.Error.no_object_types_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
@@ -268,8 +266,7 @@ int Declare_adress_1test(int obj_type, int obj_var, adr_1test_str test_for_1part
 			break;
 
 		default:
-			strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-			err_write_show(err_txt);
+			err_prog();
 			return -1;
 			break;
 		}			
@@ -366,16 +363,16 @@ void Declare_adress_get_values(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int
 int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_max, int PID_nr_max, int MOT_nr_max,  check_result_str &result_obj, adr_cpu_test_str &test_CPU_adr)
 {
 	addres_pars_CPU_str CPU_adr;
-	
+	wstring texts;
 	if (Declare_adress_get_CPU_switch(CPU_adr) == 1)
 	{
 		return -1;
 	}
 
 
-	Show_progress(prog_overlap[lang], objects.valid_entries);
-	strcpy_s(info_txt, sizeof info_txt, info_overlap_adresses[lang]);
-	info_write(info_txt);
+	Show_progress(str.Progress.overlap.s[lang], objects.valid_entries);
+	texts = str.Info.overlap_adresses.s[lang];
+	info_write(texts);
 
 	Declare_adress_get_values(AI_nr_max, VLV_nr_max, HC_nr_max, FC_nr_max, PID_nr_max, MOT_nr_max, test_CPU_adr, CPU_adr);
 
@@ -411,8 +408,7 @@ int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_
 			break;
 
 		default:
-			strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-			err_write_show(err_txt);
+			err_prog();
 			return -1;
 			break;
 		}
@@ -465,11 +461,10 @@ int Declare_adress_test(int AI_nr_max, int VLV_nr_max, int HC_nr_max, int FC_nr_
 			}
 		}
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_overlap_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.overlap_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 
 	result = result_obj.ai + result_obj.vlv + result_obj.hc + result_obj.fc + result_obj.pid + result_obj.mot;
 	return (result>0);
@@ -521,25 +516,26 @@ void Declare_adresses_1object(int object_index, int &adress_index, addres_pars_s
 	adress_index++;
 }
 // Declare adreses
-int Declare_addreses()
+int Declare_addreses(bool test_mode)
 {
 	GlobalForm::forma->tabControl1->SelectedIndex = Objects_grid_index;
 
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		wstring texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
-	Show_progress(prog_adress[lang], objects.valid_entries);
-	strcpy_s(info_txt, sizeof info_txt, info_get_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));	
-	info_write(info_txt);
+	Show_progress(str.Progress.adress.s[lang], objects.valid_entries);
+
+	wstring texts = str.Info.get_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	info_write(texts);
 
 	int AI_nr = 0;
 	int VLV_nr = 0;
@@ -652,7 +648,7 @@ int Declare_addreses()
 	forma.PID_nr_max = PID_nr_max;
 	forma.MOT_nr_max = MOT_nr_max;
 
-	while (result != 0)
+	while ((result != 0) && (test_mode == false))
 	{
 		if (result < 0)
 		{
@@ -707,25 +703,23 @@ int Declare_addreses()
 			}
 			else
 			{
-				string string_tmp = wstring_to_string(object_type);
-
-				strcpy_s(err_txt, sizeof err_txt, err_wrong_object_type[lang]);
-				strcat_s(err_txt, sizeof err_txt, error_separator);
-				strcat_s(err_txt, sizeof err_txt, string_tmp.c_str());
-				err_write_show(err_txt);
+				texts = str.Error.wrong_object_type.s[lang];
+				texts.append(error_separator);
+				texts.append(object_type);
+				err_write_show(texts);
 			}			
 		}
 		set_progress_value(index);
 	}
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_get_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
-	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with);
+	texts = str.Info.get_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
+	Global_put_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name_EN, objects.column_name_LT, objects.collumn_with);
 	return 0;
 }
 
@@ -830,8 +824,7 @@ wstring Declare_Beckhoff(int index, int iCol, int variable_index,wstring object_
 
 
 			default:
-				strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-				err_write_show(err_txt);
+				err_prog();
 				return L"";
 				break;
 			}
@@ -916,8 +909,7 @@ wstring Declare_ABB_800xA(int index, int iCol, int variable_index, wstring objec
 		break;
 
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return L"";
 		break;
 	}
@@ -1007,8 +999,7 @@ wstring Declare_Siemens(int index, int iCol, int variable_index, wstring object_
 		break;
 
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return L"";
 		break;
 	}
@@ -1128,8 +1119,7 @@ wstring Declare_Schneider(int index, int iCol, int variable_index, wstring objec
 
 
 	default:
-		strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-		err_write_show(err_txt);
+		err_prog();
 		return L"";
 		break;
 	}
@@ -1261,26 +1251,31 @@ void Declare_init_grids(int AI_nr_max,int  VLV_nr_max, int HC_nr_max,int  FC_nr_
 	}
 }
 
-int Declare_dump_to_file(bool test_mode, System::Windows::Forms::DataGridView^ grid, char* grid_name)
+int Declare_dump_to_file(bool test_mode, wstring gen_test_mode, System::Windows::Forms::DataGridView^ grid, wstring grid_name)
 {
-
-	FILE* outFile;
 	int iCol;
-	const wchar_t* x;
-	string file_name;
-	string temp_text;
+	wstring file_name;
+	wstring temp_text;
 
 	temp_text = grid_name;
 
-	if (test_mode == false)
-		file_name = "_dump_";
+	if (test_mode == false && gen_test_mode.compare(L" ")==0)
+		file_name = L"_dump";
+	else if (gen_test_mode.compare(L" ") != 0)
+	{
+		file_name = L".\\Test data\\CMP\\";
+		file_name.append(L"dump_");
+		file_name.append(gen_test_mode);
+	}
 	else
 	{
-		file_name = ".\\Test data\\_test_dump_";
-		temp_text.erase(0,5);
+		file_name = L".\\Test data\\";
+		file_name.append(L"dump");
+//		file_name.append(grid_name);
 	}
+	file_name.append(L"_");
 	file_name.append(temp_text);
-	file_name.append(".txt");
+	file_name.append(L".txt");
 
 	int number_rows = grid->RowCount;
 	int number_collums = grid->ColumnCount;
@@ -1289,14 +1284,16 @@ int Declare_dump_to_file(bool test_mode, System::Windows::Forms::DataGridView^ g
 		return 0;
 
 	//create file with UTF-8 encoding
-	fopen_s(&outFile, file_name.c_str(), "w+,ccs=UTF-8");
+	std::wofstream file_out(file_name, std::ios::binary);
+	std::locale utf16_locale(file_out.getloc(), new std::codecvt_utf16<wchar_t, 0x10ffff, std::generate_header>);
+	file_out.imbue(utf16_locale);
 
-	strcpy_s(info_txt, sizeof info_txt, info_dump_declare[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
-	info_write(info_txt);
+	wstring texts = str.Info.dump_declare.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	info_write(texts);
 
-	Show_progress(prog_dump_data[lang], number_rows);
+	Show_progress(str.Progress.dump_data.s[lang], number_rows);
 
 	wstring cell_text_write, cell_text;
 	for (int index = 0; index < number_rows; index++)
@@ -1310,48 +1307,48 @@ int Declare_dump_to_file(bool test_mode, System::Windows::Forms::DataGridView^ g
 			cell_text_write.append(L"\t");
 		}
 		// write all row data to file
-		cell_text_write.append(L"\n");
-		x = cell_text_write.c_str();
-		fwrite(x, wcslen(x) * sizeof(wchar_t), 1, outFile);
-
+		cell_text_write.append(L"\r\n");
+		file_out << cell_text_write;
 		set_progress_value(index);
 	}
 	
 	Hide_progress();
 
-	strcpy_s(info_txt, sizeof info_txt, info_dump_declare[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);
+	texts = str.Info.dump_declare.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 	
-	fclose(outFile);
+	file_out.close();
 	return 0;
 	
 }
 
+
 // puting data to grids
-int Declare_put_adres_grid(bool test_mode)
+int Declare_put_adres_grid(bool test_mode, wstring gen_test_mode)
 {
-	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.column_name, objects.collumn_with, false);
+	wstring texts;
+	Global_get_data_listview(Objects_grid_index, objects.valid_entries, objects.number_collums, objects.collumn_with, false);
 	if (objects.valid_entries <= 1)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_data_edit[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_data_edit.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
 	int result_adress = 0;
 
-	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
-	info_write(info_txt);
+	texts = str.Info.put_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	info_write(texts);
 
-	Show_progress(prog_check_adress[lang], objects.valid_entries);
+	Show_progress(str.Progress.check_adress.s[lang], objects.valid_entries);
 	for (int index = 0; index <= objects.valid_entries; ++index)
 	{
 		result_adress=Declare_valid_adress(index);
@@ -1365,14 +1362,14 @@ int Declare_put_adres_grid(bool test_mode)
 	
 	if (result_adress == 0)
 	{
-		strcpy_s(err_txt, sizeof err_txt, err_no_adress_object[lang]);
-		strcat_s(err_txt, sizeof err_txt, info_separator);
-		strcat_s(err_txt, sizeof err_txt, objects_txt[lang]);
-		err_write_show(err_txt);
+		texts = str.Error.no_adress_object.s[lang];
+		texts.append(error_separator);
+		texts.append(str.General.objects_txt.s[lang]);
+		err_write_show(texts);
 		return 1;
 	}
 
-	Show_progress(prog_declare[lang], objects.valid_entries);
+	Show_progress(str.Progress.declare.s[lang], objects.valid_entries);
 
 
 	check_result_str result_ob;
@@ -1477,8 +1474,7 @@ int Declare_put_adres_grid(bool test_mode)
 			MOT_valid = CPU_adr.mot.pars.offset>0;
 			break;
 		default:
-			strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-			err_write_show(err_txt);
+			err_prog();
 			return 1;
 			break;
 		}
@@ -1558,8 +1554,7 @@ int Declare_put_adres_grid(bool test_mode)
 							case ABB_800xA_index:	cell_text = Declare_ABB_800xA(index, iCol, variable_index, object_type);
 								break;
 							default:
-								strcpy_s(err_txt, sizeof err_txt, err_cfg_parameter_programing_error[lang]);
-								err_write_show(err_txt);
+								err_prog();
 								return -1;
 								break;
 							}
@@ -1578,27 +1573,25 @@ int Declare_put_adres_grid(bool test_mode)
 	}
 	
 	Hide_progress();
-
-	Declare_dump_to_file(test_mode, results_form.Grid_AI, "decl_AI");
-	Declare_dump_to_file(test_mode, results_form.Grid_FC, "decl_FC");
-	Declare_dump_to_file(test_mode, results_form.Grid_HC, "decl_HC");
-	Declare_dump_to_file(test_mode, results_form.Grid_MOT, "decl_MOT");
-	Declare_dump_to_file(test_mode, results_form.Grid_PID, "decl_PID");
-	Declare_dump_to_file(test_mode, results_form.Grid_VLV, "decl_VLV");
-	Declare_dump_to_file(test_mode, results_form.Grid_SCADA, "decl_SCADA");
+	
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_AI, Dump_names.decl_AI);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_FC, Dump_names.decl_FC);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_HC, Dump_names.decl_HC);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_MOT, Dump_names.decl_MOT);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_PID, Dump_names.decl_PID);
+	Declare_dump_to_file(test_mode, gen_test_mode, results_form.Grid_VLV, Dump_names.decl_VLV);
 
 	if (test_mode == false)
 	{
 		results_form.ShowDialog();
 		results_form.Update();
 	}
-
-	strcpy_s(info_txt, sizeof info_txt, info_put_adresses[lang]);
-	strcat_s(info_txt, sizeof info_txt, info_separator);
-	strcat_s(info_txt, sizeof info_txt, Global_get_CPU_name(parameters.CPU));
-	strcat_s(info_txt, sizeof info_txt, error_separator);
-	strcat_s(info_txt, sizeof info_txt, done_txt[lang]);
-	info_write(info_txt);	
+	texts = str.Info.put_adresses.s[lang];
+	texts.append(info_separator);
+	texts.append(Global_get_CPU_name(parameters.CPU));
+	texts.append(error_separator);
+	texts.append(str.General.done_txt.s[lang]);
+	info_write(texts);
 	return 0;
 }
 
